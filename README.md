@@ -1,4 +1,4 @@
-![Header images showing scientists](Assets/new_bar.jpeg?raw=true "Title")
+![Header images showing scientists](Assets/new_bar.jpg?raw=true "Title")
 
 # Building and Applying AI Agents for Science
 

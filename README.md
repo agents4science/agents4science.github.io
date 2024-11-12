@@ -1,4 +1,4 @@
-![Header images showing scientists](Images/fd19a9a4-a510-4db0-9e37-7b97321a5fbf.jpeg?raw=true "Title")
+![Header images showing scientists](Assets/fd19a9a4-a510-4db0-9e37-7b97321a5fbf.jpeg?raw=true "Title")
 
 # Building and Applying AI Agents for Science
 
@@ -15,7 +15,14 @@ We will organize access to powerful data and computing resources, including at t
 
 The class will take place on the Hyde Park campus of the University of Chicago during the Spring Quarter 2025, i.e., the weeks of March 24-June 7, 2025.
 
-For more information, contact Ian Foster at uchicago.edu.
+For more information, contact [Ian Foster](mailto:foster@uchicago.edu).
 
+The following figure from [Ghafarollahi and Buehler, 2024](https://arxiv.org/pdf/2407.10022) illustrates a multi-model multi-agent approach to materials discovery, modeling, and prediction.
+
+<img src="Assets/Buehler.jpg" alt="Alt Text">
+
+The following figure from [Gao et al.](https://www.cell.com/cell/fulltext/S0092-8674(24)01070-5) shows examples of AI agents in biology.
+
+<img src="Assets/1-s2.0-S0092867424010705-gr1_lrg.jpg" alt="Alt Text">
 
 

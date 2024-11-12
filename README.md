@@ -1,4 +1,4 @@
-![Alt text](fd19a9a4-a510-4db0-9e37-7b97321a5fbf.jpeg?raw=true "Title")
+![Header images showing scientists](Images/fd19a9a4-a510-4db0-9e37-7b97321a5fbf.jpeg?raw=true "Title")
 
 # Building and Applying AI Agents for Science
 

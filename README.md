@@ -2,7 +2,7 @@
 
 # Building and Applying AI Agents for Science
 
-**NOTE: Class scheduled for Autumn 2025. Please contact [Ian Foster](mailto:foster@uchicago.edu) if you want to join a discussion group earlier.**
+**NOTE: Class scheduled as CMSC 35370 for Autumn 2025. Please contact [Ian Foster](mailto:foster@uchicago.edu) if you want to join a discussion group earlier.**
 
 An **AI agent** is an autonomous program or system that perceives its environment, makes decisions, and takes actions to achieve specific goals.
 New **large language model** (LLM) and related technologies make it feasible to assemble collections of such agents that can automate important tasks in science and engineering, such as synthesizing information from the literature, identifying promising hypotheses, designing protocols to evaluate hypotheses, running experiments, and interpreting results.
@@ -18,7 +18,7 @@ For more information, contact [Ian Foster](mailto:foster@uchicago.edu).
 
 ## Initial class details
 
-The class will take place on the Hyde Park campus of the University of Chicago during the Autumn Quarter 2025, i.e., starting September 29, 2025.
+The class will take place on the Hyde Park campus of the University of Chicago during the Autumn Quarter 2025, i.e., starting September 29, 2025, as **CMSC 35370-1: AI Agents for Science**.
 
 We will organize access to powerful data and computing resources, including at the University of Chicago's [Research Computing Center](https://rcc.uchicago.edu) and the [Argonne Leadership Computing Facility](https://alcf.anl.gov), and autonomous laboratory capabilities.
 

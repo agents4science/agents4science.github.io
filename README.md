@@ -2,10 +2,12 @@
 
 # Building and Applying AI Agents for Science
 
+$\color{#FF0000}{\textrm{\textbf{NOTE:}}}$ **Class scheduled for Autumn 2025. Please contact [Ian Foster](mailto:foster@uchicago.edu) if you want to join a discussion group earlier.**
+
 An **AI agent** is an autonomous program or system that perceives its environment, makes decisions, and takes actions to achieve specific goals.
 New **large language model** (LLM) and related technologies make it feasible to assemble collections of such agents that can automate important tasks in science and engineering, such as synthesizing information from the literature, identifying promising hypotheses, designing protocols to evaluate hypotheses, running experiments, and interpreting results.
 
-To explore and advance these ideas, we are planning an intense class in this area for Spring 2025.
+To explore and advance these ideas, we are planning an intense class in this area for Fall 2025.
 This class is targetted at graduate students and talented final year undergrads who want to engage in this fascinating research area, but we will also welcome postdocs, scientists, and faculty who are prepared to work with us. 
 We will "**learn by doing**".
 Your instructors will provide infrastructure and examples, and in-depth presentations on the state of the art and open problems in agentic AI.
@@ -16,7 +18,7 @@ For more information, contact [Ian Foster](mailto:foster@uchicago.edu).
 
 ## Initial class details
 
-The class will take place on the Hyde Park campus of the University of Chicago during the Spring Quarter 2025, i.e., the weeks of March 24-June 7, 2025.
+The class will take place on the Hyde Park campus of the University of Chicago during the Autumn Quarter 2025, i.e., starting September 29, 2025.
 
 We will organize access to powerful data and computing resources, including at the University of Chicago's [Research Computing Center](https://rcc.uchicago.edu) and the [Argonne Leadership Computing Facility](https://alcf.anl.gov), and autonomous laboratory capabilities.
 

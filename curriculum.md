@@ -1,143 +1,162 @@
-# Agents for Science
+# Agentic Scientific Discovery Platforms (SDPs) — Fall 2025 Course Syllabus
 
-This curriculum (plus a capstone sprint) teaches participants how to assemble and
-apply agentic Scientific Discovery Platforms (SDPs) to tackle practical problems in science and engineering.
+**Schedule:** Mondays & Wednesdays, 3:00pm-4:20pm  
+**Start Date:** Monday, Sept 29, 2025  
+**End Date:** Wednesday, Dec 10, 2025 (Final Class Meeting: Capstone Presentations)  
+**No Class:** Week of Nov 24 (Thanksgiving); Monday, Dec 8 (College Reading Period)
 
----
-
-## Week 1: Introduction to SDPs
-**Themes:**
-- What is an SDP?
-- Frontier reasoning models in scientific workflows.
-- Motivating case studies: wildfire hazard, drug discovery, climate modeling.
-
-**Activities:**
-- Walkthrough of exemplar SDP architectures (Figure 1 + variants).
-- Group discussion: participant use cases.
-
-**Deliverable:** Short written statement of intended application area.
+The following **draft curriculum** outlines topics to be covered and potential readings. 
 
 ---
 
-## Week 2: Reasoning-Capable AI Models
-**Themes:**
-- Landscape of reasoning models (frontier LLMs, domain FMs, hybrids).
-- Prompting, fine-tuning, RAG, and tool-augmented reasoning.
-- Trade-offs: accuracy, interpretability, efficiency.
+## Week 1
 
-**Activities:**
-- Hands-on with different reasoning models.
-- Compare model behaviors on the same scientific query.
+### Mon Sept 29 — Lecture 1.1: What is an SDP?
+Introduces the concept of Scientific Reasoning Platforms (SDPs): AI-native systems that connect reasoning models with scientific resources. We’ll explore motivating case studies (wildfire hazard, antimicrobials, climate modeling) and outline the challenges of integrating AI into rigorous science.  
+*Suggested Readings/Tools:*  
+- Messeri & Crockett, *Illusions of Scientific Understanding with AI*, *Nature* (2023).  
+- Globus Compute docs for distributed science workflows.  
 
-**Deliverable:** Report comparing models on a domain-specific task.
-
----
-
-## Week 3: Knowledge Organization and Access
-**Themes:**
-- Knowledge substrates: structured/unstructured data, embeddings, ontologies.
-- Literature curation, databases, negative results.
-- Query pipelines and knowledge grounding.
-
-**Activities:**
-- Build a mini-knowledge base (e.g., papers + domain DB).
-- Explore semantic retrieval (vector search).
-
-**Deliverable:** Functional knowledge index relevant to chosen domain.
+### Wed Oct 1 — Lecture 1.2: Landscape of Reasoning AI Models
+Surveys frontier reasoning models: general-purpose LLMs (GPT, Claude), domain-specific foundation models (materials, bio, weather), and hybrids. We compare their reasoning abilities, biases, and trade-offs in scientific contexts.  
+*Suggested Readings/Tools:*  
+- *Frontier AI: Capabilities and Risks* (OpenAI, 2024).  
+- HuggingFace model zoo (domain FMs).  
 
 ---
 
-## Week 4: Resource Integration
-**Themes:**
-- Linking AI to scientific resources: simulations, experimental platforms, data services.
-- MCPs, APIs, workflow engines, orchestration.
-- Security & authentication.
+## Week 2
 
-**Activities:**
-- Connect an AI model to a simulation code or data API.
-- Execute simple closed-loop “ask-plan-run-analyze.”
+### Mon Oct 6 — Lecture 2.1: Engaging Models
+Covers techniques for eliciting better reasoning: prompting, chain-of-thought, retrieval-augmented generation (RAG), fine-tuning, and tool-augmented reasoning. Discusses criteria for model selection.  
+*Suggested Readings/Tools:*  
+- Anthropic *Constitutional AI* whitepaper.  
+- LangChain / LlamaIndex tutorials.  
 
-**Deliverable:** Prototype pipeline connecting a model to one external resource.
-
----
-
-## Week 5: Human–AI Collaboration
-**Themes:**
-- Role of the scientist in the loop.
-- Task delegation vs oversight.
-- Trust, interpretability, and verification strategies.
-
-**Activities:**
-- Exercises in “when to trust, when to verify.”
-- Design a human-in-the-loop workflow.
-
-**Deliverable:** Human/AI task-allocation plan for participant’s domain problem.
+### Wed Oct 8 — Lecture 2.2: Hands-On: Comparing Models
+Lab session applying the same scientific question to different models (general vs domain-specific) and analyzing outputs. Emphasis on differences in accuracy, coverage, and reliability.  
+*Suggested Readings/Tools:*  
+- OpenAI API playground or HuggingFace inference endpoints.  
+- Sample dataset: PubChem or Materials Project abstracts.  
 
 ---
 
-## Week 6: Evaluation and Performance Assessment
-**Themes:**
-- Benchmarks for SDPs.
-- Scientific rigor: falsifiability, reproducibility, uncertainty quantification.
-- Avoiding “illusions of understanding.”
+## Week 3
 
-**Activities:**
-- Design an evaluation protocol for SDP outputs.
-- Compare ground-truth results vs. SDP-generated outputs.
+### Mon Oct 13 — Lecture 3.1: Knowledge Representation for SDPs
+Examines ways to structure knowledge for AI reasoning: embeddings, ontologies, knowledge graphs, curated corpora. Discusses challenges of bias, incompleteness, and negative results.  
+*Suggested Readings/Tools:*  
+- “Knowledge Graphs and AI” (*IEEE Intelligent Systems*, 2022).  
+- Semantic Scholar API.  
 
-**Deliverable:** Draft evaluation framework applied to a sample task.
-
----
-
-## Week 7: Sensitive Data, Policy, and Ethics
-**Themes:**
-- Working with proprietary or sensitive data.
-- Data governance, privacy, reproducibility.
-- Ethical use of AI in science.
-
-**Activities:**
-- Case studies (e.g., patient data, environmental risks).
-- Workshop on anonymization and secure compute.
-
-**Deliverable:** Data-handling policy for participant’s SDP.
+### Wed Oct 15 — Lecture 3.2: Building Knowledge Access Pipelines
+Demonstration of building semantic retrieval systems: embedding literature, running vector search, integrating with LLMs. Participants build a mini knowledge base for their domain.  
+*Suggested Readings/Tools:*  
+- FAISS / Milvus vector databases.  
+- Example corpus: ArXiv or PubMed subset.  
 
 ---
 
-## Week 8: Scaling and Automation
-**Themes:**
-- Scaling SDPs from single workflows to large campaigns.
-- Resource scheduling, cost and carbon accounting.
-- Resilience and fault tolerance.
+## Week 4
 
-**Activities:**
-- Deploy SDP prototype on a larger dataset or HPC resource.
-- Introduce automated monitoring/logging.
+### Mon Oct 20 — Lecture 4.1: Connecting to Codes and Labs
+Introduces methods to link reasoning models to simulations, databases, and instruments. Discusses APIs, middleware (MCP, Globus Compute), and orchestration engines.  
+*Suggested Readings/Tools:*  
+- MCP protocol specification.  
+- Snakemake or Airflow tutorials.  
 
-**Deliverable:** Scaled-up SDP experiment.
-
----
-
-## Week 9: Frontier Topics & Future Directions
-**Themes:**
-- Agents vs SDPs, co-scientist metaphors.
-- Multi-agent collaboration.
-- Open challenges and research frontiers.
-
-**Activities:**
-- Roundtable on “SDPs in 2030.”
-- Peer feedback on capstone plans.
-
-**Deliverable:** Capstone project proposal.
+### Wed Oct 22 — Lecture 4.2: Case Studies in Resource Integration
+Examines real-world SDP integrations: wildfire simulations, catalyst discovery, automated labs. Participants dissect one workflow end-to-end.  
+*Suggested Readings/Tools:*  
+- Scientific workflows in PNAS (*Self-driving labs for materials*, 2021).  
+- Materials Acceleration Platforms case studies.  
 
 ---
 
-## Week 10: Capstone Sprint
-**Themes:**
-- Integrating all components into a working SDP.
+## Week 5
 
-**Activities:**
-- 1-week focused sprint to build and demo a domain-specific SDP.
-- Peer review and presentation.
+### Mon Oct 27 — Lecture 5.1: The Scientist in the Loop
+Explores the evolving role of scientists in SDPs: what to delegate, what to oversee, and how to structure collaboration. Introduces interpretability, failure modes, and cognitive biases.  
+*Suggested Readings/Tools:*  
+- Amershi et al., “Guidelines for Human-AI Interaction” (*CHI*, 2019).  
+- Case study: AlphaFold’s integration into biology.  
 
-**Deliverable:** Functioning SDP demonstration + final report.
+### Wed Oct 29 — Lecture 5.2: Designing Human–AI Workflows
+Participants map their domain problems into human vs SDP responsibilities. Exercises focus on trust boundaries, verification strategies, and failure recovery.  
+*Suggested Readings/Tools:*  
+- STS literature on trust in automation.  
+- Example: Radiology AI workflow studies.  
+
+---
+
+## Week 6
+
+### Mon Nov 3 — Lecture 6.1: Scientific Evaluation
+Discusses scientific rigor in SDPs: falsifiability, reproducibility, uncertainty quantification. Identifies pitfalls like “hallucinations” and overfitting to conventions.  
+*Suggested Readings/Tools:*  
+- Messeri & Crockett, *Nature* (2023).  
+- Tutorials on uncertainty estimation in ML.  
+
+### Wed Nov 5 — Lecture 6.2: Designing Benchmarks for SDPs
+Participants design evaluation protocols for their prototypes: from unit-level tests to end-to-end validation. Discusses benchmark suites and shared tasks.  
+*Suggested Readings/Tools:*  
+- MLCommons Scientific Benchmarks.  
+- OpenCatalyst Project evaluation suite.  
+
+---
+
+## Week 7
+
+### Mon Nov 10 — Lecture 7.1: Sensitive & Proprietary Data
+Covers privacy-preserving ML (federated learning, differential privacy), governance, and secure computation. Focus on biomedical and environmental domains.  
+*Suggested Readings/Tools:*  
+- Google AI: *Federated Learning at Scale* (2021).  
+- PySyft for privacy-preserving ML.  
+
+### Wed Nov 12 — Lecture 7.2: Responsible SDPs
+Discusses ethical and policy dimensions: dual-use concerns, bias, carbon footprint, open science vs IP. Students draft a responsible-use statement.  
+*Suggested Readings/Tools:*  
+- UNESCO AI Ethics framework.  
+- Carbon-aware computing literature.  
+
+---
+
+## Week 8
+
+### Mon Nov 17 — Lecture 8.1: Scaling SDPs
+Strategies for scaling: distributed compute, HPC, cloud-native orchestration. Covers resilience, scheduling, and cost/energy considerations.  
+*Suggested Readings/Tools:*  
+- KubeFlow or Ray documentation.  
+- DOE report on AI for Science (2020).  
+
+### Wed Nov 19 — Lecture 8.2: Automation in Practice
+Demonstration of automation pipelines with monitoring, logging, and adaptive workflows. Emphasis on debugging and error recovery.  
+*Suggested Readings/Tools:*  
+- MLflow for experiment tracking.  
+- Globus Flow for automation.  
+
+---
+
+## Week 9  *(No class week of Nov 24)*
+
+### Mon Dec 1 — Lecture 9.1: Frontiers of SDPs
+Explores frontiers: multi-agent collaboration, embodied co-scientists, integration with digital twins. Students speculate on SDPs in 2030.  
+*Suggested Readings/Tools:*  
+- “AI Scientist-v2” (arXiv, 2024).  
+- Digital twin literature (e.g., manufacturing & climate).  
+
+### Wed Dec 3 — Lecture 9.2: Capstone Prep + Peer Review
+Students present draft capstone plans, receive structured peer critique, and refine. Instructor provides guidance on scope, deliverables, and evaluation.  
+*Suggested Readings/Tools:*  
+- Project management frameworks (Agile for research).  
+- Sample capstone projects from ML/AI courses.  
+
+---
+
+## Final Week
+
+- **Mon Dec 8 — No Class**  
+- **Wed Dec 10 — Final Class Meeting: Capstone Presentations**  
+
+---
 

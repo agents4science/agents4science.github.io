@@ -13,32 +13,32 @@ The following **draft curriculum** outlines topics to be covered and potential r
 
 ## Week 1
 
-### Mon Sept 29 — Lecture 1.1: What is an SDP?
+### Mon Sept 29 — Lecture 1: What is an SDP?
 Introduces the concept of Scientific Discovery Platforms (SDPs): AI-native systems that connect reasoning models with scientific resources. We’ll explore motivating case studies (wildfire hazard, antimicrobials, climate modeling) and outline the challenges of integrating AI into rigorous science.  
 
 *Suggested Readings/Tools:*  
-- Messeri & Crockett, *Illusions of Scientific Understanding with AI*, *Nature* (2023).  
-- Globus Compute docs for distributed science workflows.  
+- *[Artificial intelligence and illusions of understanding in scientific research](https://www.nature.com/articles/s41586-024-07146-0)*, Messeri & Crockett (Nature, 2023).  
+- Globus Compute docs for distributed science workflows.  <!--Wrong pointer?-->
 
-### Wed Oct 1 — Lecture 1.2: Landscape of Reasoning AI Models
+### Wed Oct 1 — Lecture 2: Landscape of Reasoning AI Models
 Surveys frontier reasoning models: general-purpose LLMs (GPT, Claude), domain-specific foundation models (materials, bio, weather), and hybrids. We compare their reasoning abilities, biases, and trade-offs in scientific contexts.  
 
 *Suggested Readings/Tools:*  
-- *Frontier AI: Capabilities and Risks* (OpenAI, 2024).  
+- *[Capabilities and risks from frontier AI](https://www.gov.uk/government/publications/frontier-ai-capabilities-and-risks-discussion-paper)* (AI Safety Summit, 2024).  
 - HuggingFace model zoo (domain FMs).  
 
 ---
 
 ## Week 2
 
-### Mon Oct 6 — Lecture 2.1: Engaging Models
+### Mon Oct 6 — Lecture 3: Engaging Models
 Covers techniques for eliciting better reasoning: prompting, chain-of-thought, retrieval-augmented generation (RAG), fine-tuning, and tool-augmented reasoning. Discusses criteria for model selection.
 
 *Suggested Readings/Tools:*  
 - Anthropic *Constitutional AI* whitepaper.  
 - LangChain / LlamaIndex tutorials.  
 
-### Wed Oct 8 — Lecture 2.2: Hands-On: Comparing Models
+### Wed Oct 8 — Lecture 4: Hands-On: Comparing Models
 Lab session applying the same scientific question to different models (general vs domain-specific) and analyzing outputs. Emphasis on differences in accuracy, coverage, and reliability.
 
 *Suggested Readings/Tools:*  
@@ -49,14 +49,14 @@ Lab session applying the same scientific question to different models (general v
 
 ## Week 3
 
-### Mon Oct 13 — Lecture 3.1: Knowledge Representation for SDPs
+### Mon Oct 13 — Lecture 5: Knowledge Representation for SDPs
 Examines ways to structure knowledge for AI reasoning: embeddings, ontologies, knowledge graphs, curated corpora. Discusses challenges of bias, incompleteness, and negative results.  
 
 *Suggested Readings/Tools:*  
 - “Knowledge Graphs and AI” (*IEEE Intelligent Systems*, 2022).  
 - Semantic Scholar API.  
 
-### Wed Oct 15 — Lecture 3.2: Building Knowledge Access Pipelines
+### Wed Oct 15 — Lecture 6: Building Knowledge Access Pipelines
 Demonstration of building semantic retrieval systems: embedding literature, running vector search, integrating with LLMs. Participants build a mini knowledge base for their domain.  
 
 *Suggested Readings/Tools:*  
@@ -67,14 +67,14 @@ Demonstration of building semantic retrieval systems: embedding literature, runn
 
 ## Week 4
 
-### Mon Oct 20 — Lecture 4.1: Connecting to Codes and Labs
+### Mon Oct 20 — Lecture 7: Connecting to Codes and Labs
 Introduces methods to link reasoning models to simulations, databases, and instruments. Discusses APIs, middleware (MCP, Globus Compute), and orchestration engines.  
 
 *Suggested Readings/Tools:*  
 - MCP protocol specification.  
 - Snakemake or Airflow tutorials.  
 
-### Wed Oct 22 — Lecture 4.2: Case Studies in Resource Integration
+### Wed Oct 22 — Lecture 8: Case Studies in Resource Integration
 Examines real-world SDP integrations: wildfire simulations, catalyst discovery, automated labs. Participants dissect one workflow end-to-end.  
 
 *Suggested Readings/Tools:*  
@@ -85,14 +85,14 @@ Examines real-world SDP integrations: wildfire simulations, catalyst discovery, 
 
 ## Week 5
 
-### Mon Oct 27 — Lecture 5.1: The Scientist in the Loop
+### Mon Oct 27 — Lecture 9: The Scientist in the Loop
 Explores the evolving role of scientists in SDPs: what to delegate, what to oversee, and how to structure collaboration. Introduces interpretability, failure modes, and cognitive biases.  
 
 *Suggested Readings/Tools:*  
 - Amershi et al., “Guidelines for Human-AI Interaction” (*CHI*, 2019).  
 - Case study: AlphaFold’s integration into biology.  
 
-### Wed Oct 29 — Lecture 5.2: Designing Human–AI Workflows
+### Wed Oct 29 — Lecture 10: Designing Human–AI Workflows
 Participants map their domain problems into human vs SDP responsibilities. Exercises focus on trust boundaries, verification strategies, and failure recovery.  
 
 *Suggested Readings/Tools:*  
@@ -103,14 +103,14 @@ Participants map their domain problems into human vs SDP responsibilities. Exerc
 
 ## Week 6
 
-### Mon Nov 3 — Lecture 6.1: Scientific Evaluation
+### Mon Nov 3 — Lecture 11: Scientific Evaluation
 Discusses scientific rigor in SDPs: falsifiability, reproducibility, uncertainty quantification. Identifies pitfalls like “hallucinations” and overfitting to conventions. 
 
 *Suggested Readings/Tools:*  
 - Messeri & Crockett, *Nature* (2023).  
 - Tutorials on uncertainty estimation in ML.  
 
-### Wed Nov 5 — Lecture 6.2: Designing Benchmarks for SDPs
+### Wed Nov 5 — Lecture 12: Designing Benchmarks for SDPs
 Participants design evaluation protocols for their prototypes: from unit-level tests to end-to-end validation. Discusses benchmark suites and shared tasks.  
 
 *Suggested Readings/Tools:*  
@@ -121,14 +121,14 @@ Participants design evaluation protocols for their prototypes: from unit-level t
 
 ## Week 7
 
-### Mon Nov 10 — Lecture 7.1: Sensitive & Proprietary Data
+### Mon Nov 10 — Lecture 13: Sensitive & Proprietary Data
 Covers privacy-preserving ML (federated learning, differential privacy), governance, and secure computation. Focus on biomedical and environmental domains.  
 
 *Suggested Readings/Tools:*  
 - Google AI: *Federated Learning at Scale* (2021).  
 - PySyft for privacy-preserving ML.  
 
-### Wed Nov 12 — Lecture 7.2: Responsible SDPs
+### Wed Nov 12 — Lecture 14: Responsible SDPs
 Discusses ethical and policy dimensions: dual-use concerns, bias, carbon footprint, open science vs IP. Students draft a responsible-use statement.  
 
 *Suggested Readings/Tools:*  
@@ -139,14 +139,14 @@ Discusses ethical and policy dimensions: dual-use concerns, bias, carbon footpri
 
 ## Week 8
 
-### Mon Nov 17 — Lecture 8.1: Scaling SDPs
+### Mon Nov 17 — Lecture 15: Scaling SDPs
 Strategies for scaling: distributed compute, HPC, cloud-native orchestration. Covers resilience, scheduling, and cost/energy considerations.  
 
 *Suggested Readings/Tools:*  
 - KubeFlow or Ray documentation.  
 - DOE report on AI for Science (2020).  
 
-### Wed Nov 19 — Lecture 8.2: Automation in Practice
+### Wed Nov 19 — Lecture 16: Automation in Practice
 Demonstration of automation pipelines with monitoring, logging, and adaptive workflows. Emphasis on debugging and error recovery.  
 
 *Suggested Readings/Tools:*  
@@ -157,14 +157,14 @@ Demonstration of automation pipelines with monitoring, logging, and adaptive wor
 
 ## Week 9  *(No class week of Nov 24)*
 
-### Mon Dec 1 — Lecture 9.1: Frontiers of SDPs
+### Mon Dec 1 — Lecture 17: Frontiers of SDPs
 Explores frontiers: multi-agent collaboration, embodied co-scientists, integration with digital twins. Students speculate on SDPs in 2030.  
 
 *Suggested Readings/Tools:*  
 - [The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search](https://github.com/SakanaAI/AI-Scientist-v2) (arXiv, 2024).  
 - Digital twin literature (e.g., manufacturing & climate).  
 
-### Wed Dec 3 — Lecture 9.2: Capstone Prep + Peer Review
+### Wed Dec 3 — Lecture 18: Capstone Prep + Peer Review
 Students present draft capstone plans, receive structured peer critique, and refine. Instructor provides guidance on scope, deliverables, and evaluation.  
 <!--Too late in the quarter-->
 

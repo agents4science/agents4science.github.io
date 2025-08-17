@@ -1,18 +1,18 @@
-# Scientific Reasoning Platform (SRP) Curriculum
+# Agents for Science
 
-This 9–week curriculum (plus a capstone sprint) teaches participants how to assemble and
-use SRPs to tackle practical problems in science and engineering.
+This curriculum (plus a capstone sprint) teaches participants how to assemble and
+apply agentic Scientific Discovery Platforms (SDPs) to tackle practical problems in science and engineering.
 
 ---
 
-## Week 1: Introduction to SRPs
+## Week 1: Introduction to SDPs
 **Themes:**
-- What is an SRP?
+- What is an SDP?
 - Frontier reasoning models in scientific workflows.
 - Motivating case studies: wildfire hazard, drug discovery, climate modeling.
 
 **Activities:**
-- Walkthrough of exemplar SRP architectures (Figure 1 + variants).
+- Walkthrough of exemplar SDP architectures (Figure 1 + variants).
 - Group discussion: participant use cases.
 
 **Deliverable:** Short written statement of intended application area.
@@ -77,13 +77,13 @@ use SRPs to tackle practical problems in science and engineering.
 
 ## Week 6: Evaluation and Performance Assessment
 **Themes:**
-- Benchmarks for SRPs.
+- Benchmarks for SDPs.
 - Scientific rigor: falsifiability, reproducibility, uncertainty quantification.
 - Avoiding “illusions of understanding.”
 
 **Activities:**
-- Design an evaluation protocol for SRP outputs.
-- Compare ground-truth results vs SRP-generated outputs.
+- Design an evaluation protocol for SDP outputs.
+- Compare ground-truth results vs. SDP-generated outputs.
 
 **Deliverable:** Draft evaluation framework applied to a sample task.
 
@@ -99,32 +99,32 @@ use SRPs to tackle practical problems in science and engineering.
 - Case studies (e.g., patient data, environmental risks).
 - Workshop on anonymization and secure compute.
 
-**Deliverable:** Data-handling policy for participant’s SRP.
+**Deliverable:** Data-handling policy for participant’s SDP.
 
 ---
 
 ## Week 8: Scaling and Automation
 **Themes:**
-- Scaling SRPs from single workflows to large campaigns.
+- Scaling SDPs from single workflows to large campaigns.
 - Resource scheduling, cost and carbon accounting.
 - Resilience and fault tolerance.
 
 **Activities:**
-- Deploy SRP prototype on a larger dataset or HPC resource.
+- Deploy SDP prototype on a larger dataset or HPC resource.
 - Introduce automated monitoring/logging.
 
-**Deliverable:** Scaled-up SRP experiment.
+**Deliverable:** Scaled-up SDP experiment.
 
 ---
 
 ## Week 9: Frontier Topics & Future Directions
 **Themes:**
-- Agents vs SRPs, co-scientist metaphors.
+- Agents vs SDPs, co-scientist metaphors.
 - Multi-agent collaboration.
 - Open challenges and research frontiers.
 
 **Activities:**
-- Roundtable on “SRPs in 2030.”
+- Roundtable on “SDPs in 2030.”
 - Peer feedback on capstone plans.
 
 **Deliverable:** Capstone project proposal.
@@ -133,11 +133,11 @@ use SRPs to tackle practical problems in science and engineering.
 
 ## Week 10: Capstone Sprint
 **Themes:**
-- Integrating all components into a working SRP.
+- Integrating all components into a working SDP.
 
 **Activities:**
-- 1-week focused sprint to build and demo a domain-specific SRP.
+- 1-week focused sprint to build and demo a domain-specific SDP.
 - Peer review and presentation.
 
-**Deliverable:** Functioning SRP demonstration + final report.
+**Deliverable:** Functioning SDP demonstration + final report.
 

@@ -2,7 +2,9 @@
 
 # Building and Applying AI Agents for Science
 
-**NOTE: Class scheduled as CMSC 35370 for Autumn 2025. Please contact [Ian Foster](mailto:foster@uchicago.edu) if you want to join a discussion group earlier.**
+**NOTE: Class scheduled as CMSC 35370 for Autumn 2025. Please contact [Ian Foster](mailto:foster@uchicago.edu) with any questions.**
+
+Please see this [draft curriculum](curriculum.md).
 
 An **AI agent** is an autonomous program or system that perceives its environment, makes decisions, and takes actions to achieve specific goals.
 New **large language model** (LLM) and related technologies make it feasible to assemble collections of such agents that can automate important tasks in science and engineering, such as synthesizing information from the literature, identifying promising hypotheses, designing protocols to evaluate hypotheses, running experiments, and interpreting results.

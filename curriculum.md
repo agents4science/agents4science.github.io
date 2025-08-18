@@ -19,7 +19,6 @@ Introduces the concept of Scientific Discovery Platforms (SDPs): AI-native syste
 *Suggested Readings/Tools:*
 - *[Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects](https://arxiv.org/abs/2401.03428)*, Cheng et al. (Arxiv, 2024).
 - *[Artificial intelligence and illusions of understanding in scientific research](https://www.nature.com/articles/s41586-024-07146-0)*, Messeri & Crockett (Nature, 2023).  
-- Globus Compute docs for distributed science workflows.  <!--Wrong pointer?-->
 
 ### Wed Oct 1 — Lecture 2: Landscape of Reasoning AI Models
 Surveys frontier reasoning models: general-purpose LLMs (GPT, Claude), domain-specific foundation models (materials, bio, weather), and hybrids. We compare their reasoning abilities, biases, and trade-offs in scientific contexts.  

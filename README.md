@@ -1,22 +1,16 @@
 ![Header images showing scientists](Assets/new_bar.jpg?raw=true "Title")
 
-# Building and Applying AI Agents for Science
+# Agentic Scientific Discovery Platforms
 
 **NOTE: Class scheduled as CMSC 35370 for Autumn 2025. Please contact [Ian Foster](mailto:foster@uchicago.edu) with any questions.**
 
 Please see this [draft curriculum](curriculum.md).
 
-An **AI agent** is an autonomous program or system that perceives its environment, makes decisions, and takes actions to achieve specific goals.
-New **large language model** (LLM) and related technologies make it feasible to assemble collections of such agents that can automate important tasks in science and engineering, such as synthesizing information from the literature, identifying promising hypotheses, designing protocols to evaluate hypotheses, running experiments, and interpreting results.
+An agentic **Scientific Discovery Platform** (SDP) is an integrated environment that combines reasoning-capable AI with scientific and engineering resources—such as literature collections, simulation codes, experimental platforms, and knowledge bases—to accelerate the pace of discovery. Recent advances in large language models (LLMs) and related technologies make it possible to build such platforms that can automate key aspects of scientific work: synthesizing information from the literature, generating and prioritizing hypotheses, designing and executing protocols, running simulations or experiments, and interpreting results.
 
-To explore and advance these ideas, we are planning an intense class in this area for Fall 2025.
-This class is targetted at graduate students and talented final year undergrads who want to engage in this fascinating research area, but we will also welcome postdocs, scientists, and faculty who are prepared to work with us. 
-We will "**learn by doing**".
-Your instructors will provide infrastructure and examples, and in-depth presentations on the state of the art and open problems in agentic AI.
-Students will design, build, and apply AI agents for specific purposes.
-We welcome participants from **disciplines**, who may be most interested in how to apply such agents, and from **computer science**, who may be most interested in how to build such agents. We envision mutually instructive exchanges among people from diverse backgrounds.
+To explore and advance these ideas, we are offering this intensive class in Fall 2025. The course is targeted at graduate students and advanced undergraduates eager to engage with this emerging field, but we also welcome postdocs, scientists, and faculty who are prepared to participate actively. The class emphasizes “learning by doing”: instructors will provide infrastructure, working examples, and state-of-the-art perspectives on agentic AI and scientific discovery, while students will design, build, and apply their own SDPs to tackle domain-relevant problems.
 
-For more information, contact [Ian Foster](mailto:foster@uchicago.edu).
+We welcome as participants both **domain scientists**, who may be most interested in how to apply such platforms, and **computer scientists**, who may be most interested in how to build them. Our aim is to create a mutually instructive environment in which diverse expertise contributes to advancing the science and practice of agentic discovery.
 
 ## Initial class details
 

@@ -16,7 +16,8 @@ The following **draft curriculum** outlines topics to be covered and potential r
 ### Mon Sept 29 — Lecture 1: What is an SDP?
 Introduces the concept of Scientific Discovery Platforms (SDPs): AI-native systems that connect reasoning models with scientific resources. We’ll explore motivating case studies (wildfire hazard, antimicrobials, climate modeling) and outline the challenges of integrating AI into rigorous science.  
 
-*Suggested Readings/Tools:*  
+*Suggested Readings/Tools:*
+- *[Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects](https://arxiv.org/abs/2401.03428)*, Cheng et al. (Arxiv, 2024).
 - *[Artificial intelligence and illusions of understanding in scientific research](https://www.nature.com/articles/s41586-024-07146-0)*, Messeri & Crockett (Nature, 2023).  
 - Globus Compute docs for distributed science workflows.  <!--Wrong pointer?-->
 

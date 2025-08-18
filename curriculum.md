@@ -2,7 +2,7 @@
 
 **Fall 2025 Course Syllabus**
 
-**Schedule:** Mondays & Wednesdays, 3:00pm-4:20pm, too TBA  
+**Schedule:** Mondays & Wednesdays, 3:00pm-4:20pm, room TBA  
 **Start Date:** Monday, Sept 29, 2025  
 **End Date:** Wednesday, Dec 10, 2025 (Final Class Meeting: Capstone Presentations)  
 **No Class:** Week of Nov 24 (Thanksgiving); Monday, Dec 8 (College Reading Period)
@@ -155,7 +155,11 @@ Demonstration of automation pipelines with monitoring, logging, and adaptive wor
 
 ---
 
-## Week 9  *(No class week of Nov 24)*
+## No class week of Nov 24 -- Thanksgiving
+
+---
+
+## Week 9 
 
 ### Mon Dec 1 — Lecture 17: Frontiers of SDPs
 Explores frontiers: multi-agent collaboration, embodied co-scientists, integration with digital twins. Students speculate on SDPs in 2030.  

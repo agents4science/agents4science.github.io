@@ -7,6 +7,8 @@
 **End Date:** Wednesday, Dec 10, 2025 (Final Class Meeting: Capstone Presentations)  
 **No Class:** Week of Nov 24 (Thanksgiving); Monday, Dec 8 (College Reading Period)
 
+We will have **weekly assignments** and a **project**. We will arrange access to **AI models and compute and storage**: details TBD.
+
 The following **draft curriculum** outlines topics to be covered and potential readings. 
 
 ---
@@ -39,7 +41,8 @@ Covers techniques for eliciting better reasoning: prompting, chain-of-thought, r
 - LangChain / LlamaIndex tutorials.  
 
 ### Wed Oct 8 — Lecture 4: Hands-On: Comparing Models
-Lab session applying the same scientific question to different models (general vs domain-specific) and analyzing outputs. Emphasis on differences in accuracy, coverage, and reliability.
+Lab session applying the same scientific question to different models (general vs. domain-specific) and analyzing outputs.
+Emphasis on differences in accuracy, coverage, and reliability.
 
 *Suggested Readings/Tools:*  
 - OpenAI API playground or HuggingFace inference endpoints.  
@@ -114,6 +117,7 @@ Discusses scientific rigor in SDPs: falsifiability, reproducibility, uncertainty
 Participants design evaluation protocols for their prototypes: from unit-level tests to end-to-end validation. Discusses benchmark suites and shared tasks.  
 
 *Suggested Readings/Tools:*  
+- [*EAIRA: Establishing a Methodology for Evaluating AI Models as Scientific Research Assistants*](https://arxiv.org/abs/2502.20309), Cappello et al., 2025.
 - MLCommons Scientific Benchmarks.  
 - OpenCatalyst Project evaluation suite.  
 

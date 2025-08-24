@@ -14,18 +14,6 @@ We welcome as participants both **domain scientists**, who may be most intereste
 
 ## Initial class details
 
-The class will take place on the Hyde Park campus of the University of Chicago during the Autumn Quarter 2025, i.e., starting September 29, 2025, as **CMSC 35370-1: AI Agents for Science**.
+The class will take place at the University of Chicago during the Autumn Quarter 2025, i.e., starting September 29, 2025, as **CMSC 35370-1: AI Agents for Science**.
 
-We will organize access to powerful data and computing resources, including at the University of Chicago's [Research Computing Center](https://rcc.uchicago.edu) and the [Argonne Leadership Computing Facility](https://alcf.anl.gov), and autonomous laboratory capabilities.
-
-## Background information on AI Agents for Science
-
-The following figure from [Ghafarollahi and Buehler, 2024](https://arxiv.org/pdf/2407.10022) illustrates a multi-model multi-agent approach to materials discovery, modeling, and prediction.
-
-<img src="Assets/Buehler.jpg" alt="Alt Text">
-
-The following figure from [Gao et al.](https://www.cell.com/cell/fulltext/S0092-8674(24)01070-5) shows examples of AI agents in biology.
-
-<img src="Assets/1-s2.0-S0092867424010705-gr1_lrg.jpg" alt="Alt Text">
-
-
+We will organize access to AI models and to data and computing resources.

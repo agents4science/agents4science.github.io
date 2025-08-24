@@ -1,13 +1,4 @@
-# Agentic Scientific Discovery Platforms (SDPs)
-
-**Fall 2025 Course Syllabus**
-
-**Schedule:** Mondays & Wednesdays, 3:00pm-4:20pm, room TBA  
-**Start Date:** Monday, Sept 29, 2025  
-**End Date:** Wednesday, Dec 10, 2025 (Final Class Meeting: Capstone Presentations)  
-**No Class:** Week of Nov 24 (Thanksgiving); Monday, Dec 8 (College Reading Period)
-
-We will have **weekly assignments** and a **project**. We will arrange access to **AI models and compute and storage**: details TBD.
+# Agentic Scientific Discovery Platforms
 
 The following **draft curriculum** outlines topics to be covered and potential readings. 
 

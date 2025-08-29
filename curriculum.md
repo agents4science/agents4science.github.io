@@ -9,16 +9,20 @@ The following **draft curriculum** outlines topics to be covered and potential r
 ### Mon Sept 29 — Lecture 1: What is an SDP?
 Introduces the concept of Scientific Discovery Platforms (SDPs): AI-native systems that connect reasoning models with scientific resources. We’ll explore motivating case studies (wildfire hazard, antimicrobials, climate modeling) and outline the challenges of integrating AI into rigorous science.  
 
-*Suggested Readings/Tools:*
+*Readings:*
 - *[Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects](https://arxiv.org/abs/2401.03428)*, Cheng et al. (Arxiv, 2024).
-- *[Artificial intelligence and illusions of understanding in scientific research](https://www.nature.com/articles/s41586-024-07146-0)*, Messeri & Crockett (Nature, 2023).  
+- *[Artificial intelligence and illusions of understanding in scientific research](https://www.nature.com/articles/s41586-024-07146-0)*, Messeri & Crockett (Nature, 2023).
+- *[The Shift from Models to Compound AI Systems – The Berkeley Artificial Intelligence Research Blog](https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/).*
 
 ### Wed Oct 1 — Lecture 2: Landscape of Reasoning AI Models
 Surveys frontier reasoning models: general-purpose LLMs (GPT, Claude), domain-specific foundation models (materials, bio, weather), and hybrids. We compare their reasoning abilities, biases, and trade-offs in scientific contexts.  
 
-*Suggested Readings/Tools:*  
-- *[Capabilities and risks from frontier AI](https://www.gov.uk/government/publications/frontier-ai-capabilities-and-risks-discussion-paper)* (AI Safety Summit, 2024).  
-- HuggingFace model zoo (domain FMs).  
+*Readings:* 
+- *[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)*.
+- *[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948).*
+- *[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629).*
+
+*Assignment A1:* Implement a ReACT style agent  
 
 ---
 

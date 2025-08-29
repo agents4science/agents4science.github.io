@@ -14,52 +14,55 @@ Introduces the concept of Scientific Discovery Platforms (SDPs): AI-native syste
 - *[Artificial intelligence and illusions of understanding in scientific research](https://www.nature.com/articles/s41586-024-07146-0)*, Messeri & Crockett (Nature, 2023).
 - *[The Shift from Models to Compound AI Systems – The Berkeley Artificial Intelligence Research Blog](https://bair.berkeley.edu/blog/2024/02/18/compound-ai-systems/).*
 
-### Wed Oct 1 — Lecture 2: Landscape of Reasoning AI Models
-Surveys frontier reasoning models: general-purpose LLMs (GPT, Claude), domain-specific foundation models (materials, bio, weather), and hybrids. We compare their reasoning abilities, biases, and trade-offs in scientific contexts.  
+### Wed Oct 1 — Lecture 2: Frontiers of Language Models
+Surveys frontier reasoning models: general-purpose LLMs (GPT, Claude), domain-specific foundation models (materials, bio, weather), and hybrids. Covers techniques for eliciting better reasoning: prompting, chain-of-thought, retrieval-augmented generation (RAG), fine-tuning, and tool-augmented reasoning.
 
 *Readings:* 
 - *[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)*.
 - *[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948).*
 - *[ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629).*
 
-*Assignment A1:* Implement a ReACT style agent  
+*Assignment A1:* Implement a ReACT style agent.  
 
 ---
 
 ## Week 2
 
-### Mon Oct 6 — Lecture 3: Engaging Models
-Covers techniques for eliciting better reasoning: prompting, chain-of-thought, retrieval-augmented generation (RAG), fine-tuning, and tool-augmented reasoning. Discusses criteria for model selection.
+### Mon Oct 6 — Lecture 3: Systems for Agents
+Overview TBD.
 
-*Suggested Readings/Tools:*  
-- Anthropic *Constitutional AI* whitepaper.  
-- LangChain / LlamaIndex tutorials.  
+*Readings:*
+- *[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)*.
+- *[LangGraph](https://langchain-ai.github.io/langgraph/?ajs_aid=70d48da3-5563-4143-ba79-957377dfcf92)*.
+- *[AIOS: LLM Agent Operating System](https://arxiv.org/pdf/2403.16971)*.
+ 
+### Wed Oct 8 — Lecture 4: Retrieval Augmented Generation (RAG) and Vector Databases
+Overview TBD.
 
-### Wed Oct 8 — Lecture 4: Hands-On: Comparing Models
-Lab session applying the same scientific question to different models (general vs. domain-specific) and analyzing outputs.
-Emphasis on differences in accuracy, coverage, and reliability.
+*Readings:*
+- *[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)*.
+- *[The FAISS library](https://arxiv.org/abs/2401.08281)*.
 
-*Suggested Readings/Tools:*  
-- OpenAI API playground or HuggingFace inference endpoints.  
-- Sample dataset: PubChem or Materials Project abstracts.  
+*Assignment A2:* Hybrid retrieval.  
 
 ---
 
 ## Week 3
 
-### Mon Oct 13 — Lecture 5: Knowledge Representation for SDPs
-Examines ways to structure knowledge for AI reasoning: embeddings, ontologies, knowledge graphs, curated corpora. Discusses challenges of bias, incompleteness, and negative results.  
+### Mon Oct 13 — Lecture 5: Tool Calling
+Overview TBD.
 
-*Suggested Readings/Tools:*  
-- “Knowledge Graphs and AI” (*IEEE Intelligent Systems*, 2022).  
-- Semantic Scholar API.  
+*Readings:*  
+- *[Introduction - Model Context Protocol]()*.
 
-### Wed Oct 15 — Lecture 6: Building Knowledge Access Pipelines
-Demonstration of building semantic retrieval systems: embedding literature, running vector search, integrating with LLMs. Participants build a mini knowledge base for their domain.  
+### Wed Oct 15 — Lecture 6: HPC Systems and Self Driving Labs
+Overview TBD.
 
-*Suggested Readings/Tools:*  
-- FAISS / Milvus vector databases.  
-- Example corpus: ArXiv or PubMed subset.  
+*Readings:*  
+- *[Self-Driving Laboratories for Chemistry and Materials Science]()*, Chemical Reviews.
+- *[Empowering Scientific Workflows with Federated Agents]()*.
+
+*Assignment A3:* Implement Distributed Battleship (and/or Implement MCP toolbox),
 
 ---
 

@@ -1,10 +1,12 @@
 ![Header images showing scientists](Assets/new_bar.jpg?raw=true "Title")
 
-# Agentic Scientific Discovery Platforms
+# AI Agents for Science
 
 **Class scheduled as CMSC 35370 for Autumn 2025. Please contact [Ian Foster](mailto:foster@uchicago.edu) with any questions.**
 
 Please see this [draft curriculum](curriculum.md).
+
+**NOTE**: The class is currently at capacity. Please visit [https://waitlist.cs.uchicago.edu](https://waitlist.cs.uchicago.edu) to be added to the wait list.
 
 An agentic **Scientific Discovery Platform** (SDP) is an integrated environment that combines reasoning-capable AI with scientific and engineering resources—such as literature collections, simulation codes, experimental platforms, and knowledge bases—to accelerate the pace of discovery. Recent advances in large language models (LLMs) and related technologies make it possible to build such platforms that can automate key aspects of scientific work: synthesizing information from the literature, generating and prioritizing hypotheses, designing and executing protocols, running simulations or experiments, and interpreting results.
 

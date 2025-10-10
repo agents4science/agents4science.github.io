@@ -59,7 +59,7 @@ Introduces methods for invoking external tools from reasoning models. Focus on m
 How SDPs connect to HPC workflows and experimental labs. Covers distributed coordination, robotics, and federated agents.  
 
 *Readings:*  
-- *[Self-Driving Laboratories for Chemistry and Materials Science](https://pubs.acs.org/doi/10.1021/acs.chemrev.3c00489)*, *Chemical Reviews*.
+- *[Self-Driving Laboratories for Chemistry and Materials Science](https://pubs.acs.org/doi/10.1021/acs.chemrev.4c00055)*, *Chemical Reviews*.
 - *[Empowering Scientific Workflows with Federated Agents](https://arxiv.org/abs/2505.05428)*.
 
 *Assignment A3:* Implement Distributed Battleship (and/or Implement MCP toolbox).

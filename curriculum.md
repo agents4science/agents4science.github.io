@@ -19,6 +19,8 @@ Introduces AI agents and and the  sense-plan-act-learn loop. Motivates scientifi
 ### Wed Oct 1 — Lecture 2: Frontiers of Language Models
 Surveys frontier reasoning models: general-purpose LLMs (GPT, Claude), domain-specific foundation models (materials, bio, weather), and hybrids. Covers techniques for eliciting better reasoning: prompting, chain-of-thought, retrieval-augmented generation (RAG), fine-tuning, and tool-augmented reasoning.
 
+*Slides:* [Lecture 2 slides](Assets/Lecture_2_web.pdf).
+
 *Readings:* 
 - *[Chain-of-Thought Prompting Elicits Reasoning in Large Language Models](https://arxiv.org/abs/2201.11903)*.
 - *[DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning](https://arxiv.org/abs/2501.12948).*
@@ -31,7 +33,9 @@ Surveys frontier reasoning models: general-purpose LLMs (GPT, Claude), domain-sp
 ## Week 2
 
 ### Mon Oct 6 — Lecture 3: Systems for Agents
-Discusses architectures and frameworks for building multi-agent systems, with emphasis on inter-agent communication, orchestration, and lifecycle management.  
+Discusses architectures and frameworks for building multi-agent systems, with emphasis on inter-agent communication, orchestration, and lifecycle management. 
+
+*Slides:* [Lecture 3 slides](Assets/Lecture_3_web.pdf).
 
 *Readings:*
 - *[AutoGen: Enabling Next-Gen LLM Applications via Multi-Agent Conversation](https://arxiv.org/abs/2308.08155)*.
@@ -39,7 +43,9 @@ Discusses architectures and frameworks for building multi-agent systems, with em
 - *[AIOS: LLM Agent Operating System](https://arxiv.org/pdf/2403.16971)*.
  
 ### Wed Oct 8 — Lecture 4: Retrieval Augmented Generation (RAG) and Vector Databases
-Covers how to augment reasoning models with external knowledge bases, vector search, and hybrid retrieval methods.  
+Covers how to augment reasoning models with external knowledge bases, vector search, and hybrid retrieval methods. 
+
+*Slides:* [Lecture 4 slides](Assets/Lecture_4_web.pdf).
 
 *Readings:*
 - *[Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks](https://arxiv.org/abs/2005.11401)*.

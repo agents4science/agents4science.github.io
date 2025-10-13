@@ -9,7 +9,7 @@ The following **curriculum** outlines topics to be covered and readings, and pro
 ### Mon Sept 29 — Lecture 1: What is an agent?
 Introduces AI agents and and the  sense-plan-act-learn loop. Motivates scientific Discovery Platforms (SDPs): AI-native systems that connect reasoning models with scientific resources. 
 
-*Slides:* [Lecture 1 slides]().
+*Slides:* [Lecture 1 slides](Assets/Lecture1_web.pdf).
 
 *Readings:*
 - *[Exploring Large Language Model based Intelligent Agents: Definitions, Methods, and Prospects](https://arxiv.org/abs/2401.03428)*, Cheng et al. (Arxiv, 2024).

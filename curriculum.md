@@ -58,13 +58,17 @@ Covers how to augment reasoning models with external knowledge bases, vector sea
 ## Week 3
 
 ### Mon Oct 13 — Lecture 5: Tool Calling
-Introduces methods for invoking external tools from reasoning models. Focus on model context protocol (MCP), schema design, and execution management.  
+Introduces methods for invoking external tools from reasoning models. Focus on model context protocol (MCP), schema design, and execution management.
+
+*Slides:* [Lecture 5 slides](Assets/Lecture_5_web.pdf).
 
 *Readings:*  
 - *[Introduction - Model Context Protocol](https://modelcontextprotocol.io/).*
 
 ### Wed Oct 15 — Lecture 6: HPC Systems and Self Driving Labs
-How SDPs connect to HPC workflows and experimental labs. Covers distributed coordination, robotics, and federated agents.  
+How SDPs connect to HPC workflows and experimental labs. Covers distributed coordination, robotics, and federated agents. 
+
+*Slides:* [Lecture 6 slides](Assets/Lecture_6_web.pdf).
 
 *Readings:*  
 - *[Self-Driving Laboratories for Chemistry and Materials Science](https://pubs.acs.org/doi/10.1021/acs.chemrev.4c00055)*, *Chemical Reviews*.
@@ -81,7 +85,7 @@ Explores how scientists and agents collaborate: trust boundaries, interaction de
 
 *Readings:*  
 - *[Guidelines for Human-AI Interaction](https://dl.acm.org/doi/10.1145/3290605.3300233)*, Amershi et al. (*CHI*, 2019).  
-- *[Interactive Debugging and Steering of Multi-Agent AI Systems](https://dl.acm.org/doi/10.1145/3613904.3642738)* (*CHI*, 2025).  
+- *[Interactive Debugging and Steering of Multi-Agent AI Systems](https://dl.acm.org/doi/10.1145/3706598.3713581)* (*CHI*, 2025).  
 
 ### Wed Oct 22 — Lecture 8: Benchmarking and Evaluation
 Frameworks for assessing agents and SDPs: robustness, validity, and relevance.  

@@ -125,7 +125,7 @@ Explores originality, credit, and the risks of plagiarism in AI-generated scienc
 
 *Readings:*  
 - *[Can LLMs Generate Novel Research Ideas? A Large-Scale Human Study with 100+ NLP Researchers](https://arxiv.org/abs/2304.12519).*  
-- *[All That Glitters is Not Novel: Plagiarism in AI Generated Research](https://aclanthology.org/2024.findings-acl.315).*  
+- *[All That Glitters is Not Novel: Plagiarism in AI Generated Research](https://arxiv.org/pdf/2502.16487).*  
 
 *Assignment A5:* Capstone project planning (novel contributions).  
 

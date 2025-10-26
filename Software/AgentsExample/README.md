@@ -5,6 +5,8 @@
 - Per-agent, per-goal live updates; smooth rendering
 - Goals in **agents4science/workflows/goals.yaml**
 - Adjustable pacing via env vars: A4S_LATENCY, A4S_TOOL_LATENCY
+- Enable Argonne inference service LLM access via env var: A4S_USE_INFERENCE=1
+- Disable UI via env var: A4S_UI=0
 
 ## Quick start
 ```bash

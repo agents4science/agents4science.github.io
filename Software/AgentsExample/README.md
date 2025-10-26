@@ -10,6 +10,7 @@
 
 ## Quick start
 ```bash
+cd Software/AgentsExample
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export A4S_LATENCY=0.4

@@ -24,7 +24,7 @@ AGENTS = ["Scout", "Planner", "Operator", "Analyst", "Archivist"]
 
 # --- Config toggles via env ---
 SHOW_UI   = os.getenv("A4S_UI", "1") == "1"      # set A4S_UI=0 to disable the live UI
-QUIET_LOG = os.getenv("A4S_QUIET", "0") == "1"   # set A4S_QUIET=1 to mute logs during run
+QUIET_LOG = os.getenv("A4S_QUIET", "1") == "1"   # set A4S_QUIET=0 to show logs during run
 GOAL_FILE = os.getenv("AUDIOGOAL_SFILE", "agents4science/workflows/goals.yaml")
 MODEL     = os.getenv("A4S_MODEL", "openai/gpt-oss-20b")
 

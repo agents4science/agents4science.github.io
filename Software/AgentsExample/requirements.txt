@@ -3,3 +3,4 @@ pyyaml>=6.0
 rich>=13.8
 aiohttp
 openai
+globus_sdk

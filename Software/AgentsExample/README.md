@@ -17,3 +17,8 @@ export A4S_LATENCY=0.4
 export A4S_TOOL_LATENCY=0.2
 python main.py
 ```
+## Run with Argonne inference service
+
+```bash
+A4S_USE_INFERENCE=1 python main.py
+```

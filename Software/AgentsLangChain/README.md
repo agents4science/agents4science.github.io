@@ -1,9 +1,10 @@
 
 # AgentsLangChain
 
-A LangChain-based reimplementation of the **Agents4Science** classroom framework.
-This version replaces the custom agent orchestration with LangChain's
+A LangChain-based simplified reimplementation of the AgentsExample, replacing 
+the custom agent orchestration with LangChain's
 `ChatOpenAI`, `tool`, and `AgentExecutor` primitives.
+Does not provide dashboard, does not use Argonne inference service, and only has one tool.
 
 ## Roles
 | Role | Function |

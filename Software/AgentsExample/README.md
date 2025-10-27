@@ -1,5 +1,5 @@
 
-# Agents4Science Demo with Dashboard
+# Agents Demo with Dashboard
 
 - Full-screen Rich dashboard 
 - Per-agent, per-goal live updates

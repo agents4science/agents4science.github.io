@@ -1,0 +1,6 @@
+Software/AgentsExample/.venv/
+Software/AgentsExample/__pycache__/
+Software/AgentsExample/agents4science/__pycache__/
+Software/AgentsExample/agents4science/roles/__pycache__/
+Software/AgentsExample/agents4science/tools/__pycache__/
+Software/AgentsLangChain/.venv/

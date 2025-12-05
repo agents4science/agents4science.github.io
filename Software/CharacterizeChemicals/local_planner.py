@@ -100,11 +100,22 @@ You have access to these tools (BUT YOU ONLY OUTPUT A PLAN IN JSON;
 YOU DO NOT EXECUTE ANYTHING):
 
 - "rdkit_descriptors(smiles, descriptor_set)": fast, cheap descriptor
-  calculation from SMILES; can compute logP, TPSA, MolWt.
-- "xtb_opt(smiles, level)": geometry optimization + total energy +
-  dipole moment using xTB; 'level' is usually "GFN2-xTB".
-- "solvation_energy_from_xtb(geometry_path, solvent)": 
-  run GBSA solvation using an optimized geometry in XYZ format.
+  calculation from SMILES; can compute logP, TPSA, MolWt and returns
+  those fields in its output.
+
+- "xtb_opt(smiles, level)": generates a 3D geometry, runs a GFN2-xTB
+  optimization, and returns at least:
+    - "optimized_geometry": path to the XYZ geometry file
+    - "xtb_log_path": path to the xTB log file
+    - "E_total_hartree" and "E_total_eV": total energy
+    - "E_scc_hartree" and "E_scc_eV": SCC electronic energy
+    - "HOMO_LUMO_gap_eV": HOMO-LUMO gap
+    - "dipole_moment": total dipole moment in Debye
+
+- "solvation_energy_from_xtb(geometry_path, solvent)": runs a GBSA
+  solvation calculation starting from an optimized geometry. It returns:
+    - "solvation_free_energy_kcal_per_mol": total Gsolv in kcal/mol
+    - "xtb_gbsa_log": path to the GBSA log file
 
 Your job: given a SMILES string, a list of target properties, and an
 accuracy profile, produce a PLAN that is a JSON object with:
@@ -118,7 +129,29 @@ accuracy profile, produce a PLAN that is a JSON object with:
       "outputs": ["logP", "TPSA"],
       "depends_on": []
     },
-    ...
+    {
+      "id": "s2_xtb",
+      "tool": "xtb_opt",
+      "inputs": { "smiles": "<SMILES>", "level": "GFN2-xTB" },
+      "outputs": [
+        "optimized_geometry",
+        "E_total_hartree",
+        "E_scc_hartree",
+        "HOMO_LUMO_gap_eV",
+        "dipole_moment"
+      ],
+      "depends_on": ["s1_rdkit"]
+    },
+    {
+      "id": "s3_solvation",
+      "tool": "solvation_energy_from_xtb",
+      "inputs": {
+        "geometry_path": "step:s2_xtb.optimized_geometry",
+        "solvent": "water"
+      },
+      "outputs": ["solvation_free_energy_kcal_per_mol"],
+      "depends_on": ["s2_xtb"]
+    }
   ],
   "target_properties": [...]
 }
@@ -128,9 +161,10 @@ Rules:
 - Each "id" must be unique.
 - "depends_on" lists earlier step ids whose outputs are needed.
 - If an input needs a field from a previous step, write
-  "step:<STEP_ID>.<FIELD_NAME>", e.g. "step:s2_xtb.xtb_output_path".
+  "step:<STEP_ID>.<FIELD_NAME>", e.g. "step:s2_xtb.optimized_geometry".
 - Respond with VALID JSON ONLY. No commentary, no markdown, no extra text.
-        """.strip()
+""".strip()
+
 
         user_prompt = f"""
 SMILES: {smiles}

@@ -20,6 +20,10 @@ from academy.agent import Agent, action
 
 from local_planner import LocalPlannerLLM
 
+import math
+
+HARTREE_TO_EV = 27.211386245988  # CODATA-ish
+HARTREE_TO_KCAL_MOL = 627.509474  # for solvation if you want Eh->kcal/mol
 
 
 # ---------- Plan data structures ----------
@@ -131,9 +135,87 @@ class ToolRegistry:
             )
 
         if result.returncode != 0:
+            self.logger.error(
+                "[xTB] Command failed with return code %s; see log %s",
+                result.returncode,
+                log_path,
+            )
             raise RuntimeError(f"xTB failed (return code {result.returncode}) for {xyz_path}")
 
         return log_path
+
+    def _parse_xtb_dipole(self, text: str) -> float | None:
+        """
+        Extract dipole moment (Debye) from xTB output.
+        Looks for the 'full:' line under 'molecular dipole'.
+        """
+        import re
+
+        # First find the dipole block
+        block = re.search(r"molecular dipole:(.*?)(?=molecular quadrupole|$)", text, re.S)
+        if not block:
+            return None
+
+        dip_section = block.group(1)
+
+        # Look for the 'full:' line e.g.
+        # full:   -0.000   -0.000   -0.000     0.000
+        m = re.search(r"full:\s+([-\d\.Ee]+)\s+([-\d\.Ee]+)\s+([-\d\.Ee]+)\s+([-\d\.Ee]+)", dip_section)
+        if not m:
+            return None
+
+        # total dipole is last column
+        tot_dip = float(m.group(4))
+        return tot_dip
+
+    def _parse_xtb_energy_gap_and_dipole(self, log_path: Path) -> Dict[str, float]:
+        """
+        Parse SCC energy, total energy, HOMO-LUMO gap, and dipole from xTB log.
+        Returns energies in Hartree and eV, plus gap and dipole (Debye).
+        """
+        text = log_path.read_text()
+    
+        # SCC energy line:
+        # :: SCC energy               -10.334165418678 Eh    ::
+        m_scc = re.search(
+            r"::\s*SCC energy\s+(-?\d+\.\d+)\s+Eh", text
+        )
+        E_scc_h = float(m_scc.group(1)) if m_scc else None
+    
+        # total energy line:
+        # :: total energy             -10.275566002092 Eh    ::
+        m_tot = re.search(
+            r"::\s*total energy\s+(-?\d+\.\d+)\s+Eh", text
+        )
+        E_tot_h = float(m_tot.group(1)) if m_tot else None
+    
+        # HOMO-LUMO gap line:
+        # :: HOMO-LUMO gap               6.544150159267 eV    ::
+        m_gap = re.search(
+            r"::\s*HOMO-LUMO gap\s+(-?\d+\.\d+)\s+eV", text
+        )
+        gap_ev = float(m_gap.group(1)) if m_gap else None
+    
+        dipole_D = self._parse_xtb_dipole(text)
+    
+        out: Dict[str, float] = {}
+    
+        if E_scc_h is not None:
+            out["E_scc_hartree"] = E_scc_h
+            out["E_scc_eV"] = E_scc_h * HARTREE_TO_EV
+    
+        if E_tot_h is not None:
+            out["E_total_hartree"] = E_tot_h
+            out["E_total_eV"] = E_tot_h * HARTREE_TO_EV
+    
+        if gap_ev is not None:
+            out["HOMO_LUMO_gap_eV"] = gap_ev
+    
+        if dipole_D is not None:
+            out["dipole_moment"] = dipole_D  # Debye
+    
+        return out
+
 
     def _parse_xtb_energy_and_dipole(self, log_path: Path) -> Dict[str, float]:
         """
@@ -142,6 +224,8 @@ class ToolRegistry:
         This depends on xTB's output format; adjust regexes as needed.
         """
         text = log_path.read_text()
+
+        dipole_debye = _parse_xtb_dipole(text)
 
         # Example patterns; you may need to tweak based on your xTB version
         # TOTAL ENERGY      -40.1234560 Eh
@@ -165,65 +249,53 @@ class ToolRegistry:
         level = inputs.get("level", "GFN2-xTB")
         label = inputs.get("label", "molecule")
         self.logger.info("[xtb_opt] SMILES=%s level=%s", smiles, level)
-
-        # 1) Generate geometry and write XYZ
+    
         xyz_path = self._write_xyz_from_smiles(smiles, f"{label}_opt_in")
-
-        # 2) Run xTB optimization
         log_path = self._run_xtb(
             xyz_path,
             extra_args=["--opt", "--gfn", "2"],
             label=f"{label}_opt",
         )
-
-        parsed = self._parse_xtb_energy_and_dipole(log_path)
-
-        return {
-            "optimized_geometry": str(xyz_path),      # <-- canonical geometry path
-            "xtb_log_path": str(log_path),           # <-- log path
-            "E_total_hartree": parsed.get("E_total_hartree"),
-            "dipole_moment": parsed.get("dipole_moment"),
+    
+        parsed = self._parse_xtb_energy_gap_and_dipole(log_path)
+    
+        out: Dict[str, Any] = {
+            "optimized_geometry": str(xyz_path),
+            "xtb_log_path": str(log_path),
             "level": level,
             "smiles": smiles,
         }
+        out.update(parsed)  # E_total/E_scc/gap/dipole
+    
+        return out
 
-
-    async def xtb_opt_old(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
-        smiles = inputs["smiles"]
-        level = inputs.get("level", "GFN2-xTB")  # not used directly, but you could map to flags
-        label = inputs.get("label", "molecule")
-        self.logger.info("[xtb_opt] SMILES=%s level=%s", smiles, level)
-
-        # 1) Generate geometry and write XYZ
-        xyz_path = self._write_xyz_from_smiles(smiles, f"{label}_opt_in")
-
-        # 2) Run xTB optimization
-        log_path = self._run_xtb(xyz_path, extra_args=["--opt", "--gfn", "2"], label=f"{label}_opt")
-
-        # 3) Parse energy and dipole from log
-        parsed = self._parse_xtb_energy_and_dipole(log_path)
-
-        return {
-            "optimized_geometry": str(xyz_path),      # input geometry file
-            "xtb_output_path": str(log_path),         # xTB log
-            "E_total_hartree": parsed.get("E_total_hartree"),
-            "dipole_moment": parsed.get("dipole_moment"),
-            "level": level,
-            "smiles": smiles,
-        }
 
     # ---------- 3. xTB solvation energy ----------
 
     def _parse_xtb_gbsa(self, log_path: Path) -> float | None:
         """
-        Parse GBSA solvation energy from xTB log.
-
-        Look for lines like:
-        GBSA solvation free energy   -3.50 kcal/mol
+        Parse total solvation free energy (Gsolv) from xTB log, return kcal/mol.
         """
         text = log_path.read_text()
-        m = re.search(r"GBSA solvation free energy\s+(-?\d+\.\d+)\s*kcal/mol", text)
-        return float(m.group(1)) if m else None
+    
+        # Look for the Gsolv line in the SUMMARY block
+        m = re.search(r"::\s*->\s*Gsolv\s+(-?\d+\.\d+)\s+Eh", text)
+        if m:
+            gsolv_h = float(m.group(1))
+            gsolv_kcal = gsolv_h * HARTREE_TO_KCAL_MOL
+            return gsolv_kcal
+    
+        # fallback: last number before 'kcal/mol' anywhere (very defensive)
+        matches = re.findall(r"(-?\d+\.\d+)\s*kcal/mol", text)
+        if matches:
+            return float(matches[-1])
+    
+        self.logger.warning(
+            "[_parse_xtb_gbsa] Could not find Gsolv in %s",
+            log_path,
+        )
+        return None
+
 
     async def solvation_energy_from_xtb(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
         geometry_path = inputs["geometry_path"]
@@ -238,24 +310,20 @@ class ToolRegistry:
         if not xyz_path.is_absolute():
             xyz_path = self.workdir / xyz_path
     
-        if not xyz_path.exists():
-            raise FileNotFoundError(f"Geometry file for GBSA not found: {xyz_path}")
+        self.logger.info("Resolved geometry_path -> %s", xyz_path)
     
         log_gbsa = self._run_xtb(
             xyz_path,
             extra_args=["--gfn", "2", "--gbsa", solvent],
             label=f"{xyz_path.stem}_gbsa",
         )
-        dG = self._parse_xtb_gbsa(log_gbsa)
-
-        self.logger.info("Resolved geometry_path -> %s", xyz_path)
+        dG_kcal = self._parse_xtb_gbsa(log_gbsa)
     
         return {
-            "solvation_free_energy_kcal_per_mol": dG,
+            "solvation_free_energy_kcal_per_mol": dG_kcal,
             "solvent": solvent,
             "xtb_gbsa_log": str(log_gbsa),
         }
-
 
     async def solvation_energy_from_xtb_OLD(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
         xtb_output_path = inputs["xtb_output_path"]
@@ -446,23 +514,6 @@ class MoleculePropertyAgent(Agent):
                         else:
                             resolved_inputs[k] = v
 
-                        """
-                        if isinstance(v, str) and v.startswith("step:"):
-                            _, ref = v.split(":", 1)
-                            if "." in ref:
-                                dep_id, field = ref.split(".", 1)
-                                resolved_inputs[k] = results[dep_id][field]
-                            else:
-                                dep_id = ref
-                                resolved_inputs[k] = results[dep_id]
-                        elif isinstance(v, str) and "." in v and v.split(".", 1)[0] in results:
-                            # Fallback: treat "s2_xtb.xtb_output_path" as step reference
-                            dep_id, field = v.split(".", 1)
-                            resolved_inputs[k] = results[dep_id][field]
-                        else:
-                            resolved_inputs[k] = v
-                        """
-            
                     # BEFORE: log step + inputs
                     self.logger.info(
                         ">>> Executing step=%s tool=%s depends_on=%s\n    inputs=%s",
@@ -505,10 +556,17 @@ class MoleculePropertyAgent(Agent):
                 if k == "logP":
                     properties["logP"] = v
                 elif k == "dipole_moment":
+                    # store in Debye
                     properties["dipole_moment_D"] = v
-                elif k == "solvation_free_energy":
+                elif k == "solvation_free_energy_kcal_per_mol":
                     properties["solvation_free_energy_kcal_per_mol"] = v
-                elif k == "HOMO_LUMO_gap":
+                elif k == "E_total_hartree":
+                    properties["E_total_hartree"] = v
+                    properties["E_total_eV"] = out.get("E_total_eV")  # already computed
+                elif k == "E_scc_hartree":
+                    properties["E_scc_hartree"] = v
+                    properties["E_scc_eV"] = out.get("E_scc_eV")
+                elif k == "HOMO_LUMO_gap_eV":
                     properties["HOMO_LUMO_gap_eV"] = v
 
         response = {

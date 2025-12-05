@@ -1,3 +1,9 @@
+# Notes
+
+Install and run as described below. Defaults will characterize three simple molecules with a simple LLM. The simple LLM sometimes fails to generate valid JSON.
+
+The code has little error handling.
+
 # To get started
 
 ```

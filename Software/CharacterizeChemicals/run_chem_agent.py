@@ -7,7 +7,7 @@ from typing import List
 from academy.exchange import LocalExchangeFactory
 from academy.manager import Manager
 
-from chem_agent_llm import MoleculePropertyAgent
+from chem_agent import MoleculePropertyAgent
 
 
 # Optional: tame OpenMP issues on macOS / conda

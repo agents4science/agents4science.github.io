@@ -325,41 +325,6 @@ class ToolRegistry:
             "xtb_gbsa_log": str(log_gbsa),
         }
 
-    async def solvation_energy_from_xtb_OLD(self, inputs: Dict[str, Any]) -> Dict[str, Any]:
-        xtb_output_path = inputs["xtb_output_path"]
-        solvent = inputs.get("solvent", "water")
-        self.logger.info(
-            "[solvation_energy_from_xtb] xtb_output_path=%s solvent=%s",
-            xtb_output_path,
-            solvent,
-        )
-
-        # We have an optimized geometry (xyz). Run a GBSA solvation calculation on it.
-        # You might want to reuse the geometry file instead of the log; adjust as needed.
-        # Here, assume xtb_output_path is the *log* from the previous run and the xyz is
-        # the same as in xtb_opt.
-        # For simplicity, we'll just re-run xTB with GBSA on the same geometry.
-        prev_log = Path(xtb_output_path)
-        # Guess xyz from log name (molecule_opt.log -> molecule_opt_in.xyz)
-        stem = prev_log.stem.replace("_opt", "_opt_in")
-        xyz_guess = self.workdir / f"{stem}.xyz"
-
-        if not xyz_guess.exists():
-            raise FileNotFoundError(f"Could not find geometry file for GBSA: {xyz_guess}")
-
-        # Run GBSA with xTB
-        log_gbsa = self._run_xtb(
-            xyz_guess,
-            extra_args=["--gfn", "2", "--gbsa", solvent],
-            label=f"{stem}_gbsa",
-        )
-        dG = self._parse_xtb_gbsa(log_gbsa)
-
-        return {
-            "solvation_free_energy_kcal_per_mol": dG,
-            "solvent": solvent,
-            "xtb_gbsa_log": str(log_gbsa),
-        }
 
     # ---------- 4. Dispatcher ----------
 

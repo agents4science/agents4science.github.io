@@ -18,7 +18,7 @@ from rdkit.Chem import Crippen, rdMolDescriptors
 
 from academy.agent import Agent, action
 
-from local_planner import LocalPlannerLLM
+from .local_planner import LocalPlannerLLM
 
 import math
 
@@ -358,6 +358,10 @@ class MoleculePropertyAgent(Agent):
     def __init__(self, model_name: str = "microsoft/Phi-3.5-mini-instruct") -> None:
         super().__init__()
         self.logger = logging.getLogger(__name__)
+
+        model_name = os.getenv("PLANNER_MODEL", "microsoft/Phi-3.5-mini-instruct")
+        self.logger.info("Initializing planner LLM with model=%s", model_name)
+
         # build the planner LLM with the chosen model
         self.llm = LocalPlannerLLM(model_name=model_name)
         self._planner_lock = asyncio.Lock()

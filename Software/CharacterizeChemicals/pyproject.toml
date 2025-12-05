@@ -1,0 +1,38 @@
+[build-system]
+requires = ["setuptools>=65", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "characterize-chemicals"
+version = "0.1.0"
+description = "LLM-planned RDKit + xTB agent for molecular property characterization."
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}  # or whatever you prefer
+authors = [
+  { name = "Ian Foster", email = "you@example.com" }
+]
+
+dependencies = [
+  "academy-py>=0.1.0",         # adjust to actual version
+  "torch",                     # or pin to a version range if needed
+  "transformers",
+  "accelerate",
+  "huggingface_hub",
+  # RDKit + xTB are best installed via conda; you can leave them out or mark them as optional
+]
+
+[project.optional-dependencies]
+chem = [
+  "rdkit-pypi; platform_system != 'Linux'",  # NOTE: RDKit PyPI is limited, conda is preferred
+]
+
+[project.scripts]
+characterize-chemicals = "characterize_chemicals.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "."}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["characterize_chemicals*"]

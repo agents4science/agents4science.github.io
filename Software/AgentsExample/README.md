@@ -1,5 +1,5 @@
 
-# Agents4Science Demo with Dashboard
+# Agents Demo with Dashboard
 
 - Full-screen Rich dashboard 
 - Per-agent, per-goal live updates
@@ -10,9 +10,15 @@
 
 ## Quick start
 ```bash
+cd Software/AgentsExample
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export A4S_LATENCY=0.4
 export A4S_TOOL_LATENCY=0.2
 python main.py
+```
+## Run with Argonne inference service
+
+```bash
+A4S_USE_INFERENCE=1 python main.py
 ```

@@ -13,7 +13,7 @@ Given one or more **SMILES strings**, the agent:
 Main entry point:
 
 ```
-python run_chem_agent_phi.py
+python run_chem_agent.py
 ```
 
 ---
@@ -80,7 +80,7 @@ If this fails, your agent will not be able to run xTB-dependent steps.
 Run with default settings:
 
 ```
-python run_chem_agent_phi.py
+python run_chem_agent.py
 ```
 
 ### Command-line arguments
@@ -126,25 +126,25 @@ Default: `balanced`
 Default run:
 
 ```
-python run_chem_agent_phi.py
+python run_chem_agent.py
 ```
 
 Single molecule:
 
 ```
-python run_chem_agent_phi.py --smiles "CCO"
+python run_chem_agent.py --smiles "CCO"
 ```
 
 Custom planner model:
 
 ```
-python run_chem_agent_phi.py --model Qwen/Qwen2.5-7B-Instruct
+python run_chem_agent.py --model Qwen/Qwen2.5-7B-Instruct
 ```
 
 Multiple molecules:
 
 ```
-python run_chem_agent_phi.py -s CCO "c1ccccc1" "CC(=O)O"
+python run_chem_agent.py -s CCO "c1ccccc1" "CC(=O)O"
 ```
 
 ---

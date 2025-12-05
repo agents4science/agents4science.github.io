@@ -15,8 +15,12 @@ import torch
 import json
 from transformers import AutoModelForCausalLM, AutoTokenizer
 
+class PlannerJSONError(Exception):
+    """Error raised when the planner LLM fails to produce valid JSON after retries."""
+    pass
 
 @dataclass
+
 class ChatMessage:
     role: str   # "system" | "user"
     content: str
@@ -81,6 +85,23 @@ class LocalPlannerLLM:
         generated = out[0, inputs["input_ids"].shape[1]:]
         text = self.tokenizer.decode(generated, skip_special_tokens=True)
         return text
+
+    def _extract_first_json_object(self, text: str) -> Dict[str, Any]:
+        """
+        Try to parse the first JSON object found in the text using JSONDecoder.raw_decode.
+        Raises json.JSONDecodeError if nothing parseable is found.
+        """
+        decoder = json.JSONDecoder()
+        s = text.lstrip()
+    
+        # Find first '{'
+        start = s.find("{")
+        if start == -1:
+            raise json.JSONDecodeError("No '{' found", s, 0)
+        s = s[start:]
+    
+        obj, idx = decoder.raw_decode(s)
+        return obj
 
     def plan_workflow(
         self,
@@ -175,43 +196,50 @@ Produce an efficient plan using the tools, following the required JSON schema.
 Make sure all tools you reference are in the catalog.
         """.strip()
 
+        # --- First attempt ---
         messages = [
             ChatMessage(role="system", content=system_prompt),
             ChatMessage(role="user", content=user_prompt),
         ]
+    
         raw = self.generate(messages, temperature=0.1)
         raw_str = raw.strip()
-
-        # Use JSONDecoder to parse the first JSON object and ignore trailing junk
-        decoder = json.JSONDecoder()
-        s = raw_str.lstrip()
-
-        # Find first '{'
-        start = s.find("{")
-        if start == -1:
-            raise ValueError(f"No JSON object found in model output:\n{raw_str!r}")
-
-        s = s[start:]
-
+    
         try:
-            obj, idx = decoder.raw_decode(s)
+            plan_dict = self._extract_first_json_object(raw_str)
+            return plan_dict
         except json.JSONDecodeError as e:
-            # Optional: log the bad output for debugging
-            raise ValueError(f"Failed to parse JSON from model output: {e}\nOutput was:\n{s!r}") from e
-
-        plan_dict: Dict[str, Any] = obj
-        return plan_dict
-
-        """
-        # Simple heuristic to extract JSON
-        try:
-            start = raw_str.index("{")
-            end = raw_str.rindex("}")
-            json_str = raw_str[start : end + 1]
-        except ValueError:
-            json_str = raw_str  # hope it's pure JSON
-
-        plan_dict: Dict[str, Any] = json.loads(json_str)
-        return plan_dict
-        """
-
+            # Fall through to repair attempts
+            last_error = e
+    
+        # --- Repair attempts ---
+        for attempt in range(2):  # e.g. two repair tries
+            repair_messages = [
+                ChatMessage(
+                    role="system",
+                    content=(
+                        "You previously produced invalid JSON. "
+                        "Your ONLY task now is to output a corrected JSON object "
+                        "for the workflow plan, with no commentary, no markdown, "
+                        "no backticks."
+                    ),
+                ),
+                ChatMessage(
+                    role="user",
+                    content=f"Here is your previous output:\n\n{raw_str}\n\nNow output ONLY valid JSON.",
+                ),
+            ]
+            raw_repair = self.generate(repair_messages, temperature=0.0)
+            raw_repair_str = raw_repair.strip()
+    
+            try:
+                plan_dict = self._extract_first_json_object(raw_repair_str)
+                return plan_dict
+            except json.JSONDecodeError as e:
+                last_error = e
+                raw_str = raw_repair_str  # so we show the latest in the final error
+    
+        # If we get here, we failed all attempts
+        raise PlannerJSONError(
+            f"Failed to parse JSON plan after retries: {last_error}\nLast output was:\n{raw_str!r}"
+        )

@@ -86,7 +86,7 @@ python run_chem_agent.py
 ### Command-line arguments
 
 ```
-python run_chem_agent_phi.py     [--model MODEL]     [--smiles SMILES ...]     [--props PROPERTIES ...]     [--accuracy-profile {fast,balanced,high}]
+python run_chem_agent.py     [--model MODEL]     [--smiles SMILES ...]     [--props PROPERTIES ...]     [--accuracy-profile {fast,balanced,high}]
 ```
 
 ---

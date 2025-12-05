@@ -19,6 +19,7 @@ from rdkit.Chem import Crippen, rdMolDescriptors
 from academy.agent import Agent, action
 
 from .local_planner import LocalPlannerLLM
+from .local_planner import PlannerJSONError
 
 import math
 
@@ -251,12 +252,15 @@ class ToolRegistry:
         self.logger.info("[xtb_opt] SMILES=%s level=%s", smiles, level)
     
         xyz_path = self._write_xyz_from_smiles(smiles, f"{label}_opt_in")
-        log_path = self._run_xtb(
-            xyz_path,
-            extra_args=["--opt", "--gfn", "2"],
-            label=f"{label}_opt",
-        )
-    
+        try:
+            log_path = self._run_xtb(xyz_path, extra_args=["--opt", "--gfn", "2"], label=f"{label}_opt")
+        except RuntimeError as e:
+            self.logger.error("[xtb_opt] xTB failed for %s: %s", xyz_path, e)
+            return {
+                "status": "error",
+                "error_message": str(e),
+                "optimized_geometry": str(xyz_path),
+            }
         parsed = self._parse_xtb_energy_gap_and_dipole(log_path)
     
         out: Dict[str, Any] = {
@@ -312,11 +316,23 @@ class ToolRegistry:
     
         self.logger.info("Resolved geometry_path -> %s", xyz_path)
     
-        log_gbsa = self._run_xtb(
-            xyz_path,
-            extra_args=["--gfn", "2", "--gbsa", solvent],
-            label=f"{xyz_path.stem}_gbsa",
-        )
+        try:
+            log_gbsa = self._run_xtb(
+                xyz_path,
+                extra_args=["--gfn", "2", "--gbsa", solvent],
+                label=f"{xyz_path.stem}_gbsa",
+            )
+        except RuntimeError as e:
+            # DO NOT crash the agent: return an error status instead
+            self.logger.error("[xTB] GBSA failed for %s: %s", xyz_path, e)
+            return {
+                "status": "error",
+                "error_message": str(e),
+                "tool": "solvation_energy_from_xtb",
+                "geometry_path": str(xyz_path),
+                "solvent": solvent,
+            }
+
         dG_kcal = self._parse_xtb_gbsa(log_gbsa)
     
         return {
@@ -390,15 +406,27 @@ class MoleculePropertyAgent(Agent):
         )
 
         # --- u. Call OSS LLM *inside the agent* to get a plan ---
-        t0 = time.time()
-        plan_dict = await asyncio.to_thread(
-            self.llm.plan_workflow,
-            molecule_smiles,
-            target_properties,
-            accuracy_profile,
-        )
-        t1 = time.time()
-        self.logger.info("Planner (Phi) call took %.2f seconds", t1 - t0)
+        try:
+            t0 = time.time()
+            plan_dict = await asyncio.to_thread(
+                self.llm.plan_workflow,
+                molecule_smiles,
+                target_properties,
+                accuracy_profile,
+            )
+            t1 = time.time()
+            self.logger.info("Planner (Phi) call took %.2f seconds", t1 - t0)
+        except (PlannerJSONError, Exception) as e:
+            # Log and return a structured error instead of crashing
+            self.logger.error("Planner error for SMILES=%s: %s", molecule_smiles, e)
+            return {
+                "status": "error",
+                "molecule_smiles": molecule_smiles,
+                "properties": {},
+                "plan_used": None,
+                "provenance": {"tools": []},
+                "error_message": f"Planner failed to produce a valid plan: {e}",
+            }
 
         steps = [
             PlanStep(
@@ -412,7 +440,7 @@ class MoleculePropertyAgent(Agent):
         ]
         plan = Plan(steps=steps, target_properties=plan_dict["target_properties"])
 
-        self.logger.info(
+        self.logger.debug(
             "MoleculePropertyAgent: received plan %s",
             json.dumps(
                 {
@@ -484,7 +512,7 @@ class MoleculePropertyAgent(Agent):
                             resolved_inputs[k] = v
 
                     # BEFORE: log step + inputs
-                    self.logger.info(
+                    self.logger.debug(
                         ">>> Executing step=%s tool=%s depends_on=%s\n    inputs=%s",
                         step.id,
                         step.tool,
@@ -495,7 +523,7 @@ class MoleculePropertyAgent(Agent):
                     tool_output = await registry.run_tool(step.tool, resolved_inputs)
             
                     # AFTER: log outputs (hide internal _ fields)
-                    self.logger.info(
+                    self.logger.debug(
                         "<<< Finished step=%s tool=%s\n    outputs=%s",
                         step.id,
                         step.tool,
@@ -520,7 +548,14 @@ class MoleculePropertyAgent(Agent):
 
         # --- 3. Aggregate outputs → canonical properties ---
         properties: Dict[str, Any] = {}
+        tool_errors = {}
         for step_id, out in results.items():
+            # If a tool reported an error status, record it
+            if out.get("status") == "error":
+                tool_name = out.get("_tool", step_id)
+                tool_errors[tool_name] = out.get("error_message", "unknown error")
+                # Optionally skip further processing of this step's outputs
+                # continue
             for k, v in out.items():
                 if k == "logP":
                     properties["logP"] = v
@@ -539,15 +574,18 @@ class MoleculePropertyAgent(Agent):
                     properties["HOMO_LUMO_gap_eV"] = v
 
         response = {
-            "status": "success",
+            "status": "success" if not tool_errors else "partial_success",
             "molecule_smiles": molecule_smiles,
             "properties": properties,
             "plan_used": {
                 "steps": [asdict(s) for s in plan.steps],
                 "target_properties": plan.target_properties,
             },
-            "provenance": {"tools": provenance_tools},
-            "error_message": None,
+            "provenance": {
+                "tools": provenance_tools,
+                "tool_errors": tool_errors,
+            },
+            "error_message": None if not tool_errors else "Some tools failed; see tool_errors.",
         }
         self.logger.info(
             "MoleculePropertyAgent: finished SMILES=%s properties=%s",
@@ -555,4 +593,3 @@ class MoleculePropertyAgent(Agent):
             properties,
         )
         return response
-

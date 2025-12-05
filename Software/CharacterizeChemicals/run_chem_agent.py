@@ -7,7 +7,15 @@ from typing import List
 from academy.exchange import LocalExchangeFactory
 from academy.manager import Manager
 
+import multiprocessing
+from concurrent.futures import ProcessPoolExecutor
+
 from chem_agent import MoleculePropertyAgent
+
+from academy.exchange.cloud.client import HttpExchangeFactory
+from globus_compute_sdk import Executor as GCExecutor
+
+EXCHANGE_ADDRESS = "https://exchange.academy-agents.org"
 
 
 # Optional: tame OpenMP issues on macOS / conda
@@ -72,7 +80,48 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-async def main(args: argparse.Namespace) -> None:
+async def main(args) -> int:
+    logging.basicConfig(level=logging.INFO)
+
+    # 1. Choose an executor ("launcher") based on environment
+    if "CHEM_ENDPOINT_ID" in os.environ:
+        # Launch agents on a Globus Compute endpoint
+        executor = GCExecutor(os.environ["CHEM_ENDPOINT_ID"])
+    else:
+        # Fallback: run agents in a local process pool
+        mp_context = multiprocessing.get_context("spawn")
+        executor = ProcessPoolExecutor(
+            max_workers=6,
+            initializer=logging.basicConfig,
+            mp_context=mp_context,
+        )
+
+    # 2. Use HttpExchangeFactory + executors=... (like run-04.py)
+    async with await Manager.from_exchange_factory(
+        factory=HttpExchangeFactory(
+            EXCHANGE_ADDRESS,
+            auth_method="globus",
+        ),
+        executors=executor,
+    ) as manager:
+        # Launch your chem agent as usual
+        chem_handle = await manager.launch(MoleculePropertyAgent)
+
+        # Call actions on the agent
+        for smiles in args.smiles:
+            res = await chem_handle.compute_properties(
+                molecule_smiles=smiles,
+                target_properties=args.props,
+                accuracy_profile=args.accuracy_profile,
+                max_wallclock_minutes=10,
+            )
+            print("SMILES:", smiles)
+            print("Status:", res["status"])
+            print("Properties:", res["properties"])
+            print()
+
+
+async def main_OLD(args: argparse.Namespace) -> None:
     async with await Manager.from_exchange_factory(
         factory=LocalExchangeFactory(),
     ) as manager:

@@ -94,24 +94,21 @@ python run_chem_agent_phi.py     [--model MODEL]     [--smiles SMILES ...]     [
 ## 🔣 Arguments
 
 ### `--model`, `-m`
-Hugging Face model ID for the **planner LLM**.  
-Default:
+Hugging Face model ID for the **planner LLM**. Default:
 
 ```
 microsoft/Phi-3.5-mini-instruct
 ```
 
 ### `--smiles`, `-s`
-One or more SMILES strings.  
-Default:
+One or more SMILES strings. Default:
 
 ```
 CCO  c1ccccc1  CC(=O)O
 ```
 
 ### `--props`, `-p`
-Desired properties (used as hints for the planner).  
-Default:
+Desired properties (used as hints for the planner). Default:
 
 ```
 logP dipole_moment solvation_free_energy
@@ -305,18 +302,3 @@ This project uses:
 - **Transformers / Accelerate / torch**  
 - **Phi-3.5-mini-instruct** — https://huggingface.co/microsoft/Phi-3.5-mini-instruct  
 
-Please respect the licenses of all upstream packages.
-
----
-
-## 🙋 Need more?
-
-I can generate:
-
-- an architecture diagram  
-- a Quick Start section  
-- a `conda` `environment.yml`  
-- example output tables  
-- GitHub Actions for CI  
-
-Just ask!

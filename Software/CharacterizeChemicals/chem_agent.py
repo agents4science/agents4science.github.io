@@ -322,16 +322,16 @@ class ToolRegistry:
                 extra_args=["--gfn", "2", "--gbsa", solvent],
                 label=f"{xyz_path.stem}_gbsa",
             )
-           except RuntimeError as e:
-               # DO NOT crash the agent: return an error status instead
-               self.logger.error("[xTB] GBSA failed for %s: %s", xyz_path, e)
-               return {
-                  "status": "error",
-                  "error_message": str(e),
-                  "tool": "solvation_energy_from_xtb",
-                  "geometry_path": str(xyz_path),
-                  "solvent": solvent,
-              }
+        except RuntimeError as e:
+            # DO NOT crash the agent: return an error status instead
+            self.logger.error("[xTB] GBSA failed for %s: %s", xyz_path, e)
+            return {
+                "status": "error",
+                "error_message": str(e),
+                "tool": "solvation_energy_from_xtb",
+                "geometry_path": str(xyz_path),
+                "solvent": solvent,
+            }
 
         dG_kcal = self._parse_xtb_gbsa(log_gbsa)
     
@@ -436,7 +436,7 @@ class MoleculePropertyAgent(Agent):
         ]
         plan = Plan(steps=steps, target_properties=plan_dict["target_properties"])
 
-        self.logger.info(
+        self.logger.debug(
             "MoleculePropertyAgent: received plan %s",
             json.dumps(
                 {
@@ -508,7 +508,7 @@ class MoleculePropertyAgent(Agent):
                             resolved_inputs[k] = v
 
                     # BEFORE: log step + inputs
-                    self.logger.info(
+                    self.logger.debug(
                         ">>> Executing step=%s tool=%s depends_on=%s\n    inputs=%s",
                         step.id,
                         step.tool,
@@ -519,7 +519,7 @@ class MoleculePropertyAgent(Agent):
                     tool_output = await registry.run_tool(step.tool, resolved_inputs)
             
                     # AFTER: log outputs (hide internal _ fields)
-                    self.logger.info(
+                    self.logger.debug(
                         "<<< Finished step=%s tool=%s\n    outputs=%s",
                         step.id,
                         step.tool,
@@ -544,6 +544,7 @@ class MoleculePropertyAgent(Agent):
 
         # --- 3. Aggregate outputs → canonical properties ---
         properties: Dict[str, Any] = {}
+        tool_errors = {}
         for step_id, out in results.items():
             # If a tool reported an error status, record it
             if out.get("status") == "error":

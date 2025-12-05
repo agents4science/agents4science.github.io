@@ -19,6 +19,7 @@ from rdkit.Chem import Crippen, rdMolDescriptors
 from academy.agent import Agent, action
 
 from local_planner import LocalPlannerLLM
+from local_planner import PlannerJSONError
 
 import math
 
@@ -386,15 +387,27 @@ class MoleculePropertyAgent(Agent):
         )
 
         # --- u. Call OSS LLM *inside the agent* to get a plan ---
-        t0 = time.time()
-        plan_dict = await asyncio.to_thread(
-            self.llm.plan_workflow,
-            molecule_smiles,
-            target_properties,
-            accuracy_profile,
-        )
-        t1 = time.time()
-        self.logger.info("Planner (Phi) call took %.2f seconds", t1 - t0)
+        try:
+            t0 = time.time()
+            plan_dict = await asyncio.to_thread(
+                self.llm.plan_workflow,
+                molecule_smiles,
+                target_properties,
+                accuracy_profile,
+            )
+            t1 = time.time()
+            self.logger.info("Planner (Phi) call took %.2f seconds", t1 - t0)
+        except PlannerJSONError as e:
+            # Log and return a structured error instead of crashing
+            self.logger.error("Planner failed for SMILES=%s: %s", molecule_smiles, e)
+            return {
+                "status": "error",
+                "molecule_smiles": molecule_smiles,
+                "properties": {},
+                "plan_used": None,
+                "provenance": {"tools": []},
+                "error_message": f"Planner failed to produce a valid plan: {e}",
+            }
 
         steps = [
             PlanStep(

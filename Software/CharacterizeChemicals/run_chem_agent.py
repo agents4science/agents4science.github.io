@@ -8,7 +8,7 @@ from academy.manager import Manager
 
 from characterize_chemicals.chem_agent import MoleculePropertyAgent
 
-EXCHANGE_ADDRESS = "https://exchange.academy-agents.org"
+#EXCHANGE_ADDRESS = "https://exchange.academy-agents.org"
 
 EXCHANGE_PORT = 8000 
 
@@ -71,33 +71,77 @@ def parse_args() -> argparse.Namespace:
         help="Accuracy/speed tradeoff hint for the planner (default: balanced).",
     )
 
+    parser.add_argument(
+        "--max-wallclock-minutes",
+        "-w",
+        type=float,
+        default=10.0,
+        help="Maximum wallclock minutes per molecule.",
+    )
+
     return parser.parse_args()
+
+
+async def launch_chem_agent(manager, args):
+    """
+    This function assumes it's inside an event loop and can use await.
+    """
+
+    chem_handle = await manager.launch(MoleculePropertyAgent)
+
+    results = []
+    # We want this to be parallel I assume?
+    for smiles in args.smiles:
+        res = await chem_handle.compute_properties(
+            molecule_smiles=smiles,
+            target_properties=args.props,
+            accuracy_profile=args.accuracy_profile,
+            max_wallclock_minutes=args.max_wallclock_minutes,
+        )
+        results.append((smiles, res))
+    return results
 
 
 async def main(args) -> int:
     logging.basicConfig(level=logging.INFO)
 
-    # 1. Choose an executor ("launcher") based on environment
-    if "CHEM_ENDPOINT_ID" in os.environ:
-        # Launch agents on a Globus Compute endpoint
-        from globus_compute_sdk import Executor as GCExecutor
-
-        executor = GCExecutor(os.environ["CHEM_ENDPOINT_ID"])
-    elif "EXCHANGE_PORT" in os.environ:
+    if "EXCHANGE_PORT" in os.environ:
         # Use Parsl executor
         from parsl.concurrent import ParslPoolExecutor
         from parsl.configs.htex_local import config
+        from academy.exchange.cloud import spawn_http_exchange
 
-        factory = spawn_http_exchange('localhost', EXCHANGE_PORT)
-        executor = ParslPoolExecutor(
-            config=Config(
-                executors=[ThreadPoolExecutor(max_threads=3),]
+        from parsl.concurrent import ParslPoolExecutor
+        from parsl.config import Config
+        from parsl.executors.threads import ThreadPoolExecutor
+        from academy.exchange.cloud.client import HttpExchangeFactory
+
+        print('RUN_CHEM_AGENT: Using Parsl executor')
+        with spawn_http_exchange("localhost", EXCHANGE_PORT) as factory:
+            # e.g. Parsl executor
+            executor = ParslPoolExecutor(
+                config=Config(
+                    executors=[ThreadPoolExecutor(max_threads=3)]
+                )
+
             )
-        )
+            async with await Manager.from_exchange_factory(
+                factory=factory,
+                executors=executor,
+            ) as manager:
+                results = await launch_chem_agent(manager, args)
+                for smiles, res in results:
+                    print("=" * 60)
+                    print("SMILES:", smiles)
+                    print("Status:", res["status"])
+                    print("Properties:", res["properties"])
+                    print()
+
     elif "EXCHANGE_ADDRESS" in os.environ:
         # Run agents in a local process pool
         from academy.exchange.cloud.client import HttpExchangeFactory
 
+        print('RUN_CHEM_AGENT: Using local multiprocessing executor')
         factory=HttpExchangeFactory(
             EXCHANGE_ADDRESS,
             auth_method="globus",
@@ -108,74 +152,30 @@ async def main(args) -> int:
             initializer=logging.basicConfig,
             mp_context=mp_context,
         )
+
+    #elif "CHEM_ENDPOINT_ID" in os.environ:
+        # Launch agents on a Globus Compute endpoint
+        #from globus_compute_sdk import Executor as GCExecutor
+        #executor = GCExecutor(os.environ["CHEM_ENDPOINT_ID"])
+
     else:
-        # Fallback: run local agent
+        # Launch the agent locally
         from academy.exchange import LocalExchangeFactory
         import multiprocessing
         from concurrent.futures import ProcessPoolExecutor
 
-        factory = LocalExchangeFactory()
-        executor = None
-
-
-    # 2. Use HttpExchangeFactory + executors=... (like run-04.py)
-    async with await Manager.from_exchange_factory(
-        factory = factory,
-        executors=executor,
-    ) as manager:
-        # Launch your chem agent as usual
-        chem_handle = await manager.launch(MoleculePropertyAgent)
-
-        # Call actions on the agent
-        for smiles in args.smiles:
-            res = await chem_handle.compute_properties(
-                molecule_smiles=smiles,
-                target_properties=args.props,
-                accuracy_profile=args.accuracy_profile,
-                max_wallclock_minutes=10,
-            )
-            print("SMILES:", smiles)
-            print("Status:", res["status"])
-            print("Properties:", res["properties"])
-            print()
-
-
-async def main_OLD(args: argparse.Namespace) -> None:
-    async with await Manager.from_exchange_factory(
-        factory=LocalExchangeFactory(),
-    ) as manager:
-        # Launch the agent with the chosen model
-        chem_handle = await manager.launch(MoleculePropertyAgent, args=(args.model,))
-        smiles_list: List[str] = args.smiles
-        target_properties: List[str] = args.props
-
-        logging.info(
-            "Running MoleculePropertyAgent with model=%s on SMILES=%s props=%s",
-            args.model,
-            smiles_list,
-            target_properties,
-        )
-
-        results = []
-        # Sequential calls (keeps planner LLM happy on a single M1)
-        for smiles in smiles_list:
-            res = await chem_handle.compute_properties(
-                molecule_smiles=smiles,
-                target_properties=target_properties,
-                accuracy_profile=args.accuracy_profile,
-                max_wallclock_minutes=10,
-            )
-            results.append(res)
-
-        for smiles, res in zip(smiles_list, results, strict=True):
-            print("=" * 60)
-            print(f"SMILES: {smiles}")
-            print("Status:", res["status"])
-            print("Properties:", res["properties"])
-            print("Plan steps:", len(res["plan_used"]["steps"]))
-            print()
-
-        await manager.shutdown(chem_handle, blocking=True)
+        print('RUN_CHEM_AGENT: Using local executor')
+        async with await Manager.from_exchange_factory(
+            factory=LocalExchangeFactory(),
+        ) as manager:
+            # Launch the agent with embedded planner
+            results = await launch_chem_agent(manager, args)
+            for smiles, res in results:
+                print("=" * 60)
+                print("SMILES:", smiles)
+                print("Status:", res["status"])
+                print("Properties:", res["properties"])
+                print()
 
 
 if __name__ == "__main__":

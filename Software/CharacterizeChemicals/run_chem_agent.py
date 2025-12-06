@@ -10,7 +10,7 @@ from characterize_chemicals.chem_agent import MoleculePropertyAgent
 
 #EXCHANGE_ADDRESS = "https://exchange.academy-agents.org"
 
-EXCHANGE_PORT = 8000 
+#EXCHANGE_PORT = 8000 
 
 # Optional: tame OpenMP issues on macOS / conda
 os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
@@ -117,7 +117,7 @@ async def main(args) -> int:
         from academy.exchange.cloud.client import HttpExchangeFactory
 
         print('RUN_CHEM_AGENT: Using Parsl executor')
-        with spawn_http_exchange("localhost", EXCHANGE_PORT) as factory:
+        with spawn_http_exchange("localhost", os.environ["EXCHANGE_PORT"]) as factory:
             # e.g. Parsl executor
             executor = ParslPoolExecutor(
                 config=Config(
@@ -140,18 +140,32 @@ async def main(args) -> int:
     elif "EXCHANGE_ADDRESS" in os.environ:
         # Run agents in a local process pool
         from academy.exchange.cloud.client import HttpExchangeFactory
+        import multiprocessing
+        from concurrent.futures import ProcessPoolExecutor
 
         print('RUN_CHEM_AGENT: Using local multiprocessing executor')
-        factory=HttpExchangeFactory(
-            EXCHANGE_ADDRESS,
+        with HttpExchangeFactory(
+            os.environ["EXCHANGE_ADDRESS"],
             auth_method="globus",
-        ),
-        mp_context = multiprocessing.get_context("spawn")
-        executor = ProcessPoolExecutor(
-            max_workers=3,
-            initializer=logging.basicConfig,
-            mp_context=mp_context,
-        )
+        )as factory:
+            mp_context = multiprocessing.get_context("spawn")
+            executor = ProcessPoolExecutor(
+                max_workers=3,
+                initializer=logging.basicConfig,
+                mp_context=mp_context,
+            )
+
+            async with await Manager.from_exchange_factory(
+                factory=factory,
+                executors=executor,
+            ) as manager:
+                results = await launch_chem_agent(manager, args)
+                for smiles, res in results:
+                    print("=" * 60)
+                    print("SMILES:", smiles)
+                    print("Status:", res["status"])
+                    print("Properties:", res["properties"])
+                    print()
 
     #elif "CHEM_ENDPOINT_ID" in os.environ:
         # Launch agents on a Globus Compute endpoint

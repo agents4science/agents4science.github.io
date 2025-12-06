@@ -4,19 +4,13 @@ import logging
 import argparse
 from typing import List
 
-from academy.exchange import LocalExchangeFactory
 from academy.manager import Manager
 
-import multiprocessing
-from concurrent.futures import ProcessPoolExecutor
-
-from chem_agent import MoleculePropertyAgent
-
-from academy.exchange.cloud.client import HttpExchangeFactory
-from globus_compute_sdk import Executor as GCExecutor
+from characterize_chemicals.chem_agent import MoleculePropertyAgent
 
 EXCHANGE_ADDRESS = "https://exchange.academy-agents.org"
 
+EXCHANGE_PORT = 8000 
 
 # Optional: tame OpenMP issues on macOS / conda
 os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
@@ -86,22 +80,47 @@ async def main(args) -> int:
     # 1. Choose an executor ("launcher") based on environment
     if "CHEM_ENDPOINT_ID" in os.environ:
         # Launch agents on a Globus Compute endpoint
-        executor = GCExecutor(os.environ["CHEM_ENDPOINT_ID"])
-    else:
-        # Fallback: run agents in a local process pool
-        mp_context = multiprocessing.get_context("spawn")
-        executor = ProcessPoolExecutor(
-            max_workers=6,
-            initializer=logging.basicConfig,
-            mp_context=mp_context,
-        )
+        from globus_compute_sdk import Executor as GCExecutor
 
-    # 2. Use HttpExchangeFactory + executors=... (like run-04.py)
-    async with await Manager.from_exchange_factory(
+        executor = GCExecutor(os.environ["CHEM_ENDPOINT_ID"])
+    elif "EXCHANGE_PORT" in os.environ:
+        # Use Parsl executor
+        from parsl.concurrent import ParslPoolExecutor
+        from parsl.configs.htex_local import config
+
+        factory = spawn_http_exchange('localhost', EXCHANGE_PORT)
+        executor = ParslPoolExecutor(
+            config=Config(
+                executors=[ThreadPoolExecutor(max_threads=3),]
+            )
+        )
+    elif "EXCHANGE_ADDRESS" in os.environ:
+        # Run agents in a local process pool
+        from academy.exchange.cloud.client import HttpExchangeFactory
+
         factory=HttpExchangeFactory(
             EXCHANGE_ADDRESS,
             auth_method="globus",
         ),
+        mp_context = multiprocessing.get_context("spawn")
+        executor = ProcessPoolExecutor(
+            max_workers=3,
+            initializer=logging.basicConfig,
+            mp_context=mp_context,
+        )
+    else:
+        # Fallback: run local agent
+        from academy.exchange import LocalExchangeFactory
+        import multiprocessing
+        from concurrent.futures import ProcessPoolExecutor
+
+        factory = LocalExchangeFactory()
+        executor = None
+
+
+    # 2. Use HttpExchangeFactory + executors=... (like run-04.py)
+    async with await Manager.from_exchange_factory(
+        factory = factory,
         executors=executor,
     ) as manager:
         # Launch your chem agent as usual

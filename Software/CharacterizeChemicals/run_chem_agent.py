@@ -116,7 +116,7 @@ async def main(args) -> int:
         from parsl.executors.threads import ThreadPoolExecutor
         from academy.exchange.cloud.client import HttpExchangeFactory
 
-        print('RUN_CHEM_AGENT: Using Parsl executor')
+        print('RUN_CHEM_AGENT: Using Parsl executor as EXCHANGE_PORT set')
         with spawn_http_exchange("localhost", os.environ["EXCHANGE_PORT"]) as factory:
             # e.g. Parsl executor
             executor = ParslPoolExecutor(
@@ -143,7 +143,7 @@ async def main(args) -> int:
         import multiprocessing
         from concurrent.futures import ProcessPoolExecutor
 
-        print('RUN_CHEM_AGENT: Using local multiprocessing executor')
+        print('RUN_CHEM_AGENT: Using local multiprocessing executor as EXCHANGE_ADDRESS set')
         with HttpExchangeFactory(
             os.environ["EXCHANGE_ADDRESS"],
             auth_method="globus",
@@ -178,7 +178,7 @@ async def main(args) -> int:
         import multiprocessing
         from concurrent.futures import ProcessPoolExecutor
 
-        print('RUN_CHEM_AGENT: Using local executor')
+        print('RUN_CHEM_AGENT: Using local executors neither EXCHANGE_PORT nor EXCHANGE_ADDRESS set')
         async with await Manager.from_exchange_factory(
             factory=LocalExchangeFactory(),
         ) as manager:

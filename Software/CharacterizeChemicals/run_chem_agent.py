@@ -5,11 +5,9 @@ import argparse
 from typing import List
 
 from academy.manager import Manager
-
 from characterize_chemicals.chem_agent import MoleculePropertyAgent
 
 #EXCHANGE_ADDRESS = "https://exchange.academy-agents.org"
-
 #EXCHANGE_PORT = 8000 
 
 # Optional: tame OpenMP issues on macOS / conda
@@ -17,12 +15,10 @@ os.environ.setdefault("KMP_DUPLICATE_LIB_OK", "TRUE")
 os.environ.setdefault("OMP_NUM_THREADS", "1")
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
-
 logging.basicConfig(
     level=logging.INFO,
     format="%(asctime)s %(levelname)s [%(name)s] %(message)s",
 )
-
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
@@ -108,16 +104,16 @@ async def main(args) -> int:
     if "EXCHANGE_PORT" in os.environ:
         # Use Parsl executor
         from parsl.concurrent import ParslPoolExecutor
-        from parsl.configs.htex_local import config
-        from academy.exchange.cloud import spawn_http_exchange
-
-        from parsl.concurrent import ParslPoolExecutor
         from parsl.config import Config
         from parsl.executors.threads import ThreadPoolExecutor
-        from academy.exchange.cloud.client import HttpExchangeFactory
+        #from parsl.configs.htex_local import config
+        from academy.exchange.cloud.parsl import spawn_http_exchange
 
-        print('RUN_CHEM_AGENT: Using Parsl executor as EXCHANGE_PORT set')
-        with spawn_http_exchange("localhost", int(os.environ["EXCHANGE_PORT"])) as factory:
+        #from academy.exchange.cloud.client import HttpExchangeFactory
+
+        port = int(os.environ["EXCHANGE_PORT"])
+        print(f'RUN_CHEM_AGENT: Using Parsl executor as EXCHANGE_PORT set = {port}')
+        with spawn_http_exchange("localhost", port) as factory:
             # e.g. Parsl executor
             executor = ParslPoolExecutor(
                 config=Config(

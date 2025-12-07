@@ -117,7 +117,7 @@ async def main(args) -> int:
         from academy.exchange.cloud.client import HttpExchangeFactory
 
         print('RUN_CHEM_AGENT: Using Parsl executor as EXCHANGE_PORT set')
-        with spawn_http_exchange("localhost", os.environ["EXCHANGE_PORT"]) as factory:
+        with spawn_http_exchange("localhost", int(os.environ["EXCHANGE_PORT"])) as factory:
             # e.g. Parsl executor
             executor = ParslPoolExecutor(
                 config=Config(

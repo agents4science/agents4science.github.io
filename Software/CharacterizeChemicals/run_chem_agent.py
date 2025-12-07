@@ -107,7 +107,7 @@ async def main(args) -> int:
         from parsl.config import Config
         from parsl.executors.threads import ThreadPoolExecutor
         #from parsl.configs.htex_local import config
-        from academy.exchange.cloud.parsl import spawn_http_exchange
+        from academy.exchange.cloud import spawn_http_exchange
 
         #from academy.exchange.cloud.client import HttpExchangeFactory
 

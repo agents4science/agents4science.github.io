@@ -3,6 +3,7 @@ import asyncio
 import logging
 import argparse
 from typing import List
+import socket
 
 from academy.manager import Manager
 from characterize_chemicals.chem_agent import MoleculePropertyAgent
@@ -97,6 +98,10 @@ async def launch_chem_agent(manager, args):
         results.append((smiles, res))
     return results
 
+def get_free_port() -> int:
+    with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
+        s.bind(("localhost", 0))  # port 0 means “give me any free port”
+        return s.getsockname()[1]
 
 async def main(args) -> int:
     logging.basicConfig(level=logging.INFO)
@@ -111,7 +116,7 @@ async def main(args) -> int:
 
         #from academy.exchange.cloud.client import HttpExchangeFactory
 
-        port = int(os.environ["EXCHANGE_PORT"])
+        port = get_free_port()
         print(f'RUN_CHEM_AGENT: Using Parsl executor as EXCHANGE_PORT set = {port}')
         with spawn_http_exchange("localhost", port) as factory:
             # e.g. Parsl executor

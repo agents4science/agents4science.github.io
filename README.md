@@ -1,3 +1,5 @@
+![Header images showing scientists](Class/Assets/new_bar.jpg?raw=true "Title")
+
 # Agents for Science
 
 Welcome to Agents for Science. This site covers three main areas:

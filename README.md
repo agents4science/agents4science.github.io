@@ -9,7 +9,7 @@
 <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0;">
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Class/Assets/class.png" alt="Class" style="width: 180px; height: 180px; object-fit: cover;">
+<img src="Class/Assets/class.png" alt="Class" style="width: 160px; height: 160px; object-fit: cover;">
 <div>
 <p>
       <strong><a href="Class/">Class</a></strong><br>
@@ -23,7 +23,7 @@
 </div>
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Class/Assets/frameworks.png" alt="Frameworks" style="width: 180px; height: 180px; object-fit: cover;">
+<img src="Class/Assets/frameworks.png" alt="Frameworks" style="width: 160px; height: 160px; object-fit: cover;">
 <div>
 <p><strong><a href="Frameworks/">Frameworks</a></strong><br>
 Advice for building multi-agent systems, and example implementations.</p>
@@ -31,7 +31,7 @@ Advice for building multi-agent systems, and example implementations.</p>
 </div>
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Class/Assets/applications.png" alt="Applications" style="width: 180px; height: 180px; object-fit: cover;">
+<img src="Class/Assets/applications.png" alt="Applications" style="width: 160px; height: 160px; object-fit: cover;">
 <div>
 <p><strong><a href="Applications/">Applications</a></strong><br>
 Example applications of agentic systems for scientific discovery.</p>

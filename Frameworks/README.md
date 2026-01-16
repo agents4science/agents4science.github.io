@@ -2,11 +2,6 @@
 
 An agent is a persistent, stateful process that acts on behalf of a user or system.  An agent may:
 
-* Observe inputs or events
-* Plan (decide on) actions using a policy (rules or LLM)
-* Act: Execute tools or call other agents
-* Learn: Update state to adapt over time
-
 <div style="display: flex; gap: 1rem; align-items: flex-start;">
   <div style="flex: 1;">
     <ul>

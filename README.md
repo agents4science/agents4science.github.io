@@ -9,7 +9,7 @@
 <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0;">
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Class/Assets/class.png" alt="Class" style="width: 120px; height: 120px; object-fit: cover;">
+<img src="Class/Assets/class.png" alt="Class" style="width: 180px; height: 180px; object-fit: cover;">
 <div>
 <p><strong><a href="Class/">Class</a></strong><br>
 Curriculum and materials for a class AI Agents for Science, last taught at University of Chicago in Autumn 2025.</p>
@@ -17,7 +17,7 @@ Curriculum and materials for a class AI Agents for Science, last taught at Unive
 </div>
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Class/Assets/frameworks.png" alt="Frameworks" style="width: 120px; height: 120px; object-fit: cover;">
+<img src="Class/Assets/frameworks.png" alt="Frameworks" style="width: 180px; height: 180px; object-fit: cover;">
 <div>
 <p><strong><a href="Frameworks/">Agent Frameworks</a></strong><br>
 Advice and working examples for building multi-agent systems, including implementations with LangChain and domain-specific agents for chemistry.</p>
@@ -25,7 +25,7 @@ Advice and working examples for building multi-agent systems, including implemen
 </div>
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Class/Assets/applications.png" alt="Applications" style="width: 120px; height: 120px; object-fit: cover;">
+<img src="Class/Assets/applications.png" alt="Applications" style="width: 180px; height: 180px; object-fit: cover;">
 <div>
 <p><strong><a href="Applications/">Applications</a></strong><br>
 Applications of agentic systems for scientific discovery.</p>

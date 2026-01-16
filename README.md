@@ -27,7 +27,7 @@
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
 <img src="Class/Assets/applications.png" alt="Applications" style="width: 120px; height: 120px; object-fit: cover;">
 <div>
-<h3><a href="Academy/">Applications</a></h3>
+<h3><a href="Applications/">Applications</a></h3>
 <p>Applications of agentic systems for scientific discovery.</p>
 </div>
 </div>

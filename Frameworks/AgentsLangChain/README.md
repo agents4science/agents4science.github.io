@@ -4,6 +4,10 @@ A LangChain-based simplified reimplementation of AgentsExample, using LangChain'
 
 **Code:** [github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain)
 
+## Example
+
+The example runs a pipeline of five specialized agents working on a scientific goal: "Find catalysts that improve CO₂ conversion at room temperature." Each agent processes the goal and passes its output to the next agent in the chain, demonstrating a simple multi-agent workflow for scientific discovery.
+
 ## Roles
 
 | Role | Function |

@@ -13,7 +13,7 @@
 <div>
 <p>
       <strong><a href="Class/">Class</a></strong><br>
-      Curriculum and materials for class
+      Materials for 
       <strong>AI Agents for Science</strong>,
       last taught at
       <a href="https://cs.uchicago.edu">University of Chicago</a>
@@ -26,7 +26,7 @@
 <img src="Class/Assets/frameworks.png" alt="Frameworks" style="width: 160px; height: 160px; object-fit: cover;">
 <div>
 <p><strong><a href="Frameworks/">Frameworks</a></strong><br>
-Advice for building multi-agent systems, and example implementations.</p>
+Advice for building portable, scalable multi-agent systems, and example code.</p>
 </div>
 </div>
 

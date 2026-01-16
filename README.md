@@ -37,3 +37,9 @@ Example applications of agentic systems for scientific discovery.</p>
 </div>
 
 </div>
+
+---
+
+## What's New
+
+- Web site updated to include pointers to Frameworks and Applications (Jan 16, 2026)

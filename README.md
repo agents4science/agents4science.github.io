@@ -12,7 +12,7 @@
 <img src="Class/Assets/class.png" alt="Class" style="width: 120px; height: 120px; object-fit: cover;">
 <div>
 <h3><a href="Class/">Class</a></h3>
-<p>CMSC 35370: AI Agents for Science at the University of Chicago (Autumn 2025). An intensive course on building and applying agentic systems for scientific discovery.</p>
+<p>Curriculum and materials for a class AI Agents for Science, last taught at University of Chicago in Autumn 2025.</p>
 </div>
 </div>
 

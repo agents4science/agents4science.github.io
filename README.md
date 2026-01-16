@@ -1,4 +1,4 @@
-![Header images showing scientists](Class/Assets/new_bar.jpg?raw=true "Title")
+![Header images showing scientists](Class/Assets/newer_bar.jpg?raw=true "Title")
 
 # Agents for Science
 

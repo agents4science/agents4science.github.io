@@ -13,11 +13,9 @@
 <div>
 <p>
       <strong><a href="Class/">Teaching</a></strong><br>
-      Materials for 
       <strong>AI Agents for Science</strong>,
-      last taught at
-      <a href="https://cs.uchicago.edu">University of Chicago</a>
-      in Autumn 2025.
+      <a href="https://cs.uchicago.edu">University of Chicago</a>,
+      Autumn 2025.
 </p>
 </div>
 </div>

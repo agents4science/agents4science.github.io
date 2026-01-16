@@ -2,6 +2,8 @@
 
 A LangChain-based simplified reimplementation of AgentsExample, using LangChain's `ChatOpenAI`, `tool`, and `AgentExecutor` primitives. This version does not include the dashboard UI, Argonne inference service support, or multiple tools.
 
+**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain)
+
 ## Roles
 
 | Role | Function |

@@ -1,6 +1,6 @@
 ![Header images showing scientists](Class/Assets/newer_bar.jpg?raw=true "Title")
 
-# Agents for Science
+<h1 style="color: #0066cc;">AI Agents for Scientific Discovery</h1>
 
 **Agentic discovery** combines reasoning-capable AI with scientific and engineering resources—such as literature collections, simulation codes, experimental platforms, and knowledge bases—to accelerate the pace of discovery. Recent advances in large language models (LLMs) and related technologies make it possible to build agentic systems that automate key aspects of scientific work: synthesizing information from the literature, generating and prioritizing hypotheses, designing and executing protocols, running simulations or experiments, and interpreting results.
 

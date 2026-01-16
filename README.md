@@ -12,7 +12,7 @@
 <img src="Class/Assets/class.png" alt="Class" style="width: 160px; height: 160px; object-fit: cover;">
 <div>
 <p>
-      <strong><a href="Class/">Class</a></strong><br>
+      <strong><a href="Class/">Teaching</a></strong><br>
       Materials for 
       <strong>AI Agents for Science</strong>,
       last taught at

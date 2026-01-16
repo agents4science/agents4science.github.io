@@ -1,3 +1,7 @@
-# Applications
+# Applications of Agentic Systems for Scientific Discovery
 
-*Applications of agentic systems for scientific discovery.*
+Our partners in the DOE Genesis Mission's Common Agentic Framework (CAF) project operate an [**Agent of the Week**](https://github.com/AI-ModCon/BaseCAF_agent_of_the_week) program to highlight interesting agentic applications.
+
+Check back soon for the first release.
+
+

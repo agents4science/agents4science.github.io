@@ -25,10 +25,10 @@
 </div>
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="https://via.placeholder.com/120" alt="Academy" style="width: 120px; height: 120px; object-fit: cover;">
+<img src="Class/Assets/applications.png" alt="Applications" style="width: 120px; height: 120px; object-fit: cover;">
 <div>
-<h3><a href="Academy/">Academy</a></h3>
-<p>The Academy framework for building agentic scientific discovery systems.</p>
+<h3><a href="Academy/">Applications</a></h3>
+<p>Applications of agentic systems for scientific discovery.</p>
 </div>
 </div>
 

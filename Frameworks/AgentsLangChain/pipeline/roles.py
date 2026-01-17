@@ -1,5 +1,5 @@
-from agents4science.base_agent_langchain import LangAgent
-from agents4science.tools.analysis import analyze_dataset
+from pipeline.agent import LangAgent
+from pipeline.tools.analysis import analyze_dataset
 
 def build_roles(model: str | None = None):
     """Return the five LangChain agents used in the workflow."""

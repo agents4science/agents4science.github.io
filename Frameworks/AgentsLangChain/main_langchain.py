@@ -1,4 +1,4 @@
-from agents4science.roles_langchain import build_roles
+from pipeline.roles import build_roles
 
 def main():
     goal = "Find catalysts that improve CO₂ conversion at room temperature."

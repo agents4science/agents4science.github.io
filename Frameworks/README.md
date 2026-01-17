@@ -1,6 +1,6 @@
 # Agent Frameworks
 
-An agent is a persistent, stateful process that acts on behalf of a user or system.  An agent may:
+An **agent** is a persistent, stateful process that acts on behalf of a user or system.  An agent may:
 
 <div style="display: flex; gap: 1rem; align-items: flex-start;">
   <div style="flex: 1;">
@@ -16,21 +16,19 @@ An agent is a persistent, stateful process that acts on behalf of a user or syst
        style="width: 180px; height: auto;">
 </div>
 
-We can think of an agent as a scientific assistant that can reason, act, and coordinate on our behalf.
+We can think of an agent as a *scientific assistant that can reason, act, and coordinate on our behalf*.
+To that end, it may perceive state, reason over goals, take actions, and coordinate with other agents.
 
+An **agent framework** provides abstractions and runtime support that simplify the development and use of agents.
+We focus here on three agent frameworks that are well-suited for scientific applications:
 
-An agent framework provides abstractions and runtime support for building persistent computational entities that perceive state, reason over goals, take actions, and coordinate with other agents under resource and policy constraints.
-In the scientific context, we also want a framework to enable interactions with scientific resources, such as computers and instruments.
+* **LangGraph** offers structured, reproducible workflows for LLM-driven reasoning and tool execution. Good for managing interactions with LLMs and for implementing structured or auditable reasoning pipelines.
 
-We focus here on two agent frameworks here: **LangGraph** and **Academy**, due to their excellent support for 
-managing interactions with LLMs (LangGraph) and scientific resources (Academy).
+* **Academy** provides persistent, secure, and scalable execution across HPC systems, instruments, and data services. Good for agents that must run continuously or securely on HPC systems, laboratory robots, data platforms, or other parts of federated DOE infrastructure.
 
-* LangGraph offers structured, reproducible workflows for LLM-driven reasoning and tool execution. Good for managing interactions with LLMs and for implementing structured or auditable reasoning pipelines.
-
-* Academy provides persistent, secure, and scalable execution across HPC systems, instruments, and data services. Good for agents that must run continuously or securely on HPC systems, laboratory robots, data platforms, or other parts of federated DOE infrastructure.
+* **Microsoft Agent Framework** (MAF) supports flexible multi-agent coordination patterns and conversational planning. Good for multi-agent coordination, committee-based reasoning, or adaptive planning strategies involving interaction among several agents.
 
 See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf3k7P-35XGcH) for a brief review of these systems (and one more, **Microsoft Agent Framework**).
-* Microsoft Agent Framework (MAF) supports flexible multi-agent coordination patterns and conversational planning. Good for multi-agent coordination, committee-based reasoning, or adaptive planning strategies involving interaction among several agents.
 
 
 

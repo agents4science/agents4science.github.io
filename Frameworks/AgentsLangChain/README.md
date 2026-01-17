@@ -1,6 +1,6 @@
 # Simple LangChain Example
 
-This example demonstrates how to build a multi-agent pipeline for scientific discovery using [LangChain](https://www.langchain.com/). Five specialized agents collaborate in sequence to tackle a research goal, with each agent contributing its expertise before passing results to the next.
+This example demonstrates how to build a multi-agent pipeline for scientific discovery using [LangChain](https://www.langchain.com/). Five specialized agents work in sequence to tackle a research goal, with each agent contributing its expertise before passing results to the next.
 
 **Code:** [github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain)
 
@@ -19,6 +19,10 @@ The workflow proceeds through five stages:
 4. **Analyst** — Examines the results, summarizes findings, and quantifies uncertainty. This agent has access to an `analyze_dataset` tool for data analysis.
 
 5. **Archivist** — Documents everything for reproducibility: what was done, what was found, and how to repeat it.
+
+Each agent implementation is just a skeleton.
+
+The agents use OpenAI models as their LLM. An OpenAI key is required to run the example.
 
 ## Implementation
 

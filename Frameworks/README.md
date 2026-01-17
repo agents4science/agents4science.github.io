@@ -13,7 +13,7 @@ An agent is a persistent, stateful process that acts on behalf of a user or syst
   </div>
   <img src="Assets/agent.png"
        alt="Agent"
-       style="width: 100px; height: auto;">
+       style="width: 180px; height: auto;">
 </div>
 
 We can think of an agent as a scientific assistant that can reason, act, and coordinate on our behalf.

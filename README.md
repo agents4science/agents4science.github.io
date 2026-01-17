@@ -13,9 +13,8 @@
 <div>
 <p>
       <strong><a href="Class/">Teaching</a></strong><br>
-      AI Agents for Science curriculum,
-      <a href="https://cs.uchicago.edu">University of Chicago</a>,
-      Autumn 2025.
+      AI Agents for Science curriculum
+      (University of Chicago, Autumn 2025).
 </p>
 </div>
 </div>
@@ -42,5 +41,5 @@ Example applications of agentic systems for scientific discovery.</p>
 
 ## What's New
 
-- Pointer to [**Agent of the Week program](Applications/README.md) (Jan 16, 2026)
+- Pointer to [**Agent of the Week program**](Applications/README.md) (Jan 16, 2026)
 - Web site updated to include pointers to Frameworks and Applications (Jan 15, 2026)

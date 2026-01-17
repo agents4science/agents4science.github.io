@@ -1,4 +1,4 @@
-# Agentic Scientific Discovery Platforms
+# AI Agents for Science Curriculum
 
 The following **curriculum** outlines topics to be covered and readings, and provides the slides presented in class (minus purely administrative material).
 

@@ -38,14 +38,59 @@ We focus here on three agent frameworks that are well-suited for scientific appl
 
 * [**Microsoft Agent Framework**](https://github.com/microsoft/agent-framework) (MAF) supports flexible multi-agent coordination patterns and conversational planning. Good for multi-agent coordination, committee-based reasoning, or adaptive planning strategies involving interaction among several agents.
 
-See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf3k7P-35XGcH) for a brief review of these systems (and one more, **Microsoft Agent Framework**).
+See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf3k7P-35XGcH) for a brief review of these systems.
 
 
 
+## A Simple LangChain Example
 
-## A simple LangGraph Example
+This example ([code](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain)) demonstrates a multi-agent pipeline using LangChain's `ChatOpenAI`, `tool`, and `AgentExecutor` primitives. Five specialized agents collaborate on a scientific goal: *"Find catalysts that improve CO₂ conversion at room temperature."*
 
-[AgentsLangChain](AgentsLangChain) implements a simple multi-agent example using LangChain.
+### The Pipeline
+
+Each agent processes the current state and passes its output to the next:
+
+| Agent | Role |
+|-------|------|
+| **Scout** | Detects anomalies and proposes research opportunities |
+| **Planner** | Designs workflows and allocates resources |
+| **Operator** | Executes workflows safely |
+| **Analyst** | Summarizes results and quantifies uncertainty (uses `analyze_dataset` tool) |
+| **Archivist** | Records provenance for reproducibility |
+
+### How It Works
+
+The main loop is straightforward—each agent acts on the goal, and its output becomes input for the next:
+
+```python
+goal = "Find catalysts that improve CO₂ conversion at room temperature."
+agents = build_roles()
+
+state = {"goal": goal}
+for agent in agents:
+    output = agent.act(state["goal"])
+    state["goal"] = output
+```
+
+Each agent is a `LangAgent` wrapping LangChain's `AgentExecutor`:
+
+```python
+LangAgent(
+    "Analyst",
+    "Summarize results and analyze datasets; use tools when appropriate.",
+    tools=[analyze_dataset]
+)
+```
+
+### Running the Example
+
+```bash
+cd Frameworks/AgentsLangChain
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+export OPENAI_API_KEY=<your_api_key>
+python main_langchain.py
+```
 
 ## A Simple Academy Example
 

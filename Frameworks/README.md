@@ -1,23 +1,21 @@
 # Agent Frameworks
 
-An **agent** is a persistent, stateful process that acts on behalf of a user or system.  An agent may:
 
 <div style="display: flex; gap: 1rem; align-items: flex-start;">
+An **agent** is a persistent, stateful process that acts on behalf of a user or system.  An agent may:
   <div style="flex: 1;">
     <ul>
       <li>Observe inputs or events</li>
       <li>Plan (decide on) actions using a policy (rules or LLM)</li>
-      <li>Act: Execute tools or call other agents</li>
+      <li>Act: Execute tools or interact with other agents</li>
       <li>Learn: Update state to adapt over time</li>
     </ul>
+We can think of an agent as a *scientific assistant that can reason, act, and coordinate on our behalf*.
   </div>
   <img src="Assets/agent.png"
        alt="Agent"
        style="width: 180px; height: auto;">
 </div>
-
-We can think of an agent as a *scientific assistant that can reason, act, and coordinate on our behalf*.
-To that end, it may perceive state, reason over goals, take actions, and coordinate with other agents.
 
 An **agent framework** provides abstractions and runtime support that simplify the development and use of agents.
 We focus here on three agent frameworks that are well-suited for scientific applications:

@@ -1,4 +1,4 @@
-![Header images showing scientists](Assets/new_bar.jpg?raw=true "Title")
+![Header images showing scientists](Assets/newer_bar.jpg?raw=true "Title")
 
 # AI Agents for Science
 

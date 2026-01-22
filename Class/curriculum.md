@@ -1,4 +1,6 @@
-# Agentic Scientific Discovery Platforms
+![Header images showing scientists](Assets/newer_bar.jpg?raw=true "Title")
+
+# AI Agents for Science Curriculum
 
 The following **curriculum** outlines topics to be covered and readings, and provides the slides presented in class (minus purely administrative material).
 
@@ -46,7 +48,7 @@ Covers how to augment reasoning models with external knowledge bases, vector sea
 - *[The FAISS library](https://arxiv.org/abs/2401.08281)*.
 
 
-### MonLecture 5: Tool Calling
+### Lecture 5: Tool Calling
 Introduces methods for invoking external tools from reasoning models. Focus on model context protocol (MCP), schema design, and execution management.
 
 *Slides:* [Lecture 5 slides](Assets/Lecture_5_web.pdf).

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1024" height="1024">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#16213e;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="stepGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4fc3f7;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0288d1;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#64b5f6;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#42a5f5;stop-opacity:0.8" />
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1024" height="1024" fill="url(#bgGrad)"/>
+
+  <!-- Diagonal arrow showing progression -->
+  <path d="M 150 850 L 850 200" stroke="url(#arrowGrad)" stroke-width="80" stroke-linecap="round" fill="none"/>
+  <polygon points="870,180 820,250 900,230" fill="#42a5f5" opacity="0.8"/>
+
+  <!-- 7 Steps/nodes along the progression -->
+  <!-- Step 1 - Local -->
+  <circle cx="180" cy="820" r="45" fill="url(#stepGrad)" />
+  <text x="180" y="828" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">1</text>
+
+  <!-- Step 2 - Federated -->
+  <circle cx="280" cy="720" r="45" fill="url(#stepGrad)" />
+  <text x="280" y="728" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">2</text>
+
+  <!-- Step 3 - Parallel Inference -->
+  <circle cx="380" cy="620" r="45" fill="url(#stepGrad)" />
+  <text x="380" y="628" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">3</text>
+
+  <!-- Step 4 - Governed Tools -->
+  <circle cx="480" cy="520" r="45" fill="#ff9800" />
+  <text x="480" y="528" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">4</text>
+
+  <!-- Step 5 - Multi-Agent -->
+  <circle cx="580" cy="420" r="45" fill="#7e57c2" />
+  <text x="580" y="428" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">5</text>
+
+  <!-- Step 6 - Long-Lived -->
+  <circle cx="680" cy="320" r="45" fill="#7e57c2" />
+  <text x="680" y="328" text-anchor="middle" fill="white" font-family="Arial, sans-serif" font-size="28" font-weight="bold">6</text>
+
+  <!-- Step 7 - Workflows (dashed circle for early/future) -->
+  <circle cx="780" cy="220" r="45" fill="none" stroke="#7e57c2" stroke-width="4" stroke-dasharray="10,5" />
+  <text x="780" y="228" text-anchor="middle" fill="#7e57c2" font-family="Arial, sans-serif" font-size="28" font-weight="bold">7</text>
+
+  <!-- Title -->
+  <text x="512" y="950" text-anchor="middle" fill="#e0e0e0" font-family="Arial, sans-serif" font-size="48" font-weight="bold">CAPABILITIES</text>
+
+  <!-- Subtitle showing progression -->
+  <text x="512" y="1000" text-anchor="middle" fill="#90a4ae" font-family="Arial, sans-serif" font-size="24">Local → Federated → Autonomous</text>
+</svg>

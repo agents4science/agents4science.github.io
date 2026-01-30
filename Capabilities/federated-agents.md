@@ -1,12 +1,23 @@
-# Stage 2: Run Federated Agents on DOE Resources
+# Stage 2: Federated Agent Execution
+
+**Cross-institutional agent execution under federated identity and policy.**
 
 ## Task
 
-Agentic applications invoke tools—simulations, analysis codes, data services—running on DOE HPC systems with secure, auditable execution.
+Execute agentic applications that invoke tools and workflows on DOE HPC resources under federated identity and policy.
 
 ## Why This Matters
 
-Scientific workflows require HPC resources (GPUs, parallel filesystems, large memory). Academy provides secure tool invocation across facility boundaries with full audit trails.
+Scientific workflows often span multiple facilities. Academy provides secure, auditable tool invocation across institutional boundaries—agents authenticate once and access resources anywhere in the federation.
+
+## Details
+
+| Aspect | Value |
+|--------|-------|
+| **CAF Components** | LangGraph, Academy |
+| **Where it runs** | DOE HPC systems (Polaris, Aurora, Perlmutter, Frontier) |
+| **Scale** | Multi-agent, multi-resource |
+| **Status** | Mature |
 
 ## Architecture
 
@@ -16,8 +27,8 @@ Scientific workflows require HPC resources (GPUs, parallel filesystems, large me
 │            │          │                     │
 │ ┌───────┐  │  secure  │ ┌───────┐ ┌──────┐ │
 │ │ Agent │──┼─────────▶│ │Academy│─▶│Tools │ │
-│ └───┬───┘  │          │ └───────┘ └──────┘ │
-│     │      │          │                     │
+│ └───┬───┘  │ federated│ └───────┘ └──────┘ │
+│     │      │ identity │                     │
 │     ▼      │          │ ┌─────────────────┐ │
 │ ┌───────┐  │          │ │ Compute Nodes   │ │
 │ │  LLM  │  │          │ └─────────────────┘ │

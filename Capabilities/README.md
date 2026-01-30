@@ -14,9 +14,9 @@ CAF enables agentic applications to scale from local execution to governed, auto
 </div>
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3>2. <a href="federated-agents.md">Run Federated Agents on DOE Resources</a></h3>
+<h3>2. <a href="federated-agents.md">Federated Agent Execution</a></h3>
 <p>LangGraph + Academy</p>
-<p>Agentic applications invoke tools on DOE HPC systems with secure, auditable execution.</p>
+<p>Cross-institutional agent execution under federated identity and policy.</p>
 <p><strong>Status:</strong> <span style="color: green;">Mature</span></p>
 </div>
 
@@ -68,7 +68,7 @@ CAF enables agentic applications to scale from local execution to governed, auto
 | Stage | Capability | What you can do | CAF Components | Where it runs | Scale | Status | Examples |
 |:-----:|------------|-----------------|----------------|---------------|-------|:------:|----------|
 | 1 | [Local Agent Execution](local-agents.md) | Run persistent, stateful agents | LangGraph | Laptop, workstation, VM | Single agent | Mature | [AgentsLangChain](/Frameworks/AgentsLangChain/) |
-| 2 | [Federated Agents](federated-agents.md) | Invoke HPC tools securely | LangGraph + Academy | DOE HPC | 1-100 nodes | Mature | [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) |
+| 2 | [Federated Agent Execution](federated-agents.md) | Invoke tools under federated identity | LangGraph + Academy | DOE HPC (Polaris, Aurora) | Multi-agent, multi-resource | Mature | [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) |
 | 3 | [Scale Inference](scale-inference.md) | Parallel LLM queries | FIRST | Aurora, Polaris | 1000+ nodes | Prototype | Aurora 2000-node demo |
 | 4 | [Scale Tool Use](scale-tool-use.md) | Governed tool execution | Academy governance | DOE HPC | 100-1000 nodes | Prototype | Coming soon |
 | 5 | [Coordinate Agents](coordinate-agents.md) | Multi-agent collaboration | Shared state + policy | Distributed | Varies | Emerging | Coming soon |

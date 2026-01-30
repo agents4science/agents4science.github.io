@@ -1,5 +1,7 @@
 # Capabilities
 
+*Deployment patterns from local execution to autonomous systems*
+
 CAF enables agentic applications to scale from local execution to governed, autonomous scientific systems.
 
 ---

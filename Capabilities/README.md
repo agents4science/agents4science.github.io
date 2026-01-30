@@ -63,13 +63,13 @@ CAF enables agentic applications to scale from local execution to governed, auto
 
 ---
 
-## Quick Reference
+## Capability Matrix
 
-| Stage | Capability | Framework | Scale | Example |
-|-------|------------|-----------|-------|---------|
-| 1 | Run Agents Locally | LangGraph | 1 node | [AgentsLangChain](/Frameworks/AgentsLangChain/) |
-| 2 | Federated Agents on DOE | LangGraph + Academy | 1-100 nodes | [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) |
-| 3 | Scale Agent Inference | FIRST | 1000+ nodes | Aurora 2000-node demo |
-| 4 | Scale and Govern Tool Use | Academy governance | 100-1000 nodes | Coming soon |
-| 5 | Coordinate Many Agents | Academy + shared state | Varies | Coming soon |
-| 6 | Autonomous Systems | Full CAF stack | Persistent | Future |
+| Stage | Capability | What you can do | CAF Components | Where it runs | Scale | Status | Examples |
+|:-----:|------------|-----------------|----------------|---------------|-------|:------:|----------|
+| 1 | [Run Locally](local-agents.md) | Build and test agents | LangGraph | Laptop | 1 node | Mature | [AgentsLangChain](/Frameworks/AgentsLangChain/) |
+| 2 | [Federated Agents](federated-agents.md) | Invoke HPC tools securely | LangGraph + Academy | DOE HPC | 1-100 nodes | Mature | [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) |
+| 3 | [Scale Inference](scale-inference.md) | Parallel LLM queries | FIRST | Aurora, Polaris | 1000+ nodes | Prototype | Aurora 2000-node demo |
+| 4 | [Scale Tool Use](scale-tool-use.md) | Governed tool execution | Academy governance | DOE HPC | 100-1000 nodes | Prototype | Coming soon |
+| 5 | [Coordinate Agents](coordinate-agents.md) | Multi-agent collaboration | Shared state + policy | Distributed | Varies | Emerging | Coming soon |
+| 6 | [Autonomous Systems](autonomous-systems.md) | Persistent scientific agents | Full CAF stack | Persistent | Continuous | Future | — |

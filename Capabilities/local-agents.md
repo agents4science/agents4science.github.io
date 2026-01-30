@@ -1,4 +1,4 @@
-# Local Agentic Applications
+# Stage 1: Run Agents Locally
 
 Run agentic applications on a laptop or workstation, with LLM access via API or a locally-hosted model.
 
@@ -9,7 +9,7 @@ Run agentic applications on a laptop or workstation, with LLM access via API or 
 | Aspect | Details |
 |--------|---------|
 | **Task** | Implement and run an agentic application locally |
-| **Approach** | LangGraph (or similar framework) with OpenAI API, Anthropic API, or local LLM (Ollama, vLLM) |
+| **Approach** | LangGraph |
 | **Status** | <span style="color: green;">**Mature**</span> — Documented by examples on this site |
 | **Scale** | Single machine |
 
@@ -80,5 +80,5 @@ python main_langchain.py
 ## Next Steps
 
 Once your agent works locally, consider:
-- [**Agents with HPC Tools**](hpc-tools.md) — Invoke simulations on DOE systems
-- [**Massively Parallel Inference**](parallel-inference.md) — Scale to thousands of LLM instances
+- [**Stage 2: Federated Agents on DOE Resources**](federated-agents.md) — Invoke tools on DOE HPC systems
+- [**Stage 3: Scale Agent Inference**](scale-inference.md) — Scale to thousands of LLM instances

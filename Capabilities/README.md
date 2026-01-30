@@ -1,47 +1,51 @@
 # Capabilities
 
-The Common Agentic Framework (CAF) supports a range of deployment patterns for scientific agentic applications—from simple local prototypes to massively parallel inference on DOE supercomputers.
+CAF enables agentic applications to scale from local execution to governed, autonomous scientific systems.
 
 ---
-
-## Deployment Patterns
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0;">
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3><a href="local-agents.md">Local Agentic Applications</a></h3>
-<p>Run agents on a laptop or workstation with LLM access via API or local model.</p>
+<h3>1. <a href="local-agents.md">Run Agents Locally</a></h3>
+<p>LangGraph</p>
+<p>Implement and run agentic applications on a laptop or workstation, with LLM accessed via API or run locally.</p>
 <p><strong>Status:</strong> <span style="color: green;">Mature</span></p>
 </div>
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3><a href="hpc-tools.md">Agents with HPC Tools</a></h3>
-<p>Agentic applications that invoke simulation codes, data services, or other tools on DOE HPC systems.</p>
+<h3>2. <a href="federated-agents.md">Run Federated Agents on DOE Resources</a></h3>
+<p>LangGraph + Academy</p>
+<p>Agentic applications invoke tools on DOE HPC systems with secure, auditable execution.</p>
 <p><strong>Status:</strong> <span style="color: green;">Mature</span></p>
 </div>
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3><a href="parallel-inference.md">Massively Parallel Inference</a></h3>
+<h3>3. <a href="scale-inference.md">Scale Agent Inference</a></h3>
+<p>FIRST + inference orchestration</p>
 <p>Fan out queries to thousands of parallel LLM instances on HPC.</p>
 <p><strong>Status:</strong> <span style="color: orange;">Prototype</span></p>
 </div>
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3><a href="simulation-steering.md">Simulation Steering</a></h3>
-<p>Agents monitor running simulations and adjust parameters in real-time.</p>
+<h3>4. <a href="scale-tool-use.md">Scale and Govern Tool Use</a></h3>
+<p>Governance + scheduling</p>
+<p>Coordinate massive tool invocations with policy enforcement, scheduling, and auditability.</p>
 <p><strong>Status:</strong> <span style="color: orange;">Prototype</span></p>
 </div>
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3><a href="instrument-integration.md">Instrument Integration</a></h3>
-<p>Agents orchestrate data collection from beamlines, microscopes, and lab instruments.</p>
+<h3>5. <a href="coordinate-agents.md">Coordinate Many Agents</a></h3>
+<p>Shared state, policy, budgets</p>
+<p>Multiple agents collaborate with shared state, coordinated policies, and resource budgets.</p>
 <p><strong>Status:</strong> <span style="color: blue;">Emerging</span></p>
 </div>
 
-<div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3><a href="human-in-loop.md">Human-in-the-Loop</a></h3>
-<p>Agents propose actions and wait for scientist approval at key decision points.</p>
-<p><strong>Status:</strong> <span style="color: green;">Mature</span></p>
+<div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem; border-style: dashed; opacity: 0.8;">
+<h3>6. <a href="autonomous-systems.md">Autonomous Scientific Systems</a></h3>
+<p>Persistent, governed autonomy</p>
+<p>Long-running autonomous systems that operate continuously under governance constraints.</p>
+<p><strong>Status:</strong> <span style="color: gray;">Future</span></p>
 </div>
 
 </div>
@@ -55,16 +59,17 @@ The Common Agentic Framework (CAF) supports a range of deployment patterns for s
 | <span style="color: green;">**Mature**</span> | Documented with working examples on this site |
 | <span style="color: orange;">**Prototype**</span> | Demonstrated on DOE systems; documentation in progress |
 | <span style="color: blue;">**Emerging**</span> | Active development; early adopters welcome |
+| <span style="color: gray;">**Future**</span> | Planned capability; design in progress |
 
 ---
 
 ## Quick Reference
 
-| Capability | Framework | Scale | Example |
-|------------|-----------|-------|---------|
-| Local agents | LangGraph | 1 node | [AgentsLangChain](/Frameworks/AgentsLangChain/) |
-| HPC tools | LangGraph + Academy | 1-100 nodes | [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) |
-| Parallel inference | Academy | 1000+ nodes | Aurora 2000-node demo |
-| Simulation steering | Academy | Varies | Coming soon |
-| Instrument integration | Academy + Facility APIs | 1 node + instruments | Coming soon |
-| Human-in-the-loop | LangGraph interrupts | 1 node | [AgentsExample](/Frameworks/AgentsExample/) |
+| Stage | Capability | Framework | Scale | Example |
+|-------|------------|-----------|-------|---------|
+| 1 | Run Agents Locally | LangGraph | 1 node | [AgentsLangChain](/Frameworks/AgentsLangChain/) |
+| 2 | Federated Agents on DOE | LangGraph + Academy | 1-100 nodes | [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) |
+| 3 | Scale Agent Inference | FIRST | 1000+ nodes | Aurora 2000-node demo |
+| 4 | Scale and Govern Tool Use | Academy governance | 100-1000 nodes | Coming soon |
+| 5 | Coordinate Many Agents | Academy + shared state | Varies | Coming soon |
+| 6 | Autonomous Systems | Full CAF stack | Persistent | Future |

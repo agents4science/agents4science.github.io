@@ -1,6 +1,6 @@
-# Agents with HPC Tools
+# Stage 2: Run Federated Agents on DOE Resources
 
-Agentic applications that invoke simulation codes, data services, or other computational tools on DOE high-performance computing systems.
+Agentic applications that invoke tools on DOE HPC systems with secure, auditable execution.
 
 ---
 
@@ -93,5 +93,5 @@ agent = create_agent(tools=[xtb_tool, ...])
 
 ## Next Steps
 
-- [**Massively Parallel Inference**](parallel-inference.md) — Scale LLM inference across HPC
-- [**Simulation Steering**](simulation-steering.md) — Real-time control of running simulations
+- [**Stage 3: Scale Agent Inference**](scale-inference.md) — Scale LLM inference across HPC
+- [**Stage 4: Scale and Govern Tool Use**](scale-tool-use.md) — Coordinate massive tool invocations

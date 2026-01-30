@@ -1,4 +1,4 @@
-# Massively Parallel Inference
+# Stage 3: Scale Agent Inference
 
 Fan out queries to thousands of parallel LLM instances running on HPC systems.
 
@@ -9,7 +9,7 @@ Fan out queries to thousands of parallel LLM instances running on HPC systems.
 | Aspect | Details |
 |--------|---------|
 | **Task** | Agentic application performs massively parallel LLM inference |
-| **Approach** | Launch many LLM instances on HPC; coordinate via Academy |
+| **Approach** | FIRST + inference orchestration |
 | **Status** | <span style="color: orange;">**Prototype**</span> — Demonstrated at 2000+ nodes on Aurora |
 | **Scale** | 1000+ compute nodes |
 
@@ -95,5 +95,5 @@ Documentation and examples coming soon. Contact the CAF team for early access.
 
 ## Next Steps
 
-- [**Agents with HPC Tools**](hpc-tools.md) — Combine parallel inference with HPC simulations
-- [**Simulation Steering**](simulation-steering.md) — Use parallel inference to guide simulations
+- [**Stage 4: Scale and Govern Tool Use**](scale-tool-use.md) — Coordinate massive tool invocations with governance
+- [**Stage 5: Coordinate Many Agents**](coordinate-agents.md) — Multi-agent collaboration

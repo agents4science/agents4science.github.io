@@ -1,12 +1,23 @@
-# Stage 3: Scale Agent Inference
+# Stage 3: Massively Parallel Agent Inference
+
+**Experimental. Fan out thousands of LLM requests in parallel on HPC.**
 
 ## Task
 
-Fan out queries to thousands of parallel LLM instances on HPC for high-throughput inference over large datasets.
+Build agentic applications that fan out thousands of LLM inference requests in parallel on HPC systems.
 
 ## Why This Matters
 
-Scientific applications often require millions of LLM calls (literature mining, molecular screening, hypothesis generation). Running 2000+ concurrent LLM instances turns months of work into hours.
+Scientific applications often require millions of LLM calls—literature mining, molecular screening, hypothesis generation. Parallel inference on HPC turns months of sequential work into hours.
+
+## Details
+
+| Aspect | Value |
+|--------|-------|
+| **CAF Components** | LangGraph, FIRST, inference orchestration |
+| **Where it runs** | HPC accelerator nodes |
+| **Scale** | O(10³–10⁴) concurrent inference streams |
+| **Status** | Prototype (Aurora: 2000+ nodes demonstrated) |
 
 ## Architecture
 

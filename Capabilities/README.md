@@ -21,9 +21,9 @@ CAF enables agentic applications to scale from local execution to governed, auto
 </div>
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3>3. <a href="scale-inference.md">Scale Agent Inference</a></h3>
-<p>FIRST + inference orchestration</p>
-<p>Fan out queries to thousands of parallel LLM instances on HPC.</p>
+<h3>3. <a href="scale-inference.md">Massively Parallel Agent Inference</a></h3>
+<p>LangGraph + FIRST + inference orchestration</p>
+<p>Experimental. Fan out thousands of LLM requests in parallel on HPC.</p>
 <p><strong>Status:</strong> <span style="color: orange;">Prototype</span></p>
 </div>
 
@@ -69,7 +69,7 @@ CAF enables agentic applications to scale from local execution to governed, auto
 |:-----:|------------|-----------------|----------------|---------------|-------|:------:|----------|
 | 1 | [Local Agent Execution](local-agents.md) | Run persistent, stateful agents | LangGraph | Laptop, workstation, VM | Single agent | Mature | [AgentsLangChain](/Frameworks/AgentsLangChain/) |
 | 2 | [Federated Agent Execution](federated-agents.md) | Invoke tools under federated identity | LangGraph + Academy | DOE HPC (Polaris, Aurora) | Multi-agent, multi-resource | Mature | [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) |
-| 3 | [Scale Inference](scale-inference.md) | Parallel LLM queries | FIRST | Aurora, Polaris | 1000+ nodes | Prototype | Aurora 2000-node demo |
+| 3 | [Parallel Agent Inference](scale-inference.md) | Fan out thousands of LLM requests | LangGraph + FIRST | HPC accelerator nodes | O(10³–10⁴) streams | Prototype | Aurora 2000-node demo |
 | 4 | [Scale Tool Use](scale-tool-use.md) | Governed tool execution | Academy governance | DOE HPC | 100-1000 nodes | Prototype | Coming soon |
 | 5 | [Coordinate Agents](coordinate-agents.md) | Multi-agent collaboration | Shared state + policy | Distributed | Varies | Emerging | Coming soon |
 | 6 | [Autonomous Systems](autonomous-systems.md) | Persistent scientific agents | Full CAF stack | Persistent | Continuous | Future | — |

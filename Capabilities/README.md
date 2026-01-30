@@ -7,9 +7,9 @@ CAF enables agentic applications to scale from local execution to governed, auto
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0;">
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3>1. <a href="local-agents.md">Run Agents Locally</a></h3>
+<h3>1. <a href="local-agents.md">Local Agent Execution</a></h3>
 <p>LangGraph</p>
-<p>Implement and run agentic applications on a laptop or workstation, with LLM accessed via API or run locally.</p>
+<p>Your on-ramp to CAF. Run persistent, stateful agents on a laptop or workstation—no federation required.</p>
 <p><strong>Status:</strong> <span style="color: green;">Mature</span></p>
 </div>
 
@@ -67,7 +67,7 @@ CAF enables agentic applications to scale from local execution to governed, auto
 
 | Stage | Capability | What you can do | CAF Components | Where it runs | Scale | Status | Examples |
 |:-----:|------------|-----------------|----------------|---------------|-------|:------:|----------|
-| 1 | [Run Locally](local-agents.md) | Build and test agents | LangGraph | Laptop | 1 node | Mature | [AgentsLangChain](/Frameworks/AgentsLangChain/) |
+| 1 | [Local Agent Execution](local-agents.md) | Run persistent, stateful agents | LangGraph | Laptop, workstation, VM | Single agent | Mature | [AgentsLangChain](/Frameworks/AgentsLangChain/) |
 | 2 | [Federated Agents](federated-agents.md) | Invoke HPC tools securely | LangGraph + Academy | DOE HPC | 1-100 nodes | Mature | [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) |
 | 3 | [Scale Inference](scale-inference.md) | Parallel LLM queries | FIRST | Aurora, Polaris | 1000+ nodes | Prototype | Aurora 2000-node demo |
 | 4 | [Scale Tool Use](scale-tool-use.md) | Governed tool execution | Academy governance | DOE HPC | 100-1000 nodes | Prototype | Coming soon |

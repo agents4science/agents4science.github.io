@@ -1,12 +1,23 @@
-# Stage 1: Run Agents Locally
+# Stage 1: Local Agent Execution
+
+**Your on-ramp to CAF. No federation required.**
 
 ## Task
 
-Implement and run an agentic application on a laptop or workstation, with LLM accessed via API or run locally.
+Implement and run a persistent, stateful agentic application on a laptop or workstation, using local or remote LLMs.
 
 ## Why This Matters
 
-Local development enables rapid prototyping and testing before deploying to HPC. You can iterate on agent logic, prompts, and tool integrations without consuming shared resources.
+Local execution lets you develop and test agent logic before deploying to HPC. LangGraph specifications are reproducible and portable—the same agent definition runs locally or at scale.
+
+## Details
+
+| Aspect | Value |
+|--------|-------|
+| **CAF Components** | LangGraph |
+| **Where it runs** | Laptop, workstation, VM |
+| **Scale** | Single agent / small multi-agent |
+| **Status** | Mature |
 
 ## Architecture
 

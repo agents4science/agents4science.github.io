@@ -45,5 +45,6 @@ See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf
 ## Examples
 
 - [**AgentsLangChain**](AgentsLangChain/) — Multi-agent pipeline using LangChain
+- [**AgentsAcademy**](AgentsAcademy/) — Multi-agent pipeline using Academy
 - [**AgentsExample**](AgentsExample/) — Dashboard demo with configurable goals
 - [**CharacterizeChemicals**](CharacterizeChemicals/) — LLM-planned molecular property agent using Academy

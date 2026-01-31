@@ -21,6 +21,9 @@ Local execution lets you develop and test agent logic before deploying to HPC. L
 
 ## Architecture
 
+Here we deal with agentic applications in which one or more agents operate entirely locally, each potentially calling tools and/or LLMs.
+
+
 ```
 ┌─────────────────────────────┐
 │        Workstation          │
@@ -36,7 +39,7 @@ Local execution lets you develop and test agent logic before deploying to HPC. L
 └─────────────────────────────┘
 ```
 
-## 5-Agent Scientific Discovery Pipeline
+## A Five-Agent Scientific Discovery Pipeline
 
 We use this simple example to demonstrate multi-agent coordination for scientific workflows. Five specialized agents work in sequence, each contributing domain expertise before passing results to the next:
 
@@ -50,7 +53,7 @@ We use this simple example to demonstrate multi-agent coordination for scientifi
 
 <img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="max-width: 70%; margin: 1rem 0;">
 
-### Implementations
+### Four Example Implementations
 
 We provide implementations of this simple example in LangGraph and Academy, and with and without a dashboard.
 Note that these implementations are toys: they create agents that communicate, but each agent's internal logic is just a stub. 

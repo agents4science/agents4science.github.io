@@ -51,7 +51,7 @@ We use this simple example to demonstrate multi-agent coordination for scientifi
 | **Analyst** | Summarizes findings, quantifies uncertainty | Results | Analysis summary |
 | **Archivist** | Documents everything for reproducibility | Summary | Documented provenance |
 
-<img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="max-width: 70%; margin: 1rem 0;">
+<img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="width: 50%; margin: 1rem 0;">
 
 ### Four Example Implementations
 

@@ -16,6 +16,8 @@ Main entry point:
 python run_chem_agent.py
 ```
 
+**Source code:** [View on GitHub](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/CharacterizeChemicals)
+
 ---
 
 ## ✨ Features

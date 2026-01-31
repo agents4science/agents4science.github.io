@@ -10,13 +10,13 @@ The pipeline addresses a sample scientific goal: *"Find catalysts that improve C
 
 The workflow proceeds through five stages:
 
-| Agent | Role |
-|-------|------|
-| **Scout** | Surveys the problem space, identifies anomalies, proposes research opportunities |
-| **Planner** | Designs workflows, allocates resources, sequences the work |
-| **Operator** | Executes the planned workflow safely |
-| **Analyst** | Summarizes findings, quantifies uncertainty (uses `analyze_dataset` tool) |
-| **Archivist** | Documents everything for reproducibility |
+| Agent | Role | Input | Output |
+|-------|------|-------|--------|
+| **Scout** | Surveys the problem space, identifies anomalies | Goal | Research opportunities |
+| **Planner** | Designs workflows, allocates resources | Opportunities | Workflow plan |
+| **Operator** | Executes the planned workflow safely | Plan | Execution results |
+| **Analyst** | Summarizes findings, quantifies uncertainty | Results | Analysis summary |
+| **Archivist** | Documents everything for reproducibility | Summary | Documented provenance |
 
 Each agent implementation is just a skeleton.
 

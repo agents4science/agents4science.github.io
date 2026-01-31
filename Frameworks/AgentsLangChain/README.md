@@ -39,9 +39,22 @@ agents = [
 ]
 ```
 
-The main loop passes each agent's output as input to the next:
+Each agent is a `LangAgent` wrapping LangChain's `AgentExecutor`:
 
 ```python
+LangAgent(
+    "Analyst",
+    "Summarize results and analyze datasets; use tools when appropriate.",
+    tools=[analyze_dataset]
+)
+```
+
+The main loop is straightforward—each agent acts on the goal, and its output becomes input for the next:
+
+```python
+goal = "Find catalysts that improve CO₂ conversion at room temperature."
+agents = build_roles()
+
 state = {"goal": goal}
 for agent in agents:
     output = agent.act(state["goal"])

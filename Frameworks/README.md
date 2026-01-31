@@ -42,60 +42,8 @@ See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf
 
 
 
-## A Simple LangChain Example
+## Examples
 
-This example ([code](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain)) demonstrates a multi-agent pipeline using LangChain's `ChatOpenAI`, `tool`, and `AgentExecutor` primitives. Five specialized agents collaborate on a scientific goal: *"Find catalysts that improve CO₂ conversion at room temperature."*
-
-### The Pipeline
-
-Each agent processes the current state and passes its output to the next:
-
-| Agent | Role |
-|-------|------|
-| **Scout** | Detects anomalies and proposes research opportunities |
-| **Planner** | Designs workflows and allocates resources |
-| **Operator** | Executes workflows safely |
-| **Analyst** | Summarizes results and quantifies uncertainty (uses `analyze_dataset` tool) |
-| **Archivist** | Records provenance for reproducibility |
-
-### How It Works
-
-The main loop is straightforward—each agent acts on the goal, and its output becomes input for the next:
-
-```python
-goal = "Find catalysts that improve CO₂ conversion at room temperature."
-agents = build_roles()
-
-state = {"goal": goal}
-for agent in agents:
-    output = agent.act(state["goal"])
-    state["goal"] = output
-```
-
-Each agent is a `LangAgent` wrapping LangChain's `AgentExecutor`:
-
-```python
-LangAgent(
-    "Analyst",
-    "Summarize results and analyze datasets; use tools when appropriate.",
-    tools=[analyze_dataset]
-)
-```
-
-### Running the Example
-
-```bash
-cd Frameworks/AgentsLangChain
-python -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
-export OPENAI_API_KEY=<your_api_key>
-python main_langchain.py
-```
-
-## A Simple Academy Example
-
-TBD
-
-## Scalability
-
-A frequent requirement, at least in our agentic applications, is to scale the number of ...
+- [**AgentsLangChain**](AgentsLangChain/) — Multi-agent pipeline using LangChain
+- [**AgentsExample**](AgentsExample/) — Dashboard demo with configurable goals
+- [**CharacterizeChemicals**](CharacterizeChemicals/) — LLM-planned molecular property agent using Academy

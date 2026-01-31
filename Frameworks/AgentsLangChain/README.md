@@ -10,15 +10,13 @@ The pipeline addresses a sample scientific goal: *"Find catalysts that improve C
 
 The workflow proceeds through five stages:
 
-1. **Scout** — Surveys the problem space, identifies anomalies in existing data, and proposes research opportunities worth pursuing.
-
-2. **Planner** — Takes the Scout's observations and designs a concrete workflow: what experiments to run, what resources are needed, and how to sequence the work.
-
-3. **Operator** — Executes the planned workflow, ensuring each step completes safely and successfully.
-
-4. **Analyst** — Examines the results, summarizes findings, and quantifies uncertainty. This agent has access to an `analyze_dataset` tool for data analysis.
-
-5. **Archivist** — Documents everything for reproducibility: what was done, what was found, and how to repeat it.
+| Agent | Role |
+|-------|------|
+| **Scout** | Surveys the problem space, identifies anomalies, proposes research opportunities |
+| **Planner** | Designs workflows, allocates resources, sequences the work |
+| **Operator** | Executes the planned workflow safely |
+| **Analyst** | Summarizes findings, quantifies uncertainty (uses `analyze_dataset` tool) |
+| **Archivist** | Documents everything for reproducibility |
 
 Each agent implementation is just a skeleton.
 

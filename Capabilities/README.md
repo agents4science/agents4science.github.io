@@ -10,7 +10,7 @@ CAF enables agentic applications to scale from local execution to governed, auto
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
 <h3>1. <a href="local-agents/">Local Agent Execution</a></h3>
-<p>LangGraph</p>
+<p>LangGraph, Academy</p>
 <p>Your on-ramp to CAF. Run persistent, stateful agents on a laptop or workstation—no federation required.</p>
 <p><strong>Status:</strong> <span style="color: green;">Mature</span></p>
 </div>

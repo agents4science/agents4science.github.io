@@ -51,7 +51,7 @@ We use this simple example to demonstrate multi-agent coordination for scientifi
 | **Analyst** | Summarizes findings, quantifies uncertainty | Results | Analysis summary |
 | **Archivist** | Documents everything for reproducibility | Summary | Documented provenance |
 
-<img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="width: 50%; margin: 1rem 0;">
+<img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="width: 60%; margin: 1rem 0;">
 
 ### Four Example Implementations
 
@@ -68,7 +68,3 @@ Note that these implementations are toys: they create agents that communicate, b
 The simple versions are minimal implementations ideal for learning. The dashboard versions wrap the same agents with a full-screen Rich UI showing live progress across multiple scientific goals.
 
 ---
-
-## Other Examples
-
-- [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) — LLM-planned molecular property agent using Academy with real computational chemistry tools (RDKit, xTB)

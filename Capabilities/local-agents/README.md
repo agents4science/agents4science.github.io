@@ -48,7 +48,7 @@ A reference implementation demonstrating multi-agent coordination for scientific
 | **Analyst** | Summarizes findings, quantifies uncertainty | Results | Analysis summary |
 | **Archivist** | Documents everything for reproducibility | Summary | Documented provenance |
 
-<img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="max-width: 100%; margin: 1rem 0;">
+<img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="max-width: 70%; margin: 1rem 0;">
 
 ### Implementations
 

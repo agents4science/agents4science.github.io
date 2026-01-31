@@ -4,18 +4,18 @@
 
 ## Task
 
-Implement and run a persistent, stateful agentic application on a laptop or workstation, using local or remote LLMs.
+Implement and run a simple, persistent, stateful agentic application on a laptop or workstation, using local or remote LLMs.
 
 ## Why This Matters
 
-Local execution lets you develop and test agent logic before deploying to HPC. LangGraph specifications are reproducible and portable—the same agent definition runs locally or at scale.
+Local execution lets you develop and test agent logic before deploying to HPC. LangGraph and Academy specifications are reproducible and portable—the same agent definition runs locally or at scale.
 
 ## Details
 
 | Aspect | Value |
 |--------|-------|
-| **CAF Components** | LangGraph |
-| **Where it runs** | Laptop, workstation, VM |
+| **Technologies** | LangGraph, Academy |
+| **Where code runs** | Laptop, workstation, VM |
 | **Scale** | Single agent / small multi-agent |
 | **Status** | Mature |
 
@@ -36,8 +36,13 @@ Local execution lets you develop and test agent logic before deploying to HPC. L
 └─────────────────────────────┘
 ```
 
+## Tutorial Examples
+
+- Simple LangChain example
+
+
 ## Code
 
-- [AgentsLangChain](/Frameworks/AgentsLangChain/) — 5-agent pipeline example
+- The [AgentsLangChain](/Frameworks/AgentsLangChain/) code uses LangGraph to implement a simple 5-agent pipeline example 
 - [AgentsExample](/Frameworks/AgentsExample/) — Dashboard demo
-- [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) — Molecular property agent
+- [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) — Molecular property agent implemented with Academy

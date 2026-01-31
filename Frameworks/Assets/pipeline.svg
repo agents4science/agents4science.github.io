@@ -1,0 +1,154 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500">
+  <defs>
+    <linearGradient id="scoutGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#4CAF50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#388E3C;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="plannerGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#2196F3;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1976D2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="operatorGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF9800;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#F57C00;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="analystGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#9C27B0;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7B1FA2;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="archivistGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#607D8B;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#455A64;stop-opacity:1" />
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="3" stdDeviation="3" flood-opacity="0.2"/>
+    </filter>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="#fafafa"/>
+
+  <!-- Title -->
+  <text x="600" y="40" text-anchor="middle" font-family="system-ui, -apple-system, sans-serif" font-size="28" font-weight="600" fill="#333">Multi-Agent Scientific Discovery Pipeline</text>
+
+  <!-- Input: Goal -->
+  <rect x="30" y="195" width="100" height="60" rx="8" fill="#E8F5E9" stroke="#4CAF50" stroke-width="2"/>
+  <text x="80" y="220" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#2E7D32">GOAL</text>
+  <text x="80" y="238" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#555">Scientific</text>
+  <text x="80" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#555">objective</text>
+
+  <!-- Arrow: Goal → Scout -->
+  <line x1="130" y1="225" x2="165" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Agent 1: Scout -->
+  <g transform="translate(175, 140)">
+    <rect width="160" height="170" rx="12" fill="url(#scoutGrad)" filter="url(#shadow)"/>
+    <text x="80" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">Scout</text>
+    <line x1="20" y1="45" x2="140" y2="45" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">Surveys problem</text>
+    <text x="80" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">space, detects</text>
+    <text x="80" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">anomalies</text>
+    <line x1="20" y1="115" x2="140" y2="115" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="138" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">OUTPUT:</text>
+    <text x="80" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="white">Opportunities</text>
+  </g>
+
+  <!-- Arrow: Scout → Planner -->
+  <line x1="335" y1="225" x2="370" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Agent 2: Planner -->
+  <g transform="translate(380, 140)">
+    <rect width="160" height="170" rx="12" fill="url(#plannerGrad)" filter="url(#shadow)"/>
+    <text x="80" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">Planner</text>
+    <line x1="20" y1="45" x2="140" y2="45" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">Designs workflows,</text>
+    <text x="80" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">allocates</text>
+    <text x="80" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">resources</text>
+    <line x1="20" y1="115" x2="140" y2="115" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="138" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">OUTPUT:</text>
+    <text x="80" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="white">Workflow Plan</text>
+  </g>
+
+  <!-- Arrow: Planner → Operator -->
+  <line x1="540" y1="225" x2="575" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Agent 3: Operator -->
+  <g transform="translate(585, 140)">
+    <rect width="160" height="170" rx="12" fill="url(#operatorGrad)" filter="url(#shadow)"/>
+    <text x="80" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">Operator</text>
+    <line x1="20" y1="45" x2="140" y2="45" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">Executes the</text>
+    <text x="80" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">planned workflow</text>
+    <text x="80" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">safely</text>
+    <line x1="20" y1="115" x2="140" y2="115" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="138" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">OUTPUT:</text>
+    <text x="80" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="white">Results</text>
+  </g>
+
+  <!-- Arrow: Operator → Analyst -->
+  <line x1="745" y1="225" x2="780" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Agent 4: Analyst -->
+  <g transform="translate(790, 140)">
+    <rect width="160" height="170" rx="12" fill="url(#analystGrad)" filter="url(#shadow)"/>
+    <text x="80" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">Analyst</text>
+    <line x1="20" y1="45" x2="140" y2="45" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">Summarizes</text>
+    <text x="80" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">findings, quantifies</text>
+    <text x="80" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">uncertainty</text>
+    <line x1="20" y1="115" x2="140" y2="115" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="138" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">OUTPUT:</text>
+    <text x="80" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="white">Analysis</text>
+  </g>
+
+  <!-- Arrow: Analyst → Archivist -->
+  <line x1="950" y1="225" x2="985" y2="225" stroke="#666" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Agent 5: Archivist -->
+  <g transform="translate(995, 140)">
+    <rect width="160" height="170" rx="12" fill="url(#archivistGrad)" filter="url(#shadow)"/>
+    <text x="80" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="white">Archivist</text>
+    <line x1="20" y1="45" x2="140" y2="45" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="70" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">Documents</text>
+    <text x="80" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">everything for</text>
+    <text x="80" y="100" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="rgba(255,255,255,0.95)">reproducibility</text>
+    <line x1="20" y1="115" x2="140" y2="115" stroke="rgba(255,255,255,0.3)" stroke-width="1"/>
+    <text x="80" y="138" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="rgba(255,255,255,0.8)">OUTPUT:</text>
+    <text x="80" y="155" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="white">Provenance</text>
+  </g>
+
+  <!-- Data flow labels below arrows -->
+  <text x="147" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">goal</text>
+  <text x="352" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">opportunities</text>
+  <text x="557" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">plan</text>
+  <text x="762" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">results</text>
+  <text x="967" y="250" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">analysis</text>
+
+  <!-- Legend / Framework labels -->
+  <g transform="translate(350, 380)">
+    <rect width="500" height="90" rx="8" fill="white" stroke="#ddd" stroke-width="1"/>
+    <text x="250" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#666">Available Implementations</text>
+    <line x1="20" y1="38" x2="480" y2="38" stroke="#eee" stroke-width="1"/>
+
+    <!-- LangChain -->
+    <rect x="30" y="50" width="12" height="12" rx="2" fill="#2196F3"/>
+    <text x="50" y="61" font-family="system-ui, sans-serif" font-size="11" fill="#333">AgentsLangChain</text>
+
+    <!-- Academy -->
+    <rect x="170" y="50" width="12" height="12" rx="2" fill="#4CAF50"/>
+    <text x="190" y="61" font-family="system-ui, sans-serif" font-size="11" fill="#333">AgentsAcademy</text>
+
+    <!-- LangChain Dashboard -->
+    <rect x="300" y="50" width="12" height="12" rx="2" fill="#2196F3"/>
+    <rect x="302" y="52" width="8" height="8" rx="1" fill="white" fill-opacity="0.5"/>
+    <text x="320" y="61" font-family="system-ui, sans-serif" font-size="11" fill="#333">+ Dashboard</text>
+
+    <!-- Academy Dashboard -->
+    <rect x="410" y="50" width="12" height="12" rx="2" fill="#4CAF50"/>
+    <rect x="412" y="52" width="8" height="8" rx="1" fill="white" fill-opacity="0.5"/>
+    <text x="430" y="61" font-family="system-ui, sans-serif" font-size="11" fill="#333">+ Dashboard</text>
+  </g>
+</svg>

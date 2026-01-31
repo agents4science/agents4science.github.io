@@ -36,13 +36,33 @@ Local execution lets you develop and test agent logic before deploying to HPC. L
 └─────────────────────────────┘
 ```
 
-## Tutorial Examples
+## 5-Agent Scientific Discovery Pipeline
 
-- Simple LangChain example
+A reference implementation demonstrating multi-agent coordination for scientific workflows. Five specialized agents work in sequence, each contributing domain expertise before passing results to the next:
 
+| Agent | Role | Input | Output |
+|-------|------|-------|--------|
+| **Scout** | Surveys problem space, detects anomalies | Goal | Research opportunities |
+| **Planner** | Designs workflows, allocates resources | Opportunities | Workflow plan |
+| **Operator** | Executes the planned workflow safely | Plan | Execution results |
+| **Analyst** | Summarizes findings, quantifies uncertainty | Results | Analysis summary |
+| **Archivist** | Documents everything for reproducibility | Summary | Documented provenance |
 
-## Code
+<img src="/Frameworks/Assets/pipeline.png" alt="5-agent pipeline diagram" style="max-width: 100%; margin: 1rem 0;">
 
-- The [AgentsLangChain](/Frameworks/AgentsLangChain/) code uses LangGraph to implement a simple 5-agent pipeline example 
-- [AgentsExample](/Frameworks/AgentsExample/) — Dashboard demo
-- [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) — Molecular property agent implemented with Academy
+### Implementations
+
+| Example | Framework | Features | Code |
+|---------|-----------|----------|------|
+| [AgentsLangChain](/Frameworks/AgentsLangChain/) | LangChain | Simple, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain) |
+| [AgentsAcademy](/Frameworks/AgentsAcademy/) | Academy | Simple, no LLM required | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsAcademy) |
+| [AgentsLangChainDashboard](/Frameworks/AgentsLangChainDashboard/) | LangChain | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChainDashboard) |
+| [AgentsAcademyDashboard](/Frameworks/AgentsAcademyDashboard/) | Academy | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsAcademyDashboard) |
+
+The simple versions are minimal implementations ideal for learning. The dashboard versions wrap the same agents with a full-screen Rich UI showing live progress across multiple scientific goals.
+
+---
+
+## Other Examples
+
+- [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) — LLM-planned molecular property agent using Academy with real computational chemistry tools (RDKit, xTB)

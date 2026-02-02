@@ -1,5 +1,42 @@
 # Capabilities
 
+<div style="display: flex; gap: 2rem; align-items: flex-start;">
+
+  <!-- LEFT: all text -->
+  <div style="flex: 1;">
+    <p>
+      An agent is a persistent, stateful process that acts on behalf of a user
+      or system. An agent may:
+    </p>
+
+    <ul>
+      <li>Observe inputs or events</li>
+      <li>Plan (decide on) actions using a policy (rules or LLM)</li>
+      <li>Act: Execute tools or interact with other agents</li>
+      <li>Learn: Update state to adapt over time</li>
+    </ul>
+
+    <p>
+      We can think of an agent as a
+      <em>scientific assistant that can reason, act, and coordinate on our behalf</em>.
+    </p>
+  </div>
+
+  <!-- RIGHT: image -->
+  <img src="Assets/agent.png"
+       alt="Agent loop diagram"
+       style="width: 180px; height: auto; flex-shrink: 0;">
+
+</div>
+
+An **agent framework** provides abstractions and runtime support that simplify the development and use of agents.
+We focus here on two agent frameworks that are well-suited for scientific applications:
+
+* [**LangGraph**](https://www.langchain.com/langgraph) offers structured, reproducible workflows for LLM-driven reasoning and tool execution. Good for managing interactions with LLMs and for implementing structured or auditable reasoning pipelines.
+
+* [**Academy**](https://academy-agents.org) provides persistent, secure, and scalable execution across HPC systems, instruments, and data services. Good for agents that must run continuously or securely on HPC systems, laboratory robots, data platforms, or other parts of federated DOE infrastructure.
+
+
 *Deployment patterns from local execution to autonomous systems*
 
 CAF enables agentic applications to scale from local execution to governed, autonomous scientific systems.

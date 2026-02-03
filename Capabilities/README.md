@@ -1,36 +1,10 @@
 # Capabilities
 
-<div style="display: flex; gap: 2rem; align-items: flex-start;">
+*Deployment patterns from local execution to autonomous systems*
 
-  <!-- LEFT: all text -->
-  <div style="flex: 1;">
-    <p>
-      An agent is a persistent, stateful process that acts on behalf of a user
-      or system. An agent may:
-    </p>
+We provide here example code that implements a set of agentic capabilities of increasing sophistication, from local execution to governed, autonomous scientific systems.
 
-    <ul>
-      <li>Observe inputs or events</li>
-      <li>Plan (decide on) actions using a policy (rules or LLM)</li>
-      <li>Act: Execute tools or interact with other agents</li>
-      <li>Learn: Update state to adapt over time</li>
-    </ul>
-
-    <p>
-      We can think of an agent as a
-      <em>scientific assistant that can reason, act, and coordinate on our behalf</em>.
-    </p>
-  </div>
-
-  <!-- RIGHT: image -->
-  <img src="Assets/agent.png"
-       alt="Agent loop diagram"
-       style="width: 180px; height: auto; flex-shrink: 0;">
-
-</div>
-
-An **agent framework** provides abstractions and runtime support that simplify the development and use of agents.
-We focus here on two agent frameworks that are well-suited for scientific applications:
+The code makes use of two **agent frameworks**, packages that provide abstractions and runtime support to simplify the development and use of agents:
 
 * [**LangGraph**](https://www.langchain.com/langgraph) offers structured, reproducible workflows for LLM-driven reasoning and tool execution. Good for managing interactions with LLMs and for implementing structured or auditable reasoning pipelines.
 
@@ -38,10 +12,6 @@ We focus here on two agent frameworks that are well-suited for scientific applic
 
 See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf3k7P-35XGcH) for a brief review of these two systems, and one more, Microsoft Agent Framework.
 
-
-*Deployment patterns from local execution to autonomous systems*
-
-CAF enables agentic applications to scale from local execution to governed, autonomous scientific systems.
 
 ---
 

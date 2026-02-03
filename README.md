@@ -4,6 +4,37 @@
 
 **Agentic discovery** combines reasoning-capable AI with scientific and engineering resources—such as literature collections, simulation codes, experimental platforms, and knowledge bases—to accelerate the pace of discovery. Recent advances in large language models (LLMs) and related technologies make it possible to build agentic systems that automate key aspects of scientific work: synthesizing information from the literature, generating and prioritizing hypotheses, designing and executing protocols, running simulations or experiments, and interpreting results.
 
+<div style="display: flex; gap: 2rem; align-items: flex-start;">
+
+  <!-- LEFT: all text -->
+  <div style="flex: 1;">
+    <p>
+      An agent is a persistent, stateful process that acts on behalf of a user
+      or system. An agent may:
+    </p>
+
+    <ul>
+      <li>Observe inputs or events</li>
+      <li>Plan (decide on) actions using a policy (rules or LLM)</li>
+      <li>Act: Execute tools or interact with other agents</li>
+      <li>Learn: Update state to adapt over time</li>
+    </ul>
+
+    <p>
+      We can think of an agent as a
+      <em>scientific assistant that can reason, act, and coordinate on our behalf</em>.
+    </p>
+  </div>
+
+  <!-- RIGHT: image -->
+  <img src="Assets/agent.png"
+       alt="Agent loop diagram"
+       style="width: 180px; height: auto; flex-shrink: 0;">
+
+</div>
+
+
+
 ---
 
 <div style="display: flex; flex-wrap: wrap; gap: 2rem; margin: 2rem 0;">
@@ -20,10 +51,10 @@
 </div>
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Class/Assets/frameworks.png" alt="Frameworks" style="width: 160px; height: 160px; object-fit: cover;">
+<img src="Capabilities/Assets/capabilities.png" alt="Capabilities" style="width: 160px; height: 160px; object-fit: cover;">
 <div>
-<p><strong><a href="Frameworks/">Frameworks</a></strong><br>
-Advice for building portable, scalable multi-agent systems, and example code.</p>
+<p><strong><a href="Capabilities/">Capabilities</a></strong><br>
+Deployment patterns from local prototypes to massively parallel HPC inference.</p>
 </div>
 </div>
 
@@ -32,14 +63,6 @@ Advice for building portable, scalable multi-agent systems, and example code.</p
 <div>
 <p><strong><a href="Applications/">Applications</a></strong><br>
 Example applications of agentic systems for scientific discovery.</p>
-</div>
-</div>
-
-<div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Capabilities/Assets/capabilities.png" alt="Capabilities" style="width: 160px; height: 160px; object-fit: cover;">
-<div>
-<p><strong><a href="Capabilities/">Capabilities</a></strong><br>
-Deployment patterns from local prototypes to massively parallel HPC inference.</p>
 </div>
 </div>
 

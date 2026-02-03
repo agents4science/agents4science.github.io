@@ -12,6 +12,8 @@ A Rich dashboard wrapper for the [AgentsLangChain](../AgentsLangChain/) multi-ag
 - Configurable goals via YAML
 - Headless mode for scripting (`A4S_UI=0`)
 
+**Requirements:** Python 3.10+, LangChain 1.0+
+
 ## The Dashboard
 
 ```

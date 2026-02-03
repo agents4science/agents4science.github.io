@@ -1,8 +1,9 @@
-
-from langchain.tools import tool
+"""Analysis tools for the scientific discovery pipeline."""
+from langchain_core.tools import tool
 import numpy as np
 
-@tool("analyze_dataset", return_direct=False)
+
+@tool
 def analyze_dataset(dataset_ref: str) -> str:
     """Compute mean and std for a mock dataset; returns a short text summary."""
     rng = np.random.default_rng(42)

@@ -22,6 +22,8 @@ Each agent implementation is just a skeleton.
 
 The agents use OpenAI models as their LLM. An OpenAI key is required to run the example.
 
+**Requirements:** Python 3.10+, LangChain 1.0+
+
 ## Implementation
 
 The code uses LangChain's `ChatOpenAI` for LLM access, `@tool` decorator for tool definitions, and `AgentExecutor` for agent execution. Each agent is defined with a name, role description, and optional tools:

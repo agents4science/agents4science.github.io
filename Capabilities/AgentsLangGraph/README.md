@@ -22,6 +22,8 @@ Each agent implementation is just a skeleton.
 
 The agents use OpenAI models as their LLM. An OpenAI key is required to run the example.
 
+**Requirements:** Python 3.10+, LangGraph 1.0+, LangChain 1.0+
+
 ## Why LangGraph?
 
 LangGraph provides several advantages over plain LangChain for multi-agent workflows:

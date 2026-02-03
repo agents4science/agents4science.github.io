@@ -38,4 +38,4 @@ Scientific workflows often span multiple facilities. Academy provides secure, au
 
 ## Code
 
-- [CharacterizeChemicals](/Frameworks/CharacterizeChemicals/) — Molecular property calculations via RDKit and xTB
+- [CharacterizeChemicals](/Capabilities/CharacterizeChemicals/) — Molecular property calculations via RDKit and xTB

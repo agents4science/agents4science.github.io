@@ -1,0 +1,120 @@
+1765059237.546708 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:99 __init__ INFO: Starting DataFlowKernel with config
+Config(
+    app_cache=True, 
+    checkpoint_files=None, 
+    checkpoint_mode=None, 
+    checkpoint_period=None, 
+    dependency_resolver=None, 
+    executors=(ThreadPoolExecutor(
+        label='threads', 
+        max_threads=3, 
+        remote_monitoring_radio=<parsl.monitoring.radios.multiprocessing.MultiprocessingQueueRadio object at 0x152c0ab50>, 
+        storage_access=None, 
+        thread_name_prefix='ThreadPoolExecutor-threads', 
+        working_dir=None
+    ),), 
+    exit_mode='cleanup', 
+    garbage_collect=True, 
+    initialize_logging=True, 
+    internal_tasks_max_threads=10, 
+    max_idletime=120.0, 
+    monitoring=None, 
+    project_name=None, 
+    retries=0, 
+    retry_handler=None, 
+    run_dir='runinfo', 
+    std_autopath=None, 
+    strategy='simple', 
+    strategy_period=5, 
+    usage_tracking=0
+)
+1765059237.546819 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:101 __init__ INFO: Parsl version: 2025.12.01
+1765059237.546913 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.usage_tracking.usage:119 __init__ DEBUG: Tracking level: 0
+1765059237.546982 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:124 __init__ INFO: Run id is: fc700f40-4c34-4028-9c77-6bd05b7cca94
+1765059237.569765 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:131 __init__ DEBUG: Considering candidate for workflow name: /Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/parsl/dataflow/dflow.py
+1765059237.569872 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:131 __init__ DEBUG: Considering candidate for workflow name: /Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/parsl/dataflow/dflow.py
+1765059237.569912 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:131 __init__ DEBUG: Considering candidate for workflow name: /Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/parsl/concurrent/__init__.py
+1765059237.569939 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:131 __init__ DEBUG: Considering candidate for workflow name: /Users/ian/AAA/Code/agents4science.github.io/Software/CharacterizeChemicals/run_chem_agent.py
+1765059237.569965 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:137 __init__ DEBUG: Using run_chem_agent.py as workflow name
+1765059237.570123 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.dataflow.memoization:221 start INFO: App caching initialized
+1765059237.570160 2025-12-06 16:13:57 MainProcess-8541 MainThread-8595857600 parsl.jobs.strategy:145 __init__ DEBUG: Scaling strategy: simple
+1765059237.570333 2025-12-06 16:13:57 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1765059237.571172 2025-12-06 16:13:57 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-5697351760
+1765059242.577529 2025-12-06 16:14:02 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1765059242.577982 2025-12-06 16:14:02 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-5697351760
+1765059242.589675 2025-12-06 16:14:02 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:946 submit DEBUG: Task 0 will be sent to executor threads
+1765059242.589794 2025-12-06 16:14:02 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:754 _add_output_deps DEBUG: Adding output dependencies
+1765059242.589853 2025-12-06 16:14:02 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:995 submit DEBUG: Added output dependencies
+1765059242.589881 2025-12-06 16:14:02 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:1004 submit DEBUG: Gathering dependencies
+1765059242.589936 2025-12-06 16:14:02 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:1007 submit DEBUG: Gathered dependencies
+1765059242.589962 2025-12-06 16:14:02 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:1019 submit INFO: Task 0 submitted for App _run_agent_on_worker, not waiting on any dependency
+1765059242.589990 2025-12-06 16:14:02 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:1023 submit DEBUG: Task 0 set to pending state with AppFuture: <AppFuture at 0x152c7a3d0 state=pending>
+1765059242.590139 2025-12-06 16:14:02 MainProcess-8541 Task-Launch_0-13237448704 parsl.dataflow.memoization:300 check_memo DEBUG: Task 0 will not be memoized
+1765059242.590871 2025-12-06 16:14:02 MainProcess-8541 Task-Launch_0-13237448704 parsl.dataflow.dflow:712 launch_task INFO: Parsl task 0 try 0 launched on executor threads
+1765059242.593000 2025-12-06 16:14:02 MainProcess-8541 Task-Launch_0-13237448704 parsl.dataflow.dflow:1206 log_std_stream INFO: Standard out for task 0 will not be redirected.
+1765059242.593400 2025-12-06 16:14:02 MainProcess-8541 Task-Launch_0-13237448704 parsl.dataflow.dflow:1206 log_std_stream INFO: Standard error for task 0 will not be redirected.
+1765059242.593439 2025-12-06 16:14:02 MainProcess-8541 Task-Launch_0-13237448704 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _launch_if_ready_async on thread Task-Launch_0
+1765059247.579202 2025-12-06 16:14:07 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1765059247.579352 2025-12-06 16:14:07 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-5697351760
+1765059252.584480 2025-12-06 16:14:12 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1765059252.584799 2025-12-06 16:14:12 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-5697351760
+1765059257.588502 2025-12-06 16:14:17 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.jobs.strategy:184 _general_strategy DEBUG: general strategy starting with strategy_type simple for 0 executors
+1765059257.590146 2025-12-06 16:14:17 MainProcess-8541 JobStatusPoller-Timer-Thread-5697351760-13186969600 parsl.process_loggers:27 wrapped DEBUG: Normal ending for _general_strategy on thread JobStatusPoller-Timer-Thread-5697351760
+1765059259.602929 2025-12-06 16:14:19 MainProcess-8541 ThreadPoolExecutor-threads_0-13254275072 parsl.app.errors:110 reraise DEBUG: Reraising exception of type <class 'RuntimeError'>
+1765059260.089497 2025-12-06 16:14:20 MainProcess-8541 ThreadPoolExecutor-threads_0-13254275072 parsl.dataflow.dflow:331 handle_exec_update INFO: Task 0 try 0 failed with exception of type RuntimeError
+1765059260.089693 2025-12-06 16:14:20 MainProcess-8541 ThreadPoolExecutor-threads_0-13254275072 parsl.dataflow.dflow:372 handle_exec_update ERROR: Task 0 failed after 0 retry attempts
+Traceback (most recent call last):
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/parsl/dataflow/dflow.py", line 328, in handle_exec_update
+    res = self._unwrap_remote_exception_wrapper(future)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/parsl/dataflow/dflow.py", line 557, in _unwrap_remote_exception_wrapper
+    result.reraise()
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/parsl/app/errors.py", line 114, in reraise
+    raise v
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/parsl/app/errors.py", line 138, in wrapper
+    return func(*args, **kwargs)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/academy/manager.py", line 101, in _run_agent_on_worker
+    asyncio.run(_run_agent_async(spec))
+      ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/asyncio/runners.py", line 190, in run
+    return runner.run(main)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/asyncio/runners.py", line 118, in run
+    return self._loop.run_until_complete(task)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/asyncio/base_events.py", line 654, in run_until_complete
+    return future.result()
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/academy/manager.py", line 71, in _run_agent_async
+    async with Runtime(
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/academy/runtime.py", line 172, in __aenter__
+    await self._start()
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/academy/runtime.py", line 411, in _start
+    self._exchange_client = await self.factory.create_agent_client(
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/academy/exchange/factory.py", line 94, in create_agent_client
+    status = await transport.status(agent_id)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/academy/exchange/cloud/client.py", line 221, in status
+    async with self._session.get(
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/aiohttp/client.py", line 1510, in __aenter__
+    self._resp: _RetType = await self._coro
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/site-packages/aiohttp/client.py", line 665, in _request
+    auth = await self._loop.run_in_executor(
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/asyncio/base_events.py", line 830, in run_in_executor
+    executor.submit(func, *args), loop=self)
+    ^^^^^^^^^^^^^^^^^
+  File "/Users/ian/anaconda3/envs/chem-agent/lib/python3.11/concurrent/futures/thread.py", line 169, in submit
+    raise RuntimeError('cannot schedule new futures after '
+    ^^^^^^^^^^^^^^^^^
+RuntimeError: cannot schedule new futures after interpreter shutdown
+1765059260.091365 2025-12-06 16:14:20 MainProcess-8541 ThreadPoolExecutor-threads_0-13254275072 parsl.dataflow.dflow:526 _complete_task_exception INFO: Task 0 failed (launched -> failed)
+1765059260.091484 2025-12-06 16:14:20 MainProcess-8541 ThreadPoolExecutor-threads_0-13254275072 parsl.dataflow.dflow:1206 log_std_stream INFO: Standard out for task 0 will not be redirected.
+1765059260.091515 2025-12-06 16:14:20 MainProcess-8541 ThreadPoolExecutor-threads_0-13254275072 parsl.dataflow.dflow:1206 log_std_stream INFO: Standard error for task 0 will not be redirected.
+1765059260.091811 2025-12-06 16:14:20 MainProcess-8541 MainThread-8595857600 parsl.dataflow.dflow:1094 atexit_cleanup WARNING: Python is exiting with a DFK still running. You should call parsl.dfk().cleanup() before exiting to release any resources

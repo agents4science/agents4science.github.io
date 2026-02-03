@@ -1,0 +1,63 @@
+Metadata-Version: 2.4
+Name: globus-sdk
+Version: 3.65.0
+Summary: Globus SDK for Python
+Author-email: Globus Team <support@globus.org>
+License: Apache-2.0
+Project-URL: Homepage, https://github.com/globus/globus-sdk-python
+Keywords: globus
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3.10
+Classifier: Programming Language :: Python :: 3.11
+Classifier: Programming Language :: Python :: 3.12
+Classifier: Programming Language :: Python :: 3.13
+Requires-Python: >=3.8
+Description-Content-Type: text/x-rst
+License-File: LICENSE
+Requires-Dist: requests<3.0.0,>=2.19.1
+Requires-Dist: pyjwt[crypto]<3.0.0,>=2.0.0
+Requires-Dist: cryptography!=3.4.0,>=3.3.1
+Requires-Dist: typing_extensions>=4.0; python_version < "3.11"
+Requires-Dist: importlib_resources>=5.12.0; python_version < "3.9"
+Dynamic: license-file
+
+Globus SDK for Python
+=====================
+
+This SDK provides a convenient Pythonic interface to
+`Globus <https://www.globus.org>`_ APIs.
+
+Basic Usage
+-----------
+
+Install with ``pip install globus-sdk``
+
+You can then import Globus client classes and other helpers from
+``globus_sdk``. For example:
+
+.. code-block:: python
+
+    from globus_sdk import LocalGlobusConnectPersonal
+
+    # None if Globus Connect Personal is not installed
+    endpoint_id = LocalGlobusConnectPersonal().endpoint_id
+
+
+Testing, Development, and Contributing
+--------------------------------------
+
+Go to the
+`CONTRIBUTING <https://github.com/globus/globus-sdk-python/blob/main/CONTRIBUTING.adoc>`_
+guide for detail.
+
+Links
+-----
+| Full Documentation: https://globus-sdk-python.readthedocs.io/
+| Source Code: https://github.com/globus/globus-sdk-python
+| API Documentation: https://docs.globus.org/api/
+| Release History + Changelog: https://github.com/globus/globus-sdk-python/releases

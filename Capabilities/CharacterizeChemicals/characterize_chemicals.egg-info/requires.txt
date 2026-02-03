@@ -1,0 +1,10 @@
+academy-py>=0.1.0
+torch
+transformers
+accelerate
+huggingface_hub
+
+[chem]
+
+[chem:platform_system != "Linux"]
+rdkit-pypi

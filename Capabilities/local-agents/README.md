@@ -53,15 +53,16 @@ We use this simple example to demonstrate multi-agent coordination for scientifi
 
 <img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="width: 60%; margin: 1rem 0;">
 
-### Two Example Implementations
+### Example Implementations
 
-We provide implementations of this simple example in LangGraph and Academy.
-Note that these implementations are toys: they create agents that communicate, but each agent's internal logic is just a stub. 
+We provide implementations of this simple example in LangGraph, LangChain, and Academy.
+Note that these implementations are toys: they create agents that communicate, but each agent's internal logic is just a stub.
 
 | Example | Framework | Features | Code |
 |---------|-----------|----------|------|
-| [AgentsLangChain](/Frameworks/AgentsLangChain/) | LangChain | Simple, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChain) |
-| [AgentsAcademy](/Frameworks/AgentsAcademy/) | Academy | Simple, no LLM required | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsAcademy) |
+| [AgentsLangGraph](/Capabilities/AgentsLangGraph/) | LangGraph | Graph-based, typed state, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangGraph) |
+| [AgentsLangChain](/Capabilities/AgentsLangChain/) | LangChain | Simple, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangChain) |
+| [AgentsAcademy](/Capabilities/AgentsAcademy/) | Academy | Simple, no LLM required | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsAcademy) |
 
 The simple versions are minimal implementations ideal for learning.
 
@@ -72,8 +73,8 @@ The dashboard versions wrap the same agents with a full-screen Rich UI showing l
 
 | Example | Framework | Features | Code |
 |---------|-----------|----------|------|
-| [AgentsLangChainDashboard](/Frameworks/AgentsLangChainDashboard/) | LangChain | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsLangChainDashboard) |
-| [AgentsAcademyDashboard](/Frameworks/AgentsAcademyDashboard/) | Academy | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Frameworks/AgentsAcademyDashboard) |
+| [AgentsLangChainDashboard](/Capabilities/AgentsLangChainDashboard/) | LangChain | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangChainDashboard) |
+| [AgentsAcademyDashboard](/Capabilities/AgentsAcademyDashboard/) | Academy | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsAcademyDashboard) |
 
 
 ---

@@ -1,12 +1,21 @@
-Frameworks/AgentsExample/.venv/
-Frameworks/AgentsExample/__pycache__/
-Frameworks/AgentsExample/agents4science/__pycache__/
-Frameworks/AgentsExample/agents4science/roles/__pycache__/
-Frameworks/AgentsExample/agents4science/tools/__pycache__/
-Frameworks/AgentsLangChain/.venv/
-Frameworks/AgentsLangChain/agents4science/__pycache__
-Frameworks/AgentsLangChain/agents4science/tools/__pycache__
-Frameworks/CharacterizeChemicals/__pycache__/
-Frameworks/CharacterizeChemicals/characterize_chemicals/__pycache__/
-Frameworks/CharacterizeChemicals/characterize_chemicals.egg-info/
-Frameworks/CharacterizeChemicals/runinfo/
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build artifacts
+*.egg-info/
+dist/
+build/
+
+# Runtime files
+runinfo/
+
+# OS files
+.DS_Store

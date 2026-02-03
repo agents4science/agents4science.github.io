@@ -51,7 +51,7 @@
 </div>
 
 <div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
-<img src="Capabilities/Assets/capabilities.png" alt="Capabilities" style="width: 160px; height: 160px; object-fit: cover;">
+<img src="Assets/capabilities.png" alt="Capabilities" style="width: 160px; height: 160px; object-fit: cover;">
 <div>
 <p><strong><a href="Capabilities/">Capabilities</a></strong><br>
 Deployment patterns from local prototypes to massively parallel HPC inference.</p>

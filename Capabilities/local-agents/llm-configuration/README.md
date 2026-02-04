@@ -1,6 +1,6 @@
 # LLM Configuration
 
-The examples in this directory support multiple LLM backends. You can use OpenAI, FIRST (HPC inference), or run without any API key using mock responses.
+The examples in this directory support multiple LLM backends: OpenAI, FIRST (HPC inference), Ollama (local), or mock mode (no setup required).
 
 ## Supported Modes
 
@@ -8,9 +8,10 @@ The examples in this directory support multiple LLM backends. You can use OpenAI
 |------|---------------------|-------------|
 | **OpenAI** | `OPENAI_API_KEY` | Uses OpenAI (gpt-4o-mini by default) |
 | **FIRST** | `FIRST_API_KEY` | Uses FIRST HPC inference service |
+| **Ollama** | `OLLAMA_MODEL` | Uses Ollama for local LLM inference |
 | **Mock** | (none) | Demonstrates patterns with hardcoded responses |
 
-If both `OPENAI_API_KEY` and `FIRST_API_KEY` are set, OpenAI takes precedence.
+Precedence when multiple variables are set: OpenAI > FIRST > Ollama > Mock.
 
 ## Configuration
 
@@ -30,7 +31,22 @@ export FIRST_MODEL=meta-llama/Meta-Llama-3.1-70B-Instruct
 python main.py
 ```
 
-### Mock Mode (No API Key)
+### Ollama (Local LLM)
+
+[Ollama](https://ollama.com/) runs LLMs locally on your machine.
+
+```bash
+# Install Ollama and pull a model
+ollama pull llama3.2
+
+# Run with Ollama
+export OLLAMA_MODEL=llama3.2
+python main.py
+```
+
+Optional: Set `OLLAMA_HOST` if Ollama is running on a different host (default: `http://localhost:11434`).
+
+### Mock Mode (No Setup Required)
 
 ```bash
 python main.py
@@ -54,7 +70,7 @@ Or in mock mode:
 ```
 ============================================================
 LLM Mode: Mock
-  Reason: No OPENAI_API_KEY or FIRST_API_KEY found; using hardcoded responses
+  Reason: No API key or OLLAMA_MODEL found; using hardcoded responses
 ============================================================
 ```
 

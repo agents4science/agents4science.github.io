@@ -1,10 +1,11 @@
 """
 Minimal agent example: an LLM that can use a calculator.
 
-Supports three modes:
+Supports four modes:
 1. OPENAI_API_KEY set → uses OpenAI
 2. FIRST_API_KEY set → uses FIRST (HPC inference service)
-3. Neither set → uses mock responses to demonstrate the pattern
+3. OLLAMA_MODEL set → uses Ollama (local LLM)
+4. None of the above → uses mock responses to demonstrate the pattern
 """
 
 import os
@@ -49,10 +50,21 @@ def get_llm():
             f"FIRST_API_KEY found in environment (model: {model})",
         )
 
+    if os.environ.get("OLLAMA_MODEL"):
+        from langchain_openai import ChatOpenAI
+        model = os.environ["OLLAMA_MODEL"]
+        host = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+        base_url = f"{host}/v1"
+        return (
+            ChatOpenAI(model=model, api_key="ollama", base_url=base_url),
+            "Ollama",
+            f"OLLAMA_MODEL found in environment (model: {model})",
+        )
+
     return (
         None,
         "Mock",
-        "No OPENAI_API_KEY or FIRST_API_KEY found; using hardcoded responses",
+        "No API key or OLLAMA_MODEL found; using hardcoded responses",
     )
 
 

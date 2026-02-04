@@ -4,7 +4,8 @@ Base agent class for agents4science.
 Supports multiple LLM modes:
 1. OPENAI_API_KEY set → uses OpenAI
 2. FIRST_API_KEY set → uses FIRST (HPC inference service)
-3. None of the above → uses mock responses
+3. OLLAMA_MODEL set → uses Ollama (local LLM)
+4. None of the above → uses mock responses
 """
 
 import os
@@ -37,9 +38,16 @@ def _detect_mode():
         _llm_reason = f"FIRST_API_KEY found in environment (model: {model})"
         _client = OpenAI(api_key=os.environ["FIRST_API_KEY"], base_url=base_url)
 
+    elif os.environ.get("OLLAMA_MODEL"):
+        _llm_mode = "ollama"
+        model = os.environ["OLLAMA_MODEL"]
+        host = os.environ.get("OLLAMA_HOST", "http://localhost:11434")
+        _llm_reason = f"OLLAMA_MODEL found in environment (model: {model})"
+        _client = OpenAI(api_key="ollama", base_url=f"{host}/v1")
+
     else:
         _llm_mode = "mock"
-        _llm_reason = "No OPENAI_API_KEY or FIRST_API_KEY found; using mock responses"
+        _llm_reason = "No API key or OLLAMA_MODEL found; using mock responses"
         _client = None
 
 
@@ -76,6 +84,9 @@ def get_mode_description() -> str:
     elif mode == "first":
         model = os.environ.get("FIRST_MODEL", "Llama-3.1-70B")
         return f"FIRST ({model})"
+    elif mode == "ollama":
+        model = os.environ.get("OLLAMA_MODEL", "unknown")
+        return f"Ollama ({model})"
     else:
         return "Mock"
 
@@ -106,6 +117,8 @@ class Agent:
                 model = os.environ.get("A4S_MODEL", "gpt-4o-mini")
             elif mode == "first":
                 model = os.environ.get("FIRST_MODEL", "meta-llama/Meta-Llama-3.1-70B-Instruct")
+            elif mode == "ollama":
+                model = os.environ.get("OLLAMA_MODEL", "llama3.2")
             else:
                 model = "mock"
 

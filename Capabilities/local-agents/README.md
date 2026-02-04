@@ -19,6 +19,13 @@ Local execution lets you develop and test agent logic before deploying to HPC. L
 | **Scale** | Single agent / small multi-agent |
 | **Status** | Mature |
 
+## Getting Started Guides
+
+| Guide | Description |
+|-------|-------------|
+| [LLM Configuration](llm-configuration/) | Configure OpenAI, Ollama, or FIRST backends |
+| [Getting Started with Academy](academy-guide/) | Step-by-step tutorial: Basic → RemoteTools → Hybrid → Persistent → Federated |
+
 ## Architecture
 
 Here we deal with agentic applications in which one or more agents operate entirely locally, each potentially calling tools and/or LLMs.

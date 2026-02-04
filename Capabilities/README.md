@@ -12,6 +12,12 @@ The code makes use of two **agent frameworks**, packages that provide abstractio
 
 See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf3k7P-35XGcH) for a brief review of these two systems, and one more, Microsoft Agent Framework.
 
+### Getting Started
+
+| Guide | Description |
+|-------|-------------|
+| [LLM Configuration](local-agents/llm-configuration/) | Configure OpenAI, Ollama, or FIRST backends |
+| [Getting Started with Academy](local-agents/academy-guide/) | Step-by-step Academy tutorial |
 
 ---
 

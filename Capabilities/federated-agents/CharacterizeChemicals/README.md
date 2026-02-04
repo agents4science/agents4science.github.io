@@ -1,19 +1,3 @@
-Metadata-Version: 2.4
-Name: characterize-chemicals
-Version: 0.1.0
-Summary: LLM-planned RDKit + xTB agent for molecular property characterization.
-Author-email: Ian Foster <you@example.com>
-License: MIT
-Requires-Python: >=3.10
-Description-Content-Type: text/markdown
-Requires-Dist: academy-py>=0.1.0
-Requires-Dist: torch
-Requires-Dist: transformers
-Requires-Dist: accelerate
-Requires-Dist: huggingface_hub
-Provides-Extra: chem
-Requires-Dist: rdkit-pypi; platform_system != "Linux" and extra == "chem"
-
 # CharacterizeChemicals  
 ### An LLM-Planned, Tool-Executing Molecular Property Agent
 
@@ -31,6 +15,8 @@ Main entry point:
 ```
 python run_chem_agent.py
 ```
+
+**Source code:** [View on GitHub](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/federated-agents/CharacterizeChemicals)
 
 ---
 

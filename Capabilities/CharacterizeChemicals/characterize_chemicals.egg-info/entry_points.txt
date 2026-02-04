@@ -1,2 +1,0 @@
-[console_scripts]
-characterize-chemicals = characterize_chemicals.cli:main

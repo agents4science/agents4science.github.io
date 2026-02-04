@@ -41,4 +41,4 @@ Scientific workflows often span multiple facilities. Academy provides secure, au
 | Example | Description |
 |---------|-------------|
 | [AgentsHPCJob](/Capabilities/federated-agents/AgentsHPCJob/) | Submit and monitor batch jobs on HPC systems |
-| [CharacterizeChemicals](/Capabilities/CharacterizeChemicals/) | Molecular property calculations via RDKit and xTB |
+| [CharacterizeChemicals](/Capabilities/federated-agents/CharacterizeChemicals/) | Molecular property calculations via RDKit and xTB |

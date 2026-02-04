@@ -2,7 +2,7 @@
 
 An agent that submits and monitors batch jobs on HPC systems.
 
-**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/federated-agents/AgentsHPCJob](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/federated-agents/AgentsHPCJob)
+**Tech:** LangGraph | **Code:** [View on GitHub](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/federated-agents/AgentsHPCJob)
 
 ## What It Does
 
@@ -107,8 +107,14 @@ def submit_job(script):
 - **Asynchronous**: Jobs run independently; agent polls for status
 - **Federated**: Agent and HPC system are separate; connected via scheduler
 
+## Related Examples
+
+- [AgentsCalculator](/Capabilities/local-agents/AgentsCalculator/) - Start here if new to LangGraph agents
+- [AgentsRemoteTools](/Capabilities/local-agents/AgentsRemoteTools/) - Academy pattern for remote tool invocation
+- [CharacterizeChemicals](/Capabilities/federated-agents/CharacterizeChemicals/) - Academy-based molecular property agent
+
 ## Requirements
 
 - Python 3.10+
-- LangGraph 1.0+
+- LangGraph 0.2+
 - OpenAI API key, FIRST token, Ollama, or run in mock mode

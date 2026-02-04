@@ -1,7 +1,12 @@
-# CharacterizeChemicals  
-### An LLM-Planned, Tool-Executing Molecular Property Agent
+# CharacterizeChemicals
 
-This project demonstrates a full **LLM-planned computational chemistry agent** built on the **Academy** agent framework.  
+An LLM-planned, tool-executing molecular property agent.
+
+**Tech:** Academy | **Code:** [View on GitHub](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/federated-agents/CharacterizeChemicals)
+
+---
+
+This project demonstrates a full **LLM-planned computational chemistry agent** built on the **Academy** agent framework.
 Given one or more **SMILES strings**, the agent:
 
 1. Uses a **local LLM** (default: `microsoft/Phi-3.5-mini-instruct`) to plan a multi-step workflow.  
@@ -294,13 +299,21 @@ This makes it easy to identify:
 
 ---
 
-## 📚 Attribution
+## Related Examples
+
+- [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) - Start here if new to Academy
+- [AgentsHybrid](/Capabilities/local-agents/AgentsHybrid/) - Combining Academy with LangGraph
+- [AgentsHPCJob](/Capabilities/federated-agents/AgentsHPCJob/) - LangGraph-based HPC job submission
+
+---
+
+## Attribution
 
 This project uses:
 
-- **Academy** — https://github.com/academy-agents/academy  
-- **RDKit** — https://www.rdkit.org  
-- **xTB** — https://github.com/grimme-lab/xtb  
-- **Transformers / Accelerate / torch**  
-- **Phi-3.5-mini-instruct** — https://huggingface.co/microsoft/Phi-3.5-mini-instruct  
+- **Academy** — https://github.com/academy-agents/academy
+- **RDKit** — https://www.rdkit.org
+- **xTB** — https://github.com/grimme-lab/xtb
+- **Transformers / Accelerate / torch**
+- **Phi-3.5-mini-instruct** — https://huggingface.co/microsoft/Phi-3.5-mini-instruct
 

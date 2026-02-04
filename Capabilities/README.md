@@ -121,31 +121,31 @@ All examples support multiple LLM backends (OpenAI, FIRST, Ollama) and include a
 
 ### Federated Agents
 
-| Example | Description | Key Pattern |
-|---------|-------------|-------------|
-| [AgentsHPCJob](federated-agents/AgentsHPCJob/) | HPC job submission | Batch scheduler |
-| [CharacterizeChemicals](federated-agents/CharacterizeChemicals/) | Molecular properties | RDKit + xTB |
+| Example | Tech | Description | Key Pattern |
+|---------|------|-------------|-------------|
+| [AgentsHPCJob](federated-agents/AgentsHPCJob/) | LangGraph | HPC job submission | Batch scheduler lifecycle |
+| [CharacterizeChemicals](federated-agents/CharacterizeChemicals/) | Academy | Molecular properties | LLM-planned RDKit + xTB |
 
 ### Governed Tool Use
 
-| Example | Description | Key Pattern |
-|---------|-------------|-------------|
-| [AgentsGovernedTools](governed-tool-use/AgentsGovernedTools/) | Policy enforcement | Budget, rate limits, approval |
+| Example | Tech | Description | Key Pattern |
+|---------|------|-------------|-------------|
+| [AgentsGovernedTools](governed-tool-use/AgentsGovernedTools/) | LangGraph | Policy enforcement | Budget, rate limits, approval |
 
 ### Multi-Agent Coordination
 
-| Example | Description | Key Pattern |
-|---------|-------------|-------------|
-| [AgentsCoordination](multi-agent-coordination/AgentsCoordination/) | Shared resources | Budget, blackboard, claims |
+| Example | Tech | Description | Key Pattern |
+|---------|------|-------------|-------------|
+| [AgentsCoordination](multi-agent-coordination/AgentsCoordination/) | LangGraph | Shared resources | Budget, blackboard, claims |
 
 ### Long-Lived Agents
 
-| Example | Description | Key Pattern |
-|---------|-------------|-------------|
-| [AgentsCheckpoint](long-lived-agents/AgentsCheckpoint/) | Persistent workflows | Checkpoint/resume |
+| Example | Tech | Description | Key Pattern |
+|---------|------|-------------|-------------|
+| [AgentsCheckpoint](long-lived-agents/AgentsCheckpoint/) | LangGraph | Persistent workflows | Checkpoint/resume |
 
 ### Agent Workflows
 
-| Example | Description | Key Pattern |
-|---------|-------------|-------------|
-| [AgentsWorkflow](agent-workflows/AgentsWorkflow/) | Dynamic DAG construction | Adaptive execution |
+| Example | Tech | Description | Key Pattern |
+|---------|------|-------------|-------------|
+| [AgentsWorkflow](agent-workflows/AgentsWorkflow/) | LangGraph | Dynamic DAG construction | Adaptive execution |

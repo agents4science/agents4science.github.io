@@ -102,22 +102,22 @@ All examples support multiple LLM backends (OpenAI, FIRST, Ollama) and include a
 
 ### Local Agents
 
-| Example | Description | Key Pattern |
-|---------|-------------|-------------|
-| [AgentsCalculator](local-agents/AgentsCalculator/) | Minimal tool-calling agent | LangGraph + `@tool` |
-| [AgentsRAG](local-agents/AgentsRAG/) | Retrieval-augmented generation | Vector search |
-| [AgentsDatabase](local-agents/AgentsDatabase/) | Natural language data queries | Pandas integration |
-| [AgentsAPI](local-agents/AgentsAPI/) | External API calls | PubChem REST API |
-| [AgentsConversation](local-agents/AgentsConversation/) | Stateful conversation | Short/long-term memory |
-| [AgentsAcademyBasic](local-agents/AgentsAcademyBasic/) | Minimal Academy example | Two-agent messaging |
-| [AgentsRemoteTools](local-agents/AgentsRemoteTools/) | Remote tool invocation | Coordinator + ToolProvider |
-| [AgentsHybrid](local-agents/AgentsHybrid/) | Academy + LangGraph hybrid | Distributed LLM agents |
-| [AgentsPersistent](local-agents/AgentsPersistent/) | Persistent workflows | Checkpoint and resume |
-| [AgentsFederated](local-agents/AgentsFederated/) | Federated collaboration | Cross-institutional (DOE labs) |
-| [AgentsLangGraph](local-agents/AgentsLangGraph/) | 5-agent pipeline | LangGraph orchestration |
-| [AgentsAcademy](local-agents/AgentsAcademy/) | 5-agent pipeline | Academy messaging |
-| [AgentsAcademyHubSpoke](local-agents/AgentsAcademyHubSpoke/) | Hub-and-spoke pattern | Central orchestrator |
-| [AgentsAcademyDashboard](local-agents/AgentsAcademyDashboard/) | Live progress dashboard | Rich TUI |
+| Example | Tech | Description | Key Pattern |
+|---------|------|-------------|-------------|
+| [AgentsCalculator](local-agents/AgentsCalculator/) | LangGraph | Minimal tool-calling agent | `@tool` decorator |
+| [AgentsRAG](local-agents/AgentsRAG/) | LangGraph | Retrieval-augmented generation | Vector search |
+| [AgentsDatabase](local-agents/AgentsDatabase/) | LangGraph | Natural language data queries | Pandas integration |
+| [AgentsAPI](local-agents/AgentsAPI/) | LangGraph | External API calls | PubChem REST API |
+| [AgentsConversation](local-agents/AgentsConversation/) | LangGraph | Stateful conversation | Short/long-term memory |
+| [AgentsLangGraph](local-agents/AgentsLangGraph/) | LangGraph | 5-agent pipeline | StateGraph orchestration |
+| [AgentsAcademyBasic](local-agents/AgentsAcademyBasic/) | Academy | Minimal Academy example | Two-agent messaging |
+| [AgentsRemoteTools](local-agents/AgentsRemoteTools/) | Academy | Remote tool invocation | Coordinator + ToolProvider |
+| [AgentsPersistent](local-agents/AgentsPersistent/) | Academy | Persistent workflows | Checkpoint and resume |
+| [AgentsFederated](local-agents/AgentsFederated/) | Academy | Federated collaboration | Cross-institutional (DOE labs) |
+| [AgentsAcademy](local-agents/AgentsAcademy/) | Academy | 5-agent pipeline | Agent-to-agent messaging |
+| [AgentsAcademyHubSpoke](local-agents/AgentsAcademyHubSpoke/) | Academy | Hub-and-spoke pattern | Central orchestrator |
+| [AgentsAcademyDashboard](local-agents/AgentsAcademyDashboard/) | Academy | Live progress dashboard | Rich TUI |
+| [AgentsHybrid](local-agents/AgentsHybrid/) | Both | Academy + LangGraph hybrid | Distributed LLM agents |
 
 ### Federated Agents
 

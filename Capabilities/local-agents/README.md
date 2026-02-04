@@ -39,7 +39,26 @@ Here we deal with agentic applications in which one or more agents operate entir
 └─────────────────────────────┘
 ```
 
-## A Five-Agent Scientific Discovery Pipeline
+## Minimal Example: Calculator Agent
+
+The simplest possible agent—an LLM that can use a calculator tool:
+
+| Example | Framework | Code |
+|---------|-----------|------|
+| [AgentsCalculator](/Capabilities/AgentsCalculator/) | LangChain + LangGraph | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsCalculator) |
+
+```python
+@tool
+def calculate(expression: str) -> str:
+    """Evaluate a mathematical expression."""
+    return str(eval(expression, {"__builtins__": {}}, {}))
+
+llm = ChatOpenAI(model="gpt-4o-mini")
+agent = create_react_agent(llm, [calculate])
+agent.invoke({"messages": [HumanMessage(content="What is 347 * 892?")]})
+```
+
+## Five-Agent Scientific Discovery Pipeline
 
 We use this simple example to demonstrate multi-agent coordination for scientific workflows. Five specialized agents work in sequence, each contributing domain expertise before passing results to the next:
 

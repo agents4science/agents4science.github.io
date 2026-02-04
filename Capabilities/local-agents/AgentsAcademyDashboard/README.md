@@ -2,7 +2,7 @@
 
 A Rich dashboard wrapper for the [AgentsAcademy](../AgentsAcademy/) multi-agent pipeline. Shows live progress as five specialized agents work through multiple scientific goals.
 
-**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsAcademyDashboard](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsAcademyDashboard)
+**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademyDashboard](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademyDashboard)
 
 ## Features
 
@@ -35,7 +35,7 @@ A Rich dashboard wrapper for the [AgentsAcademy](../AgentsAcademy/) multi-agent 
 ## Running the Example
 
 ```bash
-cd Capabilities/AgentsAcademyDashboard
+cd Capabilities/local-agents/AgentsAcademyDashboard
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python main.py

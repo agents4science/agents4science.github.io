@@ -2,7 +2,7 @@
 
 This example demonstrates how to build a multi-agent pipeline for scientific discovery using [LangGraph](https://langchain-ai.github.io/langgraph/). Five specialized agents work in sequence to tackle a research goal, with each agent contributing its expertise before passing results to the next.
 
-**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangGraph](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangGraph)
+**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangGraph](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangGraph)
 
 ## The Application
 
@@ -115,7 +115,7 @@ AgentsLangGraph/
 ## Running the Example
 
 ```bash
-cd Capabilities/AgentsLangGraph
+cd Capabilities/local-agents/AgentsLangGraph
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export OPENAI_API_KEY=<your_api_key>
@@ -153,5 +153,5 @@ LangGraph is particularly useful when workflows need:
 
 ## See Also
 
-- [AgentsLangChain](/Capabilities/AgentsLangChain/) — Simpler LangChain version
-- [AgentsAcademy](/Capabilities/AgentsAcademy/) — Academy framework version (no LLM required)
+- [AgentsLangChain](/Capabilities/local-agents/AgentsLangChain/) — Simpler LangChain version
+- [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) — Academy framework version (no LLM required)

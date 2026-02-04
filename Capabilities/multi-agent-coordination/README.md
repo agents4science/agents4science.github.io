@@ -42,4 +42,4 @@ Large-scale discovery requires specialized agents working together. Coordination
 
 ## Code
 
-- [AgentsExample](/Capabilities/AgentsExample/) — Multi-agent demonstration
+- [AgentsExample](/Capabilities/local-agents/AgentsExample/) — Multi-agent demonstration

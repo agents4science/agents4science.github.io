@@ -4,7 +4,7 @@
 
 A demonstration of multiple agents working on scientific goals with a full-screen Rich dashboard showing live progress.
 
-**Source code:** [View on GitHub](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsExample)
+**Source code:** [View on GitHub](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsExample)
 
 ## Features
 
@@ -33,7 +33,7 @@ Goals are defined in `agents4science/workflows/goals.yaml` and include examples 
 ## Quick Start
 
 ```bash
-cd Capabilities/AgentsExample
+cd Capabilities/local-agents/AgentsExample
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export A4S_LATENCY=0.4

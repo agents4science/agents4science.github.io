@@ -2,7 +2,7 @@
 
 This example demonstrates how to build a multi-agent pipeline for scientific discovery using [Academy](https://academy-agents.org). Five specialized agents work in sequence to tackle a research goal, with each agent contributing its expertise before passing results to the next.
 
-**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsAcademy](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsAcademy)
+**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademy](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademy)
 
 ## The Application
 
@@ -90,7 +90,7 @@ AgentsAcademy/
 ## Running the Example
 
 ```bash
-cd Capabilities/AgentsAcademy
+cd Capabilities/local-agents/AgentsAcademy
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 python main.py

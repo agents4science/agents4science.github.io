@@ -45,7 +45,7 @@ The simplest possible agent—an LLM that can use a calculator tool:
 
 | Example | Framework | Code |
 |---------|-----------|------|
-| [AgentsCalculator](/Capabilities/AgentsCalculator/) | LangChain + LangGraph | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsCalculator) |
+| [AgentsCalculator](/Capabilities/local-agents/AgentsCalculator/) | LangChain + LangGraph | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsCalculator) |
 
 ```python
 @tool
@@ -79,9 +79,9 @@ Note that these implementations are toys: they create agents that communicate, b
 
 | Example | Framework | Features | Code |
 |---------|-----------|----------|------|
-| [AgentsLangGraph](/Capabilities/AgentsLangGraph/) | LangGraph | Graph-based, typed state, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangGraph) |
-| [AgentsLangChain](/Capabilities/AgentsLangChain/) | LangChain | Simple, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangChain) |
-| [AgentsAcademy](/Capabilities/AgentsAcademy/) | Academy | Simple, no LLM required | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsAcademy) |
+| [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) | LangGraph | Graph-based, typed state, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangGraph) |
+| [AgentsLangChain](/Capabilities/local-agents/AgentsLangChain/) | LangChain | Simple, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangChain) |
+| [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) | Academy | Simple, no LLM required | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademy) |
 
 The simple versions are minimal implementations ideal for learning.
 
@@ -92,8 +92,8 @@ The dashboard versions wrap the same agents with a full-screen Rich UI showing l
 
 | Example | Framework | Features | Code |
 |---------|-----------|----------|------|
-| [AgentsLangChainDashboard](/Capabilities/AgentsLangChainDashboard/) | LangChain | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangChainDashboard) |
-| [AgentsAcademyDashboard](/Capabilities/AgentsAcademyDashboard/) | Academy | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsAcademyDashboard) |
+| [AgentsLangChainDashboard](/Capabilities/local-agents/AgentsLangChainDashboard/) | LangChain | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangChainDashboard) |
+| [AgentsAcademyDashboard](/Capabilities/local-agents/AgentsAcademyDashboard/) | Academy | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademyDashboard) |
 
 
 ---

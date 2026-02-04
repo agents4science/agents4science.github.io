@@ -2,7 +2,7 @@
 
 A Rich dashboard wrapper for the [AgentsLangChain](../AgentsLangChain/) multi-agent pipeline. Shows live progress as five specialized agents work through multiple scientific goals.
 
-**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangChainDashboard](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangChainDashboard)
+**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangChainDashboard](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangChainDashboard)
 
 ## Features
 
@@ -36,7 +36,7 @@ A Rich dashboard wrapper for the [AgentsLangChain](../AgentsLangChain/) multi-ag
 ## Running the Example
 
 ```bash
-cd Capabilities/AgentsLangChainDashboard
+cd Capabilities/local-agents/AgentsLangChainDashboard
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export OPENAI_API_KEY=<your_api_key>

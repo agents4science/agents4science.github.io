@@ -2,7 +2,7 @@
 
 This example demonstrates how to build a multi-agent pipeline for scientific discovery using [LangChain](https://www.langchain.com/). Five specialized agents work in sequence to tackle a research goal, with each agent contributing its expertise before passing results to the next.
 
-**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangChain](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsLangChain)
+**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangChain](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangChain)
 
 ## The Application
 
@@ -79,7 +79,7 @@ AgentsLangChain/
 ## Running the Example
 
 ```bash
-cd Capabilities/AgentsLangChain
+cd Capabilities/local-agents/AgentsLangChain
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export OPENAI_API_KEY=<your_api_key>

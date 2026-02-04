@@ -2,7 +2,7 @@
 
 The simplest possible agent: an LLM with a calculator tool. Implementations in both LangChain and LangGraph.
 
-**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsCalculator](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/AgentsCalculator)
+**Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsCalculator](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsCalculator)
 
 ## What It Does
 
@@ -67,7 +67,7 @@ for step in agent.stream({"messages": [HumanMessage(content="What is 347 * 892?"
 ## Running the Examples
 
 ```bash
-cd Capabilities/AgentsCalculator
+cd Capabilities/local-agents/AgentsCalculator
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
 export OPENAI_API_KEY=<your_key>

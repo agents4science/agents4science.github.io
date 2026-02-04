@@ -39,7 +39,9 @@ Here we deal with agentic applications in which one or more agents operate entir
 └─────────────────────────────┘
 ```
 
-## Minimal Example: Calculator Agent
+## Examples 
+
+### Minimal Example: Calculator Agent
 
 The simplest possible agent—an LLM that can use a calculator tool:
 
@@ -58,9 +60,9 @@ agent = create_react_agent(llm, [calculate])
 agent.invoke({"messages": [HumanMessage(content="What is 347 * 892?")]})
 ```
 
-## Five-Agent Scientific Discovery Pipeline
+### Five-Agent Scientific Discovery Pipeline
 
-We use this simple example to demonstrate multi-agent coordination for scientific workflows. Five specialized agents work in sequence, each contributing domain expertise before passing results to the next:
+This more involved example demonstrates multi-agent coordination for scientific workflows. Five specialized agents work in sequence, each contributing domain expertise before passing results to the next:
 
 | Agent | Role | Input | Output |
 |-------|------|-------|--------|
@@ -72,7 +74,7 @@ We use this simple example to demonstrate multi-agent coordination for scientifi
 
 <img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="width: 60%; margin: 1rem 0;">
 
-### Example Implementations
+#### Example Implementations
 
 We provide implementations of this simple example in LangGraph, LangChain, and Academy.
 Note that these implementations are toys: they create agents that communicate, but each agent's internal logic is just a stub.
@@ -86,7 +88,7 @@ Note that these implementations are toys: they create agents that communicate, b
 The simple versions are minimal implementations ideal for learning.
 
 
-### Implementations with Dashboards
+#### Implementations with Dashboards
 
 The dashboard versions wrap the same agents with a full-screen Rich UI showing live progress across multiple scientific goals.
 

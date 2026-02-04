@@ -42,4 +42,8 @@ Large-scale discovery requires specialized agents working together. Coordination
 
 ## Code
 
-- [AgentsExample](/Capabilities/local-agents/AgentsExample/) — Multi-agent demonstration
+| Example | Description |
+|---------|-------------|
+| [AgentsCoordination](/Capabilities/multi-agent-coordination/AgentsCoordination/) | Shared budget, state, and policy across agents |
+| [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) | 5-agent pipeline with LangGraph orchestration |
+| [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) | 5-agent pipeline with Academy messaging |

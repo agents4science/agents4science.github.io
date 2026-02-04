@@ -60,6 +60,18 @@ agent = create_react_agent(llm, [calculate])
 agent.invoke({"messages": [HumanMessage(content="What is 347 * 892?")]})
 ```
 
+### Tool Pattern Examples
+
+These examples demonstrate different types of tools an agent can use:
+
+| Example | Tool Type | What It Shows |
+|---------|-----------|---------------|
+| [AgentsRAG](/Capabilities/local-agents/AgentsRAG/) | Vector search | Retrieval-augmented generation from scientific documents |
+| [AgentsDatabase](/Capabilities/local-agents/AgentsDatabase/) | Data queries | Natural language queries on pandas DataFrames |
+| [AgentsAPI](/Capabilities/local-agents/AgentsAPI/) | External APIs | Calling PubChem for chemical information |
+
+Each example follows the same pattern as the Calculator but with more realistic, science-relevant tools.
+
 ### Five-Agent Scientific Discovery Pipeline
 
 This more involved example demonstrates multi-agent coordination for scientific workflows. Five specialized agents work in sequence, each contributing domain expertise before passing results to the next:

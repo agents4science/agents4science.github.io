@@ -10,6 +10,8 @@ The examples in this directory support multiple LLM backends. You can use OpenAI
 | **FIRST** | `FIRST_API_KEY` | Uses FIRST HPC inference service |
 | **Mock** | (none) | Demonstrates patterns with hardcoded responses |
 
+If both `OPENAI_API_KEY` and `FIRST_API_KEY` are set, OpenAI takes precedence.
+
 ## Configuration
 
 ### OpenAI

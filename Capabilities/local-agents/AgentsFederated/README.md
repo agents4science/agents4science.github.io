@@ -176,11 +176,20 @@ In production deployments:
 - **Data governance**: Track data provenance and access
 - **Audit logging**: Record all cross-institutional operations
 
-## Next Steps
+## Related Examples
 
-- [Federated Agent Execution](/Capabilities/federated-agents/) - Full federated deployment guide
-- [Governed Tool Use](/Capabilities/governed-tool-use/) - Policy enforcement
+**Prerequisites:**
+- [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) - Academy fundamentals
 - [AgentsRemoteTools](/Capabilities/local-agents/AgentsRemoteTools/) - Remote tool pattern
+- [AgentsPersistent](/Capabilities/local-agents/AgentsPersistent/) - Checkpoint and resume
+
+**Next steps:**
+- [Federated Agent Execution](/Capabilities/federated-agents/) - Production deployment on DOE HPC
+- [Governed Tool Use](/Capabilities/governed-tool-use/) - Add policy enforcement
+- [Multi-Agent Coordination](/Capabilities/multi-agent-coordination/) - Coordinate many agents
+
+**Combine with:**
+- [AgentsHybrid](/Capabilities/local-agents/AgentsHybrid/) - Add LLM reasoning to federated agents
 
 ## Requirements
 

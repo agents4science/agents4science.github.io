@@ -184,11 +184,19 @@ Both examples demonstrate persistent state, but with different approaches:
 | **Distribution** | Multi-machine ready | Single process |
 | **Best for** | Distributed workflows | LLM reasoning chains |
 
-## Next Steps
+## Related Examples
 
+**Prerequisites:**
 - [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) - Academy fundamentals
+- [AgentsRemoteTools](/Capabilities/local-agents/AgentsRemoteTools/) - Remote tool pattern
+
+**Next steps:**
+- [AgentsFederated](/Capabilities/local-agents/AgentsFederated/) - Cross-institutional collaboration
+- [AgentsHybrid](/Capabilities/local-agents/AgentsHybrid/) - Add LLM reasoning to persistent workflows
 - [Long-Lived Agents](/Capabilities/long-lived-agents/) - Extended agent lifecycles
-- [AgentsCheckpoint](/Capabilities/long-lived-agents/AgentsCheckpoint/) - LangGraph checkpointing
+
+**Alternatives:**
+- [AgentsCheckpoint](/Capabilities/long-lived-agents/AgentsCheckpoint/) - LangGraph checkpointing (different approach)
 
 ## Requirements
 

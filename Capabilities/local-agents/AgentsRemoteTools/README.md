@@ -162,10 +162,16 @@ factory = GlobusComputeExchange(endpoint_id="hpc-cluster-xyz")
 | **Pipeline** | Agent-to-agent forwarding | Sequential processing |
 | **Hub-and-Spoke** | Central orchestration | Simple workflows |
 
-## Next Steps
+## Related Examples
 
-- [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) - Start here if new to Academy
-- [Federated Agent Execution](/Capabilities/federated-agents/) - Run across institutions
+**Prerequisites:**
+- [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) - Academy fundamentals (start here if new)
+
+**Next steps:**
+- [AgentsHybrid](/Capabilities/local-agents/AgentsHybrid/) - Add LLM reasoning to Academy agents
+- [AgentsPersistent](/Capabilities/local-agents/AgentsPersistent/) - Checkpoint and resume workflows
+- [AgentsFederated](/Capabilities/local-agents/AgentsFederated/) - Cross-institutional collaboration
+- [Federated Agent Execution](/Capabilities/federated-agents/) - Production deployment on HPC
 - [Governed Tool Use](/Capabilities/governed-tool-use/) - Add policy enforcement
 
 ## Requirements

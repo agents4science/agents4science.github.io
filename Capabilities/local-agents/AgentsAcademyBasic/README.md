@@ -137,11 +137,18 @@ Same code works with both!
 
 ## Next Steps
 
-After understanding this example, explore:
+After understanding this example, explore these in order:
 
-- [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) - 5-agent pipeline
-- [AgentsAcademyHubSpoke](/Capabilities/local-agents/AgentsAcademyHubSpoke/) - Hub-and-spoke pattern
-- [AgentsAcademyDashboard](/Capabilities/local-agents/AgentsAcademyDashboard/) - Rich TUI
+| Example | What You'll Learn |
+|---------|-------------------|
+| [AgentsRemoteTools](/Capabilities/local-agents/AgentsRemoteTools/) | Coordinator calling tools on remote agents |
+| [AgentsHybrid](/Capabilities/local-agents/AgentsHybrid/) | Combining Academy with LangGraph for LLM reasoning |
+| [AgentsPersistent](/Capabilities/local-agents/AgentsPersistent/) | Checkpoint and resume workflows |
+| [AgentsFederated](/Capabilities/local-agents/AgentsFederated/) | Cross-institutional collaboration |
+| [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) | 5-agent pipeline with agent-to-agent messaging |
+
+Also see:
+- [AgentsCalculator](/Capabilities/local-agents/AgentsCalculator/) - If you want to compare with LangGraph approach
 
 ## Requirements
 

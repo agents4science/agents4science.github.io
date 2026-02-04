@@ -179,11 +179,20 @@ def run_calculation(structure: str) -> str:
 3. **Fallbacks**: Handle LLM failures gracefully (mock fallback)
 4. **Cost**: LLM calls have latency/cost; batch when possible
 
-## Next Steps
+## Related Examples
 
+**Prerequisites:**
 - [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) - Academy fundamentals
 - [AgentsRemoteTools](/Capabilities/local-agents/AgentsRemoteTools/) - Remote tool pattern
-- [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) - Pure LangGraph approach
+- [AgentsCalculator](/Capabilities/local-agents/AgentsCalculator/) - LangGraph basics
+
+**Next steps:**
+- [AgentsPersistent](/Capabilities/local-agents/AgentsPersistent/) - Add checkpoint/resume to your hybrid agents
+- [AgentsFederated](/Capabilities/local-agents/AgentsFederated/) - Cross-institutional collaboration
+- [CharacterizeChemicals](/Capabilities/federated-agents/CharacterizeChemicals/) - Real-world Academy + LLM example
+
+**Alternatives:**
+- [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) - Pure LangGraph approach (no Academy)
 
 ## Requirements
 

@@ -60,11 +60,22 @@ This example uses the [PubChem PUG REST API](https://pubchem.ncbi.nlm.nih.gov/do
 - No authentication required
 - Extensive chemical database (100M+ compounds)
 
+## Mock Data
+
+The `data/` directory contains fallback compound data for mock mode or when the API is unavailable:
+
+```
+data/
+└── compounds.json    # Aspirin, caffeine, glucose, ethanol, methane, CO2
+```
+
+Add more compounds to `compounds.json` to extend the mock data.
+
 ## Key Points
 
 - **API chaining**: Agent first searches by name, then fetches properties by ID
 - **External data**: Real-time access to PubChem's chemical database
-- **Error handling**: Graceful handling of unknown compounds
+- **Fallback**: Uses local `compounds.json` when API is unavailable
 
 ## Requirements
 

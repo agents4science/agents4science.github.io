@@ -9,64 +9,23 @@ Supports four modes:
 """
 
 import argparse
+import json
 import os
+from pathlib import Path
 
 import requests
 from langchain_core.tools import tool
 from langchain_core.messages import HumanMessage
 
 
-# Mock data for common compounds (used in mock mode or as fallback)
-MOCK_COMPOUNDS = {
-    "aspirin": {
-        "cid": 2244,
-        "name": "Aspirin",
-        "formula": "C9H8O4",
-        "molecular_weight": 180.16,
-        "iupac_name": "2-acetoxybenzoic acid",
-        "description": "A common analgesic and anti-inflammatory drug",
-    },
-    "caffeine": {
-        "cid": 2519,
-        "name": "Caffeine",
-        "formula": "C8H10N4O2",
-        "molecular_weight": 194.19,
-        "iupac_name": "1,3,7-trimethylpurine-2,6-dione",
-        "description": "A central nervous system stimulant",
-    },
-    "glucose": {
-        "cid": 5793,
-        "name": "D-Glucose",
-        "formula": "C6H12O6",
-        "molecular_weight": 180.16,
-        "iupac_name": "(2R,3S,4R,5R)-2,3,4,5,6-pentahydroxyhexanal",
-        "description": "A simple sugar and primary energy source",
-    },
-    "ethanol": {
-        "cid": 702,
-        "name": "Ethanol",
-        "formula": "C2H6O",
-        "molecular_weight": 46.07,
-        "iupac_name": "ethanol",
-        "description": "A simple alcohol used as solvent and fuel",
-    },
-    "methane": {
-        "cid": 297,
-        "name": "Methane",
-        "formula": "CH4",
-        "molecular_weight": 16.04,
-        "iupac_name": "methane",
-        "description": "The simplest hydrocarbon, main component of natural gas",
-    },
-    "carbon dioxide": {
-        "cid": 280,
-        "name": "Carbon dioxide",
-        "formula": "CO2",
-        "molecular_weight": 44.01,
-        "iupac_name": "carbon dioxide",
-        "description": "A greenhouse gas and product of combustion",
-    },
-}
+# Data directory containing mock compound data
+DATA_DIR = Path(__file__).parent / "data"
+COMPOUNDS_FILE = DATA_DIR / "compounds.json"
+
+# Load mock data for common compounds (used in mock mode or as fallback)
+print(f"Loading compound data from {COMPOUNDS_FILE.name}...")
+with open(COMPOUNDS_FILE) as f:
+    MOCK_COMPOUNDS = json.load(f)
 
 
 def get_llm():

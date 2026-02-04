@@ -57,12 +57,21 @@ See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for detai
 
 ## Sample Dataset
 
-The example includes a sample dataset of catalyst experiments with columns:
+The `data/` directory contains a sample CSV dataset of catalyst experiments:
+
+```
+data/
+└── catalyst_experiments.csv
+```
+
+Columns:
 - `catalyst`: Catalyst material (Cu, Ag, Au, Fe-SAC, etc.)
 - `temperature_c`: Reaction temperature in Celsius
 - `efficiency_pct`: Conversion efficiency percentage
 - `product`: Main product (CO, CH4, C2H4, CH3OH)
 - `stability_hrs`: Hours of stable operation
+
+To use your own data, replace `catalyst_experiments.csv` with your CSV file.
 
 ## Key Points
 

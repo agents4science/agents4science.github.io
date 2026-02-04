@@ -10,34 +10,20 @@ Supports four modes:
 
 import argparse
 import os
-import io
+from pathlib import Path
 
 import pandas as pd
 from langchain_core.tools import tool
 from langchain_core.messages import HumanMessage
 
 
-# Sample catalyst experiment dataset
-SAMPLE_DATA = """catalyst,temperature_c,efficiency_pct,product,stability_hrs
-Cu-nanoparticles,25,62.3,C2H4,120
-Cu-nanoparticles,50,68.1,C2H4,95
-Cu-foam,25,45.2,CH4,200
-Ag-nanoparticles,25,94.5,CO,500
-Au-nanoparticles,25,97.2,CO,480
-Fe-SAC,25,89.1,CO,350
-Ni-SAC,25,85.3,CO,320
-Cu-MOF,150,71.4,CH3OH,180
-Cu-MOF,200,78.9,CH3OH,150
-Cu-MOF,250,82.1,CH3OH,90
-TiO2-photocatalyst,25,0.8,CH4,1000
-Plasma-Cu,25,55.2,C2H4,80
-Ag-foam,25,91.8,CO,400
-Cu-nanowires,25,58.7,C2H4,140
-Fe-SAC,50,92.4,CO,300
-"""
+# Data directory containing sample dataset
+DATA_DIR = Path(__file__).parent / "data"
+DATA_FILE = DATA_DIR / "catalyst_experiments.csv"
 
 # Load the dataset
-df = pd.read_csv(io.StringIO(SAMPLE_DATA))
+print(f"Loading dataset from {DATA_FILE.name}...")
+df = pd.read_csv(DATA_FILE)
 
 
 def get_llm():

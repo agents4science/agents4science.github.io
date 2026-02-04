@@ -8,12 +8,12 @@ This example demonstrates a **true pipeline pattern** using [Academy](https://ac
 
 ```
 Main Process                    Agent-to-Agent Messaging
-     │
-     │ 1. Launch agents         Scout ──▶ Planner ──▶ Operator ──▶ Analyst ──▶ Archivist
-     │ 2. Connect pipeline           │          │           │          │           │
-     │ 3. Trigger Scout              └──────────┴───────────┴──────────┴───────────┘
-     │                                          results collected
-     ▼
+     |
+     | 1. Launch agents         Scout --> Planner --> Operator --> Analyst --> Archivist
+     | 2. Connect pipeline           |          |           |          |           |
+     | 3. Trigger Scout              +----------+-----------+----------+-----------+
+     |                                          results collected
+     v
    [wait for completion]
 ```
 

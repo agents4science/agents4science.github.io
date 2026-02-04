@@ -8,21 +8,21 @@ This example demonstrates a **hub-and-spoke pattern** using [Academy](https://ac
 
 ```
 Main Process (Hub)
-     │
-     ├──▶ Scout ────▶ result
-     │                  │
-     ├──▶ Planner ◀────┘
-     │       │
-     │       ▼ result
-     ├──▶ Operator ◀───┘
-     │       │
-     │       ▼ result
-     ├──▶ Analyst ◀────┘
-     │       │
-     │       ▼ result
-     └──▶ Archivist ◀──┘
-             │
-             ▼
+     |
+     +--> Scout ----> result
+     |                  |
+     +--> Planner <-----+
+     |       |
+     |       v result
+     +--> Operator <----+
+     |       |
+     |       v result
+     +--> Analyst <-----+
+     |       |
+     |       v result
+     +--> Archivist <---+
+             |
+             v
          [done]
 ```
 

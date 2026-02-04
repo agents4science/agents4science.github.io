@@ -22,18 +22,18 @@ Scientific workflows often span multiple facilities. Academy provides secure, au
 ## Architecture
 
 ```
-┌────────────┐          ┌─────────────────────┐
-│ Agent Host │          │    DOE HPC System   │
-│            │          │                     │
-│ ┌───────┐  │  secure  │ ┌───────┐ ┌──────┐ │
-│ │ Agent │──┼─────────▶│ │Academy│─▶│Tools │ │
-│ └───┬───┘  │ federated│ └───────┘ └──────┘ │
-│     │      │ identity │                     │
-│     ▼      │          │ ┌─────────────────┐ │
-│ ┌───────┐  │          │ │ Compute Nodes   │ │
-│ │  LLM  │  │          │ └─────────────────┘ │
-│ └───────┘  │          └─────────────────────┘
-└────────────┘
++------------+          +---------------------+
+| Agent Host |          |   DOE HPC System    |
+|            |          |                     |
+| +-------+  |  secure  | +-------+ +------+  |
+| | Agent |--+--------->| |Academy|->|Tools |  |
+| +---+---+  | federated| +-------+ +------+  |
+|     |      | identity |                     |
+|     v      |          | +-----------------+ |
+| +-------+  |          | | Compute Nodes   | |
+| |  LLM  |  |          | +-----------------+ |
+| +-------+  |          +---------------------+
++------------+
 ```
 
 ## Code

@@ -73,13 +73,14 @@ These examples demonstrate different types of tools an agent can use:
 
 Each example follows the same pattern as the Calculator but with more realistic, science-relevant tools.
 
-### Academy Basics
+### Academy Examples
 
-Before diving into complex pipelines, start with the minimal Academy example:
+These examples demonstrate Academy framework patterns for distributed agent coordination:
 
-| Example | Description |
-|---------|-------------|
-| [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) | Two agents communicating - the "Hello World" of Academy |
+| Example | Pattern | Description |
+|---------|---------|-------------|
+| [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) | Basics | Two agents communicating - the "Hello World" of Academy |
+| [AgentsRemoteTools](/Capabilities/local-agents/AgentsRemoteTools/) | Remote Tools | Coordinator calls tools on a ToolProvider agent |
 
 ### Five-Agent Scientific Discovery Pipeline
 

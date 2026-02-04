@@ -3,10 +3,11 @@ Things to fix, 2/3/26
 * I'm not sure the langraph/langchain examples need to support many different versions. Can we pin to the latest version?
 
   - 2/3/26: Change made for the four examples
+  - 2/3/26: Removed LangChain examples to reduce confusion
 
-* The Academy version isn't a sequential pipeline. I think it is more of a hub/spoke where the main process starts each of the agents directly and calls them without any passing of info between the agents.  Maybe this is its own pattern?
+* The Academy version isn't a sequential pipeline. I think it is more of a hub/spoke where the main process starts each of the agents directly and calls them without any passing of info between the agents.  Maybe this is its own pattern?  And sequential should be another.
 
-* And sequential should be another.
+  - 2/3/26: Created two Academy examples: pipeline and Hub/Spoke
 
 * I like the pattern with the 5 agents and I think that maps to examples we have seen. It may be a little overwhelming for completely new people that may have an even simpler model. E.g., LLM+Analysis like the arch picture.
 
@@ -15,3 +16,10 @@ Things to fix, 2/3/26
 * The code looks well structured to me. I defer to others with more expertise to weigh in. I wondered a little if the agent base is buying us a lot or obfuscating what is happening. But probably good design in general.
 
 * We could extend the examples to each have either OpenAI key or FIRST token and fall back on hardcoded outputs in the case neither is provided.
+
+  - 2/3/26: Added code as follows
+     LLM configuration for the LangGraph scientific pipeline.
+     Supports three modes:
+     1. OPENAI_API_KEY set → uses OpenAI
+     2. FIRST_API_KEY set → uses FIRST (HPC inference service)
+     3. Neither set → uses mock responses

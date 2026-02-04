@@ -13,7 +13,7 @@ from typing import Any
 
 # Global state for LLM mode
 _llm_mode: str | None = None
-_llm_instance: Any = None
+_llm_reason: str | None = None
 
 
 def get_llm_mode() -> str:
@@ -24,6 +24,14 @@ def get_llm_mode() -> str:
     return _llm_mode
 
 
+def get_llm_reason() -> str:
+    """Get the reason for the current LLM mode selection."""
+    global _llm_reason
+    if _llm_reason is None:
+        _detect_mode()
+    return _llm_reason
+
+
 def get_llm(model: str = "gpt-4o-mini", temperature: float = 0.0):
     """
     Get the appropriate LLM based on available credentials.
@@ -31,7 +39,7 @@ def get_llm(model: str = "gpt-4o-mini", temperature: float = 0.0):
     Returns:
         LLM instance or None if in mock mode
     """
-    global _llm_mode, _llm_instance
+    global _llm_mode
 
     if _llm_mode is None:
         _detect_mode()
@@ -58,14 +66,18 @@ def get_llm(model: str = "gpt-4o-mini", temperature: float = 0.0):
 
 def _detect_mode():
     """Detect which LLM mode to use based on environment variables."""
-    global _llm_mode
+    global _llm_mode, _llm_reason
 
     if os.environ.get("OPENAI_API_KEY"):
         _llm_mode = "openai"
+        _llm_reason = "OPENAI_API_KEY found in environment"
     elif os.environ.get("FIRST_API_KEY"):
         _llm_mode = "first"
+        model = os.environ.get("FIRST_MODEL", "meta-llama/Meta-Llama-3.1-70B-Instruct")
+        _llm_reason = f"FIRST_API_KEY found in environment (model: {model})"
     else:
         _llm_mode = "mock"
+        _llm_reason = "No OPENAI_API_KEY or FIRST_API_KEY found; using hardcoded responses"
 
 
 def get_mode_description() -> str:
@@ -77,4 +89,14 @@ def get_mode_description() -> str:
         model = os.environ.get("FIRST_MODEL", "Llama-3.1-70B")
         return f"FIRST ({model})"
     else:
-        return "Mock (no API key set)"
+        return "Mock"
+
+
+def print_mode_info():
+    """Print information about the selected LLM mode."""
+    mode = get_mode_description()
+    reason = get_llm_reason()
+    print("=" * 60)
+    print(f"LLM Mode: {mode}")
+    print(f"  Reason: {reason}")
+    print("=" * 60)

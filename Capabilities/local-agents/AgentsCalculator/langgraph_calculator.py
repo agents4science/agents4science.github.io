@@ -29,31 +29,46 @@ def get_llm():
     Get the appropriate LLM based on available credentials.
 
     Returns:
-        tuple: (llm_instance or None, mode_description)
+        tuple: (llm_instance or None, mode_name, reason)
     """
     if os.environ.get("OPENAI_API_KEY"):
         from langchain_openai import ChatOpenAI
-        return ChatOpenAI(model="gpt-4o-mini"), "OpenAI (gpt-4o-mini)"
+        return (
+            ChatOpenAI(model="gpt-4o-mini"),
+            "OpenAI",
+            "OPENAI_API_KEY found in environment",
+        )
 
     if os.environ.get("FIRST_API_KEY"):
         from langchain_openai import ChatOpenAI
-        return ChatOpenAI(
-            model=os.environ.get("FIRST_MODEL", "meta-llama/Meta-Llama-3.1-70B-Instruct"),
-            api_key=os.environ["FIRST_API_KEY"],
-            base_url=os.environ.get("FIRST_API_BASE", "https://api.first.example.com/v1"),
-        ), f"FIRST ({os.environ.get('FIRST_MODEL', 'Llama-3.1-70B')})"
+        model = os.environ.get("FIRST_MODEL", "meta-llama/Meta-Llama-3.1-70B-Instruct")
+        base_url = os.environ.get("FIRST_API_BASE", "https://api.first.example.com/v1")
+        return (
+            ChatOpenAI(model=model, api_key=os.environ["FIRST_API_KEY"], base_url=base_url),
+            "FIRST",
+            f"FIRST_API_KEY found in environment (model: {model})",
+        )
 
-    return None, "Mock (no API key)"
+    return (
+        None,
+        "Mock",
+        "No OPENAI_API_KEY or FIRST_API_KEY found; using hardcoded responses",
+    )
 
 
-def run_with_llm(llm, queries: list[str], mode: str):
+def print_mode_info(mode: str, reason: str):
+    """Print information about the selected LLM mode."""
+    print("=" * 60)
+    print(f"LLM Mode: {mode}")
+    print(f"  Reason: {reason}")
+    print("=" * 60)
+
+
+def run_with_llm(llm, queries: list[str]):
     """Run queries using the LangGraph agent with a real LLM."""
     from langgraph.prebuilt import create_react_agent
 
     agent = create_react_agent(llm, [calculate])
-
-    print(f"Mode: {mode}")
-    print("=" * 60)
 
     for query in queries:
         print(f"\nQuery: {query}")
@@ -73,9 +88,7 @@ def run_with_llm(llm, queries: list[str], mode: str):
 
 def run_mock(queries: list[str]):
     """Demonstrate the pattern with mock responses (no LLM API key required)."""
-    print("Mode: Mock (no API key set)")
-    print("=" * 60)
-    print("Demonstrating the agent pattern with hardcoded responses.\n")
+    print("\nDemonstrating the agent pattern with hardcoded responses.")
     print("Set OPENAI_API_KEY or FIRST_API_KEY to use a real LLM.\n")
 
     # Mock responses that demonstrate what the agent would do
@@ -83,7 +96,7 @@ def run_mock(queries: list[str]):
         "What is 347 * 892?": [
             ("Agent calls", "calculate", "347 * 892"),
             ("Tool result", "309524"),
-            ("Agent", "347 × 892 = 309,524"),
+            ("Agent", "347 * 892 = 309,524"),
         ],
         "If I have 1500 and spend 847, how much is left?": [
             ("Agent calls", "calculate", "1500 - 847"),
@@ -125,10 +138,11 @@ def main():
         "If I have 1500 and spend 847, how much is left?",
     ]
 
-    llm, mode = get_llm()
+    llm, mode, reason = get_llm()
+    print_mode_info(mode, reason)
 
     if llm:
-        run_with_llm(llm, queries, mode)
+        run_with_llm(llm, queries)
     else:
         run_mock(queries)
 

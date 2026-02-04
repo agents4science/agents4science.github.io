@@ -10,7 +10,7 @@ Supports three modes:
 import argparse
 
 from pipeline.graph import run_pipeline
-from pipeline.llm import get_mode_description, get_llm_mode
+from pipeline.llm import print_mode_info, get_llm_mode
 
 
 def main():
@@ -29,14 +29,12 @@ def main():
     )
     args = parser.parse_args()
 
-    # Show mode
-    mode = get_mode_description()
-    print("=" * 60)
-    print(f"Mode: {mode}")
+    # Show mode and reason
+    print_mode_info()
+
     if get_llm_mode() == "mock":
-        print("\nRunning with mock responses (no API key set).")
-        print("Set OPENAI_API_KEY or FIRST_API_KEY to use a real LLM.")
-    print("=" * 60)
+        print("\nRunning with hardcoded responses to demonstrate the pipeline pattern.")
+        print("Set OPENAI_API_KEY or FIRST_API_KEY to use a real LLM.\n")
 
     # Run the pipeline
     final_state = run_pipeline(args.goal, verbose=not args.quiet)

@@ -83,6 +83,7 @@ These examples demonstrate Academy framework patterns for distributed agent coor
 | [AgentsRemoteTools](/Capabilities/local-agents/AgentsRemoteTools/) | Remote Tools | Coordinator calls tools on a ToolProvider agent |
 | [AgentsHybrid](/Capabilities/local-agents/AgentsHybrid/) | Hybrid | Academy + LangGraph: distributed agents with LLM reasoning |
 | [AgentsPersistent](/Capabilities/local-agents/AgentsPersistent/) | Persistence | Checkpoint and resume workflows across restarts |
+| [AgentsFederated](/Capabilities/local-agents/AgentsFederated/) | Federation | Cross-institutional collaboration (ANL, ORNL, LBNL) |
 
 ### Five-Agent Scientific Discovery Pipeline
 

@@ -113,6 +113,7 @@ All examples support multiple LLM backends (OpenAI, FIRST, Ollama) and include a
 | [AgentsRemoteTools](local-agents/AgentsRemoteTools/) | Remote tool invocation | Coordinator + ToolProvider |
 | [AgentsHybrid](local-agents/AgentsHybrid/) | Academy + LangGraph hybrid | Distributed LLM agents |
 | [AgentsPersistent](local-agents/AgentsPersistent/) | Persistent workflows | Checkpoint and resume |
+| [AgentsFederated](local-agents/AgentsFederated/) | Federated collaboration | Cross-institutional (DOE labs) |
 | [AgentsLangGraph](local-agents/AgentsLangGraph/) | 5-agent pipeline | LangGraph orchestration |
 | [AgentsAcademy](local-agents/AgentsAcademy/) | 5-agent pipeline | Academy messaging |
 | [AgentsAcademyHubSpoke](local-agents/AgentsAcademyHubSpoke/) | Hub-and-spoke pattern | Central orchestrator |

@@ -69,6 +69,7 @@ These examples demonstrate different types of tools an agent can use:
 | [AgentsRAG](/Capabilities/local-agents/AgentsRAG/) | Vector search | Retrieval-augmented generation from scientific documents |
 | [AgentsDatabase](/Capabilities/local-agents/AgentsDatabase/) | Data queries | Natural language queries on pandas DataFrames |
 | [AgentsAPI](/Capabilities/local-agents/AgentsAPI/) | External APIs | Calling PubChem for chemical information |
+| [AgentsConversation](/Capabilities/local-agents/AgentsConversation/) | Memory | Stateful conversations with short and long-term memory |
 
 Each example follows the same pattern as the Calculator but with more realistic, science-relevant tools.
 

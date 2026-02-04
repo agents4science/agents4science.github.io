@@ -143,6 +143,8 @@ export FIRST_API_BASE=https://your-first-endpoint/v1
 python main.py
 ```
 
+See [Argonne FIRST configuration](/Capabilities/local-agents/argonne-first/) for details on using Argonne's HPC inference service.
+
 Custom goal:
 
 ```bash

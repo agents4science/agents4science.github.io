@@ -64,6 +64,8 @@ python main.py
 python main.py
 ```
 
+See [Argonne FIRST configuration](/Capabilities/local-agents/argonne-first/) for details on using Argonne's HPC inference service.
+
 ## Other Configuration
 
 | Environment Variable | Description | Default |

@@ -68,6 +68,8 @@ python langgraph_calculator.py
 python langgraph_calculator.py
 ```
 
+See [Argonne FIRST configuration](/Capabilities/local-agents/argonne-first/) for details on using Argonne's HPC inference service.
+
 ## Key Points
 
 - **Tool definition**: The `@tool` decorator turns a function into an LLM-callable tool

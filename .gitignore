@@ -19,3 +19,14 @@ runinfo/
 
 # OS files
 .DS_Store
+
+# Editor files
+*.swp
+*.swo
+*~
+
+# Claude Code
+.claude/
+
+# Notes
+NOTES

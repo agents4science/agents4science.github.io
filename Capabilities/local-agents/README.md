@@ -81,6 +81,7 @@ These examples demonstrate Academy framework patterns for distributed agent coor
 |---------|---------|-------------|
 | [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) | Basics | Two agents communicating - the "Hello World" of Academy |
 | [AgentsRemoteTools](/Capabilities/local-agents/AgentsRemoteTools/) | Remote Tools | Coordinator calls tools on a ToolProvider agent |
+| [AgentsHybrid](/Capabilities/local-agents/AgentsHybrid/) | Hybrid | Academy + LangGraph: distributed agents with LLM reasoning |
 
 ### Five-Agent Scientific Discovery Pipeline
 

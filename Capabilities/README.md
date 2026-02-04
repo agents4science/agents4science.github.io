@@ -111,6 +111,7 @@ All examples support multiple LLM backends (OpenAI, FIRST, Ollama) and include a
 | [AgentsConversation](local-agents/AgentsConversation/) | Stateful conversation | Short/long-term memory |
 | [AgentsAcademyBasic](local-agents/AgentsAcademyBasic/) | Minimal Academy example | Two-agent messaging |
 | [AgentsRemoteTools](local-agents/AgentsRemoteTools/) | Remote tool invocation | Coordinator + ToolProvider |
+| [AgentsHybrid](local-agents/AgentsHybrid/) | Academy + LangGraph hybrid | Distributed LLM agents |
 | [AgentsLangGraph](local-agents/AgentsLangGraph/) | 5-agent pipeline | LangGraph orchestration |
 | [AgentsAcademy](local-agents/AgentsAcademy/) | 5-agent pipeline | Academy messaging |
 | [AgentsAcademyHubSpoke](local-agents/AgentsAcademyHubSpoke/) | Hub-and-spoke pattern | Central orchestrator |

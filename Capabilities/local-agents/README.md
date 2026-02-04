@@ -74,7 +74,7 @@ This more involved example demonstrates multi-agent coordination for scientific 
 
 <img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="width: 60%; margin: 1rem 0;">
 
-#### Example Implementations
+#### Implementations of Five-Agent Pipeline
 
 We provide implementations of this simple example in LangGraph, LangChain, and Academy.
 Note that these implementations are toys: they create agents that communicate, but each agent's internal logic is just a stub.
@@ -88,7 +88,7 @@ Note that these implementations are toys: they create agents that communicate, b
 The simple versions are minimal implementations ideal for learning.
 
 
-#### Implementations with Dashboards
+#### Implementations of Five-Agent Pipeline with Dashboards
 
 The dashboard versions wrap the same agents with a full-screen Rich UI showing live progress across multiple scientific goals.
 

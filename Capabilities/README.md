@@ -14,10 +14,15 @@ See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf
 
 ### Getting Started
 
-| Guide | Description |
-|-------|-------------|
+**[Building Scientific Agents](local-agents/getting-started/)** — Learn to build production scientific agents:
+
+1. **[LLM Agents](local-agents/getting-started/1-llm-agents.md)** — Build agents that reason and call tools (LangGraph)
+2. **[Distributed Agents](local-agents/getting-started/2-distributed-agents.md)** — Run agents across machines (Academy)
+3. **[Production Agents](local-agents/getting-started/3-production-agents.md)** — Combine both for real deployments
+
+| Additional Resources | |
+|----------------------|---|
 | [LLM Configuration](local-agents/llm-configuration/) | Configure OpenAI, Ollama, or FIRST backends |
-| [Getting Started with Academy](local-agents/academy-guide/) | Step-by-step Academy tutorial |
 
 ---
 

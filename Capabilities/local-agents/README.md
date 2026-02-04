@@ -19,12 +19,17 @@ Local execution lets you develop and test agent logic before deploying to HPC. L
 | **Scale** | Single agent / small multi-agent |
 | **Status** | Mature |
 
-## Getting Started Guides
+## Getting Started
 
-| Guide | Description |
-|-------|-------------|
+**[Building Scientific Agents](getting-started/)** — A three-stage guide covering:
+
+1. **[LLM Agents](getting-started/1-llm-agents.md)** — Build agents that reason and call tools (LangGraph)
+2. **[Distributed Agents](getting-started/2-distributed-agents.md)** — Run agents across machines (Academy)
+3. **[Production Agents](getting-started/3-production-agents.md)** — Combine LangGraph + Academy for real deployments
+
+| Additional Guides | Description |
+|-------------------|-------------|
 | [LLM Configuration](llm-configuration/) | Configure OpenAI, Ollama, or FIRST backends |
-| [Getting Started with Academy](academy-guide/) | Step-by-step tutorial: Basic → RemoteTools → Hybrid → Persistent → Federated |
 
 ## Architecture
 

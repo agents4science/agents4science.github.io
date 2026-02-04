@@ -199,11 +199,11 @@ def run_mock(query: str):
 
     # Simulate agent flow
     print(f"Agent calls: search_compound('{compound_name}')")
-    search_result = search_compound.invoke(compound_name)
+    search_result = search_compound.invoke({"name": compound_name})
     print(f"Result: {search_result}\n")
 
     print(f"Agent calls: get_compound_properties({compound['cid']})")
-    props_result = get_compound_properties.invoke(compound["cid"])
+    props_result = get_compound_properties.invoke({"cid": compound["cid"]})
     print(f"Result: {props_result}\n")
 
     # Generate answer based on query type

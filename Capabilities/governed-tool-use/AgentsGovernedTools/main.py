@@ -159,7 +159,10 @@ def approve_action(action_id: str) -> str:
 
 def governed_tool(cost: float = 0.0, requires_approval: bool = False):
     """Decorator that wraps a tool with governance checks."""
+    from functools import wraps
+
     def decorator(func):
+        @wraps(func)  # Preserves function signature for @tool decorator
         def wrapper(*args, **kwargs):
             tool_name = func.__name__
             action_id = f"{tool_name}_{int(time.time())}"
@@ -189,8 +192,6 @@ def governed_tool(cost: float = 0.0, requires_approval: bool = False):
             audit_log("tool_completed", tool_name, "SUCCESS", {"result_preview": str(result)[:100]})
             return result
 
-        wrapper.__name__ = func.__name__
-        wrapper.__doc__ = func.__doc__
         return wrapper
     return decorator
 

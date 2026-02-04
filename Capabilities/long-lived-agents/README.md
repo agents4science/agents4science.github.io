@@ -45,4 +45,6 @@ Scientific campaigns unfold over weeks or months. Long-lived agents accumulate k
 
 ## Code
 
-Coming soon
+| Example | Description |
+|---------|-------------|
+| [AgentsCheckpoint](/Capabilities/long-lived-agents/AgentsCheckpoint/) | Checkpoint/resume patterns for workflows that span sessions |

@@ -1,0 +1,8 @@
+Gold and silver catalysts are highly selective for CO2 reduction to CO,
+achieving nearly 100% Faradaic efficiency. However, CO is a less valuable
+product compared to hydrocarbons. These catalysts operate well at room
+temperature in aqueous electrolytes.
+
+The high selectivity of noble metals for CO production is attributed to
+weak binding of CO intermediate, which desorbs before further reduction.
+This makes them ideal for syngas production but limits hydrocarbon formation.

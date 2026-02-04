@@ -1,0 +1,10 @@
+Challenges in CO2 conversion include: (1) the high stability of CO2 molecule
+requiring significant energy input, (2) competing hydrogen evolution reaction
+in aqueous systems, (3) catalyst deactivation over time, and (4) scaling up
+from laboratory to industrial scale.
+
+Room temperature CO2 conversion remains challenging due to kinetic barriers.
+Photocatalytic approaches using TiO2 and related semiconductors can drive the
+reaction with solar energy, but efficiencies are typically below 1%. Plasma-
+assisted catalysis is an emerging approach that can activate CO2 at ambient
+conditions.

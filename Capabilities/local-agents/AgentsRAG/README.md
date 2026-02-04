@@ -48,7 +48,17 @@ See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for detai
 
 ## Sample Data
 
-The example includes sample text about CO2 conversion catalysts. In a real application, you would load your own documents (PDFs, papers, etc.).
+The `data/` directory contains sample documents about CO2 conversion catalysts:
+
+```
+data/
+├── challenges.txt           # Conversion challenges and barriers
+├── copper_catalysts.txt     # Copper-based catalyst research
+├── emerging_catalysts.txt   # SACs and MOFs
+└── noble_metal_catalysts.txt # Gold and silver catalysts
+```
+
+To use your own documents, add `.txt` files to the `data/` directory. The agent loads all `.txt` files at startup.
 
 ## Key Points
 

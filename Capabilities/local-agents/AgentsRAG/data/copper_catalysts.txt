@@ -1,0 +1,8 @@
+Copper-based catalysts have shown promising results for electrochemical CO2
+reduction. Cu nanoparticles can achieve Faradaic efficiencies above 60% for
+producing multi-carbon products like ethylene and ethanol. The selectivity
+depends strongly on the catalyst morphology and oxidation state.
+
+Recent work on copper foam electrodes demonstrates improved mass transport
+and higher current densities compared to flat copper surfaces. The three-
+dimensional structure provides more active sites and facilitates gas evolution.

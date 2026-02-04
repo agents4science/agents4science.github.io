@@ -10,44 +10,26 @@ Supports four modes:
 
 import argparse
 import os
+from pathlib import Path
 
 from langchain_core.tools import tool
 from langchain_core.messages import HumanMessage
 
 
-# Sample scientific documents about CO2 conversion catalysts
-SAMPLE_DOCUMENTS = [
-    """Copper-based catalysts have shown promising results for electrochemical CO2
-    reduction. Cu nanoparticles can achieve Faradaic efficiencies above 60% for
-    producing multi-carbon products like ethylene and ethanol. The selectivity
-    depends strongly on the catalyst morphology and oxidation state.""",
+# Data directory containing sample documents
+DATA_DIR = Path(__file__).parent / "data"
 
-    """Gold and silver catalysts are highly selective for CO2 reduction to CO,
-    achieving nearly 100% Faradaic efficiency. However, CO is a less valuable
-    product compared to hydrocarbons. These catalysts operate well at room
-    temperature in aqueous electrolytes.""",
 
-    """Challenges in CO2 conversion include: (1) the high stability of CO2 molecule
-    requiring significant energy input, (2) competing hydrogen evolution reaction
-    in aqueous systems, (3) catalyst deactivation over time, and (4) scaling up
-    from laboratory to industrial scale.""",
-
-    """Recent advances in single-atom catalysts (SACs) show improved activity for
-    CO2 reduction. Iron and nickel SACs on nitrogen-doped carbon supports can
-    selectively produce CO at low overpotentials. The isolated metal sites prevent
-    unwanted side reactions.""",
-
-    """Metal-organic frameworks (MOFs) offer tunable pore structures for CO2 capture
-    and conversion. MOF-derived catalysts combine high surface area with precisely
-    controlled active sites. Cu-MOFs have demonstrated activity for CO2 to methanol
-    conversion at moderate temperatures (150-250C).""",
-
-    """Room temperature CO2 conversion remains challenging due to kinetic barriers.
-    Photocatalytic approaches using TiO2 and related semiconductors can drive the
-    reaction with solar energy, but efficiencies are typically below 1%. Plasma-
-    assisted catalysis is an emerging approach that can activate CO2 at ambient
-    conditions.""",
-]
+def load_documents() -> list[str]:
+    """Load all text documents from the data directory."""
+    documents = []
+    if DATA_DIR.exists():
+        for filepath in sorted(DATA_DIR.glob("*.txt")):
+            text = filepath.read_text().strip()
+            if text:
+                documents.append(text)
+                print(f"  Loaded: {filepath.name}")
+    return documents
 
 
 def get_llm():
@@ -101,7 +83,7 @@ _vectorstore = None
 
 
 def get_vectorstore():
-    """Get or create the vector store with sample documents."""
+    """Get or create the vector store with documents from data/ directory."""
     global _vectorstore
     if _vectorstore is not None:
         return _vectorstore
@@ -111,8 +93,15 @@ def get_vectorstore():
         from langchain_community.vectorstores import FAISS
         from langchain.schema import Document
 
+        print("Loading documents from data/ directory...")
+        documents = load_documents()
+        if not documents:
+            print("  No documents found in data/ directory!")
+            return None
+
         embeddings = OpenAIEmbeddings()
-        docs = [Document(page_content=text) for text in SAMPLE_DOCUMENTS]
+        docs = [Document(page_content=text) for text in documents]
+        print("Creating embeddings...")
         _vectorstore = FAISS.from_documents(docs, embeddings)
         return _vectorstore
 
@@ -179,7 +168,6 @@ def run_with_llm(llm, question: str):
     print("-" * 60)
 
     # Initialize vectorstore
-    print("Loading documents into vector store...")
     get_vectorstore()
     print("Ready.\n")
 
@@ -204,6 +192,13 @@ def run_mock(question: str):
     """Demonstrate the RAG pattern with mock responses."""
     print("\nDemonstrating RAG pattern with mock responses.")
     print("Set OPENAI_API_KEY to use real embeddings and LLM.\n")
+
+    # Show available documents
+    print("Documents in data/ directory:")
+    if DATA_DIR.exists():
+        for filepath in sorted(DATA_DIR.glob("*.txt")):
+            print(f"  - {filepath.name}")
+    print()
 
     print(f"Question: {question}")
     print("-" * 60)

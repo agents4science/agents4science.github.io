@@ -1,0 +1,9 @@
+Recent advances in single-atom catalysts (SACs) show improved activity for
+CO2 reduction. Iron and nickel SACs on nitrogen-doped carbon supports can
+selectively produce CO at low overpotentials. The isolated metal sites prevent
+unwanted side reactions.
+
+Metal-organic frameworks (MOFs) offer tunable pore structures for CO2 capture
+and conversion. MOF-derived catalysts combine high surface area with precisely
+controlled active sites. Cu-MOFs have demonstrated activity for CO2 to methanol
+conversion at moderate temperatures (150-250C).

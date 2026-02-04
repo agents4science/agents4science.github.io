@@ -84,12 +84,12 @@ python langgraph_calculator.py
 | Aspect | LangChain | LangGraph |
 |--------|-----------|-----------|
 | Agent creation | `create_tool_calling_agent` + `AgentExecutor` | `create_react_agent` |
-| Prompt | Explicit `ChatPromptTemplate` | Built-in |
+| Prompt | Explicit `ChatPromptTemplate` | Built-in (customizable via `state_modifier`) |
 | Execution | `executor.invoke()` | `agent.stream()` or `agent.invoke()` |
 | Output | `result["output"]` | Message stream |
 | Lines of code | ~15 | ~10 |
 
-LangGraph's `create_react_agent` is more concise for simple cases. LangChain gives more control over the prompt.
+LangGraph's `create_react_agent` is a concise prebuilt for simple cases. For more control over prompts or flow, both frameworks offer lower-level APIs—LangGraph's `StateGraph` being particularly powerful for complex workflows.
 
 ## Requirements
 

@@ -44,4 +44,6 @@ Traditional workflows are static. Agent-mediated workflows adapt to results, han
 
 ## Code
 
-Coming soon
+| Example | Description |
+|---------|-------------|
+| [AgentsWorkflow](/Capabilities/agent-workflows/AgentsWorkflow/) | Dynamic workflow construction with adaptive execution |

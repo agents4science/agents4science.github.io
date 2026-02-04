@@ -73,6 +73,14 @@ These examples demonstrate different types of tools an agent can use:
 
 Each example follows the same pattern as the Calculator but with more realistic, science-relevant tools.
 
+### Academy Basics
+
+Before diving into complex pipelines, start with the minimal Academy example:
+
+| Example | Description |
+|---------|-------------|
+| [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) | Two agents communicating - the "Hello World" of Academy |
+
 ### Five-Agent Scientific Discovery Pipeline
 
 This more involved example demonstrates multi-agent coordination for scientific workflows. Five specialized agents work in sequence, each contributing domain expertise before passing results to the next:

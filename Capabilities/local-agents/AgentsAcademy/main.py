@@ -58,7 +58,8 @@ class ResultsCollector(Agent):
         """Signal that the pipeline has finished."""
         self._complete.set()
 
-    async def wait_for_completion(self) -> dict[str, str]:
+    @action
+    async def get_results(self) -> dict[str, str]:
         """Wait for pipeline to complete and return all results."""
         await self._complete.wait()
         return self.results
@@ -122,10 +123,8 @@ async def main(args: argparse.Namespace) -> None:
         logger.info("Triggering pipeline...")
         await scout.process(args.goal)
 
-        # Wait for pipeline to complete
-        # Get the actual collector agent instance to access results
-        collector_agent = manager.get_agent(collector.identifier)
-        results = await collector_agent.wait_for_completion()
+        # Wait for pipeline to complete and get results
+        results = await collector.get_results()
 
         # Print results
         print("\n" + "=" * 60)

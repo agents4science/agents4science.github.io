@@ -109,6 +109,7 @@ All examples support multiple LLM backends (OpenAI, FIRST, Ollama) and include a
 | [AgentsDatabase](local-agents/AgentsDatabase/) | Natural language data queries | Pandas integration |
 | [AgentsAPI](local-agents/AgentsAPI/) | External API calls | PubChem REST API |
 | [AgentsConversation](local-agents/AgentsConversation/) | Stateful conversation | Short/long-term memory |
+| [AgentsAcademyBasic](local-agents/AgentsAcademyBasic/) | Minimal Academy example | Two-agent messaging |
 | [AgentsLangGraph](local-agents/AgentsLangGraph/) | 5-agent pipeline | LangGraph orchestration |
 | [AgentsAcademy](local-agents/AgentsAcademy/) | 5-agent pipeline | Academy messaging |
 | [AgentsAcademyHubSpoke](local-agents/AgentsAcademyHubSpoke/) | Hub-and-spoke pattern | Central orchestrator |

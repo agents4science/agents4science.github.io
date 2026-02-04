@@ -93,3 +93,54 @@ See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf
 | 5 | [Multi-Agent Coordination](multi-agent-coordination/) | Coordinate agents under shared governance | Shared state + policy | Distributed | O(10²–10³) agents | Emerging |
 | 6 | [Long-Lived Agents](long-lived-agents/) | Persistent agents with memory and goals | Lifecycle management | Any | Days–months | Emerging |
 | 7 | [Agent Workflows](agent-workflows/) | Dynamic workflow construction | Workflow integration | DOE infrastructure | Varies | Early |
+
+---
+
+## Examples Index
+
+All examples support multiple LLM backends (OpenAI, FIRST, Ollama) and include a mock mode for testing without API keys.
+
+### Local Agents
+
+| Example | Description | Key Pattern |
+|---------|-------------|-------------|
+| [AgentsCalculator](local-agents/AgentsCalculator/) | Minimal tool-calling agent | LangGraph + `@tool` |
+| [AgentsRAG](local-agents/AgentsRAG/) | Retrieval-augmented generation | Vector search |
+| [AgentsDatabase](local-agents/AgentsDatabase/) | Natural language data queries | Pandas integration |
+| [AgentsAPI](local-agents/AgentsAPI/) | External API calls | PubChem REST API |
+| [AgentsConversation](local-agents/AgentsConversation/) | Stateful conversation | Short/long-term memory |
+| [AgentsLangGraph](local-agents/AgentsLangGraph/) | 5-agent pipeline | LangGraph orchestration |
+| [AgentsAcademy](local-agents/AgentsAcademy/) | 5-agent pipeline | Academy messaging |
+| [AgentsAcademyHubSpoke](local-agents/AgentsAcademyHubSpoke/) | Hub-and-spoke pattern | Central orchestrator |
+| [AgentsAcademyDashboard](local-agents/AgentsAcademyDashboard/) | Live progress dashboard | Rich TUI |
+
+### Federated Agents
+
+| Example | Description | Key Pattern |
+|---------|-------------|-------------|
+| [AgentsHPCJob](federated-agents/AgentsHPCJob/) | HPC job submission | Batch scheduler |
+| [CharacterizeChemicals](federated-agents/CharacterizeChemicals/) | Molecular properties | RDKit + xTB |
+
+### Governed Tool Use
+
+| Example | Description | Key Pattern |
+|---------|-------------|-------------|
+| [AgentsGovernedTools](governed-tool-use/AgentsGovernedTools/) | Policy enforcement | Budget, rate limits, approval |
+
+### Multi-Agent Coordination
+
+| Example | Description | Key Pattern |
+|---------|-------------|-------------|
+| [AgentsCoordination](multi-agent-coordination/AgentsCoordination/) | Shared resources | Budget, blackboard, claims |
+
+### Long-Lived Agents
+
+| Example | Description | Key Pattern |
+|---------|-------------|-------------|
+| [AgentsCheckpoint](long-lived-agents/AgentsCheckpoint/) | Persistent workflows | Checkpoint/resume |
+
+### Agent Workflows
+
+| Example | Description | Key Pattern |
+|---------|-------------|-------------|
+| [AgentsWorkflow](agent-workflows/AgentsWorkflow/) | Dynamic DAG construction | Adaptive execution |

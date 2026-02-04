@@ -34,10 +34,11 @@ Large-scale discovery requires specialized agents working together. Coordination
                      |
        +-------------+-------------+
        |             |             |
-   +---v---+    +----v----+   +---v---+
-   |Agent A|    | Agent B |   |Agent C|
-   |(Inst 1)|   |(Inst 1) |   |(Inst 2)|
-   +-------+    +---------+   +-------+
+       v             v             v
+  +---------+   +---------+   +---------+
+  | Agent A |   | Agent B |   | Agent C |
+  |(Inst 1) |   |(Inst 1) |   |(Inst 2) |
+  +---------+   +---------+   +---------+
 ```
 
 ## Code

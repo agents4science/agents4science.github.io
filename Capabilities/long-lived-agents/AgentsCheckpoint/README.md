@@ -54,11 +54,11 @@ See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for detai
 |  | - created   |  | - sub_goals      |   |
 |  +-------------+  +------------------+   |
 |                                          |
-|  +--------------------------------------+|
-|  | Tasks[]                              ||
-|  | - id, description, status, result    ||
-|  | - started_at, completed_at, attempts ||
-|  +--------------------------------------+|
+|  +--------------------------------------+ |
+|  | Tasks[]                               | |
+|  | - id, description, status, result     | |
+|  | - started_at, completed_at, attempts  | |
+|  +--------------------------------------+ |
 |                                          |
 |  +-------------+  +------------------+   |
 |  | Memory      |  | Execution Log    |   |

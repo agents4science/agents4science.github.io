@@ -1,4 +1,18 @@
 # main.py  —  Dashboard v3 (Top: status table, Bottom: last prompt/response)
+"""
+Multi-Agent Dashboard Demo.
+
+Supports multiple LLM modes:
+1. OPENAI_API_KEY set → uses OpenAI
+2. FIRST_API_KEY set → uses FIRST (HPC inference service)
+3. A4S_USE_INFERENCE=1 → uses Argonne Inference Service
+4. None of the above → uses mock responses
+
+Usage:
+    python main.py
+    OPENAI_API_KEY=... python main.py
+    A4S_USE_INFERENCE=1 python main.py
+"""
 import os
 import asyncio
 import logging
@@ -18,6 +32,7 @@ from agents4science.roles.planner import   PlannerAgent
 from agents4science.roles.operator import  OperatorAgent
 from agents4science.roles.analyst import   AnalystAgent
 from agents4science.roles.archivist import ArchivistAgent
+from agents4science.base_agent import print_mode_info, get_mode_description
 
 console = new_console = Console()
 AGENTS = ["Scout", "Planner", "Operator", "Analyst", "Archivist"]
@@ -26,7 +41,6 @@ AGENTS = ["Scout", "Planner", "Operator", "Analyst", "Archivist"]
 SHOW_UI   = os.getenv("A4S_UI", "1") == "1"      # set A4S_UI=0 to disable the live UI
 QUIET_LOG = os.getenv("A4S_QUIET", "1") == "1"   # set A4S_QUIET=1 to mute logs during run
 GOAL_FILE = os.getenv("AUDIOGOAL_SFILE", "agents4science/workflows/goals.yaml")
-MODEL     = os.getenv("A4S_MODEL", "openai/gpt-oss-20b")
 
 def load_goals():
     path = GOAL_FILE
@@ -74,7 +88,7 @@ def render_io_panel(agent_name: str, prompt: str | None, response: str | None) -
         p_show = (p[:1200] + " …") if len(p) > 1200 else p
         r_show = (r[:2000] + " …") if len(r) > 2000 else r
 
-        md = f"### 🧠 {agent_name} — Prompt to {MODEL}\n```\n{p_show}\n```\n\n**Response**\n```\n{r_show}\n```"
+        md = f"### 🧠 {agent_name} — Prompt to {get_mode_description()}\n```\n{p_show}\n```\n\n**Response**\n```\n{r_show}\n```"
         body = Markdown(md)
         print('DISPLAY', p_show, r_show)
 
@@ -87,13 +101,13 @@ async def run_goal(counter: int, goal: str, status_row: dict, live: Live | None,
     Run the five role agents in sequence for a single goal.
     After each agent finishes, update the status table (top) and the last call panel (bottom).
     """
-    # Instantiate fresh agents per goal
+    # Instantiate fresh agents per goal (model is auto-selected based on environment)
     agents = [
-        ("Scout", ScoutAgent(model=MODEL)),
-        ("Planner", PlannerAgent(model=MODEL)),
-        ("Operator", OperatorAgent(model=MODEL)),
-        ("Analyst", AnalystAgent(model=MODEL)),
-        ("Archivist", ArchivistAgent(model=MODEL))
+        ("Scout", ScoutAgent()),
+        ("Planner", PlannerAgent()),
+        ("Operator", OperatorAgent()),
+        ("Analyst", AnalystAgent()),
+        ("Archivist", ArchivistAgent())
     ]
 
     def refresh_ui(active_agent_name: str | None = None):
@@ -176,6 +190,9 @@ async def run_goal(counter: int, goal: str, status_row: dict, live: Live | None,
 
 
 async def main():
+    # Show LLM mode at startup
+    print_mode_info()
+
     goals = load_goals()
     statuses = [{role: "[dim]Pending" for role in AGENTS} for _ in goals]
 

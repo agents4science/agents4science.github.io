@@ -1,0 +1,50 @@
+# Governance Policies for Tool Use
+# Configure budget limits, rate limits, and approval requirements
+
+budget:
+  # Maximum total cost allowed (in dollars)
+  limit: 100.00
+  # Alert threshold (warn when this percentage is reached)
+  alert_threshold: 0.80
+
+rate_limiting:
+  # Maximum number of tool calls per time window
+  max_calls: 10
+  # Time window in seconds
+  window_seconds: 60
+  # Per-tool overrides
+  overrides:
+    run_quick_analysis:
+      max_calls: 50
+      window_seconds: 60
+    run_gpu_simulation:
+      max_calls: 5
+      window_seconds: 300
+
+approval:
+  # Tools that always require human approval
+  required_for:
+    - delete_data
+    - submit_production_job
+  # Auto-approve after N similar approvals (0 = always require)
+  auto_approve_after: 0
+  # Timeout for pending approvals (seconds, 0 = no timeout)
+  timeout_seconds: 3600
+
+audit:
+  # Log all tool invocations
+  log_all_actions: true
+  # Log file path (empty = stdout only)
+  log_file: ""
+  # Include full tool arguments in log
+  include_arguments: true
+  # Include full results in log
+  include_results: false
+
+# Tool cost estimates (in dollars)
+tool_costs:
+  run_quick_analysis: 0.01
+  run_cpu_simulation: 1.00
+  run_gpu_simulation: 10.00
+  submit_hpc_job: 50.00
+  delete_data: 0.00

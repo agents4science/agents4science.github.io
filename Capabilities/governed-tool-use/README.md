@@ -42,4 +42,6 @@ Scaling inference is easy—LLM calls are stateless. Scaling tool use is hard be
 
 ## Code
 
-Coming soon
+| Example | Description |
+|---------|-------------|
+| [AgentsGovernedTools](/Capabilities/governed-tool-use/AgentsGovernedTools/) | Budget limits, rate limiting, approval gates, and audit logging |

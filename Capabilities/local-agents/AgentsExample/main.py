@@ -5,13 +5,12 @@ Multi-Agent Dashboard Demo.
 Supports multiple LLM modes:
 1. OPENAI_API_KEY set → uses OpenAI
 2. FIRST_API_KEY set → uses FIRST (HPC inference service)
-3. A4S_USE_INFERENCE=1 → uses Argonne Inference Service
-4. None of the above → uses mock responses
+3. None of the above → uses mock responses
 
 Usage:
     python main.py
     OPENAI_API_KEY=... python main.py
-    A4S_USE_INFERENCE=1 python main.py
+    FIRST_API_KEY=... python main.py
 """
 import os
 import asyncio

@@ -41,13 +41,12 @@ python main.py
 
 ## LLM Configuration
 
-The example supports multiple LLM modes:
+The example supports three modes:
 
 | Mode | Environment Variable | Description |
 |------|---------------------|-------------|
 | **OpenAI** | `OPENAI_API_KEY` | Uses OpenAI (gpt-4o-mini by default) |
 | **FIRST** | `FIRST_API_KEY` | Uses FIRST HPC inference service |
-| **Argonne** | `A4S_USE_INFERENCE=1` | Uses Argonne Inference Service |
 | **Mock** | (none) | Uses mock responses for demonstration |
 
 ```bash
@@ -61,9 +60,6 @@ export FIRST_API_BASE=https://your-first-endpoint/v1
 export FIRST_MODEL=meta-llama/Meta-Llama-3.1-70B-Instruct
 python main.py
 
-# Argonne Inference Service
-A4S_USE_INFERENCE=1 python main.py
-
 # Mock mode (no API key needed)
 python main.py
 ```
@@ -75,7 +71,7 @@ python main.py
 | `A4S_LATENCY` | Delay between agent steps (seconds) | 0.4 |
 | `A4S_TOOL_LATENCY` | Delay for tool execution (seconds) | 0.2 |
 | `A4S_UI` | Enable dashboard UI (0 to disable) | 1 |
-| `A4S_MODEL` | Override model name | (depends on mode) |
+| `A4S_MODEL` | Override model name for OpenAI | gpt-4o-mini |
 
 ## Directory Structure
 

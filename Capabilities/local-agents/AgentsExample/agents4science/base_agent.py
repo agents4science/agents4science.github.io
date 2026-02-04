@@ -4,8 +4,7 @@ Base agent class for agents4science.
 Supports multiple LLM modes:
 1. OPENAI_API_KEY set → uses OpenAI
 2. FIRST_API_KEY set → uses FIRST (HPC inference service)
-3. A4S_USE_INFERENCE=1 → uses Argonne Inference Service
-4. None of the above → uses mock responses
+3. None of the above → uses mock responses
 """
 
 import os
@@ -38,17 +37,9 @@ def _detect_mode():
         _llm_reason = f"FIRST_API_KEY found in environment (model: {model})"
         _client = OpenAI(api_key=os.environ["FIRST_API_KEY"], base_url=base_url)
 
-    elif os.getenv("A4S_USE_INFERENCE", "0") == "1":
-        _llm_mode = "argonne"
-        from inference_auth_token import get_access_token
-        access_token = get_access_token()
-        base_url = "https://inference-api.alcf.anl.gov/resource_server/sophia/vllm/v1"
-        _llm_reason = f"A4S_USE_INFERENCE=1 (Argonne Inference Service)"
-        _client = OpenAI(api_key=access_token, base_url=base_url)
-
     else:
         _llm_mode = "mock"
-        _llm_reason = "No OPENAI_API_KEY, FIRST_API_KEY, or A4S_USE_INFERENCE found; using mock responses"
+        _llm_reason = "No OPENAI_API_KEY or FIRST_API_KEY found; using mock responses"
         _client = None
 
 
@@ -85,9 +76,6 @@ def get_mode_description() -> str:
     elif mode == "first":
         model = os.environ.get("FIRST_MODEL", "Llama-3.1-70B")
         return f"FIRST ({model})"
-    elif mode == "argonne":
-        model = os.environ.get("A4S_MODEL", "openai/gpt-oss-20b")
-        return f"Argonne ({model})"
     else:
         return "Mock"
 
@@ -119,7 +107,7 @@ class Agent:
             elif mode == "first":
                 model = os.environ.get("FIRST_MODEL", "meta-llama/Meta-Llama-3.1-70B-Instruct")
             else:
-                model = os.environ.get("A4S_MODEL", "openai/gpt-oss-20b")
+                model = "mock"
 
         self.model = model
         self.tools = tools or []
@@ -145,7 +133,7 @@ class Agent:
         else:
             # Mock mode
             await asyncio.sleep(_delay("A4S_LATENCY", 0.4))
-            result = {"response": f"[Mock: {self.model}] → {prompt[:160]}..."}
+            result = {"response": f"[Mock] → {prompt[:160]}..."}
             self.last_response = result["response"]
         return result
 

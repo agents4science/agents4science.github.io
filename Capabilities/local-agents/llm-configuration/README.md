@@ -99,3 +99,48 @@ Check the [ALCF documentation](https://docs.alcf.anl.gov/services/inference-endp
 
 - `gpt-oss-120b` - Large general-purpose model
 - `meta-llama/Meta-Llama-3.1-70B-Instruct` - Llama 3.1 70B
+
+## Model Recommendations for Tool Calling
+
+Not all models handle tool calling equally well. Based on testing:
+
+### Recommended Models
+
+| Use Case | Recommended Models |
+|----------|-------------------|
+| **Simple tools** (1-2 tools, clear inputs) | Any model, including `llama3.2` (3B) |
+| **Multiple tools** (3+ tools) | `llama3.2:70b`, `mistral`, `gpt-4o-mini` |
+| **Complex workflows** (multi-step, conditional) | `gpt-4o`, `gpt-4o-mini`, `llama3.1:70b` |
+
+### Known Limitations with Smaller Models
+
+When using smaller local models like `llama3.2` (3B parameters), you may observe:
+
+- **Code generation instead of tool calls**: Model outputs Python code describing what it would do, rather than invoking the tool
+- **Parameter hallucination**: Model invents parameter values instead of using provided options
+- **Incomplete tool sequences**: Model describes remaining steps instead of executing them
+
+**Example of correct tool call:**
+```
+Agent calls: calculate({'expression': '347 * 892'})
+Tool result: 309524
+```
+
+**Example of problematic behavior (smaller models):**
+```
+Agent: I'll calculate this using the following code:
+```python
+result = 347 * 892
+print(result)  # 309524
+```
+```
+
+### Recommendations
+
+1. **Start with mock mode** to understand the expected flow
+2. **Use OpenAI or larger models** for production or complex examples
+3. **Ollama with small models** works well for:
+   - Simple calculator-style tools
+   - Single-tool scenarios
+   - Learning and experimentation
+4. **Increase model size** if you see code generation instead of tool calls

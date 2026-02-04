@@ -40,8 +40,31 @@ for step in agent.stream({"messages": [HumanMessage(content="What is 347 * 892?"
 cd Capabilities/local-agents/AgentsCalculator
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-export OPENAI_API_KEY=<your_key>
+python langgraph_calculator.py
+```
 
+## LLM Configuration
+
+The example supports three modes:
+
+| Mode | Environment Variable | Description |
+|------|---------------------|-------------|
+| **OpenAI** | `OPENAI_API_KEY` | Uses OpenAI's gpt-4o-mini |
+| **FIRST** | `FIRST_API_KEY` | Uses FIRST HPC inference service |
+| **Mock** | (none) | Demonstrates pattern with hardcoded responses |
+
+```bash
+# OpenAI mode
+export OPENAI_API_KEY=<your_key>
+python langgraph_calculator.py
+
+# FIRST mode (for HPC environments)
+export FIRST_API_KEY=<your_token>
+export FIRST_API_BASE=https://your-first-endpoint/v1
+export FIRST_MODEL=meta-llama/Meta-Llama-3.1-70B-Instruct
+python langgraph_calculator.py
+
+# Mock mode (no API key needed)
 python langgraph_calculator.py
 ```
 
@@ -57,4 +80,4 @@ For more complex workflows with branching, cycles, or custom state, use LangGrap
 
 - Python 3.10+
 - LangGraph 1.0+
-- OpenAI API key
+- OpenAI API key, FIRST token, or run in mock mode

@@ -1,8 +1,16 @@
 #!/usr/bin/env python3
-"""Main entry point for the LangGraph scientific discovery pipeline."""
+"""
+Main entry point for the LangGraph scientific discovery pipeline.
+
+Supports three modes:
+1. OPENAI_API_KEY set → uses OpenAI
+2. FIRST_API_KEY set → uses FIRST (HPC inference service)
+3. Neither set → uses mock responses to demonstrate the pattern
+"""
 import argparse
 
 from pipeline.graph import run_pipeline
+from pipeline.llm import get_mode_description, get_llm_mode
 
 
 def main():
@@ -21,13 +29,22 @@ def main():
     )
     args = parser.parse_args()
 
+    # Show mode
+    mode = get_mode_description()
+    print("=" * 60)
+    print(f"Mode: {mode}")
+    if get_llm_mode() == "mock":
+        print("\nRunning with mock responses (no API key set).")
+        print("Set OPENAI_API_KEY or FIRST_API_KEY to use a real LLM.")
+    print("=" * 60)
+
     # Run the pipeline
     final_state = run_pipeline(args.goal, verbose=not args.quiet)
 
     # Print summary
-    print("\n" + "="*60)
+    print("\n" + "=" * 60)
     print("Pipeline Complete")
-    print("="*60)
+    print("=" * 60)
     print(f"\nGoal: {final_state['goal']}")
     print(f"\nMessages logged: {len(final_state['messages'])}")
     for msg in final_state['messages']:

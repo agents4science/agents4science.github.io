@@ -1,4 +1,4 @@
-# Simple LangGraph Example
+# LangGraph Pipeline Example
 
 This example demonstrates how to build a multi-agent pipeline for scientific discovery using [LangGraph](https://langchain-ai.github.io/langgraph/). Five specialized agents work in sequence to tackle a research goal, with each agent contributing its expertise before passing results to the next.
 
@@ -18,11 +18,21 @@ The workflow proceeds through five stages:
 | **Analyst** | Summarizes findings, quantifies uncertainty | Results | Analysis summary |
 | **Archivist** | Documents everything for reproducibility | Summary | Documented provenance |
 
-Each agent implementation is just a skeleton.
-
-The agents use OpenAI models as their LLM. An OpenAI key is required to run the example.
+Each agent implementation is a skeleton demonstrating the pattern.
 
 **Requirements:** Python 3.10+, LangGraph 1.0+, LangChain 1.0+
+
+## LLM Configuration
+
+The example supports three modes:
+
+| Mode | Environment Variable | Description |
+|------|---------------------|-------------|
+| **OpenAI** | `OPENAI_API_KEY` | Uses OpenAI's gpt-4o-mini |
+| **FIRST** | `FIRST_API_KEY` | Uses FIRST HPC inference service |
+| **Mock** | (none) | Demonstrates pattern with hardcoded responses |
+
+Mock mode runs without any API key, showing realistic example outputs for the scientific workflow.
 
 ## Why LangGraph?
 
@@ -108,6 +118,7 @@ AgentsLangGraph/
     ├── state.py           # PipelineState TypedDict
     ├── nodes.py           # Agent node functions
     ├── graph.py           # StateGraph definition
+    ├── llm.py             # LLM configuration (OpenAI/FIRST/mock)
     └── tools/
         └── analysis.py    # analyze_dataset tool
 ```
@@ -118,7 +129,17 @@ AgentsLangGraph/
 cd Capabilities/local-agents/AgentsLangGraph
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
+
+# Run with mock responses (no API key needed)
+python main.py
+
+# Or with OpenAI
 export OPENAI_API_KEY=<your_api_key>
+python main.py
+
+# Or with FIRST (HPC environments)
+export FIRST_API_KEY=<your_token>
+export FIRST_API_BASE=https://your-first-endpoint/v1
 python main.py
 ```
 
@@ -134,16 +155,14 @@ Quiet mode (less output):
 python main.py --quiet
 ```
 
-## Comparison with LangChain Version
+## Comparison with Academy Version
 
-| Aspect | AgentsLangChain | AgentsLangGraph |
-|--------|-----------------|-----------------|
-| Workflow definition | Manual loop | StateGraph |
-| State management | Dict passed between calls | Typed PipelineState |
-| Execution | Sequential iteration | Graph traversal with streaming |
-| Flow control | Python code | Graph edges (supports cycles) |
-| Persistence | Manual | Built-in checkpointing |
-| Visualization | N/A | Graph can be rendered |
+| Aspect | LangGraph | Academy |
+|--------|-----------|---------|
+| Workflow definition | StateGraph with typed state | Agent-to-agent messaging |
+| State management | Typed PipelineState dict | Passed between agents |
+| Flow control | Graph edges | Pipeline or hub-and-spoke |
+| Distribution | Single process | Supports federated execution |
 
 LangGraph is particularly useful when workflows need:
 - Conditional branching based on agent outputs
@@ -153,5 +172,6 @@ LangGraph is particularly useful when workflows need:
 
 ## See Also
 
-- [AgentsLangChain](/Capabilities/local-agents/AgentsLangChain/) — Simpler LangChain version
-- [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) — Academy framework version (no LLM required)
+- [AgentsCalculator](/Capabilities/local-agents/AgentsCalculator/) — Simplest agent example (LLM + tool)
+- [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) — Academy pipeline pattern
+- [AgentsAcademyHubSpoke](/Capabilities/local-agents/AgentsAcademyHubSpoke/) — Academy hub-and-spoke pattern

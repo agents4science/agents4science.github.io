@@ -1,21 +1,20 @@
 """
 AgentsAcademy - Multi-agent pipeline using Academy framework.
 
-This example demonstrates how to build a multi-agent pipeline for scientific
-discovery using Academy. Five specialized agents work in sequence to tackle
-a research goal, with each agent contributing its expertise before passing
-results to the next.
+This example demonstrates a TRUE PIPELINE pattern where agents
+forward results directly to each other via messaging. The main
+process only sets up the pipeline and triggers the first agent.
 
 Usage:
     python main.py
     python main.py --goal "Design a catalyst for ammonia synthesis"
 """
 
-import os
 import asyncio
 import logging
 import argparse
 
+from academy.agent import Agent, action
 from academy.manager import Manager
 from academy.exchange import LocalExchangeFactory
 
@@ -35,6 +34,36 @@ logging.basicConfig(
 logger = logging.getLogger("a4s.main")
 
 
+class ResultsCollector(Agent):
+    """
+    Collects results from pipeline agents and signals completion.
+
+    This agent receives results as they flow through the pipeline,
+    allowing monitoring without interrupting agent-to-agent messaging.
+    """
+
+    def __init__(self) -> None:
+        super().__init__()
+        self.results: dict[str, str] = {}
+        self._complete = asyncio.Event()
+
+    @action
+    async def collect(self, agent_name: str, result: str) -> None:
+        """Receive a result from a pipeline agent."""
+        self.results[agent_name] = result
+        logger.info("Collected result from %s", agent_name)
+
+    @action
+    async def pipeline_complete(self) -> None:
+        """Signal that the pipeline has finished."""
+        self._complete.set()
+
+    async def wait_for_completion(self) -> dict[str, str]:
+        """Wait for pipeline to complete and return all results."""
+        await self._complete.wait()
+        return self.results
+
+
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(
         description="Run multi-agent scientific discovery pipeline with Academy."
@@ -49,71 +78,64 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-async def run_pipeline(manager: Manager, goal: str) -> dict:
-    """
-    Execute the multi-agent pipeline.
-
-    Each agent is launched via the Manager, and its output becomes
-    the input for the next agent in the sequence.
-    """
-    logger.info("=" * 60)
-    logger.info("Starting pipeline with goal: %s", goal)
-    logger.info("=" * 60)
-
-    # Define the agent sequence
-    agent_classes = [
-        ScoutAgent,
-        PlannerAgent,
-        OperatorAgent,
-        AnalystAgent,
-        ArchivistAgent,
-    ]
-
-    state = goal
-    results = {}
-
-    for agent_class in agent_classes:
-        # Launch the agent
-        handle = await manager.launch(agent_class)
-
-        # Call the agent's act method
-        logger.info("-" * 40)
-        logger.info("Running %s...", agent_class.name)
-        result = await handle.act(state)
-
-        # Store result and update state for next agent
-        results[agent_class.name] = result
-        state = result["output"]
-
-        logger.info("%s completed.", agent_class.name)
-
-    logger.info("=" * 60)
-    logger.info("Pipeline complete!")
-    logger.info("=" * 60)
-
-    return results
-
-
 async def main(args: argparse.Namespace) -> None:
     """
-    Main entry point using Academy's Manager with local execution.
+    Set up and run the pipeline.
+
+    The main process:
+    1. Launches all agents
+    2. Connects them into a pipeline (Scout -> Planner -> ... -> Archivist)
+    3. Triggers the first agent
+    4. Waits for completion
+
+    After setup, agents communicate directly with each other.
     """
-    # Use local exchange for single-machine execution
-    # For federated execution, use HttpExchangeFactory instead
     async with await Manager.from_exchange_factory(
         factory=LocalExchangeFactory(),
     ) as manager:
-        results = await run_pipeline(manager, args.goal)
 
-        # Print final summary
+        logger.info("=" * 60)
+        logger.info("Setting up pipeline for goal:")
+        logger.info("  %s", args.goal)
+        logger.info("=" * 60)
+
+        # Launch all agents
+        collector = await manager.launch(ResultsCollector)
+        scout = await manager.launch(ScoutAgent)
+        planner = await manager.launch(PlannerAgent)
+        operator = await manager.launch(OperatorAgent)
+        analyst = await manager.launch(AnalystAgent)
+        archivist = await manager.launch(ArchivistAgent)
+
+        # Connect pipeline: Scout -> Planner -> Operator -> Analyst -> Archivist
+        pipeline = [scout, planner, operator, analyst, archivist]
+        for i, agent in enumerate(pipeline):
+            await agent.set_results_collector(collector)
+            if i < len(pipeline) - 1:
+                await agent.set_next(pipeline[i + 1])
+
+        logger.info("Pipeline connected: Scout -> Planner -> Operator -> Analyst -> Archivist")
+        logger.info("-" * 60)
+
+        # Trigger the pipeline by sending goal to Scout
+        # From here, agents communicate directly with each other
+        logger.info("Triggering pipeline...")
+        await scout.process(args.goal)
+
+        # Wait for pipeline to complete
+        # Get the actual collector agent instance to access results
+        collector_agent = manager.get_agent(collector.identifier)
+        results = await collector_agent.wait_for_completion()
+
+        # Print results
         print("\n" + "=" * 60)
-        print("FINAL RESULTS")
+        print("PIPELINE RESULTS")
         print("=" * 60)
 
         for agent_name, result in results.items():
             print(f"\n### {agent_name} ###")
-            print(result["output"][:500])
-            if len(result["output"]) > 500:
+            print(result[:500])
+            if len(result) > 500:
                 print("...")
 
 

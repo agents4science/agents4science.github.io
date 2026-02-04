@@ -1,90 +1,99 @@
-# Simple Academy Example
+# Academy Pipeline Example
 
-This example demonstrates how to build a multi-agent pipeline for scientific discovery using [Academy](https://academy-agents.org). Five specialized agents work in sequence to tackle a research goal, with each agent contributing its expertise before passing results to the next.
+This example demonstrates a **true pipeline pattern** using [Academy](https://academy-agents.org), where agents forward results directly to each other via messaging. The main process only sets up the pipeline and triggers the first agent.
 
 **Code:** [github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademy](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademy)
 
+## The Pipeline Pattern
+
+```
+Main Process                    Agent-to-Agent Messaging
+     │
+     │ 1. Launch agents         Scout ──▶ Planner ──▶ Operator ──▶ Analyst ──▶ Archivist
+     │ 2. Connect pipeline           │          │           │          │           │
+     │ 3. Trigger Scout              └──────────┴───────────┴──────────┴───────────┘
+     │                                          results collected
+     ▼
+   [wait for completion]
+```
+
+After setup, the main process steps back. Agents communicate directly:
+- Scout processes the goal, forwards result to Planner
+- Planner processes, forwards to Operator
+- ...and so on until Archivist signals completion
+
 ## The Application
 
-The pipeline addresses a sample scientific goal: *"Find catalysts that improve CO2 conversion at room temperature."*
+Five specialized agents work in sequence on a scientific goal:
 
-The workflow proceeds through five stages:
+| Agent | Role | Receives From | Sends To |
+|-------|------|---------------|----------|
+| **Scout** | Surveys problem space, detects anomalies | Main process | Planner |
+| **Planner** | Designs workflows, allocates resources | Scout | Operator |
+| **Operator** | Executes the planned workflow safely | Planner | Analyst |
+| **Analyst** | Summarizes findings, quantifies uncertainty | Operator | Archivist |
+| **Archivist** | Documents everything for reproducibility | Analyst | (end) |
 
-| Agent | Role | Input | Output |
-|-------|------|-------|--------|
-| **Scout** | Surveys the problem space, identifies anomalies | Goal | Research opportunities |
-| **Planner** | Designs workflows, allocates resources | Opportunities | Workflow plan |
-| **Operator** | Executes the planned workflow safely | Plan | Execution results |
-| **Analyst** | Summarizes findings, quantifies uncertainty | Results | Analysis summary |
-| **Archivist** | Documents everything for reproducibility | Summary | Documented provenance |
-
-Each agent implementation is just a skeleton.
-
-The agents use Academy's `Agent` base class and `@action` decorator. No LLM is required to run this example.
+No LLM is used in this example—agent logic is stubbed to focus on the messaging pattern.
 
 ## Implementation
 
-The code uses Academy's `Agent` class, `@action` decorator for exposed methods, and `Manager` for agent orchestration. Each agent inherits from a common `ScienceAgent` base:
+The base agent class handles pipeline forwarding:
 
 ```python
-from academy.agent import Agent, action
-
 class ScienceAgent(Agent):
-    name: str = "ScienceAgent"
-    role: str = "Base agent"
+    _next_agent: Handle | None = None
 
     @action
-    async def act(self, input_text: str) -> dict:
+    async def set_next(self, next_agent: Handle) -> None:
+        """Set the next agent in the pipeline."""
+        self._next_agent = next_agent
+
+    @action
+    async def process(self, input_text: str) -> None:
+        """Process input and forward to next agent."""
         result = await self._process(input_text)
-        return {"agent": self.name, "output": result}
+
+        # Forward to next agent in pipeline
+        if self._next_agent:
+            await self._next_agent.process(result)
 ```
 
-Specialized agents override `_process` to implement domain-specific logic:
+The main process connects agents and triggers the pipeline:
 
 ```python
-class ScoutAgent(ScienceAgent):
-    name = "Scout"
-    role = "Survey problem space, detect anomalies"
-
-    async def _process(self, goal: str) -> str:
-        # Identify research opportunities
-        return f"Opportunities for: {goal}"
-```
-
-The main loop uses Academy's `Manager` to launch and orchestrate agents:
-
-```python
-from academy.manager import Manager
-from academy.exchange import LocalExchangeFactory
-
 async with await Manager.from_exchange_factory(
     factory=LocalExchangeFactory(),
 ) as manager:
 
-    state = "Find catalysts that improve CO2 conversion..."
+    # Launch agents
+    scout = await manager.launch(ScoutAgent)
+    planner = await manager.launch(PlannerAgent)
+    # ...
 
-    for agent_class in [ScoutAgent, PlannerAgent, ...]:
-        handle = await manager.launch(agent_class)
-        result = await handle.act(state)
-        state = result["output"]
+    # Connect pipeline
+    await scout.set_next(planner)
+    await planner.set_next(operator)
+    # ...
+
+    # Trigger - from here, agents communicate directly
+    await scout.process(goal)
 ```
 
 ## Directory Structure
 
 ```
 AgentsAcademy/
-├── main.py                    # Entry point
+├── main.py                    # Pipeline setup and trigger
 ├── requirements.txt           # Dependencies
 └── pipeline/
-    ├── base_agent.py          # ScienceAgent base class
-    ├── roles/                 # Agent implementations
-    │   ├── scout.py
-    │   ├── planner.py
-    │   ├── operator.py
-    │   ├── analyst.py
-    │   └── archivist.py
-    └── tools/
-        └── analysis.py        # analyze_dataset tool
+    ├── base_agent.py          # ScienceAgent with forwarding
+    └── roles/                 # Agent implementations
+        ├── scout.py
+        ├── planner.py
+        ├── operator.py
+        ├── analyst.py
+        └── archivist.py
 ```
 
 ## Running the Example
@@ -102,15 +111,17 @@ Custom goal:
 python main.py --goal "Design a catalyst for ammonia synthesis"
 ```
 
-## Comparison with LangChain Version
+## Comparison with LangGraph
 
-| Aspect | AgentsLangChain | AgentsAcademy |
-|--------|-----------------|---------------|
-| Framework | LangChain + LangGraph | Academy |
-| Agent base | `AgentExecutor` | `Agent` class |
-| Tool definition | `@tool` decorator | `@action` decorator |
-| Orchestration | Manual loop | `Manager` + exchange |
-| LLM required | Yes (OpenAI) | No (logic in agents) |
-| Execution model | Single process | Supports distributed |
+| Aspect | LangGraph | Academy |
+|--------|-----------|---------|
+| Pattern | Graph-based orchestration | True pipeline (agent-to-agent) |
+| Control flow | StateGraph with edges | Agents forward via messaging |
+| State | Typed PipelineState dict | Passed between agents directly |
+| LLM | Required (powers agents) | Optional (not used in this example) |
+| Distribution | Single process | Supports federated execution |
 
-Academy provides additional capabilities for federated execution across DOE systems when configured with `HttpExchangeFactory` instead of `LocalExchangeFactory`.
+Academy's pipeline pattern is particularly useful when:
+- Agents need to run on different machines
+- You want explicit agent-to-agent communication
+- LLM integration is optional or handled separately

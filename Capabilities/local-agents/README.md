@@ -74,27 +74,30 @@ This more involved example demonstrates multi-agent coordination for scientific 
 
 <img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="width: 60%; margin: 1rem 0;">
 
-#### Implementations of Five-Agent Pipeline
+#### Implementations of Five-Agent Workflow
 
-We provide implementations of this simple example in LangGraph, LangChain, and Academy.
+We provide implementations of this example in LangGraph and Academy, demonstrating different orchestration patterns.
 Note that these implementations are toys: they create agents that communicate, but each agent's internal logic is just a stub.
 
+| Example | Framework | Pattern | Code |
+|---------|-----------|---------|------|
+| [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) | LangGraph | Graph-based orchestration | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangGraph) |
+| [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) | Academy | True pipeline (agent-to-agent) | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademy) |
+| [AgentsAcademyHubSpoke](/Capabilities/local-agents/AgentsAcademyHubSpoke/) | Academy | Hub-and-spoke (main orchestrates) | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademyHubSpoke) |
+
+**Pattern comparison:**
+- **LangGraph**: StateGraph with typed state, edges define flow
+- **Academy Pipeline**: Agents forward results directly to each other via messaging
+- **Academy Hub-and-Spoke**: Main process orchestrates all agents sequentially
+
+No LLM is used in the Academy examples—agent logic is stubbed to focus on the messaging patterns.
+
+#### Dashboard Version
+
+The dashboard version wraps agents with a full-screen Rich UI showing live progress across multiple scientific goals.
+
 | Example | Framework | Features | Code |
 |---------|-----------|----------|------|
-| [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) | LangGraph | Graph-based, typed state, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangGraph) |
-| [AgentsLangChain](/Capabilities/local-agents/AgentsLangChain/) | LangChain | Simple, LLM-powered | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangChain) |
-| [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) | Academy | Simple, no LLM required | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademy) |
-
-The simple versions are minimal implementations ideal for learning.
-
-
-#### Implementations of Five-Agent Pipeline with Dashboards
-
-The dashboard versions wrap the same agents with a full-screen Rich UI showing live progress across multiple scientific goals.
-
-| Example | Framework | Features | Code |
-|---------|-----------|----------|------|
-| [AgentsLangChainDashboard](/Capabilities/local-agents/AgentsLangChainDashboard/) | LangChain | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsLangChainDashboard) |
 | [AgentsAcademyDashboard](/Capabilities/local-agents/AgentsAcademyDashboard/) | Academy | Rich dashboard, multi-goal | [View](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/local-agents/AgentsAcademyDashboard) |
 
 

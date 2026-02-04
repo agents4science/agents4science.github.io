@@ -24,15 +24,9 @@ Each agent implementation is a skeleton demonstrating the pattern.
 
 ## LLM Configuration
 
-The example supports three modes:
+Supports OpenAI, FIRST (HPC inference), or mock mode (no API key needed). Mock mode shows realistic example outputs for the scientific workflow.
 
-| Mode | Environment Variable | Description |
-|------|---------------------|-------------|
-| **OpenAI** | `OPENAI_API_KEY` | Uses OpenAI's gpt-4o-mini |
-| **FIRST** | `FIRST_API_KEY` | Uses FIRST HPC inference service |
-| **Mock** | (none) | Demonstrates pattern with hardcoded responses |
-
-Mock mode runs without any API key, showing realistic example outputs for the scientific workflow.
+See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for details on configuring LLM backends, including Argonne's FIRST service.
 
 ## Why LangGraph?
 
@@ -129,21 +123,8 @@ AgentsLangGraph/
 cd Capabilities/local-agents/AgentsLangGraph
 python -m venv .venv && source .venv/bin/activate
 pip install -r requirements.txt
-
-# Run with mock responses (no API key needed)
-python main.py
-
-# Or with OpenAI
-export OPENAI_API_KEY=<your_api_key>
-python main.py
-
-# Or with FIRST (HPC environments)
-export FIRST_API_KEY=<your_token>
-export FIRST_API_BASE=https://your-first-endpoint/v1
 python main.py
 ```
-
-See [Argonne FIRST configuration](/Capabilities/local-agents/argonne-first/) for details on using Argonne's HPC inference service.
 
 Custom goal:
 

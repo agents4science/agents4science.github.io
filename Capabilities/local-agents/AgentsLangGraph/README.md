@@ -24,7 +24,7 @@ Each agent implementation is a skeleton demonstrating the pattern.
 
 ## LLM Configuration
 
-Supports OpenAI, FIRST (HPC inference), or mock mode (no API key needed). Mock mode shows realistic example outputs for the scientific workflow.
+Supports OpenAI, FIRST (HPC inference), Ollama (local), or mock mode. Mock mode shows realistic example outputs for the scientific workflow.
 
 See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for details on configuring LLM backends, including Argonne's FIRST service.
 

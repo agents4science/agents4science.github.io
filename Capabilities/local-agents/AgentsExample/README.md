@@ -41,7 +41,7 @@ python main.py
 
 ## LLM Configuration
 
-Supports OpenAI, FIRST (HPC inference), or mock mode (no API key needed).
+Supports OpenAI, FIRST (HPC inference), Ollama (local), or mock mode.
 
 See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for details on configuring LLM backends, including Argonne's FIRST service.
 

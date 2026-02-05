@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if page.title %}{{ page.title }} | {% endif %}Agents for Science</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <style>
+    /* Site header */
+    .site-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.75rem 1.5rem;
+      border-bottom: 1px solid #eee;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.875rem;
+    }
+    .site-logo {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    .site-logo:hover {
+      color: #50B87D;
+    }
+    .site-nav {
+      display: flex;
+      gap: 1.5rem;
+    }
+    .site-nav a {
+      text-decoration: none;
+      color: #666;
+    }
+    .site-nav a:hover {
+      color: #50B87D;
+    }
+
+    /* Site footer */
+    .site-footer {
+      border-top: 1px solid #eee;
+      padding: 1rem 1.5rem;
+      margin-top: 3rem;
+      font-family: system-ui, -apple-system, sans-serif;
+      font-size: 0.75rem;
+      color: #888;
+    }
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .footer-left {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .footer-logo {
+      display: flex;
+      align-items: center;
+    }
+    .footer-left a {
+      color: #888;
+      text-decoration: none;
+    }
+    .footer-left a:hover {
+      color: #50B87D;
+    }
+    .footer-right {
+      color: #aaa;
+    }
+
+    /* Main content area */
+    .site-content {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 2rem 1.5rem;
+    }
+  </style>
+</head>
+<body>
+  {% include header.html %}
+  <main class="site-content">
+    {{ content }}
+  </main>
+  {% include footer.html %}
+</body>
+</html>

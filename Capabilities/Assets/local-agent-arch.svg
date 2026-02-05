@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 340 200">
+  <defs>
+    <marker id="arr" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#666"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Workstation container -->
+  <rect x="20" y="20" width="300" height="165" rx="12" fill="#FAFAFA" stroke="#DDD" stroke-width="2" filter="url(#shadow)"/>
+  <text x="170" y="45" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#666">Workstation</text>
+
+  <!-- Agent -->
+  <rect x="50" y="65" width="90" height="50" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2"/>
+  <text x="95" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#7C5CBF">Agent</text>
+
+  <!-- Tools -->
+  <rect x="200" y="65" width="90" height="50" rx="8" fill="#EBF4FC" stroke="#4A90D9" stroke-width="2"/>
+  <text x="245" y="95" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#4A90D9">Tools</text>
+
+  <!-- LLM -->
+  <rect x="50" y="135" width="90" height="40" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2"/>
+  <text x="95" y="160" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="600" fill="#50B87D">LLM</text>
+
+  <!-- Arrow Agent to Tools -->
+  <line x1="140" y1="90" x2="195" y2="90" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Arrow Agent to LLM -->
+  <line x1="95" y1="115" x2="95" y2="132" stroke="#666" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- LLM label -->
+  <text x="200" y="158" font-family="system-ui, sans-serif" font-size="10" fill="#888">(API or local)</text>
+</svg>

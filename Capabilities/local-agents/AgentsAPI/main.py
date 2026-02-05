@@ -153,12 +153,12 @@ def compare_compounds(names: list[str]) -> str:
 
 def run_with_llm(llm, query: str):
     """Run the API agent with a real LLM."""
-    from langgraph.prebuilt import create_react_agent
+    from langchain.agents import create_agent
 
     print(f"\nQuery: {query}")
     print("-" * 60)
 
-    agent = create_react_agent(llm, [search_compound, get_compound_properties, compare_compounds])
+    agent = create_agent(llm, [search_compound, get_compound_properties, compare_compounds])
 
     for step in agent.stream({"messages": [HumanMessage(content=query)]}):
         if "agent" in step:

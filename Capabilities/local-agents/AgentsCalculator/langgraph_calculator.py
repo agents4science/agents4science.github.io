@@ -10,8 +10,8 @@ Supports four modes:
 
 import os
 import re
-
-from langchain_core.tools import tool
+from typing import Sequence, Union, Dict, Any, Callable
+from langchain_core.tools import tool, BaseTool
 from langchain_core.messages import HumanMessage
 from langchain_core.language_models.fake_chat_models import GenericFakeChatModel
 from langchain_core.messages import AIMessage

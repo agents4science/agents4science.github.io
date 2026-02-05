@@ -125,7 +125,7 @@ def get_top_n(column: str, n: int = 5, ascending: bool = False) -> str:
 
 def run_with_llm(llm, question: str):
     """Run the database agent with a real LLM."""
-    from langgraph.prebuilt import create_react_agent
+    from langchain.agents import create_agent
 
     print(f"\nQuestion: {question}")
     print("-" * 60)
@@ -134,7 +134,7 @@ def run_with_llm(llm, question: str):
     print(df.head(3).to_string(index=False))
     print(f"... ({len(df)} total rows)\n")
 
-    agent = create_react_agent(llm, [describe_columns, query_data, get_statistics, get_top_n])
+    agent = create_agent(llm, [describe_columns, query_data, get_statistics, get_top_n])
 
     for step in agent.stream({"messages": [HumanMessage(content=question)]}):
         if "agent" in step:

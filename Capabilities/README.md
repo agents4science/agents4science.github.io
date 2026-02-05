@@ -14,6 +14,8 @@ The code makes use of two **complementary agent frameworks**:
 
 See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf3k7P-35XGcH) for a brief review of these two systems, and one more, Microsoft Agent Framework.
 
+There are excellent tutorial materials online for [LangGraph](https://docs.langchain.com/oss/python/langgraph/quickstart) and for [Academy](https://docs.academy-agents.org/stable/guides/tutorial/). Here we focus on showing how to use the two systems, independently and together, to realize scalable agentic systems for science.
+
 ## Getting Started: Tutorial Review of Agentic Patterns
 
 **[Building Scientific Agents](local-agents/getting-started/)** — Learn to build production scientific agents:
@@ -169,3 +171,8 @@ All examples support multiple LLM backends (OpenAI, FIRST, Ollama) and include a
 | Example | Tech | Description | Key Pattern |
 |---------|------|-------------|-------------|
 | [AgentsWorkflow](agent-workflows/AgentsWorkflow/) | LangGraph | Dynamic DAG construction | Adaptive execution |
+
+## Credits
+
+Thanks to [Kyle Chard](https://kylechard.com), Yadu Babuji, Ian Foster, [Suman Raj](https://sites.google.com/view/suman-raj/home), and others for material and feedback.
+

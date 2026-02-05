@@ -28,3 +28,22 @@ Scaling inference is easy—LLM calls are stateless. Scaling tool use is hard be
 | Example | Description |
 |---------|-------------|
 | [AgentsGovernedTools](/Capabilities/governed-tool-use/AgentsGovernedTools/) | Budget limits, rate limiting, approval gates, and audit logging |
+
+## Prerequisites
+
+Before diving into governed tool use, ensure you're comfortable with:
+
+- [AgentsCalculator](/Capabilities/local-agents/AgentsCalculator/) — Basic LangGraph agent with tools
+- [AgentsAcademyBasic](/Capabilities/local-agents/AgentsAcademyBasic/) — Academy fundamentals
+
+## Next Steps
+
+After understanding governed tool use:
+
+- [Multi-Agent Coordination](/Capabilities/multi-agent-coordination/) — Coordinate agents under shared governance
+- [Long-Lived Agents](/Capabilities/long-lived-agents/) — Agents that persist for days to months
+
+## Related Topics
+
+- [Federated Agents](/Capabilities/federated-agents/) — Cross-institutional execution (often uses governance)
+- [Scale Inference](/Capabilities/scale-inference/) — Parallel LLM calls (different scaling challenge)

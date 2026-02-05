@@ -30,3 +30,23 @@ Large-scale discovery requires specialized agents working together. Coordination
 | [AgentsCoordination](/Capabilities/multi-agent-coordination/AgentsCoordination/) | Shared budget, state, and policy across agents |
 | [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) | 5-agent pipeline with LangGraph orchestration |
 | [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) | 5-agent pipeline with Academy messaging |
+
+## Prerequisites
+
+Before diving into multi-agent coordination:
+
+- [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) — Multi-agent pipelines with LangGraph
+- [AgentsAcademy](/Capabilities/local-agents/AgentsAcademy/) — Agent-to-agent messaging with Academy
+- [Governed Tool Use](/Capabilities/governed-tool-use/) — Policy enforcement patterns
+
+## Next Steps
+
+After mastering coordination:
+
+- [Long-Lived Agents](/Capabilities/long-lived-agents/) — Agents that persist across sessions
+- [Agent Workflows](/Capabilities/agent-workflows/) — Dynamic workflow construction
+
+## Related Topics
+
+- [Federated Agents](/Capabilities/federated-agents/) — Coordination across institutions
+- [Scale Inference](/Capabilities/scale-inference/) — Parallel agent execution at scale

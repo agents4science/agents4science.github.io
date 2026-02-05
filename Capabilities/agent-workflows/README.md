@@ -28,3 +28,26 @@ Traditional workflows are static. Agent-mediated workflows adapt to results, han
 | Example | Description |
 |---------|-------------|
 | [AgentsWorkflow](/Capabilities/agent-workflows/AgentsWorkflow/) | Dynamic workflow construction with adaptive execution |
+
+## Prerequisites
+
+Before building workflow agents:
+
+- [AgentsLangGraph](/Capabilities/local-agents/AgentsLangGraph/) — StateGraph patterns for multi-step workflows
+- [AgentsCheckpoint](/Capabilities/long-lived-agents/AgentsCheckpoint/) — Checkpoint/resume for long-running workflows
+
+## Integration with Existing Systems
+
+Agent-mediated workflows complement (not replace) existing tools:
+
+| System | How Agents Help |
+|--------|-----------------|
+| **Parsl** | Agents decide what to run; Parsl handles HPC execution |
+| **Globus Flows** | Agents construct flows dynamically; Globus executes reliably |
+| **Prefect/Airflow** | Agents adapt workflows at runtime; orchestrators manage scheduling |
+
+## Related Topics
+
+- [Long-Lived Agents](/Capabilities/long-lived-agents/) — Workflows that span days or weeks
+- [Governed Tool Use](/Capabilities/governed-tool-use/) — Policy enforcement for workflow steps
+- [Federated Agents](/Capabilities/federated-agents/) — Cross-institutional workflow execution

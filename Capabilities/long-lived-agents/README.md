@@ -28,3 +28,22 @@ Scientific campaigns unfold over weeks or months. Long-lived agents accumulate k
 | Example | Description |
 |---------|-------------|
 | [AgentsCheckpoint](/Capabilities/long-lived-agents/AgentsCheckpoint/) | Checkpoint/resume patterns for workflows that span sessions |
+
+## Prerequisites
+
+Before building long-lived agents:
+
+- [AgentsConversation](/Capabilities/local-agents/AgentsConversation/) — Memory patterns for stateful agents
+- [AgentsPersistent](/Capabilities/local-agents/AgentsPersistent/) — Checkpoint and resume with Academy
+
+## Next Steps
+
+After mastering long-lived agents:
+
+- [Agent Workflows](/Capabilities/agent-workflows/) — Dynamic workflow construction
+- [Multi-Agent Coordination](/Capabilities/multi-agent-coordination/) — Coordinating persistent agents
+
+## Related Topics
+
+- [Governed Tool Use](/Capabilities/governed-tool-use/) — Policy enforcement (important for autonomous agents)
+- [Federated Agents](/Capabilities/federated-agents/) — Running persistent agents across institutions

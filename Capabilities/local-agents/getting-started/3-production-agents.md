@@ -87,17 +87,7 @@ python main.py
 python main.py --llm openai
 ```
 
-**Architecture:**
-```
-┌─────────────────────┐         ┌─────────────────────┐
-│   CoordinatorAgent  │         │   ResearcherAgent   │
-│   (Academy)         │         │   (Academy)         │
-│                     │         │  ┌───────────────┐  │
-│  orchestrates       │────────→│  │  LangGraph    │  │
-│  workflow           │         │  │  (ReAct)      │  │
-│                     │←────────│  └───────────────┘  │
-└─────────────────────┘         └─────────────────────┘
-```
+<img src="/Capabilities/Assets/hybrid-architecture.svg" alt="Coordinator Agent orchestrates workflow, Researcher Agent contains LangGraph ReAct" style="max-width: 480px; margin: 1rem 0;">
 
 **What you learn:**
 - Initializing LangGraph inside Academy agents

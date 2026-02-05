@@ -17,23 +17,21 @@ Given one or more **SMILES strings**, the agent:
 
 Main entry point:
 
-```
+```bash
 python run_chem_agent.py
 ```
 
-**Source code:** [View on GitHub](https://github.com/agents4science/agents4science.github.io/tree/main/Capabilities/federated-agents/CharacterizeChemicals)
-
 ---
 
-## ✨ Features
+## Features
 
-### 🔬 RDKit descriptors
+### RDKit Descriptors
 - `logP`
 - `TPSA`
 - Internal descriptors (e.g., exact MolWt)
 - 3D geometry generation via RDKit embedding
 
-### ⚛️ xTB (GFN2-xTB) quantum properties
+### xTB (GFN2-xTB) Quantum Properties
 Extracted from real xTB output:
 
 - `E_scc_hartree`, `E_scc_eV`  
@@ -41,11 +39,11 @@ Extracted from real xTB output:
 - `HOMO_LUMO_gap_eV`  
 - `dipole_moment_D` (from the “molecular dipole” `full:` line)
 
-### 🌊 xTB GBSA solvation
+### xTB GBSA Solvation
 - `solvation_free_energy_kcal_per_mol`  
   Parsed from the `Gsolv` term in the SUMMARY block.
 
-### 📋 Transparency and debugging
+### Transparency and Debugging
 - Raw LLM-generated JSON plan printed before execution  
 - Parsed execution DAG printed  
 - Per-step logging of inputs and outputs  
@@ -55,7 +53,7 @@ Extracted from real xTB output:
 
 ---
 
-## 🔧 Installation
+## Installation
 
 The easiest way to install RDKit and xTB is with **conda**.
 
@@ -82,7 +80,7 @@ If this fails, your agent will not be able to run xTB-dependent steps.
 
 ---
 
-## 🚀 Usage
+## Usage
 
 Run with default settings:
 
@@ -98,7 +96,7 @@ python run_chem_agent.py     [--model MODEL]     [--smiles SMILES ...]     [--pr
 
 ---
 
-## 🔣 Arguments
+## Arguments
 
 ### `--model`, `-m`
 Hugging Face model ID for the **planner LLM**. Default:
@@ -128,7 +126,7 @@ Default: `balanced`
 
 ---
 
-## 🧪 Examples
+## Examples
 
 Default run:
 
@@ -156,7 +154,7 @@ python run_chem_agent.py -s CCO "c1ccccc1" "CC(=O)O"
 
 ---
 
-## 🧱 Architecture Overview
+## Architecture Overview
 
 ### 1. Planner LLM → JSON Plan
 
@@ -242,7 +240,7 @@ Parses:
 
 ---
 
-## 📊 Property Aggregation
+## Property Aggregation
 
 Final results include:
 
@@ -267,7 +265,7 @@ Returned as:
 
 ---
 
-## 🐞 Logging & Debugging
+## Logging and Debugging
 
 You will see:
 
@@ -286,7 +284,7 @@ This makes it easy to identify:
 
 ---
 
-## ⚠️ Caveats
+## Caveats
 
 - Planner LLM can be slow on CPU/MPS; reduce `max_new_tokens` or use a smaller model.
 - xTB may crash on malformed geometries; RDKit embedding quality matters.

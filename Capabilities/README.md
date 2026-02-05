@@ -4,11 +4,13 @@
 
 We provide here example code that implements a set of agentic capabilities of increasing sophistication, from local execution to governed, autonomous scientific systems.
 
-The code makes use of two **agent frameworks**, packages that provide abstractions and runtime support to simplify the development and use of agents:
+The code makes use of two **complementary agent frameworks**:
 
-* [**LangGraph**](https://www.langchain.com/langgraph) offers structured, reproducible workflows for LLM-driven reasoning and tool execution. Good for managing interactions with LLMs and for implementing structured or auditable reasoning pipelines.
+* [**LangGraph**](https://www.langchain.com/langgraph) — LLM reasoning, tool calling, and structured workflows. Handles the *intelligence* layer.
 
-* [**Academy**](https://academy-agents.org) provides persistent, secure, and scalable execution across HPC systems, instruments, and data services. Good for agents that must run continuously or securely on HPC systems, laboratory robots, data platforms, or other parts of federated DOE infrastructure.
+* [**Academy**](https://academy-agents.org) — Distributed execution, federation, and HPC integration. Handles the *distribution* layer.
+
+**Why both?** Production scientific agents need both capabilities. LangGraph excels at LLM orchestration but runs in a single process. Academy excels at distributed execution but doesn't handle LLM reasoning. Together, they enable intelligent agents that run anywhere—from laptops to federated DOE infrastructure.
 
 See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf3k7P-35XGcH) for a brief review of these two systems, and one more, Microsoft Agent Framework.
 
@@ -106,6 +108,8 @@ See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf
 | 5 | [Multi-Agent Coordination](multi-agent-coordination/) | Coordinate agents under shared governance | Shared state + policy | Distributed | O(10²–10³) agents | Emerging |
 | 6 | [Long-Lived Agents](long-lived-agents/) | Persistent agents with memory and goals | Lifecycle management | Any | Days–months | Emerging |
 | 7 | [Agent Workflows](agent-workflows/) | Dynamic workflow construction | Workflow integration | DOE infrastructure | Varies | Early |
+
+**Scale notation:** O(10²) means "order of 100" (tens to hundreds), O(10³) means "order of 1,000" (hundreds to thousands), etc. These indicate typical operating ranges, not hard limits.
 
 ---
 

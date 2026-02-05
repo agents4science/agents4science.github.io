@@ -135,14 +135,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Architecture:**
-```
-┌─────────────────┐                 ┌──────────────────┐
-│   Coordinator   │ ──call action─→ │   ToolProvider   │
-│  (orchestrates) │                 │ run_simulation() │
-│                 │ ←─────result─── │ analyze_data()   │
-└─────────────────┘                 └──────────────────┘
-```
+<img src="/Capabilities/Assets/coordinator-pattern.svg" alt="Coordinator pattern: Coordinator calls ToolProvider actions" style="max-width: 520px; margin: 1rem 0;">
 
 **What you learn:** Passing Handles, remote action calls, the Coordinator pattern
 
@@ -182,18 +175,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-**Architecture:**
-```
-                    ┌──────────────┐
-                    │ Coordinator  │
-                    └──────┬───────┘
-           ┌───────────────┼───────────────┐
-           ▼               ▼               ▼
-     ┌─────────┐     ┌─────────┐     ┌─────────┐
-     │   ANL   │     │   ORNL  │     │   LBNL  │
-     │ compute │     │  data   │     │ analysis│
-     └─────────┘     └─────────┘     └─────────┘
-```
+<img src="/Capabilities/Assets/federated-pattern.svg" alt="Federated collaboration: Coordinator orchestrates ANL, ORNL, LBNL agents" style="max-width: 560px; margin: 1rem 0;">
 
 **What you learn:** Cross-institutional patterns, capability discovery, federated workflows
 

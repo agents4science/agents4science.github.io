@@ -12,17 +12,11 @@ No single framework does both well. That's why we use two complementary framewor
 | **LangGraph** | LLM reasoning and tool orchestration | ReAct patterns, state management, tool calling |
 | **Academy** | Distributed agent execution | Cross-machine messaging, federation, HPC integration |
 
-```
-┌─────────────────────────────────────────────────────────────┐
-│                   Production Scientific Agent                │
-├─────────────────────────────────────────────────────────────┤
-│  LangGraph    │  LLM reasoning, tool calling, state mgmt   │
-├───────────────┼─────────────────────────────────────────────┤
-│  Academy      │  Distribution, messaging, federation        │
-└───────────────┴─────────────────────────────────────────────┘
-```
+<img src="/Capabilities/Assets/stack-diagram.svg" alt="LangGraph + Academy stack diagram" style="max-width: 500px; margin: 1.5rem 0;">
 
 ## Learning Path
+
+<img src="/Capabilities/Assets/learning-path.svg" alt="Learning path: LLM Agents → Distributed → Production" style="max-width: 700px; margin: 1rem 0;">
 
 This guide walks you through both frameworks, building toward production agents:
 

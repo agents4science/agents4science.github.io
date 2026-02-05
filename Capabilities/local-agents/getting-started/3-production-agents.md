@@ -6,26 +6,7 @@ Combine LLM intelligence with distributed execution for production scientific ag
 
 Production agents need both frameworks:
 
-```
-┌──────────────────────────────────────────────────────────────────┐
-│                        Academy Agent                             │
-│  ┌────────────────────────────────────────────────────────────┐  │
-│  │                    LangGraph Agent                         │  │
-│  │  ┌─────────┐    ┌─────────┐    ┌─────────┐               │  │
-│  │  │   LLM   │───→│  Tools  │───→│  State  │               │  │
-│  │  └─────────┘    └─────────┘    └─────────┘               │  │
-│  └────────────────────────────────────────────────────────────┘  │
-│                                                                  │
-│  @action methods expose capabilities to other agents             │
-└──────────────────────────────────────────────────────────────────┘
-         │                              ▲
-         │ Handle-based messaging       │
-         ▼                              │
-┌──────────────────────────────────────────────────────────────────┐
-│                    Other Academy Agents                          │
-│    (on same machine, HPC nodes, other institutions...)           │
-└──────────────────────────────────────────────────────────────────┘
-```
+<img src="/Capabilities/Assets/hybrid-agent.svg" alt="Hybrid agent: LangGraph inside Academy agent" style="max-width: 440px; margin: 1rem 0;">
 
 **Division of labor:**
 

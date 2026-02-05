@@ -15,20 +15,7 @@ Scientific research increasingly requires capabilities distributed across multip
 
 ## Architecture
 
-```
-                    +------------------+
-                    |   Coordinator    |
-                    | (orchestrates)   |
-                    +--------+---------+
-                             |
-          +------------------+------------------+
-          |                  |                  |
-          v                  v                  v
-+------------------+ +------------------+ +------------------+
-|       ANL        | |       ORNL       | |       LBNL       |
-| (Aurora compute) | |  (SNS/HFIR data) | |   (ML analysis)  |
-+------------------+ +------------------+ +------------------+
-```
+<img src="/Capabilities/Assets/federated-pattern.svg" alt="Federated collaboration: Coordinator orchestrates ANL, ORNL, LBNL agents" style="max-width: 560px; margin: 1rem 0;">
 
 **In production:**
 - Each institution runs its own agents behind institutional firewalls

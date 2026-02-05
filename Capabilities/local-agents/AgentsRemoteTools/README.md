@@ -8,24 +8,7 @@ Demonstrates how Academy agents can provide tools that other agents call remotel
 
 This example shows a key pattern for distributed scientific computing: **tools as agent actions**.
 
-```
-+---------------+                    +------------------+
-|  Coordinator  |                    |  ToolProvider    |
-|               |                    |                  |
-|  execute_     |  -- simulation --> |  run_simulation()|
-|  workflow()   |                    |        |         |
-|       |       |                    |        v         |
-|       |       |  <-- results ----  |   compute...     |
-|       |       |                    |                  |
-|       |       |  -- analysis ----> |  analyze_data()  |
-|       v       |                    |        |         |
-|   aggregate   |  <-- results ----  |        v         |
-|    results    |                    |    analyze...    |
-+---------------+                    +------------------+
-        ^                                     |
-        |                                     |
-        +---- Academy Message Exchange -------+
-```
+<img src="/Capabilities/Assets/coordinator-pattern.svg" alt="Coordinator pattern: Coordinator calls ToolProvider actions" style="max-width: 520px; margin: 1rem 0;">
 
 **Why this matters:**
 - **Separation of concerns**: Coordinator handles workflow logic; ToolProvider handles compute

@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220">
+  <defs>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#333">Production Scientific Agent</text>
+
+  <!-- Outer container -->
+  <rect x="40" y="40" width="420" height="170" rx="12" fill="#FAFAFA" stroke="#DDD" stroke-width="2" filter="url(#shadow)"/>
+
+  <!-- LangGraph layer (top) -->
+  <rect x="60" y="55" width="260" height="65" rx="8" fill="#EBF4FC" stroke="#4A90D9" stroke-width="2"/>
+  <text x="190" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#4A90D9">LangGraph</text>
+  <text x="190" y="102" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">LLM reasoning, tools, state</text>
+
+  <!-- Academy layer (bottom) -->
+  <rect x="60" y="130" width="260" height="65" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2"/>
+  <text x="190" y="157" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="700" fill="#50B87D">Academy</text>
+  <text x="190" y="177" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">Distribution, messaging, federation</text>
+
+  <!-- Right side labels -->
+  <g transform="translate(340, 55)">
+    <rect x="0" y="0" width="105" height="65" rx="6" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="52" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#4A90D9">Intelligence</text>
+    <text x="52" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">ReAct loops</text>
+    <text x="52" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">Tool calling</text>
+  </g>
+
+  <g transform="translate(340, 130)">
+    <rect x="0" y="0" width="105" height="65" rx="6" fill="#F8F8F8" stroke="#E0E0E0" stroke-width="1"/>
+    <text x="52" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#50B87D">Infrastructure</text>
+    <text x="52" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">HPC, federation</text>
+    <text x="52" y="52" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">Security, policy</text>
+  </g>
+</svg>

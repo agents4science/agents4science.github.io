@@ -17,22 +17,7 @@ Together they enable **distributed intelligent agents**: agents that can run any
 
 ## Architecture
 
-```
-+--------------------------------------------------+
-|                 Academy Runtime                   |
-|                                                  |
-|  +-----------------+      +-----------------+    |
-|  | ResearcherAgent |      |  PlannerAgent   |    |
-|  |                 |      |                 |    |
-|  |  +----------+   | msg  |  +----------+   |    |
-|  |  | LangGraph|   | ---> |  | LangGraph|   |    |
-|  |  |  Agent   |   |      |  |  Agent   |   |    |
-|  |  |  (LLM +  |   |      |  |  (LLM +  |   |    |
-|  |  |  tools)  |   |      |  |  tools)  |   |    |
-|  |  +----------+   |      |  +----------+   |    |
-|  +-----------------+      +-----------------+    |
-+--------------------------------------------------+
-```
+<img src="/Capabilities/Assets/hybrid-agent.svg" alt="Hybrid agent: LangGraph inside Academy agent" style="max-width: 440px; margin: 1rem 0;">
 
 ## Running the Example
 

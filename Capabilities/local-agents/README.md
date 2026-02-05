@@ -35,7 +35,7 @@ Local execution lets you develop and test agent logic before deploying to HPC. L
 
 Here we deal with agentic applications in which one or more agents operate entirely locally, each potentially calling tools and/or LLMs.
 
-<img src="/Capabilities/Assets/local-agent-arch.svg" alt="Local agent architecture: Agent calls Tools and LLM" style="max-width: 340px; margin: 1rem 0;">
+<img src="/Capabilities/Assets/local-agent-arch.svg" alt="Local agent architecture: Agent calls Tools and LLM" style="max-width: 240px; margin: 1rem 0;">
 
 ## Examples 
 

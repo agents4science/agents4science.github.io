@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 220">
+  <defs>
+    <marker id="arr-w" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#666"/>
+    </marker>
+    <marker id="arr-w2" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#7C5CBF"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Agent Layer -->
+  <g transform="translate(20, 15)">
+    <rect x="0" y="0" width="440" height="80" rx="10" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#shadow)"/>
+    <text x="220" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#7C5CBF">Agent Layer</text>
+
+    <!-- Planning Agent -->
+    <rect x="150" y="35" width="140" height="35" rx="6" fill="white" stroke="#7C5CBF" stroke-width="2"/>
+    <text x="220" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#7C5CBF">Planning Agent</text>
+  </g>
+
+  <!-- Arrow down with label -->
+  <line x1="240" y1="95" x2="240" y2="125" stroke="#7C5CBF" stroke-width="2" marker-end="url(#arr-w2)"/>
+  <text x="280" y="115" font-family="system-ui, sans-serif" font-size="10" fill="#7C5CBF">constructs</text>
+
+  <!-- Workflow Layer -->
+  <g transform="translate(20, 130)">
+    <rect x="0" y="0" width="440" height="80" rx="10" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <text x="220" y="22" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#50B87D">Workflow Layer</text>
+
+    <!-- Steps -->
+    <rect x="40" y="38" width="70" height="32" rx="5" fill="white" stroke="#50B87D" stroke-width="1.5"/>
+    <text x="75" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#333">Step 1</text>
+
+    <line x1="115" y1="54" x2="145" y2="54" stroke="#50B87D" stroke-width="2" marker-end="url(#arr-w)"/>
+
+    <rect x="150" y="38" width="70" height="32" rx="5" fill="white" stroke="#50B87D" stroke-width="1.5"/>
+    <text x="185" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#333">Step 2</text>
+
+    <line x1="225" y1="54" x2="255" y2="54" stroke="#50B87D" stroke-width="2" marker-end="url(#arr-w)"/>
+
+    <rect x="260" y="38" width="70" height="32" rx="5" fill="white" stroke="#50B87D" stroke-width="1.5"/>
+    <text x="295" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#333">Step 3</text>
+
+    <text x="365" y="58" font-family="system-ui, sans-serif" font-size="14" fill="#999">...</text>
+  </g>
+</svg>

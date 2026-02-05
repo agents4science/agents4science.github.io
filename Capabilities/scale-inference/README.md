@@ -21,19 +21,7 @@ Scientific applications often require millions of LLM calls—literature mining,
 
 ## Architecture
 
-```
-+------------+          +----------------------------+
-|Coordinator |          |     HPC (Aurora)           |
-|            |          |                            |
-| +-------+  |  fan out | +-----++-----+    +-----+  |
-| | Agent |--+--------->| |LLM 1||LLM 2| ...|LLM N|  |
-| +-------+  |          | +--+--++--+--+    +--+--+  |
-|            |          |    +------+---------+      |
-| +-------+  | results  |            |               |
-| |Aggreg.|<-+----------+------------+               |
-| +-------+  |          +----------------------------+
-+------------+
-```
+<img src="/Capabilities/Assets/scale-inference.svg" alt="Scale inference: Coordinator fans out to thousands of LLM instances on HPC" style="max-width: 540px; margin: 1rem 0;">
 
 ## Code
 

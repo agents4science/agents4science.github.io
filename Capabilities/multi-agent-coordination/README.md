@@ -21,25 +21,7 @@ Large-scale discovery requires specialized agents working together. Coordination
 
 ## Architecture
 
-```
-+-----------------------------------------+
-|          Coordination Layer             |
-|                                         |
-| +------------+ +--------+ +----------+  |
-| |Shared State| | Policy | | Budget   |  |
-| +-----+------+ +---+----+ +----+-----+  |
-|       +------------+----------+         |
-|                    |                    |
-+--------------------+--------------------+
-                     |
-       +-------------+-------------+
-       |             |             |
-       v             v             v
-  +---------+   +---------+   +---------+
-  | Agent A |   | Agent B |   | Agent C |
-  |(Inst 1) |   |(Inst 1) |   |(Inst 2) |
-  +---------+   +---------+   +---------+
-```
+<img src="/Capabilities/Assets/multi-agent-coord.svg" alt="Multi-agent coordination: Shared State, Policy, and Budget controlling multiple agents" style="max-width: 480px; margin: 1rem 0;">
 
 ## Code
 

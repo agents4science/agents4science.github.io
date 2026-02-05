@@ -30,20 +30,7 @@ Before diving into federated execution, ensure you're comfortable with:
 
 ## Architecture
 
-```
-+---------------+              +------------------------+
-|  Agent Host   |              |    DOE HPC System      |
-|               |              |                        |
-|  +---------+  |    secure    |  +---------+           |
-|  |  Agent  |--+------------->|  | Academy |           |
-|  +----+----+  |  federated   |  +----+----+           |
-|       |       |   identity   |       |                |
-|       v       |              |       v                |
-|  +---------+  |              |  +---------+  +-----+  |
-|  |   LLM   |  |              |  |  Tools  |->| HPC |  |
-|  +---------+  |              |  +---------+  +-----+  |
-+---------------+              +------------------------+
-```
+<img src="/Capabilities/Assets/federated-arch.svg" alt="Federated architecture: Agent Host connects to DOE HPC via federated identity" style="max-width: 580px; margin: 1rem 0;">
 
 ## Examples
 

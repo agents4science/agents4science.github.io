@@ -21,27 +21,7 @@ Scientific campaigns unfold over weeks or months. Long-lived agents accumulate k
 
 ## Architecture
 
-```
-+-----------------------------------------+
-|          Lifecycle Management           |
-|                                         |
-| +----------+ +----------+ +----------+  |
-| |Checkpoint| | Recovery | | Oversight|  |
-| +----+-----+ +----+-----+ +----+-----+  |
-|      +------------+----------+          |
-|                    |                    |
-+--------------------+--------------------+
-                     |
-              +------v------+
-              | Long-Lived  |
-              |   Agent     |
-              |             |
-              | +---------+ |
-              | | Memory  | |
-              | | + Goals | |
-              | +---------+ |
-              +-------------+
-```
+<img src="/Capabilities/Assets/long-lived-arch.svg" alt="Long-lived agents: Lifecycle management with Checkpoint, Recovery, Oversight" style="max-width: 480px; margin: 1rem 0;">
 
 ## Code
 

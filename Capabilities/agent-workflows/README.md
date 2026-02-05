@@ -21,26 +21,7 @@ Traditional workflows are static. Agent-mediated workflows adapt to results, han
 
 ## Architecture
 
-```
-+-----------------------------------------+
-|              Agent Layer                |
-|                                         |
-|         +-----------------+             |
-|         |  Planning Agent |             |
-|         +--------+--------+             |
-|                  | constructs           |
-+------------------+----------------------+
-                   v
-+-----------------------------------------+
-|           Workflow Layer                |
-|                                         |
-| +------+    +------+    +------+        |
-| |Step 1|--->|Step 2|--->|Step 3| ...    |
-| +------+    +------+    +------+        |
-|                                         |
-| (Parsl, Globus Flows, etc.)             |
-+-----------------------------------------+
-```
+<img src="/Capabilities/Assets/agent-workflows.svg" alt="Agent workflows: Planning Agent constructs workflow steps" style="max-width: 480px; margin: 1rem 0;">
 
 ## Code
 

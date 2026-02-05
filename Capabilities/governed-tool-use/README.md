@@ -21,24 +21,7 @@ Scaling inference is easy—LLM calls are stateless. Scaling tool use is hard be
 
 ## Architecture
 
-```
-+-----------------------------------------+
-|           Governance Layer              |
-|                                         |
-| +--------+ +---------+ +-------------+  |
-| | Policy | |Scheduler| | Audit Log   |  |
-| +----+---+ +----+----+ +------+------+  |
-|      +----------+-----------+           |
-|                  |                      |
-+------------------+----------------------+
-                   v
-+-----------------------------------------+
-|            Tool Execution               |
-| +------+ +------+ +------+    +------+  |
-| |Tool 1| |Tool 2| |Tool 3| ...|Tool N|  |
-| +------+ +------+ +------+    +------+  |
-+-----------------------------------------+
-```
+<img src="/Capabilities/Assets/governed-tools.svg" alt="Governed tool use: Governance layer with Policy, Scheduler, Audit Log controlling tool execution" style="max-width: 480px; margin: 1rem 0;">
 
 ## Code
 

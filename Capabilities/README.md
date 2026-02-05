@@ -1,4 +1,4 @@
-# Capabilities
+# Agentic Capabilities: A Tutorial Introduction
 
 *Deployment patterns from local execution to autonomous systems*
 
@@ -14,7 +14,7 @@ The code makes use of two **complementary agent frameworks**:
 
 See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf3k7P-35XGcH) for a brief review of these two systems, and one more, Microsoft Agent Framework.
 
-### Getting Started
+## Getting Started: Tutorial Review of Agentic Patterns
 
 **[Building Scientific Agents](local-agents/getting-started/)** — Learn to build production scientific agents:
 
@@ -26,7 +26,10 @@ See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf
 |----------------------|---|
 | [LLM Configuration](local-agents/llm-configuration/) | Configure OpenAI, Ollama, or FIRST backends |
 
----
+
+## Code Samples by Area
+
+The sample code shows how to implement a series of increasingly sophisticated agentic patterns.
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0;">
 

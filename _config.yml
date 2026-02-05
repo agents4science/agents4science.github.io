@@ -1,2 +1,25 @@
-title: ""
-description: ""
+title: "Agents for Science"
+description: "Building intelligent agents for scientific discovery"
+url: "https://agents4science.github.io"
+
+# Use our custom layout by default
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
+
+# Markdown settings
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# Exclude from build
+exclude:
+  - "**/.venv"
+  - "**/__pycache__"
+  - "**/node_modules"
+  - "**/*.pyc"
+  - Gemfile
+  - Gemfile.lock

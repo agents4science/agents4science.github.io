@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Hexagonal structure with central node - science + agent -->
+  <polygon points="12,2 20,7 20,17 12,22 4,17 4,7" fill="none" stroke="#DDD" stroke-width="1.5"/>
+  <circle cx="12" cy="12" r="4" fill="#50B87D"/>
+  <circle cx="12" cy="2" r="1.5" fill="#4A90D9"/>
+  <circle cx="20" cy="7" r="1.5" fill="#4A90D9"/>
+  <circle cx="20" cy="17" r="1.5" fill="#7C5CBF"/>
+  <circle cx="12" cy="22" r="1.5" fill="#7C5CBF"/>
+  <circle cx="4" cy="17" r="1.5" fill="#4A90D9"/>
+  <circle cx="4" cy="7" r="1.5" fill="#7C5CBF"/>
+</svg>

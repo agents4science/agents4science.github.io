@@ -77,4 +77,3 @@ Example applications of agentic systems for scientific discovery.</p>
 - [Slides from a talk at Trillion Parameter Consortium meeting](Assets/systems.pdf) on systems requirements for scalable agentic AI (Jan 28, 2026)
 - [Slides from a talk at U. Würzberg](Assets/wurzberg.pdf) (thanks to host [S. Kounev](https://se.informatik.uni-wuerzburg.de/staff/samuel-kounev/)) covering agents for scientific discovery, Academy agent framework, and agency as new organizing abstraction for CS (Jan 22, 2026)
 - Pointer to [**Agent of the Week program**](Applications/README.md) (Jan 16, 2026)
-- Web site updated to include pointers to Frameworks and Applications (Jan 15, 2026)

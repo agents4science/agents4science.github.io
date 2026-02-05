@@ -44,33 +44,7 @@ See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for detai
 
 ## Checkpoint Architecture
 
-```
-+------------------------------------------+
-|              AgentState                  |
-|                                          |
-|  +-------------+  +------------------+   |
-|  | Identity    |  | Goals            |   |
-|  | - agent_id  |  | - primary_goal   |   |
-|  | - created   |  | - sub_goals      |   |
-|  +-------------+  +------------------+   |
-|                                          |
-|  +--------------------------------------+ |
-|  | Tasks[]                               | |
-|  | - id, description, status, result     | |
-|  | - started_at, completed_at, attempts  | |
-|  +--------------------------------------+ |
-|                                          |
-|  +-------------+  +------------------+   |
-|  | Memory      |  | Execution Log    |   |
-|  | (findings)  |  | (audit trail)    |   |
-|  +-------------+  +------------------+   |
-+------------------------------------------+
-          |
-          v  save_checkpoint()
-+------------------------------------------+
-|  checkpoints/agent_20240115_103045.json  |
-+------------------------------------------+
-```
+<img src="/Capabilities/Assets/agent-state.svg" alt="Agent state with identity, goals, tasks, memory, and checkpoint persistence" style="max-width: 400px; margin: 1rem 0;">
 
 ## Key Patterns
 

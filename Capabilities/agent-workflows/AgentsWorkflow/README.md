@@ -47,30 +47,7 @@ See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for detai
 
 ## Workflow Architecture
 
-```
-+------------------------------------------+
-|              Planning Agent              |
-|                                          |
-|  "Optimize catalyst for CO2 reduction"   |
-|                  |                       |
-|                  v constructs            |
-+------------------+-----------------------+
-                   |
-+------------------v-----------------------+
-|              Workflow DAG                |
-|                                          |
-|  [data_fetch]                            |
-|       |                                  |
-|       v                                  |
-|  [compute] -----> [analyze]              |
-|       |               |                  |
-|       v               v                  |
-|  [decision] <---------+                  |
-|       |                                  |
-|       v (adapts based on results)        |
-|  [refinement] (dynamically inserted)     |
-+------------------------------------------+
-```
+<img src="/Capabilities/Assets/workflow-dag.svg" alt="Planning agent constructs workflow DAG with data fetch, compute, analyze, and decision steps" style="max-width: 400px; margin: 1rem 0;">
 
 ## Key Patterns
 

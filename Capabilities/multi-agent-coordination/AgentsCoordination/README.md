@@ -37,26 +37,7 @@ See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for detai
 
 ## Coordination Architecture
 
-```
-+----------------------------------------------------+
-|                 Coordination Hub                    |
-|                                                     |
-|  +------------+   +------------+   +------------+   |
-|  |   Shared   |   |   Shared   |   |   Agent    |   |
-|  |   Budget   |   | Blackboard |   |   Quotas   |   |
-|  +-----+------+   +-----+------+   +------+-----+   |
-|        |               |                 |          |
-+--------+---------------+-----------------+----------+
-         |               |                 |
-         v               v                 v
-   +---------+     +---------+       +---------+
-   | Agent 1 |     | Agent 2 |  ...  | Agent N |
-   +---------+     +---------+       +---------+
-         |               |                 |
-         +---------------+-----------------+
-                         |
-                (concurrent execution)
-```
+<img src="/Capabilities/Assets/coordination-hub.svg" alt="Coordination hub with shared budget, blackboard, and agent quotas" style="max-width: 500px; margin: 1rem 0;">
 
 ## Key Patterns
 

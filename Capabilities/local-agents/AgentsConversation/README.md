@@ -42,26 +42,7 @@ See [LLM Configuration](/Capabilities/local-agents/llm-configuration/) for detai
 
 ## Memory Architecture
 
-```
-+------------------------------------------+
-|           ConversationMemory             |
-|                                          |
-|  +----------------+  +----------------+  |
-|  | Short-term     |  | Long-term      |  |
-|  | (messages[])   |  | (facts{})      |  |
-|  +-------+--------+  +-------+--------+  |
-|          |                   |           |
-|          v                   v           |
-|  +----------------+  +----------------+  |
-|  | Sliding Window |  | Key-Value      |  |
-|  | max_messages=20|  | Store          |  |
-|  +----------------+  +----------------+  |
-|                                          |
-|  +------------------------------------+  |
-|  | Summary (compressed old messages) |  |
-|  +------------------------------------+  |
-+------------------------------------------+
-```
+<img src="/Capabilities/Assets/conversation-memory.svg" alt="Conversation memory: short-term messages, long-term facts, sliding window, and summary compression" style="max-width: 400px; margin: 1rem 0;">
 
 ## Tools
 

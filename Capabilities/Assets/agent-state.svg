@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 240">
+  <defs>
+    <marker id="arr-s3" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L8,3 z" fill="#666"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- AgentState container -->
+  <rect x="20" y="15" width="360" height="165" rx="10" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+  <text x="200" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2196F3">AgentState</text>
+
+  <!-- Identity -->
+  <rect x="40" y="50" width="100" height="50" rx="5" fill="white" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="90" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#333">Identity</text>
+  <text x="90" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#888">agent_id, created</text>
+
+  <!-- Goals -->
+  <rect x="160" y="50" width="100" height="50" rx="5" fill="white" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="210" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#333">Goals</text>
+  <text x="210" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#888">primary, sub_goals</text>
+
+  <!-- Tasks -->
+  <rect x="40" y="110" width="220" height="30" rx="5" fill="white" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="150" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#333">Tasks[] (id, status, result, attempts)</text>
+
+  <!-- Memory -->
+  <rect x="280" y="50" width="80" height="50" rx="5" fill="white" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="320" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" font-weight="600" fill="#333">Memory</text>
+  <text x="320" y="85" text-anchor="middle" font-family="system-ui, sans-serif" font-size="8" fill="#888">findings</text>
+
+  <!-- Execution Log -->
+  <rect x="280" y="110" width="80" height="30" rx="5" fill="white" stroke="#2196F3" stroke-width="1.5"/>
+  <text x="320" y="130" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#333">Audit Log</text>
+
+  <!-- Arrow down -->
+  <line x1="200" y1="180" x2="200" y2="200" stroke="#666" stroke-width="1.5" marker-end="url(#arr-s3)"/>
+  <text x="280" y="195" font-family="system-ui, sans-serif" font-size="9" fill="#666">save_checkpoint()</text>
+
+  <!-- Checkpoint file -->
+  <rect x="80" y="205" width="240" height="28" rx="5" fill="#EDF7F1" stroke="#50B87D" stroke-width="1.5"/>
+  <text x="200" y="224" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#50B87D">checkpoints/agent_20240115_103045.json</text>
+</svg>

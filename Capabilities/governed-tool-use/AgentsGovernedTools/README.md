@@ -165,31 +165,7 @@ audit:
 
 ## Architecture
 
-```
-+------------------------------------------+
-|             Governance Layer             |
-|                                          |
-|  +--------+  +--------+  +------------+  |
-|  | Budget |  |  Rate  |  | Approval   |  |
-|  | Check  |  | Limit  |  | Gate       |  |
-|  +---+----+  +---+----+  +-----+------+  |
-|      |           |             |         |
-|      +-----------+-------------+         |
-|                  |                       |
-|           +------+------+                |
-|           | Audit Log   |                |
-|           +------+------+                |
-+------------------+-----------------------+
-                   |
-                   v
-+------------------------------------------+
-|           Tool Execution Layer           |
-|                                          |
-|  +----------+  +----------+  +--------+  |
-|  | Analysis |  |Simulation|  |  HPC   |  |
-|  +----------+  +----------+  +--------+  |
-+------------------------------------------+
-```
+<img src="/Capabilities/Assets/governed-tools-example.svg" alt="Governance layer with budget check, rate limit, approval gate, and audit log over tool execution layer" style="max-width: 400px; margin: 1rem 0;">
 
 ## Production Considerations
 

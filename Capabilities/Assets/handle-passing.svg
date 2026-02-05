@@ -22,14 +22,14 @@
 
   <!-- Step 1: Launch agents, get handles -->
   <text x="70" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">1. launch()</text>
-  <path d="M 180 62 L 120 90" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <path d="M 180 62 L 120 90" fill="none" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
 
   <text x="430" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">1. launch()</text>
-  <path d="M 320 62 L 380 90" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <path d="M 320 62 L 380 90" fill="none" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
 
   <!-- Step 2: Pass handle -->
   <text x="250" y="105" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">2. set_worker(handle)</text>
-  <path d="M 250 85 L 250 115 L 120 140" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+  <path d="M 250 85 L 250 115 L 120 140" fill="none" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
 
   <!-- Agent A (Boss) -->
   <g transform="translate(30, 100)">
@@ -51,10 +51,10 @@
   </g>
 
   <!-- Step 3: Agent-to-agent call -->
-  <path d="M 170 165 L 330 165" stroke="#50B87D" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <path d="M 170 165 L 330 165" fill="none" stroke="#50B87D" stroke-width="2" marker-end="url(#arrow-green)"/>
   <text x="250" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">3. await _worker.do_work()</text>
 
   <!-- Return -->
-  <path d="M 330 180 L 170 180" stroke="#888" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow-gray)"/>
+  <path d="M 330 180 L 170 180" fill="none" stroke="#888" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow-gray)"/>
   <text x="250" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">result</text>
 </svg>

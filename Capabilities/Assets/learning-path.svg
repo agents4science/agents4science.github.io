@@ -1,38 +1,38 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 140">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 140" width="700" height="140">
   <defs>
-    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <marker id="lp_arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#888"/>
     </marker>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="lp_shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
     </filter>
   </defs>
 
   <!-- Stage 1: LLM Agents -->
   <g transform="translate(30, 20)">
-    <rect x="0" y="0" width="180" height="100" rx="12" fill="#EBF4FC" stroke="#4A90D9" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="180" height="100" rx="12" fill="#EBF4FC" stroke="#4A90D9" stroke-width="2" filter="url(#lp_shadow)"/>
     <text x="90" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#4A90D9">Stage 1</text>
     <text x="90" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#333">LLM Agents</text>
     <text x="90" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#666">LangGraph</text>
   </g>
 
   <!-- Arrow 1 -->
-  <line x1="220" y1="70" x2="260" y2="70" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="220" y1="70" x2="260" y2="70" stroke="#888" stroke-width="2" marker-end="url(#lp_arrow)"/>
 
   <!-- Stage 2: Distributed Agents -->
   <g transform="translate(270, 20)">
-    <rect x="0" y="0" width="180" height="100" rx="12" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="180" height="100" rx="12" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#lp_shadow)"/>
     <text x="90" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#50B87D">Stage 2</text>
     <text x="90" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#333">Distributed</text>
     <text x="90" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#666">Academy</text>
   </g>
 
   <!-- Arrow 2 -->
-  <line x1="460" y1="70" x2="500" y2="70" stroke="#888" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="460" y1="70" x2="500" y2="70" stroke="#888" stroke-width="2" marker-end="url(#lp_arrow)"/>
 
   <!-- Stage 3: Production -->
   <g transform="translate(510, 20)">
-    <rect x="0" y="0" width="180" height="100" rx="12" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="180" height="100" rx="12" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#lp_shadow)"/>
     <text x="90" y="35" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#7C5CBF">Stage 3</text>
     <text x="90" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" font-weight="700" fill="#333">Production</text>
     <text x="90" y="82" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#666">Both</text>

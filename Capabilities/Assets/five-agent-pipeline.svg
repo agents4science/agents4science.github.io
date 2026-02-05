@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 160">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 160" width="700" height="160">
   <defs>
-    <marker id="arrow-p" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <marker id="fap_arrow-p" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#7C5CBF"/>
     </marker>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="fap_shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
     </filter>
   </defs>
@@ -13,7 +13,7 @@
 
   <!-- Scout -->
   <g transform="translate(20, 45)">
-    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#fap_shadow)"/>
     <text x="55" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">🔭</text>
     <text x="55" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#7C5CBF">Scout</text>
     <text x="55" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#666">Survey problem</text>
@@ -21,11 +21,11 @@
   </g>
 
   <!-- Arrow -->
-  <line x1="135" y1="90" x2="155" y2="90" stroke="#7C5CBF" stroke-width="2" marker-end="url(#arrow-p)"/>
+  <line x1="135" y1="90" x2="155" y2="90" stroke="#7C5CBF" stroke-width="2" marker-end="url(#fap_arrow-p)"/>
 
   <!-- Planner -->
   <g transform="translate(160, 45)">
-    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#fap_shadow)"/>
     <text x="55" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">📋</text>
     <text x="55" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#7C5CBF">Planner</text>
     <text x="55" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#666">Design workflow</text>
@@ -33,11 +33,11 @@
   </g>
 
   <!-- Arrow -->
-  <line x1="275" y1="90" x2="295" y2="90" stroke="#7C5CBF" stroke-width="2" marker-end="url(#arrow-p)"/>
+  <line x1="275" y1="90" x2="295" y2="90" stroke="#7C5CBF" stroke-width="2" marker-end="url(#fap_arrow-p)"/>
 
   <!-- Operator -->
   <g transform="translate(300, 45)">
-    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#fap_shadow)"/>
     <text x="55" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">⚙️</text>
     <text x="55" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#7C5CBF">Operator</text>
     <text x="55" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#666">Execute plan</text>
@@ -45,11 +45,11 @@
   </g>
 
   <!-- Arrow -->
-  <line x1="415" y1="90" x2="435" y2="90" stroke="#7C5CBF" stroke-width="2" marker-end="url(#arrow-p)"/>
+  <line x1="415" y1="90" x2="435" y2="90" stroke="#7C5CBF" stroke-width="2" marker-end="url(#fap_arrow-p)"/>
 
   <!-- Analyst -->
   <g transform="translate(440, 45)">
-    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#fap_shadow)"/>
     <text x="55" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">📊</text>
     <text x="55" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#7C5CBF">Analyst</text>
     <text x="55" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#666">Analyze results</text>
@@ -57,11 +57,11 @@
   </g>
 
   <!-- Arrow -->
-  <line x1="555" y1="90" x2="575" y2="90" stroke="#7C5CBF" stroke-width="2" marker-end="url(#arrow-p)"/>
+  <line x1="555" y1="90" x2="575" y2="90" stroke="#7C5CBF" stroke-width="2" marker-end="url(#fap_arrow-p)"/>
 
   <!-- Archivist -->
   <g transform="translate(580, 45)">
-    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="110" height="90" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#fap_shadow)"/>
     <text x="55" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18">📚</text>
     <text x="55" y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#7C5CBF">Archivist</text>
     <text x="55" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#666">Document findings</text>

@@ -1,15 +1,15 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220" width="500" height="220">
   <defs>
-    <marker id="arr-h" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+    <marker id="ch_arr-h" markerWidth="8" markerHeight="8" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L8,3 z" fill="#666"/>
     </marker>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="ch_shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
     </filter>
   </defs>
 
   <!-- Coordination Hub -->
-  <rect x="20" y="15" width="460" height="85" rx="10" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="20" y="15" width="460" height="85" rx="10" fill="#E3F2FD" stroke="#2196F3" stroke-width="2" filter="url(#ch_shadow)"/>
   <text x="250" y="38" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#2196F3">Coordination Hub</text>
 
   <!-- Shared Budget -->
@@ -29,20 +29,20 @@
   <line x1="250" y1="100" x2="250" y2="125" stroke="#666" stroke-width="1.5"/>
   <line x1="395" y1="100" x2="395" y2="125" stroke="#666" stroke-width="1.5"/>
   <line x1="105" y1="125" x2="395" y2="125" stroke="#666" stroke-width="1.5"/>
-  <line x1="105" y1="125" x2="105" y2="145" stroke="#666" stroke-width="1.5" marker-end="url(#arr-h)"/>
-  <line x1="250" y1="125" x2="250" y2="145" stroke="#666" stroke-width="1.5" marker-end="url(#arr-h)"/>
-  <line x1="395" y1="125" x2="395" y2="145" stroke="#666" stroke-width="1.5" marker-end="url(#arr-h)"/>
+  <line x1="105" y1="125" x2="105" y2="145" stroke="#666" stroke-width="1.5" marker-end="url(#ch_arr-h)"/>
+  <line x1="250" y1="125" x2="250" y2="145" stroke="#666" stroke-width="1.5" marker-end="url(#ch_arr-h)"/>
+  <line x1="395" y1="125" x2="395" y2="145" stroke="#666" stroke-width="1.5" marker-end="url(#ch_arr-h)"/>
 
   <!-- Agents -->
-  <rect x="55" y="150" width="100" height="45" rx="6" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="55" y="150" width="100" height="45" rx="6" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#ch_shadow)"/>
   <text x="105" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#50B87D">Agent 1</text>
 
-  <rect x="200" y="150" width="100" height="45" rx="6" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="200" y="150" width="100" height="45" rx="6" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#ch_shadow)"/>
   <text x="250" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#50B87D">Agent 2</text>
 
   <text x="335" y="178" font-family="system-ui, sans-serif" font-size="14" fill="#999">...</text>
 
-  <rect x="345" y="150" width="100" height="45" rx="6" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+  <rect x="345" y="150" width="100" height="45" rx="6" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#ch_shadow)"/>
   <text x="395" y="178" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="600" fill="#50B87D">Agent N</text>
 
   <!-- Concurrent label -->

@@ -6,6 +6,8 @@ Demonstrates how Academy agents can persist state and resume after restarts.
 
 ## Why Persistent State?
 
+<img src="/Capabilities/Assets/checkpoint-flow.svg" alt="Checkpoint and resume flow" style="max-width: 600px; margin: 1rem 0;">
+
 Scientific workflows often run for hours, days, or weeks. Persistent state enables:
 
 - **Resumability**: Continue from where you left off after crashes or restarts

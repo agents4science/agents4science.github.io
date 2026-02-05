@@ -79,6 +79,8 @@ See [these slides](https://docs.google.com/presentation/d/1Djvi5_PqvZl1v1xO2nWJf
 
 </div>
 
+<img src="Assets/capability-ladder.svg" alt="Capability stages from Local to Workflows" style="max-width: 700px; margin: 2rem auto; display: block;">
+
 ---
 
 ## Maturity Levels

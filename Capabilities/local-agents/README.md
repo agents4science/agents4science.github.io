@@ -109,7 +109,7 @@ This more involved example demonstrates multi-agent coordination for scientific 
 | **Analyst** | Summarizes findings, quantifies uncertainty | Results | Analysis summary |
 | **Archivist** | Documents everything for reproducibility | Summary | Documented provenance |
 
-<img src="/Capabilities/Assets/5agents.png" alt="5-agent pipeline diagram" style="width: 60%; margin: 1rem 0;">
+<img src="/Capabilities/Assets/five-agent-pipeline.svg" alt="5-agent pipeline: Scout → Planner → Operator → Analyst → Archivist" style="max-width: 700px; margin: 1rem 0;">
 
 #### Implementations of Five-Agent Workflow
 
@@ -126,6 +126,8 @@ Note that these implementations are toys: they create agents that communicate, b
 - **LangGraph**: StateGraph with typed state, edges define flow
 - **Academy Pipeline**: Agents forward results directly to each other via messaging
 - **Academy Hub-and-Spoke**: Main process orchestrates all agents sequentially
+
+<img src="/Capabilities/Assets/hub-vs-pipeline.svg" alt="Hub-and-Spoke vs Pipeline patterns" style="max-width: 600px; margin: 1rem 0;">
 
 No LLM is used in the Academy examples—agent logic is stubbed to focus on the messaging patterns.
 

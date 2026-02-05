@@ -80,6 +80,8 @@ async with await Manager.from_exchange_factory(
 
 ### 4. Handles Enable Communication
 
+<img src="/Capabilities/Assets/handle-passing.svg" alt="Handle passing enables agent-to-agent communication" style="max-width: 500px; margin: 1rem 0;">
+
 When you launch an agent, you get a `Handle`—a proxy that lets you call the agent's actions:
 
 ```python

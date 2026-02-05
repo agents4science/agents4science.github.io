@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 220">
+  <defs>
+    <marker id="arrow-green" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#50B87D"/>
+    </marker>
+    <marker id="arrow-gray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#888"/>
+    </marker>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Title -->
+  <text x="250" y="20" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#666">Handle Passing Enables Agent Communication</text>
+
+  <!-- Main Process -->
+  <g transform="translate(180, 40)">
+    <rect x="0" y="0" width="140" height="45" rx="6" fill="#F5F5F5" stroke="#999" stroke-width="1.5" filter="url(#shadow)"/>
+    <text x="70" y="27" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="600" fill="#666">Main Process</text>
+  </g>
+
+  <!-- Step 1: Launch agents, get handles -->
+  <text x="70" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">1. launch()</text>
+  <path d="M 180 62 L 120 90" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+
+  <text x="430" y="58" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">1. launch()</text>
+  <path d="M 320 62 L 380 90" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+
+  <!-- Step 2: Pass handle -->
+  <text x="250" y="105" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">2. set_worker(handle)</text>
+  <path d="M 250 85 L 250 115 L 120 140" stroke="#50B87D" stroke-width="1.5" marker-end="url(#arrow-green)"/>
+
+  <!-- Agent A (Boss) -->
+  <g transform="translate(30, 100)">
+    <rect x="0" y="0" width="140" height="100" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <text x="70" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#333">BossAgent</text>
+    <line x1="15" y1="35" x2="125" y2="35" stroke="#DDD" stroke-width="1"/>
+    <text x="70" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#666">_worker: Handle</text>
+    <text x="70" y="75" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">@action</text>
+    <text x="70" y="90" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#666">delegate(task)</text>
+  </g>
+
+  <!-- Agent B (Worker) -->
+  <g transform="translate(330, 100)">
+    <rect x="0" y="0" width="140" height="100" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <text x="70" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#333">WorkerAgent</text>
+    <line x1="15" y1="35" x2="125" y2="35" stroke="#DDD" stroke-width="1"/>
+    <text x="70" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">@action</text>
+    <text x="70" y="75" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#666">do_work(task)</text>
+  </g>
+
+  <!-- Step 3: Agent-to-agent call -->
+  <path d="M 170 165 L 330 165" stroke="#50B87D" stroke-width="2" marker-end="url(#arrow-green)"/>
+  <text x="250" y="158" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">3. await _worker.do_work()</text>
+
+  <!-- Return -->
+  <path d="M 330 180 L 170 180" stroke="#888" stroke-width="1.5" stroke-dasharray="4,2" marker-end="url(#arrow-gray)"/>
+  <text x="250" y="195" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888">result</text>
+</svg>

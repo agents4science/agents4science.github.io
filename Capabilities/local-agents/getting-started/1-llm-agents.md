@@ -49,6 +49,8 @@ def search_papers(query: str) -> str:
 
 The simplest LangGraph agent uses the ReAct (Reasoning + Acting) pattern:
 
+<img src="/Capabilities/Assets/react-loop.svg" alt="ReAct loop: Reason → Act → Observe → Repeat" style="max-width: 420px; margin: 1rem 0;">
+
 ```python
 from langchain_openai import ChatOpenAI
 from langgraph.prebuilt import create_react_agent
@@ -111,6 +113,8 @@ result = app.invoke({"messages": [], "papers_found": [], "analysis_complete": Fa
 ```
 
 ## Hands-On Examples
+
+<img src="/Capabilities/Assets/tool-types.svg" alt="Tool types: Vector Search, Database, External API, Memory" style="max-width: 560px; margin: 1rem 0;">
 
 Work through these examples in order:
 

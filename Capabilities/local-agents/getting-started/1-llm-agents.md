@@ -227,6 +227,10 @@ def run_simulation(temperature: float, pressure: float) -> str:
     return f"Simulation complete at {temperature}K, {pressure}atm"
 ```
 
+**How this enables self-correction:** The error message becomes an "observation" in the ReAct loop. When the LLM sees `"Error: temperature must be positive"`, it reasons about the mistake and retries with corrected parameters. This isn't an automatic retry—the LLM decides to try again based on understanding the error.
+
+Return helpful error strings rather than raising exceptions. The LLM can understand `"temperature must be positive"` and correct its approach; a Python traceback is less useful for reasoning.
+
 ### Pattern: Tool that Returns Structured Data
 
 ```python

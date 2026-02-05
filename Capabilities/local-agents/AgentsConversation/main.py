@@ -24,7 +24,7 @@ from typing import Optional
 
 from langchain_core.messages import HumanMessage, AIMessage, SystemMessage
 from langchain_core.tools import tool
-from langgraph.prebuilt import create_react_agent
+from langchain.agents import create_agent
 
 # ============================================================================
 # LLM CONFIGURATION
@@ -318,7 +318,7 @@ def run_conversation():
         _run_mock_conversation()
         return
 
-    agent = create_react_agent(llm, TOOLS)
+    agent = create_agent(llm, TOOLS)
 
     while True:
         try:

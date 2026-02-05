@@ -34,7 +34,6 @@ class ToolEnabledFakeChatModel(GenericFakeChatModel):
     ) -> Any:
         return self
 
-
 def get_llm():
     """
     Get the appropriate LLM based on available credentials.
@@ -112,9 +111,8 @@ def run_with_llm(llm, queries: list[str]):
                 msg = step["agent"]["messages"][0]
                 if msg.content:
                     print(f"Agent: {msg.content}")
-                if hasattr(msg, "tool_calls") and msg.tool_calls:
-                    for tc in msg.tool_calls:
-                        print(f"Agent calls: {tc['name']}({tc['args']})")
+                for tc in getattr(msg, "tool_calls", []):
+                    print(f"Agent calls: {tc['name']}({tc['args']})")
             elif "tools" in step:
                 print(f"Tool result: {step['tools']['messages'][0].content}")
 

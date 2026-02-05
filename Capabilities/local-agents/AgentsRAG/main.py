@@ -91,7 +91,7 @@ def get_vectorstore():
     if os.environ.get("OPENAI_API_KEY"):
         from langchain_openai import OpenAIEmbeddings
         from langchain_community.vectorstores import FAISS
-        from langchain.schema import Document
+        from langchain_core.documents import Document
 
         print("Loading documents from data/ directory...")
         documents = load_documents()
@@ -162,7 +162,7 @@ and conversion."""
 
 def run_with_llm(llm, question: str):
     """Run the RAG agent with a real LLM."""
-    from langgraph.prebuilt import create_react_agent
+    from langchain.agents import create_agent
 
     print(f"\nQuestion: {question}")
     print("-" * 60)
@@ -171,7 +171,7 @@ def run_with_llm(llm, question: str):
     get_vectorstore()
     print("Ready.\n")
 
-    agent = create_react_agent(llm, [search_documents])
+    agent = create_agent(llm, [search_documents])
 
     for step in agent.stream({"messages": [HumanMessage(content=question)]}):
         if "agent" in step:

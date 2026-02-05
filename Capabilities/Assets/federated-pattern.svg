@@ -1,9 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 240" width="560" height="240">
   <defs>
-    <marker id="arrow-down" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto" markerUnits="strokeWidth">
+    <marker id="fed-arrow-down" markerWidth="8" markerHeight="8" refX="4" refY="8" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L8,0 L4,8 z" fill="#50B87D"/>
     </marker>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="fed-shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
     </filter>
   </defs>
@@ -13,19 +13,19 @@
 
   <!-- Coordinator at top -->
   <g transform="translate(200, 38)">
-    <rect x="0" y="0" width="160" height="55" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="160" height="55" rx="8" fill="#F3EFF8" stroke="#7C5CBF" stroke-width="2" filter="url(#fed-shadow)"/>
     <text x="80" y="28" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#333">Coordinator</text>
     <text x="80" y="45" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#666">orchestrates workflow</text>
   </g>
 
   <!-- Connection lines -->
-  <line x1="240" y1="93" x2="100" y2="145" stroke="#50B87D" stroke-width="2" marker-end="url(#arrow-down)"/>
-  <line x1="280" y1="93" x2="280" y2="145" stroke="#50B87D" stroke-width="2" marker-end="url(#arrow-down)"/>
-  <line x1="320" y1="93" x2="460" y2="145" stroke="#50B87D" stroke-width="2" marker-end="url(#arrow-down)"/>
+  <line x1="240" y1="93" x2="100" y2="145" stroke="#50B87D" stroke-width="2" marker-end="url(#fed-arrow-down)"/>
+  <line x1="280" y1="93" x2="280" y2="145" stroke="#50B87D" stroke-width="2" marker-end="url(#fed-arrow-down)"/>
+  <line x1="320" y1="93" x2="460" y2="145" stroke="#50B87D" stroke-width="2" marker-end="url(#fed-arrow-down)"/>
 
   <!-- ANL -->
   <g transform="translate(20, 150)">
-    <rect x="0" y="0" width="160" height="75" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="160" height="75" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#fed-shadow)"/>
     <text x="80" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#333">ANL</text>
     <text x="80" y="43" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#666">Aurora compute</text>
     <text x="80" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#999">DFT, MD, ML</text>
@@ -33,7 +33,7 @@
 
   <!-- ORNL -->
   <g transform="translate(200, 150)">
-    <rect x="0" y="0" width="160" height="75" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="160" height="75" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#fed-shadow)"/>
     <text x="80" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#333">ORNL</text>
     <text x="80" y="43" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#666">SNS / HFIR data</text>
     <text x="80" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#999">Neutron scattering</text>
@@ -41,7 +41,7 @@
 
   <!-- LBNL -->
   <g transform="translate(380, 150)">
-    <rect x="0" y="0" width="160" height="75" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="160" height="75" rx="8" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#fed-shadow)"/>
     <text x="80" y="25" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="700" fill="#333">LBNL</text>
     <text x="80" y="43" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#666">Perlmutter ML</text>
     <text x="80" y="60" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#999">Analysis, viz</text>

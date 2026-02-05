@@ -1,12 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 180" width="520" height="180">
   <defs>
-    <marker id="arrow-right" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+    <marker id="coord-arrow-right" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M0,0 L0,6 L9,3 z" fill="#50B87D"/>
     </marker>
-    <marker id="arrow-left" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
+    <marker id="coord-arrow-left" markerWidth="10" markerHeight="10" refX="0" refY="3" orient="auto" markerUnits="strokeWidth">
       <path d="M9,0 L9,6 L0,3 z" fill="#888"/>
     </marker>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+    <filter id="coord-shadow" x="-20%" y="-20%" width="140%" height="140%">
       <feDropShadow dx="2" dy="2" stdDeviation="2" flood-opacity="0.15"/>
     </filter>
   </defs>
@@ -16,7 +16,7 @@
 
   <!-- Coordinator Agent -->
   <g transform="translate(30, 40)">
-    <rect x="0" y="0" width="160" height="120" rx="10" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="160" height="120" rx="10" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#coord-shadow)"/>
     <text x="80" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#333">Coordinator</text>
     <line x1="20" y1="45" x2="140" y2="45" stroke="#DDD" stroke-width="1"/>
     <text x="80" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#666">Orchestrates</text>
@@ -26,7 +26,7 @@
 
   <!-- ToolProvider Agent -->
   <g transform="translate(330, 40)">
-    <rect x="0" y="0" width="160" height="120" rx="10" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#shadow)"/>
+    <rect x="0" y="0" width="160" height="120" rx="10" fill="#EDF7F1" stroke="#50B87D" stroke-width="2" filter="url(#coord-shadow)"/>
     <text x="80" y="30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="700" fill="#333">ToolProvider</text>
     <line x1="20" y1="45" x2="140" y2="45" stroke="#DDD" stroke-width="1"/>
     <text x="80" y="68" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#50B87D">@action</text>
@@ -37,11 +37,11 @@
   <!-- Arrows -->
   <g>
     <!-- Call arrow -->
-    <line x1="195" y1="85" x2="325" y2="85" stroke="#50B87D" stroke-width="2" marker-end="url(#arrow-right)"/>
+    <line x1="195" y1="85" x2="325" y2="85" stroke="#50B87D" stroke-width="2" marker-end="url(#coord-arrow-right)"/>
     <text x="260" y="78" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#50B87D">call action</text>
 
     <!-- Return arrow -->
-    <line x1="325" y1="115" x2="195" y2="115" stroke="#888" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#arrow-left)"/>
+    <line x1="325" y1="115" x2="195" y2="115" stroke="#888" stroke-width="2" stroke-dasharray="5,3" marker-end="url(#coord-arrow-left)"/>
     <text x="260" y="132" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#888">return result</text>
   </g>
 </svg>

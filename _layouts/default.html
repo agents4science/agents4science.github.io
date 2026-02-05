@@ -12,17 +12,18 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 0.75rem 1.5rem;
+      padding: 0.5rem 1.5rem;
       border-bottom: 1px solid #eee;
       font-family: system-ui, -apple-system, sans-serif;
-      font-size: 0.875rem;
+      font-size: 0.8125rem;
+      background: #fafafa;
     }
     .site-logo {
       display: flex;
       align-items: center;
       gap: 0.5rem;
       text-decoration: none;
-      color: #333;
+      color: #555;
       font-weight: 500;
     }
     .site-logo:hover {
@@ -30,7 +31,7 @@
     }
     .site-nav {
       display: flex;
-      gap: 1.5rem;
+      gap: 1.25rem;
     }
     .site-nav a {
       text-decoration: none;
@@ -43,16 +44,19 @@
     /* Site footer */
     .site-footer {
       border-top: 1px solid #eee;
-      padding: 1rem 1.5rem;
+      padding: 0.75rem 1.5rem;
       margin-top: 3rem;
       font-family: system-ui, -apple-system, sans-serif;
       font-size: 0.75rem;
-      color: #888;
+      color: #999;
+      background: #fafafa;
     }
     .footer-content {
       display: flex;
       justify-content: space-between;
       align-items: center;
+      max-width: 1200px;
+      margin: 0 auto;
     }
     .footer-left {
       display: flex;
@@ -64,27 +68,50 @@
       align-items: center;
     }
     .footer-left a {
-      color: #888;
+      color: #999;
       text-decoration: none;
     }
     .footer-left a:hover {
       color: #50B87D;
     }
     .footer-right {
-      color: #aaa;
+      color: #bbb;
     }
 
-    /* Main content area */
+    /* Main content - don't constrain width, let markdown styles handle it */
     .site-content {
-      max-width: 900px;
-      margin: 0 auto;
-      padding: 2rem 1.5rem;
+      padding: 1.5rem;
+    }
+
+    /* Basic table styling for markdown tables */
+    .site-content table {
+      border-collapse: collapse;
+      margin: 1rem 0;
+      font-size: 0.9rem;
+    }
+    .site-content th,
+    .site-content td {
+      border: 1px solid #ddd;
+      padding: 0.5rem 0.75rem;
+      text-align: left;
+    }
+    .site-content th {
+      background: #f6f8fa;
+      font-weight: 600;
+    }
+    .site-content tr:hover {
+      background: #f9f9f9;
+    }
+
+    /* Allow wide content to scroll horizontally on mobile */
+    .site-content > div {
+      overflow-x: auto;
     }
   </style>
 </head>
 <body>
   {% include header.html %}
-  <main class="site-content">
+  <main class="site-content markdown-body">
     {{ content }}
   </main>
   {% include footer.html %}

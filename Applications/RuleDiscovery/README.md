@@ -1,8 +1,18 @@
 # Rule Discovery
 
-Multi-agent simulation where LLM-powered agents discover hidden rules governing a simulated world through experimentation and natural language communication.
+Multi-agent simulation where autonomous agents discover hidden rules governing a simulated world through experimentation and peer-to-peer communication.
 
-## Problem
+## Overview
+
+This project demonstrates **automated scientific discovery**: multiple AI agents independently run experiments, observe outcomes, identify patterns, and share findings with each other. The goal is to discover the hidden rules that govern how objects behave in a simulated world.
+
+**Key concepts:**
+- **Hidden Rules**: The world has secret rules (e.g., "metal conducts electricity") that agents must discover
+- **Experimentation**: Agents propose and run experiments to observe outcomes
+- **Pattern Mining**: Agents use statistical correlation to identify rules from observations
+- **Communication**: Agents share observations with peers, accelerating collective discovery
+
+## The Problem
 
 A simulated world contains objects with properties and hidden rules that determine experimental outcomes.
 
@@ -12,43 +22,82 @@ A simulated world contains objects with properties and hidden rules that determi
 - **Material**: metal, wood, glass, rubber
 - **Shape**: sphere, cube, pyramid, cylinder
 
-**Example hidden rules:**
+**Available experiments:**
+- Drop into water / Drop onto floor
+- Apply electricity
+- Expose to fire
+- Throw at wall
+- Place in sunlight
+- Put in freezer
+
+**Example hidden rules (unknown to agents):**
 ```
 - Metal objects conduct electricity
 - Glass objects shatter when dropped
-- Blue objects float in water
+- Rubber objects bounce when thrown
 - Wood objects burn when exposed to fire
 ```
 
-**Agents can run experiments like:**
+**Example experiment and outcome:**
 ```
-"Drop the small red metal sphere into water"
-"Apply electricity to the large blue glass cube"
-"Expose the medium green wood pyramid to fire"
+Experiment: "Drop the small red glass sphere into water"
+Result: "The small red glass sphere shatters into pieces"
 ```
 
-## Agent Architecture
+## How It Works
 
-Each LLM-powered agent runs an asynchronous loop:
+### Agent Architecture
+
+Each agent runs an asynchronous loop combining LLM reasoning with statistical pattern mining:
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  1. PROPOSE EXPERIMENT (LLM)                                │
-│     → "Drop the small red metal sphere into water"          │
-├─────────────────────────────────────────────────────────────┤
-│  2. RUN EXPERIMENT (World)                                  │
-│     → "The small red metal sphere sinks to the bottom"      │
-├─────────────────────────────────────────────────────────────┤
-│  3. UPDATE HYPOTHESES (LLM)                                 │
-│     → "Metal objects sink in water" (75% confidence)        │
-├─────────────────────────────────────────────────────────────┤
-│  4. SHARE WITH PEERS (probabilistic)                        │
-│     → Send top hypotheses + recent findings to random peer  │
-├─────────────────────────────────────────────────────────────┤
-│  5. INTEGRATE PEER INFO (LLM)                               │
-│     → Consider peer hypotheses, refine own understanding    │
-└─────────────────────────────────────────────────────────────┘
+┌─────────────────────────────────────────────────────────────────┐
+│  1. PROPOSE EXPERIMENT (LLM)                                    │
+│     LLM suggests what to try next, encouraged to explore        │
+│     diverse material/experiment combinations                    │
+│     → "Apply electricity to the small blue metal cube"          │
+├─────────────────────────────────────────────────────────────────┤
+│  2. RUN EXPERIMENT (World Simulator)                            │
+│     World applies hidden rules and returns outcome              │
+│     → "The small blue metal cube conducts electricity"          │
+├─────────────────────────────────────────────────────────────────┤
+│  3. PARSE & RECORD (Structured Mining)                          │
+│     Extract: material=metal, experiment=electricity,            │
+│              outcome=conducts                                   │
+│     Track correlation: metal+electricity → conducts (count: 5)  │
+├─────────────────────────────────────────────────────────────────┤
+│  4. GENERATE HYPOTHESES (Statistical)                           │
+│     Find patterns with high evidence and confidence             │
+│     → "Metal objects conducts when electricity" (100%, n=5)     │
+├─────────────────────────────────────────────────────────────────┤
+│  5. SHARE WITH PEERS (Probabilistic)                            │
+│     Send structured observations to random peer                 │
+│     Peer merges observations into their own dataset             │
+└─────────────────────────────────────────────────────────────────┘
 ```
+
+### Hypothesis Mining
+
+Instead of asking the LLM to formulate hypotheses (which can be unreliable), we use **statistical pattern mining**:
+
+1. **Parse observations** into structured form: `(material, experiment_type, outcome)`
+2. **Count correlations**: How often does `glass + drop → shatter`?
+3. **Calculate confidence**: `shatter_count / total_glass_drop_experiments`
+4. **Generate rules**: If confidence > 60% and evidence count >= 2, create hypothesis
+
+This approach produces clean, accurate hypotheses like:
+```
+- Metal objects conducts when electricity (100% confidence, 5 observations)
+- Glass objects shatters when dropped (100% confidence, 8 observations)
+- Rubber objects bounces when throw (100% confidence, 12 observations)
+```
+
+### Communication
+
+Agents share **structured observations** (not just text) with peers:
+- Each message includes recent `(material, experiment, outcome)` tuples
+- Receiving agent merges these into their own dataset
+- This accelerates discovery by pooling experimental evidence
 
 ## Installation
 
@@ -56,76 +105,90 @@ Each LLM-powered agent runs an asynchronous loop:
 pip install -r requirements.txt
 ```
 
-## LLM Providers
-
-Supports multiple backends via environment variables or command-line arguments:
-
-| Provider | Use Case | Configuration |
-|----------|----------|---------------|
-| `mock` | Testing without API calls | Default, no config needed |
-| `anthropic` | Claude API | `LLM_PROVIDER=anthropic ANTHROPIC_API_KEY=...` |
-| `openai_compatible` | Argonne, vLLM, TGI, etc. | `LLM_PROVIDER=openai_compatible LLM_BASE_URL=...` |
-
 ## Usage
 
-### Mock Mode (Testing)
+### Quick Start (Mock Mode)
 
 ```bash
-python hidden_rule_discovery.py --agents 4 --steps 50
+python hidden_rule_discovery.py --agents 4 --steps 30 --difficulty easy
 ```
 
-### With Anthropic Claude
+### With Real LLM
 
+**Anthropic Claude:**
 ```bash
-export LLM_PROVIDER=anthropic
 export ANTHROPIC_API_KEY=your-key-here
-export LLM_MODEL=claude-3-haiku-20240307  # or claude-3-sonnet, claude-3-opus
-python hidden_rule_discovery.py --agents 4 --steps 50
+LLM_PROVIDER=anthropic LLM_MODEL=claude-3-haiku-20240307 \
+python hidden_rule_discovery.py --agents 4 --steps 30
 ```
 
-### With Argonne/OpenAI-Compatible Endpoint
-
+**OpenAI:**
 ```bash
-export LLM_PROVIDER=openai_compatible
-export LLM_BASE_URL=https://your-inference-endpoint/v1
-export LLM_MODEL=meta-llama/Llama-3-70b-chat-hf
-python hidden_rule_discovery.py --agents 4 --steps 50
+export OPENAI_API_KEY=your-key-here
+LLM_PROVIDER=openai_compatible LLM_BASE_URL=https://api.openai.com/v1 \
+LLM_MODEL=gpt-4o-mini python hidden_rule_discovery.py --agents 4 --steps 30
+```
+
+**Argonne ALCF / vLLM / Other OpenAI-compatible:**
+```bash
+LLM_PROVIDER=openai_compatible \
+LLM_BASE_URL=https://your-endpoint/v1 \
+LLM_API_KEY=your-key \
+LLM_MODEL=meta-llama/Llama-3-70b-instruct \
+python hidden_rule_discovery.py --agents 4 --steps 30
 ```
 
 ### Command Line Options
 
 ```
-python hidden_rule_discovery.py --help
-
 Options:
   --provider, -p    LLM provider: mock, anthropic, openai_compatible
   --model, -m       Model name (provider-specific)
   --agents, -a      Number of agents (default: 4)
-  --steps, -s       Number of steps (default: 50)
-  --difficulty, -d  easy | medium | hard
-  --comm-prob, -c   Communication probability (default: 0.3)
+  --steps, -s       Number of simulation steps (default: 50)
+  --difficulty, -d  easy | medium | hard (default: medium)
+  --comm-prob, -c   Probability of sharing per step (default: 0.3)
   --no-comm         Disable communication between agents
   --seed            Random seed for reproducibility
+  --log-agents      Enable detailed logging of LLM queries and agent actions
+```
+
+### Verbose Logging
+
+To see what agents are doing:
+
+```bash
+python hidden_rule_discovery.py --agents 2 --steps 10 --log-agents 2>logs.txt
+```
+
+Log output includes:
+```
+[Agent 0] LLM_QUERY #1: propose_experiment:
+...
+[Agent 0] LLM_RESPONSE #1: Drop the small red glass sphere into water
+[Agent 0] OBSERVATION: glass/drop_water -> shatters
+[Agent 0] HYPOTHESES_MINED: 2 rules: ['Glass objects shatters when dropped', ...]
+[Agent 0] MSG_SEND #1: to=peer | My top hypotheses: ...
+[Agent 1] MSG_RECV #1: from=Agent 0 | ...
+[Agent 1] MERGED_OBS: added 3 observations from Agent 0
 ```
 
 ## Difficulty Levels
 
 | Level | Rules | Description |
 |-------|-------|-------------|
-| **easy** | 3 | Simple, non-conflicting rules (e.g., material-based) |
-| **medium** | 5 | Property interactions (e.g., color + experiment type) |
-| **hard** | 8 | Complex interactions across multiple properties |
+| **easy** | 3 | Simple material-based rules |
+| **medium** | 5 | Includes color and size interactions |
+| **hard** | 8 | Complex multi-property rules |
 
-### Example Rules by Difficulty
-
-**Easy (3 rules):**
+### Easy (3 rules)
 ```
 - Metal objects conduct electricity
 - Glass objects shatter when dropped
 - Rubber objects bounce when thrown
 ```
 
-**Medium (5 rules):**
+### Medium (5 rules)
 ```
 - Metal objects conduct electricity
 - Wood objects burn when exposed to fire
@@ -134,7 +197,7 @@ Options:
 - Glass objects crack in the freezer
 ```
 
-**Hard (8 rules):**
+### Hard (8 rules)
 ```
 - Metal objects conduct electricity
 - Metal objects heat up in sunlight
@@ -146,16 +209,14 @@ Options:
 - Pyramids tip over on a scale
 ```
 
-## Sample Results
-
-### Mock Mode Run (4 agents, 20 steps, easy difficulty)
+## Sample Output
 
 ```
 ======================================================================
 Hidden Rule Discovery with LLM Agents
 ======================================================================
 
-LLM Provider: MockLLM
+LLM Provider: OpenAI-Compatible(gpt-4o-mini)
 Difficulty: easy
 Number of hidden rules: 3
 Number of agents: 4
@@ -167,95 +228,86 @@ Communication probability: 0.3
 - Rubber objects bounce when thrown
 
 --- Step 10 ---
-
-Agent 0:
-  Observations: 20
-  Messages: sent=4, recv=3
+Agent 0: Observations: 10, Messages: sent=3, recv=4
   Top hypotheses:
-    - Metal objects conduct electricity (85%)
-    - Glass objects shatter when dropped (80%)
+    - Metal objects conducts when electricity (100%)
+    - Glass objects shatters when dropped (100%)
 
-Agent 1:
-  Observations: 20
-  Messages: sent=3, recv=4
-  Top hypotheses:
-    - Rubber objects bounce when thrown (75%)
-    - Metal objects conduct electricity (70%)
-
---- Step 20 ---
-
-Agent 0:
-  Observations: 40
-  Messages: sent=8, recv=7
-
-Agent 1:
-  Observations: 40
-  Messages: sent=7, recv=8
+--- Step 30 ---
+...
 
 ======================================================================
 FINAL EVALUATION
 ======================================================================
 
-Overall discovery score: 72/100
+DISCOVERED HYPOTHESES:
+  [TRUE] Metal objects conducts when electricity... (100%) -> matches: Metal objects conduct electricity
+  [TRUE] Glass objects shatters when dropped... (100%) -> matches: Glass objects shatter when dropped
+  [TRUE] Rubber objects bounces when throw... (100%) -> matches: Rubber objects bounce when thrown
 
-Evaluation details:
-- Metal objects conduct electricity: fully discovered
-- Glass objects shatter when dropped: partially discovered
-- Rubber objects bounce when thrown: fully discovered
+RULES FOUND (3/3):
+  + Metal objects conduct electricity
+  + Glass objects shatter when dropped
+  + Rubber objects bounce when thrown
 
-Total experiments run: 160
+RULES MISSED (0):
+
+SCORE: 100/100
 ```
-
-### Expected Results with Real LLM
-
-With a real LLM (Claude or Llama), agents will:
-1. **Design systematic experiments** - varying one property at a time
-2. **Form precise hypotheses** - based on observed patterns
-3. **Share discoveries** - accelerating collective learning
-4. **Refine understanding** - incorporating peer findings
-
-Typical discovery scores:
-- **Easy difficulty**: 70-90% with communication, 50-70% without
-- **Medium difficulty**: 50-75% with communication, 30-50% without
-- **Hard difficulty**: 30-60% with communication, 20-40% without
-
-## Evaluation
-
-Performance is measured by comparing discovered hypotheses against ground-truth rules using LLM-based semantic matching:
-
-1. Each true rule is assessed as: **fully** / **partially** / **missed**
-2. Overall score: 0-100 based on discovery completeness
-3. Explanation provided for the scoring rationale
 
 ## Files
 
 | File | Description |
 |------|-------------|
-| `hidden_rule_discovery.py` | Main LLM agent simulation |
-| `llm_providers.py` | Provider abstraction (Mock, Anthropic, OpenAI-compatible) |
+| `hidden_rule_discovery.py` | Main simulation with agents, world, and evaluation |
+| `llm_providers.py` | LLM provider abstraction (Mock, Anthropic, OpenAI-compatible) |
+| `compare_models.py` | Script to compare different LLMs and agent counts |
 | `requirements.txt` | Python dependencies |
+
+## How Agents Discover Rules
+
+1. **Exploration**: LLM proposes diverse experiments (prompted to try under-tested combinations)
+2. **Observation**: World simulator returns deterministic outcomes based on hidden rules
+3. **Pattern Detection**: Statistical mining identifies correlations (e.g., "every time I drop glass, it shatters")
+4. **Hypothesis Formation**: High-confidence patterns become hypotheses
+5. **Knowledge Sharing**: Agents share structured observations, pooling evidence
+6. **Collective Discovery**: Combined observations lead to faster, more complete discovery
 
 ## Extending
 
-### Adding a New LLM Provider
+### Adding New Rules
 
-1. Create a new class inheriting from `LLMProvider` in `llm_providers.py`
-2. Implement the `complete(system, user, max_tokens)` method
-3. Add to the `create_llm_provider()` factory function
-
-### Creating Custom Worlds
-
-Modify the `create_world()` function in `hidden_rule_discovery.py` to define new rule sets:
+Modify `create_world()` in `hidden_rule_discovery.py`:
 
 ```python
 rules = [
     Rule(
-        condition="material == metal",
-        experiment_type="electricity",
-        outcome="conducts electricity",
-        natural_language="Metal objects conduct electricity"
+        condition="material == metal",      # Property condition
+        experiment_type="electricity",      # Which experiment triggers it
+        outcome="conducts electricity",     # Result text
+        natural_language="Metal objects conduct electricity"  # Human description
     ),
     # Add more rules...
 ]
-return HiddenWorld(rules=rules, seed=seed)
 ```
+
+### Adding New LLM Providers
+
+1. Create a class inheriting from `LLMProvider` in `llm_providers.py`
+2. Implement `complete(system: str, user: str, max_tokens: int) -> str`
+3. Add to `create_llm_provider()` factory
+
+## LLM Usage
+
+The system uses an LLM for two tasks:
+
+1. **Experiment Proposal** - The LLM suggests which experiment to run next, encouraged to explore diverse combinations
+2. **Final Evaluation** - The LLM compares discovered hypotheses against true rules for scoring
+
+**Hypothesis generation uses statistical mining instead of LLM** - this produces more reliable, cleaner rules than asking the LLM to reason about patterns.
+
+## Dependencies
+
+- `academy-py` - Multi-agent framework for asynchronous agents
+- `anthropic` - For Claude models
+- `openai` - For OpenAI or OpenAI-compatible endpoints (Argonne, vLLM, etc.)

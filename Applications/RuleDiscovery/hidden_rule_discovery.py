@@ -44,10 +44,14 @@ import json
 import os
 import random
 import re
+import sys
 import time
 from concurrent.futures import ThreadPoolExecutor
 from dataclasses import dataclass, field
 from typing import Any, Dict, List, Optional, Set, Tuple
+
+# Global logging flag - set via command line
+AGENT_LOGGING_ENABLED = False
 
 from academy.agent import Agent, action, loop
 from academy.exchange import LocalExchangeFactory
@@ -78,6 +82,179 @@ EXPERIMENTS = [
     "throw {obj} at a wall",
     "place {obj} on a scale",
 ]
+
+# Experiment type keywords for parsing
+EXPERIMENT_KEYWORDS = {
+    "water": "drop_water",
+    "floor": "drop_floor",
+    "electricity": "electricity",
+    "fire": "fire",
+    "sunlight": "sunlight",
+    "freezer": "freezer",
+    "throw": "throw",
+    "wall": "throw",
+    "scale": "scale",
+}
+
+# Outcome keywords for parsing
+OUTCOME_KEYWORDS = [
+    "conducts", "heats", "shatters", "breaks", "cracks", "burns", "catches fire",
+    "floats", "sinks", "bounces", "rolls", "tips", "flies", "nothing", "immune"
+]
+
+
+# ----------------------------
+# Structured Hypothesis Mining
+# ----------------------------
+
+@dataclass
+class StructuredObservation:
+    """Parsed observation in structured form."""
+    color: str
+    size: str
+    material: str
+    shape: str
+    experiment_type: str
+    outcome: str  # "nothing" or the key outcome word
+    raw_experiment: str
+    raw_result: str
+
+
+def parse_observation(experiment: str, result: str) -> Optional[StructuredObservation]:
+    """Parse experiment and result into structured form."""
+    exp_lower = experiment.lower()
+    res_lower = result.lower()
+
+    # Extract object properties
+    color = next((c for c in COLORS if c in exp_lower), None)
+    size = next((s for s in SIZES if s in exp_lower), None)
+    material = next((m for m in MATERIALS if m in exp_lower), None)
+    shape = next((sh for sh in SHAPES if sh in exp_lower), None)
+
+    # Extract experiment type
+    exp_type = None
+    for keyword, etype in EXPERIMENT_KEYWORDS.items():
+        if keyword in exp_lower:
+            exp_type = etype
+            break
+
+    # Extract outcome
+    if "nothing" in res_lower:
+        outcome = "nothing"
+    else:
+        outcome = next((kw for kw in OUTCOME_KEYWORDS if kw in res_lower), "unknown")
+
+    if not all([color, size, material, shape, exp_type]):
+        return None
+
+    return StructuredObservation(
+        color=color,
+        size=size,
+        material=material,
+        shape=shape,
+        experiment_type=exp_type,
+        outcome=outcome,
+        raw_experiment=experiment,
+        raw_result=result,
+    )
+
+
+class HypothesisMiner:
+    """Mines hypotheses from structured observations using correlation analysis."""
+
+    def __init__(self):
+        # Track observations: (property_type, property_value, experiment_type) -> {outcome: count}
+        self.correlations: Dict[Tuple[str, str, str], Dict[str, int]] = {}
+        self.total_by_key: Dict[Tuple[str, str, str], int] = {}
+        self.observations: List[StructuredObservation] = []
+
+    def add_observation(self, obs: StructuredObservation) -> None:
+        """Add an observation and update correlations."""
+        self.observations.append(obs)
+
+        # Track correlations for each property type
+        for prop_type, prop_value in [
+            ("color", obs.color),
+            ("size", obs.size),
+            ("material", obs.material),
+            ("shape", obs.shape),
+        ]:
+            key = (prop_type, prop_value, obs.experiment_type)
+            if key not in self.correlations:
+                self.correlations[key] = {}
+                self.total_by_key[key] = 0
+
+            self.total_by_key[key] += 1
+            self.correlations[key][obs.outcome] = self.correlations[key].get(obs.outcome, 0) + 1
+
+    def get_hypotheses(self, min_evidence: int = 2, min_confidence: float = 0.7) -> List[Dict[str, Any]]:
+        """Generate hypotheses from observed correlations."""
+        hypotheses = []
+
+        for key, outcomes in self.correlations.items():
+            prop_type, prop_value, exp_type = key
+            total = self.total_by_key[key]
+
+            if total < min_evidence:
+                continue
+
+            for outcome, count in outcomes.items():
+                if outcome == "nothing" or outcome == "unknown":
+                    continue
+
+                confidence = count / total
+                if confidence < min_confidence:
+                    continue
+
+                # Generate natural language rule
+                exp_readable = exp_type.replace("_", " ").replace("drop water", "dropped in water").replace("drop floor", "dropped")
+                rule_text = f"{prop_value.capitalize()} objects {outcome} when {exp_readable}"
+
+                hypotheses.append({
+                    "rule": rule_text,
+                    "condition": {prop_type: prop_value},
+                    "experiment_type": exp_type,
+                    "outcome": outcome,
+                    "confidence": confidence,
+                    "evidence_count": count,
+                    "total_observations": total,
+                })
+
+        # Sort by evidence count, then confidence
+        hypotheses.sort(key=lambda h: (-h["evidence_count"], -h["confidence"]))
+
+        # Deduplicate: prefer simpler hypotheses (same outcome, more general)
+        return self._simplify_hypotheses(hypotheses)
+
+    def _simplify_hypotheses(self, hypotheses: List[Dict]) -> List[Dict]:
+        """Remove redundant hypotheses, keeping the simplest."""
+        # Group by outcome
+        by_outcome: Dict[str, List[Dict]] = {}
+        for h in hypotheses:
+            outcome = h["outcome"]
+            if outcome not in by_outcome:
+                by_outcome[outcome] = []
+            by_outcome[outcome].append(h)
+
+        simplified = []
+        for outcome, hyps in by_outcome.items():
+            # For each outcome, keep the hypothesis with most evidence
+            # If material-based has good evidence, prefer it over color/size/shape
+            material_hyps = [h for h in hyps if "material" in h["condition"]]
+            other_hyps = [h for h in hyps if "material" not in h["condition"]]
+
+            if material_hyps and material_hyps[0]["confidence"] >= 0.7:
+                simplified.append(material_hyps[0])
+            elif hyps:
+                simplified.append(hyps[0])
+
+        return simplified
+
+    def merge_from(self, other: 'HypothesisMiner') -> None:
+        """Merge observations from another miner (for peer sharing)."""
+        for obs in other.observations:
+            if obs not in self.observations:
+                self.add_observation(obs)
 
 
 @dataclass
@@ -341,26 +518,18 @@ def create_world(difficulty: str = "easy", seed: int = 42) -> HiddenWorld:
 # Scientist Agent
 # ----------------------------
 
-SCIENTIST_SYSTEM_PROMPT = """You are a scientist trying to discover the hidden rules of a mysterious world.
+HYPOTHESIS_SYSTEM_PROMPT = """You are a scientist analyzing experimental data to discover hidden rules.
+Your ONLY task is to output hypotheses in this exact format:
 
-The world contains objects with these properties:
-- Colors: red, blue, green, yellow
-- Sizes: small, medium, large
-- Materials: metal, wood, glass, rubber
-- Shapes: sphere, cube, pyramid, cylinder
+RULE: [the rule you discovered]
+CONFIDENCE: [0-100]
 
-You can run experiments like:
-- "Drop the [size] [color] [material] [shape] into water"
-- "Apply electricity to the [size] [color] [material] [shape]"
-- "Expose the [size] [color] [material] [shape] to fire"
-- "Throw the [size] [color] [material] [shape] at a wall"
-- "Place the [size] [color] [material] [shape] in sunlight"
-- "Put the [size] [color] [material] [shape] in the freezer"
-- "Drop the [size] [color] [material] [shape] onto the floor"
+Do NOT suggest experiments. ONLY output RULE/CONFIDENCE pairs."""
 
-Your goal is to discover the hidden rules that govern how objects behave.
-Be systematic - vary one property at a time to isolate what matters.
-"""
+SCIENTIST_SYSTEM_PROMPT = """You propose experiments to discover hidden rules about objects.
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Drop the small red glass sphere into water"
+Be systematic - explore different materials and experiment types."""
 
 
 @dataclass
@@ -404,11 +573,27 @@ class ScientistAgent(Agent):
         self.inbox: List[Dict[str, Any]] = []
         self.peers: List[Handle] = []
 
+        # Structured hypothesis mining
+        self.miner = HypothesisMiner()
+
         # Stats
         self.steps = 0
         self.messages_sent = 0
         self.messages_received = 0
         self.start_time = time.time()
+
+        # Logging counters
+        self.llm_query_count = 0
+        self.msg_log_count = 0
+
+    def _log(self, msg_type: str, content: str) -> None:
+        """Log agent activity if logging is enabled."""
+        if not AGENT_LOGGING_ENABLED:
+            return
+
+        prefix = f"[Agent {self.agent_idx}]"
+        # Print to stderr to avoid mixing with regular output
+        print(f"{prefix} {msg_type}: {content}", file=sys.stderr, flush=True)
 
     @action
     async def set_peers(self, peers: List[Handle]) -> None:
@@ -419,6 +604,31 @@ class ScientistAgent(Agent):
     async def receive_message(self, msg: Dict[str, Any]) -> None:
         """Receive a message from a peer."""
         self.messages_received += 1
+        self.msg_log_count += 1
+        self._log(f"MSG_RECV #{self.msg_log_count}", f"from=Agent {msg.get('from', '?')} | {msg.get('content', '')[:200]}")
+
+        # Merge structured observations from peer
+        structured_obs = msg.get("structured_observations", [])
+        new_obs_count = 0
+        for obs_dict in structured_obs:
+            obs = StructuredObservation(
+                color=obs_dict["color"],
+                size=obs_dict["size"],
+                material=obs_dict["material"],
+                shape=obs_dict["shape"],
+                experiment_type=obs_dict["experiment_type"],
+                outcome=obs_dict["outcome"],
+                raw_experiment="",
+                raw_result="",
+            )
+            # Only add if we don't have this exact observation
+            if obs not in self.miner.observations:
+                self.miner.add_observation(obs)
+                new_obs_count += 1
+
+        if new_obs_count > 0:
+            self._log(f"MERGED_OBS", f"added {new_obs_count} observations from Agent {msg.get('from', '?')}")
+
         if len(self.inbox) > 50:
             self.inbox = self.inbox[-25:]
         self.inbox.append(msg)
@@ -488,22 +698,47 @@ class ScientistAgent(Agent):
 
     async def _propose_experiment(self) -> str:
         """Use LLM to propose next experiment."""
-        prompt = f"""Based on your observations and hypotheses, propose the next experiment to run.
+        # Count experiments by type to encourage diversity
+        exp_counts: Dict[str, int] = {}
+        for obs in self.miner.observations:
+            exp_counts[obs.experiment_type] = exp_counts.get(obs.experiment_type, 0) + 1
 
-Your recent observations:
-{self._format_observations()}
+        # Find least-tested experiment types
+        all_exp_types = ["drop_water", "drop_floor", "electricity", "fire", "throw", "sunlight", "freezer"]
+        sorted_by_count = sorted(all_exp_types, key=lambda e: exp_counts.get(e, 0))
+        least_tested = sorted_by_count[:3]
 
-Your current hypotheses:
-{self._format_hypotheses()}
+        # Map to readable names
+        exp_names = {
+            "drop_water": "drop into water",
+            "drop_floor": "drop onto floor",
+            "electricity": "apply electricity",
+            "fire": "expose to fire",
+            "throw": "throw at wall",
+            "sunlight": "place in sunlight",
+            "freezer": "put in freezer",
+        }
+        suggested = [exp_names.get(e, e) for e in least_tested]
 
-Messages from peers:
-{self._format_peer_messages()}
+        prompt = f"""Propose ONE experiment to test how objects behave.
 
-Propose ONE experiment to run next. Be specific about the object properties.
-Format: Just write the experiment, e.g., "Drop the small red metal sphere into water"
-"""
+MATERIALS: metal, wood, glass, rubber
+EXPERIMENTS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall
+
+IMPORTANT: We need MORE of these experiment types: {', '.join(suggested)}
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:"""
+
+        self.llm_query_count += 1
+        query_num = self.llm_query_count
+        self._log(f"LLM_QUERY #{query_num}", f"propose_experiment:\n{prompt}")
 
         response = self.llm.complete(SCIENTIST_SYSTEM_PROMPT, prompt, max_tokens=100)
+
+        self._log(f"LLM_RESPONSE #{query_num}", f"{response.strip()}")
 
         # Extract experiment from response
         experiment = response.strip().strip('"').strip("'")
@@ -523,29 +758,23 @@ Format: Just write the experiment, e.g., "Drop the small red metal sphere into w
         if len(self.observations) < 3:
             return
 
-        prompt = f"""Based on all your observations, update your hypotheses about the hidden rules.
-
-Your observations:
+        prompt = f"""Observations from experiments:
 {self._format_observations(last_n=20)}
-
-Your current hypotheses:
-{self._format_hypotheses()}
 
 Messages from peers:
 {self._format_peer_messages()}
 
-Analyze the patterns and propose updated hypotheses. For each hypothesis:
-1. State the rule clearly
-2. Rate your confidence (0-100%)
+Based on these observations, here are the hypotheses about hidden rules:
 
-Format each hypothesis as:
-RULE: [the rule]
-CONFIDENCE: [0-100]
+RULE: """
 
-Propose up to 5 hypotheses, focusing on ones with strong evidence.
-"""
+        self.llm_query_count += 1
+        query_num = self.llm_query_count
+        self._log(f"LLM_QUERY #{query_num}", f"update_hypotheses:\n{prompt}")
 
-        response = self.llm.complete(SCIENTIST_SYSTEM_PROMPT, prompt, max_tokens=500)
+        response = self.llm.complete(HYPOTHESIS_SYSTEM_PROMPT, prompt, max_tokens=500)
+
+        self._log(f"LLM_RESPONSE #{query_num}", f"{response.strip()}")
 
         # Parse hypotheses from response
         new_hypotheses = []
@@ -574,6 +803,73 @@ Propose up to 5 hypotheses, focusing on ones with strong evidence.
 
         if new_hypotheses:
             self.hypotheses = new_hypotheses
+            self._log(f"HYPOTHESES_UPDATED", f"parsed {len(new_hypotheses)} hypotheses")
+        else:
+            self._log(f"HYPOTHESES_PARSE_FAILED", f"no RULE:/CONFIDENCE: patterns found. Response was:\n{response}")
+
+    async def _simplify_hypotheses(self) -> None:
+        """Ask LLM to generalize overly specific hypotheses using Occam's razor."""
+        if not self.hypotheses:
+            return
+
+        hyp_list = "\n".join(f"- {h.rule}" for h in self.hypotheses[:5])
+
+        prompt = f"""Simplify these hypotheses to their CORE pattern. Remove ALL unnecessary specifics.
+
+Current hypotheses:
+{hyp_list}
+
+For each hypothesis, ask: "What is the MINIMUM rule that explains this?"
+
+ALWAYS simplify:
+- "Glass breaks when dropped IN WATER" -> "Glass breaks when dropped" (location irrelevant)
+- "Glass SPHERES shatter" -> "Glass shatters" (shape probably irrelevant)
+- "Red metal conducts" -> "Metal conducts" (color irrelevant)
+- "Small rubber bounces when thrown AT WALLS" -> "Rubber bounces" (target irrelevant)
+
+Focus on: MATERIAL, and the ACTION. Remove colors, sizes, shapes, locations unless truly essential.
+
+Output the simplified core rules:
+
+RULE: """
+
+        self.llm_query_count += 1
+        query_num = self.llm_query_count
+        self._log(f"LLM_QUERY #{query_num}", f"simplify_hypotheses:\n{prompt}")
+
+        response = self.llm.complete(HYPOTHESIS_SYSTEM_PROMPT, prompt, max_tokens=500)
+
+        self._log(f"LLM_RESPONSE #{query_num}", f"{response.strip()}")
+
+        # Parse simplified hypotheses
+        new_hypotheses = []
+        rule_pattern = r'RULE:\s*(.+?)(?=CONFIDENCE:|RULE:|$)'
+        conf_pattern = r'CONFIDENCE:\s*(\d+)'
+
+        # Prepend "RULE: " since prompt ends with it
+        full_response = "RULE: " + response
+
+        rules = re.findall(rule_pattern, full_response, re.IGNORECASE | re.DOTALL)
+        confs = re.findall(conf_pattern, full_response, re.IGNORECASE)
+
+        for i, rule in enumerate(rules):
+            rule = rule.strip()
+            if not rule:
+                continue
+
+            conf = int(confs[i]) / 100 if i < len(confs) else 0.7
+            conf = max(0, min(1, conf))
+
+            new_hypotheses.append(Hypothesis(
+                rule=rule,
+                confidence=conf,
+                supporting_evidence=[],
+                contradicting_evidence=[],
+            ))
+
+        if new_hypotheses:
+            self.hypotheses = new_hypotheses
+            self._log(f"HYPOTHESES_SIMPLIFIED", f"simplified to {len(new_hypotheses)} hypotheses")
 
     async def _maybe_share(self) -> None:
         """Maybe share findings with a peer."""
@@ -598,15 +894,29 @@ Propose up to 5 hypotheses, focusing on ones with strong evidence.
             obs_strs = [f"'{o.experiment}' -> '{o.result}'" for o in recent]
             content_parts.append(f"Recent findings: {'; '.join(obs_strs)}")
 
+        # Include recent structured observations for peer to merge
+        recent_structured = self.miner.observations[-5:] if self.miner.observations else []
+
         msg = {
             "from": self.agent_idx,
             "content": " | ".join(content_parts),
             "hypotheses": [{"rule": h.rule, "confidence": h.confidence} for h in top_hypotheses],
+            "structured_observations": [
+                {"color": o.color, "size": o.size, "material": o.material, "shape": o.shape,
+                 "experiment_type": o.experiment_type, "outcome": o.outcome}
+                for o in recent_structured
+            ],
             "step": self.steps,
         }
 
-        await peer.receive_message(msg)
-        self.messages_sent += 1
+        try:
+            await peer.receive_message(msg)
+            self.messages_sent += 1
+            self.msg_log_count += 1
+            self._log(f"MSG_SEND #{self.msg_log_count}", f"to=peer | {msg['content'][:200]}")
+        except Exception:
+            # Peer may have terminated during shutdown - ignore
+            pass
 
     @loop
     async def run(self, shutdown: asyncio.Event) -> None:
@@ -625,18 +935,35 @@ Propose up to 5 hypotheses, focusing on ones with strong evidence.
                 step=self.steps,
             ))
 
-            # 2. Update hypotheses periodically
-            if self.steps % 5 == 0:
-                await self._update_hypotheses()
+            # 2. Parse observation and add to miner
+            structured_obs = parse_observation(experiment, result)
+            if structured_obs:
+                self.miner.add_observation(structured_obs)
+                self._log("OBSERVATION", f"{structured_obs.material}/{structured_obs.experiment_type} -> {structured_obs.outcome}")
 
-            # 3. Maybe share with peers
+            # 3. Update hypotheses from miner periodically
+            if self.steps % 5 == 0:
+                mined_hypotheses = self.miner.get_hypotheses(min_evidence=2, min_confidence=0.6)
+                self.hypotheses = [
+                    Hypothesis(
+                        rule=h["rule"],
+                        confidence=h["confidence"],
+                        supporting_evidence=[],
+                        contradicting_evidence=[],
+                    )
+                    for h in mined_hypotheses[:5]
+                ]
+                if mined_hypotheses:
+                    self._log("HYPOTHESES_MINED", f"{len(mined_hypotheses)} rules: {[h['rule'] for h in mined_hypotheses[:3]]}")
+
+            # 4. Maybe share with peers
             await self._maybe_share()
 
-            # 4. Clear old inbox messages
+            # 5. Clear old inbox messages
             if len(self.inbox) > 20:
                 self.inbox = self.inbox[-10:]
 
-            # 5. Pace the loop
+            # 6. Pace the loop
             await asyncio.sleep(0.5)  # Slower than polynomial fitting due to LLM calls
 
 
@@ -651,52 +978,111 @@ def evaluate_hypotheses(
 ) -> Dict[str, Any]:
     """
     Evaluate how well agent hypotheses match the true rules.
-    Uses LLM to assess semantic similarity.
+    Uses LLM to assess semantic similarity for each hypothesis.
     """
 
-    true_rules_str = "\n".join(f"- {r.natural_language}" for r in true_rules)
-    agent_hyp_str = "\n".join(
-        f"- {h['rule']} (confidence: {h['confidence']:.0%})"
-        for h in agent_hypotheses[:10]
-    )
-
-    prompt = f"""Compare these discovered hypotheses against the true hidden rules.
-
-TRUE HIDDEN RULES:
-{true_rules_str}
-
-DISCOVERED HYPOTHESES:
-{agent_hyp_str}
-
-For each true rule, assess if it was discovered (fully, partially, or not at all).
-Then provide an overall score from 0-100.
-
-Format:
-RULE_SCORES:
-- [true rule 1]: [fully/partially/missed]
-- [true rule 2]: [fully/partially/missed]
-...
-
-OVERALL_SCORE: [0-100]
-EXPLANATION: [brief explanation]
-"""
-
-    response = llm.complete(
-        "You are an evaluator assessing scientific discovery accuracy.",
-        prompt,
-        max_tokens=500
-    )
-
-    # Parse score
-    score_match = re.search(r'OVERALL_SCORE:\s*(\d+)', response)
-    score = int(score_match.group(1)) if score_match else 50
-
-    return {
-        "score": score,
-        "evaluation": response,
+    results = {
+        "hypotheses_evaluation": [],  # Each hypothesis with TRUE/FALSE
+        "rules_found": [],            # True rules that were discovered
+        "rules_missed": [],           # True rules that were NOT discovered
+        "score": 0,
         "n_true_rules": len(true_rules),
         "n_hypotheses": len(agent_hypotheses),
     }
+
+    true_rules_str = "\n".join(f"- {r.natural_language}" for r in true_rules)
+    rules_matched = set()
+
+    # Evaluate each hypothesis
+    for hyp in agent_hypotheses[:10]:
+        prompt = f"""TRUE RULES:
+{true_rules_str}
+
+HYPOTHESIS: {hyp['rule']}
+
+Does this hypothesis capture the essence of any true rule? A hypothesis matches if it identifies the same core relationship, even if it's more specific or uses different wording.
+
+Examples of matches:
+- "Glass breaks when dropped in water" matches "Glass objects shatter when dropped"
+- "Metal conducts electricity when touched" matches "Metal objects conduct electricity"
+
+Reply with EXACTLY one of:
+MATCH: [rule number 1-{len(true_rules)}]
+NO_MATCH
+
+Answer: """
+
+        response = llm.complete(
+            "You are evaluating if a hypothesis captures the essence of any true rule. Be lenient - partial matches count.",
+            prompt,
+            max_tokens=50
+        )
+
+        is_match = False
+        matched_rule = None
+
+        if "MATCH" in response.upper() and "NO_MATCH" not in response.upper():
+            # Try to extract which rule matched
+            match = re.search(r'MATCH[:\s]*(\d+)', response, re.IGNORECASE)
+            if match:
+                rule_idx = int(match.group(1)) - 1
+                if 0 <= rule_idx < len(true_rules):
+                    is_match = True
+                    matched_rule = true_rules[rule_idx].natural_language
+                    rules_matched.add(rule_idx)
+            else:
+                # Generic match without rule number
+                is_match = True
+
+        results["hypotheses_evaluation"].append({
+            "hypothesis": hyp['rule'],
+            "confidence": hyp['confidence'],
+            "verdict": "TRUE" if is_match else "FALSE",
+            "matched_rule": matched_rule,
+        })
+
+    # Determine which rules were found vs missed
+    for i, rule in enumerate(true_rules):
+        if i in rules_matched:
+            results["rules_found"].append(rule.natural_language)
+        else:
+            results["rules_missed"].append(rule.natural_language)
+
+    # Calculate score: percentage of true rules discovered
+    results["score"] = int(100 * len(results["rules_found"]) / len(true_rules)) if true_rules else 0
+
+    return results
+
+
+def format_evaluation_summary(eval_result: Dict[str, Any]) -> str:
+    """Format the evaluation results for display."""
+    lines = []
+
+    lines.append("DISCOVERED HYPOTHESES:")
+    for item in eval_result["hypotheses_evaluation"]:
+        verdict = item["verdict"]
+        hyp = item["hypothesis"][:60]
+        conf = item["confidence"]
+        if item["matched_rule"]:
+            lines.append(f"  [{verdict}] {hyp}... ({conf:.0%}) -> matches: {item['matched_rule']}")
+        else:
+            lines.append(f"  [{verdict}] {hyp}... ({conf:.0%})")
+
+    lines.append("")
+    lines.append(f"RULES FOUND ({len(eval_result['rules_found'])}/{eval_result['n_true_rules']}):")
+    for rule in eval_result["rules_found"]:
+        lines.append(f"  + {rule}")
+
+    if eval_result["rules_missed"]:
+        lines.append("")
+        lines.append(f"RULES MISSED ({len(eval_result['rules_missed'])}):")
+        for rule in eval_result["rules_missed"]:
+            lines.append(f"  - {rule}")
+
+    lines.append("")
+    lines.append(f"SCORE: {eval_result['score']}/100")
+
+    return "\n".join(lines)
 
 
 # ----------------------------
@@ -775,13 +1161,25 @@ Examples:
         action="store_true",
         help="Disable communication between agents"
     )
+    parser.add_argument(
+        "--log-agents",
+        action="store_true",
+        help="Enable verbose logging of agent LLM queries, responses, and messages"
+    )
 
     return parser.parse_args()
 
 
 async def main():
+    global AGENT_LOGGING_ENABLED
+
     args = parse_args()
-    init_logging("INFO")
+    init_logging("WARNING")
+
+    # Enable agent logging if requested
+    if args.log_agents:
+        AGENT_LOGGING_ENABLED = True
+        print("Agent logging enabled (output to stderr)", file=sys.stderr)
 
     # Configuration
     N_AGENTS = args.agents
@@ -877,8 +1275,7 @@ async def main():
         combined = sorted(combined, key=lambda x: -x["confidence"])[:10]
 
         eval_result = evaluate_hypotheses(combined, world.rules, llm)
-        print(f"\nOverall discovery score: {eval_result['score']}/100")
-        print(f"\nEvaluation details:\n{eval_result['evaluation']}")
+        print(f"\n{format_evaluation_summary(eval_result)}")
 
         print(f"\nTotal experiments run: {world.experiment_count}")
 

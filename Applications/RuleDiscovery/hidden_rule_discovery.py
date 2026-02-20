@@ -54,6 +54,12 @@ from typing import Any, Dict, List, Optional, Set, Tuple
 # Global logging flag - set via command line
 AGENT_LOGGING_ENABLED = False
 
+
+def set_agent_logging(enabled: bool) -> None:
+    """Enable or disable agent logging."""
+    global AGENT_LOGGING_ENABLED
+    AGENT_LOGGING_ENABLED = enabled
+
 from academy.agent import Agent, action, loop
 from academy.exchange import LocalExchangeFactory
 from academy.handle import Handle
@@ -529,7 +535,7 @@ Do NOT suggest experiments. ONLY output RULE/CONFIDENCE pairs."""
 
 SCIENTIST_SYSTEM_PROMPT = """You propose experiments to discover hidden rules about objects.
 Format: "[action] the [size] [color] [material] [shape]"
-Example: "Drop the small red glass sphere into water"
+Example: "Drop into water the small red glass sphere"
 Be systematic - explore different materials and experiment types."""
 
 
@@ -560,6 +566,7 @@ class ScientistAgent(Agent):
         llm: LLMProvider,
         comm_prob: float = 0.2,
         seed: int = 42,
+        log_file=None,
     ):
         super().__init__()
         self.agent_idx = agent_idx
@@ -567,6 +574,7 @@ class ScientistAgent(Agent):
         self.llm = llm
         self.comm_prob = comm_prob
         self.rng = random.Random(seed)
+        self.log_file = log_file
 
         # State
         self.observations: List[Observation] = []
@@ -588,13 +596,21 @@ class ScientistAgent(Agent):
         self.msg_log_count = 0
 
     def _log(self, msg_type: str, content: str) -> None:
-        """Log agent activity if logging is enabled."""
-        if not AGENT_LOGGING_ENABLED:
-            return
-
+        """Log agent activity to file and/or stderr."""
         prefix = f"[Agent {self.agent_idx}]"
-        # Print to stderr to avoid mixing with regular output
-        print(f"{prefix} {msg_type}: {content}", file=sys.stderr, flush=True)
+        log_line = f"{prefix} {msg_type}: {content}"
+
+        # Write to log file if provided
+        if self.log_file:
+            try:
+                self.log_file.write(log_line + "\n")
+                self.log_file.flush()
+            except:
+                pass  # File may be closed
+
+        # Also print to stderr if global logging enabled
+        if AGENT_LOGGING_ENABLED:
+            print(log_line, file=sys.stderr, flush=True)
 
     @action
     async def set_peers(self, peers: List[Handle]) -> None:
@@ -723,8 +739,11 @@ class ScientistAgent(Agent):
 
         prompt = f"""Propose ONE experiment to test how objects behave.
 
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
 MATERIALS: metal, wood, glass, rubber
-EXPERIMENTS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall
+SHAPES: sphere, cube, pyramid, cylinder
 
 IMPORTANT: We need MORE of these experiment types: {', '.join(suggested)}
 
@@ -739,7 +758,11 @@ Your experiment:"""
 
         response = self.llm.complete(SCIENTIST_SYSTEM_PROMPT, prompt, max_tokens=100)
 
-        self._log(f"LLM_RESPONSE #{query_num}", f"{response.strip()}")
+        self._log(f"LLM_RESPONSE #{query_num}", f"{response.strip() if response else '(empty)'}")
+
+        # Check for empty response
+        if not response or not response.strip():
+            raise ValueError("LLM returned empty response for experiment proposal")
 
         # Extract experiment from response
         experiment = response.strip().strip('"').strip("'")
@@ -747,10 +770,7 @@ Your experiment:"""
         # Ensure it's a valid experiment format
         if not any(exp_type in experiment.lower() for exp_type in
                    ["drop", "electricity", "fire", "throw", "sunlight", "freezer", "floor", "scale"]):
-            # Default to a random experiment
-            obj = self.world.generate_object()
-            exp_template = self.rng.choice(EXPERIMENTS)
-            experiment = exp_template.format(obj=self.world.describe_object(obj))
+            raise ValueError(f"LLM returned invalid experiment format: {experiment[:100]}")
 
         return experiment
 

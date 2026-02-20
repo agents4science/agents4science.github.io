@@ -255,6 +255,46 @@ RULES MISSED (0):
 SCORE: 100/100
 ```
 
+## Benchmark Results
+
+We benchmarked multiple LLMs on the Argonne ALCF inference endpoints, varying the number of agents from 1 to 64.
+
+### Best Scores by Model
+
+| Model | Easy (3 rules) | Medium (5 rules) | Hard (8 rules) |
+|-------|----------------|------------------|----------------|
+| **Mixtral-8x22B** | 66% | **80%** | 37% |
+| Llama-3.1-8B | 66% | 40% | 37% |
+| Llama-3.1-70B | 66% | 40% | 37% |
+| Llama-3.1-405B | 66% | 40% | 12% |
+| Gemma-3-27B | 33% | 20% | 25% |
+
+### Performance by Agent Count
+
+![Results by Difficulty](results_by_difficulty.png)
+
+### Best Scores Comparison
+
+![Best Scores](results_best_scores.png)
+
+### Key Findings
+
+1. **Mixtral MoE wins** on medium difficulty (80%) - best overall performance
+2. **Model size doesn't correlate with performance** - 8B performs as well as 405B for Llama models
+3. **405B actually worse on hard** (12% vs 37%) - possibly over-thinking simple patterns
+4. **Gemma underperforms** across all difficulties despite being 27B
+5. **More agents helps on medium** - Mixtral peaks at 16 agents with 80%
+6. **Easy plateaus at 66%** (2/3 rules) - one rule consistently missed across models
+
+### Models Tested
+
+Models tested on Argonne ALCF Sophia cluster:
+- `meta-llama/Meta-Llama-3.1-8B-Instruct`
+- `meta-llama/Meta-Llama-3.1-70B-Instruct`
+- `meta-llama/Meta-Llama-3.1-405B-Instruct`
+- `google/gemma-3-27b-it`
+- `mistralai/Mixtral-8x22B-Instruct-v0.1`
+
 ## Files
 
 | File | Description |
@@ -262,6 +302,7 @@ SCORE: 100/100
 | `hidden_rule_discovery.py` | Main simulation with agents, world, and evaluation |
 | `llm_providers.py` | LLM provider abstraction (Mock, Anthropic, OpenAI-compatible) |
 | `compare_models.py` | Script to compare different LLMs and agent counts |
+| `results.json` | Cached benchmark results |
 | `requirements.txt` | Python dependencies |
 
 ## How Agents Discover Rules

@@ -189,10 +189,12 @@ class OpenAICompatibleLLM(LLMProvider):
         model: str = "meta-llama/Llama-3-70b-chat-hf",
         base_url: Optional[str] = None,
         api_key: Optional[str] = None,
+        n_agents: int = 1,
     ):
         self.model = model
         self.base_url = base_url or os.getenv("LLM_BASE_URL", "http://localhost:8000/v1")
         self.api_key = api_key or os.getenv("LLM_API_KEY", "not-needed")
+        self.n_agents = n_agents  # Used to scale backoff
         self._client = None
 
     @property
@@ -213,17 +215,39 @@ class OpenAICompatibleLLM(LLMProvider):
         return self._client
 
     def complete(self, system: str, user: str, max_tokens: int = 1024) -> str:
-        """Get completion from OpenAI-compatible endpoint."""
-        response = self.client.chat.completions.create(
-            model=self.model,
-            max_tokens=max_tokens,
-            messages=[
-                {"role": "system", "content": system},
-                {"role": "user", "content": user},
-            ]
-        )
-        content = response.choices[0].message.content
-        return content if content is not None else ""
+        """Get completion from OpenAI-compatible endpoint with retry on rate limit."""
+        import time as _time
+        import math
+
+        max_retries = 6
+        # Scale base delay with number of agents: 1 agent = 1s, 128 agents = 8s
+        agent_scale = 1 + math.log2(max(1, self.n_agents))  # 1->1, 2->2, 4->3, 8->4, 16->5, 32->6, 64->7, 128->8
+        base_delay = agent_scale
+
+        for attempt in range(max_retries):
+            try:
+                response = self.client.chat.completions.create(
+                    model=self.model,
+                    max_tokens=max_tokens,
+                    messages=[
+                        {"role": "system", "content": system},
+                        {"role": "user", "content": user},
+                    ]
+                )
+                content = response.choices[0].message.content
+                return content if content is not None else ""
+
+            except Exception as e:
+                error_str = str(e)
+                # Check for rate limit (429) or overloaded errors
+                if "429" in error_str or "rate" in error_str.lower() or "too many" in error_str.lower():
+                    if attempt < max_retries - 1:
+                        delay = base_delay * (2 ** attempt)  # Exponential backoff
+                        print(f"    [Rate limit hit, {self.n_agents} agents, waiting {delay:.1f}s before retry {attempt + 2}/{max_retries}]")
+                        _time.sleep(delay)
+                        continue
+                # Re-raise if not a rate limit error or out of retries
+                raise
 
 
 def create_llm_provider(

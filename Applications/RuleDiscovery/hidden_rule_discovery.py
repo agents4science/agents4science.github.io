@@ -30,6 +30,7 @@ Example usage:
     python hidden_rule_discovery.py
 
     # Argonne inference
+    export LLM_API_KEY="..."
     export LLM_PROVIDER=openai_compatible
     export LLM_BASE_URL=https://argonne-inference-endpoint/v1
     export LLM_MODEL=meta-llama/Llama-3-70b-chat-hf

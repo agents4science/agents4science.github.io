@@ -36,18 +36,17 @@ from academy.manager import Manager
 
 # Argonne ALCF Configuration
 ARGONNE_BASE_URL = "https://inference-api.alcf.anl.gov/resource_server/sophia/vllm/v1"
-ARGONNE_API_KEY = os.getenv("ARGONNE_API_KEY", "")
+ARGONNE_API_KEY = os.getenv("ARGONNE_API_KEY", "") or os.getenv("LLM_API_KEY", "")
 
 # Models to test
-# Note: Llama-3.3-70B-Instruct is often unavailable (503 errors) at Argonne
 MODELS = [
     "meta-llama/Meta-Llama-3.1-8B-Instruct",
     "meta-llama/Meta-Llama-3.1-70B-Instruct",
-    # "meta-llama/Llama-3.3-70B-Instruct",  # Commented out - often unavailable
+    "openai/gpt-oss-120b",
 ]
 
 # Agent counts to test
-AGENT_COUNTS = [2, 4, 8]
+AGENT_COUNTS = [2, 4, 8, 16, 32]
 
 # Difficulties to test
 DIFFICULTIES = ["easy", "medium", "hard"]
@@ -143,12 +142,13 @@ async def run_experiment(
         "total_messages_recv": sum(s["messages_received"] for s in final_states),
         "discovery_score": eval_result["score"],
         "hypotheses": combined[:5],
-        "evaluation": eval_result["evaluation"],
+        "rules_found": eval_result["rules_found"],
+        "rules_missed": eval_result["rules_missed"],
     }
 
 
 async def main():
-    init_logging("WARNING")
+    init_logging("ERROR")
 
     # Check API key
     api_key = ARGONNE_API_KEY
@@ -184,31 +184,31 @@ async def main():
         print("#" * 80)
         print(world.get_rules_description())
 
-        for model in MODELS:
+        for n_agents in AGENT_COUNTS:
             print(f"\n{'='*80}")
-            print(f"Model: {model}")
+            print(f"{n_agents} Agents")
             print("=" * 80)
 
-            # Create LLM provider for this model
-            llm = OpenAICompatibleLLM(
-                model=model,
-                base_url=ARGONNE_BASE_URL,
-                api_key=api_key,
-            )
-
-            for n_agents in AGENT_COUNTS:
+            for model in MODELS:
                 run_count += 1
                 key = get_result_key(difficulty, model, n_agents)
+
+                # Create LLM provider for this model
+                llm = OpenAICompatibleLLM(
+                    model=model,
+                    base_url=ARGONNE_BASE_URL,
+                    api_key=api_key,
+                )
 
                 # Check if we already have this result (and it's not an error)
                 if key in all_results and "error" not in all_results[key]:
                     cached = all_results[key]
-                    print(f"\n  [{run_count}/{total_runs}] {n_agents} agents... CACHED")
+                    print(f"\n  [{run_count}/{total_runs}] {model}... CACHED")
                     print(f"    Score: {cached['discovery_score']}/100")
                     skipped += 1
                     continue
 
-                print(f"\n  [{run_count}/{total_runs}] {n_agents} agents...")
+                print(f"\n  [{run_count}/{total_runs}] {model}...")
 
                 try:
                     result = await run_experiment(

@@ -222,7 +222,8 @@ class OpenAICompatibleLLM(LLMProvider):
                 {"role": "user", "content": user},
             ]
         )
-        return response.choices[0].message.content
+        content = response.choices[0].message.content
+        return content if content is not None else ""
 
 
 def create_llm_provider(

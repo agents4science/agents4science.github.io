@@ -271,11 +271,11 @@ We benchmarked multiple LLMs on the Argonne ALCF inference endpoints, varying th
 
 ### Performance by Agent Count
 
-![Results by Difficulty](results_by_difficulty.png)
+![Results by Difficulty](images/results_by_difficulty.png)
 
 ### Best Scores Comparison
 
-![Best Scores](results_best_scores.png)
+![Best Scores](images/results_best_scores.png)
 
 ### Key Findings
 

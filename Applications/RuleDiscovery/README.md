@@ -257,7 +257,7 @@ SCORE: 100/100
 
 ## Benchmark Results
 
-We benchmarked multiple LLMs on the Argonne ALCF inference endpoints, varying the number of agents from 1 to 64.
+We benchmarked multiple LLMs on the Argonne ALCF inference endpoints, varying the number of agents from 1 to 128.
 
 ### Best Scores by Model
 
@@ -271,11 +271,11 @@ We benchmarked multiple LLMs on the Argonne ALCF inference endpoints, varying th
 
 ### Performance by Agent Count
 
-![Results by Difficulty](results_by_difficulty.png)
+![Results by Difficulty](images/results_by_difficulty.png)
 
 ### Best Scores Comparison
 
-![Best Scores](results_best_scores.png)
+![Best Scores](images/results_best_scores.png)
 
 ### Key Findings
 

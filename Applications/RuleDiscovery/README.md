@@ -295,6 +295,70 @@ Models tested on Argonne ALCF Sophia cluster:
 - `google/gemma-3-27b-it`
 - `mistralai/Mixtral-8x22B-Instruct-v0.1`
 
+## Communication & Scaling Experiments
+
+We conducted extensive experiments to understand how communication strategies and agent count affect rule discovery.
+
+### Impact of Communication
+
+Communication between agents significantly improves discovery rates. The best strategy is **N1_E2**: sharing with 1 peer every 2 experiments.
+
+![Communication Impact](figures/communication_impact.png)
+
+**Key finding**: With 8 agents, communication improves scores from 40% to 60% on medium difficulty.
+
+### Variance Across Seeds
+
+Communication introduces beneficial variance - some runs discover more rules than deterministic no-communication runs.
+
+![Seed Variance](figures/seed_variance.png)
+
+**Key finding**: No-communication is deterministic (always 33%), while communication produces variance (33-66%) with higher mean (46%).
+
+## Hard Difficulty Improvements
+
+We identified and fixed several issues that were limiting Hard difficulty performance.
+
+### Before vs After Improvements
+
+![Before vs After](figures/hard_before_after.png)
+
+### Issues Fixed
+
+1. **Missing "scale" action** - The "place on a scale" experiment was missing from agent prompts, making "Pyramids tip over on a scale" impossible to discover
+
+2. **Forced experiment diversity** - Agents now cycle through all 8 experiment types instead of relying on LLM preferences (which biased toward "exciting" experiments like fire/electricity)
+
+3. **Lower evidence threshold** - Reduced from 2 to 1 observations required, allowing rare property+experiment combinations to be captured
+
+4. **Targeted follow-up** - 30% chance to re-explore properties that showed interesting outcomes
+
+### Scaling with Experiments
+
+![Hard Scaling](figures/hard_scaling.png)
+
+**Best result**: 87% (7/8 rules) with 640 experiments (8 agents × 80 each)
+
+### Summary Dashboard
+
+![Summary Dashboard](figures/summary_dashboard.png)
+
+### Hard Difficulty Results
+
+| Experiments | Before | After | Improvement |
+|-------------|--------|-------|-------------|
+| 160 | 31% | 56% | +25% |
+| 320 | 37% | 62% | +25% |
+| 480 | 50% | 75% | +25% |
+| 640 | - | **87%** | Best |
+
+### Remaining Challenge
+
+The color-based rule "Red objects are fireproof" remains the hardest to discover:
+- Competes with "Wood objects burn in fire"
+- Red wood objects show immunity, not burning
+- Requires sufficient red+fire experiments to establish pattern
+
 ## Files
 
 | File | Description |
@@ -302,7 +366,12 @@ Models tested on Argonne ALCF Sophia cluster:
 | `hidden_rule_discovery.py` | Main simulation with agents, world, and evaluation |
 | `llm_providers.py` | LLM provider abstraction (Mock, Anthropic, OpenAI-compatible) |
 | `compare_models.py` | Script to compare different LLMs and agent counts |
+| `compare_comm_strategies.py` | Compare communication strategies (no_comm vs N1_E2, etc.) |
+| `vary_agents.py` | Test scaling with different agent counts |
+| `multi_seed_test.py` | Variance analysis across random seeds |
+| `plot_results.py` | Generate visualization graphs |
 | `results.json` | Cached benchmark results |
+| `figures/` | Generated graphs and visualizations |
 | `requirements.txt` | Python dependencies |
 
 ## How Agents Discover Rules

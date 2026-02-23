@@ -26,7 +26,7 @@ from hidden_rule_discovery import (
     SCIENTIST_SYSTEM_PROMPT,
     set_agent_logging,
 )
-from llm_providers import create_llm_provider, OpenAICompatibleLLM
+from llm_providers import create_llm_provider, OpenAICompatibleLLM, _load_globus_token
 
 from concurrent.futures import ThreadPoolExecutor
 
@@ -39,7 +39,12 @@ from academy.manager import Manager
 
 # Argonne ALCF Configuration
 ARGONNE_BASE_URL = "https://inference-api.alcf.anl.gov/resource_server/sophia/vllm/v1"
-ARGONNE_API_KEY = os.getenv("ARGONNE_API_KEY", "") or os.getenv("LLM_API_KEY", "")
+_api_key_raw = os.getenv("ARGONNE_API_KEY", "") or os.getenv("LLM_API_KEY", "")
+# Support Globus tokens.json file path as API key
+if _api_key_raw.endswith("tokens.json") and os.path.isfile(_api_key_raw):
+    ARGONNE_API_KEY = _load_globus_token(_api_key_raw)
+else:
+    ARGONNE_API_KEY = _api_key_raw
 
 # Models to test (good mix of sizes and architectures)
 MODELS = [
@@ -101,11 +106,15 @@ async def run_experiment(
     world,
     log_file,
     eval_llm,  # Separate LLM for evaluation (use a reliable model)
-    steps: int = 30,
+    experiments_per_agent: int = 20,
     comm_prob: float = 0.3,
     seed: int = 42,
+    timeout: int = 300,  # Max seconds to wait
 ) -> Dict[str, Any]:
-    """Run a single experiment and return results."""
+    """Run a single experiment and return results.
+
+    Each agent runs exactly `experiments_per_agent` LLM calls.
+    """
 
     start_time = time.time()
 
@@ -118,7 +127,7 @@ async def run_experiment(
         for i in range(n_agents):
             h = await manager.launch(
                 ScientistAgent,
-                args=(i, world, llm, comm_prob, seed + i, log_file),
+                args=(i, world, llm, comm_prob, seed + i, log_file, experiments_per_agent),
             )
             handles.append(h)
 
@@ -127,18 +136,33 @@ async def run_experiment(
             peers = [handles[j] for j in range(n_agents) if j != i]
             await h.set_peers(peers)
 
-        # Run simulation
-        for step in range(1, steps + 1):
-            await asyncio.sleep(1.0)
+        # Wait for all agents to complete their experiments
+        target_total = n_agents * experiments_per_agent
+        last_report = 0
+        while True:
+            await asyncio.sleep(0.5)
 
-            if step % 10 == 0:
-                states = await asyncio.gather(*[h.get_state() for h in handles])
+            states = await asyncio.gather(*[h.get_state() for h in handles])
+            total_experiments = sum(s["steps"] for s in states)
+            all_done = all(s.get("done", False) for s in states)
+
+            # Report progress every 10 experiments
+            if total_experiments >= last_report + 10:
                 total_obs = sum(s["n_observations"] for s in states)
-                total_hyp = sum(s["n_hypotheses"] for s in states)
-                msg = f"    Step {step}: {total_obs} observations, {total_hyp} hypotheses"
+                msg = f"    {total_experiments}/{target_total} experiments, {total_obs} observations"
                 print(msg)
                 log_file.write(msg + "\n")
                 log_file.flush()
+                last_report = total_experiments
+
+            if all_done:
+                break
+
+            if time.time() - start_time > timeout:
+                msg = f"    Timeout after {timeout}s with {total_experiments}/{target_total} experiments"
+                print(msg)
+                log_file.write(msg + "\n")
+                break
 
         # Collect final results
         final_states = await asyncio.gather(*[h.get_state() for h in handles])
@@ -159,9 +183,12 @@ async def run_experiment(
     # Evaluate using separate eval LLM (reliable model)
     eval_result = evaluate_hypotheses(combined, world.rules, eval_llm)
 
+    total_experiments = sum(s["steps"] for s in final_states)
+
     return {
         "n_agents": n_agents,
-        "steps": steps,
+        "experiments_per_agent": experiments_per_agent,
+        "total_experiments": total_experiments,
         "elapsed_seconds": elapsed,
         "total_observations": sum(s["n_observations"] for s in final_states),
         "total_messages_sent": sum(s["messages_sent"] for s in final_states),
@@ -196,7 +223,7 @@ async def main():
     print(f"Logs directory: {LOGS_DIR}")
 
     SEED = 42
-    STEPS = 30
+    EXPERIMENTS_PER_AGENT = 20  # Each agent runs this many LLM calls
 
     # Create a reliable LLM for evaluation (separate from models being tested)
     eval_llm = OpenAICompatibleLLM(
@@ -269,7 +296,7 @@ async def main():
                             world=world,
                             log_file=log_file,
                             eval_llm=eval_llm,
-                            steps=STEPS,
+                            experiments_per_agent=EXPERIMENTS_PER_AGENT,
                             seed=SEED,
                         )
 

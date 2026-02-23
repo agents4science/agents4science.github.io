@@ -1,0 +1,92 @@
+{
+  "no_comm|1": {
+    "n_agents": 1,
+    "total_experiments": 20,
+    "total_observations": 20,
+    "messages": 0,
+    "score": 20,
+    "rules_found": 1,
+    "elapsed": 23.995754957199097
+  },
+  "no_comm|2": {
+    "n_agents": 2,
+    "total_experiments": 40,
+    "total_observations": 40,
+    "messages": 0,
+    "score": 40,
+    "rules_found": 2,
+    "elapsed": 24.29586410522461
+  },
+  "no_comm|4": {
+    "n_agents": 4,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "messages": 0,
+    "score": 20,
+    "rules_found": 1,
+    "elapsed": 24.87185788154602
+  },
+  "no_comm|8": {
+    "n_agents": 8,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "messages": 0,
+    "score": 40,
+    "rules_found": 2,
+    "elapsed": 24.28421401977539
+  },
+  "no_comm|16": {
+    "n_agents": 16,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "messages": 0,
+    "score": 40,
+    "rules_found": 2,
+    "elapsed": 88.48787903785706
+  },
+  "N1_E2|1": {
+    "n_agents": 1,
+    "total_experiments": 20,
+    "total_observations": 20,
+    "messages": 0,
+    "score": 20,
+    "rules_found": 1,
+    "elapsed": 25.850523948669434
+  },
+  "N1_E2|2": {
+    "n_agents": 2,
+    "total_experiments": 40,
+    "total_observations": 40,
+    "messages": 19,
+    "score": 40,
+    "rules_found": 2,
+    "elapsed": 26.803084135055542
+  },
+  "N1_E2|4": {
+    "n_agents": 4,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "messages": 38,
+    "score": 20,
+    "rules_found": 1,
+    "elapsed": 25.87695002555847
+  },
+  "N1_E2|8": {
+    "n_agents": 8,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "messages": 69,
+    "score": 60,
+    "rules_found": 3,
+    "elapsed": 27.866534948349
+  },
+  "N1_E2|16": {
+    "n_agents": 16,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "messages": 143,
+    "score": 40,
+    "rules_found": 2,
+    "elapsed": 90.59457302093506
+  }
+}

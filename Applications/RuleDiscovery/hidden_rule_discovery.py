@@ -234,26 +234,25 @@ class HypothesisMiner:
         return self._simplify_hypotheses(hypotheses)
 
     def _simplify_hypotheses(self, hypotheses: List[Dict]) -> List[Dict]:
-        """Remove redundant hypotheses, keeping the simplest."""
-        # Group by outcome
-        by_outcome: Dict[str, List[Dict]] = {}
+        """Remove redundant hypotheses, keeping unique ones."""
+        # Group by (experiment_type, outcome) to allow multiple rules per experiment
+        by_key: Dict[Tuple[str, str], List[Dict]] = {}
         for h in hypotheses:
-            outcome = h["outcome"]
-            if outcome not in by_outcome:
-                by_outcome[outcome] = []
-            by_outcome[outcome].append(h)
+            key = (h["experiment_type"], h["outcome"])
+            if key not in by_key:
+                by_key[key] = []
+            by_key[key].append(h)
 
         simplified = []
-        for outcome, hyps in by_outcome.items():
-            # For each outcome, keep the hypothesis with most evidence
-            # If material-based has good evidence, prefer it over color/size/shape
-            material_hyps = [h for h in hyps if "material" in h["condition"]]
-            other_hyps = [h for h in hyps if "material" not in h["condition"]]
-
-            if material_hyps and material_hyps[0]["confidence"] >= 0.7:
-                simplified.append(material_hyps[0])
-            elif hyps:
-                simplified.append(hyps[0])
+        for key, hyps in by_key.items():
+            # Keep the hypothesis with most evidence for this experiment+outcome
+            # Sort by evidence, then prefer material over other properties
+            hyps_sorted = sorted(hyps, key=lambda h: (
+                -h["evidence_count"],
+                -h["confidence"],
+                0 if "material" in h["condition"] else 1
+            ))
+            simplified.append(hyps_sorted[0])
 
         return simplified
 
@@ -567,14 +566,20 @@ class ScientistAgent(Agent):
         comm_prob: float = 0.2,
         seed: int = 42,
         log_file=None,
+        max_experiments: int = None,
+        comm_every: int = None,  # Communicate every E experiments (overrides comm_prob)
+        comm_n_peers: int = 1,   # Number of peers to communicate with
     ):
         super().__init__()
         self.agent_idx = agent_idx
         self.world = world
         self.llm = llm
         self.comm_prob = comm_prob
+        self.comm_every = comm_every  # If set, overrides comm_prob
+        self.comm_n_peers = comm_n_peers
         self.rng = random.Random(seed)
         self.log_file = log_file
+        self.max_experiments = max_experiments  # None = run until shutdown
 
         # State
         self.observations: List[Observation] = []
@@ -586,7 +591,7 @@ class ScientistAgent(Agent):
         self.miner = HypothesisMiner()
 
         # Stats
-        self.steps = 0
+        self.steps = 0  # Also counts experiments (1 LLM call per step)
         self.messages_sent = 0
         self.messages_received = 0
         self.start_time = time.time()
@@ -653,9 +658,10 @@ class ScientistAgent(Agent):
     @action
     async def get_state(self) -> Dict[str, Any]:
         """Get current agent state for external observation."""
+        done = self.max_experiments and self.steps >= self.max_experiments
         return {
             "agent_idx": self.agent_idx,
-            "steps": self.steps,
+            "steps": self.steps,  # steps = experiments = LLM calls
             "n_observations": len(self.observations),
             "n_hypotheses": len(self.hypotheses),
             "hypotheses": [
@@ -664,6 +670,8 @@ class ScientistAgent(Agent):
             ],
             "messages_sent": self.messages_sent,
             "messages_received": self.messages_received,
+            "done": done,
+            "max_experiments": self.max_experiments,
         }
 
     @action
@@ -715,17 +723,7 @@ class ScientistAgent(Agent):
 
     async def _propose_experiment(self) -> str:
         """Use LLM to propose next experiment."""
-        # Count experiments by type to encourage diversity
-        exp_counts: Dict[str, int] = {}
-        for obs in self.miner.observations:
-            exp_counts[obs.experiment_type] = exp_counts.get(obs.experiment_type, 0) + 1
-
-        # Find least-tested experiment types
-        all_exp_types = ["drop_water", "drop_floor", "electricity", "fire", "throw", "sunlight", "freezer"]
-        sorted_by_count = sorted(all_exp_types, key=lambda e: exp_counts.get(e, 0))
-        least_tested = sorted_by_count[:3]
-
-        # Map to readable names
+        # Map internal types to readable names
         exp_names = {
             "drop_water": "drop into water",
             "drop_floor": "drop onto floor",
@@ -734,23 +732,49 @@ class ScientistAgent(Agent):
             "throw": "throw at wall",
             "sunlight": "place in sunlight",
             "freezer": "put in freezer",
+            "scale": "place on a scale",
         }
-        suggested = [exp_names.get(e, e) for e in least_tested]
+        all_exp_types = list(exp_names.keys())
+
+        # Count experiments by type
+        exp_counts: Dict[str, int] = {}
+        for obs in self.miner.observations:
+            exp_counts[obs.experiment_type] = exp_counts.get(obs.experiment_type, 0) + 1
+
+        # FORCE DIVERSITY: Cycle through experiment types to ensure coverage
+        # Each agent rotates through types based on step number
+        forced_exp_idx = self.steps % len(all_exp_types)
+        forced_exp_type = all_exp_types[forced_exp_idx]
+        forced_action = exp_names[forced_exp_type]
+
+        # Find properties that showed interesting outcomes (for targeted follow-up)
+        interesting_properties = []
+        for obs in self.miner.observations:
+            if obs.outcome not in ["nothing", "unknown"]:
+                interesting_properties.append(obs.material)
+                interesting_properties.append(obs.color)
+                interesting_properties.append(obs.size)
+                interesting_properties.append(obs.shape)
+
+        # Pick a random interesting property to explore, or random if none
+        property_hint = ""
+        if interesting_properties and self.rng.random() < 0.3:
+            prop = self.rng.choice(interesting_properties)
+            property_hint = f"\nTry using a {prop} object to see if it has special properties."
 
         prompt = f"""Propose ONE experiment to test how objects behave.
 
-ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+YOU MUST USE THIS ACTION: {forced_action}
+
 SIZES: small, medium, large
 COLORS: red, blue, green, yellow
 MATERIALS: metal, wood, glass, rubber
 SHAPES: sphere, cube, pyramid, cylinder
+{property_hint}
+Format: "{forced_action} the [size] [color] [material] [shape]"
+Example: "{forced_action} the small red metal cube"
 
-IMPORTANT: We need MORE of these experiment types: {', '.join(suggested)}
-
-Format: "[action] the [size] [color] [material] [shape]"
-Example: "Apply electricity to the small red metal cube"
-
-Your experiment:"""
+Your experiment (MUST use {forced_action}):"""
 
         self.llm_query_count += 1
         query_num = self.llm_query_count
@@ -769,7 +793,7 @@ Your experiment:"""
 
         # Ensure it's a valid experiment format
         if not any(exp_type in experiment.lower() for exp_type in
-                   ["drop", "electricity", "fire", "throw", "sunlight", "freezer", "floor", "scale"]):
+                   ["drop", "water", "electricity", "fire", "throw", "sunlight", "freezer", "floor", "scale"]):
             raise ValueError(f"LLM returned invalid experiment format: {experiment[:100]}")
 
         return experiment
@@ -893,14 +917,26 @@ RULE: """
             self._log(f"HYPOTHESES_SIMPLIFIED", f"simplified to {len(new_hypotheses)} hypotheses")
 
     async def _maybe_share(self) -> None:
-        """Maybe share findings with a peer."""
-        if not self.peers or self.rng.random() > self.comm_prob:
+        """Maybe share findings with peers."""
+        if not self.peers:
             return
+
+        # Determine if we should communicate
+        if self.comm_every is not None:
+            # Deterministic: every E experiments
+            if self.comm_every == 0 or self.steps % self.comm_every != 0:
+                return
+        else:
+            # Probabilistic (legacy)
+            if self.rng.random() > self.comm_prob:
+                return
 
         if not self.hypotheses and not self.observations:
             return
 
-        peer = self.rng.choice(self.peers)
+        # Select N peers to communicate with
+        n_peers = min(self.comm_n_peers, len(self.peers))
+        selected_peers = self.rng.sample(self.peers, n_peers)
 
         # Compose message
         top_hypotheses = sorted(self.hypotheses, key=lambda x: -x.confidence)[:3]
@@ -930,23 +966,29 @@ RULE: """
             "step": self.steps,
         }
 
-        try:
-            await peer.receive_message(msg)
-            self.messages_sent += 1
-            self.msg_log_count += 1
-            self._log(f"MSG_SEND #{self.msg_log_count}", f"to=peer | {msg['content'][:200]}")
-        except Exception:
-            # Peer may have terminated during shutdown - ignore
-            pass
+        # Send to all selected peers
+        for peer in selected_peers:
+            try:
+                await peer.receive_message(msg)
+                self.messages_sent += 1
+                self.msg_log_count += 1
+                self._log(f"MSG_SEND #{self.msg_log_count}", f"to=peer | {msg['content'][:200]}")
+            except Exception:
+                # Peer may have terminated during shutdown - ignore
+                pass
 
     @loop
     async def run(self, shutdown: asyncio.Event) -> None:
-        """Main agent loop."""
+        """Main agent loop. Runs until max_experiments reached or shutdown."""
 
         while not shutdown.is_set():
+            # Check if we've reached max experiments (if set)
+            if self.max_experiments and self.steps >= self.max_experiments:
+                break
+
             self.steps += 1
 
-            # 1. Propose and run experiment
+            # 1. Propose and run experiment (1 LLM call)
             experiment = await self._propose_experiment()
             result = self.world.run_experiment(experiment)
 
@@ -964,7 +1006,9 @@ RULE: """
 
             # 3. Update hypotheses from miner periodically
             if self.steps % 5 == 0:
-                mined_hypotheses = self.miner.get_hypotheses(min_evidence=2, min_confidence=0.6)
+                # Use lower min_evidence (1) to catch rare property+experiment combinations
+                # Keep more hypotheses (10) to capture diverse rules
+                mined_hypotheses = self.miner.get_hypotheses(min_evidence=1, min_confidence=0.5)
                 self.hypotheses = [
                     Hypothesis(
                         rule=h["rule"],
@@ -972,7 +1016,7 @@ RULE: """
                         supporting_evidence=[],
                         contradicting_evidence=[],
                     )
-                    for h in mined_hypotheses[:5]
+                    for h in mined_hypotheses[:10]
                 ]
                 if mined_hypotheses:
                     self._log("HYPOTHESES_MINED", f"{len(mined_hypotheses)} rules: {[h['rule'] for h in mined_hypotheses[:3]]}")
@@ -984,8 +1028,8 @@ RULE: """
             if len(self.inbox) > 20:
                 self.inbox = self.inbox[-10:]
 
-            # 6. Pace the loop
-            await asyncio.sleep(0.5)  # Slower than polynomial fitting due to LLM calls
+            # 6. Brief yield to allow other agents to run
+            await asyncio.sleep(0.1)
 
 
 # ----------------------------

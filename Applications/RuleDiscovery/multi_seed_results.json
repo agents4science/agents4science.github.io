@@ -1,0 +1,82 @@
+{
+  "no_comm|42": {
+    "seed": 42,
+    "score": 33,
+    "rules_found": 1,
+    "rules_total": 3,
+    "elapsed": 193.54388403892517,
+    "messages": 0
+  },
+  "no_comm|123": {
+    "seed": 123,
+    "score": 33,
+    "rules_found": 1,
+    "rules_total": 3,
+    "elapsed": 69.95043992996216,
+    "messages": 0
+  },
+  "no_comm|456": {
+    "seed": 456,
+    "score": 33,
+    "rules_found": 1,
+    "rules_total": 3,
+    "elapsed": 74.51666188240051,
+    "messages": 0
+  },
+  "no_comm|789": {
+    "seed": 789,
+    "score": 33,
+    "rules_found": 1,
+    "rules_total": 3,
+    "elapsed": 206.32244205474854,
+    "messages": 0
+  },
+  "no_comm|1001": {
+    "seed": 1001,
+    "score": 33,
+    "rules_found": 1,
+    "rules_total": 3,
+    "elapsed": 86.74653005599976,
+    "messages": 0
+  },
+  "N1_E2|42": {
+    "seed": 42,
+    "score": 33,
+    "rules_found": 1,
+    "rules_total": 3,
+    "elapsed": 336.52570700645447,
+    "messages": 115
+  },
+  "N1_E2|123": {
+    "seed": 123,
+    "score": 33,
+    "rules_found": 1,
+    "rules_total": 3,
+    "elapsed": 154.05655765533447,
+    "messages": 117
+  },
+  "N1_E2|456": {
+    "seed": 456,
+    "score": 66,
+    "rules_found": 2,
+    "rules_total": 3,
+    "elapsed": 154.6530201435089,
+    "messages": 117
+  },
+  "N1_E2|789": {
+    "seed": 789,
+    "score": 33,
+    "rules_found": 1,
+    "rules_total": 3,
+    "elapsed": 156.75572800636292,
+    "messages": 117
+  },
+  "N1_E2|1001": {
+    "seed": 1001,
+    "score": 66,
+    "rules_found": 2,
+    "rules_total": 3,
+    "elapsed": 152.8275649547577,
+    "messages": 118
+  }
+}

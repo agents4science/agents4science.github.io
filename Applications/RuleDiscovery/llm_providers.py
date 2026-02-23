@@ -178,6 +178,24 @@ class AnthropicLLM(LLMProvider):
         return response.content[0].text
 
 
+def _load_globus_token(path: str) -> str:
+    """Load access token from Globus tokens.json file."""
+    import json
+    with open(path) as f:
+        data = json.load(f)
+    # Look for the inference API token (resource server 681c10cc-f684-4540-bcd7-0b4df3bc26ef)
+    tokens = data.get("data", {}).get("DEFAULT", {})
+    # Try inference API resource server first
+    for key, value in tokens.items():
+        if key == "681c10cc-f684-4540-bcd7-0b4df3bc26ef":
+            return value["access_token"]
+    # Fall back to any non-auth.globus.org token
+    for key, value in tokens.items():
+        if key != "auth.globus.org":
+            return value["access_token"]
+    raise ValueError(f"No inference token found in {path}")
+
+
 class OpenAICompatibleLLM(LLMProvider):
     """
     LLM provider for OpenAI-compatible APIs.
@@ -193,7 +211,11 @@ class OpenAICompatibleLLM(LLMProvider):
     ):
         self.model = model
         self.base_url = base_url or os.getenv("LLM_BASE_URL", "http://localhost:8000/v1")
-        self.api_key = api_key or os.getenv("LLM_API_KEY", "not-needed")
+        api_key = api_key or os.getenv("LLM_API_KEY", "not-needed")
+        # If api_key is a path to a Globus tokens.json file, load the token
+        if api_key.endswith("tokens.json") and os.path.isfile(api_key):
+            api_key = _load_globus_token(api_key)
+        self.api_key = api_key
         self.n_agents = n_agents  # Used to scale backoff
         self._client = None
 
@@ -214,6 +236,10 @@ class OpenAICompatibleLLM(LLMProvider):
                 raise ImportError("Please install openai: pip install openai")
         return self._client
 
+    def _is_gpt_oss(self) -> bool:
+        """Check if this is a gpt-oss model (requires special handling)."""
+        return "gpt-oss" in self.model.lower()
+
     def complete(self, system: str, user: str, max_tokens: int = 1024) -> str:
         """Get completion from OpenAI-compatible endpoint with retry on rate limit."""
         import time as _time
@@ -224,16 +250,32 @@ class OpenAICompatibleLLM(LLMProvider):
         agent_scale = 1 + math.log2(max(1, self.n_agents))  # 1->1, 2->2, 4->3, 8->4, 16->5, 32->6, 64->7, 128->8
         base_delay = agent_scale
 
+        # gpt-oss models: merge system into user message, require temperature>0,
+        # and need more max_tokens because they use tokens for internal reasoning
+        if self._is_gpt_oss():
+            messages = [
+                {"role": "user", "content": f"{system}\n\n{user}"},
+            ]
+            temperature = 0.7
+            # gpt-oss needs extra tokens for reasoning - multiply by 5, minimum 500
+            max_tokens = max(500, max_tokens * 5)
+        else:
+            messages = [
+                {"role": "system", "content": system},
+                {"role": "user", "content": user},
+            ]
+            temperature = None  # Use model default
+
         for attempt in range(max_retries):
             try:
-                response = self.client.chat.completions.create(
-                    model=self.model,
-                    max_tokens=max_tokens,
-                    messages=[
-                        {"role": "system", "content": system},
-                        {"role": "user", "content": user},
-                    ]
-                )
+                kwargs = {
+                    "model": self.model,
+                    "max_tokens": max_tokens,
+                    "messages": messages,
+                }
+                if temperature is not None:
+                    kwargs["temperature"] = temperature
+                response = self.client.chat.completions.create(**kwargs)
                 content = response.choices[0].message.content
                 return content if content is not None else ""
 

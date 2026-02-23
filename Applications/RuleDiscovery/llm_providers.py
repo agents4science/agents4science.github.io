@@ -5,12 +5,38 @@ Supports multiple backends:
 - MockLLM: For testing without API calls
 - AnthropicLLM: Claude API
 - OpenAICompatibleLLM: OpenAI-compatible APIs (Argonne, vLLM, TGI, etc.)
+- EmbeddedLLM: Local model on GPU (for HPC: Polaris, Aurora)
 
 Configuration via environment variables:
-- LLM_PROVIDER: "mock", "anthropic", "openai_compatible"
+- LLM_PROVIDER: "mock", "anthropic", "openai_compatible", "embedded"
 - LLM_MODEL: Model name (e.g., "claude-3-haiku-20240307", "meta-llama/Llama-3-70b")
 - LLM_API_KEY: API key (for anthropic) or empty for local
 - LLM_BASE_URL: Base URL for OpenAI-compatible endpoints
+- LLM_DEVICE: GPU device for embedded (e.g., "cuda:0", "xpu:0")
+- LLM_BACKEND: Backend for embedded ("vllm" or "transformers")
+
+For HPC usage (Polaris/Aurora), use create_embedded_llms() to create
+one LLM instance per agent, each on a different GPU:
+
+    from llm_providers import create_embedded_llms
+
+    # Polaris: 4 A100 GPUs per node
+    llms = create_embedded_llms(
+        model="meta-llama/Llama-3.1-8B-Instruct",
+        n_agents=4,
+        backend="vllm",
+        base_device="cuda",
+        gpus_per_node=4,
+    )
+
+    # Aurora: 6 Intel GPUs per node
+    llms = create_embedded_llms(
+        model="meta-llama/Llama-3.1-8B-Instruct",
+        n_agents=6,
+        backend="transformers",  # vLLM may not support Intel yet
+        base_device="xpu",
+        gpus_per_node=6,
+    )
 """
 
 from __future__ import annotations
@@ -292,6 +318,235 @@ class OpenAICompatibleLLM(LLMProvider):
                 raise
 
 
+class EmbeddedLLM(LLMProvider):
+    """
+    Embedded LLM for running local models on HPC (Polaris, Aurora).
+
+    Each agent gets its own model instance on a specific GPU.
+    Supports vLLM (preferred) or HuggingFace transformers (fallback).
+
+    Usage on Polaris (A100 GPUs):
+        llm = EmbeddedLLM(
+            model="meta-llama/Llama-3.1-8B-Instruct",
+            device="cuda:0",  # or "cuda:1", etc.
+            backend="vllm",   # or "transformers"
+        )
+
+    Usage on Aurora (Intel GPUs):
+        llm = EmbeddedLLM(
+            model="meta-llama/Llama-3.1-8B-Instruct",
+            device="xpu:0",
+            backend="transformers",  # vLLM may not support Intel yet
+        )
+    """
+
+    def __init__(
+        self,
+        model: str = "meta-llama/Llama-3.1-8B-Instruct",
+        device: str = "cuda:0",
+        backend: str = "vllm",
+        max_model_len: int = 4096,
+        dtype: str = "auto",
+        trust_remote_code: bool = True,
+    ):
+        self.model_name = model
+        self.device = device
+        self.backend = backend.lower()
+        self.max_model_len = max_model_len
+        self.dtype = dtype
+        self.trust_remote_code = trust_remote_code
+
+        self._model = None
+        self._tokenizer = None
+
+    @property
+    def name(self) -> str:
+        return f"Embedded({self.model_name.split('/')[-1]}, {self.device})"
+
+    def _init_vllm(self):
+        """Initialize vLLM backend."""
+        try:
+            from vllm import LLM, SamplingParams
+            import torch
+
+            # Parse device index
+            if "cuda:" in self.device:
+                gpu_id = int(self.device.split(":")[-1])
+                # Set CUDA_VISIBLE_DEVICES to restrict to this GPU
+                os.environ["CUDA_VISIBLE_DEVICES"] = str(gpu_id)
+            elif self.device == "cuda":
+                pass  # Use default GPU
+            else:
+                raise ValueError(f"vLLM requires CUDA device, got: {self.device}")
+
+            self._model = LLM(
+                model=self.model_name,
+                max_model_len=self.max_model_len,
+                dtype=self.dtype,
+                trust_remote_code=self.trust_remote_code,
+                enforce_eager=True,  # Required for some GPUs
+            )
+            self._sampling_params_class = SamplingParams
+
+        except ImportError:
+            raise ImportError(
+                "vLLM not installed. Install with: pip install vllm\n"
+                "Or use backend='transformers' as fallback."
+            )
+
+    def _init_transformers(self):
+        """Initialize HuggingFace transformers backend."""
+        try:
+            import torch
+            from transformers import AutoModelForCausalLM, AutoTokenizer
+
+            # Determine torch dtype
+            if self.dtype == "auto":
+                torch_dtype = torch.float16
+            elif self.dtype == "float16":
+                torch_dtype = torch.float16
+            elif self.dtype == "bfloat16":
+                torch_dtype = torch.bfloat16
+            elif self.dtype == "float32":
+                torch_dtype = torch.float32
+            else:
+                torch_dtype = torch.float16
+
+            # Load tokenizer
+            self._tokenizer = AutoTokenizer.from_pretrained(
+                self.model_name,
+                trust_remote_code=self.trust_remote_code,
+            )
+
+            # Load model
+            self._model = AutoModelForCausalLM.from_pretrained(
+                self.model_name,
+                torch_dtype=torch_dtype,
+                device_map=self.device if ":" in self.device else "auto",
+                trust_remote_code=self.trust_remote_code,
+            )
+
+            # Set pad token if not set
+            if self._tokenizer.pad_token is None:
+                self._tokenizer.pad_token = self._tokenizer.eos_token
+
+        except ImportError:
+            raise ImportError(
+                "transformers not installed. Install with: pip install transformers torch"
+            )
+
+    def _ensure_initialized(self):
+        """Lazy initialization of model."""
+        if self._model is not None:
+            return
+
+        if self.backend == "vllm":
+            self._init_vllm()
+        elif self.backend in ("transformers", "hf", "huggingface"):
+            self._init_transformers()
+        else:
+            raise ValueError(f"Unknown backend: {self.backend}. Use 'vllm' or 'transformers'.")
+
+    def complete(self, system: str, user: str, max_tokens: int = 1024) -> str:
+        """Get completion from embedded model."""
+        self._ensure_initialized()
+
+        # Format prompt (Llama-style chat template)
+        prompt = f"""<|begin_of_text|><|start_header_id|>system<|end_header_id|>
+
+{system}<|eot_id|><|start_header_id|>user<|end_header_id|>
+
+{user}<|eot_id|><|start_header_id|>assistant<|end_header_id|>
+
+"""
+
+        if self.backend == "vllm":
+            return self._complete_vllm(prompt, max_tokens)
+        else:
+            return self._complete_transformers(prompt, max_tokens)
+
+    def _complete_vllm(self, prompt: str, max_tokens: int) -> str:
+        """Generate with vLLM."""
+        sampling_params = self._sampling_params_class(
+            max_tokens=max_tokens,
+            temperature=0.7,
+            top_p=0.9,
+        )
+        outputs = self._model.generate([prompt], sampling_params)
+        return outputs[0].outputs[0].text.strip()
+
+    def _complete_transformers(self, prompt: str, max_tokens: int) -> str:
+        """Generate with transformers."""
+        import torch
+
+        inputs = self._tokenizer(prompt, return_tensors="pt")
+        inputs = {k: v.to(self._model.device) for k, v in inputs.items()}
+
+        with torch.no_grad():
+            outputs = self._model.generate(
+                **inputs,
+                max_new_tokens=max_tokens,
+                do_sample=True,
+                temperature=0.7,
+                top_p=0.9,
+                pad_token_id=self._tokenizer.pad_token_id,
+            )
+
+        # Decode only the generated part (exclude input)
+        generated = outputs[0][inputs["input_ids"].shape[1]:]
+        return self._tokenizer.decode(generated, skip_special_tokens=True).strip()
+
+
+def create_embedded_llms(
+    model: str,
+    n_agents: int,
+    backend: str = "vllm",
+    base_device: str = "cuda",
+    gpus_per_node: int = 4,
+    **kwargs,
+) -> list[EmbeddedLLM]:
+    """
+    Create multiple EmbeddedLLM instances, one per agent, assigned to different GPUs.
+
+    This is designed for HPC systems like Polaris (4 A100 GPUs/node) or
+    Aurora (6 Intel GPUs/node).
+
+    Args:
+        model: HuggingFace model name
+        n_agents: Number of agents (each gets one LLM)
+        backend: "vllm" or "transformers"
+        base_device: "cuda" for NVIDIA, "xpu" for Intel
+        gpus_per_node: Number of GPUs per node (4 for Polaris, 6 for Aurora)
+        **kwargs: Additional args passed to EmbeddedLLM
+
+    Returns:
+        List of EmbeddedLLM instances
+
+    Example:
+        # Create 4 agents on Polaris, each on a different A100
+        llms = create_embedded_llms(
+            model="meta-llama/Llama-3.1-8B-Instruct",
+            n_agents=4,
+            backend="vllm",
+            base_device="cuda",
+            gpus_per_node=4,
+        )
+        # llms[0] on cuda:0, llms[1] on cuda:1, etc.
+    """
+    llms = []
+    for i in range(n_agents):
+        gpu_id = i % gpus_per_node
+        device = f"{base_device}:{gpu_id}"
+        llm = EmbeddedLLM(
+            model=model,
+            device=device,
+            backend=backend,
+            **kwargs,
+        )
+        llms.append(llm)
+    return llms
+
+
 def create_llm_provider(
     provider: Optional[str] = None,
     model: Optional[str] = None,
@@ -327,10 +582,16 @@ def create_llm_provider(
         model = model or os.getenv("LLM_MODEL", "meta-llama/Llama-3-70b-chat-hf")
         return OpenAICompatibleLLM(model=model, base_url=base_url, api_key=api_key)
 
+    elif provider == "embedded":
+        model = model or os.getenv("LLM_MODEL", "meta-llama/Llama-3.1-8B-Instruct")
+        device = os.getenv("LLM_DEVICE", "cuda:0")
+        backend = os.getenv("LLM_BACKEND", "vllm")
+        return EmbeddedLLM(model=model, device=device, backend=backend)
+
     else:
         raise ValueError(
             f"Unknown provider: {provider}. "
-            "Use 'mock', 'anthropic', or 'openai_compatible'"
+            "Use 'mock', 'anthropic', 'openai_compatible', or 'embedded'"
         )
 
 

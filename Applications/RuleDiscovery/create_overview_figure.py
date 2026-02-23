@@ -17,13 +17,13 @@ def create_rule_discovery_figure():
     """Create illustrative figure for Rule Discovery."""
     fig, ax = plt.subplots(figsize=(12, 7))
     ax.set_xlim(0, 12)
-    ax.set_ylim(0, 7)
+    ax.set_ylim(-0.3, 7)
     ax.axis('off')
 
     # Title
     ax.text(6, 6.7, 'Rule Discovery', fontsize=22, fontweight='bold',
             ha='center', va='top', color='#2c3e50')
-    ax.text(6, 6.15, 'LLM agents discover hidden rules through experimentation',
+    ax.text(6, 6.35, 'LLM agents discover hidden rules through experimentation',
             fontsize=12, ha='center', va='top', style='italic', color='#555')
 
     # Hidden rules box (top left)
@@ -67,7 +67,7 @@ def create_rule_discovery_figure():
 
     for i, (x, color) in enumerate(zip(agent_x, agent_colors)):
         # Agent box (representing LLM)
-        agent_box = FancyBboxPatch((x-0.9, 1.8), 1.8, 1.4, boxstyle="round,pad=0.05",
+        agent_box = FancyBboxPatch((x-0.9, 2.0), 1.8, 1.2, boxstyle="round,pad=0.05",
                                     facecolor=color, edgecolor='white', linewidth=3)
         ax.add_patch(agent_box)
         ax.text(x, 2.85, f'Agent {i+1}', fontsize=11, ha='center', va='center',
@@ -81,10 +81,10 @@ def create_rule_discovery_figure():
             '"Apply electricity\nto metal cube"',
             '"Expose wood\nto fire"'
         ]
-        bubble = FancyBboxPatch((x-0.8, 0.5), 1.6, 0.9, boxstyle="round,pad=0.1",
+        bubble = FancyBboxPatch((x-0.8, 1.2), 1.6, 0.5, boxstyle="round,pad=0.1",
                                  facecolor='#fef9e7', edgecolor='#f4d03f', linewidth=1.5)
         ax.add_patch(bubble)
-        ax.text(x, 0.95, exp_texts[i], fontsize=8, ha='center', va='center',
+        ax.text(x, 1.45, exp_texts[i], fontsize=8, ha='center', va='center',
                style='italic', color='#7d6608')
 
     # Arrows from agents to world (experiments)
@@ -97,7 +97,7 @@ def create_rule_discovery_figure():
                arrowprops=dict(arrowstyle='->', color='#7f8c8d', lw=2,
                               connectionstyle='arc3,rad=-0.2'))
 
-    ax.text(3.3, 3.9, 'run\nexperiments', fontsize=8, ha='center', color='#7f8c8d',
+    ax.text(4.3, 3.4, 'run\nexperiments', fontsize=8, ha='center', color='#7f8c8d',
             style='italic')
 
     # Arrows from world back to agents (observations) - dashed
@@ -138,17 +138,45 @@ def create_rule_discovery_figure():
     ax.annotate('', xy=(8.1, 5.1), xytext=(7.9, 5.1),
                arrowprops=dict(arrowstyle='->', color='#27ae60', lw=4))
 
-    # Process steps at bottom
+    # Process steps at bottom - showing what each LLM agent does
+    # Background box for the workflow
+    workflow_box = FancyBboxPatch((0.3, -0.1), 11.4, 0.7, boxstyle="round,pad=0.05",
+                                   facecolor='#f8f9fa', edgecolor='#dee2e6', linewidth=1.5)
+    ax.add_patch(workflow_box)
+
+    # Header label
+    ax.text(6, 0.75, 'EACH LLM AGENT LOOP:', fontsize=10, ha='center', va='center',
+            color='#2c3e50', fontweight='bold')
+
+    # Steps with arrows between them
     steps = [
         ('1', 'Propose\nexperiment'),
         ('2', 'Run & observe\noutcome'),
         ('3', 'Mine\nhypotheses'),
         ('4', 'Share with\npeers'),
     ]
-    step_x = [1.5, 4.5, 7.5, 10.5]
-    for (num, text), x in zip(steps, step_x):
-        ax.text(x, 0.15, f'{num}. {text}', fontsize=9, ha='center', va='center',
-               color='#555', fontweight='bold')
+    step_x = [1.5, 4.2, 7.0, 10.0]
+
+    for i, ((num, text), x) in enumerate(zip(steps, step_x)):
+        # Step circle
+        circle = Circle((x, 0.35), 0.25, facecolor='#3498db', edgecolor='white', linewidth=2)
+        ax.add_patch(circle)
+        ax.text(x, 0.35, num, fontsize=11, ha='center', va='center',
+                color='white', fontweight='bold')
+        # Step label
+        ax.text(x + 0.4, 0.35, text, fontsize=9, ha='left', va='center',
+               color='#2c3e50', fontweight='bold')
+
+        # Arrow to next step
+        if i < len(steps) - 1:
+            next_x = step_x[i + 1]
+            ax.annotate('', xy=(next_x - 0.5, 0.35), xytext=(x + 1.6, 0.35),
+                       arrowprops=dict(arrowstyle='->', color='#95a5a6', lw=1.5))
+
+    # Loop arrow from step 4 back to step 1
+    ax.annotate('', xy=(1.6, 0.15), xytext=(9.85, 0.15),
+               arrowprops=dict(arrowstyle='->', color='#95a5a6', lw=1.5,
+                              connectionstyle='arc3,rad=-0.05'))
 
     plt.tight_layout()
 

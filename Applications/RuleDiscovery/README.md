@@ -2,6 +2,8 @@
 
 Multi-agent simulation where autonomous agents discover hidden rules governing a simulated world through experimentation and peer-to-peer communication.
 
+![Overview](figures/overview.png)
+
 ## Overview
 
 This project demonstrates **automated scientific discovery**: multiple AI agents independently run experiments, observe outcomes, identify patterns, and share findings with each other. The goal is to discover the hidden rules that govern how objects behave in a simulated world.

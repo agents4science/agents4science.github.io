@@ -2,6 +2,8 @@
 
 Multi-agent simulation where autonomous agents collaboratively learn a hidden cubic polynomial through noisy observations and peer-to-peer communication.
 
+![Overview](figures/overview.png)
+
 ## Problem
 
 Multiple independent "scientist" agents attempt to discover a hidden cubic polynomial:

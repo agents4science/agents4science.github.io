@@ -6,6 +6,8 @@ This directory contains example applications demonstrating multi-agent systems f
 
 ### [PolynomialDiscovery](./PolynomialDiscovery/)
 
+![Polynomial Discovery Overview](./PolynomialDiscovery/figures/overview.png)
+
 Multiple autonomous agents collaboratively learn a hidden cubic polynomial through noisy observations and peer-to-peer communication. Demonstrates:
 - Asynchronous multi-agent coordination
 - Communication topology effects (ring vs random)
@@ -13,6 +15,8 @@ Multiple autonomous agents collaboratively learn a hidden cubic polynomial throu
 - Collective learning from noisy data
 
 ### [RuleDiscovery](./RuleDiscovery/)
+
+![Rule Discovery Overview](./RuleDiscovery/figures/overview.png)
 
 LLM-powered agents discover hidden rules governing a simulated world through experimentation and natural language communication. Demonstrates:
 - LLM agents for scientific hypothesis generation

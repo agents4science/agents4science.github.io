@@ -105,7 +105,7 @@ def create_rule_discovery_figure():
                arrowprops=dict(arrowstyle='->', color='#27ae60', lw=1.5,
                               connectionstyle='arc3,rad=0.2', linestyle='--'))
 
-    ax.text(3.0, 4.0, 'observe\noutcomes', fontsize=8, ha='center', color='#27ae60',
+    ax.text(2.8, 3.8, 'observe\noutcomes', fontsize=8, ha='center', color='#27ae60',
             style='italic')
 
     # Communication arrows between agents

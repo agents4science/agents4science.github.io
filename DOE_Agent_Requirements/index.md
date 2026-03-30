@@ -47,6 +47,9 @@ We require a model where:
 - Access is granted to **capabilities**, not systems
 - Execution is mediated through **policy-controlled interfaces**
 - Agents can operate under **delegated authority**
+- All actions are **auditable and traceable** to responsible parties
+- Humans remain **in control** through budgets, approvals, and kill switches
+- The system **fails safely**—errors result in denial, not unauthorized access
 
 ---
 

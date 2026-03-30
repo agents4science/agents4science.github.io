@@ -12,7 +12,8 @@
 8. [Security](#8-security)
 9. [API Surface](#9-api-surface)
 10. [Implications for DOE Facilities](#10-implications-for-doe-facilities)
-11. [Next Steps](#11-next-steps)
+11. [Policy Changes Required](#11-policy-changes-required-across-doe)
+12. [Next Steps](#12-next-steps)
 
 ---
 
@@ -496,7 +497,126 @@ approve_action(agent_id, action_id)
 
 ---
 
-## 11. Next Steps
+## 11. Policy Changes Required Across DOE
+
+Enabling this architecture requires coordinated policy changes across DOE facilities. Current policies assume human users with individual accounts; new policies must accommodate autonomous agents acting under delegated authority.
+
+### 11.1 Identity and Access
+
+| Current Policy | Required Change |
+|----------------|-----------------|
+| Users must have accounts at each facility | Recognize **capability-based access** as alternative to full accounts |
+| Access tied to individual identity | Support **delegated authority**—agents acting on behalf of users |
+| Site-specific authentication | Cross-facility agreement on **Globus Auth as common trust anchor** |
+
+New policies needed:
+- Standards for delegation constraints (scope, time limits, revocation)
+- Requirements for agent identity registration
+- Rules for credential refresh and token lifetimes
+
+### 11.2 Allocation and Accounting
+
+| Current Policy | Required Change |
+|----------------|-----------------|
+| Allocations granted to PIs/projects | **Agent-submitted jobs count against user/project allocations** |
+| Usage tracked per user at each site | **Cross-site accounting** for multi-facility workflows |
+| No automated spending limits | **Agent budget limits** with enforcement |
+
+Key questions requiring policy decisions:
+- When a workflow spans ALCF→NERSC→OLCF, how is usage attributed?
+- Can agents request allocation increases, or only humans?
+- What reporting shows agent vs. direct usage?
+
+### 11.3 Security
+
+| Current Policy | Required Change |
+|----------------|-----------------|
+| Site-independent security policies | **Coordinated incident response** for cross-site agent issues |
+| User responsible for their jobs | Clear policy on **agent misbehavior liability** |
+| No agent-specific requirements | **Agent registration and approval** requirements |
+
+New policies needed:
+- Who can deploy agents? What vetting is required?
+- What are the sandboxing and isolation requirements?
+- When can a facility unilaterally terminate an agent?
+- How are anomalies detected and reported across sites?
+- What triggers automatic suspension?
+
+### 11.4 Liability and Responsibility
+
+This is a critical gap in current policy:
+
+| Question | Policy Needed |
+|----------|---------------|
+| Agent causes excessive resource consumption | Who is liable—user, agent developer, or facility? |
+| Agent transfers data to wrong location | What are the consequences and remediation? |
+| User leaves institution, agent keeps running | How are orphaned agents handled? |
+| Agent code has security vulnerability | What are the disclosure and response requirements? |
+
+Recommended policy elements:
+- Users remain ultimately responsible for their agents' actions
+- Facilities may require agent code review for high-privilege operations
+- Mandatory terms of service for agent deployment
+- Clear termination authority for facilities
+
+### 11.5 Data Governance
+
+| Current Policy | Required Change |
+|----------------|-----------------|
+| Transfers require explicit user action | Policy for **agent-initiated transfers** |
+| Site-specific data policies | **Cross-site data movement authorization** |
+| Provenance is optional | **Mandatory provenance** for agent-generated results |
+
+New policies needed:
+- Can agents move data autonomously, or only to pre-approved destinations?
+- What data classifications can agents access?
+- How long must provenance records be retained?
+
+### 11.6 Human Oversight Requirements
+
+Current policy implicitly assumes humans are in the loop. New policy must explicitly require:
+
+- **Approval thresholds**: Agents must pause for human approval before exceeding defined limits (compute hours, data volume, cost)
+- **Periodic attestation**: Long-running agents require periodic human confirmation to continue
+- **Real-time visibility**: Users must have access to dashboards showing agent activity
+- **Kill switches**: Both users and facilities must be able to immediately terminate agents
+
+### 11.7 Operational Coordination
+
+| Current State | Required Change |
+|---------------|-----------------|
+| Sites operate independently | **Common capability schema standard** |
+| Bilateral agreements | **Multi-lateral coordination** on agent policies |
+| Independent maintenance windows | **Coordinated communication** to agent operators |
+
+New coordination mechanisms needed:
+- Cross-facility working group to maintain capability standards
+- Dispute resolution process (if sites disagree on agent policies)
+- Policy evolution process as we learn from experience
+- Shared anomaly detection and threat intelligence
+
+### 11.8 Governance Structure
+
+No current structure exists for cross-facility agent governance. Required:
+
+1. **Standards body**: Define and maintain capability schemas, event formats, delegation protocols
+2. **Policy coordination**: Align security, accounting, and operational policies
+3. **Dispute resolution**: Handle conflicts between sites or between users and sites
+4. **Evolution process**: Update policies based on operational experience
+
+### 11.9 Hardest Policy Challenges
+
+Three issues will require significant effort:
+
+1. **Cross-site accounting**: Different allocation programs (INCITE, ALCC, ERCAP) with different rules—how do multi-site workflows get charged?
+
+2. **Liability clarity**: Legal and policy framework for autonomous agent actions—existing DOE user agreements don't contemplate agents
+
+3. **Governance consensus**: Getting independently-operated facilities to agree on common standards while preserving site autonomy
+
+---
+
+## 12. Next Steps
 
 ### Infrastructure
 

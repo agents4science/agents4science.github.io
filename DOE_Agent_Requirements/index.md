@@ -76,6 +76,7 @@ flowchart LR
     Agent["Persistent Agent"] -.->|"orchestrates"| Campaign
     User["Scientist"] -.->|"approves budget"| Agent
 ```
+*Figure 1: A persistent agent orchestrates a multi-site active learning loop, moving data between facilities and requesting human approval for budget decisions.*
 
 **Today**: Scientist has accounts at three facilities, writes ad-hoc scripts to poll queues and transfer data, handles failures manually, and loses coordination if their laptop closes.
 
@@ -178,6 +179,7 @@ flowchart TB
     Registry --> Agent
     Sites -->|"log"| Audit
 ```
+*Figure 2: Four-plane architecture—users manage agents, agents invoke site capabilities, the trust plane validates all requests, and all actions are audited.*
 
 | Component | Role |
 |-----------|------|
@@ -203,6 +205,7 @@ flowchart LR
     User["User\nFull access"] -->|"delegates"| Agent["Agent\nScoped: 2 capabilities\n20K node-hrs\n30 days"]
     Agent -->|"requests"| Token["Token\n1 capability\n1 hour\n100 jobs max"]
 ```
+*Figure 3: Authority narrows at each delegation step—from full user access to scoped agent authority to short-lived capability tokens.*
 
 User authority narrows when delegated to agents; capability tokens are further scoped per invocation.
 
@@ -226,6 +229,7 @@ sequenceDiagram
     HPC-->>Gateway: completed
     Gateway-->>Agent: results, provenance
 ```
+*Figure 4: Capability invocation sequence—agent discovers capability, obtains scoped token, invokes through gateway, and receives results with provenance.*
 
 ---
 
@@ -262,6 +266,7 @@ stateDiagram-v2
     Running --> Terminated: terminate
     Suspended --> Terminated: terminate
 ```
+*Figure 5: Agent lifecycle—agents can be suspended, resumed, and may block awaiting human approval before continuing execution.*
 
 ---
 

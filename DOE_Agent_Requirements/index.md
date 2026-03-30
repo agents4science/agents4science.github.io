@@ -97,6 +97,30 @@ A researcher wants an agent that:
 
 The agent runs indefinitely as a "research assistant."
 
+```mermaid
+flowchart TB
+    subgraph Daily["Daily Scheduled Loop"]
+        Search["Search arXiv\nPubMed, bioRxiv"] --> Filter["LLM Triage\nRelevant?"]
+        Filter -->|"Yes"| Extract["LLM Extract\nBinding Data"]
+        Extract --> Validate["Validate\nSchema Check"]
+        Validate --> KB["Update\nKnowledge Base"]
+    end
+
+    KB --> Check{"New records\n> 200?"}
+    Check -->|"Yes"| Approval["Request Human\nApproval"]
+    Approval -->|"Approved"| Retrain["NERSC\nRetrain Model"]
+    Retrain --> Deploy["Deploy\nNew Model"]
+    Check -->|"No"| Wait["Wait for\nNext Day"]
+
+    KB --> Alert{"High-impact\nFinding?"}
+    Alert -->|"Yes"| Notify["Alert User"]
+
+    Agent["Knowledge Agent\n(runs indefinitely)"] -.->|"orchestrates"| Daily
+    User["Researcher"] -.->|"receives alerts"| Notify
+    User -.->|"approves"| Approval
+```
+*Figure 2: A knowledge agent runs daily, extracting data from new papers, updating a knowledge base, and triggering model retraining (with human approval) when sufficient data accumulates.*
+
 **Today**: Manual literature review is sporadic, data extraction is labor-intensive, models go stale.
 
 **With this architecture**: Scheduled daily execution, graceful degradation (one bad paper doesn't crash the agent), human approval for expensive retraining jobs, indefinite lifespan.
@@ -180,7 +204,7 @@ flowchart TB
     Registry --> Agent
     Sites -->|"log"| Audit
 ```
-*Figure 2: Four-plane architecture—users manage agents, agents invoke site capabilities, the trust plane validates all requests, and all actions are audited.*
+*Figure 3: Four-plane architecture—users manage agents, agents invoke site capabilities, the trust plane validates all requests, and all actions are audited.*
 
 | Component | Role |
 |-----------|------|
@@ -206,7 +230,7 @@ flowchart LR
     User["User\nFull access"] -->|"delegates"| Agent["Agent\nScoped: 2 capabilities\n20K node-hrs\n30 days"]
     Agent -->|"requests"| Token["Token\n1 capability\n1 hour\n100 jobs max"]
 ```
-*Figure 3: Authority narrows at each delegation step—from full user access to scoped agent authority to short-lived capability tokens.*
+*Figure 4: Authority narrows at each delegation step—from full user access to scoped agent authority to short-lived capability tokens.*
 
 User authority narrows when delegated to agents; capability tokens are further scoped per invocation.
 
@@ -230,7 +254,7 @@ sequenceDiagram
     HPC-->>Gateway: completed
     Gateway-->>Agent: results, provenance
 ```
-*Figure 4: Capability invocation sequence—agent discovers capability, obtains scoped token, invokes through gateway, and receives results with provenance.*
+*Figure 5: Capability invocation sequence—agent discovers capability, obtains scoped token, invokes through gateway, and receives results with provenance.*
 
 ---
 
@@ -267,7 +291,7 @@ stateDiagram-v2
     Running --> Terminated: terminate
     Suspended --> Terminated: terminate
 ```
-*Figure 5: Agent lifecycle—agents can be suspended, resumed, and may block awaiting human approval before continuing execution.*
+*Figure 6: Agent lifecycle—agents can be suspended, resumed, and may block awaiting human approval before continuing execution.*
 
 ---
 

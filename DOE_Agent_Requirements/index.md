@@ -1,5 +1,33 @@
 # Capability-Based Execution and Persistent Agent Framework for DOE Environments
 
+## Table of Contents
+
+1. [Overview](#1-overview)
+2. [Problem Statement](#2-problem-statement)
+3. [Core Requirements](#3-core-requirements)
+4. [Motivating Use Cases](#4-motivating-use-cases)
+   - [Multi-Site Simulation Campaign](#41-multi-site-simulation-campaign)
+   - [Knowledge-Updating Research Agent](#42-knowledge-updating-research-agent)
+5. [Foundation: Globus Services](#5-foundation-globus-services)
+6. [Key Architectural Concepts](#6-key-architectural-concepts)
+   - [Capabilities](#61-capabilities)
+   - [Capability Registry](#62-capability-registry)
+   - [Federated Identity and Delegation](#63-federated-identity-and-delegation)
+   - [Site Execution Gateway](#64-site-execution-gateway)
+7. [Agents](#7-agents)
+8. [Agent Execution Substrate](#8-agent-execution-substrate)
+9. [System Architecture](#9-system-architecture)
+10. [Security Threat Model](#10-security-threat-model)
+11. [Policy Controls](#11-policy-controls)
+12. [Minimal API Surface](#12-minimal-api-surface)
+13. [Advantages Over Account-Based Models](#13-advantages-over-account-based-models)
+14. [Architectural Thesis](#14-architectural-thesis)
+15. [Implications for DOE Facilities](#15-implications-for-doe-facilities)
+16. [Next Steps](#16-next-steps)
+17. [Summary](#17-summary)
+
+---
+
 ## 1. Overview
 
 This document outlines an architectural model for enabling:
@@ -72,6 +100,24 @@ A materials scientist wants to screen 50,000 candidate battery electrolyte molec
 5. Use results to select next batch of candidates (active learning loop)
 
 The campaign runs for weeks. The scientist doesn't want to babysit it.
+
+```mermaid
+flowchart LR
+    subgraph Campaign["Multi-Site Simulation Campaign"]
+        Candidates["50K Candidates"] --> Select["Active Learning\nSelection"]
+        Select --> DFT["ALCF\nDFT Calculations"]
+        DFT -->|"Transfer"| MD["NERSC\nMD Simulations"]
+        MD -->|"Transfer"| ML["OLCF\nML Inference"]
+        ML --> Store["Home\nResults DB"]
+        Store --> Select
+    end
+
+    Agent["Persistent Agent"] -.->|"orchestrates"| Campaign
+    User["Scientist"] -.->|"monitors"| Agent
+    User -.->|"approves budget"| Agent
+```
+
+**Figure 3: Multi-Site Simulation Campaign** — An agent orchestrates DFT→MD→ML workflow across three facilities in an active learning loop.
 
 #### What Happens Today
 
@@ -299,6 +345,30 @@ Functions:
 
 ### 6.3 Federated Identity and Delegation
 
+```mermaid
+flowchart LR
+    subgraph User["User Authority"]
+        U["researcher@university.edu"]
+        UA["Full allocation access\nAll capabilities\nNo time limit"]
+    end
+
+    subgraph Agent["Agent Authority (Delegated)"]
+        A["screening-agent"]
+        AA["Scoped capabilities:\n- alcf.run_dft\n- nersc.run_md\nBudget: 20K node-hrs\nExpires: 30 days"]
+    end
+
+    subgraph Token["Capability Token"]
+        T["Token for alcf.run_dft\nAgent: screening-agent\nOwner: researcher@...\nExpires: 1 hour\nMax jobs: 100"]
+    end
+
+    U -->|"delegates to"| A
+    UA -->|"narrowed to"| AA
+    A -->|"requests"| T
+    AA -->|"further scoped"| T
+```
+
+**Figure 6: Delegation Chain** — User authority is narrowed when delegated to agents; capability tokens are further scoped for specific invocations.
+
 Users authenticate via a federated identity system.
 
 Instead of site accounts:
@@ -331,6 +401,47 @@ This isolates users from site-specific complexity.
 ---
 
 ### 6.5 Standard Invocation Interface
+
+```mermaid
+sequenceDiagram
+    participant Agent
+    participant Registry as Capability Registry
+    participant Auth as Globus Auth
+    participant Gateway as Site Gateway
+    participant Slurm
+    participant HPC as HPC System
+
+    Agent->>Registry: discover_capabilities("run_dft")
+    Registry-->>Agent: capability schema, requirements
+
+    Agent->>Auth: request delegation token
+    Auth-->>Agent: scoped token (capability, ttl, limits)
+
+    Agent->>Gateway: invoke(run_dft, inputs, token)
+    Gateway->>Auth: validate token
+    Auth-->>Gateway: valid, authorized
+
+    Gateway->>Slurm: sbatch job script
+    Slurm-->>Gateway: job_id
+
+    Gateway-->>Agent: run_id, status=pending
+
+    loop Poll or Event
+        Agent->>Gateway: get_status(run_id)
+        Gateway-->>Agent: status=running
+    end
+
+    Slurm->>HPC: execute job
+    HPC-->>Slurm: completed
+    Slurm-->>Gateway: job completed
+
+    Gateway-->>Agent: status=completed, outputs
+
+    Agent->>Gateway: fetch_outputs(run_id)
+    Gateway-->>Agent: results, provenance
+```
+
+**Figure 5: Capability Invocation Sequence** — Agent discovers capability, obtains delegation token, invokes via gateway, monitors status, and retrieves outputs.
 
 All capabilities should support a uniform interface:
 
@@ -416,6 +527,28 @@ Agents must respond to:
 
 ### 8.4 Lifecycle Management
 
+```mermaid
+stateDiagram-v2
+    [*] --> Created: create_agent()
+    Created --> Deployed: deploy_agent()
+    Deployed --> Running: start_agent()
+    Running --> Suspended: suspend_agent()
+    Suspended --> Running: resume_agent()
+    Running --> Running: update_agent()
+    Running --> Terminated: terminate_agent()
+    Suspended --> Terminated: terminate_agent()
+    Running --> Error: failure
+    Error --> Running: recover
+    Error --> Terminated: terminate_agent()
+    Terminated --> [*]
+
+    Running --> AwaitingApproval: request_approval()
+    AwaitingApproval --> Running: approval_granted
+    AwaitingApproval --> Suspended: approval_timeout
+```
+
+**Figure 4: Agent Lifecycle** — Agents transition through states from creation to termination, with support for suspension, recovery, and human approval gates.
+
 Operations include:
 
 - Create
@@ -442,6 +575,81 @@ Operations include:
 
 ### 9.1 Components
 
+```mermaid
+flowchart TB
+    subgraph UserPlane["User Control Plane"]
+        User["User/Scientist"]
+        UI["Management UI"]
+        Approvals["Approval Queue"]
+    end
+
+    subgraph AgentPlane["Agent Runtime Plane"]
+        Agent1["Agent: Simulation Campaign"]
+        Agent2["Agent: Knowledge Monitor"]
+        State["State Store"]
+        Events["Event Bus"]
+    end
+
+    subgraph TrustPlane["Trust & Policy Plane"]
+        Auth["Globus Auth"]
+        Registry["Capability Registry"]
+        Audit["Audit Log"]
+    end
+
+    subgraph Sites["Site Capability Gateways"]
+        subgraph ALCF["ALCF Gateway"]
+            GW1["Gateway"]
+            Slurm1["Slurm"]
+            Aurora["Aurora"]
+        end
+        subgraph NERSC["NERSC Gateway"]
+            GW2["Gateway"]
+            Slurm2["Slurm"]
+            Perlmutter["Perlmutter"]
+        end
+        subgraph OLCF["OLCF Gateway"]
+            GW3["Gateway"]
+            Slurm3["Slurm"]
+            Frontier["Frontier"]
+        end
+    end
+
+    User --> UI
+    UI --> Agent1
+    UI --> Agent2
+    Approvals --> User
+
+    Agent1 --> State
+    Agent2 --> State
+    Agent1 --> Events
+    Agent2 --> Events
+
+    Agent1 -->|"invoke capability"| GW1
+    Agent1 -->|"invoke capability"| GW2
+    Agent2 -->|"invoke capability"| GW2
+    Agent2 -->|"invoke capability"| GW3
+
+    GW1 --> Slurm1 --> Aurora
+    GW2 --> Slurm2 --> Perlmutter
+    GW3 --> Slurm3 --> Frontier
+
+    Auth -->|"validate tokens"| GW1
+    Auth -->|"validate tokens"| GW2
+    Auth -->|"validate tokens"| GW3
+
+    Registry -->|"capability schemas"| Agent1
+    Registry -->|"capability schemas"| Agent2
+
+    GW1 -->|"log"| Audit
+    GW2 -->|"log"| Audit
+    GW3 -->|"log"| Audit
+
+    Agent1 -->|"request approval"| Approvals
+    Agent2 -->|"request approval"| Approvals
+```
+
+**Figure 1: System Architecture** — Users interact via a control plane; agents run persistently and invoke capabilities at site gateways; the trust plane handles identity, authorization, and audit.
+
 #### A. User Control Plane
 - Agent creation and management
 - Monitoring and approvals
@@ -466,6 +674,21 @@ Operations include:
 ---
 
 ### 9.2 Modes of Operation
+
+```mermaid
+flowchart LR
+    subgraph Mode1["Mode 1: Remote Execution"]
+        LA["Local Agent"] -->|"invoke over network"| RG1["Remote Gateway"]
+        RG1 --> HPC1["HPC System"]
+    end
+
+    subgraph Mode2["Mode 2: Remote Agency"]
+        RA["Site-Local Agent"] -->|"direct access"| RG2["Local Gateway"]
+        RG2 --> HPC2["HPC System"]
+    end
+```
+
+**Figure 2: Modes of Operation** — Mode 1 has agents invoking remote capabilities over the network; Mode 2 places agents at the site for lower latency and better integration.
 
 #### Mode 1: Remote Execution
 - Local agent invokes remote capability

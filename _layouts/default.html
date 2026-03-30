@@ -119,14 +119,28 @@
   <!-- Mermaid diagram support -->
   <script src="https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.min.js"></script>
   <script>
-    mermaid.initialize({
-      startOnLoad: true,
-      theme: 'neutral',
-      securityLevel: 'loose',
-      flowchart: {
-        useMaxWidth: true,
-        htmlLabels: true
-      }
+    // Convert kramdown code blocks to mermaid divs
+    document.addEventListener('DOMContentLoaded', function() {
+      // Find all code blocks with language-mermaid class
+      document.querySelectorAll('pre > code.language-mermaid').forEach(function(codeBlock) {
+        var pre = codeBlock.parentElement;
+        var mermaidDiv = document.createElement('div');
+        mermaidDiv.className = 'mermaid';
+        mermaidDiv.textContent = codeBlock.textContent;
+        pre.parentElement.replaceChild(mermaidDiv, pre);
+      });
+
+      // Initialize mermaid after converting blocks
+      mermaid.initialize({
+        startOnLoad: true,
+        theme: 'neutral',
+        securityLevel: 'loose',
+        flowchart: {
+          useMaxWidth: true,
+          htmlLabels: true
+        }
+      });
+      mermaid.run();
     });
   </script>
 </body>

@@ -1,0 +1,2029 @@
+{
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 27.992786169052124,
+    "discovery_score": 20,
+    "rules_found": [
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 49.637540102005005,
+    "discovery_score": 20,
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 81.69102501869202,
+    "discovery_score": 20,
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 0.875,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 118.19247579574585,
+    "discovery_score": 20,
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 0.9090909090909091,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 197.34188961982727,
+    "discovery_score": 40,
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 72,
+    "total_messages_recv": 72,
+    "elapsed_seconds": 42.88094997406006,
+    "discovery_score": 20,
+    "rules_found": [
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 0.7777777777777778,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 0.75,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 0.7142857142857143,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 0.6666666666666666,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 153,
+    "total_messages_recv": 153,
+    "elapsed_seconds": 131.49392795562744,
+    "discovery_score": 40,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 234,
+    "total_messages_recv": 234,
+    "elapsed_seconds": 160.93396711349487,
+    "discovery_score": 40,
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 316,
+    "total_messages_recv": 316,
+    "elapsed_seconds": 201.56174898147583,
+    "discovery_score": 60,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 391,
+    "total_messages_recv": 391,
+    "elapsed_seconds": 236.77909517288208,
+    "discovery_score": 40,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 40,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 30.588475942611694,
+    "discovery_score": 40,
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 18,
+    "total_observations": 18,
+    "total_messages_sent": 5,
+    "total_messages_recv": 5,
+    "elapsed_seconds": 7778.81547498703,
+    "discovery_score": 20,
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 118,
+    "total_messages_recv": 118,
+    "elapsed_seconds": 94.24272918701172,
+    "discovery_score": 80,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "rules_missed": [
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 157,
+    "total_messages_recv": 157,
+    "elapsed_seconds": 132.61148691177368,
+    "discovery_score": 60,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 198,
+    "total_messages_recv": 198,
+    "elapsed_seconds": 236.69094514846802,
+    "discovery_score": 60,
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Pyramid objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 18,
+    "total_messages_recv": 18,
+    "elapsed_seconds": 33.575002908706665,
+    "discovery_score": 20,
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 40,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 127.25852990150452,
+    "discovery_score": 20,
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 60,
+    "total_messages_recv": 60,
+    "elapsed_seconds": 96.28239679336548,
+    "discovery_score": 40,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 80,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 133.3872890472412,
+    "discovery_score": 20,
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 100,
+    "total_messages_recv": 100,
+    "elapsed_seconds": 173.06684017181396,
+    "discovery_score": 60,
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 303,
+    "total_messages_recv": 304,
+    "elapsed_seconds": 63.32410407066345,
+    "discovery_score": 60,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 470,
+    "total_messages_recv": 470,
+    "elapsed_seconds": 218.79249715805054,
+    "discovery_score": 60,
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 623,
+    "total_messages_recv": 624,
+    "elapsed_seconds": 292.52996706962585,
+    "discovery_score": 40,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 790,
+    "total_messages_recv": 790,
+    "elapsed_seconds": 281.9339530467987,
+    "discovery_score": 40,
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "medium",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "medium|google/gemma-3-27b-it|no_comm|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "medium|google/gemma-3-27b-it|no_comm|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "medium|google/gemma-3-27b-it|no_comm|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "medium|google/gemma-3-27b-it|no_comm|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "medium|google/gemma-3-27b-it|no_comm|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "medium|google/gemma-3-27b-it|N1_E1|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "medium|google/gemma-3-27b-it|N1_E1|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "medium|google/gemma-3-27b-it|N1_E1|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "medium|google/gemma-3-27b-it|N1_E1|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "medium|google/gemma-3-27b-it|N1_E1|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "medium|google/gemma-3-27b-it|N1_E2|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "medium|google/gemma-3-27b-it|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "medium|google/gemma-3-27b-it|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "medium|google/gemma-3-27b-it|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "medium|google/gemma-3-27b-it|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "medium|google/gemma-3-27b-it|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "medium|google/gemma-3-27b-it|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "medium|google/gemma-3-27b-it|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "medium|google/gemma-3-27b-it|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "medium|google/gemma-3-27b-it|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "medium|google/gemma-3-27b-it|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "medium|google/gemma-3-27b-it|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "medium|google/gemma-3-27b-it|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "medium|google/gemma-3-27b-it|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "medium|google/gemma-3-27b-it|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "medium|google/gemma-3-27b-it|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "medium|google/gemma-3-27b-it|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "medium|google/gemma-3-27b-it|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "medium|google/gemma-3-27b-it|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "medium|google/gemma-3-27b-it|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "medium|google/gemma-3-27b-it|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "medium|google/gemma-3-27b-it|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "medium|google/gemma-3-27b-it|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "medium|google/gemma-3-27b-it|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "medium|google/gemma-3-27b-it|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  }
+}

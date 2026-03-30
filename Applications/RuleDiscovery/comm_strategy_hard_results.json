@@ -1,0 +1,6133 @@
+{
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 27.232622861862183,
+    "discovery_score": 12,
+    "rules_found": [
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 115.79577708244324,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 81.1444399356842,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 107.25127220153809,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 130.5380208492279,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects heats when sunlight",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 75,
+    "total_messages_recv": 75,
+    "elapsed_seconds": 33.4450159072876,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 154,
+    "total_messages_recv": 154,
+    "elapsed_seconds": 178.9785351753235,
+    "discovery_score": 50,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects heats when sunlight",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 232,
+    "total_messages_recv": 232,
+    "elapsed_seconds": 89.81418800354004,
+    "discovery_score": 50,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 315,
+    "total_messages_recv": 315,
+    "elapsed_seconds": 263.05215096473694,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 395,
+    "total_messages_recv": 395,
+    "elapsed_seconds": 408.7850868701935,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 36,
+    "total_messages_recv": 36,
+    "elapsed_seconds": 31.0552339553833,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 80,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 120.73120307922363,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 120,
+    "total_messages_recv": 120,
+    "elapsed_seconds": 156.8959481716156,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 160,
+    "total_messages_recv": 160,
+    "elapsed_seconds": 187.86201286315918,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 197,
+    "total_messages_recv": 197,
+    "elapsed_seconds": 206.5261800289154,
+    "discovery_score": 50,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 20,
+    "total_messages_recv": 20,
+    "elapsed_seconds": 30.07834792137146,
+    "discovery_score": 25,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 40,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 57.7406690120697,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 60,
+    "total_messages_recv": 60,
+    "elapsed_seconds": 86.71842193603516,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 80,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 177.91517210006714,
+    "discovery_score": 25,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 100,
+    "total_messages_recv": 100,
+    "elapsed_seconds": 148.80994415283203,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 151,
+    "total_messages_recv": 152,
+    "elapsed_seconds": 34.72653794288635,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Medium objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Medium objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 311,
+    "total_messages_recv": 312,
+    "elapsed_seconds": 127.09781193733215,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 465,
+    "total_messages_recv": 466,
+    "elapsed_seconds": 162.4456398487091,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects heats when sunlight",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 628,
+    "total_messages_recv": 628,
+    "elapsed_seconds": 252.6180181503296,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 788,
+    "total_messages_recv": 788,
+    "elapsed_seconds": 154.5487596988678,
+    "discovery_score": 50,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects heats when sunlight",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 80,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 28.739850997924805,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 157,
+    "total_messages_recv": 158,
+    "elapsed_seconds": 123.77471828460693,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 239,
+    "total_messages_recv": 240,
+    "elapsed_seconds": 87.19845390319824,
+    "discovery_score": 50,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects heats when sunlight",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 315,
+    "total_messages_recv": 316,
+    "elapsed_seconds": 251.82985496520996,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects heats when sunlight",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 398,
+    "total_messages_recv": 398,
+    "elapsed_seconds": 407.33811688423157,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 40,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 28.664548873901367,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 79,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 64.33076405525208,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 119,
+    "total_messages_recv": 119,
+    "elapsed_seconds": 97.1513729095459,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 159,
+    "total_messages_recv": 160,
+    "elapsed_seconds": 250.08983707427979,
+    "discovery_score": 25,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 200,
+    "total_messages_recv": 200,
+    "elapsed_seconds": 277.0469949245453,
+    "discovery_score": 37,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 35.03545904159546,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 65.74801707267761,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 96.79552364349365,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 125.76951599121094,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 154.15893697738647,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 73,
+    "total_messages_recv": 73,
+    "elapsed_seconds": 39.40152597427368,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 152,
+    "total_messages_recv": 152,
+    "elapsed_seconds": 74.60307621955872,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 235,
+    "total_messages_recv": 235,
+    "elapsed_seconds": 110.18754601478577,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 314,
+    "total_messages_recv": 314,
+    "elapsed_seconds": 147.6401810646057,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 394,
+    "total_messages_recv": 394,
+    "elapsed_seconds": 190.19517374038696,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 40,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 35.82592415809631,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 80,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 76.90415787696838,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 117,
+    "total_messages_recv": 117,
+    "elapsed_seconds": 104.92001605033875,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 157,
+    "total_messages_recv": 157,
+    "elapsed_seconds": 143.69737601280212,
+    "discovery_score": 50,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 198,
+    "total_messages_recv": 198,
+    "elapsed_seconds": 166.84906315803528,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 20,
+    "total_messages_recv": 20,
+    "elapsed_seconds": 92.83101892471313,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 40,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 66.1594569683075,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 60,
+    "total_messages_recv": 60,
+    "elapsed_seconds": 159.07626485824585,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 80,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 135.53931069374084,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 100,
+    "total_messages_recv": 100,
+    "elapsed_seconds": 232.21610379219055,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 150,
+    "total_messages_recv": 150,
+    "elapsed_seconds": 39.784562826156616,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 309,
+    "total_messages_recv": 310,
+    "elapsed_seconds": 142.07650518417358,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 464,
+    "total_messages_recv": 464,
+    "elapsed_seconds": 122.32187414169312,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 631,
+    "total_messages_recv": 632,
+    "elapsed_seconds": 160.9357488155365,
+    "discovery_score": 50,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 786,
+    "total_messages_recv": 786,
+    "elapsed_seconds": 324.53377318382263,
+    "discovery_score": 50,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 71,
+    "total_messages_recv": 72,
+    "elapsed_seconds": 99.05439019203186,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 153,
+    "total_messages_recv": 154,
+    "elapsed_seconds": 77.49779915809631,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 236,
+    "total_messages_recv": 236,
+    "elapsed_seconds": 173.80342817306519,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 317,
+    "total_messages_recv": 318,
+    "elapsed_seconds": 213.29291415214539,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 393,
+    "total_messages_recv": 394,
+    "elapsed_seconds": 254.35612893104553,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 40,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 35.92603015899658,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 79,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 74.1394579410553,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 119,
+    "total_messages_recv": 120,
+    "elapsed_seconds": 109.19122982025146,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 159,
+    "total_messages_recv": 160,
+    "elapsed_seconds": 148.15487408638,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 199,
+    "total_messages_recv": 200,
+    "elapsed_seconds": 171.0733199119568,
+    "discovery_score": 37,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamameta-llama-31-405b-instruct online but not ready to receive tasks. Please try again later.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "hard|google/gemma-3-27b-it|no_comm|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 35.6561861038208,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|google/gemma-3-27b-it|no_comm|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 55.43587398529053,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|google/gemma-3-27b-it|no_comm|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 81.58194279670715,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|google/gemma-3-27b-it|no_comm|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 166.2178611755371,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|google/gemma-3-27b-it|no_comm|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 247.88578391075134,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "no_comm"
+  },
+  "hard|google/gemma-3-27b-it|N1_E1|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 75,
+    "total_messages_recv": 75,
+    "elapsed_seconds": 34.5824670791626,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|google/gemma-3-27b-it|N1_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 146,
+    "total_messages_recv": 146,
+    "elapsed_seconds": 193.31929326057434,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|google/gemma-3-27b-it|N1_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 234,
+    "total_messages_recv": 234,
+    "elapsed_seconds": 95.74364924430847,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|google/gemma-3-27b-it|N1_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 314,
+    "total_messages_recv": 314,
+    "elapsed_seconds": 198.94709134101868,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|google/gemma-3-27b-it|N1_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 396,
+    "total_messages_recv": 396,
+    "elapsed_seconds": 178.62575888633728,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E1"
+  },
+  "hard|google/gemma-3-27b-it|N1_E2|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 38,
+    "total_messages_recv": 38,
+    "elapsed_seconds": 33.59787893295288,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|google/gemma-3-27b-it|N1_E2|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 79,
+    "total_messages_recv": 79,
+    "elapsed_seconds": 63.045889139175415,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|google/gemma-3-27b-it|N1_E2|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 119,
+    "total_messages_recv": 119,
+    "elapsed_seconds": 150.28430724143982,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|google/gemma-3-27b-it|N1_E2|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 157,
+    "total_messages_recv": 157,
+    "elapsed_seconds": 118.17402791976929,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|google/gemma-3-27b-it|N1_E2|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 197,
+    "total_messages_recv": 197,
+    "elapsed_seconds": 211.0029788017273,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E2"
+  },
+  "hard|google/gemma-3-27b-it|N1_E4|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 20,
+    "total_messages_recv": 20,
+    "elapsed_seconds": 29.380974769592285,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|google/gemma-3-27b-it|N1_E4|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 40,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 53.071228981018066,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|google/gemma-3-27b-it|N1_E4|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 60,
+    "total_messages_recv": 60,
+    "elapsed_seconds": 75.1739068031311,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|google/gemma-3-27b-it|N1_E4|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 80,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 103.30944991111755,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|google/gemma-3-27b-it|N1_E4|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 100,
+    "total_messages_recv": 100,
+    "elapsed_seconds": 118.32113003730774,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N1_E4"
+  },
+  "hard|google/gemma-3-27b-it|N2_E1|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 145,
+    "total_messages_recv": 146,
+    "elapsed_seconds": 29.34912395477295,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|google/gemma-3-27b-it|N2_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 306,
+    "total_messages_recv": 306,
+    "elapsed_seconds": 56.62697696685791,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|google/gemma-3-27b-it|N2_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 472,
+    "total_messages_recv": 472,
+    "elapsed_seconds": 146.7011547088623,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|google/gemma-3-27b-it|N2_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 632,
+    "total_messages_recv": 632,
+    "elapsed_seconds": 115.34165811538696,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|google/gemma-3-27b-it|N2_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 790,
+    "total_messages_recv": 790,
+    "elapsed_seconds": 145.18911385536194,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E1"
+  },
+  "hard|google/gemma-3-27b-it|N2_E2|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 80,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 25.995380401611328,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|google/gemma-3-27b-it|N2_E2|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 160,
+    "total_messages_recv": 160,
+    "elapsed_seconds": 56.02829027175903,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|google/gemma-3-27b-it|N2_E2|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 240,
+    "total_messages_recv": 240,
+    "elapsed_seconds": 145.3064079284668,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|google/gemma-3-27b-it|N2_E2|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 313,
+    "total_messages_recv": 314,
+    "elapsed_seconds": 191.67630290985107,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|google/gemma-3-27b-it|N2_E2|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 399,
+    "total_messages_recv": 400,
+    "elapsed_seconds": 237.33685111999512,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E2"
+  },
+  "hard|google/gemma-3-27b-it|N2_E4|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 39,
+    "total_messages_recv": 40,
+    "elapsed_seconds": 95.90235686302185,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|google/gemma-3-27b-it|N2_E4|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 79,
+    "total_messages_recv": 80,
+    "elapsed_seconds": 65.02906799316406,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|google/gemma-3-27b-it|N2_E4|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 119,
+    "total_messages_recv": 120,
+    "elapsed_seconds": 164.87586212158203,
+    "discovery_score": 12,
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|google/gemma-3-27b-it|N2_E4|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 159,
+    "total_messages_recv": 160,
+    "elapsed_seconds": 244.9529218673706,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|google/gemma-3-27b-it|N2_E4|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 200,
+    "total_messages_recv": 200,
+    "elapsed_seconds": 153.02610993385315,
+    "discovery_score": 25,
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "google/gemma-3-27b-it",
+    "difficulty": "hard",
+    "strategy": "N2_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|20": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|40": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|60": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|80": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|100": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-mistralaimixtral-8x22b-instruct-v01 online but not ready to receive tasks. Please try again later.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  }
+}

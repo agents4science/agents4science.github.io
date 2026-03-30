@@ -1,0 +1,1932 @@
+================================================================================
+Run: easy | google/gemma-3-27b-it | 128 agents
+Started: 2026-02-20T17:45:26.548068
+================================================================================
+
+Rules to discover:
+- Metal objects conduct electricity
+- Glass objects shatter when dropped
+- Rubber objects bounce when thrown
+
+[Agent 0] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 1] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 2] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 5] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 4] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 6] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 7] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 11] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 13] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 12] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 9] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 15] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 3] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 10] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 18] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 8] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 20] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 22] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 23] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 24] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 26] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 27] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 21] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 17] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 19] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 29] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 34] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 32] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 25] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 36] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 38] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 30] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 42] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 41] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 31] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 33] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 45] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 16] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 35] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 47] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 49] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 51] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 39] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 53] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 50] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 43] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 44] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 58] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 61] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 62] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 60] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 28] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 64] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 48] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 66] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 69] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 68] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 54] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 55] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 56] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 73] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 14] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 75] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 76] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 46] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 80] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 83] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 65] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 84] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 86] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 63] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 40] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 87] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 90] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 91] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 70] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 94] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 37] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 57] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 96] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 97] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 59] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 99] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 78] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 101] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 79] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 81] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 108] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 82] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 85] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 109] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 112] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 111] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 116] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 117] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 88] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 115] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 92] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 93] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 71] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 95] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 74] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 121] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 77] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 124] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 100] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 104] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 103] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 127] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 105] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 110] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 89] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 118] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 52] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 120] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 123] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 122] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 102] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 107] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 106] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 113] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 114] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 98] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 126] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 119] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 125] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 67] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+[Agent 72] LLM_QUERY #1: propose_experiment:
+Propose ONE experiment to test how objects behave.
+
+ACTIONS: drop into water, drop onto floor, apply electricity, expose to fire, throw at wall, place in sunlight, put in freezer
+SIZES: small, medium, large
+COLORS: red, blue, green, yellow
+MATERIALS: metal, wood, glass, rubber
+SHAPES: sphere, cube, pyramid, cylinder
+
+IMPORTANT: We need MORE of these experiment types: drop into water, drop onto floor, apply electricity
+
+Format: "[action] the [size] [color] [material] [shape]"
+Example: "Apply electricity to the small red metal cube"
+
+Your experiment:
+
+ERROR: Connection error.

@@ -1,0 +1,1235 @@
+{
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 29.48973798751831,
+    "discovery_score": 33,
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "easy",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "elapsed_seconds": 54.15885090827942,
+    "discovery_score": 33,
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "easy",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|no_comm|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 73,
+    "total_messages_recv": 73,
+    "elapsed_seconds": 33.57350707054138,
+    "discovery_score": 33,
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "easy",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|40": {
+    "n_agents": 4,
+    "experiments_per_agent": 40,
+    "total_experiments": 160,
+    "total_observations": 160,
+    "total_messages_sent": 154,
+    "total_messages_recv": 154,
+    "elapsed_seconds": 64.02137184143066,
+    "discovery_score": 66,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "easy",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|60": {
+    "n_agents": 4,
+    "experiments_per_agent": 60,
+    "total_experiments": 240,
+    "total_observations": 240,
+    "total_messages_sent": 235,
+    "total_messages_recv": 235,
+    "elapsed_seconds": 216.66849827766418,
+    "discovery_score": 66,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "easy",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|80": {
+    "n_agents": 4,
+    "experiments_per_agent": 80,
+    "total_experiments": 320,
+    "total_observations": 320,
+    "total_messages_sent": 315,
+    "total_messages_recv": 315,
+    "elapsed_seconds": 276.6447808742523,
+    "discovery_score": 66,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "easy",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E1|100": {
+    "n_agents": 4,
+    "experiments_per_agent": 100,
+    "total_experiments": 400,
+    "total_observations": 400,
+    "total_messages_sent": 393,
+    "total_messages_recv": 393,
+    "elapsed_seconds": 283.7607789039612,
+    "discovery_score": 66,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "easy",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|20": {
+    "n_agents": 4,
+    "experiments_per_agent": 20,
+    "total_experiments": 80,
+    "total_observations": 80,
+    "total_messages_sent": 37,
+    "total_messages_recv": 37,
+    "elapsed_seconds": 36.904783725738525,
+    "discovery_score": 66,
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "difficulty": "easy",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|no_comm|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|no_comm|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "no_comm"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N1_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E1"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E2"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "strategy": "N2_E4"
+  },
+  "easy|google/gemma-3-27b-it|no_comm|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "easy|google/gemma-3-27b-it|no_comm|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "easy|google/gemma-3-27b-it|no_comm|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "easy|google/gemma-3-27b-it|no_comm|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "easy|google/gemma-3-27b-it|no_comm|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "no_comm"
+  },
+  "easy|google/gemma-3-27b-it|N1_E1|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "easy|google/gemma-3-27b-it|N1_E1|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "easy|google/gemma-3-27b-it|N1_E1|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "easy|google/gemma-3-27b-it|N1_E1|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "easy|google/gemma-3-27b-it|N1_E1|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E1"
+  },
+  "easy|google/gemma-3-27b-it|N1_E2|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "easy|google/gemma-3-27b-it|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "easy|google/gemma-3-27b-it|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "easy|google/gemma-3-27b-it|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "easy|google/gemma-3-27b-it|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E2"
+  },
+  "easy|google/gemma-3-27b-it|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "easy|google/gemma-3-27b-it|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "easy|google/gemma-3-27b-it|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "easy|google/gemma-3-27b-it|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "easy|google/gemma-3-27b-it|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N1_E4"
+  },
+  "easy|google/gemma-3-27b-it|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "easy|google/gemma-3-27b-it|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "easy|google/gemma-3-27b-it|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "easy|google/gemma-3-27b-it|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "easy|google/gemma-3-27b-it|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E1"
+  },
+  "easy|google/gemma-3-27b-it|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "easy|google/gemma-3-27b-it|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "easy|google/gemma-3-27b-it|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "easy|google/gemma-3-27b-it|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "easy|google/gemma-3-27b-it|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E2"
+  },
+  "easy|google/gemma-3-27b-it|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "easy|google/gemma-3-27b-it|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "easy|google/gemma-3-27b-it|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "easy|google/gemma-3-27b-it|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "easy|google/gemma-3-27b-it|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "google/gemma-3-27b-it",
+    "strategy": "N2_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|no_comm|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "no_comm"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E1|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E2|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N1_E4|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N1_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E1|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E1"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E2|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E2"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|20": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|40": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|60": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|80": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|N2_E4|100": {
+    "error": "Connection error.",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "strategy": "N2_E4"
+  }
+}

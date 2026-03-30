@@ -1,0 +1,5463 @@
+{
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 39.00540208816528,
+    "total_observations": 19,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-8B-Instruct_agents1.log"
+  },
+  "easy|openai/gpt-oss-20b|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 35.2317681312561,
+    "total_observations": 12,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-20b",
+    "log_file": "logs/easy/openai_gpt-oss-20b_agents1.log"
+  },
+  "easy|google/gemma-3-27b-it|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 34.88420581817627,
+    "total_observations": 19,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/google_gemma-3-27b-it_agents1.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 35.32930016517639,
+    "total_observations": 16,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-70B-Instruct_agents1.log"
+  },
+  "easy|openai/gpt-oss-120b|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 39.83002018928528,
+    "total_observations": 11,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-120b",
+    "log_file": "logs/easy/openai_gpt-oss-120b_agents1.log"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 37.101150035858154,
+    "total_observations": 15,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/mistralai_Mixtral-8x22B-Instruct-v0.1_agents1.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 37.56393003463745,
+    "total_observations": 16,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-405B-Instruct_agents1.log"
+  },
+  "easy|meta-llama/Llama-4-Maverick-17B-128E-Instruct|1": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 1
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 34.228095054626465,
+    "total_observations": 38,
+    "total_messages_sent": 12,
+    "total_messages_recv": 12,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-8B-Instruct_agents2.log"
+  },
+  "easy|openai/gpt-oss-20b|2": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 2
+  },
+  "easy|google/gemma-3-27b-it|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 35.15742087364197,
+    "total_observations": 36,
+    "total_messages_sent": 11,
+    "total_messages_recv": 11,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/google_gemma-3-27b-it_agents2.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 32.219444274902344,
+    "total_observations": 30,
+    "total_messages_sent": 8,
+    "total_messages_recv": 8,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-70B-Instruct_agents2.log"
+  },
+  "easy|openai/gpt-oss-120b|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 47.00622892379761,
+    "total_observations": 24,
+    "total_messages_sent": 7,
+    "total_messages_recv": 7,
+    "discovery_score": 100,
+    "hypotheses": [
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [],
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-120b",
+    "log_file": "logs/easy/openai_gpt-oss-120b_agents2.log"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 35.907423973083496,
+    "total_observations": 34,
+    "total_messages_sent": 10,
+    "total_messages_recv": 10,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/mistralai_Mixtral-8x22B-Instruct-v0.1_agents2.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 36.1402690410614,
+    "total_observations": 34,
+    "total_messages_sent": 10,
+    "total_messages_recv": 10,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-405B-Instruct_agents2.log"
+  },
+  "easy|meta-llama/Llama-4-Maverick-17B-128E-Instruct|2": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 2
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 38.4320650100708,
+    "total_observations": 79,
+    "total_messages_sent": 26,
+    "total_messages_recv": 27,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-8B-Instruct_agents4.log"
+  },
+  "easy|openai/gpt-oss-20b|4": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 4
+  },
+  "easy|google/gemma-3-27b-it|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 37.80989694595337,
+    "total_observations": 73,
+    "total_messages_sent": 23,
+    "total_messages_recv": 24,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/google_gemma-3-27b-it_agents4.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 346.68939685821533,
+    "total_observations": 66,
+    "total_messages_sent": 19,
+    "total_messages_recv": 19,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-70B-Instruct_agents4.log"
+  },
+  "easy|openai/gpt-oss-120b|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 47.061623096466064,
+    "total_observations": 52,
+    "total_messages_sent": 16,
+    "total_messages_recv": 17,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-120b",
+    "log_file": "logs/easy/openai_gpt-oss-120b_agents4.log"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 39.09675645828247,
+    "total_observations": 71,
+    "total_messages_sent": 23,
+    "total_messages_recv": 23,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/mistralai_Mixtral-8x22B-Instruct-v0.1_agents4.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 39.07222104072571,
+    "total_observations": 70,
+    "total_messages_sent": 21,
+    "total_messages_recv": 21,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-405B-Instruct_agents4.log"
+  },
+  "easy|meta-llama/Llama-4-Maverick-17B-128E-Instruct|4": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 4
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 102.32592391967773,
+    "total_observations": 171,
+    "total_messages_sent": 53,
+    "total_messages_recv": 55,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-8B-Instruct_agents8.log"
+  },
+  "easy|openai/gpt-oss-20b|8": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 8
+  },
+  "easy|google/gemma-3-27b-it|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 38.94243001937866,
+    "total_observations": 149,
+    "total_messages_sent": 44,
+    "total_messages_recv": 46,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/google_gemma-3-27b-it_agents8.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 44.31447386741638,
+    "total_observations": 168,
+    "total_messages_sent": 52,
+    "total_messages_recv": 52,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-70B-Instruct_agents8.log"
+  },
+  "easy|openai/gpt-oss-120b|8": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 8
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 104.78022384643555,
+    "total_observations": 172,
+    "total_messages_sent": 46,
+    "total_messages_recv": 48,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/mistralai_Mixtral-8x22B-Instruct-v0.1_agents8.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 43.55242609977722,
+    "total_observations": 151,
+    "total_messages_sent": 43,
+    "total_messages_recv": 43,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-405B-Instruct_agents8.log"
+  },
+  "easy|meta-llama/Llama-4-Maverick-17B-128E-Instruct|8": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 8
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 155.52221632003784,
+    "total_observations": 268,
+    "total_messages_sent": 72,
+    "total_messages_recv": 74,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-8B-Instruct_agents16.log"
+  },
+  "easy|openai/gpt-oss-20b|16": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 16
+  },
+  "easy|google/gemma-3-27b-it|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 96.7121970653534,
+    "total_observations": 301,
+    "total_messages_sent": 84,
+    "total_messages_recv": 86,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/google_gemma-3-27b-it_agents16.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 48.499804973602295,
+    "total_observations": 312,
+    "total_messages_sent": 84,
+    "total_messages_recv": 85,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-70B-Instruct_agents16.log"
+  },
+  "easy|openai/gpt-oss-120b|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 65.21219515800476,
+    "total_observations": 252,
+    "total_messages_sent": 56,
+    "total_messages_recv": 58,
+    "discovery_score": 100,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [],
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-120b",
+    "log_file": "logs/easy/openai_gpt-oss-120b_agents16.log"
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|16": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "n_agents": 16
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 104.71841382980347,
+    "total_observations": 265,
+    "total_messages_sent": 62,
+    "total_messages_recv": 66,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-405B-Instruct_agents16.log"
+  },
+  "easy|meta-llama/Llama-4-Maverick-17B-128E-Instruct|16": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 16
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 237.012268781662,
+    "total_observations": 804,
+    "total_messages_sent": 201,
+    "total_messages_recv": 203,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-8B-Instruct_agents32.log"
+  },
+  "easy|openai/gpt-oss-20b|32": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 32
+  },
+  "easy|google/gemma-3-27b-it|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 232.40071201324463,
+    "total_observations": 752,
+    "total_messages_sent": 167,
+    "total_messages_recv": 170,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/google_gemma-3-27b-it_agents32.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 121.22728896141052,
+    "total_observations": 738,
+    "total_messages_sent": 175,
+    "total_messages_recv": 178,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-70B-Instruct_agents32.log"
+  },
+  "easy|openai/gpt-oss-120b|32": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 32
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 97.26343417167664,
+    "total_observations": 915,
+    "total_messages_sent": 207,
+    "total_messages_recv": 214,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/mistralai_Mixtral-8x22B-Instruct-v0.1_agents32.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 184.3766028881073,
+    "total_observations": 738,
+    "total_messages_sent": 169,
+    "total_messages_recv": 172,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-405B-Instruct_agents32.log"
+  },
+  "easy|meta-llama/Llama-4-Maverick-17B-128E-Instruct|32": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 32
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 423.0856120586395,
+    "total_observations": 2575,
+    "total_messages_sent": 499,
+    "total_messages_recv": 506,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Rubber objects bounce when thrown"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-8B-Instruct_agents64.log"
+  },
+  "easy|openai/gpt-oss-20b|64": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 64
+  },
+  "easy|google/gemma-3-27b-it|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 430.15618801116943,
+    "total_observations": 3665,
+    "total_messages_sent": 649,
+    "total_messages_recv": 654,
+    "discovery_score": 33,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Glass objects shatter when dropped"
+    ],
+    "difficulty": "easy",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/google_gemma-3-27b-it_agents64.log"
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 356.02868008613586,
+    "total_observations": 2498,
+    "total_messages_sent": 488,
+    "total_messages_recv": 490,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-70B-Instruct_agents64.log"
+  },
+  "easy|openai/gpt-oss-120b|64": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 64
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|64": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "n_agents": 64
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 273.19528102874756,
+    "total_observations": 2186,
+    "total_messages_sent": 421,
+    "total_messages_recv": 432,
+    "discovery_score": 66,
+    "hypotheses": [
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects bounces when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects shatters when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects shatter when dropped",
+      "Rubber objects bounce when thrown"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity"
+    ],
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/easy/meta-llama_Meta-Llama-3.1-405B-Instruct_agents64.log"
+  },
+  "easy|meta-llama/Llama-4-Maverick-17B-128E-Instruct|64": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 64
+  },
+  "easy|meta-llama/Meta-Llama-3.1-8B-Instruct|128": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "n_agents": 128
+  },
+  "easy|openai/gpt-oss-20b|128": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 128
+  },
+  "easy|google/gemma-3-27b-it|128": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "google/gemma-3-27b-it",
+    "n_agents": 128
+  },
+  "easy|meta-llama/Meta-Llama-3.1-70B-Instruct|128": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "n_agents": 128
+  },
+  "easy|openai/gpt-oss-120b|128": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 128
+  },
+  "easy|mistralai/Mixtral-8x22B-Instruct-v0.1|128": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "n_agents": 128
+  },
+  "easy|meta-llama/Meta-Llama-3.1-405B-Instruct|128": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "n_agents": 128
+  },
+  "easy|meta-llama/Llama-4-Maverick-17B-128E-Instruct|128": {
+    "error": "Connection error.",
+    "difficulty": "easy",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 128
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 34.223657846450806,
+    "total_observations": 18,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-8B-Instruct_agents1.log"
+  },
+  "medium|openai/gpt-oss-20b|1": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 1
+  },
+  "medium|google/gemma-3-27b-it|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 34.6178879737854,
+    "total_observations": 19,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/google_gemma-3-27b-it_agents1.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 35.94019389152527,
+    "total_observations": 16,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-70B-Instruct_agents1.log"
+  },
+  "medium|openai/gpt-oss-120b|1": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 1
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 34.71118187904358,
+    "total_observations": 16,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Large objects sink in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/mistralai_Mixtral-8x22B-Instruct-v0.1_agents1.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 33.45552587509155,
+    "total_observations": 15,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects crack in the freezer"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-405B-Instruct_agents1.log"
+  },
+  "medium|meta-llama/Llama-4-Maverick-17B-128E-Instruct|1": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 1
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 34.556756019592285,
+    "total_observations": 36,
+    "total_messages_sent": 11,
+    "total_messages_recv": 11,
+    "discovery_score": 0,
+    "hypotheses": [
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-8B-Instruct_agents2.log"
+  },
+  "medium|openai/gpt-oss-20b|2": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 2
+  },
+  "medium|google/gemma-3-27b-it|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 38.18594408035278,
+    "total_observations": 37,
+    "total_messages_sent": 11,
+    "total_messages_recv": 11,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/google_gemma-3-27b-it_agents2.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 35.75598692893982,
+    "total_observations": 33,
+    "total_messages_sent": 8,
+    "total_messages_recv": 8,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 0.8,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-70B-Instruct_agents2.log"
+  },
+  "medium|openai/gpt-oss-120b|2": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 2
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 36.35503911972046,
+    "total_observations": 32,
+    "total_messages_sent": 9,
+    "total_messages_recv": 9,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/mistralai_Mixtral-8x22B-Instruct-v0.1_agents2.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 37.49185109138489,
+    "total_observations": 33,
+    "total_messages_sent": 8,
+    "total_messages_recv": 9,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Glass objects crack in the freezer"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-405B-Instruct_agents2.log"
+  },
+  "medium|meta-llama/Llama-4-Maverick-17B-128E-Instruct|2": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 2
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 36.5430269241333,
+    "total_observations": 79,
+    "total_messages_sent": 26,
+    "total_messages_recv": 26,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-8B-Instruct_agents4.log"
+  },
+  "medium|openai/gpt-oss-20b|4": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 4
+  },
+  "medium|google/gemma-3-27b-it|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 35.39587688446045,
+    "total_observations": 79,
+    "total_messages_sent": 28,
+    "total_messages_recv": 28,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/google_gemma-3-27b-it_agents4.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 33.38959789276123,
+    "total_observations": 67,
+    "total_messages_sent": 20,
+    "total_messages_recv": 20,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-70B-Instruct_agents4.log"
+  },
+  "medium|openai/gpt-oss-120b|4": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 4
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 39.51605200767517,
+    "total_observations": 70,
+    "total_messages_sent": 21,
+    "total_messages_recv": 21,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 0.75,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity"
+    ],
+    "rules_missed": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/mistralai_Mixtral-8x22B-Instruct-v0.1_agents4.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 39.56734085083008,
+    "total_observations": 73,
+    "total_messages_sent": 23,
+    "total_messages_recv": 23,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Glass objects crack in the freezer"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-405B-Instruct_agents4.log"
+  },
+  "medium|meta-llama/Llama-4-Maverick-17B-128E-Instruct|4": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 4
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 40.24814319610596,
+    "total_observations": 176,
+    "total_messages_sent": 57,
+    "total_messages_recv": 57,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-8B-Instruct_agents8.log"
+  },
+  "medium|openai/gpt-oss-20b|8": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 8
+  },
+  "medium|google/gemma-3-27b-it|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 41.76137018203735,
+    "total_observations": 166,
+    "total_messages_sent": 51,
+    "total_messages_recv": 52,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/google_gemma-3-27b-it_agents8.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 43.6808021068573,
+    "total_observations": 158,
+    "total_messages_sent": 48,
+    "total_messages_recv": 48,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-70B-Instruct_agents8.log"
+  },
+  "medium|openai/gpt-oss-120b|8": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 8
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 49.07017278671265,
+    "total_observations": 157,
+    "total_messages_sent": 46,
+    "total_messages_recv": 46,
+    "discovery_score": 60,
+    "hypotheses": [
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "rules_missed": [
+      "Wood objects burn when exposed to fire",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/mistralai_Mixtral-8x22B-Instruct-v0.1_agents8.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 41.81290888786316,
+    "total_observations": 148,
+    "total_messages_sent": 43,
+    "total_messages_recv": 44,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Glass objects crack in the freezer"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-405B-Instruct_agents8.log"
+  },
+  "medium|meta-llama/Llama-4-Maverick-17B-128E-Instruct|8": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 8
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 105.83147764205933,
+    "total_observations": 371,
+    "total_messages_sent": 106,
+    "total_messages_recv": 107,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-8B-Instruct_agents16.log"
+  },
+  "medium|openai/gpt-oss-20b|16": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 16
+  },
+  "medium|google/gemma-3-27b-it|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 106.58693599700928,
+    "total_observations": 316,
+    "total_messages_sent": 80,
+    "total_messages_recv": 82,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/google_gemma-3-27b-it_agents16.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 50.740941762924194,
+    "total_observations": 332,
+    "total_messages_sent": 96,
+    "total_messages_recv": 97,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-70B-Instruct_agents16.log"
+  },
+  "medium|openai/gpt-oss-120b|16": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 16
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 61.25164008140564,
+    "total_observations": 366,
+    "total_messages_sent": 93,
+    "total_messages_recv": 94,
+    "discovery_score": 80,
+    "hypotheses": [
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Red objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "rules_missed": [
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/mistralai_Mixtral-8x22B-Instruct-v0.1_agents16.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 105.2660481929779,
+    "total_observations": 305,
+    "total_messages_sent": 81,
+    "total_messages_recv": 82,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Glass objects crack in the freezer"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-405B-Instruct_agents16.log"
+  },
+  "medium|meta-llama/Llama-4-Maverick-17B-128E-Instruct|16": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 16
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 67.6586902141571,
+    "total_observations": 767,
+    "total_messages_sent": 176,
+    "total_messages_recv": 177,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-8B-Instruct_agents32.log"
+  },
+  "medium|openai/gpt-oss-20b|32": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 32
+  },
+  "medium|google/gemma-3-27b-it|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 187.51337313652039,
+    "total_observations": 787,
+    "total_messages_sent": 195,
+    "total_messages_recv": 200,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/google_gemma-3-27b-it_agents32.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 62.655235052108765,
+    "total_observations": 799,
+    "total_messages_sent": 190,
+    "total_messages_recv": 191,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-70B-Instruct_agents32.log"
+  },
+  "medium|openai/gpt-oss-120b|32": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 32
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|32": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "n_agents": 32
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 70.34716081619263,
+    "total_observations": 782,
+    "total_messages_sent": 178,
+    "total_messages_recv": 179,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Glass objects crack in the freezer"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-405B-Instruct_agents32.log"
+  },
+  "medium|meta-llama/Llama-4-Maverick-17B-128E-Instruct|32": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 32
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 290.44852900505066,
+    "total_observations": 2117,
+    "total_messages_sent": 388,
+    "total_messages_recv": 393,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Green objects sinks when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-8B-Instruct_agents64.log"
+  },
+  "medium|openai/gpt-oss-20b|64": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 64
+  },
+  "medium|google/gemma-3-27b-it|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 529.2790398597717,
+    "total_observations": 2896,
+    "total_messages_sent": 573,
+    "total_messages_recv": 581,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Blue objects float in water",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/google_gemma-3-27b-it_agents64.log"
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 960.3436760902405,
+    "total_observations": 2916,
+    "total_messages_sent": 584,
+    "total_messages_recv": 593,
+    "discovery_score": 40,
+    "hypotheses": [
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Blue objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Large objects sink in water",
+      "Glass objects crack in the freezer"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-70B-Instruct_agents64.log"
+  },
+  "medium|openai/gpt-oss-120b|64": {
+    "error": "Connection error.",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 64
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|64": {
+    "error": "LLM returned invalid experiment format: Freeze the large blue rubber cylinder",
+    "difficulty": "medium",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "n_agents": 64
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 703.3077719211578,
+    "total_observations": 2609,
+    "total_messages_sent": 455,
+    "total_messages_recv": 462,
+    "discovery_score": 20,
+    "hypotheses": [
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Glass objects cracks when freezer",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Glass objects crack in the freezer"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Wood objects burn when exposed to fire",
+      "Blue objects float in water",
+      "Large objects sink in water"
+    ],
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/medium/meta-llama_Meta-Llama-3.1-405B-Instruct_agents64.log"
+  },
+  "medium|meta-llama/Llama-4-Maverick-17B-128E-Instruct|64": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "medium",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 64
+  },
+  "medium|meta-llama/Meta-Llama-3.1-8B-Instruct|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "n_agents": 128
+  },
+  "medium|openai/gpt-oss-20b|128": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 128
+  },
+  "medium|google/gemma-3-27b-it|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "medium",
+    "model": "google/gemma-3-27b-it",
+    "n_agents": 128
+  },
+  "medium|meta-llama/Meta-Llama-3.1-70B-Instruct|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "n_agents": 128
+  },
+  "medium|openai/gpt-oss-120b|128": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "medium",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 128
+  },
+  "medium|mistralai/Mixtral-8x22B-Instruct-v0.1|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "medium",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "n_agents": 128
+  },
+  "medium|meta-llama/Meta-Llama-3.1-405B-Instruct|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "medium",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "n_agents": 128
+  },
+  "medium|meta-llama/Llama-4-Maverick-17B-128E-Instruct|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "medium",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 128
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 33.78130602836609,
+    "total_observations": 20,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 0,
+    "hypotheses": [],
+    "rules_found": [],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-8B-Instruct_agents1.log"
+  },
+  "hard|openai/gpt-oss-20b|1": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 1
+  },
+  "hard|google/gemma-3-27b-it|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 34.500908613204956,
+    "total_observations": 19,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/google_gemma-3-27b-it_agents1.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 31.669662952423096,
+    "total_observations": 17,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-70B-Instruct_agents1.log"
+  },
+  "hard|openai/gpt-oss-120b|1": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 1
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 35.54035401344299,
+    "total_observations": 18,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 0,
+    "hypotheses": [
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/mistralai_Mixtral-8x22B-Instruct-v0.1_agents1.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|1": {
+    "n_agents": 1,
+    "steps": 30,
+    "elapsed_seconds": 33.63555097579956,
+    "total_observations": 17,
+    "total_messages_sent": 0,
+    "total_messages_recv": 0,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-405B-Instruct_agents1.log"
+  },
+  "hard|meta-llama/Llama-4-Maverick-17B-128E-Instruct|1": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "hard",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 1
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 33.93228268623352,
+    "total_observations": 38,
+    "total_messages_sent": 12,
+    "total_messages_recv": 12,
+    "discovery_score": 0,
+    "hypotheses": [],
+    "rules_found": [],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-8B-Instruct_agents2.log"
+  },
+  "hard|openai/gpt-oss-20b|2": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 2
+  },
+  "hard|google/gemma-3-27b-it|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 33.638362884521484,
+    "total_observations": 37,
+    "total_messages_sent": 12,
+    "total_messages_recv": 12,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/google_gemma-3-27b-it_agents2.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 35.29677200317383,
+    "total_observations": 36,
+    "total_messages_sent": 9,
+    "total_messages_recv": 10,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-70B-Instruct_agents2.log"
+  },
+  "hard|openai/gpt-oss-120b|2": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 2
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 35.69302487373352,
+    "total_observations": 35,
+    "total_messages_sent": 10,
+    "total_messages_recv": 10,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/mistralai_Mixtral-8x22B-Instruct-v0.1_agents2.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|2": {
+    "n_agents": 2,
+    "steps": 30,
+    "elapsed_seconds": 34.87740206718445,
+    "total_observations": 32,
+    "total_messages_sent": 8,
+    "total_messages_recv": 8,
+    "discovery_score": 0,
+    "hypotheses": [],
+    "rules_found": [],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-405B-Instruct_agents2.log"
+  },
+  "hard|meta-llama/Llama-4-Maverick-17B-128E-Instruct|2": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "hard",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 2
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 33.421085834503174,
+    "total_observations": 76,
+    "total_messages_sent": 25,
+    "total_messages_recv": 25,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-8B-Instruct_agents4.log"
+  },
+  "hard|openai/gpt-oss-20b|4": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 4
+  },
+  "hard|google/gemma-3-27b-it|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 36.0545380115509,
+    "total_observations": 73,
+    "total_messages_sent": 24,
+    "total_messages_recv": 24,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/google_gemma-3-27b-it_agents4.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 38.54733204841614,
+    "total_observations": 70,
+    "total_messages_sent": 20,
+    "total_messages_recv": 21,
+    "discovery_score": 25,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-70B-Instruct_agents4.log"
+  },
+  "hard|openai/gpt-oss-120b|4": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 4
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 38.44490599632263,
+    "total_observations": 72,
+    "total_messages_sent": 22,
+    "total_messages_recv": 22,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects conducts when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/mistralai_Mixtral-8x22B-Instruct-v0.1_agents4.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|4": {
+    "n_agents": 4,
+    "steps": 30,
+    "elapsed_seconds": 38.08803391456604,
+    "total_observations": 66,
+    "total_messages_sent": 19,
+    "total_messages_recv": 19,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-405B-Instruct_agents4.log"
+  },
+  "hard|meta-llama/Llama-4-Maverick-17B-128E-Instruct|4": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "hard",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 4
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 38.525885343551636,
+    "total_observations": 177,
+    "total_messages_sent": 57,
+    "total_messages_recv": 57,
+    "discovery_score": 25,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-8B-Instruct_agents8.log"
+  },
+  "hard|openai/gpt-oss-20b|8": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 8
+  },
+  "hard|google/gemma-3-27b-it|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 100.46964907646179,
+    "total_observations": 156,
+    "total_messages_sent": 45,
+    "total_messages_recv": 47,
+    "discovery_score": 25,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/google_gemma-3-27b-it_agents8.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 38.6064887046814,
+    "total_observations": 144,
+    "total_messages_sent": 42,
+    "total_messages_recv": 42,
+    "discovery_score": 25,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-70B-Instruct_agents8.log"
+  },
+  "hard|openai/gpt-oss-120b|8": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 8
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 46.37720513343811,
+    "total_observations": 145,
+    "total_messages_sent": 41,
+    "total_messages_recv": 42,
+    "discovery_score": 25,
+    "hypotheses": [
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/mistralai_Mixtral-8x22B-Instruct-v0.1_agents8.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|8": {
+    "n_agents": 8,
+    "steps": 30,
+    "elapsed_seconds": 40.51320004463196,
+    "total_observations": 146,
+    "total_messages_sent": 43,
+    "total_messages_recv": 45,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-405B-Instruct_agents8.log"
+  },
+  "hard|meta-llama/Llama-4-Maverick-17B-128E-Instruct|8": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "hard",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 8
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 42.12016177177429,
+    "total_observations": 359,
+    "total_messages_sent": 102,
+    "total_messages_recv": 105,
+    "discovery_score": 37,
+    "hypotheses": [
+      {
+        "rule": "Medium objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-8B-Instruct_agents16.log"
+  },
+  "hard|openai/gpt-oss-20b|16": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 16
+  },
+  "hard|google/gemma-3-27b-it|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 44.61493515968323,
+    "total_observations": 366,
+    "total_messages_sent": 107,
+    "total_messages_recv": 107,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/google_gemma-3-27b-it_agents16.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 113.97876286506653,
+    "total_observations": 357,
+    "total_messages_sent": 94,
+    "total_messages_recv": 96,
+    "discovery_score": 37,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-70B-Instruct_agents16.log"
+  },
+  "hard|openai/gpt-oss-120b|16": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 16
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 58.71545910835266,
+    "total_observations": 345,
+    "total_messages_sent": 85,
+    "total_messages_recv": 87,
+    "discovery_score": 25,
+    "hypotheses": [
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects burn in fire",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/mistralai_Mixtral-8x22B-Instruct-v0.1_agents16.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|16": {
+    "n_agents": 16,
+    "steps": 30,
+    "elapsed_seconds": 109.21288013458252,
+    "total_observations": 320,
+    "total_messages_sent": 84,
+    "total_messages_recv": 84,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-405B-Instruct_agents16.log"
+  },
+  "hard|meta-llama/Llama-4-Maverick-17B-128E-Instruct|16": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "hard",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 16
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 187.87113308906555,
+    "total_observations": 991,
+    "total_messages_sent": 227,
+    "total_messages_recv": 232,
+    "discovery_score": 25,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-8B-Instruct_agents32.log"
+  },
+  "hard|openai/gpt-oss-20b|32": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 32
+  },
+  "hard|google/gemma-3-27b-it|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 66.14301109313965,
+    "total_observations": 851,
+    "total_messages_sent": 209,
+    "total_messages_recv": 210,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/google_gemma-3-27b-it_agents32.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 184.88806009292603,
+    "total_observations": 797,
+    "total_messages_sent": 189,
+    "total_messages_recv": 190,
+    "discovery_score": 37,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-70B-Instruct_agents32.log"
+  },
+  "hard|openai/gpt-oss-120b|32": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 32
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 90.8066668510437,
+    "total_observations": 939,
+    "total_messages_sent": 219,
+    "total_messages_recv": 223,
+    "discovery_score": 37,
+    "hypotheses": [
+      {
+        "rule": "Wood objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Metal objects conducts when electricity",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Rubber objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/mistralai_Mixtral-8x22B-Instruct-v0.1_agents32.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|32": {
+    "n_agents": 32,
+    "steps": 30,
+    "elapsed_seconds": 132.2056839466095,
+    "total_observations": 928,
+    "total_messages_sent": 205,
+    "total_messages_recv": 205,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-405B-Instruct_agents32.log"
+  },
+  "hard|meta-llama/Llama-4-Maverick-17B-128E-Instruct|32": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "hard",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 32
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 355.1695029735565,
+    "total_observations": 1886,
+    "total_messages_sent": 311,
+    "total_messages_recv": 316,
+    "discovery_score": 37,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Metal objects conduct electricity",
+      "Wood objects burn in fire",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-8B-Instruct_agents64.log"
+  },
+  "hard|openai/gpt-oss-20b|64": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 64
+  },
+  "hard|google/gemma-3-27b-it|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 567.052179813385,
+    "total_observations": 2317,
+    "total_messages_sent": 501,
+    "total_messages_recv": 515,
+    "discovery_score": 25,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects floats when dropped in water",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Wood objects float in water"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "google/gemma-3-27b-it",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/google_gemma-3-27b-it_agents64.log"
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 722.2718830108643,
+    "total_observations": 2870,
+    "total_messages_sent": 612,
+    "total_messages_recv": 618,
+    "discovery_score": 37,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Small objects flies when throw",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Sphere objects rolls when dropped",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-70B-Instruct_agents64.log"
+  },
+  "hard|openai/gpt-oss-120b|64": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 64
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|64": {
+    "error": "LLM returned invalid experiment format: Freeze the large blue rubber cylinder",
+    "difficulty": "hard",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "n_agents": 64
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|64": {
+    "n_agents": 64,
+    "steps": 30,
+    "elapsed_seconds": 636.7922329902649,
+    "total_observations": 2247,
+    "total_messages_sent": 437,
+    "total_messages_recv": 445,
+    "discovery_score": 12,
+    "hypotheses": [
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      },
+      {
+        "rule": "Wood objects burns when fire",
+        "confidence": 1.0,
+        "supporting": 0,
+        "contradicting": 0
+      }
+    ],
+    "rules_found": [
+      "Wood objects burn in fire"
+    ],
+    "rules_missed": [
+      "Metal objects conduct electricity",
+      "Metal objects heat up in sunlight",
+      "Wood objects float in water",
+      "Red objects are fireproof",
+      "Small objects fly far when thrown",
+      "Spheres roll when dropped on the floor",
+      "Pyramids tip over on a scale"
+    ],
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "log_file": "/Users/ian/AAA/Code/agents4science.github.io/Applications/RuleDiscovery/logs/hard/meta-llama_Meta-Llama-3.1-405B-Instruct_agents64.log"
+  },
+  "hard|meta-llama/Llama-4-Maverick-17B-128E-Instruct|64": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "hard",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 64
+  },
+  "hard|meta-llama/Meta-Llama-3.1-8B-Instruct|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-8B-Instruct",
+    "n_agents": 128
+  },
+  "hard|openai/gpt-oss-20b|128": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-20b",
+    "n_agents": 128
+  },
+  "hard|google/gemma-3-27b-it|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "hard",
+    "model": "google/gemma-3-27b-it",
+    "n_agents": 128
+  },
+  "hard|meta-llama/Meta-Llama-3.1-70B-Instruct|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-70B-Instruct",
+    "n_agents": 128
+  },
+  "hard|openai/gpt-oss-120b|128": {
+    "error": "LLM returned empty response for experiment proposal",
+    "difficulty": "hard",
+    "model": "openai/gpt-oss-120b",
+    "n_agents": 128
+  },
+  "hard|mistralai/Mixtral-8x22B-Instruct-v0.1|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "hard",
+    "model": "mistralai/Mixtral-8x22B-Instruct-v0.1",
+    "n_agents": 128
+  },
+  "hard|meta-llama/Meta-Llama-3.1-405B-Instruct|128": {
+    "error": "<html>\r\n<head><title>503 Service Temporarily Unavailable</title></head>\r\n<body>\r\n<center><h1>503 Service Temporarily Unavailable</h1></center>\r\n<hr><center>nginx</center>\r\n</body>\r\n</html>",
+    "difficulty": "hard",
+    "model": "meta-llama/Meta-Llama-3.1-405B-Instruct",
+    "n_agents": 128
+  },
+  "hard|meta-llama/Llama-4-Maverick-17B-128E-Instruct|128": {
+    "error": "Error code: 503 - Error: Endpoint sophia-vllm-meta-llamallama-4-maverick-17b-128e-instruct online but not ready to receive tasks. Please try again later.",
+    "difficulty": "hard",
+    "model": "meta-llama/Llama-4-Maverick-17B-128E-Instruct",
+    "n_agents": 128
+  }
+}

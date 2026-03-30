@@ -483,52 +483,201 @@ Mode 2 improves:
 
 ---
 
-## 10. Security and Policy Considerations
+## 10. Security Threat Model
 
-### 10.1 Delegation Constraints
+This section identifies security threats specific to capability-based execution and delegated agents, along with mitigations.
 
-Delegation must be:
+### 10.1 Threat Actors
 
-- Scope-limited
-- Time-limited
-- Revocable
-- Auditable
+| Actor | Goals | Capabilities |
+|-------|-------|--------------|
+| Malicious user | Exceed allocation, access unauthorized data, disrupt others | Valid credentials, can create agents |
+| Compromised agent | Exfiltrate data, consume resources, pivot to other systems | Holds delegation tokens, can invoke capabilities |
+| Malicious insider (at facility) | Access user data, manipulate results | Privileged access to gateway/scheduler |
+| External attacker | Steal credentials, disrupt service, cryptomining | Network access, phishing |
 
 ---
 
-### 10.2 Site Control
+### 10.2 Threat: Token Theft and Misuse
+
+**Attack**: Attacker obtains delegation tokens (from compromised agent, network interception, or storage breach) and invokes capabilities as the victim.
+
+**Mitigations**:
+- Short-lived access tokens (minutes) with refresh tokens stored securely
+- Tokens bound to agent identity (cannot be used from different client)
+- Capability invocations logged with client fingerprint
+- Anomaly detection on invocation patterns
+- Token revocation propagates to all gateways within seconds
+
+---
+
+### 10.3 Threat: Confused Deputy
+
+**Attack**: Attacker tricks an agent into performing actions the attacker couldn't do directly. For example, a malicious input causes the agent to transfer data to an attacker-controlled location.
+
+**Mitigations**:
+- Capabilities validate that outputs go to authorized destinations only
+- Agents operate with least-privilege (only capabilities needed for specific task)
+- Input validation at capability boundary, not just agent
+- Sensitive actions require explicit human approval regardless of agent authority
+
+---
+
+### 10.4 Threat: Privilege Escalation via Agent
+
+**Attack**: User creates agent, grants it authority, then agent is manipulated (or bugs out) to perform actions beyond intended scope.
+
+**Mitigations**:
+- Delegation cannot exceed delegator's own authority
+- Capability-level authorization (not blanket "run anything at ALCF")
+- Budget caps enforced at gateway, not just agent
+- Agents cannot modify their own authority grants
+- All privilege grants logged and auditable
+
+---
+
+### 10.5 Threat: Resource Exhaustion
+
+**Attack**: Malicious or buggy agent submits excessive jobs, fills storage, or otherwise exhausts shared resources.
+
+**Mitigations**:
+- Per-agent rate limits on capability invocations
+- Budget thresholds trigger automatic pause + human approval
+- Facilities enforce fairshare independent of agent behavior
+- Kill switch: user or facility can terminate agent immediately
+- Storage quotas enforced at capability level
+
+---
+
+### 10.6 Threat: Agent Compromise
+
+**Attack**: Attacker gains control of agent runtime (via vulnerability, supply chain attack, or malicious agent code) and uses it to attack facilities or exfiltrate data.
+
+**Mitigations**:
+- Agent runtime sandboxed (containers, VMs, or managed service)
+- Agents cannot access each other's state or credentials
+- Network egress restricted to known capability endpoints
+- Agent code reviewed/signed before deployment (for high-privilege agents)
+- Behavioral monitoring: unexpected capability patterns trigger alerts
+
+---
+
+### 10.7 Threat: Capability Abuse
+
+**Attack**: Legitimate user uses capabilities for unintended purposes (e.g., cryptomining via `run_simulation` capability).
+
+**Mitigations**:
+- Capabilities are specific, not general-purpose shell access
+- Resource usage profiling detects anomalous patterns
+- Facilities can inspect job contents for high-resource requests
+- Terms of service with enforcement mechanisms
+- Allocation charging makes abuse expensive
+
+---
+
+### 10.8 Threat: Data Exfiltration
+
+**Attack**: Agent (malicious or compromised) transfers sensitive data to unauthorized locations.
+
+**Mitigations**:
+- Transfer destinations restricted by policy (e.g., only to user's authorized endpoints)
+- Large transfers require human approval
+- Data classification labels enforced at capability level
+- Egress monitoring and alerting
+- Capabilities cannot create new Globus endpoints
+
+---
+
+### 10.9 Threat: Stale or Orphaned Agents
+
+**Attack**: User leaves institution; their agents continue running with outdated authority, potentially accessing resources they should no longer have.
+
+**Mitigations**:
+- Delegation tied to user's identity provider status (IdP deprovisioning revokes tokens)
+- Maximum agent lifetime with mandatory re-authorization
+- Periodic attestation: user must confirm agent should continue
+- Facility can enumerate and terminate agents for deprovisioned users
+
+---
+
+### 10.10 Threat: Cross-Site Attack Propagation
+
+**Attack**: Compromised agent at one facility uses its authority to attack another facility in a multi-site workflow.
+
+**Mitigations**:
+- Per-site authorization (token for ALCF doesn't grant NERSC access)
+- Each facility validates independently; no transitive trust
+- Cross-site workflows logged end-to-end for forensic analysis
+- Facilities can block specific agents without blocking the user entirely
+
+---
+
+### 10.11 Incident Response
+
+When a security incident is detected:
+
+1. **Immediate**: Revoke agent's delegation tokens (propagates to all sites)
+2. **Contain**: Terminate running jobs submitted by the agent
+3. **Investigate**: Audit logs identify all capability invocations
+4. **Notify**: Alert user, affected facilities, and (if required) security teams
+5. **Remediate**: Patch vulnerability, rotate credentials if needed
+6. **Review**: Post-incident analysis to improve defenses
+
+---
+
+### 10.12 Security Invariants
+
+The architecture must maintain these invariants:
+
+1. **No authority amplification**: Agents cannot gain more authority than explicitly granted
+2. **Traceable actions**: Every capability invocation attributable to user + agent
+3. **Revocable access**: Any delegation can be revoked within minutes
+4. **Site sovereignty**: Facilities can deny any request regardless of valid tokens
+5. **Fail secure**: Token validation failures result in denial, not access
+
+---
+
+## 11. Policy Controls
+
+### 11.1 Delegation Constraints
+
+Delegation must be:
+
+- Scope-limited (specific capabilities, not blanket access)
+- Time-limited (explicit expiration)
+- Revocable (immediate effect)
+- Auditable (all grants logged)
+
+### 11.2 Site Control
 
 Sites retain authority over:
 
 - Which capabilities are exposed
-- Resource limits
+- Resource limits per capability/user/agent
 - Execution constraints
-- Policy enforcement
+- Policy enforcement and override
 
----
-
-### 10.3 Resource and Cost Control
+### 11.3 Resource and Cost Control
 
 Agents must operate under:
 
-- Quotas
-- Budget constraints
-- Approval thresholds
-- Kill switches
+- Quotas (invocations, compute hours, storage)
+- Budget constraints (with approval thresholds)
+- Rate limits
+- Kill switches (user and facility level)
 
----
-
-### 10.4 Audit and Provenance
+### 11.4 Audit and Provenance
 
 All actions must be:
 
-- Logged
+- Logged with timestamps
 - Traceable to user and agent
-- Reproducible
+- Reproducible (inputs recorded)
+- Retained per compliance requirements
 
 ---
 
-## 11. Minimal API Surface
+## 12. Minimal API Surface
 
 ### 11.1 Capability API
 

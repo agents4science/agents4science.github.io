@@ -120,7 +120,8 @@ flowchart TB
     Alert -->|"Yes"| Notify["Alert User"]
 
     Agent["Knowledge Agent\n(runs indefinitely)"] -.->|"orchestrates"| Daily
-    User["Researcher"] -.->|"receives alerts"| Notify
+    #User["Researcher"] -.->|"receives alerts"| Notify
+    Notify -.->|"receives alert"| User["Researcher"] 
     User -.->|"approves"| Approval
 ```
 *Figure 2: A knowledge agent runs daily, extracting data from new papers, updating a knowledge base, and triggering model retraining (with human approval) when sufficient data accumulates.*

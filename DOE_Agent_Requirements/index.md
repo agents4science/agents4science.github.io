@@ -1,5 +1,7 @@
 # Capability-Based Execution and Persistent Agent Framework for DOE Environments
 
+*Questions and comments to Ian Foster, foster@anl.gov*
+
 ## Table of Contents
 
 1. [Overview](#1-overview)

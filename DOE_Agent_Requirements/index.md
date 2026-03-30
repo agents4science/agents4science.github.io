@@ -10,12 +10,10 @@
 4. [Foundation: Globus Services](#4-foundation-globus-services)
 5. [Architecture](#5-architecture)
 6. [Agents](#6-agents)
-7. [Observability](#7-observability-knowing-whats-happening)
-8. [Security](#8-security)
-9. [API Surface](#9-api-surface)
-10. [Implications for DOE Facilities](#10-implications-for-doe-facilities)
-11. [Policy Changes Required](#11-policy-changes-required-across-doe)
-12. [Next Steps](#12-next-steps)
+7. [Security and Accountability](#7-security-and-accountability)
+8. [API Surface](#8-api-surface)
+9. [DOE Requirements](#9-doe-requirements)
+10. [Next Steps](#10-next-steps)
 
 ---
 
@@ -141,14 +139,7 @@ flowchart TB
 | Trigger | Event-driven (job completion) | Scheduled + events |
 | Compute | Very high (HPC) | Low-medium (LLM, periodic training) |
 | Failure mode | Retry, pause on repeated failure | Skip bad inputs, continue |
-
-The architecture must support:
-
-1. Both event-driven and scheduled execution
-2. External APIs as capabilities, not just HPC functions
-3. Human approval workflows as first-class constructs
-4. Durable state that survives agent restarts
-5. Budget/quota enforcement at the agent level
+| Human interaction | Budget approvals | Retraining approval, alerts |
 
 ---
 
@@ -238,30 +229,6 @@ flowchart LR
 ```
 *Figure 4: Authority narrows at each delegation step—from full user access to scoped agent authority to short-lived capability tokens.*
 
-User authority narrows when delegated to agents; capability tokens are further scoped per invocation.
-
-### 5.4 Invocation Flow
-
-```mermaid
-sequenceDiagram
-    participant Agent
-    participant Registry
-    participant Auth
-    participant Gateway
-    participant HPC
-
-    Agent->>Registry: discover capability
-    Registry-->>Agent: schema, requirements
-    Agent->>Auth: request token
-    Auth-->>Agent: scoped token
-    Agent->>Gateway: invoke(capability, inputs, token)
-    Gateway->>Auth: validate
-    Gateway->>HPC: submit job
-    HPC-->>Gateway: completed
-    Gateway-->>Agent: results, provenance
-```
-*Figure 5: Capability invocation sequence—agent discovers capability, obtains scoped token, invokes through gateway, and receives results with provenance.*
-
 ---
 
 ## 6. Agents
@@ -274,7 +241,7 @@ An **agent** is a persistent computational entity that:
 - Acts under delegated authority
 - Requests human approval when needed
 
-### 6.1 Agent Runtime Requirements
+### 6.1 Runtime Requirements
 
 | Requirement | Description |
 |-------------|-------------|
@@ -297,117 +264,25 @@ stateDiagram-v2
     Running --> Terminated: terminate
     Suspended --> Terminated: terminate
 ```
-*Figure 6: Agent lifecycle—agents can be suspended, resumed, and may block awaiting human approval before continuing execution.*
+*Figure 5: Agent lifecycle—agents can be suspended, resumed, and may block awaiting human approval before continuing execution.*
 
 ---
 
-## 7. Observability: Knowing What's Happening
+## 7. Security and Accountability
 
-Autonomous agents operating across multiple facilities create a significant accountability challenge. The architecture ensures complete visibility through layered observability.
+### 7.1 Threat Model
 
-### 7.1 What Gets Recorded
+| Threat | Mitigations |
+|--------|-------------|
+| **Token theft** | Short-lived tokens, bound to agent identity, anomaly detection, fast revocation |
+| **Confused deputy** | Output destination validation, least-privilege, input validation at gateway |
+| **Privilege escalation** | Delegation cannot exceed delegator's authority, budget caps at gateway |
+| **Resource exhaustion** | Rate limits, budget thresholds, fairshare, kill switches |
+| **Agent compromise** | Sandboxing, network egress restrictions, behavioral monitoring |
+| **Data exfiltration** | Transfer destination policy, egress monitoring, large transfer approval |
+| **Orphaned agents** | Delegation tied to IdP status, max lifetime, periodic attestation |
 
-Every action in the system generates an immutable record:
-
-| Layer | What's Captured |
-|-------|-----------------|
-| **Agent** | Every decision, state change, capability invocation, approval request |
-| **Gateway** | Every invocation: who, what, when, inputs, outputs, resources consumed |
-| **Facility** | Job submission, execution, resource usage, data movement |
-| **Auth** | Every token issued, refreshed, revoked; every authorization decision |
-
-### 7.2 End-to-End Provenance
-
-For any result, you can trace the complete chain:
-
-```
-Result: binding_energy = -4.23 eV
-  ↳ Produced by: job aurora-12345 at ALCF
-    ↳ Submitted by: agent electrolyte-screening-agent
-      ↳ Acting for: researcher@university.edu
-        ↳ Under delegation: grant-789 (expires 2026-04-15)
-          ↳ With inputs: molecule SMILES "CC(=O)O", method "B3LYP"
-            ↳ At time: 2026-03-30T14:23:07Z
-```
-
-This chain is cryptographically signed and stored, enabling:
-- **Reproducibility**: Re-run any computation with identical inputs
-- **Attribution**: Know exactly who/what produced every result
-- **Debugging**: Trace failures back to root cause
-- **Compliance**: Demonstrate proper authorization for audits
-
-### 7.3 Real-Time Visibility
-
-Users and facility operators have live dashboards showing:
-
-**For Users:**
-- Agent status (running, waiting, suspended)
-- Current goals and progress
-- Pending approval requests
-- Resource consumption vs. budget
-- Recent actions and outcomes
-
-**For Facilities:**
-- Active agents and their owners
-- Capability invocation rates
-- Resource utilization by agent/user
-- Anomalous patterns (sudden spikes, unusual destinations)
-
-### 7.4 Queryable History
-
-All records are queryable:
-
-```
-# What did my agent do last week?
-query agent=screening-agent time=last-7d
-
-# Who accessed this dataset?
-query capability=transfer target=dataset-xyz
-
-# Show all jobs that failed at NERSC yesterday
-query site=nersc status=failed time=yesterday
-```
-
-### 7.5 Alerts and Anomaly Detection
-
-The system actively monitors for concerning patterns:
-
-- Agent behavior deviating from historical norms
-- Unusual data transfer destinations
-- Resource consumption spikes
-- Repeated failures suggesting misconfiguration
-- Access patterns inconsistent with declared purpose
-
-Alerts go to users (for their agents) and facility operators (for their resources).
-
-### 7.6 Human Checkpoints
-
-Beyond passive monitoring, the architecture enforces active human oversight:
-
-- **Budget thresholds**: Agent pauses and requests approval before exceeding limits
-- **Sensitive actions**: High-cost or high-risk operations require explicit approval
-- **Periodic attestation**: Long-running agents require periodic "yes, keep going" confirmation
-- **Anomaly holds**: Unusual behavior triggers automatic pause pending review
-
-This ensures humans remain in control even when agents operate autonomously for extended periods.
-
----
-
-## 8. Security
-
-### 8.1 Threat Model
-
-| Threat | Attack | Mitigations |
-|--------|--------|-------------|
-| **Token theft** | Attacker obtains delegation tokens | Short-lived tokens, bound to agent identity, anomaly detection, fast revocation |
-| **Confused deputy** | Malicious input tricks agent into unauthorized action | Output destination validation, least-privilege, input validation at gateway |
-| **Privilege escalation** | Agent exceeds intended scope | Delegation cannot exceed delegator's authority, budget caps at gateway |
-| **Resource exhaustion** | Buggy/malicious agent submits excessive jobs | Rate limits, budget thresholds, fairshare, kill switches |
-| **Agent compromise** | Attacker controls agent runtime | Sandboxing, network egress restrictions, behavioral monitoring |
-| **Data exfiltration** | Agent transfers data to unauthorized location | Transfer destination policy, egress monitoring, large transfer approval |
-| **Orphaned agents** | User leaves; agent persists with stale authority | Delegation tied to IdP status, max lifetime, periodic attestation |
-
-### 8.2 Security Invariants
+### 7.2 Security Invariants
 
 1. **No authority amplification**: Agents cannot gain more authority than granted
 2. **Traceable actions**: Every invocation attributable to user + agent
@@ -415,7 +290,32 @@ This ensures humans remain in control even when agents operate autonomously for 
 4. **Site sovereignty**: Facilities can deny any request regardless of token validity
 5. **Fail secure**: Validation failures result in denial
 
-### 8.3 Incident Response
+### 7.3 Observability
+
+Every action generates an immutable record. For any result, you can trace the complete chain:
+
+```
+Result: binding_energy = -4.23 eV
+  ↳ Job aurora-12345 at ALCF
+    ↳ Agent: electrolyte-screening-agent
+      ↳ User: researcher@university.edu
+        ↳ Delegation: grant-789 (expires 2026-04-15)
+```
+
+This enables reproducibility, attribution, debugging, and compliance audits.
+
+**Real-time monitoring** provides dashboards for users (agent status, budget consumption) and facilities (active agents, invocation rates, anomalies). All records are **queryable** for forensics and audits.
+
+### 7.4 Human Oversight
+
+The architecture enforces active human control:
+
+- **Budget thresholds**: Agent pauses before exceeding limits
+- **Sensitive actions**: High-cost operations require explicit approval
+- **Periodic attestation**: Long-running agents require periodic confirmation
+- **Kill switches**: Users and facilities can immediately terminate agents
+
+### 7.5 Incident Response
 
 1. Revoke agent's tokens (propagates to all sites)
 2. Terminate running jobs
@@ -423,15 +323,9 @@ This ensures humans remain in control even when agents operate autonomously for 
 4. Notify user, facilities, security teams
 5. Remediate and review
 
-### 8.4 Policy Controls
-
-- **Delegation**: Scope-limited, time-limited, revocable, auditable
-- **Site control**: Which capabilities exposed, resource limits, policy enforcement
-- **Budgets**: Quotas, approval thresholds, rate limits, kill switches
-
 ---
 
-## 9. API Surface
+## 8. API Surface
 
 ### Capability API
 
@@ -458,39 +352,59 @@ approve_action(agent_id, action_id)
 
 ---
 
-## 10. Implications for DOE Facilities
+## 9. DOE Requirements
 
-### 10.1 What Facilities Provide
+### 9.1 What Facilities Provide
 
 **Capability Gateways** (building on Globus Compute):
 - Expose site-approved capabilities with schemas
 - Map invocations to local schedulers (Slurm, PBS)
 - Enforce site policy, handle credential translation
 
-**Example Capabilities**:
-
-| Facility | Capabilities |
-|----------|-------------|
+| Facility | Example Capabilities |
+|----------|---------------------|
 | ALCF | `aurora.run_dft`, `aurora.run_lammps`, `aurora.inference` |
 | OLCF | `frontier.run_vasp`, `frontier.gpu_inference` |
 | NERSC | `perlmutter.run_qe`, `perlmutter.data_analysis` |
 
 **Allocation Integration**: Invocations charged to ERCAP/INCITE/ALCC allocations; fairshare applies.
 
-### 10.2 What Facilities Retain
+### 9.2 What Facilities Retain
 
 - Which capabilities to expose
 - Who can invoke (allocation, project membership)
 - Resource limits per capability/user/agent
 - Security policy and override authority
 
-### 10.3 Benefits
+### 9.3 Policy Changes Required
 
-- **Reduced account burden**: No per-user home directories for many use cases
-- **Better utilization**: Agents optimize submission, automated retry
-- **Improved audit**: Capability-level logging, clear provenance
+Current policies assume human users with accounts. New policies must accommodate autonomous agents:
 
-### 10.4 Adoption Path
+| Area | Current | Required |
+|------|---------|----------|
+| **Identity** | Accounts at each site | Capability-based access; Globus Auth as trust anchor |
+| **Delegation** | Not supported | Standards for scope, time limits, revocation |
+| **Accounting** | Per-user at each site | Cross-site accounting; agent budget enforcement |
+| **Liability** | User responsible for jobs | Clear policy for agent misbehavior |
+| **Data** | Explicit user transfers | Policy for agent-initiated transfers; mandatory provenance |
+| **Oversight** | Implicit (human in loop) | Required approval thresholds, attestation, kill switches |
+| **Security** | Site-independent | Coordinated incident response; agent registration |
+
+### 9.4 Governance
+
+New cross-facility coordination required:
+
+- **Standards body**: Capability schemas, event formats, delegation protocols
+- **Policy alignment**: Security, accounting, operational policies
+- **Dispute resolution**: Conflicts between sites or users and sites
+
+### 9.5 Hardest Challenges
+
+1. **Cross-site accounting**: INCITE, ALCC, ERCAP have different rules—how do multi-site workflows get charged?
+2. **Liability clarity**: Existing user agreements don't contemplate autonomous agents
+3. **Governance consensus**: Getting independent facilities to agree on standards
+
+### 9.6 Adoption Path
 
 1. Expose a few high-value capabilities
 2. Add discovery and schema publication
@@ -499,126 +413,7 @@ approve_action(agent_id, action_id)
 
 ---
 
-## 11. Policy Changes Required Across DOE
-
-Enabling this architecture requires coordinated policy changes across DOE facilities. Current policies assume human users with individual accounts; new policies must accommodate autonomous agents acting under delegated authority.
-
-### 11.1 Identity and Access
-
-| Current Policy | Required Change |
-|----------------|-----------------|
-| Users must have accounts at each facility | Recognize **capability-based access** as alternative to full accounts |
-| Access tied to individual identity | Support **delegated authority**—agents acting on behalf of users |
-| Site-specific authentication | Cross-facility agreement on **Globus Auth as common trust anchor** |
-
-New policies needed:
-- Standards for delegation constraints (scope, time limits, revocation)
-- Requirements for agent identity registration
-- Rules for credential refresh and token lifetimes
-
-### 11.2 Allocation and Accounting
-
-| Current Policy | Required Change |
-|----------------|-----------------|
-| Allocations granted to PIs/projects | **Agent-submitted jobs count against user/project allocations** |
-| Usage tracked per user at each site | **Cross-site accounting** for multi-facility workflows |
-| No automated spending limits | **Agent budget limits** with enforcement |
-
-Key questions requiring policy decisions:
-- When a workflow spans ALCF→NERSC→OLCF, how is usage attributed?
-- Can agents request allocation increases, or only humans?
-- What reporting shows agent vs. direct usage?
-
-### 11.3 Security
-
-| Current Policy | Required Change |
-|----------------|-----------------|
-| Site-independent security policies | **Coordinated incident response** for cross-site agent issues |
-| User responsible for their jobs | Clear policy on **agent misbehavior liability** |
-| No agent-specific requirements | **Agent registration and approval** requirements |
-
-New policies needed:
-- Who can deploy agents? What vetting is required?
-- What are the sandboxing and isolation requirements?
-- When can a facility unilaterally terminate an agent?
-- How are anomalies detected and reported across sites?
-- What triggers automatic suspension?
-
-### 11.4 Liability and Responsibility
-
-This is a critical gap in current policy:
-
-| Question | Policy Needed |
-|----------|---------------|
-| Agent causes excessive resource consumption | Who is liable—user, agent developer, or facility? |
-| Agent transfers data to wrong location | What are the consequences and remediation? |
-| User leaves institution, agent keeps running | How are orphaned agents handled? |
-| Agent code has security vulnerability | What are the disclosure and response requirements? |
-
-Recommended policy elements:
-- Users remain ultimately responsible for their agents' actions
-- Facilities may require agent code review for high-privilege operations
-- Mandatory terms of service for agent deployment
-- Clear termination authority for facilities
-
-### 11.5 Data Governance
-
-| Current Policy | Required Change |
-|----------------|-----------------|
-| Transfers require explicit user action | Policy for **agent-initiated transfers** |
-| Site-specific data policies | **Cross-site data movement authorization** |
-| Provenance is optional | **Mandatory provenance** for agent-generated results |
-
-New policies needed:
-- Can agents move data autonomously, or only to pre-approved destinations?
-- What data classifications can agents access?
-- How long must provenance records be retained?
-
-### 11.6 Human Oversight Requirements
-
-Current policy implicitly assumes humans are in the loop. New policy must explicitly require:
-
-- **Approval thresholds**: Agents must pause for human approval before exceeding defined limits (compute hours, data volume, cost)
-- **Periodic attestation**: Long-running agents require periodic human confirmation to continue
-- **Real-time visibility**: Users must have access to dashboards showing agent activity
-- **Kill switches**: Both users and facilities must be able to immediately terminate agents
-
-### 11.7 Operational Coordination
-
-| Current State | Required Change |
-|---------------|-----------------|
-| Sites operate independently | **Common capability schema standard** |
-| Bilateral agreements | **Multi-lateral coordination** on agent policies |
-| Independent maintenance windows | **Coordinated communication** to agent operators |
-
-New coordination mechanisms needed:
-- Cross-facility working group to maintain capability standards
-- Dispute resolution process (if sites disagree on agent policies)
-- Policy evolution process as we learn from experience
-- Shared anomaly detection and threat intelligence
-
-### 11.8 Governance Structure
-
-No current structure exists for cross-facility agent governance. Required:
-
-1. **Standards body**: Define and maintain capability schemas, event formats, delegation protocols
-2. **Policy coordination**: Align security, accounting, and operational policies
-3. **Dispute resolution**: Handle conflicts between sites or between users and sites
-4. **Evolution process**: Update policies based on operational experience
-
-### 11.9 Hardest Policy Challenges
-
-Three issues will require significant effort:
-
-1. **Cross-site accounting**: Different allocation programs (INCITE, ALCC, ERCAP) with different rules—how do multi-site workflows get charged?
-
-2. **Liability clarity**: Legal and policy framework for autonomous agent actions—existing DOE user agreements don't contemplate agents
-
-3. **Governance consensus**: Getting independently-operated facilities to agree on common standards while preserving site autonomy
-
----
-
-## 12. Next Steps
+## 10. Next Steps
 
 ### Infrastructure
 

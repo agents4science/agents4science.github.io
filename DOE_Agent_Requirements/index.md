@@ -8,10 +8,11 @@
 4. [Foundation: Globus Services](#4-foundation-globus-services)
 5. [Architecture](#5-architecture)
 6. [Agents](#6-agents)
-7. [Security](#7-security)
-8. [API Surface](#8-api-surface)
-9. [Implications for DOE Facilities](#9-implications-for-doe-facilities)
-10. [Next Steps](#10-next-steps)
+7. [Observability](#7-observability-knowing-whats-happening)
+8. [Security](#8-security)
+9. [API Surface](#9-api-surface)
+10. [Implications for DOE Facilities](#10-implications-for-doe-facilities)
+11. [Next Steps](#11-next-steps)
 
 ---
 
@@ -270,9 +271,101 @@ stateDiagram-v2
 
 ---
 
-## 7. Security
+## 7. Observability: Knowing What's Happening
 
-### 7.1 Threat Model
+Autonomous agents operating across multiple facilities create a significant accountability challenge. The architecture ensures complete visibility through layered observability.
+
+### 7.1 What Gets Recorded
+
+Every action in the system generates an immutable record:
+
+| Layer | What's Captured |
+|-------|-----------------|
+| **Agent** | Every decision, state change, capability invocation, approval request |
+| **Gateway** | Every invocation: who, what, when, inputs, outputs, resources consumed |
+| **Facility** | Job submission, execution, resource usage, data movement |
+| **Auth** | Every token issued, refreshed, revoked; every authorization decision |
+
+### 7.2 End-to-End Provenance
+
+For any result, you can trace the complete chain:
+
+```
+Result: binding_energy = -4.23 eV
+  ↳ Produced by: job aurora-12345 at ALCF
+    ↳ Submitted by: agent electrolyte-screening-agent
+      ↳ Acting for: researcher@university.edu
+        ↳ Under delegation: grant-789 (expires 2026-04-15)
+          ↳ With inputs: molecule SMILES "CC(=O)O", method "B3LYP"
+            ↳ At time: 2026-03-30T14:23:07Z
+```
+
+This chain is cryptographically signed and stored, enabling:
+- **Reproducibility**: Re-run any computation with identical inputs
+- **Attribution**: Know exactly who/what produced every result
+- **Debugging**: Trace failures back to root cause
+- **Compliance**: Demonstrate proper authorization for audits
+
+### 7.3 Real-Time Visibility
+
+Users and facility operators have live dashboards showing:
+
+**For Users:**
+- Agent status (running, waiting, suspended)
+- Current goals and progress
+- Pending approval requests
+- Resource consumption vs. budget
+- Recent actions and outcomes
+
+**For Facilities:**
+- Active agents and their owners
+- Capability invocation rates
+- Resource utilization by agent/user
+- Anomalous patterns (sudden spikes, unusual destinations)
+
+### 7.4 Queryable History
+
+All records are queryable:
+
+```
+# What did my agent do last week?
+query agent=screening-agent time=last-7d
+
+# Who accessed this dataset?
+query capability=transfer target=dataset-xyz
+
+# Show all jobs that failed at NERSC yesterday
+query site=nersc status=failed time=yesterday
+```
+
+### 7.5 Alerts and Anomaly Detection
+
+The system actively monitors for concerning patterns:
+
+- Agent behavior deviating from historical norms
+- Unusual data transfer destinations
+- Resource consumption spikes
+- Repeated failures suggesting misconfiguration
+- Access patterns inconsistent with declared purpose
+
+Alerts go to users (for their agents) and facility operators (for their resources).
+
+### 7.6 Human Checkpoints
+
+Beyond passive monitoring, the architecture enforces active human oversight:
+
+- **Budget thresholds**: Agent pauses and requests approval before exceeding limits
+- **Sensitive actions**: High-cost or high-risk operations require explicit approval
+- **Periodic attestation**: Long-running agents require periodic "yes, keep going" confirmation
+- **Anomaly holds**: Unusual behavior triggers automatic pause pending review
+
+This ensures humans remain in control even when agents operate autonomously for extended periods.
+
+---
+
+## 8. Security
+
+### 8.1 Threat Model
 
 | Threat | Attack | Mitigations |
 |--------|--------|-------------|
@@ -284,7 +377,7 @@ stateDiagram-v2
 | **Data exfiltration** | Agent transfers data to unauthorized location | Transfer destination policy, egress monitoring, large transfer approval |
 | **Orphaned agents** | User leaves; agent persists with stale authority | Delegation tied to IdP status, max lifetime, periodic attestation |
 
-### 7.2 Security Invariants
+### 8.2 Security Invariants
 
 1. **No authority amplification**: Agents cannot gain more authority than granted
 2. **Traceable actions**: Every invocation attributable to user + agent
@@ -292,7 +385,7 @@ stateDiagram-v2
 4. **Site sovereignty**: Facilities can deny any request regardless of token validity
 5. **Fail secure**: Validation failures result in denial
 
-### 7.3 Incident Response
+### 8.3 Incident Response
 
 1. Revoke agent's tokens (propagates to all sites)
 2. Terminate running jobs
@@ -300,7 +393,7 @@ stateDiagram-v2
 4. Notify user, facilities, security teams
 5. Remediate and review
 
-### 7.4 Policy Controls
+### 8.4 Policy Controls
 
 - **Delegation**: Scope-limited, time-limited, revocable, auditable
 - **Site control**: Which capabilities exposed, resource limits, policy enforcement
@@ -308,7 +401,7 @@ stateDiagram-v2
 
 ---
 
-## 8. API Surface
+## 9. API Surface
 
 ### Capability API
 
@@ -335,9 +428,9 @@ approve_action(agent_id, action_id)
 
 ---
 
-## 9. Implications for DOE Facilities
+## 10. Implications for DOE Facilities
 
-### 9.1 What Facilities Provide
+### 10.1 What Facilities Provide
 
 **Capability Gateways** (building on Globus Compute):
 - Expose site-approved capabilities with schemas
@@ -354,20 +447,20 @@ approve_action(agent_id, action_id)
 
 **Allocation Integration**: Invocations charged to ERCAP/INCITE/ALCC allocations; fairshare applies.
 
-### 9.2 What Facilities Retain
+### 10.2 What Facilities Retain
 
 - Which capabilities to expose
 - Who can invoke (allocation, project membership)
 - Resource limits per capability/user/agent
 - Security policy and override authority
 
-### 9.3 Benefits
+### 10.3 Benefits
 
 - **Reduced account burden**: No per-user home directories for many use cases
 - **Better utilization**: Agents optimize submission, automated retry
 - **Improved audit**: Capability-level logging, clear provenance
 
-### 9.4 Adoption Path
+### 10.4 Adoption Path
 
 1. Expose a few high-value capabilities
 2. Add discovery and schema publication
@@ -376,7 +469,7 @@ approve_action(agent_id, action_id)
 
 ---
 
-## 10. Next Steps
+## 11. Next Steps
 
 ### Infrastructure
 

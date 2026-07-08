@@ -66,12 +66,21 @@ Example applications of agentic systems for scientific discovery.</p>
 </div>
 </div>
 
+<div style="flex: 1; min-width: 280px; display: flex; gap: 1rem; align-items: flex-start;">
+<img src="Assets/capabilities.png" alt="Resource Rights" style="width: 160px; height: 160px; object-fit: cover;">
+<div>
+<p><strong><a href="ResourceRights/">Resource Rights</a></strong><br>
+Scalable authorization architecture for autonomous scientific agents.</p>
+</div>
+</div>
+
 </div>
 
 ---
 
 ## What's New
 
+- [Resource Rights Architecture](ResourceRights/) — scalable authorization for autonomous agents (Jul 7, 2026)
 - [Greatly expanded set of Capability examples](Capabilities/README.md) (Feb 4, 2026)
 - First Agent of the Week: [OPAL — Plant Phenotyping Analysis Agent](https://github.com/AI-ModCon/BaseCAF_agent_of_the_week/blob/main/AotW-1-OPAL.md) (Jan 29, 2026)
 - [Slides from a talk at Trillion Parameter Consortium meeting](Assets/systems.pdf) on systems requirements for scalable agentic AI (Jan 28, 2026)

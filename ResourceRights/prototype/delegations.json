@@ -1,0 +1,29 @@
+[
+  {
+    "delegation_id": "01KWJ4T4DK7XWGYN4F4KF586F0",
+    "parent_id": null,
+    "delegator": "urn:globus:auth:identity:pi-123",
+    "grantee": "urn:globus:auth:identity:agent-456",
+    "resource_type": "storage",
+    "resource_id": "alcf-eagle-uuid",
+    "scope": {
+      "path": "/projects/materials-discovery",
+      "operations": [
+        "read",
+        "write"
+      ]
+    },
+    "quota": {
+      "bytes": 10995116277760
+    },
+    "consumed": {
+      "bytes": 0
+    },
+    "suspended": false,
+    "enforcement_ref": "dry-run-acl-gent-456",
+    "expires_at": null,
+    "revoked": true,
+    "revoked_at": "2026-07-02T19:27:46.362190",
+    "created_at": "2026-07-02T19:27:38.419955"
+  }
+]

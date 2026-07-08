@@ -47,22 +47,20 @@ A reference implementation of the core Delegation Service is available:
 <h3><a href="prototype/">Delegation Service Prototype</a></h3>
 <p>Python implementation demonstrating delegation chain validation, constraint propagation, and runtime authorization queries. Includes test suite and example delegation scenarios.</p>
 
-```
-ResourceRights/prototype/
+<pre><code>ResourceRights/prototype/
 ├── src/                    # Core implementation
 ├── tests/                  # Test suite  
 ├── delegations.json        # Example delegation chains
 ├── pyproject.toml          # Package configuration
 └── README.md               # Setup and usage guide
-```
+</code></pre>
 
 <p><strong>Quick start:</strong></p>
 
-```bash
-cd prototype
+<pre><code>cd prototype
 pip install -e .
 pytest                      # Run tests
-```
+</code></pre>
 </div>
 
 ---

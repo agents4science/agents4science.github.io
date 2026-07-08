@@ -2,6 +2,8 @@
 
 *Scalable authorization for autonomous scientific agents*
 
+<img src="resource-rights-header.svg" alt="Agent accessing federated resources with resource rights" style="max-width: 100%; margin: 1.5rem 0;">
+
 Scientific cyberinfrastructure is undergoing a fundamental transformation as autonomous AI agents become active participants in scientific discovery. Rather than serving solely as interactive assistants, these agents increasingly design simulations, analyze experimental results, orchestrate workflows, control laboratory instruments, and coordinate complex computational campaigns.
 
 **The challenge:** Existing authorization mechanisms were designed for direct human interaction with individual resources. They do not scale naturally to machine-mediated science where thousands of agents act on behalf of researchers across federated facilities.

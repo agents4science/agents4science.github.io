@@ -1,0 +1,143 @@
+<svg viewBox="0 0 800 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient for agent -->
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4f46e5;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradient for resources -->
+    <linearGradient id="hpcGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#10b981;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#059669;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="storageGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d97706;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="instrumentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ec4899;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#db2777;stop-opacity:1" />
+    </linearGradient>
+
+    <linearGradient id="repoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#7c3aed;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Token gradient -->
+    <linearGradient id="tokenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fbbf24;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f59e0b;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Glow filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Arrow marker -->
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="300" fill="#f8fafc"/>
+
+  <!-- Connection lines with tokens -->
+  <!-- To HPC -->
+  <line x1="400" y1="150" x2="140" y2="80" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8,4"/>
+  <g transform="translate(270, 115)">
+    <rect x="-22" y="-10" width="44" height="20" rx="4" fill="url(#tokenGrad)" filter="url(#glow)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#78350f">RIGHT</text>
+  </g>
+
+  <!-- To Storage -->
+  <line x1="400" y1="150" x2="140" y2="220" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8,4"/>
+  <g transform="translate(270, 185)">
+    <rect x="-22" y="-10" width="44" height="20" rx="4" fill="url(#tokenGrad)" filter="url(#glow)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#78350f">RIGHT</text>
+  </g>
+
+  <!-- To Instruments -->
+  <line x1="400" y1="150" x2="660" y2="80" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8,4"/>
+  <g transform="translate(530, 115)">
+    <rect x="-22" y="-10" width="44" height="20" rx="4" fill="url(#tokenGrad)" filter="url(#glow)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#78350f">RIGHT</text>
+  </g>
+
+  <!-- To Repository -->
+  <line x1="400" y1="150" x2="660" y2="220" stroke="#94a3b8" stroke-width="2" stroke-dasharray="8,4"/>
+  <g transform="translate(530, 185)">
+    <rect x="-22" y="-10" width="44" height="20" rx="4" fill="url(#tokenGrad)" filter="url(#glow)"/>
+    <text x="0" y="4" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" font-weight="600" fill="#78350f">RIGHT</text>
+  </g>
+
+  <!-- Central Agent -->
+  <g transform="translate(400, 150)">
+    <circle r="50" fill="url(#agentGrad)" filter="url(#glow)"/>
+    <!-- Robot/agent icon -->
+    <rect x="-20" y="-15" width="40" height="30" rx="6" fill="white" opacity="0.9"/>
+    <circle cx="-8" cy="-3" r="5" fill="#4f46e5"/>
+    <circle cx="8" cy="-3" r="5" fill="#4f46e5"/>
+    <rect x="-12" y="6" width="24" height="4" rx="2" fill="#4f46e5"/>
+    <!-- Antenna -->
+    <line x1="0" y1="-15" x2="0" y2="-25" stroke="white" stroke-width="2"/>
+    <circle cx="0" cy="-28" r="4" fill="white"/>
+    <text y="65" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#1e293b">Autonomous Agent</text>
+  </g>
+
+  <!-- HPC Resource -->
+  <g transform="translate(100, 80)">
+    <rect x="-50" y="-35" width="100" height="70" rx="8" fill="url(#hpcGrad)" filter="url(#glow)"/>
+    <!-- Server rack icon -->
+    <rect x="-30" y="-20" width="60" height="12" rx="2" fill="white" opacity="0.9"/>
+    <rect x="-30" y="-4" width="60" height="12" rx="2" fill="white" opacity="0.9"/>
+    <circle cx="-20" cy="-14" r="3" fill="#059669"/>
+    <circle cx="-20" cy="2" r="3" fill="#059669"/>
+    <rect x="5" y="-17" width="20" height="6" rx="1" fill="#059669" opacity="0.5"/>
+    <rect x="5" y="-1" width="20" height="6" rx="1" fill="#059669" opacity="0.5"/>
+    <text y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#1e293b">HPC System</text>
+  </g>
+
+  <!-- Storage Resource -->
+  <g transform="translate(100, 220)">
+    <rect x="-50" y="-35" width="100" height="70" rx="8" fill="url(#storageGrad)" filter="url(#glow)"/>
+    <!-- Storage icon (database cylinder) -->
+    <ellipse cx="0" cy="-15" rx="25" ry="8" fill="white" opacity="0.9"/>
+    <rect x="-25" y="-15" width="50" height="25" fill="white" opacity="0.9"/>
+    <ellipse cx="0" cy="10" rx="25" ry="8" fill="white" opacity="0.9"/>
+    <ellipse cx="0" cy="-15" rx="25" ry="8" fill="none" stroke="#d97706" stroke-width="2"/>
+    <line x1="-25" y1="-15" x2="-25" y2="10" stroke="#d97706" stroke-width="2"/>
+    <line x1="25" y1="-15" x2="25" y2="10" stroke="#d97706" stroke-width="2"/>
+    <text y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#1e293b">Storage</text>
+  </g>
+
+  <!-- Instruments Resource -->
+  <g transform="translate(700, 80)">
+    <rect x="-50" y="-35" width="100" height="70" rx="8" fill="url(#instrumentGrad)" filter="url(#glow)"/>
+    <!-- Microscope icon -->
+    <circle cx="0" cy="-10" r="12" fill="white" opacity="0.9"/>
+    <rect x="-4" y="2" width="8" height="18" fill="white" opacity="0.9"/>
+    <rect x="-15" y="12" width="30" height="6" rx="2" fill="white" opacity="0.9"/>
+    <circle cx="0" cy="-10" r="6" fill="#db2777" opacity="0.5"/>
+    <text y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#1e293b">Instruments</text>
+  </g>
+
+  <!-- Repository Resource -->
+  <g transform="translate(700, 220)">
+    <rect x="-50" y="-35" width="100" height="70" rx="8" fill="url(#repoGrad)" filter="url(#glow)"/>
+    <!-- Repository/folder icon -->
+    <path d="M-25,-10 L-25,15 L25,15 L25,-5 L5,-5 L0,-15 L-25,-15 Z" fill="white" opacity="0.9"/>
+    <rect x="-18" y="-2" width="20" height="3" rx="1" fill="#7c3aed" opacity="0.5"/>
+    <rect x="-18" y="4" width="30" height="3" rx="1" fill="#7c3aed" opacity="0.5"/>
+    <text y="50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" font-weight="500" fill="#1e293b">Repository</text>
+  </g>
+</svg>

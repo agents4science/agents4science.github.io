@@ -8,7 +8,7 @@ Scientific cyberinfrastructure is undergoing a fundamental transformation as aut
 
 **The challenge:** Existing authorization mechanisms were designed for direct human interaction with individual resources. They do not scale naturally to machine-mediated science where thousands of agents act on behalf of researchers across federated facilities.
 
-**The solution:** The *Resource Rights Architecture* treats authority as an explicit, measurable, delegable, and revocable object—independent of the identity currently exercising it. Resource rights represent the authority to consume or manipulate scientific resources: computational allocations, storage capacity, instrument time, repository access, workflow execution, and AI services.
+**A potential solution:** The *Resource Rights Architecture* treats authority as an explicit, measurable, delegable, and revocable object—independent of the identity currently exercising it. Resource rights represent the authority to consume or manipulate scientific resources: computational allocations, storage capacity, instrument time, repository access, workflow execution, and AI services.
 
 ---
 

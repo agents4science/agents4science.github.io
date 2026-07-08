@@ -1,0 +1,138 @@
+<svg viewBox="0 0 1200 700" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0f172a"/>
+      <stop offset="100%" style="stop-color:#1e293b"/>
+    </linearGradient>
+    <linearGradient id="agentGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#22c55e"/>
+      <stop offset="100%" style="stop-color:#16a34a"/>
+    </linearGradient>
+    <linearGradient id="resourceGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#3b82f6"/>
+      <stop offset="100%" style="stop-color:#2563eb"/>
+    </linearGradient>
+    <linearGradient id="warningGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f59e0b"/>
+      <stop offset="100%" style="stop-color:#d97706"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <marker id="arrowWhite" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <polygon points="0 0, 8 3, 0 6" fill="#94a3b8"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="700" fill="url(#bgGrad)"/>
+
+  <!-- Title -->
+  <text x="600" y="55" text-anchor="middle" font-family="system-ui, sans-serif" font-size="36" font-weight="700" fill="#f8fafc">The Autonomous Discovery Problem</text>
+
+  <!-- ========== LEFT SIDE: Scenario ========== -->
+
+  <!-- Scenario box -->
+  <rect x="40" y="85" width="520" height="280" rx="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+  <text x="60" y="120" font-family="system-ui, sans-serif" font-size="18" font-weight="600" fill="#22c55e">Scenario: Autonomous Materials Discovery</text>
+
+  <text x="60" y="155" font-family="system-ui, sans-serif" font-size="14" fill="#cbd5e1">Dr. Chen's AI agent searches for battery electrolytes:</text>
+
+  <!-- Task list -->
+  <g font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">
+    <circle cx="75" cy="185" r="4" fill="#3b82f6"/>
+    <text x="90" y="190">Run 50,000 DFT simulations at ALCF</text>
+    <text x="90" y="208" font-size="12" fill="#64748b">(consuming 200K node-hours)</text>
+
+    <circle cx="75" cy="235" r="4" fill="#8b5cf6"/>
+    <text x="90" y="240">Store 15 TB of results at NERSC</text>
+
+    <circle cx="75" cy="270" r="4" fill="#ec4899"/>
+    <text x="90" y="275">Query materials databases</text>
+    <text x="90" y="293" font-size="12" fill="#64748b">(ICSD, Materials Project, AFLOW)</text>
+
+    <circle cx="75" cy="320" r="4" fill="#f59e0b"/>
+    <text x="90" y="325">Iterate autonomously for 3 weeks</text>
+    <text x="90" y="343" font-size="12" fill="#64748b">refining candidates based on results</text>
+  </g>
+
+  <!-- ========== CENTER: Visual ========== -->
+
+  <!-- Agent icon -->
+  <g transform="translate(780, 200)">
+    <circle r="50" fill="url(#agentGrad)" filter="url(#glow)"/>
+    <rect x="-22" y="-18" width="44" height="36" rx="8" fill="white" opacity="0.9"/>
+    <circle cx="-8" cy="-5" r="6" fill="#16a34a"/>
+    <circle cx="8" cy="-5" r="6" fill="#16a34a"/>
+    <rect x="-12" y="6" width="24" height="5" rx="2" fill="#16a34a"/>
+    <line x1="0" y1="-18" x2="0" y2="-30" stroke="white" stroke-width="2"/>
+    <circle cx="0" cy="-34" r="5" fill="white"/>
+    <text y="75" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="600" fill="#22c55e">Discovery Agent</text>
+    <text y="93" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#64748b">~1,000 decisions/day</text>
+  </g>
+
+  <!-- Resources -->
+  <g transform="translate(980, 110)">
+    <rect x="-55" y="-25" width="110" height="50" rx="8" fill="url(#resourceGrad)" filter="url(#glow)"/>
+    <text y="5" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="white">ALCF</text>
+    <text y="45" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">500K hrs allocated</text>
+  </g>
+  <g transform="translate(1100, 200)">
+    <rect x="-55" y="-25" width="110" height="50" rx="8" fill="url(#resourceGrad)" filter="url(#glow)"/>
+    <text y="5" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="white">NERSC</text>
+    <text y="45" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">100 TB quota</text>
+  </g>
+  <g transform="translate(980, 290)">
+    <rect x="-55" y="-25" width="110" height="50" rx="8" fill="url(#resourceGrad)" filter="url(#glow)"/>
+    <text y="5" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="white">Databases</text>
+    <text y="45" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#94a3b8">+ genomics data</text>
+  </g>
+
+  <!-- Connection lines -->
+  <line x1="830" y1="175" x2="920" y2="125" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowWhite)"/>
+  <line x1="830" y1="200" x2="1040" y2="200" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowWhite)"/>
+  <line x1="830" y1="225" x2="920" y2="275" stroke="#94a3b8" stroke-width="2" stroke-dasharray="6,4" marker-end="url(#arrowWhite)"/>
+
+  <!-- ========== BOTTOM: The Dilemma ========== -->
+
+  <!-- Dilemma box -->
+  <rect x="40" y="390" width="1120" height="280" rx="12" fill="#1e293b" stroke="#f59e0b" stroke-width="2"/>
+
+  <text x="600" y="430" text-anchor="middle" font-family="system-ui, sans-serif" font-size="20" font-weight="700" fill="url(#warningGrad)">The Dilemma</text>
+
+  <!-- Two columns -->
+  <!-- Left: Can't approve each -->
+  <g transform="translate(200, 480)">
+    <circle r="30" fill="#ef4444" opacity="0.2"/>
+    <text y="-50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc">Cannot approve each decision</text>
+    <text y="-30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">That defeats the purpose of autonomy</text>
+    <text y="7" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" fill="#ef4444">✗</text>
+  </g>
+
+  <!-- Right: Can't give full credentials -->
+  <g transform="translate(600, 480)">
+    <circle r="30" fill="#ef4444" opacity="0.2"/>
+    <text y="-50" text-anchor="middle" font-family="system-ui, sans-serif" font-size="15" font-weight="600" fill="#f8fafc">Cannot give full credentials</text>
+    <text y="-30" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" fill="#94a3b8">Agent could exceed task requirements</text>
+    <text y="7" text-anchor="middle" font-family="system-ui, sans-serif" font-size="40" fill="#ef4444">✗</text>
+  </g>
+
+  <!-- Constraints list -->
+  <g transform="translate(1000, 460)" font-family="system-ui, sans-serif" font-size="12" fill="#94a3b8">
+    <text y="0" font-size="14" font-weight="600" fill="#f8fafc">Required constraints:</text>
+    <text y="25">• Use at most 200K of 500K hours</text>
+    <text y="45">• Use at most 15 TB of 100 TB</text>
+    <text y="65">• Access materials DBs only</text>
+    <text y="85">• Revocable at any moment</text>
+  </g>
+
+  <!-- Bottom question -->
+  <rect x="150" y="590" width="900" height="60" rx="8" fill="#0f172a" stroke="#22c55e" stroke-width="2"/>
+  <text x="600" y="628" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#f8fafc">How do you give an autonomous agent <tspan font-weight="700" fill="#22c55e">enough</tspan> authority to operate independently,</text>
+  <text x="600" y="650" text-anchor="middle" font-family="system-ui, sans-serif" font-size="16" fill="#f8fafc">but <tspan font-weight="700" fill="#f59e0b">bounded</tspan> authority that can be <tspan font-weight="700" fill="#ef4444">revoked</tspan> at any moment?</text>
+
+</svg>

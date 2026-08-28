@@ -37,12 +37,47 @@ space, and over component graphs, respectively.
 ## Try it
 
     python3 queries/matchmaker.py "trace element distribution in plant roots"
-    # ALS's XRF microprobe is not operational; the catalog answers with
-    # the operational APS microprobes (GSECARS 13-ID-E, 2-ID-E) instead.
+
+The ALS XRF microprobe (10.3.2) is not operational, so the catalog
+answers cross-facility with the operational APS microprobes:
+
+```
+
+QUERY: "trace element distribution in plant roots"
+  1. [ 28.2] aps-13-id-e  13-ID-E GSECARS X-ray Microprobe
+         status=operational  record_depth=deep
+         techniques: micro-XRF, micro-XAFS, micro-XRD, fCMT
+         matched measurables: composition, distribution, element, elemental, fluorescence, trace
+         matched demonstrated_applications: fluorescence, plant, roots, trace
+  2. [ 26.7] aps-2-id-e  2-ID-E X-ray Fluorescence Microprobe
+         status=operational  record_depth=deep
+         techniques: XFM, XRF-CT, X-ray fluorescence laminography, micro-XANES
+         matched measurables: composition, distribution, element, elemental, trace
+  ...
+```
 
     python3 queries/ir_matcher.py queries/requests/cu_operando.json
-    # structured request -> per-constraint verdicts; resolves to ALS 9.3.2,
-    # verifying a 1 Torr CO2 requirement against the record's quoted 10 Torr.
+
+A structured request (operando Cu oxidation state, 1 Torr CO2) gets
+per-constraint verdicts; `+` = verified pass, `?` = unknown (missing
+data is never treated as failure):
+
+```
+REQUEST: We have a 10 mm copper catalyst pellet and want to follow the oxidation state of the Cu surface while it is exposed to about 1 Torr of CO2 at room temperature. The measurement must be element-specific. The sample must not be powdered. Non-destructive strongly preferred; we don't need spatial mapping.
+
+=== CANDIDATES (3) ===
+
+1. [ 24.1] als-9.3.2  Beamline 9.3.2 — Ambient-Pressure Soft X-Ray Photoelectron Spectroscopy  (depth=deep)
+     + status                     operational
+     + sample state               accepts 'solid'
+     ? vacuum tolerance           vacuum tolerance not constrained
+     + in-situ gas environment    stated gas-pressure capability 10 torr >= requested 1 Torr
+     + element specificity        offers an element-specific technique
+     ? edge coverage              no absorption edge of ['Cu'] in 200-900 eV, but photoemission probes core-level binding energies instead - needs adjudication against core levels
+     ? spatial resolution         no spatial-resolution requirement
+
+  ...
+```
 
     # as an MCP server (requires `pip install mcp`):
     claude mcp add capability-graph -- python3 $(pwd)/queries/mcp_server.py

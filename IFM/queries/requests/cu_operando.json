@@ -1,0 +1,93 @@
+{
+  "observable": {
+    "text": "follow the oxidation state of the Cu surface",
+    "vocab": [
+      "oxidation state",
+      "chemical state"
+    ],
+    "element_specific": true,
+    "elements_of_interest": [
+      "Cu"
+    ]
+  },
+  "target": {
+    "state": "solid",
+    "composition_hint": "copper catalyst",
+    "size": "10 mm pellet",
+    "quantity_available": "one 10 mm pellet",
+    "tolerates": {
+      "sectioning_or_powdering": false
+    }
+  },
+  "conditions": {
+    "in_situ": true,
+    "time_resolved": true,
+    "environment": {
+      "gas": "CO2",
+      "pressure": {
+        "value": 1,
+        "unit": "Torr"
+      },
+      "temperature": {
+        "value": 293,
+        "unit": "K"
+      }
+    }
+  },
+  "requirements": {
+    "depth_sensitivity": "surface",
+    "dimensionality": "point"
+  },
+  "preferences": {
+    "nondestructive": true
+  },
+  "elicitation": {
+    "stated": [
+      "observable.text",
+      "observable.element_specific",
+      "observable.elements_of_interest",
+      "target.composition_hint",
+      "target.size",
+      "target.tolerates.sectioning_or_powdering",
+      "conditions.environment.gas",
+      "conditions.environment.pressure",
+      "requirements.depth_sensitivity",
+      "preferences.nondestructive"
+    ],
+    "inferred": [
+      {
+        "field": "target.state",
+        "basis": "'pellet' implies a solid sample"
+      },
+      {
+        "field": "target.quantity_available",
+        "basis": "user described 'a 10 mm copper catalyst pellet', implying a single pellet"
+      },
+      {
+        "field": "conditions.in_situ",
+        "basis": "'while it is exposed to about 1 Torr of CO2' requires measurement under reaction conditions"
+      },
+      {
+        "field": "conditions.time_resolved",
+        "basis": "'follow the oxidation state' implies monitoring evolution over time"
+      },
+      {
+        "field": "conditions.environment.temperature",
+        "basis": "user stated 'room temperature'; normalized to 293 K (value not stated numerically)"
+      },
+      {
+        "field": "requirements.dimensionality",
+        "basis": "user stated 'we don't need spatial mapping', implying a point measurement suffices"
+      }
+    ],
+    "unresolved": [
+      "requirements.temporal_resolution",
+      "requirements.energy_resolution",
+      "target.tolerates.vacuum",
+      "target.tolerates.beam_damage",
+      "conditions.environment.pressure.hardness (is 1 Torr a strict requirement or approximate target?)",
+      "measurement duration / exposure timescale"
+    ],
+    "original_text": "We have a 10 mm copper catalyst pellet and want to follow the oxidation state of the Cu surface while it is exposed to about 1 Torr of CO2 at room temperature. The measurement must be element-specific. The sample must not be powdered. Non-destructive strongly preferred; we don't need spatial mapping."
+  }
+}

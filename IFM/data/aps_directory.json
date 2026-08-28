@@ -1,0 +1,2282 @@
+[
+  {
+    "id": "aps-1-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "High-Energy X-ray Diffraction and Imaging (XSD Materials Physics & Engineering) (Beamline 1-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "high-energy X-ray diffraction"
+      },
+      {
+        "name": "high-energy diffraction microscopy (HEDM)"
+      },
+      {
+        "name": "simultaneous SAXS/WAXS"
+      },
+      {
+        "name": "high-energy imaging/tomography"
+      }
+    ],
+    "measurables": [
+      "3d microstructure",
+      "internal morphology (non-destructive)",
+      "2d/3d morphology",
+      "grain-resolved 3d microstructure and strain (bulk)",
+      "crystal structure",
+      "phase identification",
+      "nanoscale size and shape distributions",
+      "crystalline phase identification",
+      "molecular packing"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.osti.gov/servlets/purl/1840758",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS operations beamline for high-energy (50-100 keV class) diffraction/imaging of bulk materials. Do-no-harm beamline under APS-U; Aug 2025 APS update mentions new hypersonic-materials test rig being designed for 1-ID with the upgraded beam, but explicit user-operations status not sourced."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS operations beamline for high-energy (50-100 keV class) diffraction/imaging of bulk materials. Do-no-harm beamline under APS-U; Aug 2025 APS update mentions new hypersonic-materials test rig being designed for 1-ID with the upgraded beam, but explicit user-operations status not sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-1-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Optics and Detector Testing / X-ray Topography (XSD) (Beamline 1-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "X-ray topography"
+      },
+      {
+        "name": "optics testing"
+      },
+      {
+        "name": "detector testing"
+      }
+    ],
+    "measurables": [
+      "crystal defect distribution",
+      "x-ray optics and detector characterization"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0022024826000059",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Journal of Crystal Growth paper reports the topography beamline 1-BM was recommissioned in January 2025 after the APS Upgrade."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-3-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Nuclear Resonant Scattering (XSD) (Beamline 3-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "nuclear resonant inelastic X-ray scattering (NRIXS)"
+      },
+      {
+        "name": "nuclear forward scattering / synchrotron Moessbauer spectroscopy"
+      }
+    ],
+    "measurables": [
+      "electronic excitations",
+      "chemical bonding states",
+      "electronic and vibrational excitations (phonons)",
+      "phonon density of states of Moessbauer isotopes",
+      "hyperfine/magnetic state"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://seescience.org/beamline-science/our-synchrotron-facilities/aps/upgrade-status/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Works at nuclear resonance energies (e.g. 57Fe 14.4 keV; 83Kr, 151Eu, 161Dy planned); 1.5x12 um focus for 57Fe. SEES reports full general user operations restored for APS 2025-3 cycle."
+      },
+      {
+        "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Works at nuclear resonance energies (e.g. 57Fe 14.4 keV; 83Kr, 151Eu, 161Dy planned); 1.5x12 um focus for 57Fe. SEES reports full general user operations restored for APS 2025-3 cycle."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-4-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "POLAR - Polarization Modulation Spectroscopy (APS-U feature beamline) (Beamline 4-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "X-ray magnetic circular/linear dichroism (XMCD/XMLD)"
+      },
+      {
+        "name": "resonant elastic X-ray scattering"
+      },
+      {
+        "name": "polarization-modulated hard X-ray spectroscopy"
+      },
+      {
+        "name": "dichroic ptychography"
+      },
+      {
+        "name": "dichroic tomography"
+      },
+      {
+        "name": "diffraction under magnetic field / pressure / strain"
+      }
+    ],
+    "measurables": [
+      "element-specific magnetization",
+      "magnetic ordering",
+      "magnetic ordering and domain correlations",
+      "nanoscale morphology (highest-resolution x-ray imaging)",
+      "3d microstructure",
+      "internal morphology (non-destructive)",
+      "crystal structure",
+      "phase identification"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Feature-Beamlines/Polar",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. One of nine APS-U feature beamlines; quantum/magnetic materials with tunable polarization, high field, extreme pressure, uniaxial strain environments. First light late 2024/early 2025; per MEDSI'25 all feature beamlines met KPPs. Full general-user status as of 2026 not explicitly sourced."
+      },
+      {
+        "source_url": "https://meetings-archive.aps.org/smt/2025/mar-g10/3/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. One of nine APS-U feature beamlines; quantum/magnetic materials with tunable polarization, high field, extreme pressure, uniaxial strain environments. First light late 2024/early 2025; per MEDSI'25 all feature beamlines met KPPs. Full general-user status as of 2026 not explicitly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-5-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "DND-CAT (DuPont-Northwestern-Dow) insertion device beamline (Beamline 5-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "simultaneous SAXS/MAXS/WAXS (5-ID-D, ~7.5 m pinhole camera)"
+      },
+      {
+        "name": "X-ray scattering of polymers and soft matter"
+      },
+      {
+        "name": "diffraction"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "nanoscale size and shape distributions",
+      "crystalline phase identification",
+      "molecular packing"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://small-angle.aps.anl.gov/aps-saxs-beamlines",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by Northwestern University with Dow and DuPont. Post-APS-U operations status not directly sourced."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/9",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by Northwestern University with Dow and DuPont. Post-APS-U operations status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-5-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "DND-CAT bending magnet beamline (Beamline 5-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "EXAFS/XANES (dedicated EXAFS setup)"
+      },
+      {
+        "name": "four-circle X-ray diffraction"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "local chemical environment and speciation",
+      "chemical speciation",
+      "local coordination environment",
+      "crystal structure",
+      "phase identification"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/226",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 5-BM-B/D stations; DND-CAT. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-6-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Multi-Anvil Press / energy-dispersive diffraction (6-BM-B) (Beamline 6-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "large-volume multi-anvil press high-pressure research"
+      },
+      {
+        "name": "energy-dispersive X-ray diffraction"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "structure and equation of state at extreme pressure",
+      "structure at high pressure-temperature (large volume)",
+      "structure at high pressure (energy-dispersive)"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. SEES-affiliated; scientific commissioning completed and full general user operations restored for APS 2025-3 cycle."
+      },
+      {
+        "source_url": "https://seescience.org/beamline-science/our-synchrotron-facilities/aps/upgrade-status/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. SEES-affiliated; scientific commissioning completed and full general user operations restored for APS 2025-3 cycle."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-6-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Magnetic and high-energy scattering (XSD; 6-ID-B,C and 6-ID-D) (Beamline 6-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "resonant magnetic X-ray scattering (6-ID-B,C)"
+      },
+      {
+        "name": "surface/interface diffraction"
+      },
+      {
+        "name": "high-energy diffraction / total scattering (6-ID-D)"
+      }
+    ],
+    "measurables": [
+      "magnetic ordering and domain correlations",
+      "local atomic structure of disordered/nanocrystalline materials",
+      "crystal structure",
+      "phase identification"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Sector-6/6-ID-B-C",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U user-operations status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-7-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Time-Resolved X-ray Science (XSD) (Beamline 7-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "ultrafast pump-probe X-ray diffraction"
+      },
+      {
+        "name": "time-resolved X-ray spectroscopy"
+      },
+      {
+        "name": "laser pump / X-ray probe experiments"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "ultrafast structural and electronic dynamics"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Sector-7/7-ID",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Dedicated to pump-probe experiments with ultrafast high-intensity lasers. Post-APS-U status not directly sourced."
+      },
+      {
+        "source_url": "https://www.osti.gov/biblio/1351262",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Dedicated to pump-probe experiments with ultrafast high-intensity lasers. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-7-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Time-resolved fluid dynamics imaging (XSD Imaging) (Beamline 7-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "time-resolved radiography of fluid dynamics/sprays"
+      },
+      {
+        "name": "white-beam imaging"
+      },
+      {
+        "name": "micro-tomography"
+      }
+    ],
+    "measurables": [
+      "3d microstructure",
+      "internal morphology (non-destructive)",
+      "2d/3d morphology",
+      "time-resolved internal dynamics (2d projection)",
+      "time-resolved structural evolution",
+      "fluid/spray dynamics"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://pubmed.ncbi.nlm.nih.gov/22713903/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Runs the shared TomoScan tomography control system with 2-BM and 32-ID. Post-APS-U status not directly sourced."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Imaging/Beamlines/2-BM-A-B",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Runs the shared TomoScan tomography control system with 2-BM and 32-ID. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-8-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "XPCS - X-ray Photon Correlation Spectroscopy (APS-U feature beamline; 8-ID-E/8-ID-I) (Beamline 8-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "X-ray photon correlation spectroscopy (small-angle and wide-angle)"
+      },
+      {
+        "name": "coherent X-ray scattering"
+      },
+      {
+        "name": "dynamics of liquids, gels, glasses and quantum materials"
+      }
+    ],
+    "measurables": [
+      "equilibrium and non-equilibrium dynamics (ns-hours)",
+      "nanoscale structure, strain and dynamics",
+      "time-resolved structural evolution"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Feature-Beamlines/X-ray-Photon-Correlation-Spectroscopy",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. First APS-U feature beamline declared ready for science (November 2024) and first to take users; exploits the upgraded ring's increased coherence."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/APS-News/2024-11-06/first-aps-upgrade-feature-beamline-ready-for-science/2024-11-06/first-aps",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. First APS-U feature beamline declared ready for science (November 2024) and first to take users; exploits the upgraded ring's increased coherence."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-9-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "CSSI - Coherent Surface Scattering Imaging (APS-U feature beamline) (Beamline 9-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "coherent surface scattering imaging"
+      },
+      {
+        "name": "grazing-incidence coherent X-ray scattering"
+      },
+      {
+        "name": "3D imaging of thin films, surfaces and interfaces"
+      }
+    ],
+    "measurables": [
+      "nanoscale structure, strain and dynamics",
+      "2d/3d morphology"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Feature-Beamlines/Coherent-Surface-Scattering-Imaging",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS-U feature beamline; includes the 'Grand Tube' long flight path. In commissioning per 2024-2025 APS-U updates. (Former 9-ID USAXS program relocated to 12-ID-E.)"
+      },
+      {
+        "source_url": "https://pubs.aip.org/aca/sdy/article/12/2_Supplement/A302/3343503/State-of-the-Art-Instruments-for-Dynamics-and",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS-U feature beamline; includes the 'Grand Tube' long flight path. In commissioning per 2024-2025 APS-U updates. (Former 9-ID USAXS program relocated to 12-ID-E.)"
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-9-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "X-ray Absorption Spectroscopy (XSD Spectroscopy) (Beamline 9-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "XANES"
+      },
+      {
+        "name": "EXAFS"
+      },
+      {
+        "name": "transmission and fluorescence XAS"
+      }
+    ],
+    "measurables": [
+      "elemental composition",
+      "trace element distribution",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "chemical speciation",
+      "local coordination environment"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/18",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. General-purpose XAS beamline (9-BM-B,C). Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-10-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "MR-CAT (Materials Research CAT) insertion device beamline (Beamline 10-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "XAFS/XANES/EXAFS"
+      },
+      {
+        "name": "microprobe X-ray fluorescence"
+      }
+    ],
+    "measurables": [
+      "elemental composition",
+      "trace element distribution",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "chemical speciation",
+      "local coordination environment"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "http://mrcat.iit.edu/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by an IIT-led consortium; catalysis, environmental and materials spectroscopy. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-10-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "MR-CAT bending magnet beamline (Beamline 10-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "XAFS (XANES/EXAFS)"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "local chemical environment and speciation",
+      "chemical speciation",
+      "local coordination environment"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "http://mrcat.iit.edu/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-11-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "High-Resolution Powder Diffractometer (mail-in service) (Beamline 11-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "high-resolution powder X-ray diffraction (dd/d < 1.2e-4)"
+      },
+      {
+        "name": "mail-in powder diffraction"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "lattice parameters"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://11bm.xray.aps.anl.gov/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS Structural Science group reports scientific commissioning complete after APS-U enhancements; 11-BM accepting user proposals (initially limited) in 2025."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Structural-Science",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS Structural Science group reports scientific commissioning complete after APS-U enhancements; 11-BM accepting user proposals (initially limited) in 2025."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-11-id-b",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Total scattering / Pair Distribution Function beamline (Beamline 11-ID-B)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "X-ray total scattering"
+      },
+      {
+        "name": "pair distribution function (PDF) analysis"
+      },
+      {
+        "name": "high-energy powder diffraction"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "lattice parameters",
+      "local atomic structure of disordered/nanocrystalline materials"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/16",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Dedicated PDF station; fixed energies of 59 and 87 keV. Scientific commissioning complete after APS-U; accepting (initially limited) user proposals in 2025."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Structural-Science",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Dedicated PDF station; fixed energies of 59 and 87 keV. Scientific commissioning complete after APS-U; accepting (initially limited) user proposals in 2025."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        59000,
+        87000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-11-id-c",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "High-energy diffraction beamline (Beamline 11-ID-C)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "high-energy X-ray powder diffraction"
+      },
+      {
+        "name": "in situ / operando diffraction"
+      },
+      {
+        "name": "pair distribution function measurements"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "lattice parameters",
+      "local atomic structure of disordered/nanocrystalline materials"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.osti.gov/servlets/purl/1840758",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Very high fixed-energy (~100 keV class) station. Scientific commissioning complete after APS-U; accepting (initially limited) user proposals in 2025."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Structural-Science",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Very high fixed-energy (~100 keV class) station. Scientific commissioning complete after APS-U; accepting (initially limited) user proposals in 2025."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-12-id-b",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "SAXS/WAXS and GISAXS beamline (XSD Chemical & Materials Science) (Beamline 12-ID-B)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "small-angle X-ray scattering"
+      },
+      {
+        "name": "simultaneous SAXS/WAXS"
+      },
+      {
+        "name": "grazing-incidence SAXS (GISAXS)"
+      },
+      {
+        "name": "time-resolved SAXS"
+      },
+      {
+        "name": "grazing-incidence wide-angle X-ray scattering",
+        "acronym": "GIWAXS"
+      }
+    ],
+    "measurables": [
+      "nanoscale size and shape distributions",
+      "crystalline phase identification",
+      "molecular packing",
+      "thin-film nanostructure and morphology"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://12idb.xray.aps.anl.gov/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Solids and solutions. Post-APS-U user-operations status not directly sourced."
+      },
+      {
+        "source_url": "https://small-angle.aps.anl.gov/aps-saxs-beamlines",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Solids and solutions. Post-APS-U user-operations status not directly sourced."
+      },
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3 (local: ~/AAA/Papers/PCL_PoLARIS_2025/Instrument Inventory Table v3.pdf)",
+        "retrieved": "2026-08-27",
+        "notes": "ENRICHMENT from second independent source: PoLARIS inventory lists 12-ID-B as Existing with UR3 robotic arm, GIWAXS for SD-2 Project 1, grazing-incidence + transmission geometries. Status upgraded unknown->operational on this basis."
+      }
+    ],
+    "record_depth": "directory",
+    "automation": {
+      "robotic_sample_exchange": "UR3 arm (existing) for automated sample loading, alignment, and data collection",
+      "orchestration": "PoLARIS MADSci node (planned, via APS user project)"
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "throughput": {
+      "availability": "by allocated beam time through APS user project"
+    }
+  },
+  {
+    "id": "aps-12-id-e",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "USAXS/SAXS/WAXS facility and 10 m SAXS (USAXS relocated from 9-ID under APS-U) (Beamline 12-ID-E)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "ultra-small-angle X-ray scattering (USAXS)"
+      },
+      {
+        "name": "SAXS"
+      },
+      {
+        "name": "WAXS"
+      },
+      {
+        "name": "combined ptychography + SAXS (Pty-co-SAXS)"
+      }
+    ],
+    "measurables": [
+      "nanoscale morphology (highest-resolution x-ray imaging)",
+      "structure spanning ~1 nm to ~1 um (continuous q)",
+      "nanoscale size and shape distributions",
+      "crystalline phase identification",
+      "molecular packing"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://usaxs.xray.aps.anl.gov/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. USAXS at 12-ID-E since the 2024 APS-U upgrade; q-range ~1e-5 to ~10 1/A; ~2000 h/yr allocated."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Sector-12/12-ID-E",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. USAXS at 12-ID-E since the 2024 APS-U upgrade; q-range ~1e-5 to ~10 1/A; ~2000 h/yr allocated."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-12-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "XAS with combined SAXS/WAXS (XSD) (Beamline 12-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "XANES"
+      },
+      {
+        "name": "EXAFS"
+      },
+      {
+        "name": "combined XAS-SAXS/WAXS"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "local chemical environment and speciation",
+      "chemical speciation",
+      "local coordination environment",
+      "nanoscale size and shape distributions",
+      "crystalline phase identification",
+      "molecular packing"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://eberlight.aps.anl.gov/techniques",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-13-id-c-d",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "GSECARS high-pressure insertion device stations (Beamline 13-ID-C/D)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "laser-heated diamond anvil cell diffraction"
+      },
+      {
+        "name": "large volume press / Paris-Edinburgh press experiments"
+      },
+      {
+        "name": "surface/interface scattering"
+      },
+      {
+        "name": "high-pressure single-crystal and powder diffraction"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "lattice parameters",
+      "structure and equation of state at extreme pressure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Earth/planetary science under extreme P-T. In scientific commissioning through APS 2025-2/2025-3 cycles; some user experiments supported."
+      },
+      {
+        "source_url": "https://gsecars.uchicago.edu/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Earth/planetary science under extreme P-T. In scientific commissioning through APS 2025-2/2025-3 cycles; some user experiments supported."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-13-bm-c",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "GSECARS bending magnet station C (Beamline 13-BM-C)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "diamond anvil cell diffraction"
+      },
+      {
+        "name": "surface/interface science"
+      },
+      {
+        "name": "in-situ powder diffraction"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "lattice parameters",
+      "structure and equation of state at extreme pressure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Full general user operations restored for APS 2025-3 cycle."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-13-bm-d",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "GSECARS bending magnet station D (Beamline 13-BM-D)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "computed micro-tomography (white and pink beam)"
+      },
+      {
+        "name": "diamond anvil cell diffraction"
+      },
+      {
+        "name": "large volume press experiments"
+      }
+    ],
+    "measurables": [
+      "3d microstructure",
+      "internal morphology (non-destructive)",
+      "crystal structure",
+      "phase identification",
+      "structure and equation of state at extreme pressure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Large volume press at 100% operations; full general user operations for 2025-3 cycle."
+      },
+      {
+        "source_url": "https://seescience.org/beamline-science/our-synchrotron-facilities/aps/upgrade-status/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Large volume press at 100% operations; full general user operations for 2025-3 cycle."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-14-id-b",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "BioCARS (University of Chicago) - time-resolved structural biology (Beamline 14-ID-B)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "time-resolved Laue macromolecular crystallography"
+      },
+      {
+        "name": "serial Laue micro-crystallography"
+      },
+      {
+        "name": "time-resolved pump-probe X-ray solution scattering"
+      },
+      {
+        "name": "electric-field-jump crystallography"
+      }
+    ],
+    "measurables": [
+      "local strain and crystal orientation maps",
+      "crystal structure",
+      "macromolecular crystal structure",
+      "room-temperature/time-resolved macromolecular structure",
+      "ultrafast structural and electronic dynamics"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://biocars.uchicago.edu/scientific-program/time-resolved-crystallography/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Pink beam at ~12 keV with 2.5-5.5% bandpass; single-pulse isolation. 2025 publications describe active post-APS-U capabilities."
+      },
+      {
+        "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585492/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Pink beam at ~12 keV with 2.5-5.5% bandpass; single-pulse isolation. 2025 publications describe active post-APS-U capabilities."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-15-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "NSF's ChemMatCARS (University of Chicago) (Beamline 15-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "advanced small-molecule crystallography (including quantum crystallography and DAFS)"
+      },
+      {
+        "name": "liquid surface/interface X-ray scattering"
+      },
+      {
+        "name": "SAXS/WAXS"
+      }
+    ],
+    "measurables": [
+      "nanoscale size and shape distributions",
+      "crystalline phase identification",
+      "molecular packing",
+      "liquid surface/interface structure",
+      "crystal structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585698/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 15-ID-B (new hutch, mail-in crystallography), 15-ID-D (high-energy/in-situ diffraction); 2025 paper describes upgrades in progress; cycle-by-cycle status not explicitly sourced."
+      },
+      {
+        "source_url": "https://chemmatcars.uchicago.edu/scientific-program/liquid-surface-x-ray-scattering/detectors/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 15-ID-B (new hutch, mail-in crystallography), 15-ID-D (high-energy/in-situ diffraction); 2025 paper describes upgrades in progress; cycle-by-cycle status not explicitly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-16-id-b",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "HPCAT high-pressure micro-diffraction (Carnegie/DOE-NNSA) (Beamline 16-ID-B)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "high-pressure diamond anvil cell X-ray diffraction"
+      },
+      {
+        "name": "in-situ laser heating diffraction"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "structure and equation of state at extreme pressure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://hpcat.aps.anl.gov/beamlines",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. HPCAT newsletter (June 2026): 16-ID-B in regular user mode with general-purpose and laser-heating tables fully operational."
+      },
+      {
+        "source_url": "https://hpcat.aps.anl.gov/sites/hpc-aps-d8.aps.anl.gov/files/HPC/2026%20June%20HPCAT%20NEWSLETTER.pdf",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. HPCAT newsletter (June 2026): 16-ID-B in regular user mode with general-purpose and laser-heating tables fully operational."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-16-id-d-e",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "HPCAT high-pressure spectroscopy stations (Beamline 16-ID-D/E)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "high-pressure X-ray spectroscopy (XES, NRIXS/inelastic scattering)"
+      },
+      {
+        "name": "high-pressure RIXS"
+      }
+    ],
+    "measurables": [
+      "electronic excitations",
+      "chemical bonding states",
+      "electronic and vibrational excitations (phonons)",
+      "structure and equation of state at extreme pressure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://hpcat.aps.anl.gov/news/2025-09/hpcat-accepts-beam-16-id-c-crrt-verification-16-id-c-d-e",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 16-ID-C-D-E undulator branch accepted beam September 2025; nearing completion of final commissioning per HPCAT."
+      },
+      {
+        "source_url": "https://hpcat.aps.anl.gov/beamlines",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 16-ID-C-D-E undulator branch accepted beam September 2025; nearing completion of final commissioning per HPCAT."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-16-bm-d",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "HPCAT bending magnet micro-focus station (Beamline 16-BM-D)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "micro-focused high-pressure X-ray diffraction"
+      },
+      {
+        "name": "X-ray absorption spectroscopy"
+      },
+      {
+        "name": "micro-tomography"
+      },
+      {
+        "name": "micro-focused white-beam Laue diffraction"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "unoccupied electronic states",
+      "3d microstructure",
+      "internal morphology (non-destructive)",
+      "local strain and crystal orientation maps",
+      "crystal structure",
+      "phase identification",
+      "structure and equation of state at extreme pressure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://hpcat.aps.anl.gov/beamlines/bmd-beamline-notes",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Fixed-exit geometry, 6-60 keV; Laue microdiffraction setup available to users in 2025."
+      },
+      {
+        "source_url": "https://hpcat.aps.anl.gov/beamlines/micro-focused-white-beam-laue-diffraction-hpcat",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Fixed-exit geometry, 6-60 keV; Laue microdiffraction setup available to users in 2025."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        6000,
+        60000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-16-bm-b",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "HPCAT white/energy-dispersive station (Paris-Edinburgh press) (Beamline 16-BM-B)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "energy-dispersive X-ray diffraction"
+      },
+      {
+        "name": "white-beam radiography"
+      },
+      {
+        "name": "Paris-Edinburgh press high-pressure experiments"
+      }
+    ],
+    "measurables": [
+      "time-resolved internal dynamics (2d projection)",
+      "crystal structure",
+      "phase identification",
+      "structure and equation of state at extreme pressure",
+      "structure at high pressure (energy-dispersive)"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://hpcat.aps.anl.gov/beamlines",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Per-station status of 16-BM-B not explicitly stated during phased restart."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-17-id-b",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "IMCA-CAT (Industrial Macromolecular Crystallography Association) (Beamline 17-ID-B)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "high-throughput macromolecular crystallography"
+      },
+      {
+        "name": "automated robotic sample mounting and data collection"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "macromolecular crystal structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585694/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Pharma structure-based drug discovery; beamline rebuilt for the upgraded APS (2025 paper describes post-APS-U operation)."
+      },
+      {
+        "source_url": "https://www.tandfonline.com/doi/full/10.1080/08940886.2026.2643150",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Pharma structure-based drug discovery; beamline rebuilt for the upgraded APS (2025 paper describes post-APS-U operation)."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-17-bm-b",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Rapid Acquisition Powder Diffraction (XSD Structural Science) (Beamline 17-BM-B)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "rapid in-situ/operando powder X-ray diffraction (area detector)"
+      },
+      {
+        "name": "pair distribution function measurements"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "lattice parameters",
+      "local atomic structure of disordered/nanocrystalline materials"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/88",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Tunable 27-51 keV; battery/catalysis/gas-loading sample environments. Commissioning complete; (initially limited) user proposals accepted in 2025."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Structural-Science",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Tunable 27-51 keV; battery/catalysis/gas-loading sample environments. Commissioning complete; (initially limited) user proposals accepted in 2025."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        27000,
+        51000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-18-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "BioCAT (Biophysics CAT, Illinois Institute of Technology) (Beamline 18-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "biological solution small-angle X-ray scattering (SEC-SAXS, time-resolved SAXS, FFF-SAXS)"
+      },
+      {
+        "name": "muscle and fiber diffraction"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "nanoscale size and shape distributions",
+      "fiber/muscle diffraction structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.bio.aps.anl.gov/pages/beamline.html",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Resumed user operations with the APS 2025-1 run; new high-flux low-divergence microbeams, automated SEC-SAXS/coflow autosampler."
+      },
+      {
+        "source_url": "https://www.bio.aps.anl.gov/pages/aps-u.html",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Resumed user operations with the APS 2025-1 run; new high-flux low-divergence microbeams, automated SEC-SAXS/coflow autosampler."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-19-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "SBC-CAT Structural Biology Center 19-ID (historical) (Beamline 19-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "closed",
+    "techniques": [
+      {
+        "name": "macromolecular crystallography"
+      },
+      {
+        "name": "fixed-target serial synchrotron crystallography"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "macromolecular crystal structure",
+      "room-temperature/time-resolved macromolecular structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://sbc.aps.anl.gov/about",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. SBC's 19-ID and 19-BM closed before the APS Upgrade (>6,590 PDB depositions); DOE-BER role passed to eBERlight. Sector 19 ID position now hosts the ISN feature beamline."
+      },
+      {
+        "source_url": "https://www.berstructuralbioportal.org/structural-biology-center/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. SBC's 19-ID and 19-BM closed before the APS Upgrade (>6,590 PDB depositions); DOE-BER role passed to eBERlight. Sector 19 ID position now hosts the ISN feature beamline."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-19-id-e",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "ISN - In Situ Nanoprobe (APS-U feature beamline, Long Beamline Building) (Beamline 19-ID-E)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "multimodal X-ray fluorescence microscopy"
+      },
+      {
+        "name": "XRD microscopy"
+      },
+      {
+        "name": "X-ray ptychography"
+      },
+      {
+        "name": "spectroscopic microscopy"
+      },
+      {
+        "name": "in situ / operando nanoprobe studies"
+      }
+    ],
+    "measurables": [
+      "elemental composition",
+      "trace element distribution",
+      "nanoscale morphology (highest-resolution x-ray imaging)"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/232",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Hard X-ray nanoprobe 220 m from source; ~20 nm focus with 50 mm working distance for in situ/operando environments. First light expected during the 2024-2025 run; full user-program status not explicitly sourced."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Feature-Beamlines/In-Situ-Nanoprobe",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Hard X-ray nanoprobe 220 m from source; ~20 nm focus with 50 mm working distance for in situ/operando environments. First light expected during the 2024-2025 run; full user-program status not explicitly sourced."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        4800,
+        30000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-19-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "SBC-CAT Structural Biology Center 19-BM (historical) (Beamline 19-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "closed",
+    "techniques": [
+      {
+        "name": "macromolecular crystallography"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "macromolecular crystal structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://sbc.aps.anl.gov/about",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Closed before the APS Upgrade along with 19-ID as SBC concluded operations."
+      },
+      {
+        "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-19-bm-sbc-2/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Closed before the APS Upgrade along with 19-ID as SBC concluded operations."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-20-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "HEXM - High-Energy X-ray Microscope (APS-U feature beamline, Long Beamline Building) (Beamline 20-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "high-energy diffraction microscopy"
+      },
+      {
+        "name": "high-energy X-ray imaging/tomography of bulk samples"
+      },
+      {
+        "name": "in situ defect tracking in materials"
+      },
+      {
+        "name": "white-beam and monochromatic high-energy scattering"
+      }
+    ],
+    "measurables": [
+      "3d microstructure",
+      "internal morphology (non-destructive)",
+      "2d/3d morphology",
+      "grain-resolved 3d microstructure and strain (bulk)",
+      "crystal structure",
+      "phase identification"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Feature-Beamlines/High-Energy-X-ray-Microscope",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. ~600-ft beamline with superconducting undulator; monochromatic 35-120 keV, white-beam capable; cm-sized samples in in situ environments. First light expected 2024-2025 run."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Sector-20/20-ID",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. ~600-ft beamline with superconducting undulator; monochromatic 35-120 keV, white-beam capable; cm-sized samples in in situ environments. First light expected 2024-2025 run."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        35000,
+        120000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-20-bm-b",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "X-ray Absorption Spectroscopy bending magnet beamline (XSD Spectroscopy; eBERlight partner) (Beamline 20-BM-B)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "XANES/EXAFS"
+      },
+      {
+        "name": "polycapillary micro-focused XAS/XRF (25 um focus)"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "local chemical environment and speciation",
+      "chemical speciation",
+      "local coordination environment"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/32",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Si(111) monochromator, 3.9-32 keV focused; APS directory lists full general user mode; 2025 paper describes multifunctional capillary XRF for tissue sections."
+      },
+      {
+        "source_url": "https://s20.xray.aps.anl.gov/bm.html",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Si(111) monochromator, 3.9-32 keV focused; APS directory lists full general user mode; 2025 paper describes multifunctional capillary XRF for tissue sections."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        3900,
+        32000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-21-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "LS-CAT (Life Sciences CAT; 21-ID-D/E/F/G) (Beamline 21-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "macromolecular crystallography"
+      },
+      {
+        "name": "microcrystal and serial crystallography"
+      },
+      {
+        "name": "room-temperature crystallography"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "macromolecular crystal structure",
+      "room-temperature/time-resolved macromolecular structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.tandfonline.com/doi/full/10.1080/08940886.2026.2643150",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+      },
+      {
+        "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-21-id-d-ls-cat/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-22-id-22-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "SER-CAT (Southeast Regional CAT, University of Georgia) (Beamline 22-ID / 22-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "macromolecular crystallography"
+      },
+      {
+        "name": "microcrystallography (10 um focused beam at 22-ID-D)"
+      },
+      {
+        "name": "automated/AI-driven data collection"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "macromolecular crystal structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.tandfonline.com/doi/full/10.1080/08940886.2026.2643150",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U: new KB mirror system and MD3 micro-diffractometer on 22-ID-D; developing fully automated AI-driven data collection pipeline (2026 SRN MX review)."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-23-id-b-23-id-d",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "GM/CA@APS (NIH-funded) (Beamline 23-ID-B / 23-ID-D)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "macromolecular crystallography"
+      },
+      {
+        "name": "microfocus crystallography (beams 1-50 um)"
+      },
+      {
+        "name": "serial crystallography (fixed-target and injector)"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "macromolecular crystal structure",
+      "room-temperature/time-resolved macromolecular structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12585485/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Returned to scientific operations 11 March 2025 after technical commissioning from 22 November 2024; 23-ID-D max energy raised to 35 keV, >1e13 ph/s, Eiger2 XE 16M CdTe detector."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-24-id-c-24-id-e",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "NE-CAT (Northeastern CAT, Cornell University) (Beamline 24-ID-C / 24-ID-E)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "macromolecular crystallography"
+      },
+      {
+        "name": "microdiffraction of challenging/microcrystals"
+      }
+    ],
+    "measurables": [
+      "local strain and crystal orientation maps",
+      "crystal structure",
+      "phase identification",
+      "macromolecular crystal structure"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585651/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 2025 paper reports NE-CAT implemented key post-upgrade improvements and continues serving users."
+      },
+      {
+        "source_url": "https://necat.chem.cornell.edu/steps-returning-operations",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 2025 paper reports NE-CAT implemented key post-upgrade improvements and continues serving users."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-25-id-c",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Microprobe and Advanced Spectroscopy (XSD Spectroscopy) (Beamline 25-ID-C)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "X-ray microprobe (beams to ~1 um; 2 um confocal)"
+      },
+      {
+        "name": "XANES/EXAFS"
+      },
+      {
+        "name": "high-resolution X-ray fluorescence / emission spectroscopy"
+      }
+    ],
+    "measurables": [
+      "elemental composition",
+      "trace element distribution",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "chemical speciation",
+      "local coordination environment",
+      "occupied electronic states",
+      "chemical bonding states"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/217",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Si(111) mono, 1e14 ph/s at 10 keV, 2x2 um focus; APS directory states accepting general user proposals while commissioning continues."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        4000,
+        32000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-26-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Hard X-ray Nanoprobe (CNM/APS) (Beamline 26-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "hard X-ray nano-diffraction"
+      },
+      {
+        "name": "nano-imaging (structural/chemical)"
+      },
+      {
+        "name": "X-ray ptychography"
+      }
+    ],
+    "measurables": [
+      "nanoscale morphology (highest-resolution x-ray imaging)",
+      "2d/3d morphology",
+      "crystal structure",
+      "phase identification"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://cnm.anl.gov/pages/hard-xray-nanoprobe",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by CNM's Electron and X-ray Microscopy group. Post-APS-U status not directly sourced."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/Microscopy/Beamlines/26-ID",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by CNM's Electron and X-ray Microscopy group. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        6000,
+        12000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-27-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "RIXS beamline (XSD Inelastic X-ray Scattering) (Beamline 27-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "resonant inelastic X-ray scattering (RIXS)"
+      }
+    ],
+    "measurables": [
+      "electronic excitations",
+      "chemical bonding states",
+      "electronic and vibrational excitations (phonons)"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-November-2025",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. November 2025 APS-U update describes users running experiments at the newly upgraded 27-ID RIXS beamline."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-28-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "CHEX - Coherent High-Energy X-ray Sector for In Situ Science (APS-U feature beamline) (Beamline 28-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "in situ high-energy X-ray diffraction and scattering during materials synthesis"
+      },
+      {
+        "name": "coherent high-energy scattering"
+      },
+      {
+        "name": "time-resolved studies of materials processes"
+      }
+    ],
+    "measurables": [
+      "nanoscale structure, strain and dynamics",
+      "crystal structure",
+      "phase identification"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://proceedings.jacow.org/medsi2025/pdf/TUOA01.pdf",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        15000,
+        60000
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-29-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "IEX - Intermediate Energy X-ray (29-ID-C,D) (Beamline 29-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "angle-resolved photoemission spectroscopy (ARPES)"
+      },
+      {
+        "name": "resonant soft X-ray scattering (RSXS)"
+      }
+    ],
+    "measurables": [
+      "occupied electronic states",
+      "chemical bonding states",
+      "electronic band structure",
+      "surface chemical composition",
+      "fermi surface"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/112",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Two end stations: ARPES (30x10 um beam, 6-300 K, Scienta R4000) and RSXS. APS directory lists IEX as currently accepting general users."
+      },
+      {
+        "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0168900214001648",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Two end stations: ARPES (30x10 um beam, 6-300 K, Scienta R4000) and RSXS. APS directory lists IEX as currently accepting general users."
+      }
+    ],
+    "record_depth": "directory",
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        250,
+        2500
+      ],
+      "tunable": true
+    }
+  },
+  {
+    "id": "aps-30-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "HERIX - High-Energy-Resolution Inelastic X-ray Scattering (XSD) (Beamline 30-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "meV-resolution inelastic X-ray scattering (phonon spectroscopy)"
+      },
+      {
+        "name": "nuclear resonant scattering (e.g. 119Sn)"
+      }
+    ],
+    "measurables": [
+      "electronic and vibrational excitations (phonons)",
+      "phonon density of states of Moessbauer isotopes",
+      "hyperfine/magnetic state"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-November-2025",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 119Sn nuclear resonance experiments cited as performable at 30-ID; explicit post-APS-U status not sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-32-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Full-Field Imaging and Transmission X-ray Microscopy (32-ID-B,C) (Beamline 32-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "transmission X-ray microscopy (TXM, 32-ID-B)"
+      },
+      {
+        "name": "high-speed/dynamic full-field imaging (32-ID-C)"
+      },
+      {
+        "name": "white and monochromatic beam tomography and radiography"
+      }
+    ],
+    "measurables": [
+      "3d microstructure",
+      "internal morphology (non-destructive)",
+      "2d/3d morphology",
+      "time-resolved internal dynamics (2d projection)",
+      "time-resolved structural evolution"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/84",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Stations at ~37 m (TXM) and ~70 m (high-speed imaging); shares TomoScan controls with 2-BM/7-BM. Post-APS-U status not directly sourced."
+      },
+      {
+        "source_url": "https://tomopedia.github.io/instruments/aps32id/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Stations at ~37 m (TXM) and ~70 m (high-speed imaging); shares TomoScan controls with 2-BM/7-BM. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-33-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "PtychoProbe - Ptychography/Spectromicroscopy (APS-U feature beamline) (Beamline 33-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "hard X-ray ptychography (target ~5 nm resolution)"
+      },
+      {
+        "name": "X-ray fluorescence spectromicroscopy"
+      }
+    ],
+    "measurables": [
+      "elemental composition",
+      "trace element distribution",
+      "nanoscale morphology (highest-resolution x-ray imaging)"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Feature-Beamlines/PtychoProbe",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Final APS-U feature beamline to be installed; intended to be the highest-spatial-resolution instrument at APS; first light expected October 2025."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Final APS-U feature beamline to be installed; intended to be the highest-spatial-resolution instrument at APS; first light expected October 2025."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-33-bm",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "Diffraction / surface & interface scattering bending magnet (33-BM-C) (Beamline 33-BM)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "X-ray diffraction (including half-order/superstructure reflections)"
+      },
+      {
+        "name": "surface and thin-film diffraction"
+      },
+      {
+        "name": "reflectivity"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "thin-film thickness, roughness and density profiles"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/18",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U status not directly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-34-id-c",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "ATOMIC - coherent diffraction imaging (APS-U feature beamline) (Beamline 34-ID-C)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "Bragg coherent diffraction imaging (BCDI)"
+      },
+      {
+        "name": "coherent X-ray diffraction imaging of nanocrystals, strain and defects"
+      }
+    ],
+    "measurables": [
+      "nanoscale structure, strain and dynamics",
+      "2d/3d morphology",
+      "crystal structure",
+      "phase identification"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/APS-News/2021-11-29/virtual-town-hall-on-3dmn-and-atomic-construction-at-34-id/2021-11-29/virtual",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. ATOMIC built at 34-ID under APS-U to exploit ~100x coherent flux gains. Feature beamlines met KPPs per MEDSI'25; per-station general-user status as of 2026 not explicitly sourced."
+      },
+      {
+        "source_url": "https://wiki-ext.aps.anl.gov/s34idc/index.php/34-ID-C:About",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. ATOMIC built at 34-ID under APS-U to exploit ~100x coherent flux gains. Feature beamlines met KPPs per MEDSI'25; per-station general-user status as of 2026 not explicitly sourced."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-34-id-e",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "3DMN - 3D Micro and Nano Diffraction (APS-U feature beamline) (Beamline 34-ID-E)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "polychromatic Laue micro-diffraction"
+      },
+      {
+        "name": "3D depth-resolved microdiffraction (sub-micron)"
+      },
+      {
+        "name": "local strain/orientation mapping"
+      }
+    ],
+    "measurables": [
+      "local strain and crystal orientation maps",
+      "crystal structure",
+      "phase identification"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://www.aps.anl.gov/Sectors-33-34/34-ID-E",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. In technical commissioning as of August 2025; first experiments expected early 2026 and entry into the general user program during the first or second 2026 run."
+      },
+      {
+        "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. In technical commissioning as of August 2025; first experiments expected early 2026 and entry into the general user program during the first or second 2026 run."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "aps-35-id",
+    "facility": "APS",
+    "institution": "ANL",
+    "name": "DCS - Dynamic Compression Sector (Washington State University / DOE-NNSA) (Beamline 35-ID)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "time-resolved X-ray diffraction under dynamic (shock) compression"
+      },
+      {
+        "name": "time-resolved X-ray imaging/radiography"
+      },
+      {
+        "name": "gas gun and two-stage light gas gun impact loading (0.4-6.9 km/s)"
+      },
+      {
+        "name": "laser-driven shock compression (100 J Nd:glass laser)"
+      }
+    ],
+    "measurables": [
+      "2d/3d morphology",
+      "time-resolved internal dynamics (2d projection)",
+      "crystal structure",
+      "phase identification",
+      "material response under dynamic compression (structure, density)",
+      "time-resolved structural evolution"
+    ],
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "APS User Portal"
+    },
+    "provenance": [
+      {
+        "source_url": "https://dcs-aps.wsu.edu/overview/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. NNSA-sponsored sector for condensed matter under dynamic loading to >350 GPa on ns-us timescales; active 2025 experiments."
+      },
+      {
+        "source_url": "https://dcs-aps.wsu.edu/impact-facilities/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. NNSA-sponsored sector for condensed matter under dynamic loading to >350 GPa on ns-us timescales; active 2025 experiments."
+      }
+    ],
+    "record_depth": "directory"
+  }
+]

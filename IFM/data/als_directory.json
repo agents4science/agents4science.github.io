@@ -1,0 +1,1822 @@
+[
+  {
+    "id": "als-10.0.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Angle- and Spin-Resolved Photoelectron Spectroscopy (Beamline 10.0.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "angle-resolved photoemission spectroscopy",
+        "acronym": "ARPES"
+      },
+      {
+        "name": "spin-resolved photoemission"
+      }
+    ],
+    "measurables": [
+      "electronic band structure",
+      "fermi surface",
+      "spin texture of electronic bands"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        17,
+        350
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/10-0-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-10.3.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "X-Ray Fluorescence Microprobe (Beamline 10.3.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "not-operational",
+    "techniques": [
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      },
+      {
+        "name": "X-ray fluorescence spectroscopy",
+        "acronym": "XFS"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states",
+      "elemental composition",
+      "trace element distribution"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        2100,
+        14000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/10-3-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-11.0.1.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "PEEM-3 Photoemission Electron Microscope (Beamline 11.0.1.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "magnetic microscopy"
+      },
+      {
+        "name": "photoemission electron microscopy",
+        "acronym": "PEEM"
+      }
+    ],
+    "measurables": [
+      "magnetic domain structure",
+      "surface electronic and magnetic structure maps"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        160,
+        1800
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/11-0-1-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-11.0.1.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Resonant Soft X-Ray Scattering (Beamline 11.0.1.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "coherent scattering"
+      },
+      {
+        "name": "small-angle X-ray scattering",
+        "acronym": "SAXS"
+      },
+      {
+        "name": "wide-angle X-ray scattering",
+        "acronym": "WAXS"
+      }
+    ],
+    "measurables": [
+      "nanoscale structure and dynamics",
+      "domain correlations",
+      "nanoscale size and shape distributions",
+      "particle/pore structure 1-100 nm",
+      "crystalline phase identification",
+      "molecular packing"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        165,
+        1500
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/11-0-1-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-11.0.2.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Molecular Environmental Science - APXPS/GIXS (Beamline 11.0.2.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "ambient-pressure X-ray photoelectron spectroscopy",
+        "acronym": "APXPS"
+      },
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      },
+      {
+        "name": "grazing-incidence X-ray scattering",
+        "acronym": "GIXS"
+      }
+    ],
+    "measurables": [
+      "surface chemical composition under reaction conditions",
+      "oxidation states",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states",
+      "thin-film and interface structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        160,
+        2000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/11-0-2-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-11.0.2.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Molecular Environmental Science - STXM (Beamline 11.0.2.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "scanning transmission X-ray microscopy",
+        "acronym": "STXM"
+      },
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      }
+    ],
+    "measurables": [
+      "nanoscale chemical composition maps",
+      "chemical speciation maps",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        160,
+        2000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/11-0-2-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-11.3.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Tender Nano-Tomography (Beamline 11.3.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "full-field X-ray microscopy"
+      },
+      {
+        "name": "tomography"
+      }
+    ],
+    "measurables": [
+      "2d/3d morphology at nanometer to micron scale",
+      "3d microstructure",
+      "internal morphology (non-destructive)"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        5000,
+        17000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/11-3-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-11.3.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "EUV Lithography Photomask Imaging (SHARP) (Beamline 11.3.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "full-field X-ray microscopy"
+      }
+    ],
+    "measurables": [
+      "2d/3d morphology at nanometer to micron scale"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        50,
+        1000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/11-3-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-12.0.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "EUV Lithography Nanopatterning (Beamline 12.0.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "photoelectron spectroscopy"
+      }
+    ],
+    "measurables": [
+      "electronic structure",
+      "surface chemical composition"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        92,
+        92
+      ],
+      "tunable": false
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/12-0-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-12.0.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Coherent X-Ray Scattering (Beamline 12.0.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "coherent scattering"
+      },
+      {
+        "name": "magnetic scattering"
+      }
+    ],
+    "measurables": [
+      "nanoscale structure and dynamics",
+      "domain correlations",
+      "magnetic ordering and domain correlations"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        400,
+        1300
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/12-0-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-12.2.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Small-Molecule Crystallography (Beamline 12.2.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "small-molecule crystallography"
+      }
+    ],
+    "measurables": [
+      "small-molecule crystal structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        6000,
+        28000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/12-2-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-12.3.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Microdiffraction (Beamline 12.3.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "closed",
+    "techniques": [
+      {
+        "name": "X-ray microdiffraction"
+      }
+    ],
+    "measurables": [
+      "local strain and crystal orientation maps"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        6000,
+        22000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/12-3-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-2.0.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Macromolecular Crystallography (GEMINI) (Beamline 2.0.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "protein crystallography"
+      }
+    ],
+    "measurables": [
+      "macromolecular crystal structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        3000,
+        18000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/2-0-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-2.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "National Center for X-Ray Tomography (Beamline 2.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "closed",
+    "techniques": [
+      {
+        "name": "full-field X-ray microscopy"
+      },
+      {
+        "name": "tomography"
+      }
+    ],
+    "measurables": [
+      "2d/3d morphology at nanometer to micron scale",
+      "3d microstructure",
+      "internal morphology (non-destructive)"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        400,
+        1300
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/2-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-2.4",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Synchrotron Infrared Nanospectroscopy (SINS) (Beamline 2.4)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "infrared microscopy"
+      },
+      {
+        "name": "infrared spectroscopy"
+      }
+    ],
+    "measurables": [
+      "chemical composition maps at micron scale",
+      "molecular functional-group composition",
+      "molecular vibrational spectra"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        0.02,
+        0.5
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/2-4/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-3.2.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "LIGA (Beamline 3.2.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "microscopy"
+      },
+      {
+        "name": "X-ray footprinting"
+      }
+    ],
+    "measurables": [
+      "microstructure imaging",
+      "solvent-accessible surface / macromolecular conformation in solution"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        2000,
+        15000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/3-2-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-3.3.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "X-Ray Footprinting (Beamline 3.3.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "X-ray footprinting"
+      }
+    ],
+    "measurables": [
+      "solvent-accessible surface / macromolecular conformation in solution"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        2000,
+        12000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/3-3-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-3.3.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "General X-Ray Testing Station (Beamline 3.3.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "X-ray diffraction",
+        "acronym": "XRD"
+      },
+      {
+        "name": "full-field X-ray microscopy"
+      }
+    ],
+    "measurables": [
+      "crystal structure",
+      "phase identification",
+      "lattice parameters",
+      "2d/3d morphology at nanometer to micron scale"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        4000,
+        20000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/3-3-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-4.0.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Magnetic Spectroscopy and Scattering (Beamline 4.0.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "magnetic spectroscopy"
+      },
+      {
+        "name": "resonant scattering"
+      }
+    ],
+    "measurables": [
+      "element-specific magnetic and charge order"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        400,
+        1500
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/4-0-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-4.2.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Macromolecular Crystallography (MBC) (Beamline 4.2.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "protein crystallography"
+      }
+    ],
+    "measurables": [
+      "macromolecular crystal structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        7000,
+        15000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/4-2-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-5.0.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Macromolecular Crystallography (BCSB) (Beamline 5.0.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "protein crystallography"
+      }
+    ],
+    "measurables": [
+      "macromolecular crystal structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        12700,
+        12700
+      ],
+      "tunable": false
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/5-0-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-5.0.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Macromolecular Crystallography (BCSB) (Beamline 5.0.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "protein crystallography"
+      }
+    ],
+    "measurables": [
+      "macromolecular crystal structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        5000,
+        16000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/5-0-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-5.0.3",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Macromolecular Crystallography (BCSB) (Beamline 5.0.3)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "protein crystallography"
+      }
+    ],
+    "measurables": [
+      "macromolecular crystal structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        12700,
+        12700
+      ],
+      "tunable": false
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/5-0-3/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-5.3.2.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Scanning Transmission X-Ray Microscopy (Beamline 5.3.2.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "restricted",
+    "techniques": [
+      {
+        "name": "scanning transmission X-ray microscopy",
+        "acronym": "STXM"
+      },
+      {
+        "name": "ptychography"
+      }
+    ],
+    "measurables": [
+      "nanoscale chemical composition maps",
+      "chemical speciation maps",
+      "nanoscale morphology (highest-resolution x-ray imaging)"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        600,
+        2000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/5-3-2-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-5.3.2.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Polymer STXM (Beamline 5.3.2.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "scanning transmission X-ray microscopy",
+        "acronym": "STXM"
+      },
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      }
+    ],
+    "measurables": [
+      "nanoscale chemical composition maps",
+      "chemical speciation maps",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        250,
+        780
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/5-3-2-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-5.4",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Synchrotron Infrared Nanospectroscopy (SINS) (Beamline 5.4)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "infrared microscopy"
+      },
+      {
+        "name": "infrared spectroscopy"
+      }
+    ],
+    "measurables": [
+      "chemical composition maps at micron scale",
+      "molecular functional-group composition",
+      "molecular vibrational spectra"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        0.05,
+        1.4
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/5-4/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-6.0.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Energy, Catalytic, and Chemical Science (AMBER) (Beamline 6.0.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      },
+      {
+        "name": "X-ray emission spectroscopy",
+        "acronym": "XES"
+      },
+      {
+        "name": "X-ray fluorescence spectroscopy",
+        "acronym": "XFS"
+      },
+      {
+        "name": "resonant inelastic X-ray scattering",
+        "acronym": "RIXS"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states",
+      "occupied electronic states",
+      "chemical bonding states",
+      "elemental composition",
+      "trace element distribution",
+      "electronic excitations"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        250,
+        2500
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/6-0-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-6.0.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Double-Dispersion RIXS (QERLIN) (Beamline 6.0.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "commissioning",
+    "techniques": [
+      {
+        "name": "resonant inelastic X-ray scattering",
+        "acronym": "RIXS"
+      },
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      },
+      {
+        "name": "X-ray emission spectroscopy",
+        "acronym": "XES"
+      }
+    ],
+    "measurables": [
+      "electronic excitations",
+      "chemical bonding states",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states",
+      "occupied electronic states"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        290,
+        1500
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/6-0-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-6.1.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Full-Field Transmission Soft X-Ray Microscopy (Beamline 6.1.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "magnetic microscopy"
+      },
+      {
+        "name": "full-field X-ray microscopy"
+      }
+    ],
+    "measurables": [
+      "magnetic domain structure",
+      "2d/3d morphology at nanometer to micron scale"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        300,
+        1000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/6-1-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-6.3.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Magnetic Spectroscopy/Materials Science (Beamline 6.3.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "magnetic spectroscopy"
+      },
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        250,
+        2000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/6-3-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-6.3.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Calibration, Optics Testing, Spectroscopy (Beamline 6.3.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "spectroscopy"
+      }
+    ],
+    "measurables": [
+      "optical constants and calibration spectra"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        25,
+        1300
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/6-3-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-7.0.1.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "COSMIC Scattering (Beamline 7.0.1.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "small-angle X-ray scattering",
+        "acronym": "SAXS"
+      },
+      {
+        "name": "X-ray diffraction",
+        "acronym": "XRD"
+      },
+      {
+        "name": "coherent scattering"
+      }
+    ],
+    "measurables": [
+      "nanoscale size and shape distributions",
+      "particle/pore structure 1-100 nm",
+      "crystal structure",
+      "phase identification",
+      "lattice parameters",
+      "nanoscale structure and dynamics",
+      "domain correlations"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        250,
+        1600
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/7-0-1-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-7.0.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Quantum Materials Growth (MAESTRO) (Beamline 7.0.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "angle-resolved photoemission spectroscopy",
+        "acronym": "ARPES"
+      },
+      {
+        "name": "photoemission electron microscopy",
+        "acronym": "PEEM"
+      },
+      {
+        "name": "scanning photoemission microscopy",
+        "acronym": "SPEM"
+      }
+    ],
+    "measurables": [
+      "electronic band structure",
+      "fermi surface",
+      "surface electronic and magnetic structure maps",
+      "spatially resolved electronic structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        20,
+        1000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/7-0-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-7.3.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "High-Pressure In Situ Soft X-Ray Spectroscopy (Beamline 7.3.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      }
+    ],
+    "measurables": [
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        250,
+        1500
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/7-3-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-7.3.3",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Small- and Wide-Angle X-Ray Scattering (Beamline 7.3.3)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "small-angle X-ray scattering",
+        "acronym": "SAXS"
+      },
+      {
+        "name": "wide-angle X-ray scattering",
+        "acronym": "WAXS"
+      },
+      {
+        "name": "grazing-incidence small-angle X-ray scattering",
+        "acronym": "GISAXS"
+      }
+    ],
+    "measurables": [
+      "nanoscale size and shape distributions",
+      "particle/pore structure 1-100 nm",
+      "crystalline phase identification",
+      "molecular packing",
+      "thin-film nanostructure and morphology"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        10000,
+        10000
+      ],
+      "tunable": false
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/7-3-3/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-8.2.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Macromolecular Crystallography (BCSB/HHMI) (Beamline 8.2.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "protein crystallography"
+      }
+    ],
+    "measurables": [
+      "macromolecular crystal structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        6000,
+        18000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/8-2-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-8.2.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Macromolecular Crystallography (BCSB/HHMI) (Beamline 8.2.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "protein crystallography"
+      }
+    ],
+    "measurables": [
+      "macromolecular crystal structure"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        6000,
+        18000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/8-2-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-8.3.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Macromolecular Crystallography (TomAlberTron) (Beamline 8.3.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "protein crystallography"
+      },
+      {
+        "name": "X-ray diffraction",
+        "acronym": "XRD"
+      }
+    ],
+    "measurables": [
+      "macromolecular crystal structure",
+      "crystal structure",
+      "phase identification",
+      "lattice parameters"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        5000,
+        17000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/8-3-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-9.0.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Chemical Transformations (Soft X-Ray) (Beamline 9.0.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "photoelectron spectroscopy"
+      },
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      }
+    ],
+    "measurables": [
+      "electronic structure",
+      "surface chemical composition",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        15,
+        750
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/9-0-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-9.0.2",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Chemical Transformations (Vacuum Ultraviolet) (Beamline 9.0.2)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "mass spectrometry"
+      }
+    ],
+    "measurables": [
+      "molecular mass and fragmentation (gas-phase chemistry)"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        7.5,
+        24
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/9-0-2/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  },
+  {
+    "id": "als-9.3.1",
+    "facility": "ALS",
+    "institution": "LBNL",
+    "name": "Tender X-Ray Spectroscopy (Beamline 9.3.1)",
+    "instrument_class": "synchrotron-beamline",
+    "status": "unknown",
+    "techniques": [
+      {
+        "name": "ambient-pressure X-ray photoelectron spectroscopy",
+        "acronym": "APXPS"
+      },
+      {
+        "name": "X-ray absorption spectroscopy",
+        "acronym": "XAS"
+      }
+    ],
+    "measurables": [
+      "surface chemical composition under reaction conditions",
+      "oxidation states",
+      "oxidation state",
+      "local chemical environment and speciation",
+      "unoccupied electronic states"
+    ],
+    "probe": {
+      "type": "photon",
+      "energy_range_eV": [
+        2320,
+        6000
+      ],
+      "tunable": true
+    },
+    "access": {
+      "mechanism": "general user proposal",
+      "proposal_system": "ALSHub"
+    },
+    "urls": [
+      "https://als.lbl.gov/beamlines/9-3-1/"
+    ],
+    "provenance": [
+      {
+        "source_url": "https://als.lbl.gov/beamlines/",
+        "retrieved": "2026-08-27",
+        "notes": "Directory-table extraction only (name, techniques, energy range, status). measurables are DERIVED from a technique->measurable map, not sourced from beamline documentation."
+      }
+    ],
+    "record_depth": "directory"
+  }
+]

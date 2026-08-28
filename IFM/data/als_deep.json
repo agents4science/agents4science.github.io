@@ -1,0 +1,592 @@
+[
+{
+  "id": "als-8.3.2",
+  "facility": "ALS",
+  "institution": "LBNL",
+  "name": "Beamline 8.3.2 — Hard X-ray Micro-Tomography",
+  "aliases": ["microct@als", "micro-CT beamline"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+    {"name": "hard X-ray micro-computed tomography", "acronym": "micro-CT", "variants": ["white-light (filtered white beam)", "monochromatic (multilayer or Si(111))", "propagation-based phase contrast (variable sample-detector distance)", "in-situ / time-resolved"]},
+    {"name": "X-ray radiography", "variants": ["2d projection imaging"]}
+  ],
+  "measurables": [
+    "3d microstructure",
+    "internal morphology of solid objects (non-destructive)",
+    "porosity and pore networks",
+    "x-ray attenuation (density) distribution in 3d",
+    "microstructural evolution over time during in-situ processing",
+    "phase and void distribution in composites and rocks"
+  ],
+  "probe": {"type": "photon", "energy_range_eV": [6000, 43000], "tunable": true, "flux_notes": "ALS beamline page lists flux as '~105 hv/sec/um2 with multilayer' (superscript formatting lost in page rendering; superbend source, critical energy 11.5 keV per beamline manual)"},
+  "resolution": {
+    "spatial_m": 1.5e-6,
+    "spatial_notes": "Manual states 'Measured 2D resolution: 1.5 um'; beamline homepage states 'resolution of approximately 1 micron'. Effective pixel sizes 0.33 um (20x lens, PCO.edge) to 6.5 um (1x lens, PCO.4000); fields of view 0.8 mm to 16.6 mm depending on lens/camera.",
+    "energy_notes": "Resolving power listed as 'White beam / 1% / 0.02%': white light mode, W/B4C multilayer monochromator (8-45 keV, 1% bandpass), or Si(111) crystal (6-46 keV, 0.015% bandpass).",
+    "temporal_notes": "Per-projection exposure times: >1 sec (Si(111)), 0.1-2 sec (multilayer), 5-100 msec (white light); typical scans 360 to 1800 images over 180 degrees. White-light flux enables micro-CT 'collected at short intervals to track quickly changing features'."
+  },
+  "sample_constraints": {
+    "states": ["solid"],
+    "size_notes": "Robot sample-exchange limits: 0.8 inches wide x 1 inch long x 2 inches tall; stage travel ~10 cm x 10 cm; cylindrical samples preferred with roughly constant ~30% x-ray transmission during rotation; avoid vertically-crossing wires/screws and highly absorbing containers. Sample-detector distance variable from ~1.5 cm to 1.5 m to control phase contrast.",
+    "vacuum_required": false,
+    "special_requirements": ["sample sits in open air of the hutch (beam exits through Kapton window)"]
+  },
+  "sample_environments": ["in-situ high-temperature environments that mimic atmospheric entry (demonstrated in ALS science highlight on NASA superlight ablators)"],
+  "detectors": [
+    "PCO.edge sCMOS camera (2560x2160 pixels, 16-bit, 30 fps full frame)",
+    "PCO.4000 CCD camera (14-bit, 0.75 fps full frame)",
+    "scintillators: Crytur LuAG:Ce (20, 50, 500 um thick), YAG:Ce (Hilger, 50x10x1 mm), CdWO4, GGG"
+  ],
+  "data_products": [
+    {"type": "raw projection radiograph series with .sct header file (typical dataset 3 to 30 gigabytes)", "format": "unsigned 16-bit .tif image files"},
+    {"type": "reconstructed 3d tomogram (normalized, values scaled x32768; reconstructed with Octopus; analysis/visualization with Avizo and FIJI/ImageJ; beamline reconstruction code at github.com/als-computing/microct)", "format": "16-bit TIFF image stack"}
+  ],
+  "access": {"mechanism": "general user proposal (beamline listed as 'Operational; open to general users'; onsite and remote ALS-operated access modes)", "proposal_system": "ALSHub", "proposal_url": "https://alshub.als.lbl.gov/"},
+  "contacts": [
+    {"name": "Dula Parkinson", "email": "dyparkinson@lbl.gov", "role": "beamline contact"},
+    {"name": "Harold Barnard", "email": "hbar@lbl.gov", "role": "beamline contact"},
+    {"name": "Elizabeth Clark", "email": "ElizabethClark@lbl.gov", "role": "beamline contact"}
+  ],
+  "urls": ["https://als.lbl.gov/beamlines/8-3-2/", "https://microct.lbl.gov/", "https://docs.google.com/document/d/1HS1JGa5g1Q6tOlsdKt3GT6ZP9WKGtlbVj1CCzGv92Fk/edit"],
+  "demonstrated_applications": [
+    "real-time in-situ tracking of multiphase decomposition of NASA superlight ablator heat-shield materials at high temperature",
+    "bone microstructure",
+    "glass scaffolds",
+    "planet formation studies",
+    "plant vasculature (including coastal redwood)",
+    "rock and volcanic systems",
+    "polymer electrolyte fuel cells",
+    "austenitic stainless steel"
+  ],
+  "provenance": [
+    {"source_url": "https://als.lbl.gov/beamlines/8-3-2/", "retrieved": "2026-08-27", "notes": "Official ALS beamline directory page: energy range 6,000-43,000 eV, superbend source, flux, resolving power 'White beam / 1% / 0.02%', status, access modes, contacts, technique classification."},
+    {"source_url": "https://microct.lbl.gov/", "retrieved": "2026-08-27", "notes": "Beamline group homepage: instrument name/description, ~1 micron resolution statement, alias microct@als."},
+    {"source_url": "https://docs.google.com/document/d/1HS1JGa5g1Q6tOlsdKt3GT6ZP9WKGtlbVj1CCzGv92Fk/edit", "retrieved": "2026-08-27", "notes": "8.3.2 Microtomography Manual: detectors and pixel size/FOV table, measured 2D resolution 1.5 um, monochromator options, critical energy 11.5 keV, exposure times, sample size limits, open-air hutch operation, sample-detector distance range, raw data format, reconstruction output, software."},
+    {"source_url": "https://microct.lbl.gov/user-info/general-user-info", "retrieved": "2026-08-27", "notes": "User registration via ALS user office through ALSHub two weeks before beamtime; software availability."},
+    {"source_url": "https://microct.lbl.gov/user-info/software", "retrieved": "2026-08-27", "notes": "Reconstruction code repository https://github.com/als-computing/microct."},
+    {"source_url": "https://microct.lbl.gov/applications", "retrieved": "2026-08-27", "notes": "Applications gallery categories used for demonstrated_applications."},
+    {"source_url": "https://als.lbl.gov/burning-questions-how-nasas-heat-shield-materials-evolve-under-extreme-heat/", "retrieved": "2026-08-27", "notes": "Science highlight: in-situ real-time micro-CT of superlight ablators at high temperature; basis for sample_environments and ablator application."},
+    {"source_url": "https://als.lbl.gov/users/user-guide/", "retrieved": "2026-08-27", "notes": "ALS user guide confirming registration and beamtime application via ALSHub."}
+  ],
+  "record_depth": "deep"
+},
+{
+  "id": "als-7.0.1.2",
+  "facility": "ALS",
+  "institution": "LBNL",
+  "name": "COSMIC Imaging (Beamline 7.0.1.2)",
+  "aliases": ["COSMIC Imaging", "COSMIC", "Nanosurveyor"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "record_depth": "deep",
+  "techniques": [
+    {"name": "ptychography", "panet_id": "", "variants": ["spectro-ptychography", "ptychographic tomography", "magnetic (polarization-dependent) ptychography"]},
+    {"name": "scanning transmission X-ray microscopy", "acronym": "STXM", "panet_id": "", "variants": ["spectromicroscopy (image stacks across absorption edges)"]},
+    {"name": "X-ray absorption spectroscopy", "acronym": "XAS", "panet_id": "", "variants": ["near-edge, spatially resolved"]},
+    {"name": "magnetic microscopy", "panet_id": "", "variants": ["circular-polarization magnetic contrast imaging"]},
+    {"name": "magnetic spectroscopy", "panet_id": ""},
+    {"name": "tomography", "panet_id": "", "variants": ["ptychographic nano-tomography"]}
+  ],
+  "measurables": [
+    "nanoscale chemical composition maps",
+    "oxidation state and redox state distribution",
+    "elemental and chemical speciation via near-edge absorption",
+    "magnetic domain structure",
+    "3d nanoscale morphology and internal structure",
+    "chemical phase distribution in nanomaterials"
+  ],
+  "probe": {"type": "photon", "energy_range_eV": [250, 2500], "tunable": true, "polarization": ["linear", "circular"], "coherent": true, "pulsed": false, "flux_notes": "Coherent/monochromatic flux at 1 keV: 1E9 photons/second; source is EPU3.8 elliptically polarizing undulator (38 mm period, 10 mm minimum gap); 50 nm spot size"},
+  "resolution": {
+    "spatial_m": 5e-9,
+    "spatial_notes": "Record soft X-ray ptychography: 5 nm spatial resolution in 2D (Shapiro group, Nature Photonics) and world-record 11 nm spatial resolution in 3D ptychographic tomography (2018, Nature Communications, lithium iron phosphate battery nanoparticles). During COSMIC commissioning, 11 nm resolution (Fourier Ring Correlation, half-bit threshold, 200 ms exposures) was demonstrated in 2D ptychography; conventional STXM zone-plate-limited Rayleigh resolution ~55 nm with 45 nm outer-zone-width optic; beamline spot size 50 nm.",
+    "energy_notes": "Entrance-slitless collimated plane-grating monochromator (100 or 300 lines/mm) providing energy resolution suitable for near-edge X-ray absorption spectroscopy; E/dE not quoted on sources used."
+  },
+  "sample_constraints": {
+    "states": ["solid", "thin film"],
+    "size_notes": "Samples must be TEM-compatible ('Any TEM compatible' per beamline page); mounted via FEI CompuStage load-lock system derived from an FEI CM200-series TEM, accepting standard commercial TEM sample holders (e.g., 3 mm grids); transmission geometry favors thin, soft-X-ray-transparent specimens.",
+    "special_requirements": ["TEM-compatible mounting (standard TEM sample holders/grids)"]
+  },
+  "sample_environments": [
+    "cryo-capable TEM sample holders (via FEI CompuStage manipulator)",
+    "sample rotation for nano-tomography",
+    "commercial fluid-flow electrochemistry TEM holders (advanced sample environment under development per 2018 beamline paper)"
+  ],
+  "detectors": [
+    "fast frame-rate CCD (Berkeley Lab-developed high-speed detector, ~100 frames/s, ~400 MB/s) for ptychographic diffraction data",
+    "small-area silicon PIN diode (total transmission detector for conventional STXM; motorized retraction for switching to diffraction/ptychography mode)"
+  ],
+  "data_products": [
+    {"type": "2d STXM images and spectromicroscopy image stacks"},
+    {"type": "spatially resolved XAS spectra"},
+    {"type": "ptychographic reconstructions (amplitude and phase images)"},
+    {"type": "3d ptychographic tomograms"}
+  ],
+  "access": {"mechanism": "general user proposal (onsite and ALS-operated remote access)", "proposal_system": "ALSHub", "proposal_url": "https://als.lbl.gov/apply-for-beamtime/"},
+  "contacts": [
+    {"name": "Alexander Ditter", "email": "aditter@lbl.gov", "role": "beamline contact"},
+    {"name": "David Shapiro", "email": "dashapiro@lbl.gov", "role": "beamline contact"}
+  ],
+  "urls": ["https://als.lbl.gov/beamlines/7-0-1-2/", "https://als.lbl.gov/apply-for-beamtime/"],
+  "demonstrated_applications": [
+    "3d redox-state mapping of lithium iron phosphate battery cathode nanoparticles at 11 nm resolution",
+    "3d chemical imaging of nanoparticle clusters harvested from a rechargeable coin-cell battery",
+    "ptychographic imaging of nano-structured Fe3O4 battery anode particles (primary particles ~10 nm)",
+    "magnetic domain imaging of FeGd multilayer films with circularly polarized X-rays at the Fe L3 edge (~100 nm domains)",
+    "nanoscale imaging for battery electrochemistry, fuel cells and catalysis, and cement nanocrystal analysis"
+  ],
+  "provenance": [
+    {"source_url": "https://als.lbl.gov/beamlines/7-0-1-2/", "retrieved": "2026-08-27", "notes": "Primary beamline page: energy range 250-2500 eV, EPU3.8 source, technique list, 50 nm spot size, coherent flux 1E9 ph/s at 1 keV, 'Any TEM compatible' sample requirement, access modes, contacts, status."},
+    {"source_url": "https://als.lbl.gov/cosmic-ptychography-team-receives-2018-klaus-halbach-award/", "retrieved": "2026-08-27", "notes": "Record resolution figures: 5 nm 2D ptychography and 11 nm 3D ptychographic tomography; high-speed detector; applications."},
+    {"source_url": "https://it.lbl.gov/high-performance-computing-enables-record-breaking-ptychographic-imaging-at-the-als/", "retrieved": "2026-08-27", "notes": "Confirms 11 nm 3D record on coin-cell battery nanoparticles; CCD ~100 fps (~400 MB/s); SHARP reconstruction on GPU cluster (CAMERA)."},
+    {"source_url": "https://strobe.colorado.edu/wp-content/uploads/The-COSMIC-Imaging-Beamline-at-the-Advanced-Light-Source-a-new-facility-for-spectro-microscopy-of-nano-materials.pdf", "retrieved": "2026-08-27", "notes": "Shapiro et al. 2018 (doi:10.1017/S1431927618012485): probe details, imaging branch design, STXM ~55 nm Rayleigh resolution, 11 nm ptychography by FRC during commissioning, detectors, TEM-holder-compatible stage, FeGd and Fe3O4 demonstrations, planned fluid-flow electrochemistry holders and rotation for nano-tomography."},
+    {"source_url": "https://als.lbl.gov/apply-for-beamtime/", "retrieved": "2026-08-27", "notes": "ALS access by General User Proposal or beamtime request through ALSHub."},
+    {"source_url": "https://arxiv.org/pdf/2009.13042", "retrieved": "2026-08-27", "notes": "COSMIC BL 7.0.1.2 FEI CompuStage load-lock accepting TEM sample holders, cryo-capable; basis for sample_constraints and sample_environments."}
+  ]
+},
+{
+  "id": "als-12.3.1",
+  "facility": "ALS",
+  "institution": "LBNL",
+  "name": "SIBYLS Beamline (Beamline 12.3.1)",
+  "aliases": ["SIBYLS", "BL 12.3.1", "MailinSAXS"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+    {"name": "small-angle X-ray scattering", "acronym": "SAXS", "panet_id": "", "variants": ["high-throughput mail-in SAXS (96-well plate, robotic)", "SEC-SAXS (size-exclusion chromatography coupled, with inline UV/MALS/QELS/refractometry)", "solution bio-SAXS"]},
+    {"name": "macromolecular crystallography", "acronym": "MX", "panet_id": "", "variants": ["MAD phasing", "SAD phasing"]}
+  ],
+  "measurables": [
+    "protein solution shape/envelope",
+    "radius of gyration",
+    "pair-distance distribution function p(r)",
+    "conformational ensembles and macromolecular flexibility in solution",
+    "oligomeric state and assembly of macromolecules and complexes in solution",
+    "molecular weight in solution (via inline SEC-MALS)",
+    "crystal structure of macromolecules",
+    "lipid nanoparticle structure"
+  ],
+  "probe": {"type": "photon", "energy_range_eV": [5000, 17000], "tunable": true, "flux_notes": "ALS beamline directory: 10^11 ph/sec (resolving power 0.001, superbend source). Classen et al. 2013: SAXS flux (uncollimated, 500 mA) 2x10^13 photons per second; MX flux (collimated, 100 um, 500 mA) 2x10^11 photons per second; wavelength range 0.73-2.5 Angstrom via customized Kohzu APM-type monochromator with both Si(111) crystals and Mo/B4C multilayer optics"},
+  "resolution": {
+    "energy_notes": "ALS directory quotes monochromator resolving power 0.001 (dE/E); dual-mode Si(111) / multilayer monochromator",
+    "q_range_inv_angstrom": [0.01, 0.4],
+    "spatial_notes": "q-range 0.01-0.4 inverse Angstrom is the standard SEC-SAXS/mail-in configuration (wavelength 1.127 Angstrom, sample-to-detector distance 2100 mm); Classen et al. 2013 report accessible q from a minimum of 0.007 to a maximum of 4.2 inverse Angstrom with tunable wavelength allowing q-range adjustment without changing sample-to-detector configuration"
+  },
+  "sample_constraints": {
+    "states": ["solution", "single crystal"],
+    "size_notes": "HT-SAXS mail-in: 'Three sample concentrations between 1-10 mg/ml'; 'Fill plate wells with a consistent volume of 30uL of sample and buffer' in '96-well Full-skirt Clear (not opaque) PCR Microplates'. SEC-SAXS: 'The sample concentration should be from 3-10 mg/ml with smaller molecules requiring higher concentrations'; 'A sample with a minimum volume of 60 ul'; users supply '50 ml of 10x SEC buffer' per run",
+    "special_requirements": [
+      "HT-SAXS: do not use greater than 2% glycerol",
+      "HT-SAXS: collect two identical matched buffers for each concentration series, one before and one after",
+      "SEC-SAXS: salt concentration must not exceed 500 mM and buffer pH must be less than 7.5",
+      "SEC-SAXS: each beamtime slot is limited to 7 samples using 1 column and 1 buffer"
+    ]
+  },
+  "sample_environments": [
+    "Hamilton ML4000 liquid-handling robot for 96-well plate SAXS",
+    "SEC-SAXS with inline UV (280 nm), MALS, QELS, and refractometry detection",
+    "SEC columns: Shodex PROTEIN KW-802.5 (150 kDa exclusion limit), KW-803 (700 kDa), KW-804 (1000 kDa)"
+  ],
+  "detectors": [
+    "Dectris Pilatus3 2M pixel array detector (SAXS endstation, installed August 2015)",
+    "ADSC Quantum 315r CCD (MX endstation, per Classen et al. 2013; 2-theta -5 to +45 degrees)"
+  ],
+  "data_products": [
+    {"type": "integrated 1D scattering profiles", "format": "ASCII"},
+    {"type": "merged SAXS curve per sample with report including SAXS parameters and P(r) function (SEC-SAXS)"},
+    {"type": "SEC-MALS quality-control report (SEC-SAXS)"}
+  ],
+  "typical_experiment_duration": "HT-SAXS: 48 samples and 48 alternating buffers (a full 96-well plate) completed in about 4 h; SEC-SAXS: 25 min elution per sample, 7 samples per beamtime slot",
+  "access": {
+    "mechanism": "General user access (onsite and remote-robotic); high-throughput mail-in SAXS via MailinSAXS slot reservation — users register a MailinSAXS account, register with the ALS User Office, and submit one ALS RAPIDD proposal for every three MailinSAXS slots",
+    "proposal_url": "https://htsaxs.bl1231.als.lbl.gov",
+    "cost_model": "Funded by DOE BER and NCI; supported by IDAT, SBDR, ALS-ENABLE, and the DOE"
+  },
+  "contacts": [
+    {"name": "Greg Hura", "email": "glhura@lbl.gov", "role": "Beamline Scientist"},
+    {"name": "Michal Hammel", "email": "mhammel@lbl.gov", "role": "Beamline Scientist"},
+    {"name": "Kathryn Burnett", "email": "kburnett@lbl.gov", "role": "Administrator"},
+    {"name": "John Tainer", "role": "Beamline Spokesperson"}
+  ],
+  "urls": ["https://als.lbl.gov/beamlines/12-3-1/", "https://bl1231.als.lbl.gov/", "https://htsaxs.bl1231.als.lbl.gov/", "https://sibyls-beamline-documentation.readthedocs.io/", "https://bl1231.als.lbl.gov/beamtime/"],
+  "demonstrated_applications": [
+    "lipid nanoparticle structure characterization",
+    "protein conformational analysis via SEC-SAXS",
+    "polymer chelator structure-function relationships",
+    "solution scattering of DNA/protein complexes, flexibility, conformational states, and assembly structures",
+    "SAXS- and AlphaFold-guided atomistic modeling (BilboMD, FoXS)"
+  ],
+  "provenance": [
+    {"source_url": "https://als.lbl.gov/beamlines/12-3-1/", "retrieved": "2026-08-27", "notes": "Facility/status, technique SAXS, energy range 5,000-17,000 eV, superbend source, flux 10^11 ph/sec, resolving power 0.001, access modes onsite and remote-robotic, contacts, funding."},
+    {"source_url": "https://bl1231.als.lbl.gov/", "retrieved": "2026-08-27", "notes": "Beamline name, MailinSAXS/HT-SAXS program, SEC-SAXS, demonstrated applications, analysis tools (BilboMD, FoXS, ScAtter, RAW), support, subpage URLs."},
+    {"source_url": "https://htsaxs.bl1231.als.lbl.gov/htsaxs", "retrieved": "2026-08-27", "notes": "HT-SAXS sample constraints verbatim: 1-10 mg/ml three concentrations, 30 uL per well, 96-well clear PCR microplates, max 2% glycerol, paired buffer blanks; data product 'integrated scattering profiles in ASCI format'."},
+    {"source_url": "https://htsaxs.bl1231.als.lbl.gov/secsaxs", "retrieved": "2026-08-27", "notes": "SEC-SAXS constraints verbatim: 3-10 mg/ml, minimum 60 ul, 50 ml of 10x SEC buffer, salt <=500 mM, pH <7.5, 7 samples per slot, Shodex columns; data products: merged SAXS curve with P(r) report plus SEC-MALS report."},
+    {"source_url": "https://htsaxs.bl1231.als.lbl.gov/sec_publication_template", "retrieved": "2026-08-27", "notes": "Standard SEC-SAXS configuration: wavelength 1.127 Angstrom, sample-to-detector 2,100 mm, q 0.01-0.4 inverse Angstrom, 2 sec exposures during 25 min elution, inline UV/MALS/QELS/refractometry, RAW and Wyatt Astra 8."},
+    {"source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3547225/", "retrieved": "2026-08-27", "notes": "Classen et al., J Appl Cryst 46 (2013): dual SAXS/MX endstation design, wavelength 0.73-2.5 Angstrom, Kohzu APM monochromator, SAXS flux 2x10^13 and MX flux 2x10^11 ph/s at 500 mA, q 0.007-4.2 inverse Angstrom, ADSC Quantum 315r, Hamilton ML4000, 96-well plate ~4 h (pre-2015 configuration). MX technique and MX detector fields rest on this 2013 source; current ALS directory lists only SAXS."},
+    {"source_url": "https://bl1231.als.lbl.gov/2016/02/sibyls_installs_new_detector/", "retrieved": "2026-08-27", "notes": "SAXS detector: Pilatus3 2M installed on the SAXS endstation 2015, first user data August 19, 2015; supersedes mar165."},
+    {"source_url": "https://bl1231.als.lbl.gov/beamline-staff/", "retrieved": "2026-08-27", "notes": "Staff roles: Tainer (Spokesperson), Hura, Hammel, Classen, Holton (Beamline Scientists), Burnett (Administrator); emails from als.lbl.gov directory page."}
+  ],
+  "record_depth": "deep"
+},
+{
+  "id": "als-4.0.3",
+  "facility": "ALS",
+  "institution": "LBNL",
+  "name": "MERLIN High-Resolution ARPES Beamline (Beamline 4.0.3)",
+  "aliases": ["MERLIN", "BL 4.0.3", "Endstation 4.0.3.2 (ARPES)", "Endstation 4.0.3.3 (Spin-ARPES)"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "record_depth": "deep",
+  "techniques": [
+    {"name": "angle-resolved photoemission spectroscopy", "acronym": "ARPES", "variants": ["temperature-dependent", "photon-energy-dependent (kz mapping)", "polarization-dependent", "spatially-dependent (refocused ~50x20 um spot)"]},
+    {"name": "spin-resolved angle-resolved photoemission spectroscopy", "acronym": "spin-ARPES", "variants": ["endstation 4.0.3.3, under commissioning as of retrieval date"]},
+    {"name": "core-level photoemission spectroscopy", "acronym": "XPS", "variants": ["resonant photoemission (e.g. Sm 4d->4f resonance regime)"]}
+  ],
+  "measurables": [
+    "electronic band structure",
+    "fermi surface",
+    "energy gaps and in-gap electronic states",
+    "quasiparticle self-energy",
+    "spin texture of electronic bands",
+    "kz dispersion / dimensionality of electronic states",
+    "temperature dependence of electronic states",
+    "core-level electronic structure and valence (chemical) states",
+    "orbital character via light-polarization dependence",
+    "spatial inhomogeneity of surface electronic structure"
+  ],
+  "probe": {"type": "photon", "energy_range_eV": [10, 150], "tunable": true, "polarization": ["linear horizontal", "linear vertical", "left circular", "right circular"], "flux_notes": "Design expectation (MERLIN design paper): flux at sample higher than 10^11 photons/s at a resolving power of 5x10^4 in the energy range 16-130 eV. Source: EPU9 elliptically polarized undulator; high-flux grating 1200 lines/mm."},
+  "resolution": {
+    "spatial_notes": "Refocused beam spot of ~50x20 um at ARPES endstation (demonstrated); 50 um FWHM spot at spin-ARPES endstation 4.0.3.3.",
+    "energy_resolving_power": 25000,
+    "energy_notes": "Beamline page quotes 'resolving power ~ 25,000' with the 1200 lines/mm high-flux grating; MERLIN design target resolving power 5x10^4. Demonstrated overall ARPES energy resolution as low as 7 meV (Scienta R8000, published measurement)."
+  },
+  "sample_constraints": {
+    "states": ["solid", "single crystal", "thin film"],
+    "vacuum_required": true,
+    "special_requirements": [
+      "verbatim from beamline page: 'UHV-compatible solids: UHV cleave, in-situ thin film growth, Sputter-anneal, Sample delivery in Vacuum suitcases'",
+      "demonstrated practice (published): samples 'were cleaved and measured in ultra-high vacuum better than 8x10^-11 Torr'",
+      "atomically clean surface required; cleaved-surface quality/inhomogeneity directly affects spectra"
+    ]
+  },
+  "sample_environments": [
+    "liquid He flow cryostat on 6-axis sample manipulator, cooled to as low as 6 K (ARPES endstation, demonstrated)",
+    "closed-cycle liquid helium cryostat (spin-ARPES endstation 4.0.3.3)",
+    "in-situ thin film growth",
+    "sputter-anneal surface preparation",
+    "in-situ sample magnetization via permanent magnets (spin-ARPES endstation)",
+    "sample delivery in vacuum suitcases"
+  ],
+  "detectors": [
+    "Scienta R8000 hemispherical electron energy analyzer (ARPES endstation 4.0.3.2)",
+    "Scienta-Omicron DA-30 spectrometer with deflector plates (spin-ARPES endstation 4.0.3.3)",
+    "3D VLEED spin detector (spin-ARPES endstation 4.0.3.3)"
+  ],
+  "data_products": [
+    {"type": "band dispersion (energy vs momentum) ARPES spectra"},
+    {"type": "fermi surface and constant-binding-energy (kx-ky) maps"},
+    {"type": "photon-energy-dependent (kz) band mapping series"},
+    {"type": "temperature-dependent ARPES series"},
+    {"type": "core-level photoemission (XPS) spectra"}
+  ],
+  "access": {"mechanism": "general user proposal; beamline listed as 'Operational; open to general users' with onsite access mode", "proposal_system": "ALSHub", "proposal_url": "https://alshub.als.lbl.gov/"},
+  "contacts": [
+    {"name": "Jonathan Denlinger", "email": "JDDenlinger@lbl.gov", "role": "beamline scientist, ARPES (endstation 4.0.3.2)"},
+    {"name": "Alexei Fedorov", "email": "avfedorov@lbl.gov", "role": "beamline scientist, spin-ARPES (endstation 4.0.3.3)"}
+  ],
+  "urls": ["https://als.lbl.gov/beamlines/4-0-3/", "https://sites.google.com/lbl.gov/bl12-arpes-als", "https://alshub.als.lbl.gov/"],
+  "demonstrated_applications": [
+    "temperature-dependent ARPES of the Kondo insulator SmB6: Sm 4f states, hybridization gap and in-gap states (30-140 eV excitation)",
+    "photon-energy-dependent kz band mapping and polarization-dependent (LH/LV) Fermi-edge mapping of single crystals",
+    "spatially resolved characterization of cleaved-surface electronic inhomogeneity using a ~50x20 um refocused beam spot",
+    "strongly correlated quantum materials / low energy excitations (beamline design purpose)"
+  ],
+  "provenance": [
+    {"source_url": "https://als.lbl.gov/beamlines/4-0-3/", "retrieved": "2026-08-27", "notes": "Primary source: photon energy range 10-150 eV, EPU9 source, 1200 l/mm grating resolving power ~25,000, selectable polarization, endstation list and status, spin-ARPES specs, verbatim sample requirements, contacts, ALSHub access."},
+    {"source_url": "https://arxiv.org/pdf/1312.6636", "retrieved": "2026-08-27", "notes": "Denlinger et al., 'SmB6 Photoemission: Past and Present' (measured at MERLIN): Scienta R8000, energy resolution as low as 7 meV, LHe flow cryostat to 6 K, UHV better than 8x10^-11 Torr, ~50x20 um spot, 30-140 eV with linear/circular polarization, demonstrated applications/data products."},
+    {"source_url": "https://escholarship.org/uc/item/0jq9494w", "retrieved": "2026-08-27", "notes": "'MERLIN - A meV Resolution Beamline at the ALS' (design paper): expected flux >10^11 ph/s at resolving power 5x10^4 over 16-130 eV; design purpose. Figures via search snippet — design values, lower confidence."},
+    {"source_url": "https://sites.google.com/lbl.gov/bl12-arpes-als", "retrieved": "2026-08-27", "notes": "Endstation site: confirms spin-ARPES relocation to BL 4.0.3 and ongoing upgrade (new TOYAMA PGM monochromator and refocusing optics)."}
+  ]
+},
+{
+  "id": "als-12.2.2",
+  "facility": "ALS",
+  "institution": "LBNL",
+  "name": "Beamline 12.2.2: Diffraction Under Non-Ambient Conditions",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+    {"name": "powder X-ray diffraction", "acronym": "XRD", "variants": ["high-pressure (diamond anvil cell)", "axial geometry", "radial geometry", "double-sided laser heated", "high-temperature ambient-pressure (to ~1000 C) with controlled atmosphere"]},
+    {"name": "single-crystal X-ray diffraction", "acronym": "SCXRD", "variants": ["high-pressure (large DACs: BX90, symmetric cells)", "single-axis configuration (4-circle goniometer in commissioning)", "small-molecule crystallography (ES-1)"]},
+    {"name": "multigrain X-ray diffraction", "variants": ["high-pressure"]}
+  ],
+  "measurables": [
+    "crystal structure under pressure",
+    "atomic structure of materials at extreme conditions",
+    "pressure-induced phase transitions",
+    "equation of state (pressure-volume-temperature)",
+    "lattice parameters vs pressure and temperature",
+    "phase stability at high temperature under controlled atmosphere",
+    "elastic strain and defect evolution under pressure cycling",
+    "small-molecule crystal structure"
+  ],
+  "probe": {"type": "photon", "energy_range_eV": [6000, 35000], "tunable": true, "flux_notes": "10^11 photons through 100 um pinhole at 25 keV with Si(111) monochromator; ~10^13 photons with multilayer monochromator. Source is a 6 T superconducting bending magnet (superbend); internally cooled collimating Si mirror installed early 2022 enhanced flux by ~2.5x."},
+  "resolution": {
+    "spatial_notes": "Minimum X-ray spot size 5x5 um to 15x15 um at ES-2 (powder XRD); 30x30 um at ES-1 (single-crystal diffractometer)",
+    "energy_resolving_power": 7000,
+    "energy_notes": "Si(111) E/dE = 7,000; multilayer E/dE = 100"
+  },
+  "sample_constraints": {
+    "states": ["powder", "single crystal"],
+    "size_notes": "Samples loaded in diamond anvil cells or capillaries; other equipment accommodated case-by-case. ES-1 accommodates DACs up to 1 kg capacity; large DACs (BX90, symmetric cells) supported for single-crystal work."
+  },
+  "sample_environments": [
+    "diamond anvil cells (axial or radial diffraction geometry), capable of reaching Mbar pressures (1 Mbar = 100 GPa)",
+    "double-sided laser heating of DAC samples (80 W Nd:YLF cw laser, TEM01 mode, heating from both sides)",
+    "multiple heating schemes for both ambient pressure and DAC experiments realizing temperatures in excess of 2000 C",
+    "resistive (external) heating of samples in a diamond anvil cell to >1500 K",
+    "ambient-pressure heating to ~1000 C with simultaneous controlled atmosphere"
+  ],
+  "detectors": ["Dectris PILATUS3 X CdTe 300K (ES-1 single-crystal diffraction; operational from spring 2023 cycle)"],
+  "data_products": [
+    {"type": "2d diffraction pattern series (powder XRD, axial or radial geometry)"},
+    {"type": "single-crystal diffraction datasets"}
+  ],
+  "access": {"mechanism": "general user proposal; ES-2 (powder XRD) open to general users, ES-1 (HP single-crystal diffractometer) limited access; onsite access mode", "proposal_system": "ALSHub", "proposal_url": "https://alshub.als.lbl.gov"},
+  "contacts": [
+    {"name": "Martin Kunz", "email": "MKunz@lbl.gov", "role": "beamline contact"},
+    {"name": "Bora Kalkan", "email": "bkalkan@lbl.gov", "role": "beamline contact"},
+    {"name": "Kat Armstrong", "email": "karmstrong@lbl.gov", "role": "beamline contact"}
+  ],
+  "urls": ["https://als.lbl.gov/beamlines/12-2-2/", "https://sites.google.com/a/lbl.gov/bl1222-high-pressure-xrd/home"],
+  "demonstrated_applications": [
+    "stress-induced structural transformations, elastic strain, and defect evolution in gold nanocrystals tracked by in situ XRD under pressure cycling",
+    "geoscience / deep-Earth mineral physics experiments at extreme pressure-temperature conditions",
+    "research in chemical sciences, energy sciences, earth and environmental sciences, and materials sciences"
+  ],
+  "provenance": [
+    {"source_url": "https://als.lbl.gov/beamlines/12-2-2/", "retrieved": "2026-08-27", "notes": "Primary source: name, status, techniques, 6-35 keV, endstations ES-1/ES-2 with spot sizes and access levels, DACs to Mbar, ES-1 DAC capacity 1 kg, heating >2000 C, flux, resolving powers, contacts. Notes temporary closure during ALS-U upgrade."},
+    {"source_url": "https://sites.google.com/a/lbl.gov/bl1222-high-pressure-xrd/home", "retrieved": "2026-08-27", "notes": "Group site: axial/radial DAC powder diffraction with double-sided laser heating; ambient-pressure XRD to ~1000 C with controlled atmosphere; HP single-crystal diffraction with large DACs; gold nanocrystal highlight."},
+    {"source_url": "https://ui.adsabs.harvard.edu/abs/2022AGUFMMR42A0062A/abstract", "retrieved": "2026-08-27", "notes": "AGU 2022 abstract (via search excerpts): PILATUS3 X CdTe 300K for ES-1 (spring 2023), cooled Si mirror early 2022 ~2.5x flux, resistive DAC heating >1500 K, 6 T superbend, 80 W Nd:YLF laser heating."},
+    {"source_url": "https://als.lbl.gov/users/user-guide/", "retrieved": "2026-08-27", "notes": "Proposal/registration through ALSHub. No cryostat found in any source, so none listed."}
+  ],
+  "record_depth": "deep"
+},
+{
+  "id": "als-9.3.2",
+  "facility": "ALS",
+  "institution": "LBNL",
+  "name": "Beamline 9.3.2 — Ambient-Pressure Soft X-Ray Photoelectron Spectroscopy",
+  "aliases": ["S-APXPS", "Soft X-ray APXPS", "APPES endstation"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+    {"name": "ambient-pressure X-ray photoelectron spectroscopy", "acronym": "APXPS", "variants": ["ambient-pressure photoemission spectroscopy (APPES)", "spectromicroscopy mode", "angle-resolved mode"]},
+    {"name": "X-ray absorption spectroscopy", "acronym": "XAS"}
+  ],
+  "measurables": [
+    "surface chemical composition under reaction conditions",
+    "oxidation states of surface and near-surface species",
+    "adsorbate coverage and chemical speciation",
+    "interfacial elemental composition",
+    "interfacial chemical states at solid/gas interfaces under in situ and operando conditions",
+    "interfacial potential information"
+  ],
+  "probe": {"type": "photon", "energy_range_eV": [200, 900], "tunable": true, "flux_notes": "Bend magnet source providing soft x-ray energies (200-900 eV)"},
+  "resolution": {
+    "spatial_m": 1.6e-5,
+    "spatial_notes": "Scienta R4000 HiPP spectromicroscopy mode: 16 um spatial resolution in one dimension; angle-resolved mode with simulated 0.5 deg angular resolution at 24 deg acceptance (Grass et al., Rev. Sci. Instrum. 81, 053106, 2010)"
+  },
+  "sample_constraints": {
+    "states": ["solid"],
+    "size_notes": "Ideal sample diameter 7-10 mm; beam spot size approximately 1.0 mm diameter",
+    "vacuum_required": false,
+    "special_requirements": ["best suited for conventional solid/gas measurements"]
+  },
+  "sample_environments": [
+    "ambient-pressure photoemission chamber allowing measurements at gas pressures up to 10 Torr (verbatim: 'a unique ambient-pressure photoemission chamber that allows measurements at pressures up to 10 Torr, owing to the very small distance (less than one electron mean free path) through which the easily scattered photoelectrons travel in gas')",
+    "reactive gas atmospheres for in situ and operando solid/gas interface studies (demonstrated conditions include 0.7 Torr at 298 K)"
+  ],
+  "detectors": ["Scienta R4000 HiPP differentially pumped electron energy analyzer"],
+  "data_products": [
+    {"type": "ambient-pressure XPS spectra (core-level photoemission under gas atmospheres)"},
+    {"type": "XAS spectra"}
+  ],
+  "access": {"mechanism": "general user proposal (listed as 'Operational; open to general users'; onsite access mode). Note: beamline will close during the ALS-U upgrade and remain closed afterward; some experiments may transfer to beamlines 11.0.2 and 9.0.1."},
+  "contacts": [
+    {"name": "Ethan Crumlin", "email": "ejcrumlin@lbl.gov", "role": "beamline contact"},
+    {"name": "Monika Blum", "email": "mblum@lbl.gov", "role": "beamline contact"},
+    {"name": "Oleg Kostko", "email": "okostko@lbl.gov", "role": "beamline staff"}
+  ],
+  "urls": ["https://als.lbl.gov/beamlines/9-3-2/", "https://als.lbl.gov/science/photon-science-programs/apxps-chemical-sciences-program/", "https://als.lbl.gov/tag/bl-9-3-2"],
+  "demonstrated_applications": [
+    "ammonia synthesis catalysis from magnetite-derived catalysts",
+    "multimetallic/bimetallic hydrogen storage materials",
+    "hydrogen spillover onto catalytic surfaces",
+    "cobalt-manganese oxide catalysts for fuel production",
+    "electrode-electrolyte interfacial degradation in solid-electrolyte batteries",
+    "liquid/vapor interface of deep eutectic solvents for environmental applications",
+    "active-site chemical states in cobalt-based emissions-control catalysts",
+    "reaction-driven restructuring of bimetallic nanoparticle catalysts",
+    "subsurface oxygen effects on copper catalyst activity (APXPS at 0.7 Torr, 298 K)",
+    "platinum nanocluster catalysis compared with single crystals",
+    "atomic-level catalyst design via metal co-localization control"
+  ],
+  "provenance": [
+    {"source_url": "https://als.lbl.gov/beamlines/9-3-2/", "retrieved": "2026-08-27", "notes": "Beamline homepage: name, status (with ALS-U closure caveat and possible transfer to 11.0.2 and 9.0.1), techniques, 200-900 eV, spot size ~1.0 mm, ideal sample diameter 7-10 mm, onsite access, contacts."},
+    {"source_url": "https://als.lbl.gov/science/photon-science-programs/apxps-chemical-sciences-program/", "retrieved": "2026-08-27", "notes": "APXPS program page: S-APXPS name; bend magnet 200-900 eV; '9.3.2 is best suited for conventional solid/gas measurements'; interfacial elemental/chemical/potential information basis for measurables."},
+    {"source_url": "https://als.lbl.gov/reaction-driven-restructuring-of-bimetallic-nanoparticle-catalysts/", "retrieved": "2026-08-27", "notes": "Science highlight: verbatim source of 10 Torr maximum operating pressure; demonstrated application."},
+    {"source_url": "https://www.osti.gov/biblio/22053695", "retrieved": "2026-08-27", "notes": "Grass et al., Rev. Sci. Instrum. 81, 053106 (2010) abstract: Scienta R4000 HiPP; operation 'above 2 mbar'; 16 um spatial resolution (spectromicroscopy mode); 0.5 deg angular resolution at 24 deg acceptance. Note: 2010 paper quotes 'above 2 mbar' while ALS highlight quotes 'up to 10 Torr'; both captured."},
+    {"source_url": "https://als.lbl.gov/tag/bl-9-3-2", "retrieved": "2026-08-27", "notes": "Tag page of 2024-2025 science highlights: source of most demonstrated_applications entries."},
+    {"source_url": "https://als.lbl.gov/subsurface-oxygen-boosts-activity-copper-catalysts/", "retrieved": "2026-08-27", "notes": "Science highlight: subsurface oxygen in copper catalysts; conditions 0.7 Torr, 298 K."},
+    {"source_url": "https://als.lbl.gov/platinum-nanoclusters-out-perform-single-crystals/", "retrieved": "2026-08-27", "notes": "Science highlight: platinum nanocluster catalysis."}
+  ],
+  "record_depth": "deep"
+},
+{
+  "id": "als-1.4",
+  "facility": "ALS",
+  "institution": "LBNL",
+  "name": "Infrared Microspectroscopy (Beamline 1.4)",
+  "aliases": ["BL 1.4", "1.4.3 Infrared Micro-spectroscopy", "1.4.4 Optical Photothermal Infrared Microscopy"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+    {"name": "Fourier transform infrared microspectroscopy", "acronym": "FTIR", "variants": ["synchrotron-source FTIR", "transmission", "reflection", "attenuated total reflection (ATR; Ge and diamond crystals; down to 100 cm-1)", "glancing-angle (VeeMax accessory)", "polarization control of incident light", "large-area mapping", "remote operation"]},
+    {"name": "infrared spectroscopy"},
+    {"name": "optical photothermal infrared microscopy", "acronym": "O-PTIR", "variants": ["endstation 1.4.4 (limited access); 500 nm visible diffraction-limit"]}
+  ],
+  "measurables": [
+    "molecular functional-group composition",
+    "molecular vibrational spectra (mid-, far-, and near-infrared)",
+    "chemical composition maps of heterogeneous samples at 2-10 micron scale",
+    "sub-micron chemical maps (500 nm, via O-PTIR at endstation 1.4.4)",
+    "real-time chemical changes in living/flowing biological samples"
+  ],
+  "probe": {"type": "photon", "energy_range_eV": [0.02, 1.4], "polarization": ["polarization control of incident light available"]},
+  "resolution": {
+    "spatial_m": 2e-6,
+    "spatial_notes": "Endstation 1.4.3: '2-10 um, diffraction-limited' spot size; endstation 1.4.4 (O-PTIR): '500 nm, visible diffraction-limit'",
+    "energy_notes": "Spectral range 200-11,000 cm-1 (0.02-1.40 eV) overall; standard configuration 600-11,000 cm-1 with MCT detection; far-IR (<600 cm-1) and near-IR (>9000 cm-1) with alternative detectors. Spectral resolution typically 4 cm-1; up to 0.125 cm-1 achievable."
+  },
+  "sample_constraints": {
+    "states": ["solid", "thin film", "solution"],
+    "size_notes": "77 K Oxford cryostat accommodates samples 'up to 8 mm thick'",
+    "special_requirements": [
+      "ATR probing depth 0.6-2.0 um, depending on crystal and sample index of refraction",
+      "hydrated/flowing biological samples demonstrated via open-channel microfluidic platform (science highlight)",
+      "use of additional/non-standard equipment requires coordination with beamline staff prior to proposal submission"
+    ]
+  },
+  "sample_environments": [
+    "77 K Oxford cryostat (reflection/transmission; samples up to 8 mm thick)",
+    "4 K Oxford cryostat",
+    "4-pin electrical wiring to sample",
+    "ATR accessory with Ge and diamond crystals",
+    "VeeMax glancing-angle accessory",
+    "open-channel microfluidic platform (demonstrated in user science highlight)"
+  ],
+  "detectors": [
+    "MCT (standard detection, 600-11,000 cm-1)",
+    "Si bolometer (far-IR, <600 cm-1)",
+    "alternative detectors for near-IR (>9000 cm-1) and high spectral resolution (0.125 cm-1)"
+  ],
+  "data_products": [
+    {"type": "point FTIR absorbance/reflectance/ATR spectra"},
+    {"type": "hyperspectral chemical maps from large-area mapping scans"}
+  ],
+  "access": {"mechanism": "general user proposal (2-year, deadlines 1st Wednesday in September and 1st Wednesday in March); rapid access proposals for limited beamtime with quick access; approved programs (deadlines January 15 and July 15); onsite and remote (ALS-operated) modes", "proposal_system": "ALSHub", "proposal_url": "https://alshub.als.lbl.gov"},
+  "contacts": [
+    {"name": "Hans Bechtel", "email": "HABechtel@lbl.gov", "role": "scientific contact"},
+    {"name": "Stephanie Gilbert Corder", "email": "SGilbertCorder@lbl.gov", "role": "scientific contact"},
+    {"name": "Diana Bedolla", "email": "dbedolla@lbl.gov", "role": "scientific contact"}
+  ],
+  "urls": ["https://als.lbl.gov/beamlines/1-4/", "https://als.lbl.gov/infrared-site/1-4-overview/", "https://als.lbl.gov/infrared-site/user-information/"],
+  "demonstrated_applications": [
+    "real-time chemical imaging of bacterial biofilm development using an open-channel microfluidic platform coupled to the IR beam (biology/environmental)",
+    "real-time FTIR tracking of microbial cellulose breakdown in plant tissue at the micron scale (bioenergy/environmental)",
+    "facility-listed research areas: applied, biological, chemical, energy, earth & environmental, materials, and physical sciences"
+  ],
+  "provenance": [
+    {"source_url": "https://als.lbl.gov/beamlines/1-4/", "retrieved": "2026-08-27", "notes": "Source of id/name, status, endstation list, energy range 0.02-1.40 eV, wavenumber range 200-11,000 cm-1, interferometer resolution up to 0.125 cm-1, spatial resolutions, bend-magnet source, contacts, access modes. Page also states beamline will close at the start of ALS-U dark time and remain closed after upgrade — recorded as operational at retrieval time."},
+    {"source_url": "https://als.lbl.gov/infrared-site/1-4-overview/", "retrieved": "2026-08-27", "notes": "Technique variants, standard range, detectors, sample environments (cryostats, electrical wiring), ATR penetration depth, staff-coordination requirement."},
+    {"source_url": "https://als.lbl.gov/infrared-site/user-information/", "retrieved": "2026-08-27", "notes": "Access mechanisms (general user proposals, rapid access, approved programs) and ALSHub portal."},
+    {"source_url": "https://als.lbl.gov/real-time-chemical-imaging-of-bacterial-biofilm-development/", "retrieved": "2026-08-27", "notes": "Science highlight (via search snippet): open-channel microfluidic platform for label-free chemical imaging of developing biofilms."},
+    {"source_url": "https://als.lbl.gov/tracking-the-breakdown-of-cellulose-at-the-micron-scale/", "retrieved": "2026-08-27", "notes": "Science highlight (via search snippet): real-time FTIR tracking microbial cellulose breakdown."}
+  ],
+  "record_depth": "deep"
+},
+{
+  "id": "als-8.0.1",
+  "facility": "ALS",
+  "institution": "LBNL",
+  "name": "Beamline 8.0.1 — Soft X-Ray RIXS/XAS/XES (iRIXS)",
+  "aliases": ["iRIXS", "wetRIXS", "qRIXS", "Beamline 8.0 Open Port", "8.0.1.1", "8.0.1.2", "8.0.1.4"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "record_depth": "deep",
+  "techniques": [
+    {"name": "resonant inelastic x-ray scattering", "acronym": "RIXS", "variants": ["high-resolution (hrRIXS spectrograph)", "high-throughput (htRIXS spectrograph)", "in-situ/operando (iRIXS)", "liquid/gas cell (wetRIXS)"]},
+    {"name": "x-ray absorption spectroscopy", "acronym": "XAS", "variants": ["soft x-ray"]},
+    {"name": "x-ray emission spectroscopy", "acronym": "XES"},
+    {"name": "x-ray fluorescence spectroscopy", "acronym": "XFS"}
+  ],
+  "measurables": [
+    "electronic excitations (low-energy excitations via inelastic scattering)",
+    "elemental/orbital-resolved electronic structure",
+    "chemical bonding states",
+    "oxidation and valence states of transition metals and light elements",
+    "occupied and unoccupied electronic states near absorption edges",
+    "local chemical environment and speciation",
+    "redox reaction mechanisms in energy materials"
+  ],
+  "probe": {"type": "photon", "energy_range_eV": [80, 1250], "tunable": true, "flux_notes": "10^10-6x10^15 photons/s (resolution and energy dependent); source: U5 undulator; spot size 100 (h) x 35 (v) um at all endstations"},
+  "resolution": {
+    "energy_resolving_power": 5000,
+    "energy_notes": "Beamline resolving power 5,000 (slit size dependent). iRIXS endstation spectrographs are slit-less VLS designs with wide operation energy range up to 1500 eV; detection window spans O K-edge to Ni L-edge emission without mechanical motion.",
+    "spatial_notes": "Beam spot size 100 (h) x 35 (v) um (not a microscopy beamline)"
+  },
+  "sample_constraints": {
+    "states": ["solid", "liquid", "gas", "thin film"],
+    "size_notes": "iRIXS/Open Port: UHV-compatible samples up to 2 cm in diameter; 5-mm diameter optimal. wetRIXS: solid, liquid, gas via static and flow cells.",
+    "vacuum_required": true,
+    "special_requirements": ["UHV-compatible samples for iRIXS and Open Port endstations; liquids/gases accommodated only via wetRIXS cells"]
+  },
+  "sample_environments": [
+    "static cells for liquid and gas samples (wetRIXS)",
+    "flow cells for liquid and gas samples (wetRIXS)",
+    "in-situ/operando cells for battery/electrochemistry studies (demonstrated in beamline highlights on Li-ion cathode reaction mechanisms)",
+    "open port endstation (8.0.1.2) for user-supplied experimental setups"
+  ],
+  "detectors": [
+    "hrRIXS: high-resolution slit-less VLS soft x-ray spectrograph mounted 90 degrees to incident beam",
+    "htRIXS: high-throughput slit-less VLS soft x-ray spectrograph in back-scattering geometry"
+  ],
+  "data_products": [
+    {"type": "xas spectrum"},
+    {"type": "xes/xfs emission spectrum"},
+    {"type": "rixs spectrum"},
+    {"type": "two-dimensional rixs map (emission vs. excitation energy)"}
+  ],
+  "access": {"mechanism": "general user proposal (open to general users; onsite access mode)", "proposal_system": "ALSHub", "proposal_url": "https://alshub.als.lbl.gov/"},
+  "contacts": [
+    {"name": "Zengqing Zhuo", "email": "zzhuo@lbl.gov", "role": "primary contact"},
+    {"name": "Wanli Yang", "email": "WLYang@lbl.gov", "role": "primary contact"},
+    {"name": "Jinghua Guo", "email": "JGuo@lbl.gov", "role": "primary contact"}
+  ],
+  "urls": ["https://als.lbl.gov/beamlines/8-0-1/", "https://als.lbl.gov/tag/bl-8-0-1", "https://pubs.aip.org/aip/rsi/article/88/3/033106/1018572/High-efficiency-in-situ-resonant-inelastic-x-ray"],
+  "demonstrated_applications": [
+    "reaction mechanisms of commercial lithium-ion battery cathodes",
+    "degradation resistance of low-nickel battery cathodes",
+    "role of manganese in fuel-production catalysts",
+    "ethylene purification materials",
+    "neuromorphic (neuron-mimicking) computing materials",
+    "energy, chemical, earth/environmental, and applied materials sciences"
+  ],
+  "provenance": [
+    {"source_url": "https://als.lbl.gov/beamlines/8-0-1/", "retrieved": "2026-08-27", "notes": "Primary source: endstation names/status (iRIXS 8.0.1.1, Open Port 8.0.1.2, qRIXS 8.0.1.3 decommissioned July 2025, wetRIXS 8.0.1.4), techniques, 80-1,250 eV, flux, resolving power 5,000, spot size, sample constraints, contacts, science highlight links."},
+    {"source_url": "https://pubs.aip.org/aip/rsi/article/88/3/033106/1018572/High-efficiency-in-situ-resonant-inelastic-x-ray", "retrieved": "2026-08-27", "notes": "iRIXS instrument paper (Rev. Sci. Instrum. 88, 033106 (2017)): hrRIXS and htRIXS slit-less VLS spectrographs, geometries, operation to 1500 eV, 2D RIXS maps, O K-edge to Ni L-edge simultaneous window."},
+    {"source_url": "https://als.lbl.gov/users/user-guide/", "retrieved": "2026-08-27", "notes": "Confirms ALSHub as proposal system. Cost model not stated, omitted."}
+  ]
+}
+]

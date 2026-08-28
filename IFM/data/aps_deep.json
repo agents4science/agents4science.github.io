@@ -1,0 +1,262 @@
+[
+{
+  "id": "aps-2-id-e",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "2-ID-E X-ray Fluorescence Microprobe",
+  "aliases": ["2-ID-E Microprobe", "APS-U 2-ID Microprobe", "XSD Microscopy 2-ID-E"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "record_depth": "deep",
+  "techniques": [
+    {"name": "X-ray fluorescence microscopy", "acronym": "XFM", "panet_id": "", "variants": ["scanning microprobe", "fly-scanning"]},
+    {"name": "X-ray fluorescence tomography", "acronym": "XRF-CT", "panet_id": ""},
+    {"name": "X-ray fluorescence laminography", "panet_id": ""},
+    {"name": "micro X-ray absorption near-edge structure spectroscopy", "acronym": "micro-XANES", "panet_id": "", "variants": ["fluorescence-detected"]},
+    {"name": "ptychography", "panet_id": "", "variants": ["post-APS-U capability per 2022 endstation design paper"]},
+    {"name": "micro small-angle X-ray scattering", "acronym": "micro-SAXS", "panet_id": "", "variants": ["post-APS-U capability per 2022 endstation design paper"]}
+  ],
+  "measurables": [
+    "trace element distribution",
+    "elemental composition maps at sub-micron scale",
+    "quantitative elemental content of single cells (part-per-million detection sensitivity)",
+    "3d elemental distribution via xrf tomography and laminography",
+    "oxidation state / metal speciation (micro-XANES)",
+    "nanoscale electron-density structure (ptychography, post-APS-U)",
+    "local nanostructure via micro-SAXS (post-APS-U)"
+  ],
+  "probe": {
+    "type": "photon",
+    "energy_range_eV": [5000, 20000],
+    "tunable": true,
+    "coherent": true,
+    "flux_notes": "APS beamline directory (retrieved 2026-08-27): flux 4x10^9 ph/s at 10 keV, Kohzu Si(111) monochromator, energy range 5-20 keV; zone-plate configurations: near-field stack of two zone plates (D=160 um) gives 5x10^8 ph/s at 10 keV, single zone plate (D=320 um) gives ~10x flux. APS-U 2-ID Microprobe endstation (Davis et al. 2022): >10^13 ph/s across 7-20 keV with KB mirror focusing and new combined DCM/DMM monochromator (mono or pink beam)."
+  },
+  "resolution": {
+    "spatial_m": 3e-7,
+    "spatial_notes": "Zone-plate microprobe (beamline directory): focused beam 0.5 um x 0.4 um; near-field stacked zone plates give 0.4 um x 0.3 um probe; single zone plate 0.6 um x 0.4 um at ~10x flux. APS-U 2-ID Microprobe endstation design (Davis et al. 2022, installed in station 2-ID-E): JTEC Kirkpatrick-Baez mirrors, achromatic over 7-20 keV, 50 nm spot with asymmetric focusing, 10 um depth of focus, 50 mm working distance.",
+    "energy_resolving_power": 7100,
+    "energy_notes": "Directory lists monochromator energy resolution dE/E = 1.4x10^-4 (Kohzu Si(111))."
+  },
+  "sample_constraints": {
+    "states": ["solid", "thin sections", "whole cells (dried, fixed, or embedded)", "thin film"],
+    "size_notes": "Optimized for many-micrometer-thick specimens (XSD-MIC 2-ID-E page). APS-U Microprobe endstation accommodates samples up to 10 x 10 mm at 50 mm working distance; sample holder payload up to 2 kg; XYZ scan travel >=10 mm, fly-scanning at >=25 mm/s with unlimited rotation for tomography (Davis et al. 2022).",
+    "vacuum_required": false
+  },
+  "sample_environments": [
+    "environmental specimen chamber optimized for bio-medical and environmental specimens, with kinematic specimen mounting correlated to a Leica DMXRE epi-fluorescence microscope (beamline directory)",
+    "inert helium sample enclosure (APS-U endstation)",
+    "controlled flow of fluids (APS-U endstation)",
+    "electrical biasing (APS-U endstation)",
+    "sample heating and cooling, including a cryo-cooled 2D sample holder (APS-U endstation design)"
+  ],
+  "detectors": [
+    "Hitachi (SII) Vortex ME4 4-element silicon drift detector for XRF and spectroscopy",
+    "Dectris Eiger2-500K photon-counting area detector for ptychography, laminography and micro-SAXS (APS-U endstation, 700-2000 mm from sample with He flight tube)"
+  ],
+  "data_products": [
+    {"type": "2d quantitative elemental maps with full XRF spectrum per pixel, fitted with APS MAPS / XRF-Maps software"},
+    {"type": "3d xrf tomogram"},
+    {"type": "xrf laminogram"},
+    {"type": "micro-XANES spectra / speciation maps"},
+    {"type": "ptychographic phase images (post-APS-U)"},
+    {"type": "micro-SAXS patterns (post-APS-U)"}
+  ],
+  "access": {"mechanism": "general user proposal", "proposal_system": "APS user proposal system (APS User Portal)", "proposal_url": "https://beam.aps.anl.gov"},
+  "contacts": [
+    {"name": "Olga Antipova", "role": "beamline contact, 2D/3D XFM and XRF laminography"},
+    {"name": "Barry Lai", "email": "blai@anl.gov", "role": "beamline contact, 2D/3D XFM; physicist, X-ray Science Division Microscopy group"}
+  ],
+  "urls": ["https://www.aps.anl.gov/Beamlines/Beamline-Directory/61", "https://www.aps.anl.gov/Microscopy/Beamlines/2-ID-E", "https://beam.aps.anl.gov/pls/apsweb/beamline_display_pkg.display_beamline?p_beamline_num_c=61"],
+  "demonstrated_applications": [
+    "quantitative zinc mapping in single mouse oocytes/eggs revealing ~8000 zinc-loaded vesicles behind fertilization-induced 'zinc sparks' (Que et al., Nature Chemistry 2015; XFM at APS 2-ID-E and 21-ID-D)",
+    "quantification of trace elements (Si, Mn, Fe, Ni, Zn) in individual aquatic protist and plankton cells, 3 to >50 um, for ocean biogeochemistry (Twining et al., Analytical Chemistry 2003)",
+    "elemental mapping of trace metals in hepatocellular carcinoma research-model tissues with Vortex ME4 SDD and MAPS peak deconvolution (Frontiers in Public Health 2021)",
+    "xrf tomography of composite samples at sub-micron resolution (Microscopy and Microanalysis conference paper)",
+    "post-APS-U target applications stated in endstation paper: 3D microelectronics defect metrology, photovoltaic materials, aerosol particles, exogenous and endogenous metal distribution in cells and tissues (Davis et al. 2022)"
+  ],
+  "provenance": [
+    {"source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/61", "retrieved": "2026-08-27", "notes": "APS beamline directory entry '2-ID-E Microprobe'. Direct fetch blocked (HTTP 403, Cloudflare); content extracted from web-search snippets. Source of: name, status (listed operational/accepting users), Kohzu Si(111), 5-20 keV, dE/E 1.4e-4, flux 4e9 ph/s @10 keV, focused beam 0.5x0.4 um, zone-plate configurations, XRF tomography and laminography, environmental specimen chamber with Leica DMXRE correlation, contacts, MAPS/XRF-Maps software."},
+    {"source_url": "https://www.aps.anl.gov/Microscopy/Beamlines/2-ID-E", "retrieved": "2026-08-27", "notes": "XSD Microscopy group 2-ID-E page (403 on direct fetch; via search snippets). Source of side-branch geometry and sensitivity claim: 'trace elements in many-micrometer-thick specimens with sub-micron spatial resolution, part-per-million detection sensitivity, and tomographic datasets'."},
+    {"source_url": "https://iopscience.iop.org/article/10.1088/1742-6596/2380/1/012044", "retrieved": "2026-08-27", "notes": "Davis B, Antipova O, Preissner C, et al., 'Enhanced microprobe endstation for high-throughput and versatile sample analysis at APS 2-ID', J. Phys.: Conf. Ser. 2380 (2022) 012044 (open access; full PDF read). Confirms APS-U 2-ID Microprobe installed in station 2-ID-E: techniques, 7-20 keV, >1e13 ph/s, JTEC KB mirrors 50 nm spot, DCM/DMM with pink-beam option, He sample box with fluid flow/biasing/heating-cooling, sample holders, >=25 mm/s fly-scanning, Eiger2-500K and Vortex ME4, target applications."},
+    {"source_url": "https://www.frontiersin.org/journals/public-health/articles/10.3389/fpubh.2021.711506/full", "retrieved": "2026-08-27", "notes": "Frontiers in Public Health 2021 HCC paper: confirms elemental mapping at sector 2, station 2-ID-E with Vortex ME4 and MAPS."},
+    {"source_url": "https://pubs.acs.org/doi/10.1021/ac034227z", "retrieved": "2026-08-27", "notes": "Twining et al., Anal. Chem. 2003 (via search snippets): 2-ID-E side-branch microprobe, single-cell trace-element quantification."},
+    {"source_url": "https://www.aps.anl.gov/APS-Science-Highlight/2018/stunning-zinc-fireworks-when-egg-meets-sperm", "retrieved": "2026-08-27", "notes": "APS science highlight for Que et al., Nature Chemistry 2015 via search snippets: zinc mapping in 2D and 3D in mouse eggs at 2-ID-E and 21-ID-D."},
+    {"source_url": "https://osti.gov/biblio/1239606", "retrieved": "2026-08-27", "notes": "OSTI record corroborating the zinc-spark application."},
+    {"source_url": "https://www.cambridge.org/core/journals/microscopy-and-microanalysis/article/developments-of-xray-fluorescence-tomography-at-2ide-at-aps-for-studies-of-composite-samples/001AD149C273E9840B323A2FEF5E4166", "retrieved": "2026-08-27", "notes": "M&M conference paper corroborating XRF tomography capability."},
+    {"source_url": "https://www.aps.anl.gov/Users-Information/About-Proposals/Proposal-Types", "retrieved": "2026-08-27", "notes": "APS proposal types page (403; via search results). Basis for access mechanism = APS general user proposal via beam.aps.anl.gov. Cost model omitted (not verified)."},
+    {"source_url": "https://proceedings.jacow.org/medsi2025/institute/blai-anl-gov-barry-lai/index.html", "retrieved": "2026-08-27", "notes": "MEDSI 2025 author page: Barry Lai contact email. Status 'operational' rests on current APS directory snippet listing plus the Davis et al. 2022 rebuilt-endstation paper; no direct 2025-2026 publication at 2-ID-E verified during this retrieval because aps.anl.gov blocks automated access. PtychoProbe (33-ID) and ISN (19-ID) are separate feature beamlines and did not supersede 2-ID-E."}
+  ]
+},
+{
+  "id": "aps-13-id-e",
+  "facility": "APS",
+  "institution": "ANL (GSECARS/UChicago)",
+  "name": "13-ID-E GSECARS X-ray Microprobe",
+  "aliases": ["GSECARS microprobe", "Sector 13 X-ray Microprobe"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "record_depth": "deep",
+  "techniques": [
+    {"name": "micro X-ray fluorescence mapping", "acronym": "micro-XRF", "panet_id": "", "variants": ["continuous (fly-scan) mapping with pixel times as low as 5-10 ms", "coupled simultaneous XRF/XRD/XAFS mapping"]},
+    {"name": "micro X-ray absorption fine structure spectroscopy", "acronym": "micro-XAFS", "panet_id": "", "variants": ["micro-XANES", "micro-EXAFS", "high energy resolution fluorescence detection (HERFD) via multi-crystal analyzer spectrometer"]},
+    {"name": "micro X-ray diffraction", "acronym": "micro-XRD", "panet_id": "", "variants": ["point micro-diffraction for mineral identification", "near-real-time micro-XRD synchronous with micro-XRF mapping"]},
+    {"name": "X-ray fluorescence computed microtomography", "acronym": "fCMT", "panet_id": "", "variants": ["element-specific fluorescence tomography at micrometer resolution"]}
+  ],
+  "measurables": [
+    "trace element distribution in geological/environmental samples",
+    "elemental composition (elements with emission energies ~2-28 keV; ppm typical, ppb possible for some samples)",
+    "element speciation and oxidation state (micro-XANES, e.g. S, Fe, As K-edges)",
+    "coordination environment of elements (micro-EXAFS)",
+    "mineral phase identification and spatial distribution of crystalline phases (micro-XRD)",
+    "3d element-specific internal distribution in small intact specimens (fluorescence microtomography)"
+  ],
+  "probe": {
+    "type": "photon",
+    "energy_range_eV": [2400, 28000],
+    "tunable": true,
+    "flux_notes": "6 x 10^12 photons/sec @ 10 keV with Si(111); 1 x 10^12 photons/sec @ 10 keV with Si(311); 2.1 m, 36 mm period undulator in a canted straight section; cryo-cooled double-crystal monochromator with Si(111) and Si(311) crystal sets"
+  },
+  "resolution": {
+    "spatial_m": 5e-7,
+    "spatial_notes": "New KB mirrors achieve focused spot sizes <500 nm in both vertical and horizontal (GSECARS news item, Sept 23, 2025); typical operating focus 1.5 x 2 um (V x H) via 200-mm Kirkpatrick-Baez mirrors; micro-XRD spatial resolution <1 um",
+    "energy_notes": "Monochromator energy resolution dE/E = 1.3 x 10^-4 with Si(111), 3 x 10^-5 with Si(311); HERFD available via crystal analyzer spectrometer (up to 3 analyzers, 1-m Rowland circle)"
+  },
+  "sample_constraints": {
+    "states": ["solid", "thin section", "powder", "grain mounts", "small intact specimens (e.g. seeds, roots) for fluorescence tomography"],
+    "size_notes": "Polished thin sections (e.g. 35-50 um thickness) commonly used for coupled micro-XRF/micro-XRD (published use, Miller et al. 2022); unfocused beam available; offline sample coordinate system available for pre-registration of samples",
+    "vacuum_required": false,
+    "special_requirements": ["measurements typically at ambient conditions in air; helium-filled environment available for low-Z / redox-sensitive work"]
+  },
+  "sample_environments": [
+    "ambient conditions in air",
+    "helium-filled environment for redox-sensitive samples and low-energy edges",
+    "Peltier cold stage (~ -15 C)",
+    "diamond anvil cell (high-pressure work)"
+  ],
+  "detectors": [
+    "Canberra SXD-7 7-element silicon drift detector (SDD) with Xspress3 electronics",
+    "Eiger 500K area detector (micro-XRD and HERFD)",
+    "multi-crystal analyzer spectrometer (up to 3 analyzers in 1-m Rowland circle geometry)",
+    "Vortex-ME4 4-element silicon drift detector (used in published XRF microtomography work)"
+  ],
+  "data_products": [
+    {"type": "micro-XRF element maps", "format": "read/processed with Larch GSE MapViewer"},
+    {"type": "XANES/EXAFS spectra", "format": "processed with Larch XAS Viewer"},
+    {"type": "2d micro-diffraction pattern series (mineral phase maps)", "format": "Eiger 500K area-detector images"},
+    {"type": "element-specific fluorescence microtomograms", "format": "reconstructed sinogram/tomogram data"}
+  ],
+  "access": {"mechanism": "APS general user proposal; rapid access proposals accepted for Sector 13 beamlines (from 2025-2 cycle per SEES)", "proposal_system": "APS User Portal", "proposal_url": "https://www.aps.anl.gov/Users-Information/About-Proposals/Apply-for-Time"},
+  "contacts": [
+    {"name": "Matt Newville", "email": "newville@cars.uchicago.edu", "role": "beamline scientist (XAFS/microprobe)"},
+    {"name": "Tony Lanzirotti", "email": "lanzirotti@uchicago.edu", "role": "beamline scientist (microprobe)"}
+  ],
+  "urls": ["https://gsecars.uchicago.edu/gsecars-facility/sector-13-beamlines/13-ide/", "https://gsecars.uchicago.edu/scientific-program/x-ray-microprobe-spectroscopy-microtomography/", "https://gsecars.uchicago.edu/gsecars-facility/sector-13-beamlines/13-ide/13-ide-beamline-manual/"],
+  "demonstrated_applications": [
+    "arsenic speciation and mobility in mining-impacted sub-Arctic lake sediments via coupled micro-XRF mapping and micro-XRD on 35-50 um polished thin sections (Miller et al. 2022, PMC8850223)",
+    "Mn and Fe localization in Arabidopsis seeds by X-ray fluorescence computed microtomography at ~1 x 2 um resolution, 11 keV (Chu et al. 2017, PMC5591227)",
+    "sulfur and iron K-edge micro-XANES of volcanic melt inclusions and matrix glasses to constrain magma redox (PMC12537948; PMC8044198)",
+    "trace metal partitioning in soils, wetlands, plant leaves and roots, rock sections, volcanic magmas, micro-meteorites and lunar samples, and cultural artifacts (GSECARS science program page)"
+  ],
+  "provenance": [
+    {"source_url": "https://gsecars.uchicago.edu/gsecars-facility/sector-13-beamlines/13-ide/", "retrieved": "2026-08-27", "notes": "Primary source: energy range 2.4-28 keV, flux, monochromator dE/E, KB mirror focus 0.5x0.5 um (new) and typical 1.5x2 um, techniques (uXAFS, uXRF fly-mapping 5-10 ms pixels, uXRD <1 um, fCMT), detectors, sample environments, ppm typical/ppb possible detection, contacts."},
+    {"source_url": "https://gsecars.uchicago.edu/scientific-program/x-ray-microprobe-spectroscopy-microtomography/", "retrieved": "2026-08-27", "notes": "Measurables and application domains: soils, wetlands, plant leaves/roots, rock sections, volcanic magmas, micro-meteorites, lunar samples, cultural artifacts."},
+    {"source_url": "https://gsecars.uchicago.edu/gsecars-facility/sector-13-beamlines/13-ide/13-ide-beamline-manual/", "retrieved": "2026-08-27", "notes": "Data products/software (Larch; GSE MapViewer, XAS Viewer; Nextcloud transfer) and access route (APS general user proposal)."},
+    {"source_url": "https://gsecars.uchicago.edu/page/24/", "retrieved": "2026-08-27", "notes": "GSECARS news item dated September 23, 2025: 13-ID-E new mirrors achieve <500 nm focus — post-APS-U performance and evidence of active operation; basis for resolution.spatial_m."},
+    {"source_url": "https://seescience.org/beamline-science/our-synchrotron-facilities/aps/upgrade-status/", "retrieved": "2026-08-27", "notes": "Post-APS-U restart status (as of May 16, 2025): GSECARS commissioning began July 26, 2024; SEES beamlines returned to full user operations for 2025-2/2025-3 cycles; rapid access from 2025-2. Status 'operational' rests on this plus the Sept 2025 mirror news."},
+    {"source_url": "https://acsess.onlinelibrary.wiley.com/doi/10.2134/jeq2016.10.0401", "retrieved": "2026-08-27", "notes": "Sutton et al. (2017) GSECARS instrument paper, J. Environ. Qual. Full text 403; citation identified via search; no field values extracted."},
+    {"source_url": "https://pubs.geoscienceworld.org/clays/books/book/2016/chapter/16307338/High-Speed-Coupled-Micro-Beam-XRD-XRF-XAFS-Mapping", "retrieved": "2026-08-27", "notes": "CMS Workshop Lectures Vol. 21: confirms coupled uXRD/uXRF/uXAFS mapping and canted-undulator source, 2.4-28 keV (via snippets)."},
+    {"source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8850223/", "retrieved": "2026-08-27", "notes": "Miller et al. 2022: coupled micro-XRF/micro-XRD at 13-ID-E on 35-50 um thin sections; basis for thin-section constraint."},
+    {"source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC5591227/", "retrieved": "2026-08-27", "notes": "Chu et al. 2017: SXRF computed microtomography of Arabidopsis seeds at 13-ID-E; ~1x2 um at 11 keV, Vortex-ME4."},
+    {"source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12537948/", "retrieved": "2026-08-27", "notes": "S/Fe K-edge XANES of melt inclusions at 13-ID-E (via snippet)."},
+    {"source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8044198/", "retrieved": "2026-08-27", "notes": "Sulfur oxidation states in mineral inclusions at the GSECARS microprobe (via snippet)."},
+    {"source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/62", "retrieved": "2026-08-27", "notes": "APS directory entry located but not fetched (Cloudflare); no field values taken."}
+  ]
+},
+{
+  "id": "aps-2-bm",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "Hard X-ray Micro-tomography Beamline 2-BM",
+  "aliases": ["2-BM-A,B", "XSD-IMG: 2-BM", "APS 2-BM micro-CT"],
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "record_depth": "deep",
+  "techniques": [
+    {"name": "micro-computed tomography", "acronym": "micro-CT", "panet_id": "", "variants": ["parallel-beam", "monochromatic (multilayer)", "pink/filtered white beam", "fly scan", "step scan", "interlaced scan", "mosaic/vertical scan"]},
+    {"name": "phase-contrast imaging", "acronym": "PCI", "panet_id": "", "variants": ["propagation-based", "fast 2D phase-contrast radiography of dynamic phenomena"]},
+    {"name": "fast / dynamic tomography", "panet_id": "", "variants": ["streaming data collection (TomoScanStream)", "real-time GPU reconstruction with on-demand capture and 3D zoom (TomoStream)", "sub-second 3D time resolution"]},
+    {"name": "X-ray laminography", "panet_id": "", "variants": ["high-resolution imaging of large slab-shaped samples"]},
+    {"name": "high-throughput tomography", "panet_id": "", "variants": ["automated near video-rate acquisition, hundreds of specimens per day"]}
+  ],
+  "measurables": [
+    "3d microstructure",
+    "internal morphology (non-destructive)",
+    "fast in-situ microstructural evolution (time-resolved 3d)",
+    "pore structure and pore-scale phase change in porous media",
+    "3d structure of large flat/slab-shaped samples (laminography)",
+    "weak-absorption-contrast internal features (phase contrast)"
+  ],
+  "probe": {
+    "type": "photon",
+    "energy_range_eV": [8000, 45000],
+    "tunable": true,
+    "flux_notes": "Multilayer monochromator (1% bandpass), 8-45 keV; filtered white/pink beam also available. Pre-APS-U: critical energy 19.5 keV, flux ~1.12e13 ph/s/0.1%BW x mrad, beam 50 mm x ~3 mm at 25 m (tomopedia). Post APS-U: BM source fan from B:M4/B:M3 dipoles plus B:Q8 reverse bend of the 6 GeV, 200 mA MBA ring, 5.4 mrad extraction fan (docs2bm); optics are a Y3-30 mirror plus double multilayer monochromator (DMM)."
+  },
+  "resolution": {
+    "spatial_notes": "Detector pixel sizes 0.32-9 um with 1x/2x/5x/10x/20x lenses (tomopedia); micrometre-scale resolution for fast tomography; ~micrometre resolution demonstrated for whole-mouse-brain laminography (arXiv:2401.11101).",
+    "temporal_notes": "Fast tomography with sub-second 3D time resolution. PCO.dimax: 2000 fps at full 2000x2000 frame. Streaming pipeline sustains ~1500-2000 projections/s (16-bit, 1024x1024), >3 GB/s with real-time reconstruction (Nikitin et al. 2022). Fast 2D phase-contrast imaging of dynamics up to 0.1 m/s over 20 x 2 mm^2 field of view (docs2bm)."
+  },
+  "sample_constraints": {
+    "states": ["solid", "porous media with fluids (in environmental cells)"],
+    "size_notes": "Parallel-beam geometry; beam 50 mm x ~3 mm at 25 m (pre-APS-U); 20 x 2 mm^2 FOV for fast 2D phase contrast; laminography extends to slab-shaped samples beyond the standard FOV (whole mouse brain in 4 sequential slabs). Kinematic sample mounting (Thorlabs KBT25/KBB25/KBT25T).",
+    "vacuum_required": false
+  },
+  "sample_environments": [
+    "induction furnace up to 1000 C in air (water-cooled, Eurotherm controller)",
+    "induction furnace up to 1500 C in air (THM 200 heater, Eurotherm controller)",
+    "custom in-situ load cell, 600 N capacity",
+    "Oxford 800 Cryojet",
+    "high-pressure fluid delivery: Teledyne ISCO 65D syringe pump up to 20,000 psi",
+    "Teledyne ISCO 1000D and Vindum VP-12K pumps up to 12,000 psi at 120 C",
+    "environmental cell for gas hydrate / ice formation studies (demonstrated at 7 C, methane)"
+  ],
+  "detectors": [
+    "PCO.edge sCMOS (30 fps, 2560x2160)",
+    "PCO.dimax CMOS (2000 fps full frame, 2000x2000)",
+    "FLIR Grasshopper3 9.1 MP (9 fps) / 5.0 MP (75 fps) / 2.3 MP (163 fps)",
+    "Adimec coaXPress (187 fps full frame, 4000x2000)",
+    "Teledyne FLIR Oryx 5.0 MP Mono 10GigE (2448x2048, 3.45 um pixels; streaming system)",
+    "Optique Peter / MCTOptics detector system with Mitutoyo long-working-distance objectives (1.1x/5x/10x with 100/50/25 um scintillators)",
+    "scintillators: CdWO4, LuAG, GGG, YAG:Ce"
+  ],
+  "data_products": [
+    {"type": "raw projection/dark/flat tomographic series", "format": "HDF5 (DXfile / Data Exchange schema, written by tomoScan)"},
+    {"type": "3d reconstructed tomogram (tomopy-cli / tomocupy GPU reconstruction)", "format": "TIFF stack or HDF5"},
+    {"type": "real-time streamed slice reconstructions with on-demand HDF5 capture (TomoStream)", "format": "HDF5"}
+  ],
+  "typical_experiment_duration": "Individual scans down to seconds-minutes; high-throughput mode images hundreds of specimens per day at 2-3 minutes per sample (De Carlo et al. 2006); continuous in-situ campaigns of ~20 hours demonstrated (gas hydrate study).",
+  "access": {"mechanism": "general user proposal", "proposal_system": "APS User Office / APS user portal", "proposal_url": "https://www.aps.anl.gov/Users-Information", "cost_model": "no-cost for publishable research under DOE user facility policy; proprietary rates apply (standard APS model)"},
+  "urls": ["https://docs2bm.readthedocs.io/", "https://tomopedia.github.io/instruments/aps2bm/", "https://www.aps.anl.gov/Imaging/Beamlines/2-BM-A-B", "https://github.com/xray-imaging/2bm-docs"],
+  "demonstrated_applications": [
+    "in-situ ice and methane gas hydrate formation in porous samples imaged with real-time streaming tomography over ~20 h (Nikitin et al., J. Synchrotron Rad. 29, 816-828, 2022)",
+    "laminography of a whole osmium-stained mouse brain imaged as 4 sequential slabs at micrometre resolution, ~12 TB raw data (Nikitin et al., J. Synchrotron Rad. 31, 2024)",
+    "near video-rate high-throughput micro-tomography of hundreds of specimens per day (De Carlo et al., Proc. SPIE 6318, 2006)",
+    "fast 2D phase-contrast imaging of dynamic phenomena up to 0.1 m/s over 20 x 2 mm^2 field of view (2-BM docs)",
+    "in-situ high-temperature (furnace) and mechanical-loading (600 N load cell) tomography experiments (2-BM docs)"
+  ],
+  "provenance": [
+    {"source_url": "https://tomopedia.github.io/instruments/aps2bm/", "retrieved": "2026-08-27", "notes": "Energy range 8-45 keV (multilayer, 1% bandpass) + filtered white beam; critical energy 19.5 keV; flux; beam size; camera list; scintillators; lenses 1x-20x; pixel sizes 0.32-9 um; sub-second 3D time resolution; in-situ cells; proposals via APS User Office."},
+    {"source_url": "https://docs2bm.readthedocs.io/en/latest/source/pre_apsu/about.html", "retrieved": "2026-08-27", "notes": "Dedicated microtomography beamline; 20 x 2 mm^2 fast 2D phase-contrast FOV, dynamics to 0.1 m/s."},
+    {"source_url": "https://docs2bm.readthedocs.io/en/latest/source/pre_apsu/user/item_016.html", "retrieved": "2026-08-27", "notes": "Sample environments: furnaces to 1000/1500 C, 600 N load cell, Oxford 800 Cryojet, ISCO 65D (20,000 psi), ISCO 1000D and Vindum VP-12K (12,000 psi at 120 C); kinematic mounting."},
+    {"source_url": "https://docs2bm.readthedocs.io/en/latest/source/apsu.html", "retrieved": "2026-08-27", "notes": "APS-U source description: 6 GeV, 200 mA MBA ring; B:M4/B:M3 + B:Q8 source fan; 5.4 mrad extraction."},
+    {"source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9070713/", "retrieved": "2026-08-27", "notes": "Nikitin et al. 2022 streaming-tomography instrument paper: Oryx camera, Mitutoyo objectives with 100/50/25 um scintillators, >3 GB/s processing on Tesla A100, methane gas-hydrate demonstration at 7 C over ~20 h, on-demand HDF5 capture."},
+    {"source_url": "https://arxiv.org/abs/2401.11101", "retrieved": "2026-08-27", "notes": "Laminography at 2-BM: micrometre resolution on slab samples; whole mouse brain, 4 slabs, ~12 TB. Published: J. Synchrotron Rad. 31 (2024), doi:10.1107/S1600577524002923."},
+    {"source_url": "https://github.com/xray-imaging/2bm-docs/blob/master/docs/source/manual/item_020.rst", "retrieved": "2026-08-27", "notes": "Current post-APS-U component inventory from GitHub raw: 2-BM-A/B stations, Y3-30 mirror, DMM, MCTOptics + Optique Peter detector; beamline layout drawing dated 05/27/26."},
+    {"source_url": "https://github.com/xray-imaging/2bm-docs/blob/master/docs/source/manual/item_001.rst", "retrieved": "2026-08-27", "notes": "Current user manual: tomocupy/tomopy reconstruction, .h5 raw data, Globus + APS Data Management distribution."},
+    {"source_url": "https://api.github.com/repos/xray-imaging/2bm-docs/commits", "retrieved": "2026-08-27", "notes": "Status evidence: official 2-BM docs actively maintained (latest commits 2026-08-23) with live post-APS-U user manual and 05/2026 layout drawing, indicating user operation after the APS-U restart. aps.anl.gov directory not fetchable (Cloudflare 403); no outage notice found in any source."},
+    {"source_url": "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/6318/63180K/X-ray-tomography-system-automation-and-remote-access-at-beamline/10.1117/12.681037.short", "retrieved": "2026-08-27", "notes": "De Carlo et al. 2006: near video-rate acquisition, hundreds of specimens/day, 2-3 min per sample (abstract via ADS mirror)."},
+    {"source_url": "https://www.aps.anl.gov/APS-Events/2025-01-27/general-user-proposal-call-for-run-cycle-2025-2-deadline-march-5-2025-200-pm", "retrieved": "2026-08-27", "notes": "APS GUP call for 2025-2 (via search results): supports access mechanism and post-upgrade user operations in 2025."}
+  ]
+}
+]

@@ -18,7 +18,7 @@ space, and over component graphs, respectively.
   highlights, not spec sheets; per-source provenance on every record;
   `throughput`/`automation`/`campaign_roles` fields for autonomous-lab
   campaign planning.
-- `schema/measurement_request.schema.json` - the request IR. Units
+- `schema/measurement_request.schema.json` - the measurement-request intermediate representation (IR). Units
   mandatory; hard constraints separated from soft preferences; every
   field tagged stated/inferred/unresolved.
 - `data/` - 106 records covering all 49 ALS beamlines and 57 APS

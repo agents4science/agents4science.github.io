@@ -8,7 +8,7 @@ known, else 'unknown'."""
 import json, re, html, os
 from build_aps_directory import derive_measurables, slug
 
-SAVED = "/Users/ian/AAA/Code/GM_Instruments/APS_Info/APS Beamline Directory | Advanced Photon Source.html"
+SAVED = "/Users/ian/AAA/Code/GM_Instruments/APS_Info/APS Beamline Directory | Advanced Photon Source.webarchive"
 RET = "2026-08-28"
 SKIP_PREFIX = ("2-BM", "2-ID-E", "13-ID-E")   # deep records in aps_deep.json
 
@@ -26,13 +26,22 @@ def kev_to_ev(ranges):
             vals.append(float(m.group(1))*1000)
     return [min(vals), max(vals)] if vals else None
 
-raw = open(SAVED, encoding="utf-8", errors="replace").read()
+import plistlib
+raw = plistlib.load(open(SAVED, "rb"))["WebMainResource"]["WebResourceData"].decode("utf-8", errors="replace")
+STATUS_MAP = {"operational/accepting general users": "operational",
+              "operational": "operational",
+              "commissioning": "commissioning",
+              "not currently operational": "not-operational",
+              "construction": "planned",
+              "under development": "planned"}
 old = {r["id"]: r for r in json.load(open("aps_directory.json"))}
 rows = re.findall(r'<tr[^>]*class="beamline-directory beamline"[^>]*>(.*?)</tr>', raw, flags=re.S)
 records = []
 for row in rows:
     cells = re.findall(r'<td[^>]*>(.*?)</td>', row, flags=re.S)
     if len(cells) < 5: continue
+    sv = ' '.join(re.sub(r'<[^>]+>', ' ', cells[6]).split()) if len(cells) >= 7 else ""
+    op = ' '.join(re.sub(r'<[^>]+>', ' ', cells[5]).split()) if len(cells) >= 7 else ""
     name_m = re.search(r'href="(/Beamlines/Beamline-Directory/\d+)">([^<]+)', cells[0])
     label = name_m.group(2).strip(); url = "https://www.aps.anl.gov" + name_m.group(1)
     if any(label.startswith(p) for p in SKIP_PREFIX): continue
@@ -42,15 +51,16 @@ for row in rows:
     rec = {"id": rid, "facility": "APS", "institution": "ANL",
            "name": f"APS Beamline {label} ({'; '.join(disciplines)})",
            "instrument_class": "synchrotron-beamline",
-           "status": prior["status"] if prior else "unknown",
+           "status": STATUS_MAP.get(sv.lower(), (prior["status"] if prior else "unknown")),
            "techniques": [{"name": t} for t in techs],
            "measurables": derive_measurables(techs),
            "access": {"mechanism": "APS general user proposal; modes: " + ", ".join(access),
                       "proposal_system": "APS User Portal"},
            "urls": [url],
+           **({"aliases": [f"operator: {op}"]} if op else {}),
            "provenance": ([{"source_url": "https://www.aps.anl.gov/Beamlines/Directory",
              "retrieved": RET,
-             "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; " + ("retained from prior sources." if prior else "unknown.")}]
+             "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: '" + (sv or "(empty)") + "'; operator: '" + (op or "?") + "'."}]
              + (prior["provenance"] if prior else [])),
            "record_depth": "directory"}
     ev = kev_to_ev(energy)

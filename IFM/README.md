@@ -21,7 +21,7 @@ space, and over component graphs, respectively.
 - `schema/measurement_request.schema.json` - the measurement-request intermediate representation (IR). Units
   mandatory; hard constraints separated from soft preferences; every
   field tagged stated/inferred/unresolved.
-- `data/` - 106 records covering all 49 ALS beamlines and 57 APS
+- `data/` - 120 records covering all 49 ALS beamlines and all 71 APS
   beamlines (8 + 3 "deep" records built by verifying against instrument
   papers and science highlights; the rest directory-level). Every record
   carries provenance URLs and retrieval dates.
@@ -87,7 +87,7 @@ REQUEST: We have a 10 mm copper catalyst pellet and want to follow the oxidation
 - Coverage: two facilities of DOE's dozens; directory-level records have
   derived (unverified) measurables, flagged as such in output.
 - Status data ages on facility-upgrade timescales; every record carries
-  its retrieval date (2026-08-27).
+  its retrieval date (2026-08-27/28).
 - The keyword scorer is deliberately simple; the schema and the
   PASS/FAIL/UNKNOWN discipline are the contributions. Upgrade path:
   embedding retrieval, PaNET ontology alignment (`panet_id` is stubbed),

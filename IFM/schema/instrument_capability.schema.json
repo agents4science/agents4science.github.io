@@ -1,6 +1,6 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
-  "$id": "https://gm-instruments.example/schema/instrument_capability/v0.1",
+  "$id": "https://gm-instruments.example/schema/instrument_capability/v0.3",
   "title": "Instrument Capability Record",
   "description": "One record per addressable instrument/endstation. Design principle: separate WHAT you can learn (measurables) from HOW it is learned (techniques) from WHERE/WITH-WHAT (probe, resolution, sample constraints). The matchmaker resolves 'I want to measure X' -> measurables -> techniques -> instruments, then filters on constraints.",
   "type": "object",
@@ -113,6 +113,10 @@
         "proposal_url": { "type": "string" },
         "cost_model": { "type": "string", "description": "e.g. 'no-cost for publishable research; proprietary rates apply'" }
       }
+    },
+    "protocol_vocabulary": {
+      "type": "string",
+      "description": "v0.3: relative path or URI to this instrument's protocol parameter vocabulary: the commandable operations and their parameter ranges, i.e. the machine-readable form of the IFM's protocol argument. Sourced from vendor documentation and/or instrument-team code; unknowns are null, never invented. Example: 'polaris_protocols/polaris-dsc2500.json'"
     },
     "throughput": {
       "type": "object",

@@ -12,6 +12,14 @@ Scientific cyberinfrastructure is undergoing a fundamental transformation as aut
 
 ---
 
+## Motivating Example
+
+Consider an autonomous materials-discovery campaign: an agent must run simulations at ALCF, store results at NERSC, query external databases, and iterate for weeks without a human approving each decision—yet it must never be able to exceed the bounds of its task.
+
+<img src="motivating-example.svg" alt="Motivating example: an autonomous materials discovery agent needs bounded, revocable authority across ALCF, NERSC, and external databases" style="max-width: 100%; margin: 1.5rem 0;">
+
+---
+
 ## Documents
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0;">

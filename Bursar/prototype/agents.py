@@ -9,18 +9,20 @@ import random
 
 
 class Task:
-    __slots__ = ("value", "size", "remaining", "density")
+    __slots__ = ("value", "size", "remaining", "density", "io")
 
-    def __init__(self, value: float, size: float):
+    def __init__(self, value: float, size: float, io: float):
         self.value = value                       # scientific value (arbitrary units)
         self.size = size                         # GPU-seconds of work
         self.remaining = size
         self.density = value / (size / 3600.0)   # value per GPU-hour
+        self.io = io                             # GB of filesystem I/O per GPU-second
 
 
 def make_tasks(n: int, seed: int) -> list[Task]:
     rng = random.Random(seed)
-    return [Task(rng.lognormvariate(0.0, 1.0), rng.uniform(200, 2000)) for _ in range(n)]
+    return [Task(rng.lognormvariate(0.0, 1.0), rng.uniform(200, 2000),
+                 rng.uniform(0.01, 0.09)) for _ in range(n)]
 
 
 class ScienceAgent:
@@ -33,17 +35,32 @@ class ScienceAgent:
         self.science = 0.0
         self.completed = 0
 
-    def process_work(self):
-        budget = float(self.broker.held(self.name))   # GPU-seconds available this tick
-        while budget > 0 and self.todo:
-            t = self.todo[0]
+    def process_work(self, order=None):
+        """Burn GPU-seconds through tasks; throughput is coupled to the I/O the
+        broker allows this second (throttle-at-source, paper Sec. 4). `order`
+        overrides the processing order (used by the adaptive agent when
+        I/O-starved)."""
+        b = self.broker
+        held = b.held(self.name)
+        if held == 0 or not self.todo:
+            return
+        order = self.todo if order is None else order
+        front = order[:20]
+        mean_io = sum(t.io for t in front) / len(front)
+        desired_io = held * mean_io
+        allowed_io = b.consume(self.name, io=desired_io)["io"]
+        factor = 1.0 if desired_io <= 0 else allowed_io / desired_io
+        budget = held * factor                        # GPU-seconds we can actually feed
+        for t in list(order):
+            if budget <= 0:
+                break
             take = min(budget, t.remaining)
             t.remaining -= take
             budget -= take
             if t.remaining <= 0:
                 self.science += t.value
                 self.completed += 1
-                self.todo.pop(0)
+                self.todo.remove(t)
 
 
 class NaiveAgent(ScienceAgent):
@@ -73,12 +90,26 @@ class AdaptiveAgent(ScienceAgent):
         super().__init__(name, broker, sorted(tasks, key=lambda t: -t.density))
 
     def step(self, now):
-        self.process_work()
         b = self.broker
+        s = b.supply(self.name)
+        # planning costs inference: a base rate plus a share proportional to
+        # activity. If Bursar throttles our thinking below half, keep the last
+        # plan (degraded step: work continues, replanning pauses).
+        inf_desired = 20 + 0.5 * b.held(self.name)
+        inf_allowed = b.consume(self.name, inference=inf_desired)["inference"]
+        # when I/O-starved, run the science that is cheapest to feed:
+        # order the workfront by value-per-GB instead of value-per-GPU-hour
+        io_starved = s["io"]["tokens"] < 0.2 * s["io"]["bucket"]
+        order = None
+        if io_starved and self.todo:
+            order = sorted(self.todo[:200],
+                           key=lambda t: -t.value / (t.io * t.size + 1e-9))
+        self.process_work(order)
         if not self.todo:
             b.release_all(self.name)
             return
-        s = b.supply(self.name)
+        if inf_allowed < 0.5 * inf_desired:
+            return
         price = 3.0 * s["congestion_multiplier"]      # agent-burst credits per GPU-hour
         hot_work = 0.0
         for t in self.todo:                           # todo is sorted by density desc
@@ -89,6 +120,11 @@ class AdaptiveAgent(ScienceAgent):
             want = max(64, min(int(hot_work / 600), 384))
             if s["tokens"] < 0.2 * s["bucket_cap"]:   # conserve burst capacity
                 want = min(want, int(s["replenish_rate"]))
+            if io_starved:
+                # don't hold GPUs we cannot feed: cap at what sustained I/O supports
+                front = (order or self.todo)[:20]
+                mean_io = sum(t.io for t in front) / len(front)
+                want = min(want, max(32, int(s["io"]["rate"] / mean_io)))
             out = b.outstanding(self.name, "agent-burst")
             if out < want:
                 b.request_lease(self.name, want - out, 600, "agent-burst")
@@ -116,6 +152,9 @@ class StormAgent:
     def step(self, now):
         lo, hi = self.window
         if lo <= now < hi:
+            # the storm's agent also hammers the inference service; its
+            # inference envelope throttles that too (Sec. 4)
+            self.broker.consume(self.name, inference=200)
             if now % 20 == 0:
                 out = self.broker.outstanding(self.name)
                 if out < 384:

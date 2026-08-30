@@ -9,7 +9,7 @@ Usage: python3 main.py && open report.html
 
 import json
 
-from broker import Broker, Envelope
+from broker import Broker, Envelope, Dim
 from agents import (make_tasks, NaiveAgent, AdaptiveAgent,
                     StormAgent, VictimAgent, BackfillAgent)
 from viz import write_report
@@ -31,11 +31,17 @@ def pct(xs, p):
 
 
 def main():
-    b = Broker(POOL)
+    # facility flow capacities: 28 GB/s filesystem, 5000 tok/s inference service
+    b = Broker(POOL, io_capacity=28.0, inf_capacity=5000.0)
+    SCI_IO = Dim(rate=6.0, bucket=3_600, ceiling=16.0)          # GB/s
+    SCI_INF = Dim(rate=500.0, bucket=100_000, ceiling=2_000.0)  # tokens/s
     b.register(Envelope("victim",       5_000,  32,  32,  64,  60_000, "interactive"))
-    b.register(Envelope("adaptive-sci", 20_000, 64, 128, 384, 300_000, "agent-burst"))
-    b.register(Envelope("naive-sci",    20_000, 64, 128, 384, 300_000, "agent-burst"))
-    b.register(Envelope("storm",        8_000,  16,  64, 384, 150_000, "agent-burst"))
+    b.register(Envelope("adaptive-sci", 20_000, 64, 128, 384, 300_000, "agent-burst",
+                        io=SCI_IO, inference=SCI_INF))
+    b.register(Envelope("naive-sci",    20_000, 64, 128, 384, 300_000, "agent-burst",
+                        io=SCI_IO, inference=SCI_INF))
+    b.register(Envelope("storm",        8_000,  16,  64, 384, 150_000, "agent-burst",
+                        inference=Dim(rate=50.0, bucket=5_000, ceiling=500.0)))
     b.register(Envelope("backfill",     1e9,     0, 512, 512, 1e9,     "opportunistic"))
 
     # exercise the Sec. 10 invariant: guarantees are never overbooked
@@ -58,7 +64,9 @@ def main():
     series = {"t": [], "mult": [],
               "held": {n: [] for n in names},
               "tokens": {n: [] for n in names},
-              "credits": {n: [] for n in names}}
+              "credits": {n: [] for n in names},
+              "io": {n: [] for n in names},
+              "inf": {n: [] for n in names}}
 
     from broker import congestion_multiplier
     for t in range(1, SIM + 1):
@@ -72,6 +80,8 @@ def main():
                 series["held"][n].append(b.held(n))
                 series["tokens"][n].append(round(b.tokens[n] / b.envelopes[n].bucket_cap, 4))
                 series["credits"][n].append(round(b.spent(n), 1))
+                series["io"][n].append(round(b.dim_last["io"][n], 2))
+                series["inf"][n].append(round(b.dim_last["inference"][n], 1))
 
     # ------------------------------------------------------------------
     # report (paper Sec. 13)
@@ -109,6 +119,15 @@ def main():
         print(f"              {ag.name:13s} {ag.science:9.1f} {ag.completed:6d} "
               f"{spent:9.1f} {cps:16.2f}")
 
+    print(f"\n[envelope dims] {'campaign':13s} {'mean GB/s':>10s} {'io-throttled':>13s} "
+          f"{'mean tok/s':>11s} {'inf-throttled':>14s}")
+    for n in ("naive-sci", "adaptive-sci", "storm"):
+        io_s = [series["io"][n][i] for i in range(len(series["t"]))]
+        inf_s = [series["inf"][n][i] for i in range(len(series["t"]))]
+        print(f"                {n:13s} {sum(io_s)/len(io_s):10.1f} "
+              f"{b.dim_throttled['io'][n]:12d}s {sum(inf_s)/len(inf_s):11.0f} "
+              f"{b.dim_throttled['inference'][n]:13d}s")
+
     util = sum(b.util_hist) / len(b.util_hist)
     print(f"\n[utilization] mean pool utilization: {util*100:.1f}% "
           f"(warm headroom + preemption grace are the cost of latency)")
@@ -126,6 +145,8 @@ def main():
         "campaigns": names, "colors": COLORS,
         "t": series["t"], "mult": series["mult"],
         "held": series["held"], "tokens": series["tokens"], "credits": series["credits"],
+        "io": series["io"], "inf": series["inf"],
+        "io_cap": 28.0,
         "grants": [{"t": g["t"], "c": g["campaign"], "lat": g["latency"],
                     "path": g["path"], "gpus": g["gpus"]} for g in grants],
     })

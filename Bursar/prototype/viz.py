@@ -51,8 +51,13 @@ throttled toward its 64-GPU sustained rate. Watch the bottom chart: the victim&r
 zero latency straight through the attack, because no campaign may consume into another&rsquo;s guarantee.
 <span class="t">1:30&ndash;2:00</span> Recovery: the storm is gone, and adaptive mops up its deferred low-value work on
 cheap preemptible capacity while backfill (gray) fills the gaps.</p>
-<p><b>The outcome:</b> with identical tasks, the adaptive campaign ends with ~55% more science at ~2.6&times; lower cost than
-the naive one; the pool still runs at ~89% utilization; and every admission decision is journaled and explainable.</p>
+<p><b>Beyond GPUs:</b> envelopes also meter filesystem bandwidth and model inference (bottom two charts). Both science
+campaigns want more I/O than their 6&nbsp;GB/s sustained rate, so Bursar throttles them at the source once their I/O buckets
+drain &mdash; naive keeps holding 256 GPUs it cannot feed, while adaptive switches to tasks with the most science per
+gigabyte and shrinks to what its I/O can support. And when the storm hammers the inference service at 200 tokens/s,
+its inference envelope pins it to 50: even the adversary&rsquo;s <i>thinking</i> is metered, not trusted.</p>
+<p><b>The outcome:</b> with identical tasks, the adaptive campaign ends with ~2.2&times; the science at ~3&times; lower cost per
+unit than the naive one; the pool still runs at ~89% utilization; and every admission decision is journaled and explainable.</p>
 </div>
 <div id="controls">
  <button id="play">&#9654; Play</button>
@@ -63,6 +68,8 @@ the naive one; the pool still runs at ~89% utilization; and every admission deci
 <canvas id="occ"  width="1000" height="280"></canvas>
 <canvas id="tok"  width="1000" height="190"></canvas>
 <canvas id="cong" width="1000" height="220"></canvas>
+<canvas id="io"   width="1000" height="170"></canvas>
+<canvas id="inf"  width="1000" height="170"></canvas>
 <script>
 const D = __DATA__;
 const N = D.t.length, T = D.t[N-1];
@@ -175,6 +182,45 @@ function drawCong(){
   cursorLine(g, c);
 }
 
+function drawIO(){
+  const c = document.getElementById('io'), g = c.getContext('2d');
+  frame(g, c, 'Filesystem I/O per campaign, GB/s — dashed line = science campaigns\' sustained rate R_io (bucket empty \u2192 pinned here)');
+  const ymax = 18;
+  yAxis(g, c, ymax, v => v.toFixed(0));
+  const plotH = c.height - MT - MB, y0 = c.height - MB;
+  // sustained-rate line
+  g.strokeStyle = '#666'; g.setLineDash([5,4]); g.beginPath();
+  g.moveTo(ML, y0 - 6/ymax*plotH); g.lineTo(c.width - MR, y0 - 6/ymax*plotH); g.stroke(); g.setLineDash([]);
+  for (const name of D.campaigns){
+    if (!D.io[name].some(v => v > 0)) continue;
+    g.strokeStyle = D.colors[name]; g.lineWidth = 1.6; g.beginPath();
+    for (let i = 0; i <= cur; i++){
+      const y = y0 - Math.min(D.io[name][i], ymax)/ymax*plotH;
+      i === 0 ? g.moveTo(X(i, c.width), y) : g.lineTo(X(i, c.width), y);
+    }
+    g.stroke();
+  }
+  cursorLine(g, c);
+}
+
+function drawInf(){
+  const c = document.getElementById('inf'), g = c.getContext('2d');
+  frame(g, c, 'Inference consumption per campaign, tokens/s — the storm demands 200 but its envelope pins it to 50');
+  const ymax = 250;
+  yAxis(g, c, ymax, v => v.toFixed(0));
+  const plotH = c.height - MT - MB, y0 = c.height - MB;
+  for (const name of D.campaigns){
+    if (!D.inf[name].some(v => v > 0)) continue;
+    g.strokeStyle = D.colors[name]; g.lineWidth = 1.6; g.beginPath();
+    for (let i = 0; i <= cur; i++){
+      const y = y0 - Math.min(D.inf[name][i], ymax)/ymax*plotH;
+      i === 0 ? g.moveTo(X(i, c.width), y) : g.lineTo(X(i, c.width), y);
+    }
+    g.stroke();
+  }
+  cursorLine(g, c);
+}
+
 function readout(){
   const el = document.getElementById('readout');
   let html = `<div class="chip" style="border-color:#c7a34a"><div class="lbl">congestion</div>
@@ -183,13 +229,13 @@ function readout(){
     html += `<div class="chip" style="border-color:${D.colors[name]}">
       <div class="lbl">${name}</div>
       <div class="val">${D.held[name][cur]} GPUs &middot; ${(D.tokens[name][cur]*100).toFixed(0)}% tok</div>
-      <div class="lbl">${Math.round(D.credits[name][cur]).toLocaleString()} cr spent</div></div>`;
+      <div class="lbl">${Math.round(D.credits[name][cur]).toLocaleString()} cr &middot; ${D.io[name][cur].toFixed(1)} GB/s &middot; ${Math.round(D.inf[name][cur])} tok/s</div></div>`;
   }
   el.innerHTML = html;
   document.getElementById('clock').textContent = 't = ' + hhmm(D.t[cur]);
 }
 
-function draw(){ drawOcc(); drawTok(); drawCong(); readout(); scrub.value = cur; }
+function draw(){ drawOcc(); drawTok(); drawCong(); drawIO(); drawInf(); readout(); scrub.value = cur; }
 
 const step = Math.max(1, Math.round(N / 700));
 function loop(){

@@ -32,8 +32,8 @@ Your project registers a **campaign** and receives an envelope. At runtime your 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
 <h3><a href="replay.html">Live simulation replay</a></h3>
 <p><em>Interactive demo — press Play</em></p>
-<p>An animated replay of the prototype: a 512-GPU pool, two hours simulated, five campaigns. Watch an adversarial burst storm get throttled by its token bucket, a small interactive campaign keep 1-second grant latency straight through the storm, and an adaptive agent beat a naive one by ~2.6&times; on credit efficiency with identical tasks.</p>
-<p><strong>Shows:</strong> pool occupancy, bucket levels, congestion multiplier, every lease grant by latency and path</p>
+<p>An animated replay of the prototype: a 512-GPU pool, two hours simulated, five campaigns. Watch an adversarial burst storm get throttled by its token bucket, a small interactive campaign keep 1-second grant latency straight through the storm, and an adaptive agent produce ~2.2&times; the science of a naive one at ~3&times; lower cost with identical tasks.</p>
+<p><strong>Shows:</strong> pool occupancy, bucket levels, congestion multiplier, every lease grant by latency and path, and the I/O + inference envelope dimensions in action</p>
 </div>
 
 </div>
@@ -45,16 +45,21 @@ Your project registers a **campaign** and receives an envelope. At runtime your 
 The [`prototype/`](prototype/) directory contains a runnable, zero-dependency simulation of the Bursar policy engine (the paper's Phase 1: broker + synthetic load — the cluster is simulated, the policy engine is real):
 
 ```
-cd prototype && python3 main.py && open report.html
+cd prototype
+python3 main.py && open report.html   # offline simulation + animated replay
+python3 api.py --speed 20             # REST facade: the broker as a live service
+python3 demo_client.py                # an agent negotiating with it over HTTP
 ```
 
 It demonstrates, in under a second of wall-clock time:
 
 1. **Back pressure works** — an adversarial campaign demanding its 384-GPU burst ceiling continuously is held to a 215-GPU average and forced back to its 64-GPU sustained rate as its token bucket drains.
 2. **Isolation holds** — a small interactive campaign sees p95 grant latency of 1 s *during* the storm, because consumption beyond any campaign's guarantee can never squeeze another campaign's unmet guarantee.
-3. **Adaptivity pays** — given identical task sets, an agent that reads supply signals produces ~55% more science at ~2.6&times; lower credit cost than one that ignores them.
+3. **Adaptivity pays** — given identical task sets, an agent that reads supply signals produces ~2.2&times; the science at ~3&times; lower credit cost per unit than one that ignores them, by deferring low-value work to cheap capacity, preferring high-value-per-gigabyte tasks when I/O-starved, and not holding GPUs it cannot feed.
 4. **Utilization survives** — preemptible backfill recovers the warm-pool headroom (~89% mean utilization).
-5. **Governance is auditable** — every admission decision is journaled with its rule inputs (service class, fair-share deficit, token state).
+5. **Envelopes are multi-dimensional** — filesystem bandwidth and model inference are metered with the same token-bucket semantics as GPUs (throttle-at-source): the I/O-blind naive agent loses ~40% of its science to I/O throttling, and the storm's inference spam is pinned to its sustained rate. Even the adversary's *thinking* is metered.
+6. **Governance is auditable** — every admission decision is journaled with its rule inputs (service class, fair-share deficit, token state).
+7. **The broker is a service, not a library** — `api.py` exposes the supply, lease, and consumption APIs over HTTP with campaign-scoped bearer tokens and an OpenAPI description at `/openapi.json`; `demo_client.py` shows an agent negotiating the full loop remotely.
 
 ---
 

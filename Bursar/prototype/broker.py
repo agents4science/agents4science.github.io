@@ -37,6 +37,23 @@ def congestion_multiplier(index: float) -> float:
 
 
 @dataclass
+class Dim:
+    """A flow-controlled envelope dimension beyond GPUs (Sec. 4: 'the envelope
+    is not compute-only'). Same token-bucket semantics as compute: tokens
+    replenish at `rate`, accumulate up to `bucket`, and drain on consumption;
+    an empty bucket confines the campaign to `rate`; `ceiling` bounds
+    instantaneous use. Enforcement is throttle-at-source: consume() returns
+    the allowed amount and the campaign runtime is expected to obey."""
+    rate: float               # sustained consumption (units/s); token replenishment
+    bucket: float             # token capacity (units of burst headroom)
+    ceiling: float            # max instantaneous consumption (units/s)
+
+
+UNMETERED = Dim(rate=1e12, bucket=1e12, ceiling=1e12)
+INFERENCE_CREDITS_PER_TOKEN = 0.02 / 1000   # inference metered against the budget (Sec. 4)
+
+
+@dataclass
 class Envelope:
     campaign: str
     budget_credits: float     # class-weighted GPU-hour credits (Sec. 5)
@@ -45,6 +62,12 @@ class Envelope:
     burst_ceiling: int        # GPUs
     bucket_cap: float         # B: GPU-seconds
     service_class: str = "agent-burst"
+    io: Dim = None            # filesystem bandwidth, GB/s
+    inference: Dim = None     # model inference, tokens/s
+
+    def __post_init__(self):
+        self.io = self.io or UNMETERED
+        self.inference = self.inference or UNMETERED
 
 
 @dataclass
@@ -71,8 +94,10 @@ class Lease:
 
 
 class Broker:
-    def __init__(self, pool_gpus: int):
+    def __init__(self, pool_gpus: int, io_capacity: float = 1e12, inf_capacity: float = 1e12):
         self.pool = pool_gpus
+        self.io_capacity = io_capacity      # facility filesystem bandwidth, GB/s
+        self.inf_capacity = inf_capacity    # facility inference service, tokens/s
         self.now = 0
         self.envelopes: dict[str, Envelope] = {}
         self.tokens: dict[str, float] = {}
@@ -85,6 +110,14 @@ class Broker:
         self._demand_hist = deque(maxlen=CONGESTION_WINDOW)
         self._usage_hist: dict[str, deque] = {}
         self._next_id = 1
+        # per-dimension state: token buckets, this-tick facility headroom,
+        # this-tick per-campaign usage, last-tick usage (for sampling/stats)
+        self.dim_tokens: dict[str, dict[str, float]] = {"io": {}, "inference": {}}
+        self._dim_left = {"io": io_capacity, "inference": inf_capacity}
+        self._dim_used: dict[str, dict[str, float]] = {"io": {}, "inference": {}}
+        self.dim_last: dict[str, dict[str, float]] = {"io": {}, "inference": {}}
+        self.dim_throttled: dict[str, dict[str, int]] = {"io": {}, "inference": {}}
+        self._dim_log_at: dict[tuple, int] = {}
 
     # ------------------------------------------------------------------
     # registration (allocation-committee role)
@@ -97,6 +130,11 @@ class Broker:
         self.tokens[env.campaign] = env.bucket_cap   # buckets start full
         self.credits[env.campaign] = env.budget_credits
         self._usage_hist[env.campaign] = deque(maxlen=FAIRSHARE_WINDOW)
+        for d in ("io", "inference"):
+            self.dim_tokens[d][env.campaign] = getattr(env, d).bucket
+            self._dim_used[d][env.campaign] = 0.0
+            self.dim_last[d][env.campaign] = 0.0
+            self.dim_throttled[d][env.campaign] = 0
         self._log("register", campaign=env.campaign, guaranteed=env.guaranteed,
                   R=env.sustained, B=env.bucket_cap, burst=env.burst_ceiling)
 
@@ -119,7 +157,44 @@ class Broker:
             "replenish_rate": env.sustained,
             "credits_remaining": self.credits[campaign],
             "expected_path": "warm" if free > 0 else ("reclaim" if reclaimable > 0 else "cold"),
+            "io": {"tokens": self.dim_tokens["io"][campaign], "bucket": env.io.bucket,
+                   "rate": env.io.rate, "ceiling": env.io.ceiling,
+                   "facility_left": round(self._dim_left["io"], 2)},
+            "inference": {"tokens": self.dim_tokens["inference"][campaign],
+                          "bucket": env.inference.bucket, "rate": env.inference.rate,
+                          "ceiling": env.inference.ceiling,
+                          "facility_left": round(self._dim_left["inference"], 1)},
         }
+
+    # ------------------------------------------------------------------
+    # consumption API (Sec. 4): flow dimensions beyond GPUs.
+    # Throttle-at-source: returns what the campaign may consume this second;
+    # the runtime is expected to obey (violations would be a policy event).
+    # ------------------------------------------------------------------
+    def consume(self, campaign: str, io: float = 0.0, inference: float = 0.0) -> dict:
+        allowed = {}
+        for dim, desired in (("io", io), ("inference", inference)):
+            if desired <= 0:
+                allowed[dim] = 0.0
+                continue
+            d: Dim = getattr(self.envelopes[campaign], dim)
+            cap = d.ceiling if self.dim_tokens[dim][campaign] > 0 else d.rate
+            room = max(0.0, cap - self._dim_used[dim][campaign])
+            grant = min(desired, room, self._dim_left[dim])
+            self._dim_left[dim] -= grant
+            self._dim_used[dim][campaign] += grant
+            allowed[dim] = grant
+            if grant < desired - 1e-9:
+                self.dim_throttled[dim][campaign] += 1
+                key = (dim, campaign)
+                if self.now - self._dim_log_at.get(key, -999) >= 60:   # rate-limit journal spam
+                    self._dim_log_at[key] = self.now
+                    self._log(f"throttle-{dim}", campaign=campaign,
+                              desired=round(desired, 2), allowed=round(grant, 2),
+                              tokens=round(self.dim_tokens[dim][campaign], 1))
+        if allowed.get("inference"):
+            self.credits[campaign] -= allowed["inference"] * INFERENCE_CREDITS_PER_TOKEN
+        return allowed
 
     # ------------------------------------------------------------------
     # intent API (Sec. 6): request / release leases
@@ -204,10 +279,19 @@ class Broker:
     def _update_buckets(self):
         """Tokens replenish at R and drain at *held* capacity (Sec. 4):
         holding above R is a burst that empties the bucket; holding below R refills it.
-        Idle holding is inherently costly."""
+        Idle holding is inherently costly. Flow dimensions (io, inference) follow
+        the same rule with consumption in place of holding."""
         for c, env in self.envelopes.items():
             self.tokens[c] = max(0.0, min(env.bucket_cap,
                                           self.tokens[c] + env.sustained - self.held(c)))
+            for dim in ("io", "inference"):
+                d: Dim = getattr(env, dim)
+                used = self._dim_used[dim][c]
+                self.dim_tokens[dim][c] = max(0.0, min(d.bucket,
+                                                       self.dim_tokens[dim][c] + d.rate - used))
+                self.dim_last[dim][c] = used
+                self._dim_used[dim][c] = 0.0
+        self._dim_left = {"io": self.io_capacity, "inference": self.inf_capacity}
 
     def _account(self):
         """Credits drain against held capacity at class rate x congestion multiplier."""

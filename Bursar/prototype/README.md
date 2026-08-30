@@ -12,10 +12,13 @@ cluster is simulated, the policy engine is real.
 ## Run it
 
 ```
-python3 main.py && open report.html
+python3 main.py && open report.html      # offline simulation + animated replay
+python3 api.py --speed 20                # REST facade: the broker as a live service
+python3 demo_client.py                   # an agent negotiating with it over HTTP
+python3 demo_client.py --selftest        # self-contained end-to-end test
 ```
 
-Pure Python stdlib, runs in under a second. Outputs:
+Pure Python stdlib — still zero dependencies. The simulation outputs:
 
 - a console report mapped to the paper's Sec. 13 success criteria
 - `journal.jsonl` — the full audit journal (every grant/throttle/preemption with the rule inputs)
@@ -48,14 +51,24 @@ Pure Python stdlib, runs in under a second. Outputs:
    reading supply signals and deferring low-value work to cheap capacity.
 4. **Utilization survives** — opportunistic backfill recovers most of the warm
    headroom (~89% mean pool utilization).
-5. **Governance is auditable** — every admission decision is journaled with the
+5. **Envelopes are multi-dimensional** — filesystem bandwidth and model
+   inference are metered with the same token-bucket semantics as GPUs
+   (throttle-at-source): the I/O-blind naive agent loses ~40% of its science to
+   I/O throttling, and the storm's inference spam (200 tok/s demanded) is pinned
+   to its 50 tok/s sustained rate. Even the adversary's *thinking* is metered.
+6. **Governance is auditable** — every admission decision is journaled with the
    rule inputs (class rank, fair-share deficit, token state).
 
 ## Code map (→ paper sections)
 
-- `broker.py` — envelopes, token buckets, credits (§4–5); supply/intent API (§6);
+- `broker.py` — envelopes, token buckets, credits (§4–5); I/O + inference flow
+  dimensions with throttle-at-source `consume()` (§4); supply/intent API (§6);
   warm/reclaim/cold grant paths with preemption grace (§7); guarantee-honoring,
   deterministic, journaled admission (§10)
+- `api.py` — REST facade: the broker as an HTTP service with campaign-scoped
+  bearer tokens (§6, §11) and an OpenAPI description at `/openapi.json`
+- `demo_client.py` — a scripted agent negotiating over HTTP; `--selftest` runs
+  the full loop against an in-process server
 - `agents.py` — synthetic campaigns (§12 step 4)
 - `main.py` — scenario + Sec. 13 report
 - `viz.py` — animated HTML replay generator
@@ -64,6 +77,7 @@ Pure Python stdlib, runs in under a second. Outputs:
 
 - No real scheduler binding — a PBS Professional / Slurm binding would replace
   the simulated pool with real allocations behind the same broker interface
-- No HTTP layer — the broker API is in-process; a REST facade is mechanical
-- No I/O or inference envelope dimensions (paper §4) — compute only
 - Single-node, single-process; no broker HA / journal replay (paper §11)
+- I/O enforcement is cooperative (throttle-at-source): the runtime is trusted
+  to obey `consume()` allowances; a facility would back this with filesystem
+  QOS where available

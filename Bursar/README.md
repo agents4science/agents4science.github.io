@@ -50,6 +50,7 @@ python3 main.py && open report.html   # offline simulation + animated replay
 python3 api.py --speed 20             # REST facade: the broker as a live service
 python3 demo_client.py                # an agent negotiating with it over HTTP
 python3 experiments.py                # parameter sweeps -> figures/ (needs matplotlib)
+python3 parsl_demo.py                 # a real Parsl workflow on Bursar leases (needs parsl)
 ```
 
 It demonstrates, in under a second of wall-clock time:
@@ -61,6 +62,7 @@ It demonstrates, in under a second of wall-clock time:
 5. **Envelopes are multi-dimensional** — filesystem bandwidth and model inference are metered with the same token-bucket semantics as GPUs (throttle-at-source): the I/O-blind naive agent loses ~40% of its science to I/O throttling, and the storm's inference spam is pinned to its sustained rate. Even the adversary's *thinking* is metered.
 6. **Governance is auditable** — every admission decision is journaled with its rule inputs (service class, fair-share deficit, token state).
 7. **The broker is a service, not a library** — `api.py` exposes the supply, lease, and consumption APIs over HTTP with campaign-scoped bearer tokens and an OpenAPI description at `/openapi.json`; `demo_client.py` shows an agent negotiating the full loop remotely.
+8. **Joining a pilot is a config change, not a rewrite** — `parsl_provider.py` is a Parsl execution provider that maps each Parsl block to a Bursar lease: scale-out negotiates a lease sized to live supply signals, scale-in releases it, and a revoked lease tears its block down. The science code in `parsl_demo.py` is ordinary Parsl; the whole integration surface is the provider block in the Parsl config.
 
 ---
 

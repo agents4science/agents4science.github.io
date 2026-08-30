@@ -195,10 +195,20 @@ def make_handler(service: BrokerService):
 
         # ---- DELETE --------------------------------------------------
         def do_DELETE(self):
-            if urlparse(self.path).path == "/leases":
+            path = urlparse(self.path).path
+            if path == "/leases" or path.startswith("/leases/"):
                 campaign = self._campaign()
                 if campaign is None:
                     return self._send(401, {"error": "campaign bearer token required"})
+                if path.startswith("/leases/"):
+                    try:
+                        lease_id = int(path.split("/")[2])
+                    except (IndexError, ValueError):
+                        return self._send(400, {"error": "bad lease id"})
+                    with service.lock:
+                        ok = b.release_lease(campaign, lease_id)
+                    return self._send(200 if ok else 404,
+                                      {"released": ok, "lease": lease_id})
                 with service.lock:
                     b.release_all(campaign, self._q("cls"))
                 return self._send(200, {"released": True})
@@ -250,6 +260,7 @@ OPENAPI = {
                                         "duration": {"type": "integer"},
                                         "cls": {"type": "string"}}}}}}},
             "delete": {"summary": "Release all leases (auth required); optional ?cls= filter"}},
+        "/leases/{id}": {"delete": {"summary": "Release one lease by id (auth required)"}},
         "/consume": {"post": {"summary": "Report intended io (GB/s) / inference (tok/s) "
                                          "consumption; returns the allowed amounts "
                                          "(throttle-at-source)",

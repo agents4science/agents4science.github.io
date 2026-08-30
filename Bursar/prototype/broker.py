@@ -221,6 +221,17 @@ class Broker:
         self.pending.append(req)
         return req.id
 
+    def release_lease(self, campaign: str, lease_id: int) -> bool:
+        """Release one lease by id (used by framework adapters that manage
+        multiple concurrent leases, e.g. the Parsl provider)."""
+        for l in self.leases:
+            if l.id == lease_id and l.campaign == campaign:
+                self._release(l, reason="released-by-agent")
+                return True
+        self.pending = [r for r in self.pending
+                        if not (r.id == lease_id and r.campaign == campaign)]
+        return False
+
     def release_all(self, campaign: str, cls: str | None = None):
         for l in [l for l in self.leases
                   if l.campaign == campaign and (cls is None or l.cls == cls)]:

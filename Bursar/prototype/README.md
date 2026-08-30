@@ -16,6 +16,7 @@ python3 main.py && open report.html      # offline simulation + animated replay
 python3 api.py --speed 20                # REST facade: the broker as a live service
 python3 demo_client.py                   # an agent negotiating with it over HTTP
 python3 demo_client.py --selftest        # self-contained end-to-end test
+python3 parsl_demo.py                    # a real Parsl workflow on Bursar leases (needs parsl)
 ```
 
 Pure Python stdlib — still zero dependencies. The simulation outputs:
@@ -58,6 +59,12 @@ Pure Python stdlib — still zero dependencies. The simulation outputs:
    to its 50 tok/s sustained rate. Even the adversary's *thinking* is metered.
 6. **Governance is auditable** — every admission decision is journaled with the
    rule inputs (class rank, fair-share deficit, token state).
+7. **Joining a pilot is a config change, not a rewrite** — `parsl_provider.py`
+   is a Parsl execution provider that maps each Parsl block to a Bursar lease:
+   scale-out negotiates a lease (sized to live supply signals), scale-in
+   releases it, and a revoked or expired lease tears its block down. The
+   science code in `parsl_demo.py` is ordinary Parsl; the entire integration
+   surface is the provider block in the Parsl config.
 
 ## Parameter-sweep experiments
 
@@ -95,6 +102,8 @@ every 5 minutes, timed to *full* capacity — pooled across three task seeds.
   bearer tokens (§6, §11) and an OpenAPI description at `/openapi.json`
 - `demo_client.py` — a scripted agent negotiating over HTTP; `--selftest` runs
   the full loop against an in-process server
+- `parsl_provider.py` — framework adapter: Parsl blocks as Bursar leases (§12);
+  `parsl_demo.py` runs a real Parsl workflow on top (the only file needing parsl)
 - `agents.py` — synthetic campaigns (§12 step 4), including the latency probe
 - `scenario.py` — the five-campaign scenario as a parameterized callable + metrics
 - `main.py` — default scenario + Sec. 13 report
@@ -103,6 +112,8 @@ every 5 minutes, timed to *full* capacity — pooled across three task seeds.
 
 ## Non-goals (next steps)
 
+- Parsl is the only framework adapter so far; Globus Compute and Ray launchers
+  would follow the same shape
 - No real scheduler binding — a PBS Professional / Slurm binding would replace
   the simulated pool with real allocations behind the same broker interface
 - Single-node, single-process; no broker HA / journal replay (paper §11)

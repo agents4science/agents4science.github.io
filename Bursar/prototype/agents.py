@@ -176,20 +176,51 @@ class VictimAgent:
             self.broker.request_lease(self.name, 16, 60, "interactive")
 
 
+class ProbeAgent:
+    """Measurement instrument, not a workload: every 5 minutes it acquires a
+    full 128 GPUs (topping up through partial grants) and records the time to
+    full capacity, so configurations and seeds compare apples-to-apples."""
+
+    GIVE_UP = 590   # censor an observation at this latency
+
+    def __init__(self, name, broker, gpus=128, period=300):
+        self.name = name
+        self.broker = broker
+        self.gpus = gpus
+        self.period = period
+        self.t0 = None
+        self.lats: list[tuple] = []    # (time-to-full-capacity, completion tick)
+
+    def step(self, now):
+        b = self.broker
+        if self.t0 is None:
+            if now % self.period == 0:
+                self.t0 = now
+                b.request_lease(self.name, self.gpus, 180, "agent-burst")
+            return
+        if b.held(self.name) >= self.gpus or now - self.t0 > self.GIVE_UP:
+            self.lats.append((now - self.t0, now))
+            b.release_all(self.name)   # done measuring; give it back
+            self.t0 = None
+            return
+        out = b.outstanding(self.name)
+        if out < self.gpus:            # top up through partial grants / expiries
+            b.request_lease(self.name, self.gpus - out, 180, "agent-burst")
+
+
 class BackfillAgent:
     """Facility-side opportunistic filler: recovers utilization from idle pool
     capacity while staying fully preemptible (paper Sec. 7). Leaves headroom so
     the warm path stays warm."""
 
-    HEADROOM = 160
-
-    def __init__(self, name, broker):
+    def __init__(self, name, broker, headroom=160):
         self.name = name
         self.broker = broker
+        self.headroom = headroom
 
     def step(self, now):
         b = self.broker
-        extra = b.free_gpus() - self.HEADROOM
+        extra = b.free_gpus() - self.headroom
         pending = b.outstanding(self.name) - b.held(self.name)
         if extra > 16 and pending <= 0:
             b.request_lease(self.name, extra, 300, "opportunistic")

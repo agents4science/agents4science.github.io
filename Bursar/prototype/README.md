@@ -59,6 +59,32 @@ Pure Python stdlib — still zero dependencies. The simulation outputs:
 6. **Governance is auditable** — every admission decision is journaled with the
    rule inputs (class rank, fair-share deficit, token state).
 
+## Parameter-sweep experiments
+
+`python3 experiments.py` (requires matplotlib — the only part that does) runs
+three sweeps over the scenario and writes paper-ready figures to `figures/`:
+
+1. **What buys low latency** (`fig_latency_price.png`, §7/§14) — sweeping warm
+   headroom 16→256 GPUs costs 13 points of utilization but leaves
+   time-to-128-GPUs pinned at ~62 s, because a work-conserving preemptible tier
+   refills spare capacity anyway; headroom helps only once it exceeds the
+   request size. Sweeping the preemption grace period 15→120 s moves latency
+   one-for-one (p50 ≈ grace + 2 s). **The grace period, not idle headroom, is
+   what prices latency.**
+2. **Overbooking vs. isolation** (`fig_overbooking.png`, §10) — with correlated
+   adversarial storms pushing Σ burst ceilings to 7× the pool, the guaranteed
+   campaign stays at p95 = 1 s with zero violations at every φ; scarcity lands
+   entirely on non-guaranteed burst service (probe p50 41 s → 591 s censored).
+3. **Enforcement semantics** (`fig_bucket.png`, §4) — checking tokens only at
+   grant instants leaks burst through lease-duration granularity (an adversary
+   with a 25k GPU-s bucket extracted 167k GPU-s). The sweep found this leak;
+   **prepaid leases** (the above-R portion of a lease must be token-covered for
+   its whole duration, now the broker default) pin extraction to B almost
+   exactly (26k at B=25k).
+
+Latency is measured with a probe campaign — a standardized 128-GPU request
+every 5 minutes, timed to *full* capacity — pooled across three task seeds.
+
 ## Code map (→ paper sections)
 
 - `broker.py` — envelopes, token buckets, credits (§4–5); I/O + inference flow
@@ -69,8 +95,10 @@ Pure Python stdlib — still zero dependencies. The simulation outputs:
   bearer tokens (§6, §11) and an OpenAPI description at `/openapi.json`
 - `demo_client.py` — a scripted agent negotiating over HTTP; `--selftest` runs
   the full loop against an in-process server
-- `agents.py` — synthetic campaigns (§12 step 4)
-- `main.py` — scenario + Sec. 13 report
+- `agents.py` — synthetic campaigns (§12 step 4), including the latency probe
+- `scenario.py` — the five-campaign scenario as a parameterized callable + metrics
+- `main.py` — default scenario + Sec. 13 report
+- `experiments.py` — parameter sweeps + figures (§4, §7, §10, §14)
 - `viz.py` — animated HTML replay generator
 
 ## Non-goals (next steps)

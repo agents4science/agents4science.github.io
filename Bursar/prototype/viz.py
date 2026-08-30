@@ -56,8 +56,8 @@ campaigns want more I/O than their 6&nbsp;GB/s sustained rate, so Bursar throttl
 drain &mdash; naive keeps holding 256 GPUs it cannot feed, while adaptive switches to tasks with the most science per
 gigabyte and shrinks to what its I/O can support. And when the storm hammers the inference service at 200 tokens/s,
 its inference envelope pins it to 50: even the adversary&rsquo;s <i>thinking</i> is metered, not trusted.</p>
-<p><b>The outcome:</b> with identical tasks, the adaptive campaign ends with ~2.2&times; the science at ~3&times; lower cost per
-unit than the naive one; the pool still runs at ~89% utilization; and every admission decision is journaled and explainable.</p>
+<p><b>The outcome:</b> with identical tasks, the adaptive campaign ends with ~2.2&times; the science at ~2.5&times; lower cost per
+unit than the naive one; the pool runs at ~82% utilization; and every admission decision is journaled and explainable.</p>
 </div>
 <div id="controls">
  <button id="play">&#9654; Play</button>

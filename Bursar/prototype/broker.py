@@ -94,7 +94,17 @@ class Lease:
 
 
 class Broker:
-    def __init__(self, pool_gpus: int, io_capacity: float = 1e12, inf_capacity: float = 1e12):
+    def __init__(self, pool_gpus: int, io_capacity: float = 1e12, inf_capacity: float = 1e12,
+                 prepaid_leases: bool = True, preempt_grace: int = PREEMPT_GRACE):
+        # preempt_grace: the contractual checkpoint window opportunistic leases
+        # get before reclamation — and therefore the price of the reclaim path.
+        self.preempt_grace = preempt_grace
+        # prepaid_leases: a lease's above-sustained-rate portion must be covered
+        # by tokens for its whole duration at grant time. Without this, enforcement
+        # happens only at grant instants, and each sliver of refilled tokens buys a
+        # full lease-duration burst at the ceiling — a leak the parameter sweeps
+        # exposed (extraction exceeded B + R x window on an idle pool).
+        self.prepaid_leases = prepaid_leases
         self.pool = pool_gpus
         self.io_capacity = io_capacity      # facility filesystem bandwidth, GB/s
         self.inf_capacity = inf_capacity    # facility inference service, tokens/s
@@ -340,12 +350,19 @@ class Broker:
                 self._log("request-expired", campaign=req.campaign, gpus=req.gpus, cls=req.cls)
                 continue
             # token-bucket rate cap: trim, or wait if fully throttled
-            headroom = self._rate_cap(req.campaign) - self.held(req.campaign)
+            env = self.envelopes[req.campaign]
+            if self.prepaid_leases:
+                # above-R capacity must be affordable for the full lease duration
+                afford = env.sustained + self.tokens[req.campaign] / max(req.duration, 1)
+                cap = max(min(env.burst_ceiling, int(afford)), env.guaranteed)
+            else:
+                cap = self._rate_cap(req.campaign)
+            headroom = cap - self.held(req.campaign)
             if headroom <= 0:
                 if not req.throttle_logged:
                     self._log("throttle", campaign=req.campaign, gpus=req.gpus,
                               cls=req.cls, tokens=round(self.tokens[req.campaign], 1),
-                              cap=self._rate_cap(req.campaign))
+                              cap=cap)
                     req.throttle_logged = True
                 continue
             want = min(req.gpus, headroom)
@@ -365,15 +382,15 @@ class Broker:
                         key=lambda l: -l.gpus):
             if in_flight >= needed:
                 break
-            l.preempt_at = self.now + PREEMPT_GRACE
+            l.preempt_at = self.now + self.preempt_grace
             in_flight += l.gpus
             self._log("preempt-notice", lease=l.id, campaign=l.campaign,
-                      gpus=l.gpus, grace=PREEMPT_GRACE)
+                      gpus=l.gpus, grace=self.preempt_grace)
 
     def _grant(self, req: Request, gpus: int):
         self.pending.remove(req)
         latency = self.now - req.submitted
-        path = "warm" if latency <= 1 else ("reclaim" if latency <= PREEMPT_GRACE + 10 else "cold")
+        path = "warm" if latency <= 1 else ("reclaim" if latency <= self.preempt_grace + 10 else "cold")
         lease = Lease(req.id, req.campaign, gpus, req.cls, req.submitted,
                       self.now, self.now + req.duration)
         self.leases.append(lease)

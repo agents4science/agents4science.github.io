@@ -1,3 +1,5 @@
+<img src="logo.svg" alt="Bursar" width="290" style="margin-bottom: 0.5rem;">
+
 # Bursar: Agent-Native HPC
 
 *Campaign-level resource leases and machine-speed back pressure for autonomous science*

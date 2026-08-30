@@ -20,6 +20,25 @@ Your project registers a **campaign** and receives an envelope. At runtime your 
 
 ---
 
+## Using Bursar from Parsl
+
+Most closed-loop campaigns already run on an execution framework, so the framework — not the application — is the right integration point. The [Parsl provider](https://github.com/agents4science/agents4science.github.io/blob/main/Bursar/prototype/parsl_provider.py) maps Parsl's own elasticity onto Bursar's lease model: when Parsl scales out, the provider reads the supply API and negotiates a lease sized to what is actually grantable; when Parsl scales in, the lease is released; and if Bursar revokes or expires a lease, the provider tears its block down and lets Parsl's scaling strategy negotiate a replacement — the broker's word is enforced, not advisory. The entire integration surface for an application team is the provider block in the Parsl config:
+
+```python
+provider = BursarProvider(
+    campaign="my-campaign",
+    base_url="https://bursar.example.gov",
+    token=CAMPAIGN_TOKEN,               # campaign-scoped credential
+    gpus_per_block=64, lease_duration=600, adaptive=True,
+    init_blocks=1, min_blocks=0, max_blocks=3)
+
+config = Config(executors=[HighThroughputExecutor(provider=provider, ...)])
+```
+
+Everything else — `@python_app` code, futures, dependencies — is ordinary Parsl. [`parsl_demo.py`](https://github.com/agents4science/agents4science.github.io/blob/main/Bursar/prototype/parsl_demo.py) runs end-to-end against the simulated pool in about fifteen seconds; watch Parsl's scaling strategy negotiate three warm-path leases and release them on cleanup. Globus Compute and Ray adapters would follow the same shape.
+
+---
+
 ## Documents
 
 <div style="display: flex; flex-wrap: wrap; gap: 1.5rem; margin: 2rem 0;">
@@ -29,6 +48,13 @@ Your project registers a **campaign** and receives an envelope. At runtime your 
 <p><em>The proposal (discussion draft, August 2026)</em></p>
 <p>Campaign envelopes, token-bucket back pressure, service classes and credit pricing, the supply/intent API, warm/reclaim/cold lease paths, admission control and overbooking policy, governance and failure semantics, and a nine-month two-phase ALCF pilot with quantitative success thresholds.</p>
 <p><strong>Key topics:</strong> resource envelopes, token buckets, lease paths, congestion index, journaled admission, pilot design</p>
+</div>
+
+<div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
+<h3><a href="https://github.com/agents4science/agents4science.github.io/blob/main/Bursar/prototype/parsl_provider.py">Parsl provider</a></h3>
+<p><em>Framework adapter — blocks as leases</em></p>
+<p>A Parsl execution provider that draws capacity from Bursar instead of submitting scheduler jobs: each Parsl block is a Bursar lease, negotiated over the REST API and sized to live supply signals. An application that runs on Parsl joins a Bursar pilot by changing its provider config; the science code does not change.</p>
+<p><strong>See it run:</strong> <a href="https://github.com/agents4science/agents4science.github.io/blob/main/Bursar/prototype/parsl_demo.py">parsl_demo.py</a> — an ordinary Parsl workflow on leased capacity</p>
 </div>
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">

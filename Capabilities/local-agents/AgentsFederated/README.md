@@ -22,7 +22,7 @@ Scientific research increasingly requires capabilities distributed across multip
 - Academy handles authentication via federated identity (e.g., Globus Auth)
 - Policies control what data/compute can be shared
 
-## Running the Example
+## Running the Example on Local Setup
 
 ```bash
 cd Capabilities/local-agents/AgentsFederated
@@ -33,6 +33,18 @@ python main.py
 # Custom task
 python main.py --task "study quantum materials for energy storage"
 ```
+
+## Demonstration of Cross-Institutional Deployment using Globus
+Plug in the Globus endpoints running on cross-institutional machines on L332:L334 in main_prod.py
+
+```bash
+cd Capabilities/local-agents/AgentsFederated
+python -m venv .venv && source .venv/bin/activate
+pip install -r requirements.txt
+python main_prod.py
+
+# Custom task
+python main_prod.py --task "study quantum materials for energy storage"
 
 ## Example Output
 

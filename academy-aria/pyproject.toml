@@ -1,0 +1,20 @@
+[project]
+name = "academy-aria"
+version = "0.0.1"
+description = "ARIA conformance adapter for Academy: event emission (first component)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+academy = ["academy-py"]
+dev = ["pytest", "pytest-asyncio"]
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["academy_aria*"]
+
+[tool.pytest.ini_options]
+asyncio_mode = "auto"

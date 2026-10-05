@@ -1,0 +1,4 @@
+__pycache__/
+*.egg-info/
+demo-events.jsonl
+.pytest_cache/

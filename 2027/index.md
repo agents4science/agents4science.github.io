@@ -33,7 +33,7 @@ In the final three weeks, teams either push the reproduction challenge further o
 | 3 | Memory, persistence, budgets | Add memory; meet your budget governor | Agent that survives budget pressure; **Autopsy 1** |
 | 4 | Literature agents; RAG | Synthesis with verified citations | **Bake-off 2:** evidence gathering, claims checked |
 | 5 | Data and code agents | Sandboxed analysis of real datasets | **Bake-off 3:** reproduce one figure from a published paper |
-| 6 | Security: control--data ambiguity, enforcement | **Red-team week:** attack week-5 agents; compare prompt guardrails vs.\ sandbox enforcement | Attack + defense writeup |
+| 6 | Security: control--data ambiguity, enforcement | **Red-team week:** attack week-5 agents; compare prompt guardrails vs. sandbox enforcement | Attack + defense writeup |
 | 7 | Multi-agent systems and delegation; project launch | Project sprint 1 | Project plan + first traces |
 | 8 | Agents for scientific facilities; evaluation | Project sprint 2; standups | Working prototype |
 | 9 | What agents mean for computer science | **Demo day** | Demo, report, and your best + worst trace |

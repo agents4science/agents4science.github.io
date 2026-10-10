@@ -39,6 +39,23 @@ The course operates as an instrumented agent deployment: every student agent run
 
 **Risks.** (1) Token provisioning logistics (per-student access under an institutional or sponsored account) --- resolve in sprint 0. (2) IRB timing --- submit now; the course runs regardless, since I7 gates only the research export, not the class. (3) Scope creep --- the gateway is the only novel P0 component; everything else adapts existing code or tooling.
 
+## Resources (assuming 30 students)
+
+**Tokens.** Budget roughly 50M tokens per student for the quarter (weekly labs at 2--5M tokens, bake-off bursts, and a long-horizon project tail), enforced by the governor. With ~30% overhead for TA and instructor use, the December dry run, red-team sweeps, LLM judges, and development itself: **2--3B tokens total**, roughly \$10--20K at blended list prices (\$300--500 list-equivalent per student). Hold a 30% reserve unallocated; running dry in week 7 is the most demoralizing failure available. Procurement, not amount, is the risk: Sponsored education credits or a purchase order must be initiated in sprint 0.
+
+**People.** TA-1 (infrastructure): The committed engineering quarter---but note the build happens in November--December, before winter TA appointments begin, so the autumn gap (~2 person-months) needs RA, RSE, or hourly funding. TA-2 (course operations): At 30 students with weekly deliverables, one person cannot both run infrastructure and grade; a second TA or grader is strongly recommended. Instructor plus two TAs gives a 1:10 ratio during studio time, about the floor for hands-on teaching.
+
+**Compute and hosting.** One VM or small campus Kubernetes namespace for gateway, trace store, and dashboards (traces for 3B tokens are tens of GB---trivial). Sandboxed execution is bursty: A couple of servers or a campus research-computing allocation. Under \$1--2K incremental.
+
+**Content.** The reproduction paper set (15--30 papers with code and data, license-checked, *pre-tested by TAs for feasibility*---2--3 weeks of curation; artifact-badged papers are the shortcut); the week-6 red-team pack; 4--6 client commitments by mid-December; the IRB protocol (effort, not money, but on the critical path now).
+
+| Item | Estimate | Likely source |
+|---|---|---|
+| Tokens (2--3B) | \$10--20K list | Sponsored credits |
+| TA-2 (winter) | 1 TA quarter | Department |
+| Autumn engineering (~2 person-months) | \$15--25K loaded | RA/RSE/hourly |
+| Hosting + sandbox compute | <\$1--2K | Campus/lab in-kind |
+
 ## Mapping to the research program
 
 | Instrument | Course use | Research thrust |

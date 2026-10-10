@@ -22,11 +22,27 @@ The course operates as an instrumented agent deployment: every student agent run
 
 **I8. Labeling pipeline (phase 2).** LLM judges plus a human-validation interface, seeded by autopsy sessions. Built during weeks 3--6, once real traces exist.
 
+## Model supply: Two lanes
+
+The gateway routes to two model lanes with assigned roles.
+
+**Commercial frontier (default lane).** Labs, projects, and bake-offs run on frontier commercial models: The course lives or dies on whether student agents work, and long-horizon tool use is where frontier models retain a reliability edge. Funded by sponsored credits or purchase order (initiated in sprint 0).
+
+**Argonne inference service, open models (second lane).** Four jobs where it is better, not just cheaper: (1) Red-team week---deliberate injection attacks without vendor safety filters or terms-of-service confounds, on premises; (2) bulk background workloads---LLM judges, bake-off scoring, synthetic content generation; (3) a standing open-vs-frontier comparison---bake-offs optionally run on both lanes, with a model column on the leaderboard; (4) overflow if the commercial budget runs hot. Traces on this lane never leave the premises, which simplifies consent language for the research export. Constraints: Request the allocation in sprint 0; schedule nothing graded solely on this lane (maintenance windows); the gateway provides a tool-calling shim for open-model API differences.
+
+## Accounts and access
+
+Target: **One new credential per student.** The gateway key is each student's single course identity---model access on both lanes, budget enforcement, trace attribution, and login for the trace viewer and leaderboard. Students additionally need only a GitHub account (added to a course team in this org) and their CNetID.
+
+Deliberately *not* required: Commercial provider accounts (the gateway holds the keys; no side door around budgets or trace capture); individual ALCF accounts (the Argonne lane is served through a project-level service credential under the instructor's allocation---to be confirmed in sprint 0, since individual ALCF account processing for 30 students, including foreign nationals, would not complete by January); sandbox accounts (local containers on student laptops for labs; the course sandbox service authorizes by gateway identity for bake-offs and projects). Client-project teams receive client-provisioned accounts per client commitment #2, before the sprint begins.
+
+**Week-0 setup assignment** (sent before the quarter; verified before session 1): Gateway key issued and smoke-tested, GitHub handle in the course team, Docker installed and working.
+
 ## Timeline (October 2026 → March 2027)
 
 | Sprint | Through | Goal |
 |---|---|---|
-| 0 | late Oct | Decisions: Proxy base, trace schema, provider(s), sandbox approach. Repo, CI, and skeleton. |
+| 0 | late Oct | Decisions: Proxy base, trace schema, sandbox approach. Commercial credit procurement initiated; ALCF allocation requested, project-level service credential confirmed. Repo, CI, and skeleton. |
 | 1 | mid Nov | **I1 MVP:** Gateway with per-student keys, hard caps, full logging. |
 | 2 | end Nov | **I3 + I4 v0:** Sandboxed execution, lab tool set, trace viewer. |
 | 3 | mid Dec | **I2, I5, I6 v0:** Governor policies, instructor dashboard, bake-off harness; week-6 red-team content pack. |

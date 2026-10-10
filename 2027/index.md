@@ -19,7 +19,7 @@ Three recurring rituals:
 
 ## The project
 
-The spine of the course is the **reproduction challenge**: build an agent that attempts end-to-end computational reproduction of results from published papers (paper + data + code in; reproduction report + full execution trace out). Reproducibility is a real scientific problem, the task is unambiguous, and every hard issue in agentic AI shows up on the way: cost control, tool failures, provenance, knowing when to stop.
+The spine of the course is the **reproduction challenge**: build an agent that attempts end-to-end computational reproduction of results from published papers (paper + data + code in; reproduction report + full execution trace out). Reproducibility is a real scientific problem, the task is unambiguous, and every hard issue in agentic AI shows up on the way: cost control, tool failures, provenance, knowing when to stop. Full specification, tracks, deliverables, and grading: [the default project](project.md).
 
 In the final three weeks, teams either push the reproduction challenge further or take on a **client project**: a concrete task posed by a research group at UChicago or Argonne that wants it done. Client projects are vetted before the quarter begins: each client commits a one-page task specification, working data access, and demo-day attendance. Domain-science students may propose their own group's problem as a client project under the same terms. Teams without a suitable client pursue the reproduction challenge; nobody's grade depends on a third party's responsiveness. Prospective clients: See the [call for client projects](clients.md).
 <!-- TODO: recruit and confirm 4-6 client groups (target: commitments by mid-December) -->

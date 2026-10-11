@@ -6,7 +6,7 @@ The course operates as an instrumented agent deployment: every student agent run
 
 ## Instruments
 
-**I1. Course gateway (keystone; new build).** A model-access proxy through which all student agents call LLM APIs: per-student keys, token metering, hard and soft budget caps, complete request/response logging, and model-agnostic routing. One component provides budgets, traces, and provider independence at once; everything else attaches to it. Build on an existing open-source LLM proxy rather than from scratch.
+**I1. Course gateway (keystone; new build).** A model-access proxy through which all student agents call LLM APIs: per-student keys, token metering, hard and soft budget caps, complete request/response logging, and model-agnostic routing. One component provides budgets, traces, and provider independence at once; everything else attaches to it. Build on an existing open-source LLM proxy rather than from scratch. Security requirements (these are IRB protocol commitments, not preferences): TLS on all connections, encryption at rest, role-based administrative access with University 2FA, students able to access only their own sessions, access logging, no unauthenticated endpoints.
 
 **I2. Budget governor (adapt [Bursar](../Bursar/)).** Policy layer on the gateway: Allocations, burst behavior, back pressure, and a per-student usage dashboard. Course role: Week-3 lab and quarter-long cost control. Research role: Reference budget-governance implementation.
 

@@ -42,7 +42,7 @@ Deliberately *not* required: Commercial provider accounts (the gateway holds the
 
 | Sprint | Through | Goal |
 |---|---|---|
-| 0 | late Oct | Decisions: Proxy base, trace schema, sandbox approach. Commercial credit procurement initiated; ALCF allocation requested, project-level service credential confirmed. Repo, CI, and skeleton. |
+| 0 | late Oct | **Done 2026-10-11:** Gateway base = LiteLLM Proxy, trace schema = OpenInference-compatible JSON, sandbox = Docker (ADRs in [course-infra](https://github.com/agents4science/course-infra)); skeleton smoke-tested (keys, budgets, routing). Remaining: Commercial credit procurement; ALCF allocation + service credential. |
 | 1 | mid Nov | **I1 MVP:** Gateway with per-student keys, hard caps, full logging. |
 | 2 | end Nov | **I3 + I4 v0:** Sandboxed execution, lab tool set, trace viewer. |
 | 3 | mid Dec | **I2, I5, I6 v0:** Governor policies, instructor dashboard, bake-off harness; week-6 red-team content pack. |

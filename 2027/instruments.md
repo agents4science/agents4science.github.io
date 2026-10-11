@@ -18,7 +18,7 @@ The course operates as an instrumented agent deployment: every student agent run
 
 **I6. Bake-off harness and leaderboard.** Task specification, runner, scoring, and a class leaderboard, built on existing open evaluation tooling. Course role: Bake-offs 1--3 and the reproduction challenge. Research role: The fidelity-tier environment pattern.
 
-**I7. Consent and redaction module (phase 2, with IRB).** Opt-in flag at the gateway; de-identification at ingest; export path to the open corpus. Built during the quarter; nothing is exported before IRB approval.
+**I7. Consent and redaction module (phase 2, with IRB).** Opt-in flag at the gateway; de-identification at ingest (including conversion of absolute timestamps to session-relative times, per IRB protocol); export path to the open corpus. Built during the quarter; nothing is exported before IRB approval.
 
 **I8. Labeling pipeline (phase 2).** LLM judges plus a human-validation interface, seeded by autopsy sessions. Built during weeks 3--6, once real traces exist.
 

@@ -61,7 +61,7 @@ Deliberately *not* required: Commercial provider accounts (the gateway holds the
 
 **People.** TA-1 (infrastructure): The committed engineering quarter---but note the build happens in November--December, before winter TA appointments begin, so the autumn gap (~2 person-months) needs RA, RSE, or hourly funding. TA-2 (course operations): At 30 students with weekly deliverables, one person cannot both run infrastructure and grade; a second TA or grader is strongly recommended. Instructor plus two TAs gives a 1:10 ratio during studio time, about the floor for hands-on teaching.
 
-**Compute and hosting.** One VM or small campus Kubernetes namespace for gateway, trace store, and dashboards (traces for 3B tokens are tens of GB---trivial). Sandboxed execution is bursty: A couple of servers or a campus research-computing allocation. Under \$1--2K incremental.
+**Compute and hosting.** Decided: AWS via the University of Chicago's enterprise agreement. An always-on instance hosts the gateway, trace store, and dashboards (~\$100--200/month); burst sandbox capacity runs during labs and bake-offs (~\$200--400/month in-quarter); trace storage in S3 (tens of GB---trivial). Under \$2K for the quarter. Security configuration follows the IRB commitments above. Sprint-0 confirmations: the enterprise-account route, and whether the University requires a security review for systems holding student records.
 
 **Content.** The reproduction paper set (15--30 papers with code and data, license-checked, *pre-tested by TAs for feasibility*---2--3 weeks of curation; artifact-badged papers are the shortcut); the week-6 red-team pack; 4--6 client commitments by mid-December; the IRB protocol (effort, not money, but on the critical path now).
 

@@ -1,6 +1,6 @@
 # AI Agents for Science --- Winter 2027
 
-*CMSC 35370-1, The University of Chicago. Instructor: Ian Foster. Winter quarter 2027, Mondays and Wednesdays 3:00--4:20pm, room TBA.*
+*CMSC 35370-1, The University of Chicago. Instructor: Ian Foster. Winter quarter 2027, January 4 -- March 10, Mondays and Wednesdays 3:00--4:20pm, room TBA.*
 <!-- TODO: room (when assigned), TA names, office hours -->
 
 The 2027 edition of [AI Agents for Science](../Class/) is rebuilt around a single principle: **you learn agents by running them, breaking them, and fixing them**. Lectures are compressed into short briefings; most class time is lab and studio. Every student ships something every week, and the class itself operates as an instrumented agent deployment: every student receives a token budget with a visible governor, agents act through sandboxed tools, and the instructors supervise the fleet through an oversight dashboard. When your agent exhausts its budget or gets hijacked by a malicious web page, that is not an inconvenience---it is the curriculum.
@@ -26,17 +26,18 @@ In the final three weeks, teams either push the reproduction challenge further o
 
 ## Schedule
 
-| Week | Briefing themes | Lab / studio | Deliverable |
-|---|---|---|---|
-| 1 | What is an agent? From models to agents | Build a bare agent loop from scratch (no framework, ~100 lines) | Working tool-calling agent |
-| 2 | Tools, environments, MCP | Add search and sandboxed code execution; your traces are captured from day one | Instrumented agent; **Bake-off 1:** data extraction |
-| 3 | Memory, persistence, budgets | Add memory; meet your budget governor | Agent that survives budget pressure; **Autopsy 1** |
-| 4 | Literature agents; RAG | Synthesis with verified citations | **Bake-off 2:** evidence gathering, claims checked |
-| 5 | Data and code agents | Sandboxed analysis of real datasets | **Bake-off 3:** reproduce one figure from a published paper |
-| 6 | Security: control--data ambiguity, enforcement | **Red-team week:** attack week-5 agents; compare prompt guardrails vs. sandbox enforcement | Attack + defense writeup |
-| 7 | Multi-agent systems and delegation; project launch | Project sprint 1 | Project plan + first traces |
-| 8 | Agents for scientific facilities; evaluation | Project sprint 2; standups | Working prototype |
-| 9 | What agents mean for computer science | **Demo day** | Demo, report, and your best + worst trace |
+| Week | Dates | Briefing themes | Lab / studio | Deliverable |
+|---|---|---|---|---|
+| 1 | Jan 4, 6 | What is an agent? From models to agents | Build a bare agent loop from scratch (no framework, ~100 lines) | Working tool-calling agent |
+| 2 | Jan 11, 13 | Tools, environments, MCP | Add search and sandboxed code execution; your traces are captured from day one | Instrumented agent; **Bake-off 1:** data extraction |
+| 3 | Jan 20 only *(no class Jan 18, MLK Day)* | Memory, persistence, budgets | Add memory; meet your budget governor | Agent that survives budget pressure |
+| 4 | Jan 25, 27 | Literature agents; RAG | Synthesis with verified citations; **Autopsy 1** | **Bake-off 2:** evidence gathering, claims checked |
+| 5 | Feb 1, 3 | Data and code agents | Sandboxed analysis of real datasets | **Bake-off 3:** reproduce one figure from a published paper |
+| 6 | Feb 8, 10 | Security: control--data ambiguity, enforcement | **Red-team week:** attack week-5 agents; compare prompt guardrails vs. sandbox enforcement | Attack + defense writeup |
+| 7 | Feb 15, 17 | Multi-agent systems and delegation; project launch | Project sprint 1 | Project plan + first traces |
+| 8 | Feb 22, 24 | Agents for scientific facilities; evaluation | Project sprint 2; standups | Working prototype |
+| 9 | Mar 1, 3 | What agents mean for computer science | Project sprint 3; dress rehearsals | Final prototype |
+| 10 | Mar 10 only *(Mar 8 is reading period)* | --- | **Demo day** | Demo, report, and your best + worst trace |
 
 Readings each week pair one foundational paper with one current one; the list builds on the [2026 curriculum](../Class/curriculum.md) and the instructor's article *Agency as a New Organizing Abstraction for Computer Science* (CACM, 2026).
 <!-- TODO: per-week reading list; add arXiv link when posted -->

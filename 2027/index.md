@@ -1,7 +1,7 @@
 # AI Agents for Science --- Winter 2027
 
-*CMSC 35370, The University of Chicago. Instructor: Ian Foster. Winter quarter 2027 (9 weeks, early January to mid-March).*
-<!-- TODO: confirm course number, meeting times, room, TA, office hours -->
+*CMSC 35370-1, The University of Chicago. Instructor: Ian Foster. Winter quarter 2027, Mondays and Wednesdays 3:00--4:20pm, room TBA.*
+<!-- TODO: room (when assigned), TA names, office hours -->
 
 The 2027 edition of [AI Agents for Science](../Class/) is rebuilt around a single principle: **you learn agents by running them, breaking them, and fixing them**. Lectures are compressed into short briefings; most class time is lab and studio. Every student ships something every week, and the class itself operates as an instrumented agent deployment: every student receives a token budget with a visible governor, agents act through sandboxed tools, and the instructors supervise the fleet through an oversight dashboard. When your agent exhausts its budget or gets hijacked by a malicious web page, that is not an inconvenience---it is the curriculum.
 
@@ -9,7 +9,7 @@ The course serves both **computer scientists** (how do we build and govern these
 
 ## Format
 
-Two 80-minute sessions per week. Each session opens with a briefing of at most 20 minutes; the remainder is hands-on lab and studio work.
+Two 80-minute sessions per week (MW 3:00--4:20pm). Each session opens with a briefing of at most 20 minutes; the remainder is hands-on lab and studio work.
 
 Three recurring rituals:
 

@@ -80,6 +80,8 @@ Scalable authorization architecture for autonomous scientific agents.</p>
 
 ## What's New
 
+**Now enrolling: [AI Agents for Science, Winter 2027](2027/) (CMSC 35370, MW 3:00--4:20pm).**
+
 - [Resource Rights Architecture](ResourceRights/) — scalable authorization for autonomous agents (Jul 7, 2026)
 - [Greatly expanded set of Capability examples](Capabilities/README.md) (Feb 4, 2026)
 - First Agent of the Week: [OPAL — Plant Phenotyping Analysis Agent](https://github.com/AI-ModCon/BaseCAF_agent_of_the_week/blob/main/AotW-1-OPAL.md) (Jan 29, 2026)

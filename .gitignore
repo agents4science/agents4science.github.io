@@ -28,3 +28,10 @@ runinfo/
 # Claude Code
 .claude/
 
+
+# knowledge-agent runtime artifacts
+examples/knowledge-agent/agent.log
+examples/knowledge-agent/agent_state.json
+examples/knowledge-agent/knowledge_base.db
+examples/knowledge-agent/papers.json
+examples/knowledge-agent/__pycache__/

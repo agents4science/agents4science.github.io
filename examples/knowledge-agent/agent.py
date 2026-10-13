@@ -4,7 +4,7 @@ Knowledge-Updating Research Agent
 
 A simple agent that:
 1. Searches arXiv for new papers on protein-ligand binding affinity
-2. Uses Claude to triage relevance and extract binding data
+2. Uses an LLM to triage relevance and extract binding data
 3. Stores results in a SQLite database
 4. Alerts on high-impact findings
 
@@ -12,11 +12,20 @@ Run periodically via cron, e.g.:
     0 2 * * * cd /path/to/knowledge-agent && python agent.py
 
 Requires:
-    pip install anthropic arxiv
-    export ANTHROPIC_API_KEY=your-key
+    pip install anthropic arxiv openai
+
+LLM fallback chain (uses first available):
+    1. OpenAI (if OPENAI_API_KEY is set)
+    2. Anthropic (if ANTHROPIC_API_KEY is set)
+    3. Argonne ALCF (if Globus tokens available)
+    4. Mock (for testing)
+
+Options:
+    --reset    Clear database and state, start fresh
 """
 
 import os
+import sys
 import json
 import sqlite3
 import logging
@@ -24,14 +33,16 @@ from datetime import datetime, timedelta
 from pathlib import Path
 
 import arxiv
-import anthropic
+
+from llm_fallback import create_llm, LLMProvider
 
 # Configuration
 CONFIG = {
-    "search_query": "protein ligand binding affinity",
-    "max_papers_per_run": 20,
-    "lookback_days": 7,
+    "search_query": "autonomous AI agent scientific discovery",
+    "max_papers_per_run": 100,
+    "lookback_days": 30,
     "db_path": "knowledge_base.db",
+    "json_path": "papers.json",
     "state_path": "agent_state.json",
     "records_before_retrain": 200,
     "high_impact_keywords": ["breakthrough", "novel", "significant", "state-of-the-art"],
@@ -65,14 +76,15 @@ def init_db(db_path: str) -> sqlite3.Connection:
         )
     """)
     conn.execute("""
-        CREATE TABLE IF NOT EXISTS binding_data (
+        CREATE TABLE IF NOT EXISTS agent_data (
             id INTEGER PRIMARY KEY AUTOINCREMENT,
             paper_id TEXT,
-            protein TEXT,
-            ligand TEXT,
-            affinity_value REAL,
-            affinity_unit TEXT,
-            method TEXT,
+            agent_name TEXT,
+            architecture TEXT,
+            domain TEXT,
+            capabilities TEXT,
+            llm_used TEXT,
+            benchmark_results TEXT,
             notes TEXT,
             created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
             FOREIGN KEY (paper_id) REFERENCES papers(id)
@@ -100,6 +112,20 @@ def save_state(state: dict, state_path: str):
     """Save agent state to JSON file."""
     with open(state_path, "w") as f:
         json.dump(state, f, indent=2, default=str)
+
+
+def load_papers_json(json_path: str) -> dict:
+    """Load papers from JSON file."""
+    if Path(json_path).exists():
+        with open(json_path) as f:
+            return json.load(f)
+    return {}
+
+
+def save_papers_json(papers: dict, json_path: str):
+    """Save papers to JSON file."""
+    with open(json_path, "w") as f:
+        json.dump(papers, f, indent=2, default=str)
 
 
 def search_arxiv(query: str, max_results: int, since: datetime) -> list:
@@ -130,58 +156,58 @@ def search_arxiv(query: str, max_results: int, since: datetime) -> list:
     return papers
 
 
-def triage_paper(client: anthropic.Anthropic, paper: dict) -> dict:
-    """Use Claude to determine if paper is relevant and extract data."""
+def triage_paper(llm: LLMProvider, paper: dict) -> dict:
+    """Use LLM to determine if paper is relevant and extract data."""
 
-    prompt = f"""Analyze this scientific paper about protein-ligand binding.
+    system = "You are a scientific assistant that analyzes research papers about AI agents for scientific discovery. Always respond with valid JSON only."
+
+    user = f"""Analyze this scientific paper about AI agents for scientific discovery.
 
 Title: {paper['title']}
 
 Abstract: {paper['abstract']}
 
 Tasks:
-1. Is this paper relevant to protein-ligand binding affinity prediction or measurement? (yes/no)
-2. If relevant, extract any binding affinity data mentioned (protein, ligand, affinity value, unit, method)
-3. Is this a high-impact finding? (breakthrough methodology, significantly better results, novel approach)
+1. Is this paper relevant to AI/LLM agents for scientific discovery, autonomous experimentation, or AI-driven research? (yes/no)
+2. If relevant, extract information about the agent system described
+3. Is this a high-impact finding? (novel architecture, significant capability, breakthrough results)
 
 Respond in JSON format:
 {{
     "is_relevant": true/false,
     "relevance_reason": "brief explanation",
-    "binding_data": [
+    "agent_data": [
         {{
-            "protein": "protein name or target",
-            "ligand": "ligand/compound name",
-            "affinity_value": numeric value or null,
-            "affinity_unit": "nM/uM/Ki/Kd/IC50/etc" or null,
-            "method": "experimental/computational method" or null
+            "agent_name": "name of the agent/system" or null,
+            "architecture": "single-agent/multi-agent/hierarchical/etc" or null,
+            "domain": "chemistry/biology/materials/physics/general/etc" or null,
+            "capabilities": "tool use, planning, reasoning, experimentation, etc" or null,
+            "llm_used": "GPT-4/Claude/Llama/etc" or null,
+            "benchmark_results": "any quantitative results mentioned" or null
         }}
     ],
     "is_high_impact": true/false,
     "impact_reason": "why this is significant" or null
 }}
 
-If no specific binding data is extractable, return an empty array for binding_data.
+If no specific agent data is extractable, return an empty array for agent_data.
 Only return the JSON, no other text."""
 
-    response = client.messages.create(
-        model="claude-sonnet-4-20250514",
-        max_tokens=1024,
-        messages=[{"role": "user", "content": prompt}],
-    )
+    response = llm.complete(system=system, user=user, max_tokens=1024)
 
     try:
-        result = json.loads(response.content[0].text)
+        result = json.loads(response)
         return result
     except json.JSONDecodeError:
         log.warning(f"Failed to parse LLM response for paper: {paper['id']}")
-        return {"is_relevant": False, "binding_data": [], "is_high_impact": False}
+        log.debug(f"Raw response: {response[:200]}")
+        return {"is_relevant": False, "agent_data": [], "is_high_impact": False}
 
 
-def store_paper(conn: sqlite3.Connection, paper: dict, triage_result: dict):
-    """Store paper and extracted data in database."""
+def store_paper(conn: sqlite3.Connection, papers_json: dict, paper: dict, triage_result: dict):
+    """Store paper and extracted data in both SQLite and JSON."""
 
-    # Store paper
+    # Store in SQLite
     conn.execute("""
         INSERT OR REPLACE INTO papers (id, title, authors, abstract, published, url, is_relevant, extracted_data)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?)
@@ -196,25 +222,43 @@ def store_paper(conn: sqlite3.Connection, paper: dict, triage_result: dict):
         json.dumps(triage_result),
     ))
 
-    # Store binding data
+    # Store agent data in SQLite
     records_added = 0
-    for data in triage_result.get("binding_data", []):
-        if data.get("protein") or data.get("ligand"):
+    for data in triage_result.get("agent_data", []):
+        if data.get("agent_name") or data.get("architecture") or data.get("domain"):
+            # Convert any dict/list values to JSON strings for SQLite
+            def to_str(val):
+                if isinstance(val, (dict, list)):
+                    return json.dumps(val)
+                return val
+
             conn.execute("""
-                INSERT INTO binding_data (paper_id, protein, ligand, affinity_value, affinity_unit, method, notes)
-                VALUES (?, ?, ?, ?, ?, ?, ?)
+                INSERT INTO agent_data (paper_id, agent_name, architecture, domain, capabilities, llm_used, benchmark_results, notes)
+                VALUES (?, ?, ?, ?, ?, ?, ?, ?)
             """, (
                 paper["id"],
-                data.get("protein"),
-                data.get("ligand"),
-                data.get("affinity_value"),
-                data.get("affinity_unit"),
-                data.get("method"),
+                to_str(data.get("agent_name")),
+                to_str(data.get("architecture")),
+                to_str(data.get("domain")),
+                to_str(data.get("capabilities")),
+                to_str(data.get("llm_used")),
+                to_str(data.get("benchmark_results")),
                 triage_result.get("relevance_reason"),
             ))
             records_added += 1
 
     conn.commit()
+
+    # Store in JSON (keyed by paper ID)
+    papers_json[paper["id"]] = {
+        "title": paper["title"],
+        "authors": paper["authors"],
+        "abstract": paper["abstract"],
+        "published": str(paper["published"]),
+        "url": paper["url"],
+        "triage": triage_result,
+    }
+
     return records_added
 
 
@@ -270,7 +314,9 @@ def run_agent():
     # Initialize
     conn = init_db(CONFIG["db_path"])
     state = load_state(CONFIG["state_path"])
-    client = anthropic.Anthropic()
+    papers_json = load_papers_json(CONFIG["json_path"])
+    llm = create_llm(verbose=False)
+    log.info(f"Using LLM: {llm.name}")
 
     # Determine search window
     if state["last_run"]:
@@ -307,13 +353,13 @@ def run_agent():
 
         # Triage with LLM
         try:
-            triage_result = triage_paper(client, paper)
+            triage_result = triage_paper(llm, paper)
         except Exception as e:
             log.error(f"Error triaging paper: {e}")
             continue
 
         # Store results
-        added = store_paper(conn, paper, triage_result)
+        added = store_paper(conn, papers_json, paper, triage_result)
         records_added += added
 
         if triage_result.get("is_relevant"):
@@ -335,6 +381,7 @@ def run_agent():
         trigger_retrain(state)
 
     save_state(state, CONFIG["state_path"])
+    save_papers_json(papers_json, CONFIG["json_path"])
 
     # Summary
     log.info("=" * 60)
@@ -349,5 +396,17 @@ def run_agent():
     conn.close()
 
 
+def reset_agent():
+    """Clear database and state files."""
+    log.info("Resetting agent...")
+    for f in [CONFIG["db_path"], CONFIG["json_path"], CONFIG["state_path"], "agent.log"]:
+        if Path(f).exists():
+            Path(f).unlink()
+            log.info(f"  Deleted {f}")
+    log.info("Reset complete")
+
+
 if __name__ == "__main__":
+    if "--reset" in sys.argv:
+        reset_agent()
     run_agent()

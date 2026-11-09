@@ -12,9 +12,16 @@
       "Bash(git merge:*)",
       "Bash(git pull:*)",
       "Bash(git stash:*)",
+      "Bash(git fetch *)",
       "Bash(file:*)",
       "Bash(rsvg-convert:*)",
-      "Bash(ls:*)"
+      "Bash(ls:*)",
+      "Bash(docker info *)",
+      "Bash(docker compose *)",
+      "Bash(docker image *)",
+      "Bash(docker network *)",
+      "Bash(uvx --from alcf-ai alcf-ai auth get-access-token)",
+      "Bash(python3 -m json.tool)"
     ]
   }
 }

@@ -1,0 +1,628 @@
+[
+ {
+  "id": "foundry-imaging-manipulation",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "Imaging and Manipulation of Nanostructures Facility (facility-level record)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Atomic Force Microscopy",
+    "acronym": "AFM"
+   },
+   {
+    "name": "Scanning Probe Microscopy",
+    "acronym": "SPM"
+   },
+   {
+    "name": "Scanning Near-field Optical Microscopy",
+    "acronym": "SNOM"
+   },
+   {
+    "name": "Confocal Raman and Fluorescence Microscopy"
+   },
+   {
+    "name": "Tip-Enhanced and Pump-Probe Optical Spectro-Microscopy"
+   },
+   {
+    "name": "Kelvin Probe Surface Potential Imaging"
+   },
+   {
+    "name": "Auger Electron Spectroscopy",
+    "acronym": "AES"
+   },
+   {
+    "name": "X-ray Photoemission Spectroscopy",
+    "acronym": "XPS"
+   },
+   {
+    "name": "In situ combined electron / scanning-probe microscopy"
+   }
+  ],
+  "measurables": [
+   "Nanoscale topography, mechanical, electrical (conductivity, tunneling, electrostatic, surface potential) and optical properties of hard, soft, and liquid nanostructures",
+   "Chemical and surface composition via Auger and x-ray photoemission",
+   "Manipulation of single nanostructures under controlled environments and in situ conditions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/about/facilities/imaging-and-manipulation-of-nanostructures/",
+    "retrieved": "2026-11-24",
+    "notes": "Facility scope and capabilities (hard-to-soft matter, combined electron/scanning-probe and near-field instruments, in situ experiments); accessed via web search snippets"
+   },
+   {
+    "source_url": "https://foundry-old.lbl.gov/facilities/imaging_and_manipulation_of_nanostructures/expertise.html",
+    "retrieved": "2026-11-24",
+    "notes": "Named SPM platforms (Agilent PicoPlus AFM modes, NT-MDT Ntegra AFM/Raman/SNOM) and spectro-microscopy techniques; accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-nanofabrication",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "Nanofabrication Facility (facility-level record)",
+  "instrument_class": "fabrication",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Electron Beam Lithography",
+    "acronym": "EBL"
+   },
+   {
+    "name": "Focused Ion Beam Lithography",
+    "acronym": "FIB"
+   },
+   {
+    "name": "Nanoimprint Lithography",
+    "acronym": "NIL"
+   },
+   {
+    "name": "Plasma Etching"
+   },
+   {
+    "name": "Atomic Layer Deposition",
+    "acronym": "ALD"
+   },
+   {
+    "name": "Thin Film Metal and Semiconductor Deposition"
+   },
+   {
+    "name": "Ion Beam Induced Deposition",
+    "acronym": "IBID"
+   },
+   {
+    "name": "Electron Beam Induced Deposition",
+    "acronym": "EBID"
+   },
+   {
+    "name": "Chemically Assisted Ion Beam Etching",
+    "acronym": "CAIBE"
+   }
+  ],
+  "measurables": [
+   "Fabrication of nanoscale structures and device prototypes: nanoelectronics, nano-optical antennas, modified scanning-probe tips, rapid electrical contacts",
+   "Patterned thin films, etched nanostructures, and nanoimprinted features in a ~4,850 sq ft Class 1,000 cleanroom with Class 100 and Class 10 areas"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry-old.lbl.gov/facilities/nanofabrication/expertise.html",
+    "retrieved": "2026-11-24",
+    "notes": "Cleanroom size/class, tool set (EBL staff-operated, Zeiss Cross-beam FIB with gas injection, IBID/EBID/CAIBE), deposition and etching capabilities; accessed via web search snippets"
+   },
+   {
+    "source_url": "https://foundry.lbl.gov/about/facilities/",
+    "retrieved": "2026-11-24",
+    "notes": "Facility listed among the Foundry's seven facilities; accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-inorganic",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "Inorganic Nanostructures Facility (facility-level record)",
+  "instrument_class": "fabrication",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Colloidal Nanocrystal Synthesis"
+   },
+   {
+    "name": "Robotic/Automated Nanomaterial Synthesis (WANDA robot)"
+   },
+   {
+    "name": "Metal-Organic Chemical Vapor Deposition",
+    "acronym": "MOCVD"
+   },
+   {
+    "name": "Plasma-Enhanced Chemical Vapor Deposition",
+    "acronym": "PECVD"
+   },
+   {
+    "name": "Self-Assembly of Nanostructures into Mesoscale Materials"
+   }
+  ],
+  "measurables": [
+   "Synthesis of semiconductor, carbon, and hybrid nanostructures: nanocrystals, nanowires, nanotubes with controlled size, shape, connectivity, and topology",
+   "Combinatorial/automated nanocrystal discovery (WANDA workstation), nitride films and nanowires by MOCVD, single/multi-wall carbon nanotubes and graphene films on substrates up to 4 inches",
+   "3D mesoscale functional materials for energy applications"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/about/facilities/inorganic-nanostructures/",
+    "retrieved": "2026-11-24",
+    "notes": "Facility scope (semiconductor/carbon/hybrid nanostructures, combinatorial discovery, self-assembly); accessed via web search snippets"
+   },
+   {
+    "source_url": "https://aum-archive.foundry.lbl.gov/facilities/inorganic_nanostructures/expertise.html",
+    "retrieved": "2026-11-24",
+    "notes": "WANDA robot specifications, glove box, MOCVD and Aixtron PECVD equipment; accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-organic",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "Organic and Macromolecular Synthesis Facility (facility-level record)",
+  "instrument_class": "fabrication",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Organic, Supramolecular, and Macromolecular Synthesis"
+   },
+   {
+    "name": "High-Throughput Robotic Polymer Formulation"
+   },
+   {
+    "name": "Click Chemistry Functionalization"
+   },
+   {
+    "name": "Size Exclusion Chromatography",
+    "acronym": "SEC"
+   },
+   {
+    "name": "High Temperature Gel Permeation Chromatography",
+    "acronym": "GPC"
+   },
+   {
+    "name": "Dynamic Mechanical Analysis",
+    "acronym": "DMA"
+   }
+  ],
+  "measurables": [
+   "Synthesis of organic molecular, supramolecular, and macromolecular ('soft') materials and assemblies, including porous frameworks and organic-inorganic hybrids for energy conversion/storage, organic electronics, and catalysis",
+   "High-throughput mapping of how chemical design and processing shape material structure (hundreds of supramolecular polymer blends per day)",
+   "Polymer molecular weight distributions (OMNISEC SEC in THF/DMF, TOSOH high-temperature GPC) and thermomechanical properties of films, fibers, composites (TA Q850 DMA)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/expertise_instrumentation/organic-and-macromolecular-synthesis-expertise/",
+    "retrieved": "2026-11-24",
+    "notes": "Facility scope and expertise; accessed via web search snippets"
+   },
+   {
+    "source_url": "https://foundry.lbl.gov/instrumentation/polymer-processing-and-characterization/",
+    "retrieved": "2026-11-24",
+    "notes": "SEC/GPC/DMA instrument details; accessed via web search snippets"
+   },
+   {
+    "source_url": "https://foundry.lbl.gov/2026/10/22/how-automation-is-transforming-polymer-design/",
+    "retrieved": "2026-11-24",
+    "notes": "High-throughput robotic polymer workflow (2026, supports operational status); accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-biological",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "Biological Nanostructures Facility (facility-level record)",
+  "instrument_class": "fabrication",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Solid-Phase Peptide and Peptoid Synthesis"
+   },
+   {
+    "name": "Combinatorial Peptide/Peptoid Library Synthesis and Screening"
+   },
+   {
+    "name": "Bioconjugation"
+   },
+   {
+    "name": "Protein Expression and Cell Culture"
+   },
+   {
+    "name": "Phage Display"
+   },
+   {
+    "name": "Total Internal Reflection Fluorescence Microscopy",
+    "acronym": "TIRF"
+   },
+   {
+    "name": "Confocal and Single-Molecule Imaging"
+   },
+   {
+    "name": "Ultra-Performance Liquid Chromatography",
+    "acronym": "UPLC"
+   },
+   {
+    "name": "Ion-Mobility Mass Spectrometry"
+   }
+  ],
+  "measurables": [
+   "Synthesis, purification, and characterization of bio- and biomimetic polymers, including sequence-defined peptoid materials and 2D self-assembling peptoid nanosheets",
+   "Combinatorial biopolymer libraries, engineered cells and expressed proteins",
+   "Biological structure and assembly imaged by fluorescence microscopy, AFM, SEM, and aberration-corrected TEM down to atomic resolution; peptoid sequences by MS sequencing"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/instrumentation/biopolymers/",
+    "retrieved": "2026-11-24",
+    "notes": "Peptoid design/synthesis/characterization workflow, synthesizers, UPLC, ion-mobility MS, nanosheet imaging; accessed via web search snippets"
+   },
+   {
+    "source_url": "https://foundry-old.lbl.gov/facilities/biological_nanostructures/",
+    "retrieved": "2026-11-24",
+    "notes": "Facility capability list (bioconjugation, combinatorial libraries, protein expression, cell culture, phage display, biological microscopy); accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-theory",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "Theory of Nanostructured Materials Facility (facility-level record)",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "First-Principles and Computational Materials Modeling"
+   },
+   {
+    "name": "Development of Theoretical and Computational Methods for Nanoscale Phenomena"
+   }
+  ],
+  "measurables": [
+   "Predicted and explained nanoscale structure-function relationships: information transport, opto-electronic energy generation, molecular self-assembly, gas separation",
+   "Theoretical support complementing Foundry and user experiments in nanoelectronics, nanomechanics, energy science, soft matter, and novel nanomaterials",
+   "Access to dedicated compute clusters (Vulcan), LBNL-wide resources (Lawrencium, Mako), and NERSC"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://nanotheory.lbl.gov/",
+    "retrieved": "2026-11-24",
+    "notes": "Facility mission, collaboration model, interest areas; accessed via web search snippets"
+   },
+   {
+    "source_url": "https://nanotheory.lbl.gov/computation.html",
+    "retrieved": "2026-11-24",
+    "notes": "Computing resources (Vulcan, Lawrencium/Mako, NERSC); accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-ncem",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "National Center for Electron Microscopy (NCEM) (facility-level record)",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Transmission Electron Microscopy",
+    "acronym": "TEM"
+   },
+   {
+    "name": "Scanning Transmission Electron Microscopy",
+    "acronym": "STEM"
+   },
+   {
+    "name": "Aberration-Corrected Electron Microscopy"
+   },
+   {
+    "name": "Four-Dimensional Scanning Transmission Electron Microscopy",
+    "acronym": "4D-STEM"
+   },
+   {
+    "name": "Energy-Dispersive X-ray Spectroscopy",
+    "acronym": "EDS"
+   },
+   {
+    "name": "Electron Energy Loss Spectroscopy",
+    "acronym": "EELS"
+   },
+   {
+    "name": "Cryo-Electron Microscopy",
+    "acronym": "cryo-EM"
+   },
+   {
+    "name": "Focused Ion Beam Sample Preparation",
+    "acronym": "FIB"
+   },
+   {
+    "name": "In Situ Electron Microscopy"
+   },
+   {
+    "name": "Electron Tomography"
+   }
+  ],
+  "measurables": [
+   "Atomic-resolution structure, composition, and chemistry of materials, including two double-aberration-corrected microscopes (TEAM 0.5, TEAM I) from the TEAM project",
+   "In situ dynamics (heating, biasing, liquid cell, mechanical testing) and 3D tomographic reconstructions",
+   "FIB-prepared site-specific TEM samples (Helios 5, Helios G4, Strata); additional instruments include TitanX, ThemIS, JEOL 2100-F, JEOL 3010, Tecnai F20, LIBRA 200MC"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/about/facilities/the-national-center-for-electron-microscopy-ncem/",
+    "retrieved": "2026-11-24",
+    "notes": "Facility overview, TEAM project history, double-aberration-corrected microscopes; accessed via web search snippets"
+   },
+   {
+    "source_url": "https://foundry.lbl.gov/expertise_instrumentation/ncem-instrumentation/",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument roster (TEAM 0.5, TEAM I, ThemIS, TitanX, JEOL 2100-F, JEOL 3010, Tecnai F20, LIBRA 200MC, FIB Helios 5/G4, FIB Strata); accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-ncem-team05",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "TEAM 0.5",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Double-Aberration-Corrected Scanning Transmission Electron Microscopy",
+    "acronym": "STEM"
+   },
+   {
+    "name": "Transmission Electron Microscopy",
+    "acronym": "TEM"
+   },
+   {
+    "name": "Four-Dimensional Scanning Transmission Electron Microscopy",
+    "acronym": "4D-STEM"
+   },
+   {
+    "name": "Source Monochromation"
+   }
+  ],
+  "measurables": [
+   "Atomic structure at 50 pm resolution in both TEM and STEM modes (first microscope in the world to demonstrate this)",
+   "Energy-resolved spectroscopy at 0.15 eV via source monochromation",
+   "Fast 4D-STEM datasets and in situ movies at 87,000 frames/s via the 4D Camera (576x576 pixel direct electron detector)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/instrumentation/team-0-5/",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument description, 50 pm / 0.15 eV specifications; accessed via web search snippets"
+   },
+   {
+    "source_url": "https://foundry.lbl.gov/2019/03/17/successful-demonstration-of-fastest-electron-detector-ever-made/",
+    "retrieved": "2026-11-24",
+    "notes": "4D Camera installed on TEAM 0.5, 87 kHz frame rate; in use in research as recently as 2026 per Foundry news; accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-ncem-team1",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "TEAM I",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Double-Aberration-Corrected Scanning Transmission Electron Microscopy",
+    "acronym": "STEM"
+   },
+   {
+    "name": "Transmission Electron Microscopy",
+    "acronym": "TEM"
+   },
+   {
+    "name": "Electron Energy Loss Spectroscopy",
+    "acronym": "EELS"
+   },
+   {
+    "name": "Source Monochromation"
+   }
+  ],
+  "measurables": [
+   "Atomic-resolution images at 50 pm resolution",
+   "Energy-filtered imaging and spectroscopy via Gatan Imaging Filter Continuum K3 spectrometer with direct electron detection",
+   "Modified FEI Titan 80-300 platform: X-FEG source, monochromator, CEOS DCOR STEM probe corrector, CEOS CCOR combined spherical/chromatic TEM corrector"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/instrumentation/team-i/",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument configuration (X-FEG, monochromator, DCOR/CCOR correctors, GIF Continuum K3), 50 pm resolution; accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-ncem-themis",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "ThemIS (FEI ThemIS in situ 60-300)",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "In Situ Transmission Electron Microscopy (liquid cell, heating, biasing, mechanical testing)"
+   },
+   {
+    "name": "Lorentz Transmission Electron Microscopy"
+   },
+   {
+    "name": "Microcrystal Electron Diffraction",
+    "acronym": "MicroED"
+   },
+   {
+    "name": "Four-Dimensional Scanning Transmission Electron Microscopy",
+    "acronym": "4D-STEM"
+   },
+   {
+    "name": "Energy-Dispersive X-ray Spectroscopy",
+    "acronym": "EDS"
+   },
+   {
+    "name": "Nanobeam Diffraction Imaging"
+   },
+   {
+    "name": "Fluctuation Microscopy"
+   }
+  ],
+  "measurables": [
+   "Dynamic material behavior under liquid, thermal, electrical bias, and mechanical stimuli",
+   "Magnetic domain structure (Lorentz TEM) and nanocrystal structures (MicroED)",
+   "Elemental maps (Bruker SuperX EDS) and 4D-STEM datasets via Gatan K2 direct electron camera; image-corrected 60-300 kV column with X-FEG source and Ceta2 CMOS camera"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/instrumentation/themis/",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument configuration, in situ applications, 4D-STEM capability, detectors; accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "foundry-ncem-titanx",
+  "facility": "Molecular Foundry",
+  "institution": "LBNL",
+  "name": "TitanX (FEI TitanX 60-300)",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Scanning Transmission Electron Microscopy",
+    "acronym": "STEM"
+   },
+   {
+    "name": "Transmission Electron Microscopy",
+    "acronym": "TEM"
+   },
+   {
+    "name": "Fast Energy-Dispersive X-ray Mapping",
+    "acronym": "EDS"
+   },
+   {
+    "name": "Four-Dimensional Scanning Transmission Electron Microscopy",
+    "acronym": "4D-STEM"
+   },
+   {
+    "name": "Electron Tomography"
+   },
+   {
+    "name": "In Situ Heating and Biasing"
+   }
+  ],
+  "measurables": [
+   "Fast elemental composition maps via EDS",
+   "High-angle STEM or TEM tomographic 3D reconstructions",
+   "4D-STEM datasets and in situ heating/biasing experiments on an uncorrected 60-300 kV column"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://foundry.lbl.gov/instrumentation/titanx/",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument description, EDS mapping, 4D-STEM, tomography, in situ capabilities; accessed via web search snippets"
+   }
+  ],
+  "location": {
+   "building": "Molecular Foundry (Building 67)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87498,
+   "longitude": -122.24236,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ }
+]

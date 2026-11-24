@@ -1,0 +1,539 @@
+[
+ {
+  "id": "hfir-hb-1",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "HB-1 PTAX — Polarized Triple-Axis Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "polarized neutron triple-axis spectrometry"
+   },
+   {
+    "name": "inelastic neutron scattering",
+    "acronym": "INS"
+   },
+   {
+    "name": "neutron polarization analysis"
+   }
+  ],
+  "measurables": [
+   "magnetic excitations and spin dynamics separated from lattice (phonon) contributions via polarization analysis",
+   "static spin structures and magnetic diffraction from single crystals",
+   "phonon dispersions in solids"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/ptax",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument name, beamline, polarized/unpolarized thermal-neutron diffraction and inelastic scattering capabilities; accessed via web search snippet (direct fetch blocked)."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (PTAX | HB-1); PTAX named among recently upgraded instruments. HFIR in normal 24-day cycle operation; Cycle-519 startup scheduled 2026-11-24 per sns.gov/hfir/alerts."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-hb-1a",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "HB-1A VERITAS — Versatile Intense Triple-Axis Spectrometer (formerly FIE-TAX, Fixed-Incident-Energy Triple-Axis Spectrometer)",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "fixed-incident-energy (14.5 meV) triple-axis spectrometry"
+   },
+   {
+    "name": "inelastic neutron scattering",
+    "acronym": "INS"
+   },
+   {
+    "name": "elastic neutron diffraction"
+   }
+  ],
+  "measurables": [
+   "low-background magnetic and lattice excitations in single crystals, powders, and thin films with weak scattering signals",
+   "structural and magnetic order parameters versus temperature and field"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/veritas",
+    "retrieved": "2026-11-24",
+    "notes": "Full name (VErsatile Intense Triple-Axis Spectrometer), fixed 14.5 meV incident energy; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://neutrons.ornl.gov/sites/default/files/HB-1A.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "FIE-TAX heritage, double-bounce PG monochromator, suitability for weak-signal samples; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (VERITAS | HB-1A)."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-hb-2a",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "HB-2A POWDER — Neutron Powder Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron powder diffraction",
+    "acronym": "NPD"
+   },
+   {
+    "name": "magnetic neutron diffraction"
+   },
+   {
+    "name": "half-polarized neutron powder diffraction"
+   }
+  ],
+  "measurables": [
+   "crystal structures of powder samples as a function of temperature (0.03–1800 K), magnetic field (to 6 T), and pressure (to 2 GPa)",
+   "magnetic structures and ordered moments",
+   "magnetic pair distribution functions and local magnetic correlations"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/powder",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, powder diffraction technique, sample-condition ranges (0.03–1800 K, 6 T, 2 GPa); accessed via web search snippet."
+   },
+   {
+    "source_url": "https://arxiv.org/pdf/2504.12107",
+    "retrieved": "2026-11-24",
+    "notes": "Magnetic PDF and half-polarized powder diffraction capability at HB-2A (instrument paper)."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (POWDER | HB-2A)."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-hb-2b",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "HB-2B HIDRA — High Intensity Diffractometer for Residual Stress Analysis",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron engineering diffraction (residual stress/strain mapping)"
+   },
+   {
+    "name": "neutron strain scanning"
+   }
+  ],
+  "measurables": [
+   "spatially resolved residual stress and strain in engineering components (steel, aluminum, superalloys such as Inconel)",
+   "lattice-spacing-derived strain in large-scale and additively manufactured parts"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/hidra",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, optimization for strain measurement and residual stress determination in engineering materials; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://www.osti.gov/pages/servlets/purl/1959622",
+    "retrieved": "2026-11-24",
+    "notes": "HIDRA described as 3rd-generation high-flux engineering diffractometer (instrument paper)."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (HIDRA | HB-2B)."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-hb-2c",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "HB-2C WAND² — Wide-Angle Neutron Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron powder diffraction",
+    "acronym": "NPD"
+   },
+   {
+    "name": "single-crystal neutron diffraction"
+   },
+   {
+    "name": "diffuse neutron scattering"
+   }
+  ],
+  "measurables": [
+   "fast parametric medium-resolution powder diffraction patterns (time-resolved phase transitions)",
+   "magnetic propagation vectors and weak magnetic signals in single crystals",
+   "diffuse scattering from short-range order and disorder over large reciprocal-space volumes"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/wand",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, powder/single-crystal/diffuse-scattering capabilities; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://pubs.aip.org/aip/rsi/article/89/9/092801/359932/WAND2-A-versatile-wide-angle-neutron-powder-single",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument paper: 2D-PSD, fast powder measurements, diffuse scattering mission, sample environment ranges."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (WAND² | HB-2C)."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-hb-3",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "HB-3 TAX — Triple-Axis Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "thermal-neutron triple-axis spectrometry"
+   },
+   {
+    "name": "inelastic neutron scattering",
+    "acronym": "INS"
+   }
+  ],
+  "measurables": [
+   "magnetic excitations in solids up to ~150 meV energy transfer",
+   "structural and magnetic order parameters in bulk materials",
+   "phonon and spin-wave dispersions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/tax",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, high-intensity triple-axis role, 150 meV range, order-parameter measurements; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (TAX | HB-3)."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-hb-3a",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "HB-3A DEMAND — Dimensional Extreme Magnetic Neutron Diffractometer (four-circle single-crystal diffractometer)",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "four-circle single-crystal neutron diffraction"
+   },
+   {
+    "name": "magnetic neutron diffraction"
+   }
+  ],
+  "measurables": [
+   "nuclear (crystal) structures of single crystals, including site disorder",
+   "magnetic structures, propagation vectors, spin arrangements and ordered moments",
+   "order parameters under extreme conditions: ultra-low temperature (to ~50 mK), magnetic field (to 8 T), electric field (to 11 kV/mm), pressure (to tens of GPa)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/demand",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, four-circle mode, structure/magnetic-order mission; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://dx.doi.org/10.3390/cryst9010005",
+    "retrieved": "2026-11-24",
+    "notes": "DEMAND instrument paper: 2D magnetic-field-insensitive detector, extreme sample conditions."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (DEMAND | HB-3A)."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-cg-1d",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "CG-1D MARS — Multimodal Advanced Radiography Station (cold neutron imaging beamline)",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron radiography"
+   },
+   {
+    "name": "neutron computed tomography",
+    "acronym": "nCT"
+   }
+  ],
+  "measurables": [
+   "internal 2D and 3D structure of objects via neutron attenuation contrast (high sensitivity to hydrogen and light elements)",
+   "high-spatial- and high-temporal-resolution imaging of processes across multiple length and time scales"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/mars/",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, radiography/CT capabilities, polychromatic cold beam; accessed via web search snippet. Imaging station counted among HFIR's 12 beamline instruments."
+   },
+   {
+    "source_url": "https://link.springer.com/chapter/10.1007/978-3-032-15003-5_33",
+    "retrieved": "2026-11-24",
+    "notes": "MARS overview publication confirming instrument name and role."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-cg-2",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "CG-2 GP-SANS — General-Purpose Small-Angle Neutron Scattering Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "small-angle neutron scattering",
+    "acronym": "SANS"
+   }
+  ],
+  "measurables": [
+   "structure and interactions in materials on the 0.5–200 nm scale (particle size, shape, correlation lengths)",
+   "nanoscale morphology in polymers, colloids, magnetic materials, and porous media"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/gpsans",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, SANS technique, 0.5–200 nm range, 4–20 Å wavelengths, 1 m² detector; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (GP-SANS | CG-2); among recently upgraded instruments (new collimators, vacuum vessels, controls)."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-cg-3",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "CG-3 Bio-SANS — Biological Small-Angle Neutron Scattering Instrument",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "small-angle neutron scattering",
+    "acronym": "SANS"
+   },
+   {
+    "name": "contrast-variation SANS (with deuteration via the Bio-Deuteration Laboratory)"
+   }
+  ],
+  "measurables": [
+   "solution structures of proteins, protein complexes, nucleic acids, pharmaceuticals, and biomaterials",
+   "conformational states and assembly over a wide dynamic Q-range (~300) in a single exposure"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons.ornl.gov/biosans",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, dedication to complex biological systems, dual-detector wide Q-range, CSMB affiliation; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/facilities/hfir/",
+    "retrieved": "2026-11-24",
+    "notes": "Listed in HFIR instrument suite (BIO-SANS | CG-3); among recently upgraded instruments."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-cg-4c",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "CG-4C CTAX — Cold Neutron Triple-Axis Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "cold-neutron triple-axis spectrometry"
+   },
+   {
+    "name": "inelastic neutron scattering",
+    "acronym": "INS"
+   },
+   {
+    "name": "quasi-elastic neutron scattering",
+    "acronym": "QENS"
+   }
+  ],
+  "measurables": [
+   "low-energy spin and lattice dynamics in superconductors, transition-metal oxides, multiferroics, thermoelectrics, and low-dimensional quantum magnets",
+   "nuclear and magnetic structures and quasi-elastic broadening at low energy transfer"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/ctax/",
+    "retrieved": "2026-11-24",
+    "notes": "Name, beamline, cold triple-axis technique, science applications; accessed via web search snippet."
+   },
+   {
+    "source_url": "https://neutrons.ornl.gov/sites/default/files/CTAX_spec_sheet.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "Spec sheet: variable incident energy, vertically focusing PG(002) monochromator, low-background cold guide."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ },
+ {
+  "id": "hfir-cg-4d",
+  "facility": "HFIR",
+  "institution": "ORNL",
+  "name": "CG-4D IMAGINE-X — DNP-Enhanced Single-Crystal Laue Diffractometer (under construction; successor to IMAGINE quasi-Laue image-plate diffractometer, decommissioned June 2025)",
+  "instrument_class": "neutron-instrument",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "quasi-Laue single-crystal neutron diffraction"
+   },
+   {
+    "name": "neutron macromolecular crystallography",
+    "acronym": "NMX"
+   },
+   {
+    "name": "dynamic nuclear polarization-enhanced diffraction",
+    "acronym": "DNP"
+   }
+  ],
+  "measurables": [
+   "atomic-resolution structures of inorganic, organic, metallo-organic, and macromolecular single crystals",
+   "hydrogen atom positions and protonation states (e.g., in enzyme active sites)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/imaginex/",
+    "retrieved": "2026-11-24",
+    "notes": "IMAGINE-X name, CG-4D beamline, single-crystal Laue diffractometer role; source states original IMAGINE was decommissioned June 2025 and DNP-enhanced IMAGINE-X is under construction (status recorded as 'planned' — closest schema enum to 'under construction'); accessed via web search snippet."
+   },
+   {
+    "source_url": "https://neutrons.ornl.gov/sites/default/files/IMAGINE_spec_sheet.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "Predecessor IMAGINE spec sheet: quasi-Laue data from >0.3 mm³ crystals, unit cells <150 Å (technique heritage)."
+   }
+  ],
+  "location": {
+   "building": "High Flux Isotope Reactor (7900 area)",
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24); HFIR 7900-area building not in OSM"
+  }
+ }
+]

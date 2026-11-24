@@ -1,0 +1,880 @@
+[
+ {
+  "id": "sns-arcs",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-18 ARCS — Wide Angular-Range Chopper Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "inelastic neutron scattering",
+    "acronym": "INS"
+   },
+   {
+    "name": "direct-geometry time-of-flight chopper spectroscopy"
+   }
+  ],
+  "measurables": [
+   "atomic-level dynamics: phonons and lattice dynamics, vibrational entropy and phase stability",
+   "magnetic excitations and spin dynamics in superconductors, quantum magnets, and correlated-electron materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/arcs/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, applications/measurables, specifications; page has Operating Status tab and active instrument team"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-basis",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-2 BASIS — Backscattering Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "quasielastic neutron scattering",
+    "acronym": "QENS"
+   },
+   {
+    "name": "near-backscattering crystal-analyzer spectroscopy"
+   }
+  ],
+  "measurables": [
+   "slow dynamics of macromolecules, constrained molecular systems, and polymers at micro-eV energy resolution",
+   "diffusion and relaxation processes relevant to life sciences and energy-storage materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/basis/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, energy resolution, measurables; page has Instrument Status tab"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas: dynamics of macromolecules, constrained molecular systems, polymers"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-snap",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-3 SNAP — Spallation Neutrons and Pressure Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "high-pressure neutron diffraction"
+   },
+   {
+    "name": "neutron micro-diffraction (powder, single-crystal, and liquid samples)"
+   }
+  ],
+  "measurables": [
+   "average and local atomic structure of crystalline and amorphous materials under extreme pressure (diamond anvil cells, Paris–Edinburgh press)",
+   "structures of very small samples (<0.2 mg) for materials science, geology, and earth and environmental sciences"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/snap/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, pressure devices, measurables"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas: materials science, geology, earth and environmental sciences"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-magref",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-4A MAGREF — Magnetism Reflectometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "polarized neutron reflectometry",
+    "acronym": "PNR"
+   },
+   {
+    "name": "grazing-incidence small-angle neutron scattering",
+    "acronym": "GISANS"
+   }
+  ],
+  "measurables": [
+   "non-uniform magnetization distributions in nanoscale and mesoscale materials and at interfaces",
+   "specular and off-specular structure of solid and solid/liquid interfaces with polarization analysis"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/magref/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques (polarized beams, GISANS), measurables; general user program stated"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-liqref",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-4B LIQREF — Liquids Reflectometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron reflectometry (specular and off-specular)"
+   }
+  ],
+  "measurables": [
+   "surface and interfacial structure of thin films, solid/liquid interfaces, and free liquid surfaces on length scales of 0.5–350 nm",
+   "structure, function, and evolution of surfaces across physical, chemical, biological, and materials sciences"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/liqref/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, sample geometries, measurables"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-cncs",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-5 CNCS — Cold Neutron Chopper Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "inelastic neutron scattering",
+    "acronym": "INS"
+   },
+   {
+    "name": "quasielastic neutron scattering",
+    "acronym": "QENS"
+   },
+   {
+    "name": "cold-neutron direct-geometry multi-chopper spectroscopy"
+   }
+  ],
+  "measurables": [
+   "low-energy excitations (2–50 meV incident energy) in quantum magnets, complex and quantum fluids, and chemical systems",
+   "condensed matter physics, materials science, chemistry, biology, and environmental science dynamics"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/cncs/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, energy range/resolution, measurables; page has Instrument Status tab"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-eq-sans",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-6 EQ-SANS — Extended Q-Range Small-Angle Neutron Scattering Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "small-angle neutron scattering",
+    "acronym": "SANS"
+   },
+   {
+    "name": "time-of-flight extended Q-range SANS"
+   }
+  ],
+  "measurables": [
+   "nanoscale structure of non-crystalline materials: polymers, micelles, proteins, and large biological complexes in solution",
+   "structure–function relationships in soft materials, colloids, life science, and earth and environmental systems"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/eqsans/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, Q-range, measurables"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-vulcan",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-7 VULCAN — Engineering Materials Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "engineering neutron diffraction (time-of-flight)"
+   }
+  ],
+  "measurables": [
+   "mechanical behavior of engineering and functional materials under complex environments (load, temperature, processing)",
+   "residual stress and deformation in engineering components and during materials processing"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/vulcan/",
+    "retrieved": "2026-11-24",
+    "notes": "mission statement, measurables; page has Instrument Status and Proposal Information tabs"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas: mechanical behaviors, materials science, materials processing"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-corelli",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-9 CORELLI — Elastic Diffuse Scattering Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "elastic diffuse neutron scattering with cross-correlation energy discrimination"
+   },
+   {
+    "name": "single-crystal white-beam Laue diffraction with statistical chopper"
+   }
+  ],
+  "measurables": [
+   "short-range order and complex disorder in crystalline materials (e.g., magnetoresistance materials, ferroelectric relaxors, fast ion conductors)",
+   "three-dimensional reciprocal-space maps separating elastic diffuse signal from Bragg peaks"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number, correct full name (Elastic Diffuse Scattering Spectrometer); listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/corelli/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, Q and energy ranges, measurables"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-venus",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-10 VENUS — Versatile Neutron Imaging Instrument",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "time-of-flight hyperspectral (energy-selective) neutron imaging",
+    "acronym": "TOF-NI"
+   },
+   {
+    "name": "Bragg-edge imaging"
+   },
+   {
+    "name": "neutron resonance imaging"
+   },
+   {
+    "name": "neutron radiography and computed tomography"
+   }
+  ],
+  "measurables": [
+   "2D/3D microstructure, crystalline phase, texture, and residual strain maps in large or complex objects",
+   "elemental and isotopic mapping via epithermal resonance absorption; fluid flow, porosity, and degradation in energy materials, additive manufacturing, geosciences, and biology"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/venus/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques and applications/measurables; 2026 operando user publication listed"
+   },
+   {
+    "source_url": "https://www.ornl.gov/news/venus-instrument-ornl-delivers-first-neutron-imaging-results-users",
+    "retrieved": "2026-11-24",
+    "notes": "status: ORNL states VENUS moved from development to operation and delivered first user results; user program from 2025-B"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-powgen",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-11A POWGEN — Powder Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron powder diffraction (time-of-flight)",
+    "acronym": "NPD"
+   },
+   {
+    "name": "pair distribution function analysis",
+    "acronym": "PDF"
+   }
+  ],
+  "measurables": [
+   "crystal, magnetic, and local structure of polycrystalline materials (d-spacings ~0.1–8 Å, magnetic order up to ~38 Å)",
+   "atomic-level structures in chemistry, materials science, and condensed matter physics"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/powgen/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques (Rietveld, PDF), d-spacing ranges, measurables"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas including magnetic structure"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-mandi",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-11B MANDI — Macromolecular Neutron Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron macromolecular crystallography"
+   },
+   {
+    "name": "wavelength-resolved Laue single-crystal diffraction"
+   }
+  ],
+  "measurables": [
+   "atomic-level structures of proteins, macromolecules, and DNA, including hydrogen/protonation states",
+   "structures from small-molecule to large-protein crystals (unit cells 30–300 Å, samples ≥0.1 mm³)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/mandi/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, sample/unit-cell ranges, measurables"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas: atomic-level structures of proteins, macromolecules and DNA"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-topaz",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-12 TOPAZ — Single-Crystal Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "single-crystal neutron diffraction (wavelength-resolved time-of-flight Laue)"
+   },
+   {
+    "name": "3D reciprocal-space mapping of Bragg and diffuse scattering"
+   }
+  ],
+  "measurables": [
+   "atomic positions and displacement parameters, including light elements (hydrogen) next to heavy metals",
+   "magnetic structures, phase transitions, disorder, and local structure in chemistry, earth sciences, materials science, and condensed matter physics"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/topaz/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, detector coverage, measurables"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-fnpb",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-13 FNPB — Fundamental Neutron Physics Beam Line",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "cold-neutron fundamental physics experiments (peer-reviewed experiment installations rather than a fixed instrument)"
+   }
+  ],
+  "measurables": [
+   "fundamental properties of the neutron, addressing questions in nuclear and particle physics and cosmology about the nature and existence of matter in the Universe"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/fnpb/",
+    "retrieved": "2026-11-24",
+    "notes": "status: page states FNPB is operated as a user facility with peer-reviewed beam time; nature of beamline and measurables"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science area: fundamental properties of neutrons"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-hyspec",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-14B HYSPEC — Hybrid Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "inelastic neutron scattering",
+    "acronym": "INS"
+   },
+   {
+    "name": "direct-geometry time-of-flight spectroscopy with Bragg focusing optics"
+   },
+   {
+    "name": "neutron polarization analysis"
+   }
+  ],
+  "measurables": [
+   "low-energy atomic-scale dynamics and excitations in small single crystals of quantum materials",
+   "unambiguous separation of nuclear and magnetic scattering via full or partial polarization analysis"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number BL-14B; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/hyspec/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques (DGS, Heusler polarizer, wide-angle analyzer), measurables"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science area: dynamics of quantum materials with optional polarization analysis"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-nse",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-15 NSE — Neutron Spin Echo Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron spin echo spectroscopy",
+    "acronym": "NSE"
+   },
+   {
+    "name": "H/D contrast variation labeling"
+   }
+  ],
+  "measurables": [
+   "ultrahigh-resolution slow dynamics of soft matter: polymer melts, networks, complex fluids, polyelectrolytes",
+   "protein domain and enzyme motions, lipid membrane dynamics, and transport across membranes"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/nse/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, measurables; page has Operating Status tab"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-vision",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-16B VISION — Vibrational Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "inelastic neutron scattering vibrational spectroscopy",
+    "acronym": "INS"
+   },
+   {
+    "name": "inverted-geometry crystal-analyzer spectroscopy with simultaneous diffraction"
+   }
+  ],
+  "measurables": [
+   "molecular vibrational spectra (>5 to <600 meV) revealing molecular structure, chemical bonding, and intermolecular interactions",
+   "hydrogen-sensitive vibrational dynamics in crystalline and disordered materials, free of optical selection rules"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/vision/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, energy range, measurables; page has Operating Status tab"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-sequoia",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-17 SEQUOIA — Fine-Resolution Fermi Chopper Spectrometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "inelastic neutron scattering",
+    "acronym": "INS"
+   },
+   {
+    "name": "direct-geometry time-of-flight Fermi chopper spectroscopy"
+   }
+  ],
+  "measurables": [
+   "high-resolution magnetic excitations and lattice vibrations with fine energy-transfer and wave-vector resolution",
+   "dynamical processes in novel materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/sequoia/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, measurables"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-usans",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-1A USANS — Ultra-Small-Angle Neutron Scattering Instrument",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "ultra-small-angle neutron scattering",
+    "acronym": "USANS"
+   },
+   {
+    "name": "time-of-flight Bonse-Hart double-crystal diffractometry"
+   }
+  ],
+  "measurables": [
+   "hierarchical structures and inhomogeneities in natural and artificial materials, from minerals to biological tissues",
+   "microscale-to-nanoscale structure in life sciences, polymers, materials science, and earth and environmental sciences"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/usans/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, measurables; page has Instrument Status tab"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "sns-nomad",
+  "facility": "SNS",
+  "institution": "ORNL",
+  "name": "BL-1B NOMAD — Nanoscale-Ordered Materials Diffractometer",
+  "instrument_class": "neutron-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "neutron total scattering diffraction"
+   },
+   {
+    "name": "pair distribution function analysis",
+    "acronym": "PDF"
+   }
+  ],
+  "measurables": [
+   "local and nanoscale atomic order in liquids, solutions, glasses, polymers, nanocrystalline, and long-range-ordered crystalline materials",
+   "high-resolution pair distribution functions, including small samples and isotope-substitution contrast studies"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments-overview/",
+    "retrieved": "2026-11-24",
+    "notes": "instrument name, acronym, beamline number; listed in the SNS user instrument suite (status basis)"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/instruments/nomad/",
+    "retrieved": "2026-11-24",
+    "notes": "techniques, measurables; page shows Aug 2026 training activity at the beamline"
+   },
+   {
+    "source_url": "https://neutrons-user-facilities.ornl.gov/wp-content/uploads/2026/11/26-G027193_SNS_Instrument_Hall_Update_HeaderVersion_5y051-1.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "science areas"
+   }
+  ],
+  "location": {
+   "building": "Spallation Neutron Source (Chestnut Ridge site)",
+   "address": "Oak Ridge National Laboratory, Spallation Drive, Oak Ridge, TN 37830",
+   "latitude": 35.95239,
+   "longitude": -84.30029,
+   "source": "coordinates OSM Nominatim, facility-level (retrieved 2026-11-24)"
+  }
+ }
+]

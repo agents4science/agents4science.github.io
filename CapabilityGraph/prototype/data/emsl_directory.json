@@ -1,0 +1,1230 @@
+[
+ {
+  "id": "emsl-21t-fticr",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "EMSL 21 Tesla FTICR MS: Hybrid Q-FT Orbitrap–Ion Cyclotron Resonance mass spectrometer",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Fourier transform ion cyclotron resonance mass spectrometry",
+    "acronym": "FTICR-MS"
+   },
+   {
+    "name": "Electrospray ionization",
+    "acronym": "ESI"
+   },
+   {
+    "name": "Atmospheric pressure chemical ionization",
+    "acronym": "APCI"
+   },
+   {
+    "name": "Atmospheric pressure photoionization",
+    "acronym": "APPI"
+   },
+   {
+    "name": "Nanospray desorption electrospray ionization",
+    "acronym": "nanoDESI"
+   },
+   {
+    "name": "Liquid extraction surface analysis",
+    "acronym": "LESA"
+   },
+   {
+    "name": "Laser-ablation electrospray ionization",
+    "acronym": "LAESI"
+   },
+   {
+    "name": "Mass spectrometry imaging",
+    "acronym": "MSI"
+   }
+  ],
+  "measurables": [
+   "Molecular formula assignments for thousands of compounds in complex organic matter mixtures",
+   "Ultra-high-resolution, high-mass-accuracy precursor and fragment ion masses",
+   "Metal-organic matter binding and organic carbon characterization"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/mass-spectrometry-organic-matter-analysis",
+    "retrieved": "2026-11-24",
+    "notes": "Name, configuration (Orbitrap Exploris 480 coupled to custom-built 21T FTICR, one of two in the world), ionization sources, techniques; availability via EMSL user program"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-12t-solarix",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Bruker 12 Tesla SolariX XR FTICR mass spectrometer",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Fourier transform ion cyclotron resonance mass spectrometry",
+    "acronym": "FTICR-MS"
+   },
+   {
+    "name": "Electrospray ionization",
+    "acronym": "ESI"
+   },
+   {
+    "name": "Matrix-assisted laser desorption/ionization",
+    "acronym": "MALDI"
+   },
+   {
+    "name": "Atmospheric pressure photoionization",
+    "acronym": "APPI"
+   },
+   {
+    "name": "Mass spectrometry imaging",
+    "acronym": "MSI"
+   }
+  ],
+  "measurables": [
+   "High-resolution molecular composition of organic matter",
+   "Spatial distribution of small molecules, metabolites, lipids, and glycans in plant, microbial, and tissue samples (25 µm spatial resolution in MALDI imaging)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/mass-spectrometry-organic-matter-analysis",
+    "retrieved": "2026-11-24",
+    "notes": "Name, 12 T field, dynamically harmonized cell, ESI/MALDI/APPI sources"
+   },
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/mass-spectrometry-imaging",
+    "retrieved": "2026-11-24",
+    "notes": "MALDI-12T FTICR imaging specs (25 µm resolution, 100-2000 m/z)"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-7t-scimax",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Bruker 7 Tesla scimaX MRMS",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Fourier transform ion cyclotron resonance mass spectrometry",
+    "acronym": "FTICR-MS"
+   },
+   {
+    "name": "Electrospray ionization",
+    "acronym": "ESI"
+   },
+   {
+    "name": "Matrix-assisted laser desorption/ionization",
+    "acronym": "MALDI"
+   },
+   {
+    "name": "Atmospheric pressure photoionization",
+    "acronym": "APPI"
+   },
+   {
+    "name": "Mass spectrometry imaging",
+    "acronym": "MSI"
+   }
+  ],
+  "measurables": [
+   "High-resolution identification of small molecules in complex mixtures",
+   "Spatially resolved molecular maps via MALDI imaging"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/mass-spectrometry-organic-matter-analysis",
+    "retrieved": "2026-11-24",
+    "notes": "Name, field strength, dual ESI/MALDI source, APPI, imaging applications"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-metabolomics-ms-fleet",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Metabolomics/lipidomics mass spectrometry fleet (grouped: 16 Orbitrap instruments incl. hybrid quadrupole-Orbitrap and Tribrid; 9 triple-quadrupole MS; 3 ion mobility Q-ToF MS; 3 GC-MS; 4 FTICR-MS)",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Liquid chromatography-mass spectrometry",
+    "acronym": "LC-MS"
+   },
+   {
+    "name": "Gas chromatography-mass spectrometry",
+    "acronym": "GC-MS"
+   },
+   {
+    "name": "Ion mobility spectrometry quadrupole time-of-flight mass spectrometry",
+    "acronym": "IMS-QTOF-MS"
+   },
+   {
+    "name": "Triple-quadrupole tandem mass spectrometry",
+    "acronym": "QQQ-MS"
+   },
+   {
+    "name": "Fourier transform ion cyclotron resonance mass spectrometry",
+    "acronym": "FTICR-MS"
+   }
+  ],
+  "measurables": [
+   "Targeted and untargeted identification and quantification of metabolites and lipids",
+   "Metabolic flux via isotope incorporation into metabolites",
+   "Collision cross sections, retention times, accurate masses, and tandem mass spectra for standards-free identification of unknowns"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/mass-spectrometry-metabolomics",
+    "retrieved": "2026-11-24",
+    "notes": "Grouped record: page gives counts (24 untargeted instruments: 3 GC-MS, 16 Orbitrap, 3 IMS-QTOF, 4 FTICR incl. 21T; plus 9 triple-quadrupole for targeted assays); techniques and applications"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-topdown-proteomics-ms",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Top-down (intact) proteomics mass spectrometers (grouped: Thermo Orbitrap UHMR, Thermo Orbitrap Eclipse Tribrid, Thermo Orbitrap Fusion Lumos, Waters Synapt G2s-I Ion Mobility Time-of-flight)",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Top-down proteomics mass spectrometry"
+   },
+   {
+    "name": "Native mass spectrometry"
+   },
+   {
+    "name": "Ion mobility time-of-flight mass spectrometry",
+    "acronym": "IM-ToF-MS"
+   }
+  ],
+  "measurables": [
+   "Proteoforms defined at the intact-protein level (post-translational modifications, in vivo proteolytic cleavages)",
+   "Stoichiometry of protein-protein, protein-nucleic acid, protein-ligand, and protein-metal complexes"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/top-down-intact-proteomics",
+    "retrieved": "2026-11-24",
+    "notes": "Grouped record: page lists the four named instruments under Available instruments; applications"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-nanopots",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Nanodroplet Processing in One Pot for Trace Samples (nanoPOTS) single-cell proteomics platform",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Nanodroplet proteomics sample preparation",
+    "acronym": "nanoPOTS"
+   },
+   {
+    "name": "Liquid chromatography-mass spectrometry",
+    "acronym": "LC-MS"
+   },
+   {
+    "name": "Trapped ion mobility spectrometry time-of-flight mass spectrometry",
+    "acronym": "TIMS-ToF"
+   }
+  ],
+  "measurables": [
+   "Global protein expression from single cells or small cell populations (over 1,000 proteins identified and quantified from dissociated single cells)",
+   "Cell-type-specific and spatially resolved proteome variation"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/nanodroplet-processing-one-pot-trace-samples-nanopots",
+    "retrieved": "2026-11-24",
+    "notes": "Platform description; associated resources (CellenONE, TIMS-ToF, Lumos Orbitrap, clean room); measurables"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-msi-suite",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Mass spectrometry imaging suite (grouped: MALDI-12T FTICR (Bruker), MALDI-timsTOF (Bruker), MALDI-Q-ToF Synapt G2 Si (Waters), MALDI-UHMR HF Orbitrap (Thermo), Triversa Nanomate (Advion), SepQuant dropletProbe (HTX), custom-built LAESI-MS molecular microscope)",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Matrix-assisted laser desorption/ionization mass spectrometry imaging",
+    "acronym": "MALDI-MSI"
+   },
+   {
+    "name": "Liquid extraction surface analysis",
+    "acronym": "LESA"
+   },
+   {
+    "name": "Laser-ablation electrospray ionization",
+    "acronym": "LAESI"
+   },
+   {
+    "name": "Trapped ion mobility spectrometry",
+    "acronym": "TIMS"
+   }
+  ],
+  "measurables": [
+   "Spatial distribution and identity of hundreds of molecules (metabolites, lipids, peptides, glycans, proteins) at 5-400 µm resolution",
+   "Near-single-cell untargeted surface chemistry of biological and environmental samples"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/mass-spectrometry-imaging",
+    "retrieved": "2026-11-24",
+    "notes": "Grouped record: page lists all seven named imaging platforms with spatial resolution and mass range specs"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-irms-suite",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Isotope ratio mass spectrometers (grouped: Thermo Delta V Plus (n=2), Thermo 253 Plus, Sercon 20-22, with elemental analyzer, GC-combustion, LC IsoLink II, GasBench II, and laser-ablation peripherals)",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Isotope ratio mass spectrometry",
+    "acronym": "IRMS"
+   },
+   {
+    "name": "Compound-specific isotope analysis via gas chromatography combustion",
+    "acronym": "GC-C-IRMS"
+   },
+   {
+    "name": "Laser ablation sampling",
+    "acronym": "LA"
+   }
+  ],
+  "measurables": [
+   "High-precision stable isotope ratios of H, C, N, O (and elements up to S) in solids, liquids, and gases",
+   "Isotopic fractionation and stable isotope tracer progression for reaction rates and substrate fate"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/isotope-ratio-mass-spectrometry",
+    "retrieved": "2026-11-24",
+    "notes": "Grouped record: page lists four IRMS instruments and peripherals under Available instruments"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-nanosims-50l",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "NanoSIMS 50L",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Nanoscale secondary ion mass spectrometry",
+    "acronym": "NanoSIMS"
+   },
+   {
+    "name": "Isotopic imaging"
+   }
+  ],
+  "measurables": [
+   "Elemental and isotopic maps of surfaces at down to 50 nm resolution (100 nm typical) with ppm detection limits",
+   "Simultaneous collection of seven masses, all isotopes from hydrogen to uranium",
+   "Carbon and nitrogen isotope quantification in single prokaryotes below 10% relative enrichment"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/nanoscale-secondary-ion-mass-spectrometry",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument name, availability (10 hours/day, 5 days/week), specs, applications; first US user facility offering NanoSIMS"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-tofsims",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Time-of-flight secondary ion mass spectrometer (ToF-SIMS) with Ar cluster, Bi liquid metal, and Cs+/O2+ ion guns and in situ liquid SIMS capability",
+  "instrument_class": "mass-spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Time-of-flight secondary ion mass spectrometry",
+    "acronym": "ToF-SIMS"
+   },
+   {
+    "name": "In situ liquid secondary ion mass spectrometry"
+   },
+   {
+    "name": "Depth profiling"
+   }
+  ],
+  "measurables": [
+   "Elemental, isotopic, and molecular composition of sample surfaces with ppm-ppb detection limits",
+   "2-D and 3-D chemical imaging with high lateral resolution and 1-2 nm depth resolution",
+   "Solid-liquid interface chemistry (biofilm attachment, solid-electrolyte interphase, electrocatalysis)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/time-flight-secondary-ion-mass-spectrometry",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument configuration (ion guns, glove box, antechamber), in situ liquid SIMS capability, specs, applications"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-800mhz-nmr-tava",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "800 MHz Bruker Avance Neo NMR spectrometer (Tava)",
+  "instrument_class": "nmr",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Liquid-state nuclear magnetic resonance spectroscopy",
+    "acronym": "NMR"
+   },
+   {
+    "name": "Multidimensional NMR"
+   },
+   {
+    "name": "NMR metabolomics"
+   }
+  ],
+  "measurables": [
+   "Identification and quantification of metabolites in complex biological mixtures (1H, 13C, 15N, 19F, 31P nuclei)",
+   "Chemical functionality of natural organic matter",
+   "Carbon and nitrogen tracing through metabolic pathways with stable isotope enrichment"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/liquid-state-nmr-metabolomics",
+    "retrieved": "2026-11-24",
+    "notes": "Name, CryoProbe configurations, most sensitive 1H instrument"
+   },
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/liquid-state-nmr-organic-mattercomplex-mixtures",
+    "retrieved": "2026-11-24",
+    "notes": "24-position SampleCase sample changer, supported nuclei"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-750mhz-nmr-bokan",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "750 MHz Bruker Avance III NMR spectrometer (Bokan)",
+  "instrument_class": "nmr",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Liquid-state nuclear magnetic resonance spectroscopy",
+    "acronym": "NMR"
+   },
+   {
+    "name": "High-throughput automated NMR"
+   }
+  ],
+  "measurables": [
+   "Metabolite identification and quantification in biological samples",
+   "Chemical functionality in organic matter and complex mixtures via 1H, 13C, 15N and broadband X-nuclei"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/liquid-state-nmr-metabolomics",
+    "retrieved": "2026-11-24",
+    "notes": "Name, CryoProbe and probe configurations"
+   },
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/liquid-state-nmr-organic-mattercomplex-mixtures",
+    "retrieved": "2026-11-24",
+    "notes": "510-position cooled SampleJet sample changer"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-700mhz-nmr-glacier",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "700 MHz Bruker Avance Neo NMR spectrometer (Glacier)",
+  "instrument_class": "nmr",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Liquid-state nuclear magnetic resonance spectroscopy",
+    "acronym": "NMR"
+   },
+   {
+    "name": "Triple-resonance biomolecular NMR"
+   }
+  ],
+  "measurables": [
+   "Three-dimensional structure, dynamics, and interactions of proteins and biomolecular complexes (<~30 kDa for structure determination)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/liquid-state-nmr-structural-biology",
+    "retrieved": "2026-11-24",
+    "notes": "Name, 5 mm HCN TCI CryoProbe, VT control -10 to 60 C; structural biology applications"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-600mhz-nmr-pair",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "600 MHz NMR spectrometers (grouped: 600 MHz Agilent VNMRS (Hood) and 600 MHz Agilent DD2 (Baker), each with 5 mm HCN Z-gradient cold probes)",
+  "instrument_class": "nmr",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Liquid-state nuclear magnetic resonance spectroscopy",
+    "acronym": "NMR"
+   }
+  ],
+  "measurables": [
+   "Metabolite identification and quantification, including in salt-containing samples (Hood probe is salt tolerant)",
+   "Biomolecular structure, dynamics, and interactions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/liquid-state-nmr-metabolomics",
+    "retrieved": "2026-11-24",
+    "notes": "Grouped record: both 600 MHz instruments named with probe and variable-temperature specs"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-850mhz-ssnmr-ellis",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "850 MHz Agilent VNMRS solid-state NMR spectrometer (Ellis)",
+  "instrument_class": "nmr",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Solid-state nuclear magnetic resonance spectroscopy",
+    "acronym": "NMR"
+   },
+   {
+    "name": "Magic angle spinning",
+    "acronym": "MAS"
+   }
+  ],
+  "measurables": [
+   "Chemical functionality of natural organic matter and organo-mineral interfaces",
+   "3-D structures of immobilized proteins and cell walls (with isotopic enrichment)",
+   "In situ monitoring of reactions such as lignin breakdown"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/solid-state-nmr",
+    "retrieved": "2026-11-24",
+    "notes": "Name, five RF channels, simultaneous 1H/19F with X, Y, low gamma; MAS probe inventory"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-ssnmr-suite",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Solid-state NMR spectrometers, 300-500 MHz (grouped: 500 MHz Varian VNMRS (Shasta), 400 MHz Agilent VNMRS (Karloff), 300 MHz Agilent VNMRS (Mazama))",
+  "instrument_class": "nmr",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Solid-state nuclear magnetic resonance spectroscopy",
+    "acronym": "NMR"
+   },
+   {
+    "name": "Magic angle spinning",
+    "acronym": "MAS"
+   },
+   {
+    "name": "Cryogenic static NMR"
+   }
+  ],
+  "measurables": [
+   "Quantitative chemical functionality in crystalline, amorphous, semi-solid, and mixed-phase samples",
+   "Stable isotope probing with 13C or 15N tracers in soils and organic matter",
+   "Static NMR of samples down to 2.2-4 K via cryogenic probes"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/solid-state-nmr",
+    "retrieved": "2026-11-24",
+    "notes": "Grouped record: page states EMSL hosts five solid-state NMR spectrometers from 7 T (300 MHz) to 20 T (850 MHz); the 850 MHz Ellis is recorded separately"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-epr",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "EPR Pulsed/CW Spectrometer (Bruker Elexsys, multi-frequency S/X/Q-band)",
+  "instrument_class": "spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Electron paramagnetic resonance spectroscopy",
+    "acronym": "EPR"
+   },
+   {
+    "name": "Electron-nuclear double resonance",
+    "acronym": "ENDOR"
+   },
+   {
+    "name": "Electron spin echo envelope modulation",
+    "acronym": "ESEEM"
+   },
+   {
+    "name": "Double electron-electron resonance",
+    "acronym": "DEER"
+   },
+   {
+    "name": "Hyperfine sublevel correlation",
+    "acronym": "HYSCORE"
+   }
+  ],
+  "measurables": [
+   "Quantification of free radicals and paramagnetic metal ions (Cu2+, Mn2+, Fe3+, V4+, Ti3+) in soils, aerosols, and carbon-rich materials",
+   "Distance constraints for protein structure via site-directed spin labeling",
+   "Local molecular environment of paramagnetic species from 1.8 K to 700 K, including in situ electrochemical and gas-flow conditions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/electron-paramagnetic-resonance",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument name as reserved ('EPR Pulsed/CW Spectrometer'), Bruker Elexsys, S-band 4 GHz / X-band 9 GHz / Q-band 35 GHz, pulsed at X, in situ accessories"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-krios-g3i",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Krios G3i Cryo-Transmission Electron Microscope (Thermo Scientific)",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Cryo-electron microscopy single particle analysis",
+    "acronym": "cryo-EM SPA"
+   },
+   {
+    "name": "Micro-electron diffraction",
+    "acronym": "micro-ED"
+   },
+   {
+    "name": "Cryo-electron tomography",
+    "acronym": "cryo-ET"
+   }
+  ],
+  "measurables": [
+   "De novo structures of purified soluble or membrane protein complexes and protein/DNA/RNA complexes >50 kDa, at angstrom to nanometer resolution",
+   "Structures from microcrystals and nanocrystals of natural products, metabolites, or proteins",
+   "3-D architecture of cells via tomography and sub-tomogram averaging"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/cryogenic-transmission-electron-microscopy-structural-biology",
+    "retrieved": "2026-11-24",
+    "notes": "Name, 12-sample autoloader, K3 direct electron detector, phase plate and energy filter, workflows; accelerated cryo-EM-only proposal access"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-aquilos2-cryofibsem",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Aquilos 2 Cryo Focused Ion Beam-Scanning Electron Microscope (Thermo Scientific)",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Cryogenic focused ion beam-scanning electron microscopy",
+    "acronym": "cryo-FIB-SEM"
+   },
+   {
+    "name": "Cryogenic lamella preparation"
+   },
+   {
+    "name": "Cryogenic slice-and-view volume imaging"
+   }
+  ],
+  "measurables": [
+   "Pseudo-3-D ultrastructure of thick frozen samples at ~10 nm resolution",
+   "Lamellae (300-500 nm) prepared from cells and tissues for downstream Krios cryo-ET and micro-ED"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/cryogenic-focused-ion-beam-scanning-electron-microscopy",
+    "retrieved": "2026-11-24",
+    "notes": "Name, semi-automated workflows (batch lamella, slice-and-view, lift-out), Leica EM-GP and HPM100 vitrification support"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-tecnai-t12",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Tecnai T-12 TEM (FEI) with cryogenic sample preparation suite",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Cryogenic transmission electron microscopy",
+    "acronym": "cryo-TEM"
+   },
+   {
+    "name": "TEM tomography"
+   },
+   {
+    "name": "Immunogold labeling"
+   }
+  ],
+  "measurables": [
+   "Ultrastructure of microbial communities, biofilms, plants, fungi, and host-viral interactions from tens of microns down to sub-nanometer resolution",
+   "3-D reconstruction of cellular and environmental features (tomography typically to 4 nm resolution)",
+   "Localization of immune response in cells via immunogold labeling"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/cryogenic-transmission-electron-microscopy-environmental-microbiology",
+    "retrieved": "2026-11-24",
+    "notes": "Name, 120 kV, LaB6 filament, +/-70 deg tomography stage, cryostage, prep suite (high pressure freezer, ultramicrotomes)"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-etem",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Environmental Transmission Electron Microscope (ETEM), aberration-corrected, 80-300 kV",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Environmental transmission electron microscopy",
+    "acronym": "ETEM"
+   },
+   {
+    "name": "In situ and operando imaging"
+   },
+   {
+    "name": "Energy dispersive X-ray spectroscopy",
+    "acronym": "EDX"
+   },
+   {
+    "name": "Electron energy-loss spectroscopy",
+    "acronym": "EELS"
+   }
+  ],
+  "measurables": [
+   "Atomic-level processes at interfaces under gas pressures up to 20 Torr and temperatures from cryogenic to 1100 C",
+   "Sub-Angstrom-resolution structure (HRTEM point-to-point better than 0.1 nm)",
+   "Chemical composition and electronic structure of materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/transmission-electron-microscopy-energy-dispersed-x-ray-and-electron",
+    "retrieved": "2026-11-24",
+    "notes": "ETEM specifications (spherical aberration corrector, differential pumping aperture, 10^-5 to 20 Torr, cryo to 1100 C)"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-ac-stem",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Aberration-corrected Scanning Transmission Electron Microscope (STEM) with EDX and EELS, 80-300 kV",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Scanning transmission electron microscopy",
+    "acronym": "STEM"
+   },
+   {
+    "name": "High-angle annular dark-field imaging",
+    "acronym": "HAADF"
+   },
+   {
+    "name": "Energy dispersive X-ray spectroscopy",
+    "acronym": "EDX"
+   },
+   {
+    "name": "Electron energy-loss spectroscopy",
+    "acronym": "EELS"
+   },
+   {
+    "name": "Electron tomography"
+   }
+  ],
+  "measurables": [
+   "Sub-Angstrom structural imaging (STEM-HAADF resolution <0.1 nm at 300 kV)",
+   "Elemental composition and electronic structure (EELS energy resolution 0.15 eV with monochromator)",
+   "Aerosol and biogeochemical interface structure, including trace contaminant mapping"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/transmission-electron-microscopy-energy-dispersed-x-ray-and-electron",
+    "retrieved": "2026-11-24",
+    "notes": "STEM specifications, cryogenic imaging capability, high-tilt tomographic analysis"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-him",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Helium Ion Microscope (HIM)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Helium ion microscopy",
+    "acronym": "HIM"
+   }
+  ],
+  "measurables": [
+   "High-resolution (0.35 nm) surface imaging of uncoated organic and biological materials with large depth of field",
+   "Pore architecture of soils and shale at <10 nm scales",
+   "Morphology of soot and aerosol particles down to 2 nm diameter; microbe-mineral weathering interfaces"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/helium-ion-microscopy",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument description, 0.35 nm resolution, charge control via electron flood gun, applications"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-leap-4000xhr",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "LEAP 4000 XHR Local Electrode Atom Probe (Cameca Instruments Inc.)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Atom probe tomography",
+    "acronym": "APT"
+   },
+   {
+    "name": "In situ and operando atom probe analysis"
+   }
+  ],
+  "measurables": [
+   "3-D atom-by-atom point cloud maps with atomic-scale resolution (0.2 nm lateral, 0.1 nm depth) and ppm elemental sensitivity",
+   "Compositional analysis of bioorganic-mineral interfaces and chemical gradients in biological systems",
+   "Surface chemistry dynamics under reactive gas environments via in situ reactor and Environmental Transfer Hub"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/atom-probe-tomography",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument name (Instr. ID 34110), availability 10 hours/day 5 days/week, full specifications, in situ reactor and operando modes"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-quanta-3d",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Quanta 3D Dual Beam Environmental Scanning Electron Microscope and Focused Ion Beam",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Environmental scanning electron microscopy",
+    "acronym": "ESEM"
+   },
+   {
+    "name": "Cryogenic focused ion beam milling",
+    "acronym": "cryo-FIB"
+   },
+   {
+    "name": "Energy dispersive X-ray spectroscopy",
+    "acronym": "EDX"
+   }
+  ],
+  "measurables": [
+   "Imaging of hydrated, beam-sensitive geological and biological specimens under cryogenic temperature, variable humidity, and variable pressure",
+   "Particle-by-particle elemental analysis of atmospheric aerosols",
+   "Ice nucleation behavior during dynamic temperature/humidity experiments"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/environmental-scanning-electron-microscope-and-focused-ion-beam",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument named as 'Quanta 3D - Dual Beam' under Available Instruments; environmental/cryo capabilities and EDX detector"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-xct-nikon",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "X-ray Computed Tomography, Nikon XTH 320/225",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray computed tomography",
+    "acronym": "XCT"
+   }
+  ],
+  "measurables": [
+   "Non-destructive 3-D internal architecture of samples (pores, inclusions) at ~10-1000 µm resolution",
+   "Pore networks in soils and cores, root system architecture of living plants (root surface area, length, diameter)",
+   "In situ fluid displacement in pore networks (samples up to 40 kg, fields of view to ~40 cm)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/x-ray-computed-tomography",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument name, 225-kV fixed/rotating and 320-kV fixed targets, multi-metal reflection target, sample and resolution specs"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-xps",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Imaging X-ray Photoelectron Spectroscopy system (with monochromated Al/Ag X-ray gun, cluster/Ar+ ion gun, UPS, temperature programmed desorption, ion scattering spectroscopy, glove box)",
+  "instrument_class": "spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray photoelectron spectroscopy",
+    "acronym": "XPS"
+   },
+   {
+    "name": "Ultraviolet photoelectron spectroscopy",
+    "acronym": "UPS"
+   },
+   {
+    "name": "Temperature programmed desorption",
+    "acronym": "TPD"
+   },
+   {
+    "name": "Ion scattering spectroscopy",
+    "acronym": "ISS"
+   }
+  ],
+  "measurables": [
+   "Elemental composition and chemical state within the first 10 nm of a surface, quantitatively and with high spatial resolution imaging",
+   "Chemical bonding information from high-resolution elemental peak scans",
+   "Surface chemistry of soil organic matter on mineral surfaces and of microbial cell surfaces"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/x-ray-photoelectron-spectroscopy",
+    "retrieved": "2026-11-24",
+    "notes": "Imaging XPS description, 10 nm information depth, accessory list under Available instruments"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-xrd-suite",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "X-ray diffraction suite (grouped: powder XRD, microbeam XRD, epitaxial thin film XRD)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray diffraction",
+    "acronym": "XRD"
+   },
+   {
+    "name": "Microbeam X-ray diffraction"
+   },
+   {
+    "name": "High-resolution thin-film X-ray diffraction"
+   }
+  ],
+  "measurables": [
+   "Mineralogical and crystalline-phase identification and quantification in powders and environmental samples",
+   "Cell parameters, anisotropic crystallite dimensions, and mineralogy mapping across surfaces (specimens down to 10 microns with microbeam)",
+   "Crystallographic properties of epitaxial thin films; high/low temperature behavior via dedicated stages"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/x-ray-diffraction",
+    "retrieved": "2026-11-24",
+    "notes": "Grouped record: page lists Powder XRD, Microbeam XRD, Epitaxial Thin Film XRD under Available resources"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ },
+ {
+  "id": "emsl-tahoma",
+  "facility": "EMSL",
+  "institution": "PNNL",
+  "name": "Tahoma mid-range scientific computing cluster",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Quantum chemistry and molecular dynamics simulation"
+   },
+   {
+    "name": "Machine learning and artificial intelligence data-driven modeling",
+    "acronym": "ML/AI"
+   },
+   {
+    "name": "Scientific data processing and visualization"
+   }
+  ],
+  "measurables": [
+   "Simulated structure, dynamics, and function of molecules, interfaces, nanoparticles, and biological systems (GROMACS, VASP, CP2K, NWChem, LAMMPS, PFLOTRAN, AMBER, RELION, cisTEM, etc.)",
+   "Data-driven models built from complex heterogeneous EMSL instrument data"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.emsl.pnnl.gov/science/instruments-resources/mid-range-scientific-computing",
+    "retrieved": "2026-11-24",
+    "notes": "Tahoma specs: 160 nodes with 36 Intel Xeon Gold 6254 cores and 384 GB/node, 24 ML/AI nodes with 2x NVIDIA V100 32GB GPUs and 1536 GB/node, 98 TB memory, ~1,015 teraflops peak; software list; user program access"
+   }
+  ],
+  "location": {
+   "building": "EMSL (Environmental Molecular Sciences Laboratory)",
+   "address": "3335 Innovation Blvd, Richland, WA 99354",
+   "latitude": 46.34894,
+   "longitude": -119.27436,
+   "source": "address EMSL public site; coordinates OSM Nominatim for adjacent PNNL Innovation Blvd block (retrieved 2026-11-24) — EMSL building not separately in OSM"
+  }
+ }
+]

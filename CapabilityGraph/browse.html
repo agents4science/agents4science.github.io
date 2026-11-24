@@ -146,6 +146,7 @@ async function init() {
   const params = new URLSearchParams(location.search);
   if (params.get("q")) $("q").value = params.get("q");
   if (params.get("all") === "1") $("include-all").checked = true;
+  if (params.get("facility")) $("f-facility").value = params.get("facility");
   render();
   if (params.get("map") === "1") toggleMap();
 }
@@ -229,6 +230,7 @@ function syncUrl() {
   const params = new URLSearchParams();
   if ($("q").value.trim()) params.set("q", $("q").value.trim());
   if ($("include-all").checked) params.set("all", "1");
+  if ($("f-facility").value) params.set("facility", $("f-facility").value);
   if ($("map-wrap").style.display === "block") params.set("map", "1");
   const qs = params.toString();
   history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
@@ -247,7 +249,7 @@ function buildFacets() {
       o.value = v; o.textContent = `${v} (${n})`;
       sel.appendChild(o);
     }
-    sel.addEventListener("change", render);
+    sel.addEventListener("change", () => { syncUrl(); render(); });
   };
   fill("f-facility", "facility");
   fill("f-status", "status");

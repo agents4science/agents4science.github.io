@@ -125,7 +125,7 @@
 
 <script src="matchmaker.js"></script>
 <script>
-const DATA_FILES = ["als_deep", "als_directory", "aps_deep", "aps_directory", "polaris"]
+const DATA_FILES = ["als_deep", "als_directory", "aps_deep", "aps_directory", "polaris", "argonne_rapid", "computing"]
   .map(f => `prototype/data/${f}.json`);
 
 let RECORDS = [];
@@ -189,8 +189,10 @@ function renderMap(rows) {
       radius: 7 + 2 * Math.log2(g.recs.length),
       color: "#50B87D", fillColor: "#50B87D", fillOpacity: 0.5, weight: 2,
     }).addTo(MARKERS);
+    const names = [...new Set(g.recs.map(r =>
+      r.location.building || r.facility))].slice(0, 4).join(" / ");
     const div = document.createElement("div");
-    div.innerHTML = `<b>${esc(g.loc.building || g.recs[0].facility)}</b><br>` +
+    div.innerHTML = `<b>${esc(names)}</b><br>` +
       `${esc(g.loc.address || "")}<br>${g.recs.length} instrument${g.recs.length > 1 ? "s" : ""}<br>`;
     const btn = document.createElement("button");
     btn.textContent = "show only these";

@@ -1,0 +1,223 @@
+[
+ {
+  "id": "rapid-rpl",
+  "facility": "RAPID",
+  "institution": "Argonne National Laboratory (Autonomous Discovery)",
+  "name": "Rapid Prototyping Laboratory (RPL)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "robotic workflow prototyping"
+   },
+   {
+    "name": "MADSci orchestration development"
+   },
+   {
+    "name": "3D printing"
+   },
+   {
+    "name": "camera and sensor integration"
+   }
+  ],
+  "measurables": [
+   "validated robotic protocols (staged with water/non-toxic chemicals before RAPID deployment)",
+   "hardware integration and workcell designs"
+  ],
+  "demonstrated_applications": [
+   "staging ground for RAPID labs: protocols tested and amended before real chemistry",
+   "MADSci infrastructure development and workforce training"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24); building number implied by lab name, unconfirmed"
+  },
+  "automation": {
+   "notes": "Lab-level record: software and robotics hub, not a single instrument."
+  },
+  "provenance": [
+   {
+    "source_url": "https://www.newswise.com/doescience/inside-argonne-s-push-toward-autonomous-scientific-discovery",
+    "retrieved": "2026-11-24",
+    "notes": "Mirrors anl.gov Autonomous Discovery article; anl.gov blocks automated fetch (same workaround as APS extraction)."
+   },
+   {
+    "source_url": "https://www.anl.gov/autonomous-discovery/capabilities",
+    "retrieved": "2026-11-24",
+    "notes": "Via search snippet only — page blocks automated fetch. RAPID = Robotic Autonomous Platforms for Innovative Discovery; RAPID-350 bioactive factors; RAPID-446 protein and pathway design."
+   },
+   {
+    "source_url": "https://news.uchicago.edu/story/argonnes-rapid-prototyping-laboratory-helps-students-prepare-science-careers",
+    "retrieved": "2026-11-24",
+    "notes": "RPL equipment and purpose: robotic arms, 3D printers, prototyping of attachments/sensors/VR workspace models."
+   },
+   {
+    "source_url": "https://github.com/AD-SDL",
+    "retrieved": "2026-11-24",
+    "notes": "Self Driving Laboratories @ Argonne — open-source software home (MADSci)."
+   }
+  ],
+  "aliases": [
+   "Rapid Prototyping Lab",
+   "RPL"
+  ]
+ },
+ {
+  "id": "rapid-200",
+  "facility": "RAPID",
+  "institution": "Argonne National Laboratory (Autonomous Discovery)",
+  "name": "RAPID-200 — Autonomous Materials and Chemistry Laboratory",
+  "instrument_class": "robotic-synthesis-platform",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated synthesis"
+   },
+   {
+    "name": "robotic sample transport (motorized rail)"
+   },
+   {
+    "name": "membrane fabrication"
+   },
+   {
+    "name": "continuous reaction/device monitoring"
+   }
+  ],
+  "measurables": [
+   "time evolution of reactions, materials, and devices (hours to weeks)",
+   "membrane fabrication and efficacy characterization",
+   "materials properties for energy storage, quantum, and microelectronics"
+  ],
+  "demonstrated_applications": [
+   "membrane creation and characterization campaigns (current work per 2026 article)",
+   "MAESTRO Materials proving ground: closed-loop synthesis; Y2 throughput baselines"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24); building number implied by lab name, unconfirmed"
+  },
+  "automation": {
+   "notes": "Lab-level record. Command station (six monitors), serpentine robotic arm, motorized rail, glass-walled analysis container."
+  },
+  "provenance": [
+   {
+    "source_url": "https://www.newswise.com/doescience/inside-argonne-s-push-toward-autonomous-scientific-discovery",
+    "retrieved": "2026-11-24",
+    "notes": "Mirrors anl.gov Autonomous Discovery article; anl.gov blocks automated fetch (same workaround as APS extraction)."
+   },
+   {
+    "source_url": "https://www.anl.gov/autonomous-discovery/capabilities",
+    "retrieved": "2026-11-24",
+    "notes": "Via search snippet only — page blocks automated fetch. RAPID = Robotic Autonomous Platforms for Innovative Discovery; RAPID-350 bioactive factors; RAPID-446 protein and pathway design."
+   }
+  ],
+  "aliases": [
+   "RAPID 200"
+  ]
+ },
+ {
+  "id": "rapid-350",
+  "facility": "RAPID",
+  "institution": "Argonne National Laboratory (Autonomous Discovery)",
+  "name": "RAPID-350 — Autonomous Laboratory for Bioactive Factors",
+  "instrument_class": "robotic-processing-platform",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "microliter liquid dispensing (robotic)"
+   },
+   {
+    "name": "automated incubation"
+   },
+   {
+    "name": "spectral analysis"
+   },
+   {
+    "name": "motorized conveyor transport"
+   }
+  ],
+  "measurables": [
+   "antimicrobial peptide candidates and their activity",
+   "spectral characterization of biological samples"
+  ],
+  "demonstrated_applications": [
+   "new antimicrobial peptides to outmaneuver antibiotic-resistant microorganisms"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24); building number implied by lab name, unconfirmed"
+  },
+  "automation": {
+   "notes": "Lab-level record. Small-volume dispensing arms, conveyor, incubators, spectrometer."
+  },
+  "provenance": [
+   {
+    "source_url": "https://www.newswise.com/doescience/inside-argonne-s-push-toward-autonomous-scientific-discovery",
+    "retrieved": "2026-11-24",
+    "notes": "Mirrors anl.gov Autonomous Discovery article; anl.gov blocks automated fetch (same workaround as APS extraction)."
+   },
+   {
+    "source_url": "https://www.anl.gov/autonomous-discovery/capabilities",
+    "retrieved": "2026-11-24",
+    "notes": "Via search snippet only — page blocks automated fetch. RAPID = Robotic Autonomous Platforms for Innovative Discovery; RAPID-350 bioactive factors; RAPID-446 protein and pathway design."
+   }
+  ],
+  "aliases": [
+   "RAPID 350"
+  ]
+ },
+ {
+  "id": "rapid-446",
+  "facility": "RAPID",
+  "institution": "Argonne National Laboratory (Autonomous Discovery)",
+  "name": "RAPID-446 — Protein and Pathway Design Laboratory",
+  "instrument_class": "robotic-processing-platform",
+  "status": "unknown",
+  "techniques": [
+   {
+    "name": "protein design"
+   },
+   {
+    "name": "pathway design"
+   }
+  ],
+  "measurables": [
+   "designed proteins and metabolic pathways"
+  ],
+  "demonstrated_applications": [],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24); building number implied by lab name, unconfirmed"
+  },
+  "automation": {
+   "notes": "Lab-level record; thin public documentation (one-line description only) — status and equipment unconfirmed."
+  },
+  "provenance": [
+   {
+    "source_url": "https://www.newswise.com/doescience/inside-argonne-s-push-toward-autonomous-scientific-discovery",
+    "retrieved": "2026-11-24",
+    "notes": "Mirrors anl.gov Autonomous Discovery article; anl.gov blocks automated fetch (same workaround as APS extraction)."
+   },
+   {
+    "source_url": "https://www.anl.gov/autonomous-discovery/capabilities",
+    "retrieved": "2026-11-24",
+    "notes": "Via search snippet only — page blocks automated fetch. RAPID = Robotic Autonomous Platforms for Innovative Discovery; RAPID-350 bioactive factors; RAPID-446 protein and pathway design."
+   }
+  ],
+  "aliases": [
+   "RAPID 446"
+  ]
+ }
+]

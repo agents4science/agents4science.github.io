@@ -1,0 +1,147 @@
+[
+ {
+  "id": "alcf-aurora",
+  "facility": "ALCF",
+  "institution": "Argonne National Laboratory",
+  "name": "Aurora — Argonne Leadership Computing Facility exascale system",
+  "aliases": [
+   "Aurora",
+   "ALCF"
+  ],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "GPU-accelerated simulation"
+   },
+   {
+    "name": "AI model training at scale"
+   },
+   {
+    "name": "high-throughput data analysis"
+   }
+  ],
+  "measurables": [
+   "large-scale simulation campaign outputs",
+   "trained AI/foundation models",
+   "analysis of experimental data at facility scale"
+  ],
+  "demonstrated_applications": [
+   "exascale simulation and AI for open science (DOE INCITE/ALCC allocations)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Computing facility record: 1.98 EF Rpeak, 10,624 nodes (2x Xeon Max CPUs + 6x Intel Max GPUs each)."
+  },
+  "provenance": [
+   {
+    "source_url": "https://en.wikipedia.org/wiki/Aurora_(supercomputer)",
+    "retrieved": "2026-11-24",
+    "notes": "Specs: 1.98 EF Rpeak / 1.012 EF sustained; 10,624 nodes; 2x Intel Xeon Max + 6x Intel Max GPUs per node; active Nov 2023."
+   }
+  ]
+ },
+ {
+  "id": "nersc-perlmutter",
+  "facility": "NERSC",
+  "institution": "Lawrence Berkeley National Laboratory",
+  "name": "Perlmutter — NERSC flagship system",
+  "aliases": [
+   "Perlmutter",
+   "NERSC"
+  ],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "GPU-accelerated simulation"
+   },
+   {
+    "name": "AI model training at scale"
+   },
+   {
+    "name": "high-throughput data analysis"
+   }
+  ],
+  "measurables": [
+   "large-scale simulation campaign outputs",
+   "trained AI models",
+   "analysis pipelines for DOE experimental facilities"
+  ],
+  "demonstrated_applications": [
+   "production computing for the DOE Office of Science user community"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "building": "Shyh Wang Hall (NERSC)",
+   "address": "Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720",
+   "latitude": 37.87574,
+   "longitude": -122.25281,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Computing facility record: 70.9 PF (Phase 1); AMD EPYC Milan + NVIDIA Ampere GPUs."
+  },
+  "provenance": [
+   {
+    "source_url": "https://en.wikipedia.org/wiki/Perlmutter_(supercomputer)",
+    "retrieved": "2026-11-24",
+    "notes": "Specs: 70.9 PF (Phase 1 complete May 2022); AMD EPYC Milan + NVIDIA Ampere GPUs; active from 2021."
+   }
+  ]
+ },
+ {
+  "id": "olcf-frontier",
+  "facility": "OLCF",
+  "institution": "Oak Ridge National Laboratory",
+  "name": "Frontier — Oak Ridge Leadership Computing Facility exascale system",
+  "aliases": [
+   "Frontier",
+   "OLCF"
+  ],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "GPU-accelerated simulation"
+   },
+   {
+    "name": "AI model training at scale"
+   },
+   {
+    "name": "high-throughput data analysis"
+   }
+  ],
+  "measurables": [
+   "large-scale simulation campaign outputs",
+   "trained AI/foundation models",
+   "exascale data analysis"
+  ],
+  "demonstrated_applications": [
+   "world's first exascale system (TOP500 No. 1, 2022)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Oak Ridge National Laboratory, 1 Bethel Valley Rd, Oak Ridge, TN 37830",
+   "latitude": 35.93013,
+   "longitude": -84.31193,
+   "source": "coordinates OSM Nominatim, ORNL campus-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Computing facility record: 1.6 EF peak, 74 cabinets (1x EPYC + 4x MI250X per node)."
+  },
+  "provenance": [
+   {
+    "source_url": "https://www.olcf.ornl.gov/frontier/",
+    "retrieved": "2026-11-24",
+    "notes": "Specs: 1.6 EF peak; 74 cabinets; 1x 3rd-gen EPYC + 4x MI250X per node; first exascale system, No. 1 TOP500 2022."
+   }
+  ]
+ }
+]

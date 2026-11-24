@@ -3,10 +3,13 @@
 A machine-readable catalog of scientific-instrument capabilities plus a
 matchmaker that resolves "I want to measure X" to ranked instruments.
 Scope: ALS (49 beamlines: 8 deep + 41 directory), APS (71 records:
-3 deep — 2-ID-E, 13-ID-E, 2-BM — + 68 directory), and PoLARIS (19
+3 deep — 2-ID-E, 13-ID-E, 2-BM — + 68 directory), PoLARIS (19
 robotic synthesis/formulation/characterization platforms, published
-2026-11-24, under review by the node team). 139 records total (106 when
-first written; the APS directory pass and the PoLARIS node came later).
+2026-11-24, under review by the node team), Argonne's four RAPID
+autonomous labs (RPL, RAPID-200, RAPID-350, RAPID-446; lab-level
+directory records), and three DOE computing facilities (Aurora/ALCF,
+Perlmutter/NERSC, Frontier/OLCF). 146 records total (106 when first
+written: ALS+APS only).
 
 Flagship cross-facility demo: "trace element distribution in plant roots" —
 the ALS XRF microprobe (10.3.2) is not operational, so the query resolves

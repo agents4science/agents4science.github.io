@@ -6,9 +6,9 @@
 
 What a scientific facility can do is written down for people: beamline web pages, PDF specifications, proposal systems that assume a human has already chosen the instrument. An AI system planning an experiment needs the same information in a form it can compute over — *what can this instrument measure, on what samples, under what constraints, and is it operational today?* Mature pieces exist (the PaNET technique ontology, NeXus/NXDL data-format contracts, the European wayforlight catalog; [survey below](#documents)), yet none answers that question for an individual instrument in its current configuration, and none puts a matching layer over the answer.
 
-As a feasibility test, we built one: a capability catalog covering the beamlines of the Advanced Light Source and the Advanced Photon Source — 139 records at present (106 at the time of the SCAC input below) — extracted by AI agents from public documentation at roughly one agent-run per instrument, with per-field provenance on every record. A matchmaker resolves natural-language measurement requests against the catalog.
+As a feasibility test, we built one: a capability catalog covering the beamlines of the Advanced Light Source and the Advanced Photon Source — 146 records at present (106 at the time of the SCAC input below) — extracted by AI agents from public documentation at roughly one agent-run per instrument, with per-field provenance on every record. A matchmaker resolves natural-language measurement requests against the catalog.
 
-The catalog also carries records for the 19 instruments of [PoLARIS](https://pcl-polaris.org), the NSF Programmable Cloud Laboratory node for polymer science led from UChicago with Argonne — the first PCL node in the graph, and a different population: robotic synthesis, formulation, and characterization platforms rather than beamlines. [Search "PoLARIS"](browse.html?q=PoLARIS) to see them. The node team is reviewing these records against vendor specifications; corrections will land here.
+The catalog has since grown past beamlines. It carries records for the 19 instruments of [PoLARIS](https://pcl-polaris.org), the NSF Programmable Cloud Laboratory node for polymer science led from UChicago with Argonne — the first PCL node in the graph; robotic synthesis, formulation, and characterization platforms rather than beamlines ([search "PoLARIS"](browse.html?q=PoLARIS); the node team is reviewing these records against vendor specifications). It covers Argonne's four [RAPID](browse.html?q=RAPID) autonomous laboratories (RPL, RAPID-200, RAPID-350, RAPID-446). And it records three DOE computing facilities — [Aurora at ALCF, Perlmutter at NERSC, Frontier at OLCF](browse.html?q=exascale%20computing) — because an experiment campaign routes to compute the same way it routes to a beamline. Every record carries a building-level location; the [map view](browse.html?map=1) shows the catalog as national infrastructure, Berkeley to Oak Ridge.
 
 **[Browse the catalog →](browse.html)** — faceted browsing of every record, with the matchmaker running client-side; try [the routing query](browse.html?q=trace%20element%20distribution%20in%20plant%20roots).
 
@@ -59,7 +59,7 @@ The scorer is keyword-plus-synonym overlap, deliberately simple. What is meant t
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
 <h3><a href="https://github.com/agents4science/agents4science.github.io/tree/main/CapabilityGraph/prototype">The prototype</a></h3>
-<p><em>Schema, 139 records, matchmaker — <a href="browse.html">browse the catalog</a></em></p>
+<p><em>Schema, 146 records, matchmaker — <a href="browse.html">browse the catalog</a></em></p>
 <p>JSON Schema for instrument capability records and measurement requests; ALS and APS catalogs with per-field provenance; the matchmaker, a hard-constraint IR matcher with PASS/FAIL/UNKNOWN verdicts, and an MCP server that exposes the graph as agent tools. <code>python3 queries/matchmaker.py --demo</code> runs the eight canned queries.</p>
 </div>
 

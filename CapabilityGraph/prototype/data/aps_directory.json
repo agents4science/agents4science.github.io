@@ -68,6 +68,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-30 keV; 50-120 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -153,6 +160,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 42-116 keV; 42-136 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -224,6 +238,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-30 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -302,6 +323,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 7-27 keV; 9.39-9.42 keV; 14.4-14.42 keV; 21.53-21.55 keV; 25.64-25.66 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -383,6 +411,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 2.7-27 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -453,6 +488,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4.5-25 keV; 4.5-80 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -537,6 +579,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-35 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -615,6 +664,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 20-200 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -684,6 +740,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4-38 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -754,6 +817,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 50-100 keV; 70-130 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -827,6 +897,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-150 keV; 6-15 keV; keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -901,6 +978,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-18 keV; 12-30 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -955,6 +1039,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 9-18 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1025,6 +1116,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-25 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1087,6 +1185,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 2.1-40 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1161,6 +1266,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-25 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1228,6 +1340,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4-33 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1305,6 +1424,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4.8-32 keV; 15-65 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1370,6 +1496,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 20-32 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1441,6 +1574,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 59 keV; 87 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1515,6 +1655,13 @@
    ],
    "tunable": false,
    "flux_notes": "energy ranges verbatim: 106 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1576,6 +1723,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 30-130 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1641,6 +1795,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4.5-20 keV; 10-40 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1719,6 +1880,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 7.9-14 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1797,6 +1965,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 7-38 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1863,6 +2038,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 15-15 keV; 28.6-28.6 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -1935,6 +2117,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4.5-100 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2024,6 +2213,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4.9-45 keV; 10-75 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2108,6 +2304,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 9-15 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2172,7 +2375,14 @@
     "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 15-ID-B (new hutch, mail-in crystallography), 15-ID-D (high-energy/in-situ diffraction); 2025 paper describes upgrades in progress; cycle-by-cycle status not explicitly sourced."
    }
   ],
-  "record_depth": "directory"
+  "record_depth": "directory",
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
  },
  {
   "id": "aps-15-id-c",
@@ -2246,7 +2456,14 @@
     "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 15-ID-B (new hutch, mail-in crystallography), 15-ID-D (high-energy/in-situ diffraction); 2025 paper describes upgrades in progress; cycle-by-cycle status not explicitly sourced."
    }
   ],
-  "record_depth": "directory"
+  "record_depth": "directory",
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
  },
  {
   "id": "aps-16-bm-b",
@@ -2330,6 +2547,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-60 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2402,6 +2626,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 18-50 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2480,6 +2711,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4.5-60 keV; 10-30 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2549,6 +2787,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 27-51 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2575,7 +2820,7 @@
     "name": "Large unit cell crystallography"
    },
    {
-    "name": "Subatomic (<0.85 \u00c5) resolution"
+    "name": "Subatomic (<0.85 Å) resolution"
    }
   ],
   "measurables": [
@@ -2628,6 +2873,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-20 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2707,6 +2959,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-16 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2771,6 +3030,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 30-120 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2848,6 +3114,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4.8-30 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2912,6 +3185,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 3.9-32 keV; 3.9-35 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -2992,6 +3272,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 35-120 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3060,6 +3347,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6.5-20 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3124,6 +3418,13 @@
    ],
    "tunable": false,
    "flux_notes": "energy ranges verbatim: 12.7 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3188,6 +3489,13 @@
    ],
    "tunable": false,
    "flux_notes": "energy ranges verbatim: 12.7 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3251,6 +3559,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-16 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3291,7 +3606,14 @@
     "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
    }
   ],
-  "record_depth": "directory"
+  "record_depth": "directory",
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
  },
  {
   "id": "aps-23-id-b",
@@ -3311,7 +3633,7 @@
     "name": "Microdiffraction"
    },
    {
-    "name": "Subatomic (<0.85 \u00c5) resolution"
+    "name": "Subatomic (<0.85 Å) resolution"
    },
    {
     "name": "Multi-wavelength anomalous dispersion"
@@ -3368,6 +3690,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-20 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3388,7 +3717,7 @@
     "name": "Microdiffraction"
    },
    {
-    "name": "Subatomic (<0.85 \u00c5) resolution"
+    "name": "Subatomic (<0.85 Å) resolution"
    },
    {
     "name": "Multi-wavelength anomalous dispersion"
@@ -3440,6 +3769,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-45 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3469,7 +3805,7 @@
     "name": "Multi-wavelength anomalous dispersion"
    },
    {
-    "name": "Subatomic (<0.85 \u00c5) resolution"
+    "name": "Subatomic (<0.85 Å) resolution"
    }
   ],
   "measurables": [
@@ -3524,6 +3860,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-20 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3592,6 +3935,13 @@
    ],
    "tunable": false,
    "flux_notes": "energy ranges verbatim: 12.66 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3664,6 +4014,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4-32 keV; 5-20 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3728,6 +4085,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 4-40 keV; 5-20 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3805,6 +4169,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 7-12 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3863,6 +4234,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-14 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -3937,6 +4315,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-30 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4008,6 +4393,13 @@
    ],
    "tunable": false,
    "flux_notes": "energy ranges verbatim: 15-15 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4082,6 +4474,13 @@
    ],
    "tunable": false,
    "flux_notes": "energy ranges verbatim: 25-25 keV; 35-35"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4152,6 +4551,13 @@
    ],
    "tunable": false,
    "flux_notes": "energy ranges verbatim: 75-75 keV; 105-105"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4222,7 +4628,14 @@
     "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Two end stations: ARPES (30x10 um beam, 6-300 K, Scienta R4000) and RSXS. APS directory lists IEX as currently accepting general users."
    }
   ],
-  "record_depth": "directory"
+  "record_depth": "directory",
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
  },
  {
   "id": "aps-30-id-b",
@@ -4285,6 +4698,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 23.7-23.9 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4342,6 +4762,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-22 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4398,6 +4825,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 8.5 keV; 13.7 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4473,6 +4907,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 7-40 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4549,6 +4990,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-35 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4622,6 +5070,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5-30 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4698,6 +5153,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5.5-30 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4754,6 +5216,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 5.3-30 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  },
  {
@@ -4832,6 +5301,13 @@
    ],
    "tunable": true,
    "flux_notes": "energy ranges verbatim: 6-70 keV; 6-100 keV; 22-24 keV"
+  },
+  "location": {
+   "building": "Advanced Photon Source (Building 400)",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70352,
+   "longitude": -87.99034,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   }
  }
 ]

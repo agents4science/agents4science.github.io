@@ -4,6 +4,8 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Browse the Instrument Capability Graph</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
   :root { --accent: #50B87D; --ink: #24292f; --muted: #666; --line: #ddd; }
   * { box-sizing: border-box; }
@@ -33,6 +35,14 @@
   .controls label.cb { display: flex; align-items: center; gap: 0.3rem; color: var(--muted); }
   #count { margin-left: auto; color: var(--muted); }
 
+  #map-wrap { display: none; margin: 0.6rem 0; }
+  #map { height: 340px; border: 1px solid var(--line); border-radius: 8px; }
+  #map-note { color: var(--muted); font-size: 0.78rem; margin-top: 0.25rem; }
+  .locchip { background: #eef4fd; border: 1px solid #c4d9f5; color: #1f5fbf;
+             border-radius: 999px; padding: 0.15rem 0.6rem; font-size: 0.8rem;
+             display: inline-flex; gap: 0.4rem; align-items: center; }
+  .locchip button { border: none; background: none; cursor: pointer; color: inherit;
+                    font-size: 0.9rem; padding: 0; }
   #routing { display: none; background: #fff8e6; border: 1px solid #e6c960;
              border-radius: 8px; padding: 0.6rem 0.9rem; margin: 0.6rem 0;
              font-size: 0.88rem; }
@@ -96,8 +106,11 @@
     <select id="f-depth"><option value="">depth: all</option></select>
     <select id="f-class"><option value="">class: all</option></select>
     <label class="cb"><input type="checkbox" id="include-all">include non-operational in search</label>
+    <button class="chip" id="map-toggle">map</button>
+    <span id="loc-filter"></span>
     <span id="count"></span>
   </div>
+  <div id="map-wrap"><div id="map"></div><div id="map-note"></div></div>
   <div id="routing"></div>
   <div id="results"></div>
   <div id="empty">No records match.</div>
@@ -132,12 +145,87 @@ async function init() {
   if (params.get("q")) $("q").value = params.get("q");
   if (params.get("all") === "1") $("include-all").checked = true;
   render();
+  if (params.get("map") === "1") toggleMap();
+}
+
+// ---- map ----
+let MAP = null, MARKERS = null, locFilter = null;
+
+function locKey(r) {
+  const l = r.location;
+  return l && l.latitude != null ? `${l.latitude},${l.longitude}` : null;
+}
+
+function toggleMap() {
+  const wrap = $("map-wrap");
+  const show = wrap.style.display !== "block";
+  wrap.style.display = show ? "block" : "none";
+  if (show && !MAP) {
+    MAP = L.map("map");
+    L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+      { attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>' }).addTo(MAP);
+    MARKERS = L.layerGroup().addTo(MAP);
+  }
+  if (show) { MAP.invalidateSize(); render(); }
+  syncUrl();
+}
+
+function renderMap(rows) {
+  if (!MAP || $("map-wrap").style.display !== "block") return;
+  MARKERS.clearLayers();
+  const groups = new Map();
+  let unlocated = 0;
+  for (const { record: r } of rows) {
+    const key = locKey(r);
+    if (!key) { unlocated++; continue; }
+    if (!groups.has(key)) groups.set(key, { loc: r.location, recs: [] });
+    groups.get(key).recs.push(r);
+  }
+  const bounds = [];
+  for (const [key, g] of groups) {
+    const { latitude: lat, longitude: lon } = g.loc;
+    bounds.push([lat, lon]);
+    const m = L.circleMarker([lat, lon], {
+      radius: 7 + 2 * Math.log2(g.recs.length),
+      color: "#50B87D", fillColor: "#50B87D", fillOpacity: 0.5, weight: 2,
+    }).addTo(MARKERS);
+    const div = document.createElement("div");
+    div.innerHTML = `<b>${esc(g.loc.building || g.recs[0].facility)}</b><br>` +
+      `${esc(g.loc.address || "")}<br>${g.recs.length} instrument${g.recs.length > 1 ? "s" : ""}<br>`;
+    const btn = document.createElement("button");
+    btn.textContent = "show only these";
+    btn.addEventListener("click", () => { locFilter = key; render(); MAP.closePopup(); });
+    div.appendChild(btn);
+    m.bindPopup(div);
+  }
+  if (bounds.length) MAP.fitBounds(bounds, { padding: [30, 30], maxZoom: 15 });
+  $("map-note").textContent = unlocated
+    ? `${unlocated} record${unlocated > 1 ? "s" : ""} without coordinates yet (HHTP building to be confirmed) — not shown on the map.`
+    : "";
+}
+
+function renderLocChip() {
+  const el = $("loc-filter");
+  if (!locFilter) { el.innerHTML = ""; return; }
+  const rec = RECORDS.find(r => locKey(r) === locFilter);
+  const name = rec?.location?.building || "location";
+  el.innerHTML = "";
+  const chip = document.createElement("span");
+  chip.className = "locchip";
+  chip.textContent = name + " ";
+  const x = document.createElement("button");
+  x.textContent = "✕";
+  x.title = "clear location filter";
+  x.addEventListener("click", () => { locFilter = null; render(); });
+  chip.appendChild(x);
+  el.appendChild(chip);
 }
 
 function syncUrl() {
   const params = new URLSearchParams();
   if ($("q").value.trim()) params.set("q", $("q").value.trim());
   if ($("include-all").checked) params.set("all", "1");
+  if ($("map-wrap").style.display === "block") params.set("map", "1");
   const qs = params.toString();
   history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
 }
@@ -181,7 +269,8 @@ function facetPass(r) {
 
 function render() {
   const query = $("q").value.trim();
-  const pool = RECORDS.filter(facetPass);
+  let pool = RECORDS.filter(facetPass);
+  if (locFilter) pool = pool.filter(r => locKey(r) === locFilter);
   let rows, excluded = [];
   if (query) {
     const out = search(pool, query, $("include-all").checked);
@@ -212,6 +301,8 @@ function render() {
   const container = $("results");
   container.innerHTML = "";
   for (const row of rows) container.appendChild(card(row, !!query));
+  renderLocChip();
+  renderMap(rows);
 }
 
 function card({ score, record: r, matched }, searching) {
@@ -260,6 +351,14 @@ function list(items, fmt = esc) {
 function detailHtml(r) {
   const parts = [];
   if (r.institution) parts.push(`<div class="note">${esc(r.institution)}</div>`);
+  if (r.location) {
+    const l = r.location, bits = [l.building, l.room, l.address].filter(Boolean).map(esc);
+    const osm = l.latitude != null
+      ? ` · <a href="https://www.openstreetmap.org/?mlat=${l.latitude}&mlon=${l.longitude}#map=17/${l.latitude}/${l.longitude}" target="_blank" rel="noopener">map</a>`
+      : "";
+    parts.push(`<h4>Location</h4><div>${bits.join(" · ")}${osm}` +
+      (l.source ? `<br><span class="note">${esc(l.source)}</span>` : "") + `</div>`);
+  }
   if (r.measurables?.length) parts.push(`<h4>Measurables</h4>${list(r.measurables)}`);
   if (r.techniques?.length) parts.push(`<h4>Techniques</h4>${list(r.techniques, t => {
     let s = esc(t.name || "");
@@ -305,6 +404,7 @@ function detailHtml(r) {
 
 $("q").addEventListener("input", () => { syncUrl(); render(); });
 $("include-all").addEventListener("change", () => { syncUrl(); render(); });
+$("map-toggle").addEventListener("click", toggleMap);
 init().catch(e => {
   $("results").innerHTML = `<p style="color:#b3261e">Failed to load catalog: ${esc(e.message)}</p>`;
 });

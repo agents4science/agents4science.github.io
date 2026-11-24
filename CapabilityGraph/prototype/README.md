@@ -10,8 +10,10 @@ published 2026-11-24, under node-team review), Argonne's four RAPID
 autonomous labs (RPL, RAPID-200, RAPID-350, RAPID-446; lab-level), and
 three DOE computing facilities (Aurora/ALCF, Perlmutter/NERSC,
 Frontier/OLCF). Also: both neutron sources (SNS 20, HFIR 12), EMSL (29
-flagship instruments), and the Molecular Foundry (7 facilities + 4 NCEM
-microscopes). 286 records total (106 when first written: ALS+APS only).
+flagship instruments), the Molecular Foundry (7 facilities + 4 NCEM
+microscopes), and CNM (5 groups + 7 flagships incl. the jointly-operated
+HXN 26-ID and XTIP beamlines). 298 records total (106 when first
+written: ALS+APS only).
 
 Flagship cross-facility demo: "trace element distribution in plant roots" —
 the ALS XRF microprobe (10.3.2) is not operational, so the query resolves

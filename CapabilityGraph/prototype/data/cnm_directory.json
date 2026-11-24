@@ -1,0 +1,573 @@
+[
+ {
+  "id": "cnm-exm-group",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Electron and X-ray Microscopy (EXM) Group (facility-level record)",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "transmission electron microscopy",
+    "acronym": "TEM"
+   },
+   {
+    "name": "scanning transmission electron microscopy",
+    "acronym": "STEM"
+   },
+   {
+    "name": "ultrafast electron microscopy",
+    "acronym": "UEM"
+   },
+   {
+    "name": "scanning electron microscopy",
+    "acronym": "SEM"
+   },
+   {
+    "name": "focused ion beam milling (FIB-SEM)",
+    "acronym": "FIB"
+   },
+   {
+    "name": "hard X-ray nanoprobe microscopy",
+    "acronym": "HXN"
+   }
+  ],
+  "measurables": [
+   "atomic-scale structure and defects in complex oxides and energy materials",
+   "chemical composition and spectroscopic maps of nanostructures",
+   "sub-picosecond structural and chemical dynamics",
+   "TEM lamellae and cross-sections prepared by FIB"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://cnm.anl.gov/group/Electron-and-X-ray-Microscopy",
+    "retrieved": "2026-11-24",
+    "notes": "Group name, instrument roster (UEM, FEI Talos F200X, JEOL 2100F, Zeiss 1540XB FIB-SEM, Hitachi S-4700-II, FEI Quanta 400F, JEOL IT800HL, TFS Spectra 200) and HXN operation at APS Sector 26 — via search snippet; direct fetch of cnm.anl.gov blocked (WebFetch unavailable in this session)."
+   },
+   {
+    "source_url": "https://www.anl.gov/cnm/cnm-capabilities",
+    "retrieved": "2026-11-24",
+    "notes": "Group structure and emphasis on complex oxides and energy-related materials — via search snippet."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-nanofab-cleanroom",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Nanofabrication and Devices (NFD) Group / CNM Cleanroom (facility-level record)",
+  "instrument_class": "fabrication",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "electron beam lithography (100 kV and 30 kV)",
+    "acronym": "EBL"
+   },
+   {
+    "name": "optical stepper lithography (150 mm)"
+   },
+   {
+    "name": "direct-write optical and holographic lithography"
+   },
+   {
+    "name": "focused Ga ion beam processing",
+    "acronym": "FIB"
+   },
+   {
+    "name": "thin-film deposition"
+   },
+   {
+    "name": "reactive and wet etching"
+   },
+   {
+    "name": "metrology"
+   }
+  ],
+  "measurables": [
+   "nanoscale patterned devices and structures on samples from 10 mm chips to 150 mm wafers",
+   "MEMS/NEMS devices",
+   "wafer-scale lithographic, deposition, and etch process outcomes with metrology verification"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.anl.gov/cnm/fabrication",
+    "retrieved": "2026-11-24",
+    "notes": "Cleanroom description (class 100/1,000 cleanroom; lithographic, deposition, etching, metrology suites; variable-voltage and 100-kV EBL, 150 mm stepper, Ga ion beam, direct-write optical and holographic lithography) — via search snippet; anl.gov fetch blocked. Sources variously give 17,000 and 18,000 sq ft, so square footage omitted."
+   },
+   {
+    "source_url": "https://www.anl.gov/cnm/nanofabrication-and-devices-capabilities",
+    "retrieved": "2026-11-24",
+    "notes": "Group name and capability scope — via search snippet."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-npbs-group",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Nanophotonics and Biofunctional Structures (NPBS) Group (facility-level record)",
+  "instrument_class": "spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "femtosecond-to-microsecond time-resolved (transient) absorption spectroscopy, UV to THz probe",
+    "acronym": "TA"
+   },
+   {
+    "name": "ultrafast photoluminescence spectroscopy and microscopy, UV through NIR"
+   },
+   {
+    "name": "time-resolved emission spectroscopy (streak camera)"
+   },
+   {
+    "name": "time-correlated single photon counting",
+    "acronym": "TCSPC"
+   },
+   {
+    "name": "confocal Raman microscopy and mapping"
+   },
+   {
+    "name": "pulsed and continuous-wave electron paramagnetic resonance",
+    "acronym": "EPR"
+   },
+   {
+    "name": "nanomaterial synthesis and bioassembly"
+   }
+  ],
+  "measurables": [
+   "ultrafast carrier, exciton, and energy-transfer dynamics in nanomaterials",
+   "light-matter interaction and photoluminescence lifetimes from UV to NIR",
+   "spin populations via EPR",
+   "synthesized nanomaterials and bio-functional assemblies for optical biosensing and energy conversion"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://cnm.anl.gov/group/Nanophotonics-Biofunctional-Structures",
+    "retrieved": "2026-11-24",
+    "notes": "Group name, focus, and ultrafast spectroscopy capabilities including amplified Ti:sapphire laser systems with OPAs — via search snippet; cnm.anl.gov fetch blocked."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-qem-group",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Quantum and Energy Materials (QEM) Group (facility-level record)",
+  "instrument_class": "scanning-probe-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "ultrahigh-vacuum scanning probe microscopy",
+    "acronym": "UHV SPM"
+   },
+   {
+    "name": "scanning tunneling microscopy and spectroscopy",
+    "acronym": "STM/STS"
+   },
+   {
+    "name": "qPlus non-contact atomic force microscopy",
+    "acronym": "AFM"
+   },
+   {
+    "name": "ambient atomic force microscopy",
+    "acronym": "AFM"
+   },
+   {
+    "name": "synchrotron X-ray scanning tunneling microscopy (at APS XTIP)",
+    "acronym": "SX-STM"
+   },
+   {
+    "name": "single-particle laser spectroscopy"
+   },
+   {
+    "name": "physical deposition and chemical synthesis of hybrid, organic, and nanoparticle materials"
+   }
+  ],
+  "measurables": [
+   "atomic-scale surface structure and electronic states on conducting and insulating samples",
+   "optical response of single nanoparticles",
+   "transport properties of quantum and energy materials",
+   "synthesized inorganic crystals and air-sensitive materials (glovebox labs)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://cnm.anl.gov/group/Quantum-and-Energy-Materials",
+    "retrieved": "2026-11-24",
+    "notes": "Group name, SPM suite (Createc 4K UHV STM/qPlus AFM, Asylum Cypher S, Bruker MultiMode 8), XTIP involvement, synthesis labs — via search snippet; cnm.anl.gov fetch blocked."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-tmg-group",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Theory and Modeling (TMG) Group (facility-level record)",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "electronic structure calculations (e.g., VASP, GPAW)",
+    "acronym": "DFT"
+   },
+   {
+    "name": "molecular dynamics simulation",
+    "acronym": "MD"
+   },
+   {
+    "name": "large-scale electrodynamics modeling"
+   },
+   {
+    "name": "quantum dynamics and cavity quantum dynamics simulation"
+   },
+   {
+    "name": "machine learning for force-field development and atomistic imaging from multimodal data",
+    "acronym": "ML"
+   }
+  ],
+  "measurables": [
+   "predicted electronic, optical, and structural properties of nanoscale materials",
+   "multi-scale models connecting atomistic structure to function",
+   "interpretation of electron and X-ray microscopy data",
+   "machine-learned interatomic potentials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://cnm.anl.gov/group/Theory-and-Modeling",
+    "retrieved": "2026-11-24",
+    "notes": "Group name and modeling scope (electrodynamics, multi-scale, data-science approaches, microscopy data interpretation, codes incl. VASP and GPAW) — via search snippet; cnm.anl.gov fetch blocked."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-carbon-cluster",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Carbon HPC Cluster",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "high-performance computing for atomistic modeling and nanophotonics",
+    "acronym": "HPC"
+   },
+   {
+    "name": "electronic structure, molecular dynamics, and electrodynamics codes"
+   },
+   {
+    "name": "machine-learning toolkits for force fields and multimodal image reconstruction",
+    "acronym": "ML"
+   }
+  ],
+  "measurables": [
+   "simulation results for nanoscale materials (electronic structure, dynamics, optical response)",
+   "processed and reconstructed experimental data from CNM instruments"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://wiki.anl.gov/cnm/HPC/Carbon_Cluster_-_Overview",
+    "retrieved": "2026-11-24",
+    "notes": "Cluster name and scale (~280 nodes, ~2,600-2,800 Xeon cores, ~20 GPUs, ~25 Tflops, InfiniBand) — via search snippet; specific figures vary by source date so treated as approximate and omitted from fields."
+   },
+   {
+    "source_url": "https://cnm.anl.gov/group/Theory-and-Modeling",
+    "retrieved": "2026-11-24",
+    "notes": "Carbon as the TMG user-accessible HPC resource for theory, modeling, and experimental data processing — via search snippet."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-hxn-26id",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Hard X-ray Nanoprobe (HXN), APS beamline 26-ID (operated jointly by CNM and APS)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "scanning fluorescence X-ray microscopy",
+    "acronym": "SFXM"
+   },
+   {
+    "name": "scanning X-ray diffraction microscopy / nanodiffraction",
+    "acronym": "SXDM"
+   },
+   {
+    "name": "Bragg ptychography"
+   },
+   {
+    "name": "correlative chemical and structural nano-imaging"
+   }
+  ],
+  "measurables": [
+   "elemental composition maps at ~25 nm resolution",
+   "nanoscale strain, lattice structure, and defects in crystalline thin films, devices, and interfaces",
+   "correlated chemical/structural maps with 6-12 keV tunable X-rays, including under heating/cooling"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://cnm.anl.gov/pages/hard-xray-nanoprobe",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument name, joint CNM/APS operation, 6-12 keV range, ~25 nm focus, SFXM+SXDM+Bragg ptychography — via search snippet; cnm.anl.gov fetch blocked."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Microscopy/Beamlines/26-ID",
+    "retrieved": "2026-11-24",
+    "notes": "Beamline designation 26-ID and multimodal fluorescence/diffraction/ptychography program — via search snippet."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-xtip-4id",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "XTIP beamline, APS Sector 4 (synchrotron X-ray scanning tunneling microscopy; CNM/APS collaboration)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "synchrotron X-ray scanning tunneling microscopy",
+    "acronym": "SX-STM"
+   }
+  ],
+  "measurables": [
+   "elemental and chemical identification at the single-atom limit combined with atomic-scale STM imaging",
+   "soft X-ray (400-1900 eV) spectroscopic response with selectable polarization"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://journals.iucr.org/paper?yi5087=",
+    "retrieved": "2026-11-24",
+    "notes": "XTIP as world's first dedicated SX-STM beamline, 400-1900 eV, ~10 um focus, completed 2019 — via search snippet (IUCr paper); CNM web pages blocked."
+   },
+   {
+    "source_url": "https://www.anl.gov/cnm/4-development-of-synergies-with-other-doe-user-facilities-at-argonne",
+    "retrieved": "2026-11-24",
+    "notes": "CNM-APS collaboration context for XTIP — via search snippet."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-acat",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "ACAT - Argonne Chromatic Aberration-corrected TEM (FEI Titan 80-300 ST)",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "chromatic and spherical aberration-corrected high-resolution transmission electron microscopy",
+    "acronym": "HRTEM"
+   },
+   {
+    "name": "scanning transmission electron microscopy",
+    "acronym": "STEM"
+   }
+  ],
+  "measurables": [
+   "atomic-resolution images of materials with both spherical and chromatic aberration corrected",
+   "structure of complex oxides and energy-related materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.anl.gov/cnm/cnm-capabilities",
+    "retrieved": "2026-11-24",
+    "notes": "Chromatic-aberration-corrected TEM described as one of only three such instruments operating worldwide — via search snippet; anl.gov fetch blocked."
+   },
+   {
+    "source_url": "https://www.energy.gov/sites/prod/files/2015/11/f27/fcto_storage_lab_pi_workshop_2_anl.pdf",
+    "retrieved": "2026-11-24",
+    "notes": "ACAT name and platform (FEI Titan 80-300 ST, image corrector for spherical and chromatic aberration, 200 kV operation) — via search snippet."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-uem",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Ultrafast Electron Microscope (UEM)",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "ultrafast (pump-probe, laser-driven) transmission electron microscopy",
+    "acronym": "UEM"
+   }
+  ],
+  "measurables": [
+   "sub-picosecond structural and chemical dynamics at the nanoscale (~1 ps temporal, ~1 nm spatial, ~1 eV energy resolution)",
+   "transient responses at 10-500 kHz (fs laser) or 1-100 kHz (ns laser) repetition rates"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://cnm.anl.gov/group/Electron-and-X-ray-Microscopy",
+    "retrieved": "2026-11-24",
+    "notes": "UEM specifications (temporal/spatial/energy resolution, repetition rates) — via search snippet; cnm.anl.gov fetch blocked."
+   },
+   {
+    "source_url": "https://www.newswise.com/doescience/argonne-is-first-to-offer-an-ultrafast-electron-microscope-at-a-national-user-facility/?article_id=764546",
+    "retrieved": "2026-11-24",
+    "notes": "Argonne described as first national user facility to offer a UEM; operational-for-users status — via search snippet."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-createc-4k-spm",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "Createc 4K UHV STM / qPlus AFM (with optical and RF access)",
+  "instrument_class": "scanning-probe-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "low-temperature (4 K) ultrahigh-vacuum scanning tunneling microscopy",
+    "acronym": "STM"
+   },
+   {
+    "name": "scanning tunneling spectroscopy",
+    "acronym": "STS"
+   },
+   {
+    "name": "qPlus non-contact atomic force microscopy",
+    "acronym": "AFM"
+   }
+  ],
+  "measurables": [
+   "atomic-scale topography and electronic structure of conducting samples at 4 K",
+   "atomic-scale imaging of insulating or conducting samples via qPlus AFM",
+   "combined optical/RF-coupled probe measurements"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://cnm.anl.gov/group/Quantum-and-Energy-Materials",
+    "retrieved": "2026-11-24",
+    "notes": "Instrument name and capabilities (4K UHV, STS on conductors, qPlus AFM on insulators, optical and RF access) — via search snippet; cnm.anl.gov fetch blocked."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ },
+ {
+  "id": "cnm-jeol-jbx8100fs",
+  "facility": "CNM",
+  "institution": "ANL",
+  "name": "JEOL 8100FS 100 kV Electron Beam Lithography System",
+  "instrument_class": "fabrication",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "high-resolution electron beam lithography at 100 kV",
+    "acronym": "EBL"
+   }
+  ],
+  "measurables": [
+   "patterned nanostructures written with a ~4 nm focused beam and 1 nm placement grid over a 1 mm field",
+   "patterns on substrates from 10 mm chips to 150 mm wafers"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.anl.gov/cnm/nanofabrication-and-devices-capabilities",
+    "retrieved": "2026-11-24",
+    "notes": "JEOL 8100FS specifications (100 kV, 4 nm beam, 1 nm address grid, 1 mm field, sample sizes) — via search snippet; anl.gov fetch blocked."
+   },
+   {
+    "source_url": "https://wiki.anl.gov/cnm/Nanofabrication/Equipment",
+    "retrieved": "2026-11-24",
+    "notes": "CNM cleanroom equipment listing context, including Raith 150 30 kV EBL as companion tool — via search snippet."
+   }
+  ],
+  "location": {
+   "building": "Building 440, Center for Nanoscale Materials",
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "cnm.anl.gov (address, retrieved 2026-11-24); coordinates OSM Nominatim, ANL campus-level — building-level pin pending. HXN (26-ID) and XTIP physically sit at APS sectors."
+  }
+ }
+]

@@ -2974,7 +2974,7 @@
   "institution": "ANL",
   "name": "APS Beamline 19-BM-D (Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
-  "status": "not-operational",
+  "status": "unknown",
   "techniques": [
    {
     "name": "Tomography"
@@ -3016,9 +3016,19 @@
     "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Closed before the APS Upgrade along with 19-ID as SBC concluded operations."
    },
    {
-    "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-19-bm-sbc-2/",
-    "retrieved": "2026-08-27",
-    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Closed before the APS Upgrade along with 19-ID as SBC concluded operations."
+    "source_url": "https://sbc.aps.anl.gov/about",
+    "retrieved": "2026-11-24",
+    "notes": "Official SBC page: SBC operated MX at Sector 19 (19-ID, 19-BM) from 1997 and 'has concluded its operations to make way for eBERlight' (Sector 84). Via search snippet; anl.gov blocks fetches."
+   },
+   {
+    "source_url": "https://doi.org/10.1080/08940886.2026.2643150",
+    "retrieved": "2026-11-24",
+    "notes": "Synchrotron Radiation News (2026): SBC was the first MX facility at APS, operated 1997-2023; 19-ID and 19-BM closed before the APS Upgrade."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory",
+    "retrieved": "2026-11-24",
+    "notes": "CONFLICT recorded: current directory reportedly lists 19-BM-D as XSD-operated tomography, 30-120 keV, access via beamline staff (two independent search summaries) — but the 2026-08 extraction recorded not-operational. Status set to unknown pending directly verifiable source."
    }
   ],
   "record_depth": "directory",
@@ -3037,6 +3047,9 @@
    "latitude": 41.70352,
    "longitude": -87.99034,
    "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Formerly SBC-CAT macromolecular crystallography (1997-2023, concluded); station repurposed to XSD tomography per current APS directory."
   }
  },
  {
@@ -3287,7 +3300,7 @@
   "institution": "ANL",
   "name": "APS Beamline 21-ID-D (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
-  "status": "commissioning",
+  "status": "operational",
   "techniques": [
    {
     "name": "Macromolecular crystallography"
@@ -3333,9 +3346,9 @@
     "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
    },
    {
-    "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-21-id-d-ls-cat/",
-    "retrieved": "2026-08-27",
-    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+    "source_url": "https://ls-cat.org/",
+    "retrieved": "2026-11-24",
+    "notes": "Official LS-CAT (operator) status note dated Dec 2025: 21-ID-D operational post-APS-U for on-site users and LS-CAT staff. Fully tunable (only tunable LS-CAT station), SAD/MAD at Se edge, Dectris EIGER2 X 16M. Accessed via search snippet (direct fetch denied this session)."
    }
   ],
   "record_depth": "directory",
@@ -3354,6 +3367,9 @@
    "latitude": 41.70352,
    "longitude": -87.99034,
    "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Post-APS-U: operational (on-site users and staff) per LS-CAT Dec 2025 status; EIGER2 X 16M detector; fully tunable."
   }
  },
  {
@@ -3362,7 +3378,7 @@
   "institution": "ANL",
   "name": "APS Beamline 21-ID-F (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
-  "status": "operational",
+  "status": "commissioning",
   "techniques": [
    {
     "name": "Macromolecular crystallography"
@@ -3404,9 +3420,9 @@
     "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
    },
    {
-    "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-21-id-d-ls-cat/",
-    "retrieved": "2026-08-27",
-    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+    "source_url": "https://ls-cat.org/",
+    "retrieved": "2026-11-24",
+    "notes": "Official LS-CAT status note dated Dec 2025: 21-ID-F in scientific commissioning following APS-U. Fixed wavelength 0.97872 A (~12.67 keV); EIGER 9M; MD3-UP; UniPuck changer. Accessed via search snippet (direct fetch denied this session)."
    }
   ],
   "record_depth": "directory",
@@ -3425,6 +3441,9 @@
    "latitude": 41.70352,
    "longitude": -87.99034,
    "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Post-APS-U: scientific commissioning per LS-CAT Dec 2025 status (previous record said operational). Fixed-wavelength station."
   }
  },
  {
@@ -3433,7 +3452,7 @@
   "institution": "ANL",
   "name": "APS Beamline 21-ID-G (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
-  "status": "commissioning",
+  "status": "not-operational",
   "techniques": [
    {
     "name": "Macromolecular crystallography"
@@ -3475,9 +3494,9 @@
     "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
    },
    {
-    "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-21-id-d-ls-cat/",
-    "retrieved": "2026-08-27",
-    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+    "source_url": "https://ls-cat.org/",
+    "retrieved": "2026-11-24",
+    "notes": "Official LS-CAT status note dated Dec 2025: 21-ID-G offline for upgrades. Fixed wavelength 0.97857 A; PILATUS3 X 6M; MD3-UP; UniPuck changer. Accessed via search snippet (direct fetch denied this session)."
    }
   ],
   "record_depth": "directory",
@@ -3496,6 +3515,9 @@
    "latitude": 41.70352,
    "longitude": -87.99034,
    "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Post-APS-U: offline for upgrades per LS-CAT Dec 2025 status (previous record said commissioning). Fixed-wavelength station."
   }
  },
  {

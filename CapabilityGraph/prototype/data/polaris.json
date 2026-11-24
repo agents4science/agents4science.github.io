@@ -1,0 +1,1134 @@
+[
+  {
+    "id": "polaris-ul-junior",
+    "facility": "PoLARIS",
+    "institution": "UChicago (HHTP, UChicago)",
+    "name": "Unchained Labs Junior Synthesis Robot",
+    "instrument_class": "robotic-synthesis-platform",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "automated high-throughput polymer synthesis"
+      }
+    ],
+    "measurables": [
+      "synthesized polymer libraries (parallel reactions)",
+      "polymerization under controlled temperature and mixing"
+    ],
+    "sample_constraints": {
+      "states": [
+        "liquid",
+        "solution"
+      ],
+      "size_notes": "Reaction capacity 96x1 mL / 48x2 mL / 24x4 mL / 2x125 mL parallel; heating ambient-180 C with stirring/vortexing; heated (<=120 C) six-tip piercing arm and positive-displacement pipetting for viscous/volatile liquids."
+    },
+    "campaign_roles": [
+      "synthesis"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Unchained Labs Junior Synthesis Robot': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~400-4,000 samples/year",
+      "availability": "~20 hrs/day, 4 days/week"
+    },
+    "protocol_vocabulary": "polaris_protocols/polaris-ul-junior.json"
+  },
+  {
+    "id": "polaris-big-kahuna",
+    "facility": "PoLARIS",
+    "institution": "UChicago (HHTP, UChicago)",
+    "name": "Unchained Labs Big Kahuna Formulation/Processing Robot",
+    "instrument_class": "robotic-processing-platform",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "automated formulation"
+      },
+      {
+        "name": "film casting (draw-down)"
+      },
+      {
+        "name": "rod-pull rheology screening"
+      },
+      {
+        "name": "dual-axis centrifugal mixing"
+      }
+    ],
+    "measurables": [
+      "formulated material libraries",
+      "cast polymer films (4x6 or 6x8 arrays)",
+      "flow properties / viscosity change via rod-pull test",
+      "jamming propensity of dense suspensions"
+    ],
+    "sample_constraints": {
+      "states": [
+        "liquid",
+        "solution",
+        "powder",
+        "thin film"
+      ],
+      "size_notes": "Solid dispensing 4-100 mL hoppers with weight feedback; viscous liquids to 20,000 cP; reaction capacity as Junior; FlakTek dual-axis mixer 300-2500 rpm at 50 torr, <=60 mL; integrated force transducer for rod-pull testing."
+    },
+    "campaign_roles": [
+      "synthesis",
+      "processing",
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Unchained Labs Big Kahuna Formulation/Processing Robot': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~400-10,000 samples/year",
+      "availability": "~20 hrs/day, 4 days/week"
+    },
+    "protocol_vocabulary": "polaris_protocols/polaris-big-kahuna.json"
+  },
+  {
+    "id": "polaris-electrolab",
+    "facility": "PoLARIS",
+    "institution": "UChicago (HHTP, UChicago)",
+    "name": "Electrolab Automated Electrochemistry Platform",
+    "instrument_class": "electrochemistry-platform",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "high-throughput voltammetry"
+      },
+      {
+        "name": "bias cycling"
+      },
+      {
+        "name": "electrochemical impedance spectroscopy"
+      }
+    ],
+    "measurables": [
+      "redox activity maps",
+      "electrochemical stability under bias cycling",
+      "impedance spectra",
+      "material degradation under electrochemical stress"
+    ],
+    "sample_constraints": {
+      "states": [
+        "liquid",
+        "solution",
+        "thin film"
+      ],
+      "size_notes": "Gantry liquid-handling robot with multipurpose nozzle (dispense/mix/degas/in-situ cell cleaning); multiplexed microfabricated electrode arrays (eChips); research-grade bi-potentiostat with EIS."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "Python API (direct module control)",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Electrolab Automated Electrochemistry Platform': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~120,000 samples/year",
+      "availability": "~20 hrs/day, 4 days/week"
+    },
+    "protocol_vocabulary": "polaris_protocols/polaris-electrolab.json"
+  },
+  {
+    "id": "polaris-n9",
+    "facility": "PoLARIS",
+    "institution": "UChicago (HHTP, UChicago)",
+    "name": "N9 Robotic Platform (North Robotics) - Film Processing and Device Fabrication",
+    "instrument_class": "robotic-processing-platform",
+    "status": "planned",
+    "techniques": [
+      {
+        "name": "blade coating"
+      },
+      {
+        "name": "drop casting"
+      },
+      {
+        "name": "spin coating"
+      },
+      {
+        "name": "device fabrication"
+      },
+      {
+        "name": "electrical characterization"
+      },
+      {
+        "name": "optical imaging"
+      }
+    ],
+    "measurables": [
+      "thin-film deposition libraries",
+      "fabricated devices on patterned electrodes",
+      "current-voltage / electrical characteristics (Keithley 4200)",
+      "film resistance"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solution",
+        "thin film"
+      ],
+      "size_notes": "Precision pipetting; heated plate racks ambient-150 C; vacuum gripper for substrate transfer/lamination; dual motorized probe sets; integrated Keithley 4200."
+    },
+    "campaign_roles": [
+      "processing",
+      "fabrication",
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "Python API (direct module control)",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'N9 Robotic Platform (North Robotics) - Film Processing and Device Fabrication': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~2,000-4,000 samples/year",
+      "availability": "~20 hrs/day, 5 days/week"
+    },
+    "integration_dependencies": [
+      "installation planned FY26"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-n9.json"
+  },
+  {
+    "id": "polaris-kla-nanoindenter",
+    "facility": "PoLARIS",
+    "institution": "UChicago (HHTP, UChicago)",
+    "name": "KLA Nanoindenter - Automated Nanomechanical Testing",
+    "instrument_class": "mechanical-tester",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "nanoindentation"
+      },
+      {
+        "name": "mechanical property mapping"
+      }
+    ],
+    "measurables": [
+      "hardness",
+      "young's modulus",
+      "nanomechanical property maps of films and coatings"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid",
+        "thin film"
+      ],
+      "size_notes": "Automated high-throughput indentation with robotic sample/stage exchange."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "REST API (Python-scriptable, supports AI/ML adaptive testing)",
+      "robotic_sample_exchange": "UR10e central rail (planned FY26)",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'KLA Nanoindenter - Automated Nanomechanical Testing': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~8,000 samples/year",
+      "availability": "~12 hrs/day, 4 days/week"
+    },
+    "integration_dependencies": [
+      "UR10e installation (FY26)"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-kla-nanoindenter.json"
+  },
+  {
+    "id": "polaris-nicolet-is50",
+    "facility": "PoLARIS",
+    "institution": "UChicago (HHTP, UChicago)",
+    "name": "Thermo Fisher Nicolet iS50 FTIR + Continuum IR Microscope",
+    "instrument_class": "spectrometer",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "FTIR spectroscopy (transmission, reflection, ATR)"
+      },
+      {
+        "name": "infrared microscopy"
+      }
+    ],
+    "measurables": [
+      "molecular functional-group composition",
+      "infrared reflectivity and absorption",
+      "localized chemical composition of films and composites"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid",
+        "thin film",
+        "liquid"
+      ],
+      "size_notes": "Mid- to far-infrared range; bulk and localized measurement modes."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "robotic_sample_exchange": "UR10e central rail (planned FY26)",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Thermo Fisher Nicolet iS50 FTIR + Continuum IR Microscope': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~6,000 samples/year",
+      "availability": "~20 hrs/day, 4 days/week"
+    },
+    "integration_dependencies": [
+      "UR10e installation (FY26)"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-nicolet-is50.json"
+  },
+  {
+    "id": "polaris-glossmeter",
+    "facility": "PoLARIS",
+    "institution": "UChicago (HHTP, UChicago)",
+    "name": "Micro-Gloss 60 deg Robotic Gloss Meter",
+    "instrument_class": "spectrometer",
+    "status": "planned",
+    "techniques": [
+      {
+        "name": "gloss / surface reflectivity measurement (60 deg geometry)"
+      }
+    ],
+    "measurables": [
+      "surface gloss and sheen (ISO 2813, ASTM D523)",
+      "coating optical quality"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid",
+        "thin film"
+      ],
+      "size_notes": "Industry-grade, robot-integrable gloss measurement."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "Python API",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Micro-Gloss 60 deg Robotic Gloss Meter': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~6,000 samples/year",
+      "availability": "~20 hrs/day, 5 days/week"
+    },
+    "integration_dependencies": [
+      "installation planned FY26"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-glossmeter.json"
+  },
+  {
+    "id": "polaris-ur10e",
+    "facility": "PoLARIS",
+    "institution": "UChicago (HHTP, UChicago)",
+    "name": "UR10e Robotic Arm - Central Sample Handling Hub",
+    "instrument_class": "robotic-manipulator",
+    "status": "planned",
+    "techniques": [
+      {
+        "name": "automated sample exchange and transport"
+      }
+    ],
+    "measurables": [
+      "(sample transport - enables cross-instrument autonomous workflows)"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid"
+      ],
+      "size_notes": "1300 mm reach, 12.5 kg payload, central linear rail, automatic tool-change (vacuum/mechanical/magnetic grippers); connects Nanoindenter, FTIR, Gloss, N9, Unchained platforms."
+    },
+    "campaign_roles": [
+      "sample-transport"
+    ],
+    "automation": {
+      "control_interface": "Python, ROS, and LabVIEW interfaces; integrated force sensing",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'UR10e Robotic Arm - Central Sample Handling Hub': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "availability": "~20 hrs/day, 5 days/week"
+    },
+    "integration_dependencies": [
+      "installation planned FY26"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-ur10e.json"
+  },
+  {
+    "id": "polaris-ecosec-ht-8mals",
+    "facility": "PoLARIS",
+    "institution": "UChicago (SMCF, UChicago)",
+    "name": "Tosoh EcoSEC-HT SEC + 8-Angle MALS (Wyatt)",
+    "instrument_class": "chromatography-system",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "high-temperature size-exclusion chromatography"
+      },
+      {
+        "name": "multi-angle light scattering"
+      }
+    ],
+    "measurables": [
+      "molecular weight distribution",
+      "absolute molar mass",
+      "dispersity",
+      "radius of gyration (Rg)",
+      "polymer architecture at high temperature"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solution"
+      ],
+      "size_notes": "Autosampler; temperature-controlled solvent/column compartments; RI + 8-angle MALS; polar organic, ionic and water-soluble polymers, proteins."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Tosoh EcoSEC-HT SEC + 8-Angle MALS (Wyatt)': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~2,000 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "protocol_vocabulary": "polaris_protocols/polaris-ecosec-ht-8mals.json"
+  },
+  {
+    "id": "polaris-ecosec-3mals",
+    "facility": "PoLARIS",
+    "institution": "UChicago (SMCF, UChicago)",
+    "name": "Tosoh EcoSEC SEC + 3-Angle MiniDAWN (Wyatt)",
+    "instrument_class": "chromatography-system",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "size-exclusion chromatography"
+      },
+      {
+        "name": "multi-angle light scattering"
+      }
+    ],
+    "measurables": [
+      "molecular weight distribution",
+      "absolute molar mass",
+      "dispersity (room temperature)"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solution"
+      ],
+      "size_notes": "Autosampler; dual-flow RI detector; 3-angle MiniDAWN absolute molar mass."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Tosoh EcoSEC SEC + 3-Angle MiniDAWN (Wyatt)': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~3,000 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "protocol_vocabulary": "polaris_protocols/polaris-ecosec-3mals.json"
+  },
+  {
+    "id": "polaris-dsc2500",
+    "facility": "PoLARIS",
+    "institution": "UChicago (SMCF, UChicago)",
+    "name": "TA Instruments Discovery DSC 2500 (x2)",
+    "instrument_class": "thermal-analyzer",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "differential scanning calorimetry"
+      }
+    ],
+    "measurables": [
+      "glass transition temperature",
+      "crystallization and melting transitions",
+      "curing behavior",
+      "heat flow under controlled ramps"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid",
+        "thin film",
+        "powder"
+      ],
+      "size_notes": "Two instruments, each with 50-position autosampler."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'TA Instruments Discovery DSC 2500 (x2)': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~2,000 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "protocol_vocabulary": "polaris_protocols/polaris-dsc2500.json"
+  },
+  {
+    "id": "polaris-tga5500",
+    "facility": "PoLARIS",
+    "institution": "UChicago (SMCF, UChicago)",
+    "name": "TA Instruments Discovery TGA 5500",
+    "instrument_class": "thermal-analyzer",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "thermogravimetric analysis"
+      }
+    ],
+    "measurables": [
+      "mass loss / thermal stability",
+      "non-volatile mass content",
+      "decomposition behavior"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid",
+        "powder",
+        "thin film"
+      ],
+      "size_notes": "25-position autosampler; programmable temperature profiles."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'TA Instruments Discovery TGA 5500': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~3,600 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "protocol_vocabulary": "polaris_protocols/polaris-tga5500.json"
+  },
+  {
+    "id": "polaris-irtracer100",
+    "facility": "PoLARIS",
+    "institution": "UChicago (SMCF, UChicago)",
+    "name": "Shimadzu IRTracer-100 FTIR",
+    "instrument_class": "spectrometer",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "FTIR spectroscopy"
+      }
+    ],
+    "measurables": [
+      "molecular functional-group composition",
+      "thin-film spectral characterization",
+      "trace-level impurity detection (SNR > 1000:1)"
+    ],
+    "sample_constraints": {
+      "states": [
+        "liquid",
+        "solid",
+        "thin film"
+      ],
+      "size_notes": "Liquids, solids, ultrathin polymer films; integrated dehumidifier and active optical alignment."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "robotic_sample_exchange": "UR3 arm (planned)",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Shimadzu IRTracer-100 FTIR': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~10,000 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "integration_dependencies": [
+      "UR3 integration (planned)"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-irtracer100.json"
+  },
+  {
+    "id": "polaris-mobius-dls",
+    "facility": "PoLARIS",
+    "institution": "UChicago (SMCF, UChicago)",
+    "name": "Wyatt Mobius DLS - Dynamic Light Scattering / Electrophoretic Mobility",
+    "instrument_class": "light-scattering-instrument",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "dynamic light scattering"
+      },
+      {
+        "name": "electrophoretic mobility / zeta potential"
+      }
+    ],
+    "measurables": [
+      "particle size / hydrodynamic radius distributions",
+      "diffusion coefficients",
+      "zeta potential of colloids, latexes and polymer dispersions"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solution",
+        "liquid"
+      ],
+      "size_notes": "Simultaneous electrophoretic mobility + hydrodynamic radius under controlled solvent/ionic conditions."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Wyatt Mobius DLS - Dynamic Light Scattering / Electrophoretic Mobility': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~10,000 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "integration_dependencies": [
+      "commercial autosampler (planned)"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-mobius-dls.json"
+  },
+  {
+    "id": "polaris-uv3600",
+    "facility": "PoLARIS",
+    "institution": "UChicago (SMCF, UChicago)",
+    "name": "Shimadzu UV-3600 Plus UV-VIS-NIR Spectrophotometer",
+    "instrument_class": "spectrometer",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "UV-VIS-NIR spectrophotometry"
+      }
+    ],
+    "measurables": [
+      "optical absorbance/transmission spectra of liquids, films, powders",
+      "band-edge and chromophore characterization"
+    ],
+    "sample_constraints": {
+      "states": [
+        "liquid",
+        "thin film",
+        "powder"
+      ],
+      "size_notes": "Triple detector (PMT/InGaAs/PbS), double monochromator; noise < 0.002 Abs at 0.1 nm resolution; dual beam."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Shimadzu UV-3600 Plus UV-VIS-NIR Spectrophotometer': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~9,000 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "integration_dependencies": [
+      "commercial autosampler (planned)"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-uv3600.json"
+  },
+  {
+    "id": "polaris-jupiter-afm",
+    "facility": "PoLARIS",
+    "institution": "UChicago (MPML, UChicago)",
+    "name": "Asylum Research Jupiter XR AFM",
+    "instrument_class": "scanning-probe-microscope",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "atomic force microscopy"
+      },
+      {
+        "name": "nanomechanical/electrical property mapping"
+      }
+    ],
+    "measurables": [
+      "surface topography (sub-nanometer)",
+      "nanoscale mechanical and electrical property maps",
+      "film morphology"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid",
+        "thin film"
+      ],
+      "size_notes": "100 x 100 x 10 um^3 scan range; samples to 200 mm diameter; 8-puck automated stage loading."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python",
+      "robotic_sample_exchange": "UR3e arm (planned)",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Asylum Research Jupiter XR AFM': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~4,800 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "integration_dependencies": [
+      "UR3e integration (planned)"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-jupiter-afm.json"
+  },
+  {
+    "id": "polaris-labram",
+    "facility": "PoLARIS",
+    "institution": "UChicago (MPML, UChicago)",
+    "name": "Horiba LabRAM HR Evolution Confocal Raman Microscope",
+    "instrument_class": "spectrometer",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "confocal Raman spectroscopy and mapping"
+      }
+    ],
+    "measurables": [
+      "vibrational spectra / chemical composition maps",
+      "phase and structural mapping (sub-micron)",
+      "chain conformation of polymers"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid",
+        "thin film",
+        "powder"
+      ],
+      "size_notes": "Spectral resolution better than 0.3 cm^-1; multiple excitation lasers."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "REST API (Python-scriptable)",
+      "robotic_sample_exchange": "UR3e arm (planned)",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Horiba LabRAM HR Evolution Confocal Raman Microscope': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~4,800 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "integration_dependencies": [
+      "UR3e integration (planned)"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-labram.json"
+  },
+  {
+    "id": "polaris-dsx2000",
+    "facility": "PoLARIS",
+    "institution": "UChicago (MPML, UChicago)",
+    "name": "Olympus DSX2000 Optical Microscope (3D Profiling)",
+    "instrument_class": "light-microscope",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "optical microscopy (brightfield/darkfield/DIC/polarized)"
+      },
+      {
+        "name": "3d surface profiling (z-stacking, stitching)"
+      }
+    ],
+    "measurables": [
+      "surface topography and morphology of films and coatings",
+      "particle dispersity (optical, 3d)"
+    ],
+    "sample_constraints": {
+      "states": [
+        "solid",
+        "thin film"
+      ],
+      "size_notes": "Fully motorized; up to 7,000x magnification; automatic stitching and z-stacking."
+    },
+    "campaign_roles": [
+      "characterization"
+    ],
+    "automation": {
+      "control_interface": "REST API (Python-scriptable)",
+      "robotic_sample_exchange": "UR3 arm (planned)",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Olympus DSX2000 Optical Microscope (3D Profiling)': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~9,600 samples/year",
+      "availability": "12 hrs/day (night shift), 5 days/week"
+    },
+    "integration_dependencies": [
+      "UR3 integration (planned)"
+    ],
+    "protocol_vocabulary": "polaris_protocols/polaris-dsx2000.json"
+  },
+  {
+    "id": "polaris-chemspeed",
+    "facility": "PoLARIS",
+    "institution": "ANL (Polybot, CNM, Argonne)",
+    "name": "Chemspeed Robot - Automated Synthesis Platform (Polybot)",
+    "instrument_class": "robotic-synthesis-platform",
+    "status": "operational",
+    "techniques": [
+      {
+        "name": "automated polymerization"
+      },
+      {
+        "name": "automated purification (filtration, centrifugation)"
+      },
+      {
+        "name": "in-line viscometry"
+      }
+    ],
+    "measurables": [
+      "synthesized and purified polymer libraries",
+      "polymerization kinetics (in-line viscosity)",
+      "reaction outcomes with ML-adaptive conditions"
+    ],
+    "sample_constraints": {
+      "states": [
+        "liquid",
+        "solution"
+      ],
+      "size_notes": "24 x 20 mL reactors with temperature/shaking/inert-atmosphere control; precision solid/liquid dosing with balance feedback."
+    },
+    "campaign_roles": [
+      "synthesis",
+      "processing"
+    ],
+    "automation": {
+      "control_interface": "vendor GUI loosely integrated with Python; online-learning ML integration",
+      "orchestration": "MADSci node (PoLARIS unified control layer)"
+    },
+    "access": {
+      "mechanism": "PoLARIS PCL node: cloud campaign submission via project request + staff/agent refinement; access split ~40% science drivers / 30% cross-node / 30% external users",
+      "proposal_system": "PoLARIS (NSF PCL network)"
+    },
+    "provenance": [
+      {
+        "source_url": "PoLARIS Instrument Inventory Table v3",
+        "retrieved": "2026-08-27",
+        "notes": "All fields from inventory table entry 'Chemspeed Robot - Automated Synthesis Platform (Polybot)': techniques, specs, throughput, availability, status, control interface, planned integrations."
+      },
+      {
+        "source_url": "PoLARIS proposal, submitted to NSF 25-541, 20 Nov 2025",
+        "retrieved": "2026-08-27",
+        "notes": "Node context: MADSci orchestration (each device an API node), agentic campaign/scheduling/execution layers, SD-1 colloids / SD-2 electronic polymers science drivers."
+      }
+    ],
+    "record_depth": "deep",
+    "throughput": {
+      "samples_per_year": "~4,800 samples/year",
+      "availability": "20 hrs/day, 5 days/week (during CNM user project term)"
+    },
+    "protocol_vocabulary": "polaris_protocols/polaris-chemspeed.json"
+  }
+]

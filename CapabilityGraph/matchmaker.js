@@ -64,6 +64,7 @@ const FIELD_WEIGHTS = [
   ["sample_environments", 1.5],
   ["name", 1.0],
   ["aliases", 1.0],
+  ["facility", 1.0],
 ];
 
 function tokens(text) {

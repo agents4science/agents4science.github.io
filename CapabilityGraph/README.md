@@ -60,7 +60,7 @@ The scorer is keyword-plus-synonym overlap, deliberately simple. What is meant t
 </div>
 
 <div style="flex: 1; min-width: 300px; border: 1px solid #ddd; border-radius: 8px; padding: 1rem;">
-<h3><a href="ontology_landscape.md">Ontology and catalog landscape</a></h3>
+<h3><a href="ontology_landscape.html">Ontology and catalog landscape</a></h3>
 <p><em>What exists to reuse (verified survey, 2026)</em></p>
 <p>PaNET, NeXus/NXDL, PIDINST, and wayforlight.eu assessed against the instrument-capability level this graph targets: each is mature and reusable, and the intersection — a per-instrument, per-configuration capability model with a matching layer — is unbuilt.</p>
 </div>

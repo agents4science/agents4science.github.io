@@ -84,7 +84,7 @@ FIELD_WEIGHTS = [
     ("sample_environments", 1.5),
     ("name", 1.0),
     ("aliases", 1.0),
-    ("facility", 1.0),
+    ("facility", 3.0),   # identity: being AT a facility outranks being named like one
     ("institution", 1.0),
     ("location", 1.0),
 ]

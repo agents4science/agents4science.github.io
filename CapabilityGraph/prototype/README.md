@@ -14,7 +14,10 @@ flagship instruments), the Molecular Foundry (7 facilities + 4 NCEM
 microscopes), and CNM (5 groups + 7 flagships incl. the jointly-operated
 HXN 26-ID and XTIP beamlines), and UChicago RCC (9 systems, Midway3 to
 the secure enclaves — first non-DOE, non-PCL institution in the graph).
-307 records total (106 when first written: ALS+APS only).
+312 records total (106 when first written: ALS+APS only). Computing
+records cite official sources (ALCF user-guides repo — docs.alcf.anl.gov
+blocks fetches — docs.nersc.gov, olcf.ornl.gov, TOP500); the ALCF fleet
+covers Aurora, Polaris, Sophia, Crux, AI Testbed, Inference Endpoints.
 
 Flagship cross-facility demo: "trace element distribution in plant roots" —
 the ALS XRF microprobe (10.3.2) is not operational, so the query resolves

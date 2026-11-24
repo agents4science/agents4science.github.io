@@ -37,13 +37,18 @@
    "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24)"
   },
   "automation": {
-   "notes": "Computing facility record: 1.98 EF Rpeak, 10,624 nodes (2x Xeon Max CPUs + 6x Intel Max GPUs each)."
+   "notes": "Official specs: 10,624-node HPE Cray EX; per node 2x Intel Xeon CPU Max 9470C (104 cores, 128 GiB HBM2e) + 6x Intel Data Center GPU Max 1550 (768 GiB HBM); 166 racks, 63,744 GPUs; 8x Slingshot-11 NICs/node, dragonfly. TOP500: Rmax 1,012 PF, Rpeak 1,980 PF (No. 4, Nov 2026)."
   },
   "provenance": [
    {
-    "source_url": "https://en.wikipedia.org/wiki/Aurora_(supercomputer)",
+    "source_url": "https://github.com/argonne-lcf/user-guides (docs source for docs.alcf.anl.gov)",
     "retrieved": "2026-11-24",
-    "notes": "Specs: 1.98 EF Rpeak / 1.012 EF sustained; 10,624 nodes; 2x Intel Xeon Max + 6x Intel Max GPUs per node; active Nov 2023."
+    "notes": "Official ALCF user guide, read from its public source repository; docs.alcf.anl.gov itself blocks automated fetch (Cloudflare 403, anl.gov-wide)."
+   },
+   {
+    "source_url": "https://www.top500.org/system/180183/",
+    "retrieved": "2026-11-24",
+    "notes": "Aurora Rmax 1,012.00 PFlop/s, Rpeak 1,980.01 PFlop/s; No. 4 on the November 2026 TOP500 list."
    }
   ]
  },
@@ -86,13 +91,13 @@
    "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
   },
   "automation": {
-   "notes": "Computing facility record: 70.9 PF (Phase 1); AMD EPYC Milan + NVIDIA Ampere GPUs."
+   "notes": "Official specs: 3,072 CPU-only nodes (2x EPYC 7763, 512 GB) + 1,792 GPU nodes (1x EPYC 7763 + 4x A100 40/80GB, 256 GB); Slingshot 11, 3-hop dragonfly; FP64 peak 69.5+4.5 PF (GPU partition) + 15.4 PF (CPU partition)."
   },
   "provenance": [
    {
-    "source_url": "https://en.wikipedia.org/wiki/Perlmutter_(supercomputer)",
+    "source_url": "https://docs.nersc.gov/systems/perlmutter/architecture/",
     "retrieved": "2026-11-24",
-    "notes": "Specs: 70.9 PF (Phase 1 complete May 2022); AMD EPYC Milan + NVIDIA Ampere GPUs; active from 2021."
+    "notes": "Official NERSC architecture page: 3,072 CPU-only + 1,792 GPU-accelerated nodes; GPU nodes 1x EPYC 7763 + 4x NVIDIA A100 (40/80GB), 256 GB DDR4; CPU nodes 2x EPYC 7763, 512 GB; HPE Slingshot 11 dragonfly; FP64 peak 69.5+4.5 PF (GPU partition), 15.4 PF (CPU partition)."
    }
   ]
  },
@@ -141,6 +146,222 @@
     "source_url": "https://www.olcf.ornl.gov/frontier/",
     "retrieved": "2026-11-24",
     "notes": "Specs: 1.6 EF peak; 74 cabinets; 1x 3rd-gen EPYC + 4x MI250X per node; first exascale system, No. 1 TOP500 2022."
+   }
+  ]
+ },
+ {
+  "id": "alcf-polaris",
+  "facility": "ALCF",
+  "institution": "Argonne National Laboratory",
+  "name": "Polaris — ALCF GPU system (HPE Apollo 6500 Gen10+)",
+  "aliases": [
+   "Polaris (ALCF)"
+  ],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "GPU-accelerated simulation"
+   },
+   {
+    "name": "AI model training at scale"
+   },
+   {
+    "name": "high-throughput data analysis"
+   }
+  ],
+  "measurables": [
+   "large-scale GPU simulation outputs",
+   "trained AI models",
+   "workflows coupling simulation and AI"
+  ],
+  "demonstrated_applications": [
+   "testbed-to-production GPU computing for the DOE user community"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "560 nodes: 1x AMD EPYC Milan 7543P (32 cores) + 4x NVIDIA A100 (NVLink) + 512 GB DDR4 + 2x 1.6TB SSD per node; 2x Slingshot 11 NICs; 40 racks. No relation to the NSF PoLARIS programmable cloud lab despite the name."
+  },
+  "provenance": [
+   {
+    "source_url": "https://github.com/argonne-lcf/user-guides (docs source for docs.alcf.anl.gov)",
+    "retrieved": "2026-11-24",
+    "notes": "Official ALCF user guide, read from its public source repository; docs.alcf.anl.gov itself blocks automated fetch (Cloudflare 403, anl.gov-wide)."
+   }
+  ]
+ },
+ {
+  "id": "alcf-sophia",
+  "facility": "ALCF",
+  "institution": "Argonne National Laboratory",
+  "name": "Sophia — ALCF AI training system (NVIDIA DGX A100)",
+  "aliases": [
+   "Sophia"
+  ],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "GPU-accelerated simulation"
+   },
+   {
+    "name": "AI model training at scale"
+   },
+   {
+    "name": "high-throughput data analysis"
+   }
+  ],
+  "measurables": [
+   "trained AI models on large scientific datasets",
+   "GPU-enhanced simulation outputs"
+  ],
+  "demonstrated_applications": [
+   "dedicated AI training and GPU-specific HPC"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "24 DGX A100 nodes: 8x A100 + 2x AMD Rome CPUs each (22 nodes 320 GB GPU memory, 2 nodes 640 GB; 8,320 GB total); 15 TB SSD per node; HDR200 fat-tree fabric."
+  },
+  "provenance": [
+   {
+    "source_url": "https://github.com/argonne-lcf/user-guides (docs source for docs.alcf.anl.gov)",
+    "retrieved": "2026-11-24",
+    "notes": "Official ALCF user guide, read from its public source repository; docs.alcf.anl.gov itself blocks automated fetch (Cloudflare 403, anl.gov-wide)."
+   }
+  ]
+ },
+ {
+  "id": "alcf-crux",
+  "facility": "ALCF",
+  "institution": "Argonne National Laboratory",
+  "name": "Crux — ALCF CPU system (HPE Cray EX)",
+  "aliases": [
+   "Crux"
+  ],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "general-purpose CPU HPC"
+   }
+  ],
+  "measurables": [
+   "CPU-based simulation and data-analysis outputs"
+  ],
+  "demonstrated_applications": [
+   "CPU workloads complementing the GPU systems"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "256 nodes on 64 liquid-cooled blades: 2x AMD EPYC 7742 (64-core) + 256 GB DDR4 per node; Slingshot interconnect; 1.18 PF peak."
+  },
+  "provenance": [
+   {
+    "source_url": "https://github.com/argonne-lcf/user-guides (docs source for docs.alcf.anl.gov)",
+    "retrieved": "2026-11-24",
+    "notes": "Official ALCF user guide, read from its public source repository; docs.alcf.anl.gov itself blocks automated fetch (Cloudflare 403, anl.gov-wide)."
+   }
+  ]
+ },
+ {
+  "id": "alcf-ai-testbed",
+  "facility": "ALCF",
+  "institution": "Argonne National Laboratory",
+  "name": "ALCF AI Testbed — novel AI accelerators (grouped record: Cerebras, Graphcore, Groq, SambaNova)",
+  "aliases": [
+   "AI Testbed"
+  ],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "AI training and inference on dataflow/wafer-scale accelerators"
+   }
+  ],
+  "measurables": [
+   "trained and deployed AI models on non-GPU accelerator architectures",
+   "architecture-comparison benchmarks for scientific AI workloads"
+  ],
+  "demonstrated_applications": [
+   "evaluating next-generation AI hardware for science"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Grouped facility-level record: the testbed houses Cerebras, Graphcore, Groq, and SambaNova accelerator systems; access by request."
+  },
+  "provenance": [
+   {
+    "source_url": "https://github.com/argonne-lcf/user-guides (docs source for docs.alcf.anl.gov)",
+    "retrieved": "2026-11-24",
+    "notes": "Official ALCF user guide, read from its public source repository; docs.alcf.anl.gov itself blocks automated fetch (Cloudflare 403, anl.gov-wide)."
+   }
+  ]
+ },
+ {
+  "id": "alcf-inference-endpoints",
+  "facility": "ALCF",
+  "institution": "Argonne National Laboratory",
+  "name": "ALCF Inference Endpoints — API access to open-source AI models on dedicated ALCF hardware",
+  "aliases": [
+   "Inference Service",
+   "inference endpoints"
+  ],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "AI model inference as a service"
+   },
+   {
+    "name": "agent and batch inference APIs"
+   }
+  ],
+  "measurables": [
+   "LLM and open-model inference results via OpenAI-compatible API and web UI",
+   "batch inference outputs"
+  ],
+  "demonstrated_applications": [
+   "production AI inference for the DOE complex: federated login for ALCF, ANL, BNL, LBL, LLNL, NERSC, ORNL, PNNL, SLAC, Sandia, and other lab identities; web UI at inference.alcf.anl.gov"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Argonne National Laboratory, 9700 S. Cass Ave, Lemont, IL 60439",
+   "latitude": 41.70914,
+   "longitude": -87.97862,
+   "source": "coordinates OSM Nominatim, ANL campus-level (retrieved 2026-11-24)"
+  },
+  "automation": {
+   "notes": "Service record (not a single machine): state-of-the-art open-source models served from dedicated ALCF hardware; agents and batch APIs documented."
+  },
+  "provenance": [
+   {
+    "source_url": "https://github.com/argonne-lcf/user-guides (docs source for docs.alcf.anl.gov)",
+    "retrieved": "2026-11-24",
+    "notes": "Official ALCF user guide, read from its public source repository; docs.alcf.anl.gov itself blocks automated fetch (Cloudflare 403, anl.gov-wide)."
    }
   ]
  }

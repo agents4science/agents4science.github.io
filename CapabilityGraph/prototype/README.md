@@ -2,8 +2,9 @@
 
 A machine-readable catalog of scientific-instrument capabilities plus a
 matchmaker that resolves "I want to measure X" to ranked instruments.
-Scope: ALS (49 beamlines: 8 deep + 41 directory) and APS (57 records:
-3 deep — 2-ID-E, 13-ID-E, 2-BM — + 54 directory). 106 records total.
+Scope: ALS (49 beamlines: 8 deep + 41 directory) and APS (71 records:
+3 deep — 2-ID-E, 13-ID-E, 2-BM — + 68 directory). 120 records total
+(106 when first written; the APS directory pass was later extended).
 
 Flagship cross-facility demo: "trace element distribution in plant roots" —
 the ALS XRF microprobe (10.3.2) is not operational, so the query resolves

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Browse the Instrument Capability Graph</title>
+<style>
+  :root { --accent: #50B87D; --ink: #24292f; --muted: #666; --line: #ddd; }
+  * { box-sizing: border-box; }
+  body { font-family: system-ui, -apple-system, sans-serif; color: var(--ink);
+         margin: 0; background: #fafafa; }
+  a { color: var(--accent); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  header { background: #fff; border-bottom: 1px solid var(--line); padding: 0.9rem 1.5rem;
+           display: flex; align-items: baseline; gap: 1rem; flex-wrap: wrap; }
+  header h1 { font-size: 1.15rem; margin: 0; }
+  header .sub { color: var(--muted); font-size: 0.9rem; }
+  main { max-width: 1100px; margin: 0 auto; padding: 1.25rem 1.5rem 4rem; }
+
+  .searchrow { display: flex; gap: 0.6rem; margin: 0.5rem 0 0.6rem; }
+  #q { flex: 1; font-size: 1rem; padding: 0.55rem 0.8rem; border: 1px solid var(--line);
+       border-radius: 8px; background: #fff; }
+  #q:focus { outline: 2px solid var(--accent); border-color: transparent; }
+  .chips { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-bottom: 0.8rem; }
+  .chip { font-size: 0.78rem; border: 1px solid var(--line); border-radius: 999px;
+          padding: 0.2rem 0.65rem; background: #fff; cursor: pointer; color: var(--muted); }
+  .chip:hover { border-color: var(--accent); color: var(--ink); }
+
+  .controls { display: flex; flex-wrap: wrap; gap: 0.6rem; align-items: center;
+              margin-bottom: 0.4rem; font-size: 0.86rem; }
+  .controls select { padding: 0.3rem 0.4rem; border: 1px solid var(--line);
+                     border-radius: 6px; background: #fff; font-size: 0.86rem; }
+  .controls label.cb { display: flex; align-items: center; gap: 0.3rem; color: var(--muted); }
+  #count { margin-left: auto; color: var(--muted); }
+
+  #routing { display: none; background: #fff8e6; border: 1px solid #e6c960;
+             border-radius: 8px; padding: 0.6rem 0.9rem; margin: 0.6rem 0;
+             font-size: 0.88rem; }
+  #routing b { color: #8a6d00; }
+
+  .card { background: #fff; border: 1px solid var(--line); border-radius: 8px;
+          padding: 0.75rem 1rem; margin: 0.55rem 0; cursor: pointer; }
+  .card:hover { border-color: var(--accent); }
+  .card.open { cursor: default; }
+  .cardhead { display: flex; align-items: baseline; gap: 0.6rem; flex-wrap: wrap; }
+  .cardhead .score { font-variant-numeric: tabular-nums; color: var(--accent);
+                     font-weight: 600; min-width: 3.2rem; }
+  .cardhead .name { font-weight: 600; }
+  .cardhead .rid { color: var(--muted); font-size: 0.82rem; font-family: ui-monospace, monospace; }
+  .badges { display: inline-flex; gap: 0.35rem; margin-left: auto; }
+  .badge { font-size: 0.72rem; border-radius: 999px; padding: 0.1rem 0.55rem;
+           border: 1px solid var(--line); color: var(--muted); white-space: nowrap; }
+  .badge.operational { background: #e9f7ef; color: #1a7f4b; border-color: #bfe6cf; }
+  .badge.not-operational, .badge.closed { background: #fdecec; color: #b3261e; border-color: #f3c1be; }
+  .badge.commissioning, .badge.planned, .badge.unknown, .badge.restricted
+    { background: #fff6e0; color: #8a6d00; border-color: #eedc9a; }
+  .badge.deep { background: #eef4fd; color: #1f5fbf; border-color: #c4d9f5; }
+  .techline { color: var(--muted); font-size: 0.84rem; margin-top: 0.25rem; }
+  .matched { font-size: 0.8rem; color: #1a7f4b; margin-top: 0.2rem; }
+  .dircaveat { font-size: 0.78rem; color: #8a6d00; margin-top: 0.2rem; }
+
+  .detail { border-top: 1px solid var(--line); margin-top: 0.7rem; padding-top: 0.7rem;
+            font-size: 0.88rem; }
+  .detail h4 { margin: 0.7rem 0 0.25rem; font-size: 0.8rem; text-transform: uppercase;
+               letter-spacing: 0.04em; color: var(--muted); }
+  .detail ul { margin: 0.2rem 0 0.2rem 1.2rem; padding: 0; }
+  .detail li { margin: 0.12rem 0; }
+  .detail .note { color: var(--muted); }
+  .detail details { margin-top: 0.8rem; }
+  .detail summary { cursor: pointer; color: var(--muted); font-size: 0.82rem; }
+  .detail pre { background: #f6f8fa; border: 1px solid var(--line); border-radius: 6px;
+                padding: 0.7rem; overflow-x: auto; font-size: 0.75rem; }
+  .prov { color: var(--muted); font-size: 0.82rem; }
+  .prov li { margin: 0.25rem 0; }
+  #empty { color: var(--muted); padding: 2rem 0; text-align: center; display: none; }
+  footer { max-width: 1100px; margin: 0 auto; padding: 0 1.5rem 2rem;
+           color: var(--muted); font-size: 0.8rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Instrument Capability Graph — catalog browser</h1>
+  <span class="sub"><span id="total"></span> machine-readable instrument records ·
+    <a href="./">about this prototype</a> ·
+    <a href="https://github.com/agents4science/agents4science.github.io/tree/main/CapabilityGraph/prototype">data &amp; schema</a></span>
+</header>
+<main>
+  <div class="searchrow">
+    <input id="q" type="search" autocomplete="off"
+           placeholder='Describe a measurement — e.g. "trace element distribution in plant roots" — or leave empty to browse'>
+  </div>
+  <div class="chips" id="chips"></div>
+  <div class="controls">
+    <select id="f-facility"><option value="">facility: all</option></select>
+    <select id="f-status"><option value="">status: all</option></select>
+    <select id="f-depth"><option value="">depth: all</option></select>
+    <select id="f-class"><option value="">class: all</option></select>
+    <label class="cb"><input type="checkbox" id="include-all">include non-operational in search</label>
+    <span id="count"></span>
+  </div>
+  <div id="routing"></div>
+  <div id="results"></div>
+  <div id="empty">No records match.</div>
+</main>
+<footer>
+  Directory-depth records derive their measurables from a technique→measurable map and are
+  unverified by definition; deep records carry per-field provenance. Scoring is the
+  prototype's keyword+synonym scorer running in your browser — same code path as
+  <code>queries/matchmaker.py</code>. Status as of record retrieval date; see each
+  record's provenance.
+</footer>
+
+<script src="matchmaker.js"></script>
+<script>
+const DATA_FILES = ["als_deep", "als_directory", "aps_deep", "aps_directory"]
+  .map(f => `prototype/data/${f}.json`);
+
+let RECORDS = [];
+const $ = id => document.getElementById(id);
+const esc = s => String(s).replace(/[&<>"]/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+
+async function init() {
+  const lists = await Promise.all(DATA_FILES.map(f => fetch(f).then(r => {
+    if (!r.ok) throw new Error(`${f}: ${r.status}`);
+    return r.json();
+  })));
+  RECORDS = lists.flat();
+  $("total").textContent = RECORDS.length;
+  buildFacets();
+  buildChips();
+  const params = new URLSearchParams(location.search);
+  if (params.get("q")) $("q").value = params.get("q");
+  if (params.get("all") === "1") $("include-all").checked = true;
+  render();
+}
+
+function syncUrl() {
+  const params = new URLSearchParams();
+  if ($("q").value.trim()) params.set("q", $("q").value.trim());
+  if ($("include-all").checked) params.set("all", "1");
+  const qs = params.toString();
+  history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
+}
+
+function buildFacets() {
+  const fill = (id, key) => {
+    const counts = new Map();
+    for (const r of RECORDS) {
+      const v = r[key] || "unknown";
+      counts.set(v, (counts.get(v) || 0) + 1);
+    }
+    const sel = $(id);
+    for (const [v, n] of [...counts].sort((a, b) => b[1] - a[1])) {
+      const o = document.createElement("option");
+      o.value = v; o.textContent = `${v} (${n})`;
+      sel.appendChild(o);
+    }
+    sel.addEventListener("change", render);
+  };
+  fill("f-facility", "facility");
+  fill("f-status", "status");
+  fill("f-depth", "record_depth");
+  fill("f-class", "instrument_class");
+}
+
+function buildChips() {
+  for (const q of DEMO_QUERIES) {
+    const b = document.createElement("button");
+    b.className = "chip"; b.textContent = q;
+    b.addEventListener("click", () => { $("q").value = q; syncUrl(); render(); });
+    $("chips").appendChild(b);
+  }
+}
+
+function facetPass(r) {
+  return (!$("f-facility").value || (r.facility || "unknown") === $("f-facility").value)
+      && (!$("f-status").value || (r.status || "unknown") === $("f-status").value)
+      && (!$("f-depth").value || (r.record_depth || "unknown") === $("f-depth").value)
+      && (!$("f-class").value || (r.instrument_class || "unknown") === $("f-class").value);
+}
+
+function render() {
+  const query = $("q").value.trim();
+  const pool = RECORDS.filter(facetPass);
+  let rows, excluded = [];
+  if (query) {
+    const out = search(pool, query, $("include-all").checked);
+    rows = out.results;
+    excluded = out.excluded;
+  } else {
+    rows = pool
+      .slice()
+      .sort((a, b) => (a.facility + a.id).localeCompare(b.facility + b.id))
+      .map(r => ({ score: null, record: r, matched: {} }));
+  }
+
+  const routing = $("routing");
+  if (query && excluded.length) {
+    const top = excluded.slice(0, 3)
+      .map(e => `<b>${esc(e.record.id)}</b> (${esc(e.record.status)})`).join(", ");
+    routing.innerHTML = `${excluded.length} matching instrument${excluded.length > 1 ? "s are" : " is"} ` +
+      `hidden because they are not operational: ${top}. The ranked results route the request ` +
+      `to operational instruments — tick “include non-operational” to see them in place.`;
+    routing.style.display = "block";
+  } else routing.style.display = "none";
+
+  $("count").textContent = query
+    ? `${rows.length} match${rows.length === 1 ? "" : "es"} of ${pool.length} records`
+    : `${rows.length} of ${RECORDS.length} records`;
+  $("empty").style.display = rows.length ? "none" : "block";
+
+  const container = $("results");
+  container.innerHTML = "";
+  for (const row of rows) container.appendChild(card(row, !!query));
+}
+
+function card({ score, record: r, matched }, searching) {
+  const div = document.createElement("div");
+  div.className = "card";
+  const techs = (r.techniques || []).slice(0, 4)
+    .map(t => t.acronym || t.name).filter(Boolean).join(", ");
+  const matchedHtml = ["measurables", "demonstrated_applications"]
+    .filter(f => matched[f])
+    .map(f => `<div class="matched">matched ${f}: ${[...matched[f]].sort().slice(0, 6).map(esc).join(", ")}</div>`)
+    .join("");
+  div.innerHTML = `
+    <div class="cardhead">
+      ${searching ? `<span class="score">${score.toFixed(1)}</span>` : ""}
+      <span class="name">${esc(r.name || r.id)}</span>
+      <span class="rid">${esc(r.id)}</span>
+      <span class="badges">
+        <span class="badge">${esc(r.facility || "?")}</span>
+        <span class="badge ${esc(r.status || "unknown")}">${esc(r.status || "unknown")}</span>
+        <span class="badge ${r.record_depth === "deep" ? "deep" : ""}">${esc(r.record_depth || "?")}</span>
+      </span>
+    </div>
+    ${techs ? `<div class="techline">${esc(techs)}</div>` : ""}
+    ${matchedHtml}
+    ${r.record_depth === "directory" && searching
+      ? `<div class="dircaveat">directory record: measurables derived from technique map, verify on beamline page</div>` : ""}`;
+  div.addEventListener("click", () => toggleDetail(div, r));
+  return div;
+}
+
+function toggleDetail(div, r) {
+  const existing = div.querySelector(".detail");
+  if (existing) { existing.remove(); div.classList.remove("open"); return; }
+  const d = document.createElement("div");
+  d.className = "detail";
+  d.addEventListener("click", e => e.stopPropagation());
+  d.innerHTML = detailHtml(r);
+  div.appendChild(d);
+  div.classList.add("open");
+}
+
+function list(items, fmt = esc) {
+  return `<ul>${items.map(x => `<li>${fmt(x)}</li>`).join("")}</ul>`;
+}
+
+function detailHtml(r) {
+  const parts = [];
+  if (r.institution) parts.push(`<div class="note">${esc(r.institution)}</div>`);
+  if (r.measurables?.length) parts.push(`<h4>Measurables</h4>${list(r.measurables)}`);
+  if (r.techniques?.length) parts.push(`<h4>Techniques</h4>${list(r.techniques, t => {
+    let s = esc(t.name || "");
+    if (t.acronym) s += ` (${esc(t.acronym)})`;
+    if (t.variants?.length) s += ` <span class="note">— ${t.variants.map(esc).join("; ")}</span>`;
+    return s;
+  })}`);
+  if (r.demonstrated_applications?.length)
+    parts.push(`<h4>Demonstrated applications</h4>${list(r.demonstrated_applications)}`);
+  if (r.probe) {
+    const p = r.probe, bits = [];
+    if (p.type) bits.push(esc(p.type));
+    if (p.energy_range_eV) bits.push(`${(p.energy_range_eV[0] / 1000)}–${(p.energy_range_eV[1] / 1000)} keV`);
+    if (p.tunable != null) bits.push(p.tunable ? "tunable" : "fixed energy");
+    parts.push(`<h4>Probe</h4><div>${bits.join(" · ")}${p.flux_notes ? ` <span class="note">(${esc(p.flux_notes)})</span>` : ""}</div>`);
+  }
+  if (r.resolution) {
+    const notes = Object.entries(r.resolution)
+      .filter(([, v]) => v != null)
+      .map(([k, v]) => `<li><span class="note">${esc(k)}:</span> ${esc(v)}</li>`).join("");
+    if (notes) parts.push(`<h4>Resolution</h4><ul>${notes}</ul>`);
+  }
+  if (r.sample_constraints) {
+    const c = r.sample_constraints, items = [];
+    if (c.states?.length) items.push(`states: ${c.states.map(esc).join(", ")}`);
+    if (c.size_notes) items.push(esc(c.size_notes));
+    if (c.vacuum_required != null) items.push(`vacuum required: ${c.vacuum_required}`);
+    for (const s of c.special_requirements || []) items.push(esc(s));
+    if (items.length) parts.push(`<h4>Sample constraints</h4>${list(items, x => x)}`);
+  }
+  if (r.sample_environments?.length)
+    parts.push(`<h4>Sample environments</h4>${list(r.sample_environments)}`);
+  if (r.detectors?.length) parts.push(`<h4>Detectors</h4>${list(r.detectors)}`);
+  if (r.data_products?.length) parts.push(`<h4>Data products</h4>${list(r.data_products,
+    p => typeof p === "string" ? esc(p) : `${esc(p.type || "")}${p.format ? ` <span class="note">(${esc(p.format)})</span>` : ""}`)}`);
+  if (r.access) parts.push(`<h4>Access</h4><div>${esc(
+    typeof r.access === "string" ? r.access : JSON.stringify(r.access))}</div>`);
+  if (r.provenance?.length) parts.push(`<h4>Provenance</h4><ul class="prov">${r.provenance.map(p =>
+    `<li>${esc(p.source_url || "")}${p.retrieved ? ` <span class="note">(retrieved ${esc(p.retrieved)})</span>` : ""}${p.notes ? `<br><span class="note">${esc(p.notes)}</span>` : ""}</li>`).join("")}</ul>`);
+  parts.push(`<details><summary>Full record (JSON)</summary><pre>${esc(JSON.stringify(r, null, 2))}</pre></details>`);
+  return parts.join("");
+}
+
+$("q").addEventListener("input", () => { syncUrl(); render(); });
+$("include-all").addEventListener("change", () => { syncUrl(); render(); });
+init().catch(e => {
+  $("results").innerHTML = `<p style="color:#b3261e">Failed to load catalog: ${esc(e.message)}</p>`;
+});
+</script>
+</body>
+</html>

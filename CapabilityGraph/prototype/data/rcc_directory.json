@@ -1,0 +1,344 @@
+[
+ {
+  "id": "rcc-midway3",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "Midway3 — flagship cluster for multi-purpose scientific computing, introduced 2021 alongside Midway3-AMD; shared and private compute nodes",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "general-purpose HPC (Intel Cascade Lake CPU nodes)"
+   },
+   {
+    "name": "GPU computing (A100, V100, RTX6000)"
+   },
+   {
+    "name": "AMD EPYC computing (Midway3-AMD partition)"
+   }
+  ],
+  "measurables": [
+   "simulation outputs",
+   "trained models",
+   "batch and interactive computational analyses"
+  ],
+  "record_depth": "directory",
+  "automation": {
+   "notes": "Per partitions page: caslake 184 nodes (48-core Intel Gold 6248R, 192 GB); bigmem nodes 768 GB/1536 GB; gpu partition: 1 node 4x A100, 5 nodes 4x V100, 5 nodes 4x RTX6000; Midway3-AMD: 40 nodes 128-core EPYC 7702 (256 GB) plus 1 high-memory node (2048 GB)."
+  },
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, status (flagship cluster, recommended for new users)"
+   },
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/slurm/partitions/",
+    "retrieved": "2026-11-24",
+    "notes": "node counts, CPU/GPU types, memory per partition"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ },
+ {
+  "id": "rcc-midway2",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "Midway2 — general-purpose cluster succeeding the original Midway in 2016; shared and private compute nodes",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "general-purpose HPC (Intel Broadwell CPU nodes)"
+   },
+   {
+    "name": "GPU computing (K80)"
+   }
+  ],
+  "measurables": [
+   "simulation outputs",
+   "batch computational analyses"
+  ],
+  "record_depth": "directory",
+  "automation": {
+   "notes": "Per partitions page: broadwl 323 nodes (28-core E5-2680v4, 64 GB); bigmem2 5 nodes (512 GB); gpu2 6 nodes with 4x K80 each."
+  },
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, succession from original Midway"
+   },
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/slurm/partitions/",
+    "retrieved": "2026-11-24",
+    "notes": "node counts, CPU/GPU types, memory per partition"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ },
+ {
+  "id": "rcc-beagle3",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "Beagle3 — NIH-funded cluster in the Midway3 ecosystem for biomedical research, specializing in modeling and large-scale simulations of molecular structures; launched February 2022 with 44 compute nodes (Intel CPUs, NVIDIA GPUs)",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "GPU computing (A100, A40)"
+   },
+   {
+    "name": "biomedical HPC for molecular modeling and simulation"
+   }
+  ],
+  "measurables": [
+   "large-scale molecular structure simulations",
+   "biomedical modeling outputs"
+  ],
+  "record_depth": "directory",
+  "automation": {
+   "notes": "Per partitions page: 22 nodes with 4x A100 and 22 nodes with 4x A40 (32-core Intel Gold 6346, 256 GB each), plus 4 bigmem nodes (512 GB). Eligibility applies."
+  },
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, funding, launch date, 44-node count, eligibility"
+   },
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/slurm/partitions/",
+    "retrieved": "2026-11-24",
+    "notes": "per-partition node/GPU breakdown"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ },
+ {
+  "id": "rcc-midwayssd",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "MidwaySSD — Midway3-ecosystem cluster serving computationally intensive Social Sciences Division research and educational purposes",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "general-purpose HPC for social-science research"
+   },
+   {
+    "name": "GPU computing (A100)"
+   }
+  ],
+  "measurables": [
+   "social-science computational analyses",
+   "simulation and model outputs"
+  ],
+  "record_depth": "directory",
+  "automation": {
+   "notes": "Per partitions page: ssd partition 18 nodes (48-core Gold 6248R, 192 GB, 960 GB local storage); ssd-gpu 1 node with 4x A100. Eligibility applies."
+  },
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, eligibility"
+   },
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/slurm/partitions/",
+    "retrieved": "2026-11-24",
+    "notes": "node counts, GPU type"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ },
+ {
+  "id": "rcc-skyway",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "Skyway — service to seamlessly burst computing workloads from the Midway2 and Midway3 ecosystems to commercial cloud platforms (AWS, GCP)",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "cloud bursting of HPC workloads to AWS and Google Cloud"
+   }
+  ],
+  "measurables": [
+   "cloud-executed job outputs without user-managed cloud resources"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, supported clouds"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ },
+ {
+  "id": "rcc-dali",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "DaLI — Data Lifecycle Instrument in the Midway2 ecosystem; unified workflow for acquiring, transferring, processing, and storing experimental and observational data",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "data lifecycle management and processing (compute plus storage)"
+   }
+  ],
+  "measurables": [
+   "processed and published experimental/observational datasets",
+   "data-management workflows"
+  ],
+  "record_depth": "directory",
+  "automation": {
+   "notes": "Per partitions page: dali partition 29 nodes (40-core Intel Gold 6148, 96 GB). Eligibility applies."
+  },
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, eligibility"
+   },
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/slurm/partitions/",
+    "retrieved": "2026-11-24",
+    "notes": "node count, CPU type, memory"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ },
+ {
+  "id": "rcc-gm4",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "GM4 — GPU-enabled cluster in the Midway2 ecosystem for multiscale materials modeling and machine learning, supporting molecular dynamics and continuum simulations; NSF MRI-funded",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "GPU computing for materials modeling and machine learning"
+   }
+  ],
+  "measurables": [
+   "molecular dynamics and continuum simulation outputs",
+   "trained models",
+   "algorithm and software development results"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, NSF MRI funding, eligibility; no node/GPU counts stated on this page"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ },
+ {
+  "id": "rcc-sde3",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "SDE3 — trusted HPC environment in the Secure Data Enclave ecosystem for research on regulated data, with additional data security and privacy controls",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "secure computing for restricted/regulated data"
+   }
+  ],
+  "measurables": [
+   "analyses of sensitive or regulated datasets under enhanced security controls"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, SDE ecosystem role"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ },
+ {
+  "id": "rcc-sde2",
+  "facility": "RCC",
+  "institution": "UChicago",
+  "name": "SDE2 — trusted HPC environment in the Secure Data Enclave ecosystem for research on regulated data, compliant with NIST SP800-53",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "secure computing for restricted/regulated data (NIST SP800-53 compliant)"
+   }
+  ],
+  "measurables": [
+   "analyses of sensitive or regulated datasets under enhanced security controls"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://rcc-uchicago.github.io/user-guide/ecosystems/",
+    "retrieved": "2026-11-24",
+    "notes": "name, description, compliance standard; main rcc.uchicago.edu site was unreachable from this environment, so all records derive from the official RCC user guide (rcc-uchicago.github.io)"
+   }
+  ],
+  "location": {
+   "building": "Joseph Regenstein Library (RCC offices; compute hardware in UChicago data centers)",
+   "address": "1100 E 57th St, Chicago, IL 60637",
+   "latitude": 41.79216,
+   "longitude": -87.59997,
+   "source": "coordinates OSM Nominatim, building-level for Regenstein (retrieved 2026-11-24); RCC's public address — cluster hardware location not published"
+  }
+ }
+]

@@ -85,6 +85,8 @@ FIELD_WEIGHTS = [
     ("name", 1.0),
     ("aliases", 1.0),
     ("facility", 1.0),
+    ("institution", 1.0),
+    ("location", 1.0),
 ]
 
 def load_records():
@@ -108,6 +110,8 @@ def expand(query_tokens):
 
 def field_text(record, field):
     v = record.get(field, "")
+    if field == "location":
+        return " ".join(str(v.get(k)) for k in ("building", "room", "address") if v.get(k)) if isinstance(v, dict) else ""
     if field == "techniques":
         parts = []
         for t in v:

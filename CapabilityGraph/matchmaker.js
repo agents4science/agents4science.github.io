@@ -65,6 +65,8 @@ const FIELD_WEIGHTS = [
   ["name", 1.0],
   ["aliases", 1.0],
   ["facility", 1.0],
+  ["institution", 1.0],
+  ["location", 1.0],
 ];
 
 function tokens(text) {
@@ -91,6 +93,9 @@ function expand(queryTokens) {
 
 function fieldText(record, field) {
   const v = record[field] ?? "";
+  if (field === "location") {
+    return [v.building, v.room, v.address].filter(Boolean).join(" ");
+  }
   if (field === "techniques") {
     const parts = [];
     for (const t of v) {

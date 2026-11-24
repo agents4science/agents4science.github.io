@@ -1,0 +1,524 @@
+[
+ {
+  "id": "lcls-tmo",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "TMO — Time-resolved Atomic, Molecular and Optical Science",
+  "instrument_class": "fel-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "charged particle spectroscopy"
+   },
+   {
+    "name": "time- and angle-resolved photoelectron spectroscopy"
+   },
+   {
+    "name": "magnetic bottle electron time-of-flight spectrometry",
+    "acronym": "MBES"
+   },
+   {
+    "name": "co-axial velocity map imaging",
+    "acronym": "cVMI"
+   },
+   {
+    "name": "reaction microscopy (COLTRIMS-type DREAM endstation)",
+    "acronym": "DREAM"
+   },
+   {
+    "name": "optical pump / X-ray probe"
+   },
+   {
+    "name": "attosecond (sub-femtosecond) X-ray pulse experiments",
+    "acronym": "XLEAP"
+   },
+   {
+    "name": "nonlinear X-ray interactions"
+   }
+  ],
+  "measurables": [
+   "attosecond-to-femtosecond electron dynamics in isolated quantum systems",
+   "gas-phase photochemistry and reaction dynamics via coincident ion/electron detection",
+   "dynamics of nanoscale systems",
+   "phase-resolved transient transmission of thin solid targets"
+  ],
+  "lcls_ii_note": "One of the three new LCLS-II soft X-ray instruments (NEH 1.1, 0.25–2 keV), designed for both 120 Hz copper linac and up to 1 MHz superconducting linac operation. In Run 27 (Sep 2026–Mar 2027) it runs at 120 Hz on the normal-conducting linac while the superconducting accelerator undergoes the LCLS-II-HE upgrade; the DREAM reaction microscope is not available at the low repetition rate.",
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch NEH 1.1, short description, LCLS-II instrument grouping"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/tmo",
+    "retrieved": "2026-11-24",
+    "notes": "energy range, endstations (IP1, IP2/DREAM), techniques, pump-probe timing"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "operational status (available for Run 27 user proposals), full name, standard configurations (MBES, cVMI, MRCO), XLEAP, DREAM unavailability, LCLS-II-HE upgrade context"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ },
+ {
+  "id": "lcls-txi",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "TXI — Tender X-ray Instrument (Tender X-ray Imaging)",
+  "instrument_class": "fel-instrument",
+  "status": "unknown",
+  "techniques": [
+   {
+    "name": "X-ray pump / X-ray probe"
+   },
+   {
+    "name": "two-color X-ray experiments from two independent FELs"
+   },
+   {
+    "name": "coherent scattering / forward diffraction"
+   },
+   {
+    "name": "tender X-ray spectroscopy"
+   }
+  ],
+  "measurables": [
+   "nonlinear X-ray science phenomena",
+   "coherent scattering from sub-micron samples in the tender X-ray range (~1.8–7.1 keV)",
+   "tender X-ray spectroscopic signatures"
+  ],
+  "lcls_ii_note": "One of the new LCLS-II instruments (NEH 1.2); combines X-rays from two independent FELs. Not listed among instruments offered in the Run 27 proposal call.",
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch NEH 1.2, 'Tender X-ray Imaging' name, two-FEL capability, LCLS-II grouping"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/txi",
+    "retrieved": "2026-11-24",
+    "notes": "'Tender X-ray Instrument' title, three primary goals (X-ray pump/X-ray probe, coherent scattering of sub-micron samples 1.8–7.1 keV, tender X-ray spectroscopy), endstation design described in future tense"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "TXI absent from Run 27 instrument offering, hence status recorded as unknown"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ },
+ {
+  "id": "lcls-xpp",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "XPP — X-ray Pump Probe",
+  "instrument_class": "fel-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "optical pump / hard X-ray probe"
+   },
+   {
+    "name": "time-resolved X-ray diffraction (in air or vacuum, down to ~20 K)"
+   },
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   },
+   {
+    "name": "X-ray emission spectroscopy",
+    "acronym": "XES"
+   },
+   {
+    "name": "wide-angle X-ray scattering",
+    "acronym": "WAXS"
+   },
+   {
+    "name": "X-ray photon correlation spectroscopy via mini split-and-delay",
+    "acronym": "XPCS"
+   },
+   {
+    "name": "X-ray pump / X-ray probe (mini split-and-delay)"
+   }
+  ],
+  "measurables": [
+   "ultrafast structural dynamics of laser-induced transient states in solids, liquids, and gases at atomic-motion timescales",
+   "laser-induced electronic and structural changes probed by diffraction, scattering, and spectroscopy",
+   "low-temperature structural dynamics (sample environments down to ~20 K)"
+  ],
+  "lcls_ii_note": "Restarted user operation at 120 Hz in Run 26 (April 2026) after re-commissioning; targeting high-repetition-rate X-rays in about two years with an optical laser switch from 120 Hz to tens of kHz. New grating-based beam multiplexing adopted because the previous thin-crystal scheme is incompatible with LCLS-II-HE.",
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch NEH 1.3, short description, instrument lead"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/xpp",
+    "retrieved": "2026-11-24",
+    "notes": "Run 26 restart statement, techniques (XAS, XES, diffraction, scattering, split-and-delay, WAXS), high-rep-rate upgrade plans, measurables"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "operational status (offered in Run 27), multiplexing change and LCLS-II-HE compatibility, standard configurations"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ },
+ {
+  "id": "lcls-chemrixs",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "chemRIXS — chemRIXS (soft X-ray resonant inelastic scattering instrument for condensed-phase chemistry)",
+  "instrument_class": "fel-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "resonant inelastic X-ray scattering",
+    "acronym": "RIXS"
+   },
+   {
+    "name": "X-ray absorption spectroscopy (transmission, total fluorescence yield, partial fluorescence yield)",
+    "acronym": "XAS"
+   },
+   {
+    "name": "X-ray emission spectroscopy",
+    "acronym": "XES"
+   },
+   {
+    "name": "femtosecond optical pump / soft X-ray probe spectroscopy on liquid jets"
+   }
+  ],
+  "measurables": [
+   "ultrafast electronic-structure dynamics of photoexcited molecules in solution",
+   "element-, site-, and orbital-specific views of condensed-phase photochemical reactions",
+   "rare chemical events and fluctuating heterogeneous complexes"
+  ],
+  "lcls_ii_note": "One of the two permanent LCLS-II soft X-ray instruments on the NEH 2.2 beamline (250 eV–1.6 keV, designed for the superconducting linac's programmable high repetition rate). In Run 27 it is offered at a maximum 120 Hz from the normal-conducting linac while the superconducting accelerator undergoes the LCLS-II-HE upgrade.",
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch NEH 2.2, short description, instrument lead, LCLS-II grouping"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/chemrixs",
+    "retrieved": "2026-11-24",
+    "notes": "soft X-ray range, XAS/XES/RIXS detectors, liquid jet sample delivery, pump laser capabilities"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "operational status (available for Run 27 general user proposals at 120 Hz), SVLS spectrometer, PFY-XAS/transmission-XAS/TFY detection, XLEAP sub-fs capability"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ },
+ {
+  "id": "lcls-qrixs",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "qRIXS — qRIXS (soft X-ray resonant inelastic scattering instrument for correlated-electron condensed matter)",
+  "instrument_class": "fel-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "time-resolved resonant inelastic X-ray scattering",
+    "acronym": "RIXS"
+   },
+   {
+    "name": "transient X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   },
+   {
+    "name": "X-ray diffraction"
+   },
+   {
+    "name": "X-ray reflectivity"
+   },
+   {
+    "name": "optical pump (THz to UV) / soft X-ray probe"
+   }
+  ],
+  "measurables": [
+   "quantum phenomena and collective excitations in correlated-electron condensed matter systems",
+   "transient electronic structure of photoexcited materials",
+   "rare chemical events and fluctuating heterogeneous complexes"
+  ],
+  "lcls_ii_note": "One of the two permanent LCLS-II soft X-ray instruments on the NEH 2.2 beamline (250 eV–1.6 keV). Offered in Run 27 at 120 Hz from the normal-conducting linac during the LCLS-II-HE upgrade; at 120 Hz, time-resolved RIXS is generally not offered unless an exceptionally strong technical case is made.",
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch NEH 2.2, short description, instrument lead, LCLS-II grouping"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/qrixs",
+    "retrieved": "2026-11-24",
+    "notes": "soft X-ray range, beamline layout shared with chemRIXS, science scope"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "operational status (available for Run 27 general user proposals), technique list (time-resolved RIXS, transient XAS, diffraction, reflectivity), 120 Hz RIXS limitation, Carbide laser"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ },
+ {
+  "id": "lcls-xcs",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "XCS — X-ray Correlation Spectroscopy",
+  "instrument_class": "fel-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray photon correlation spectroscopy",
+    "acronym": "XPCS"
+   },
+   {
+    "name": "coherent X-ray scattering",
+    "acronym": "CXS"
+   },
+   {
+    "name": "split-and-delay ultrafast correlation measurements"
+   },
+   {
+    "name": "THz pump / X-ray probe"
+   },
+   {
+    "name": "solution scattering and hard X-ray spectroscopy (liquid jet standard configuration)"
+   }
+  ],
+  "measurables": [
+   "equilibrium and non-equilibrium dynamics of large groups of atoms in disordered or modulated condensed matter",
+   "slow dynamics from 10 milliseconds to thousands of seconds (sequential mode)",
+   "ultrafast dynamics from 100 femtoseconds to several nanoseconds (split-and-delay mode)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch FEH 4, short description, instrument lead"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/xcs",
+    "retrieved": "2026-11-24",
+    "notes": "full name, CXS/XPCS techniques, timescale ranges, split-and-delay mode"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "operational status (offered in Run 27 at 120 Hz), newly commissioned collinear THz pump, liquid-jet solution scattering/spectroscopy configuration"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ },
+ {
+  "id": "lcls-mfx",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "MFX — Macromolecular Femtosecond Crystallography",
+  "instrument_class": "fel-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "macromolecular femtosecond X-ray crystallography (diffraction-before-destruction, room temperature, atmospheric pressure)"
+   },
+   {
+    "name": "X-ray spectroscopy (multi-modal, simultaneous with crystallography)"
+   },
+   {
+    "name": "optical pump / X-ray probe (femtosecond and nanosecond lasers)"
+   }
+  ],
+  "measurables": [
+   "room-temperature, radiation-damage-limited structures of biological macromolecules, including metal-containing proteins",
+   "high-resolution structural information simultaneously with electronic structure of protein metal centers",
+   "time-resolved structural dynamics of photoexcited biological samples"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch FEH 4.5, short description, instrument lead"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/mfx",
+    "retrieved": "2026-11-24",
+    "notes": "full name, multi-modal crystallography+spectroscopy, diffraction-before-destruction, sample delivery (liquid jets, droplet-on-demand, fixed targets, goniometer, HERA helium environment), fs/ns pump lasers, detectors (Jungfrau 16M, Rayonix 340)"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "operational status (offered in Run 27 with same capabilities as prior runs)"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ },
+ {
+  "id": "lcls-cxi",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "CXI — Coherent X-ray Imaging",
+  "instrument_class": "fel-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "coherent X-ray imaging / forward scattering of non-periodic nanoscale objects (diffraction-before-destruction)"
+   },
+   {
+    "name": "X-ray emission spectroscopy",
+    "acronym": "XES"
+   },
+   {
+    "name": "small- and wide-angle X-ray scattering",
+    "acronym": "SAXS/WAXS"
+   },
+   {
+    "name": "back-scattering"
+   },
+   {
+    "name": "ion and electron time-of-flight spectroscopy",
+    "acronym": "TOF"
+   },
+   {
+    "name": "femtosecond optical pump / X-ray probe"
+   }
+  ],
+  "measurables": [
+   "structures of non-periodic nanoscale objects imaged before radiation damage sets in",
+   "structures of weakly scattering and radiation-sensitive systems in a low-background vacuum environment",
+   "femtosecond time-resolved structural dynamics of samples in liquid jets or on fixed targets"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch FEH 5, short description, instrument lead"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/cxi",
+    "retrieved": "2026-11-24",
+    "notes": "full name, diffraction-before-destruction method, technique suite (XES, back-scattering, SAXS/WAXS, ion/electron TOF), KB optics foci (10/1/0.1 micron, 5–10.5 keV), pump laser, sample delivery"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "operational status (offered in Run 27 with same capabilities as prior runs)"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ },
+ {
+  "id": "lcls-mec",
+  "facility": "LCLS",
+  "institution": "SLAC",
+  "name": "MEC — Matter in Extreme Conditions",
+  "instrument_class": "fel-instrument",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "wide-angle X-ray diffraction with high-power optical laser drive",
+    "acronym": "XRD"
+   },
+   {
+    "name": "high-resolution X-ray imaging (Be compound refractive lenses)"
+   },
+   {
+    "name": "X-ray spectrometry (shielded spectrometer)"
+   },
+   {
+    "name": "velocity interferometer system for any reflector velocimetry",
+    "acronym": "VISAR"
+   },
+   {
+    "name": "optical laser pump (long- and short-pulse) / X-ray probe"
+   },
+   {
+    "name": "multi-frame ultrafast X-ray imaging with multi-bucket pulse trains (developing capability)"
+   }
+  ],
+  "measurables": [
+   "transient behavior of matter at temperatures above 10,000 K and pressures around 10 million atmospheres",
+   "warm dense matter structure and dynamics",
+   "shock physics and high-pressure states, including shock-wave velocities via VISAR",
+   "inertial fusion energy target physics (e.g. wetted foam targets)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments",
+    "retrieved": "2026-11-24",
+    "notes": "instrument listing, hutch FEH 6, short description, instrument lead"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/instruments/mec",
+    "retrieved": "2026-11-24",
+    "notes": "full name, diagnostic suite (X-ray imaging, large-area XRD detectors, shielded spectrometer, VISAR), science areas (warm dense matter, high pressure, shock physics, IFE), Run 27 standard configurations, VISAR rapid access"
+   },
+   {
+    "source_url": "https://lcls.slac.stanford.edu/proposals/run27",
+    "retrieved": "2026-11-24",
+    "notes": "operational status (offered in Run 27), IFE emphasis up to 50% of beamtime, VISAR-only rapid access proposals"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); hutch locations (NEH/FEH) in record names"
+  }
+ }
+]

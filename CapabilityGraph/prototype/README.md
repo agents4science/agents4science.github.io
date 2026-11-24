@@ -2,14 +2,14 @@
 
 A machine-readable catalog of scientific-instrument capabilities plus a
 matchmaker that resolves "I want to measure X" to ranked instruments.
-Scope: ALS (49 beamlines: 8 deep + 41 directory), APS (71 records:
-3 deep — 2-ID-E, 13-ID-E, 2-BM — + 68 directory), PoLARIS (19
-robotic synthesis/formulation/characterization platforms, published
-2026-11-24, under review by the node team), Argonne's four RAPID
-autonomous labs (RPL, RAPID-200, RAPID-350, RAPID-446; lab-level
-directory records), and three DOE computing facilities (Aurora/ALCF,
-Perlmutter/NERSC, Frontier/OLCF). 146 records total (106 when first
-written: ALS+APS only).
+Scope: all five DOE light sources — ALS (49: 8 deep + 41 directory),
+APS (71: 3 deep — 2-ID-E, 13-ID-E, 2-BM — + 68 directory), NSLS-II
+(30 directory), SSRL (29 directory), LCLS (9 FEL instruments, statuses
+from the Run 27 proposal call) — plus PoLARIS (19 robotic platforms,
+published 2026-11-24, under node-team review), Argonne's four RAPID
+autonomous labs (RPL, RAPID-200, RAPID-350, RAPID-446; lab-level), and
+three DOE computing facilities (Aurora/ALCF, Perlmutter/NERSC,
+Frontier/OLCF). 214 records total (106 when first written: ALS+APS only).
 
 Flagship cross-facility demo: "trace element distribution in plant roots" —
 the ALS XRF microprobe (10.3.2) is not operational, so the query resolves

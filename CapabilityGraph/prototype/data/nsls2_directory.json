@@ -1,0 +1,1112 @@
+[
+ {
+  "id": "nsls2-2-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "2-ID SIX (Soft Inelastic X-ray Scattering)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "resonant inelastic X-ray scattering (soft X-ray)",
+    "acronym": "RIXS"
+   }
+  ],
+  "measurables": [
+   "low-energy electronic, magnetic, and lattice excitations (e.g. magnons, phonons, charge/orbital excitations) in quantum materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Electronic Structure), operating status; technique derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-3-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "3-ID HXN (Hard X-ray Nanoprobe)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "scanning X-ray fluorescence nanoprobe microscopy",
+    "acronym": "nano-XRF"
+   },
+   {
+    "name": "X-ray ptychography"
+   },
+   {
+    "name": "nanobeam X-ray diffraction",
+    "acronym": "nano-XRD"
+   }
+  ],
+  "measurables": [
+   "elemental composition and distribution at the nanoscale",
+   "nanoscale structure, strain, and morphology of materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Imaging & Microscopy), operating status; techniques derived from beamline name and program listing"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-4-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "4-ID ISR (In-situ and Resonant Hard X-ray Studies)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "in-situ X-ray diffraction",
+    "acronym": "XRD"
+   },
+   {
+    "name": "resonant elastic X-ray scattering",
+    "acronym": "REXS"
+   }
+  ],
+  "measurables": [
+   "crystal structure and its evolution during growth or processing",
+   "element- and orbital-sensitive electronic and magnetic ordering"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Complex Scattering), operating status; techniques derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-4-bm",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "4-BM XFM (X-ray Fluorescence Microprobe)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray fluorescence microprobe mapping",
+    "acronym": "XRF"
+   },
+   {
+    "name": "X-ray absorption near-edge structure imaging",
+    "acronym": "XANES"
+   }
+  ],
+  "measurables": [
+   "elemental composition and distribution at micron scale",
+   "chemical speciation and oxidation state of elements in heterogeneous samples"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, operating status; fast fluorescence imaging capability noted on NSLS-II hard X-ray program page (https://www.bnl.gov/nsls2/programs/hard-x-ray.php)"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-5-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "5-ID SRX (Submicron Resolution X-ray Spectroscopy)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "scanning X-ray fluorescence microscopy",
+    "acronym": "XRF"
+   },
+   {
+    "name": "X-ray absorption spectroscopy (microbeam)",
+    "acronym": "XAS"
+   }
+  ],
+  "measurables": [
+   "elemental composition and distribution at submicron resolution",
+   "spatially resolved chemical speciation and oxidation state"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Imaging & Microscopy), operating status; techniques derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-6-bm",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "6-BM BMM (Beamline for Materials Measurement)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray absorption fine structure spectroscopy",
+    "acronym": "XAFS"
+   },
+   {
+    "name": "X-ray diffraction",
+    "acronym": "XRD"
+   }
+  ],
+  "measurables": [
+   "local atomic coordination and oxidation state around selected elements",
+   "crystal structure and phase identification"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Spectroscopy), operating status; NIST partner beamline per Wikipedia (https://en.wikipedia.org/wiki/National_Synchrotron_Light_Source_II)"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-7-bm",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "7-BM QAS (Quick X-ray Absorption and Scattering)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "quick-scanning X-ray absorption spectroscopy",
+    "acronym": "QXAFS"
+   },
+   {
+    "name": "X-ray scattering"
+   }
+  ],
+  "measurables": [
+   "time-resolved oxidation state and local atomic structure during reactions (e.g. catalysis, batteries)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Spectroscopy), operating status; techniques derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-7-id-1",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "7-ID-1 SST-1 (Spectroscopy Soft and Tender 1)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "near-edge X-ray absorption fine structure spectroscopy",
+    "acronym": "NEXAFS"
+   },
+   {
+    "name": "X-ray photoelectron spectroscopy",
+    "acronym": "XPS"
+   }
+  ],
+  "measurables": [
+   "surface and near-surface chemical composition and bonding",
+   "element-specific electronic structure of surfaces and thin films"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Spectroscopy), operating status; NIST partner beamline per Wikipedia (https://en.wikipedia.org/wiki/National_Synchrotron_Light_Source_II); techniques derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-7-id-2",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "7-ID-2 SST-2 (Spectroscopy Soft and Tender 2)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray photoelectron spectroscopy (tender X-ray)",
+    "acronym": "XPS"
+   },
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   }
+  ],
+  "measurables": [
+   "depth-resolved chemical composition and bonding of surfaces, interfaces, and buried layers"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Spectroscopy), operating status; NIST partner beamline per Wikipedia (https://en.wikipedia.org/wiki/National_Synchrotron_Light_Source_II); techniques derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-8-bm",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "8-BM TES (Tender Energy X-ray Absorption Spectroscopy)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "tender-energy X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   },
+   {
+    "name": "X-ray fluorescence microprobe mapping",
+    "acronym": "XRF"
+   }
+  ],
+  "measurables": [
+   "chemical speciation of light-to-mid-Z elements (e.g. S, P, Cl) in environmental and biological samples",
+   "elemental composition and distribution"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Spectroscopy), operating status; techniques derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-8-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "8-ID ISS (Inner-Shell Spectroscopy)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray absorption spectroscopy (XANES/EXAFS)",
+    "acronym": "XAS"
+   }
+  ],
+  "measurables": [
+   "oxidation state and local atomic coordination around selected elements, including under operando conditions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Spectroscopy), operating status; technique derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-9-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "9-ID CDI (Coherent Diffractive Imaging)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "coherent diffractive imaging",
+    "acronym": "CDI"
+   },
+   {
+    "name": "X-ray ptychography"
+   }
+  ],
+  "measurables": [
+   "nanometer-resolution images of structure and strain in micron-scale samples"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamline-development.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, development/commissioning status"
+   },
+   {
+    "source_url": "https://www.bnl.gov/newsroom/news.php?a=222771",
+    "retrieved": "2026-11-24",
+    "notes": "first-light milestone and planned transition to user operations in the 2025-2027 window; micron-scale samples at nanometer resolution"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-10-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "10-ID IXS (Inelastic X-ray Scattering)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "inelastic X-ray scattering (meV-resolution)",
+    "acronym": "IXS"
+   }
+  ],
+  "measurables": [
+   "phonon dispersions and collective atomic dynamics in solids and liquids"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Complex Scattering), operating status; technique derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-11-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "11-ID CHX (Coherent Hard X-ray Scattering)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray photon correlation spectroscopy",
+    "acronym": "XPCS"
+   },
+   {
+    "name": "coherent small-angle X-ray scattering",
+    "acronym": "c-SAXS"
+   },
+   {
+    "name": "coherent wide-angle X-ray scattering",
+    "acronym": "c-WAXS"
+   }
+  ],
+  "measurables": [
+   "nanoscale dynamics and fluctuations in materials (equilibrium and non-equilibrium)",
+   "nanoscale structure of soft and hard matter"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/userguide/available-beamlines.php",
+    "retrieved": "2026-11-24",
+    "notes": "techniques (c-SAXS, c-WAXS, XPCS)"
+   },
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, operating status"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-11-bm",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "11-BM CMS (Complex Materials Scattering)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "small-angle X-ray scattering (transmission and grazing-incidence)",
+    "acronym": "SAXS/GISAXS"
+   },
+   {
+    "name": "wide-angle X-ray scattering (transmission and grazing-incidence)",
+    "acronym": "WAXS/GIWAXS"
+   }
+  ],
+  "measurables": [
+   "nanoscale size, shape, and ordering of soft materials and nanomaterials",
+   "molecular packing and crystallinity in thin films"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/userguide/available-beamlines.php",
+    "retrieved": "2026-11-24",
+    "notes": "techniques (transmission/grazing-incidence SAXS and WAXS)"
+   },
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Complex Scattering), operating status"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-12-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "12-ID SMI (Soft Matter Interfaces)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "grazing-incidence small-angle X-ray scattering",
+    "acronym": "GISAXS"
+   },
+   {
+    "name": "grazing-incidence wide-angle X-ray scattering",
+    "acronym": "GIWAXS"
+   }
+  ],
+  "measurables": [
+   "nanoscale structure and ordering at surfaces, interfaces, and in thin films of soft matter"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Complex Scattering), operating status; techniques derived from beamline name and NSLS-II complex scattering program page (https://www.bnl.gov/nsls2/programs/complex-scattering.php)"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-16-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "16-ID LiX (Life Science X-ray Scattering)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "biological solution small-angle X-ray scattering",
+    "acronym": "bioSAXS"
+   },
+   {
+    "name": "small- and wide-angle X-ray scattering",
+    "acronym": "SWAXS"
+   }
+  ],
+  "measurables": [
+   "overall size, shape, and conformational states of biomolecules in solution"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/userguide/available-beamlines.php",
+    "retrieved": "2026-11-24",
+    "notes": "SWAXS endstation capabilities"
+   },
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Structural Biology), operating status"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-17-bm",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "17-BM XFP (X-ray Footprinting of Biological Materials)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray footprinting (hydroxyl radical labeling)",
+    "acronym": "XF"
+   }
+  ],
+  "measurables": [
+   "solvent accessibility and conformational changes of proteins and nucleic acids in solution"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Structural Biology), operating status; technique derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-17-id-1",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "17-ID-1 AMX (Highly Automated Macromolecular Crystallography)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "macromolecular crystallography",
+    "acronym": "MX"
+   }
+  ],
+  "measurables": [
+   "three-dimensional atomic structures of proteins and other biological macromolecules"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Structural Biology), operating status"
+   },
+   {
+    "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9641562/",
+    "retrieved": "2026-11-24",
+    "notes": "published description of AMX as highly automated MX beamline"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-17-id-2",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "17-ID-2 FMX (Frontier Microfocusing Macromolecular Crystallography)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "microfocus macromolecular crystallography",
+    "acronym": "MX"
+   }
+  ],
+  "measurables": [
+   "three-dimensional atomic structures of macromolecules from micron-sized crystals"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Structural Biology), operating status; technique derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-18-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "18-ID FXI (Full Field X-ray Imaging)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "full-field transmission X-ray microscopy",
+    "acronym": "TXM"
+   },
+   {
+    "name": "X-ray nano-tomography"
+   }
+  ],
+  "measurables": [
+   "3D internal structure and morphology of materials at tens-of-nanometers resolution, including during dynamic processes"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Imaging & Microscopy), operating status; techniques derived from beamline name and NSLS-II imaging program page (https://www.bnl.gov/nsls2/programs/imaging.php)"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-19-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "19-ID NYX (NYSBC Biological Microdiffraction Facility)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "microdiffraction macromolecular crystallography",
+    "acronym": "MX"
+   }
+  ],
+  "measurables": [
+   "three-dimensional atomic structures of macromolecules from very small or challenging crystals"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Structural Biology), operating status; New York Structural Biology Center partner beamline per Wikipedia (https://en.wikipedia.org/wiki/National_Synchrotron_Light_Source_II)"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-21-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "21-ID ESM (Electron Spectro-Microscopy)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "angle-resolved photoemission spectroscopy",
+    "acronym": "ARPES"
+   },
+   {
+    "name": "X-ray photoemission electron microscopy",
+    "acronym": "XPEEM"
+   }
+  ],
+  "measurables": [
+   "electronic band structure of crystalline materials",
+   "spatially resolved electronic, chemical, and magnetic structure of surfaces"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/userguide/available-beamlines.php",
+    "retrieved": "2026-11-24",
+    "notes": "ARPES and XPEEM endstation capabilities"
+   },
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Electronic Structure), operating status"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-22-ir-1",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "22-IR-1 FIS (Frontier Synchrotron Infrared Spectroscopy)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "synchrotron far-infrared spectroscopy",
+    "acronym": "FTIR"
+   }
+  ],
+  "measurables": [
+   "vibrational modes and low-energy optical properties of materials, including under extreme conditions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Electronic Structure), operating status; technique derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-22-ir-2",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "22-IR-2 MET (Magnetic, Ellipsometric, and Time-resolved Infrared Nanospectroscopies)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "infrared nanospectroscopy"
+   },
+   {
+    "name": "infrared ellipsometry"
+   },
+   {
+    "name": "time-resolved infrared spectroscopy"
+   }
+  ],
+  "measurables": [
+   "nanoscale chemical and optical properties via vibrational spectra",
+   "optical constants and dynamic responses of materials in the infrared"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Electronic Structure), operating status; techniques derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-23-id-1",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "23-ID-1 CSX (Coherent Soft X-ray Scattering)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "coherent and resonant soft X-ray scattering",
+    "acronym": "RSXS"
+   },
+   {
+    "name": "soft X-ray photon correlation spectroscopy",
+    "acronym": "XPCS"
+   }
+  ],
+  "measurables": [
+   "electronic, charge, orbital, and magnetic ordering and their fluctuations in quantum materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, program grouping (Electronic Structure), operating status; techniques derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-23-id-2",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "23-ID-2 IOS (In situ and Operando Soft X-ray Spectroscopy)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "ambient-pressure X-ray photoelectron spectroscopy",
+    "acronym": "AP-XPS"
+   },
+   {
+    "name": "soft X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   }
+  ],
+  "measurables": [
+   "surface chemical composition and bonding under realistic reaction conditions (e.g. working catalysts)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, operating status; techniques derived from beamline name and NSLS-II program listing"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-27-id",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "27-ID HEX (High Energy Engineering X-ray Scattering)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "monochromatic high-energy X-ray diffraction with area detector",
+    "acronym": "XRD"
+   },
+   {
+    "name": "spatially resolved energy-dispersive X-ray diffraction",
+    "acronym": "EDXD"
+   }
+  ],
+  "measurables": [
+   "residual strain, stress, phase, and texture inside bulk engineering materials and devices (e.g. batteries, welds)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/programs/hard-x-ray.php",
+    "retrieved": "2026-11-24",
+    "notes": "techniques (energy-dispersive and monochromatic high-energy diffraction)"
+   },
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, operating status"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-28-id-1",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "28-ID-1 PDF (Pair Distribution Function)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray pair distribution function analysis",
+    "acronym": "PDF"
+   },
+   {
+    "name": "wide-angle X-ray powder diffraction",
+    "acronym": "XRD"
+   }
+  ],
+  "measurables": [
+   "local atomic structure of disordered, amorphous, and nanocrystalline materials",
+   "crystal structure and phase identification"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/programs/hard-x-ray.php",
+    "retrieved": "2026-11-24",
+    "notes": "techniques (X-ray PDF, wide-angle powder diffraction)"
+   },
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, operating status"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ },
+ {
+  "id": "nsls2-28-id-2",
+  "facility": "NSLS-II",
+  "institution": "BNL",
+  "name": "28-ID-2 XPD (X-ray Powder Diffraction)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray powder diffraction",
+    "acronym": "XRD"
+   },
+   {
+    "name": "pair distribution function analysis",
+    "acronym": "PDF"
+   }
+  ],
+  "measurables": [
+   "crystal structure, phase composition, and structural evolution under in-situ/operando conditions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www.bnl.gov/nsls2/programs/hard-x-ray.php",
+    "retrieved": "2026-11-24",
+    "notes": "program listing of XPD under hard X-ray methods"
+   },
+   {
+    "source_url": "https://www.bnl.gov/nsls2/beamlines/map.php",
+    "retrieved": "2026-11-24",
+    "notes": "beamline port, name/acronym, operating status; technique derived from beamline name"
+   }
+  ],
+  "location": {
+   "building": "Building 740 (NSLS-II)",
+   "address": "Brookhaven National Laboratory, Upton, NY 11973",
+   "latitude": 40.86464,
+   "longitude": -72.87191,
+   "source": "coordinates OSM Nominatim, building-level (retrieved 2026-11-24)"
+  }
+ }
+]

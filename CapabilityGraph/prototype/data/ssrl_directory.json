@@ -1,0 +1,1464 @@
+[
+ {
+  "id": "ssrl-2-1",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "2-1 Powder and thin-film diffraction station with X-ray reflectivity",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5500,
+    17500
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Powder X-ray diffraction",
+    "acronym": "PXRD"
+   },
+   {
+    "name": "Thin film diffraction",
+    "acronym": "XRD"
+   },
+   {
+    "name": "X-ray reflectivity",
+    "acronym": "XRR"
+   }
+  ],
+  "measurables": [
+   "crystal structure and phase identification",
+   "lattice parameters and phase evolution during in-situ/operando reactions",
+   "thin-film texture and strain",
+   "film thickness, density, and interface roughness"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "technique assignments (powder diffraction, thin film diffraction, X-ray reflectivity) and presence in current beamline directory; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/ssrl/web/beam-lines/2-1",
+    "retrieved": "2026-11-24",
+    "notes": "station description, 5500-17500 eV focused energy range, in-situ/operando capabilities; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-2-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "2-2 X-ray absorption spectroscopy and white-beam station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "closed",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4500,
+    35000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   }
+  ],
+  "measurables": [
+   "element oxidation state and chemical speciation",
+   "local atomic coordination environment"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/ssrl/web/beam-lines",
+    "retrieved": "2026-11-24",
+    "notes": "station description, 4500-35000 eV range, status 'currently closed'; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-2-3",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "2-3 Microfocus X-ray imaging, micro-XAS, and micro-diffraction station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Micro X-ray absorption spectroscopy",
+    "acronym": "micro-XAS"
+   },
+   {
+    "name": "X-ray fluorescence elemental mapping",
+    "acronym": "XRF"
+   },
+   {
+    "name": "Micro X-ray diffraction",
+    "acronym": "micro-XRD"
+   }
+  ],
+  "measurables": [
+   "spatial elemental distribution maps at ~2 micron resolution",
+   "point-by-point chemical speciation in heterogeneous biological, material, and geological samples",
+   "spatially resolved phase identification"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy imaging; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://biosync.rcsb.org/beamlineprofile.do?region=Asian&synch_id=ssrl&bmln_name=BL2-3",
+    "retrieved": "2026-11-24",
+    "notes": "bending-magnet side station description, 2x2 micron KB-focused beam, 'operational and open' status; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-4-1",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "4-1 High-flux wiggler X-ray absorption spectroscopy station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000,
+    38000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption near-edge structure",
+    "acronym": "XANES"
+   },
+   {
+    "name": "Extended X-ray absorption fine structure",
+    "acronym": "EXAFS"
+   }
+  ],
+  "measurables": [
+   "oxidation state of transition metals, lanthanides, actinides, and p-block elements",
+   "local coordination number and bond distances"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/smbxas/beamlines/otherxasbeams.html",
+    "retrieved": "2026-11-24",
+    "notes": "wiggler station description, XANES/EXAFS, 5-38 keV range; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-4-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "4-2 Biological small- and wide-angle X-ray scattering station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000,
+    17500
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Biological small-angle X-ray scattering",
+    "acronym": "BioSAXS"
+   },
+   {
+    "name": "Wide-angle X-ray scattering",
+    "acronym": "WAXS"
+   }
+  ],
+  "measurables": [
+   "solution shape, size, and low-resolution envelope of biological macromolecules",
+   "oligomeric state and conformational flexibility in solution"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under biological small/wide-angle X-ray scattering; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/smb-saxs/beamline-names/bl4-2",
+    "retrieved": "2026-11-24",
+    "notes": "station description and 6-17.5 keV energy range; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://biosync.rcsb.org/synchrotronprofile.do?region=Americas&synch_id=ssrl",
+    "retrieved": "2026-11-24",
+    "notes": "operational status, SAXS/WAXS experiment support; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-4-3",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "4-3 Tender/hard X-ray absorption spectroscopy wiggler side-station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    2400,
+    10000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   },
+   {
+    "name": "Extended X-ray absorption fine structure",
+    "acronym": "EXAFS"
+   }
+  ],
+  "measurables": [
+   "sulfur and other low-Z element speciation (S K-edge and up)",
+   "oxidation state and local structure in biological, environmental, catalysis, and materials systems"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/smbxas/beamlines/otherxasbeams.html",
+    "retrieved": "2026-11-24",
+    "notes": "wiggler side-station description, tender X-ray 2.4-5 keV plus hard X-ray to 10 keV; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-5-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "5-2 High-resolution angle-resolved photoemission spectroscopy station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    25,
+    200
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Angle-resolved photoemission spectroscopy",
+    "acronym": "ARPES"
+   }
+  ],
+  "measurables": [
+   "electronic band structure of crystalline solids",
+   "Fermi surface topology",
+   "many-body interactions from meV-scale spectral lineshapes"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under angle-resolved photoelectron spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://arpes.stanford.edu/ssrl-beamline-5-2",
+    "retrieved": "2026-11-24",
+    "notes": "plane-grating monochromator, 25-200 eV, polarization control, meV energy resolution; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-5-4",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "5-4 Normal-incidence monochromator ARPES station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    7,
+    40
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Angle-resolved photoemission spectroscopy",
+    "acronym": "ARPES"
+   }
+  ],
+  "measurables": [
+   "low-photon-energy electronic band structure with high momentum resolution",
+   "Fermi surface and quasiparticle dispersions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under angle-resolved photoelectron spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://arpes.stanford.edu/ssrl-beamline-5-2",
+    "retrieved": "2026-11-24",
+    "notes": "BL5-4 branch described with normal-incidence monochromator covering 7-40 eV; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-6-2a",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "6-2a Tender X-ray emission and resonant inelastic scattering spectroscopy station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    1600,
+    5000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Resonant inelastic X-ray scattering",
+    "acronym": "RIXS"
+   },
+   {
+    "name": "X-ray emission spectroscopy",
+    "acronym": "XES"
+   },
+   {
+    "name": "High-energy-resolution fluorescence-detected X-ray absorption spectroscopy",
+    "acronym": "HERFD-XAS"
+   }
+  ],
+  "measurables": [
+   "electronic structure and chemical speciation of S, Cl, 4d metals, and 5f actinides",
+   "sub-natural-linewidth resolved oxidation states",
+   "ligand environment under in-situ conditions (liquid jets, electrochemical cells, reactors)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under RIXS; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/bl6-2a",
+    "retrieved": "2026-11-24",
+    "notes": "tender X-ray range 1.6-5.0 keV, Johansson spectrometer, XES/HERFD-XAS/RIXS techniques; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-6-2b",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "6-2b Micro-focus high-resolution hard X-ray spectroscopy and micro-tomography station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000,
+    30000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "High-energy-resolution fluorescence-detected X-ray absorption spectroscopy",
+    "acronym": "HERFD-XAS"
+   },
+   {
+    "name": "Resonant inelastic X-ray scattering",
+    "acronym": "RIXS"
+   },
+   {
+    "name": "Micro computed tomography",
+    "acronym": "micro-CT"
+   }
+  ],
+  "measurables": [
+   "high-resolution oxidation state and electronic structure, including sensitive biological systems under cryogenic conditions",
+   "3D internal microstructure of samples"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy imaging; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/smb/programs/xas/instrumentation.html",
+    "retrieved": "2026-11-24",
+    "notes": "micro-focus hard X-ray spectroscopy with polycapillaries and micro-CT, HERFD-XAS analyzer array, cryostat for RIXS, 5-30 keV; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-6-2c",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "6-2c Full-field transmission X-ray microscopy station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4000,
+    17000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Transmission X-ray microscopy",
+    "acronym": "TXM"
+   },
+   {
+    "name": "X-ray absorption near-edge structure imaging",
+    "acronym": "XANES imaging"
+   },
+   {
+    "name": "X-ray tomography"
+   }
+  ],
+  "measurables": [
+   "2D and 3D morphology at resolution down to ~30 nm",
+   "2D and 3D maps of chemical states via XANES imaging and tomography",
+   "in-situ evolution of catalysts and energy materials"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://ssrl.slac.stanford.edu/content/beam-lines/by-the-number",
+    "retrieved": "2026-11-24",
+    "notes": "station listed in current directory with imaging/XANES microscopy techniques and 4000-17000 eV range; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/bl6-2c",
+    "retrieved": "2026-11-24",
+    "notes": "wiggler end-station description, TXM with 2D/3D full-field imaging, 30 nm resolution, XANES tomography; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-7-1",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "7-1 High-throughput macromolecular crystallography wiggler side-station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography",
+    "acronym": "MX"
+   },
+   {
+    "name": "Single-wavelength anomalous diffraction",
+    "acronym": "SAD"
+   }
+  ],
+  "measurables": [
+   "3D atomic structures of proteins and nucleic acids",
+   "experimental phases from anomalous scattering"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under single-wavelength anomalous diffraction; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://biosync.rcsb.org/synchrotronprofile.do?region=Americas&synch_id=ssrl",
+    "retrieved": "2026-11-24",
+    "notes": "8-pole 2.0-T wiggler side-station optimized for monochromatic high-throughput high-resolution MX; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-7-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "7-2 X-ray absorption spectroscopy rapid large-scale imaging station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000,
+    16200
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption spectroscopy imaging",
+    "acronym": "XAS imaging"
+   },
+   {
+    "name": "X-ray fluorescence mapping",
+    "acronym": "XRF"
+   }
+  ],
+  "measurables": [
+   "large-area elemental distribution maps",
+   "spatially resolved chemical speciation across extended samples"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy imaging; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/bl7-2",
+    "retrieved": "2026-11-24",
+    "notes": "wiggler end-station for XAS large-scale rapid imaging, 7-element Vortex detector, 5000-16200 eV, status open; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-7-3",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "7-3 Biological X-ray absorption spectroscopy wiggler side-station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5500,
+    40000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption near-edge structure",
+    "acronym": "XANES"
+   },
+   {
+    "name": "Extended X-ray absorption fine structure",
+    "acronym": "EXAFS"
+   }
+  ],
+  "measurables": [
+   "metal oxidation state and coordination environment in dilute biological systems such as metalloproteins",
+   "metal-ligand bond distances"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/smb/core/xas/bl7-3.html",
+    "retrieved": "2026-11-24",
+    "notes": "high-flux wiggler side-station, XANES/EXAFS, 5.5-40 keV, dilute biological systems; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-8-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "8-2 Soft X-ray photoemission and absorption spectroscopy station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    70,
+    1300
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray photoemission spectroscopy",
+    "acronym": "XPS"
+   },
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   }
+  ],
+  "measurables": [
+   "surface elemental composition and chemical states from core-level photoemission",
+   "unoccupied electronic structure at low-Z K-edges and transition-metal L-edges"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray photoemission spectroscopy and X-ray absorption spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/ssrl/web/beam-lines/8-2",
+    "retrieved": "2026-11-24",
+    "notes": "general-purpose soft X-ray end-station, 70-1300 eV, resolving power; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-9-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "9-2 High-throughput macromolecular crystallography wiggler end-station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000,
+    14000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography",
+    "acronym": "MX"
+   },
+   {
+    "name": "Multi-wavelength anomalous diffraction",
+    "acronym": "MAD"
+   },
+   {
+    "name": "Single-wavelength anomalous diffraction",
+    "acronym": "SAD"
+   },
+   {
+    "name": "Single-crystal UV-Vis microspectrophotometry"
+   }
+  ],
+  "measurables": [
+   "3D atomic structures of macromolecules at high resolution",
+   "experimental phases from anomalous scatterers",
+   "optical absorption state of crystals during diffraction (redox/ligand state)"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under MAD/SAD macromolecular crystallography; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://smb.slac.stanford.edu/facilities/hardware/",
+    "retrieved": "2026-11-24",
+    "notes": "16-pole 2-T wiggler end-station, 6-14 keV energy range, remote access, microspectrophotometer; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://biosync.rcsb.org/synchrotronprofile.do?region=Americas&synch_id=ssrl",
+    "retrieved": "2026-11-24",
+    "notes": "operational status, MAD/SAD/monochromatic, wavelengths 0.86-2.06 A; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-9-3",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "9-3 Biological X-ray absorption spectroscopy focused wiggler side-station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5500,
+    30000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption near-edge structure",
+    "acronym": "XANES"
+   },
+   {
+    "name": "Extended X-ray absorption fine structure",
+    "acronym": "EXAFS"
+   }
+  ],
+  "measurables": [
+   "metal site electronic structure and oxidation state in dilute biological samples",
+   "local coordination geometry and bond distances"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/smb/core/xas/index.html",
+    "retrieved": "2026-11-24",
+    "notes": "high-flux focused wiggler side-station, XANES/EXAFS, 5.5-30 keV, dilute biological systems; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-10-2a",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "10-2a Materials scattering front hutch with two-circle diffractometer",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000,
+    22000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Powder X-ray diffraction",
+    "acronym": "PXRD"
+   },
+   {
+    "name": "Wide-angle X-ray scattering",
+    "acronym": "WAXS"
+   }
+  ],
+  "measurables": [
+   "crystal structure and phase composition of materials",
+   "structural changes under operando conditions"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "BL10-2a listed under powder diffraction and wide-angle X-ray scattering; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/bl10-2b",
+    "retrieved": "2026-11-24",
+    "notes": "BL10-2 wiggler end-station description: front hutch 10-2a with dedicated 2-circle diffractometer, 5-22 keV; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-10-2b",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "10-2b Quick-scanning X-ray absorption spectroscopy back hutch for operando catalysis",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000,
+    22000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   },
+   {
+    "name": "Quick-scanning X-ray absorption spectroscopy",
+    "acronym": "QXAS"
+   }
+  ],
+  "measurables": [
+   "time-resolved oxidation state and coordination changes of catalysts under operando conditions",
+   "local atomic structure around absorbing elements"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "BL10-2b listed under X-ray absorption spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/bl10-2b",
+    "retrieved": "2026-11-24",
+    "notes": "back hutch instrumented for XAS, 5000-22000 eV; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www.photonicsonline.com/doc/ssrl-bl-quick-scanning-xas-for-operando-catalysis-0001",
+    "retrieved": "2026-11-24",
+    "notes": "quick-scanning XAS for operando catalysis purpose; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-11-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "11-2 High-flux X-ray absorption spectroscopy station for radiological, geochemical, and interfacial science",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5400,
+    35000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   },
+   {
+    "name": "Grazing-incidence X-ray absorption spectroscopy",
+    "acronym": "GI-XAS"
+   }
+  ],
+  "measurables": [
+   "chemical speciation of radionuclides and environmental contaminants",
+   "oxidation state and local structure at surfaces and interfaces"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray absorption spectroscopy and grazing-incidence XAS; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/bl11-2",
+    "retrieved": "2026-11-24",
+    "notes": "high-flux XAS end-station for radiological, geochemical, surface/interfacial science; 5400-35000 eV unfocused, 5400-20000 eV focused; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-11-3",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "11-3 Fixed-energy wide-angle X-ray scattering and thin-film diffraction station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    12700,
+    12700
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Wide-angle X-ray scattering",
+    "acronym": "WAXS"
+   },
+   {
+    "name": "Grazing-incidence wide-angle X-ray scattering",
+    "acronym": "GIWAXS"
+   },
+   {
+    "name": "Thin film diffraction",
+    "acronym": "XRD"
+   }
+  ],
+  "measurables": [
+   "crystalline structure, texture, and orientation of thin films",
+   "molecular packing in organic and hybrid films",
+   "phase identification in transmission geometry"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under thin film diffraction and wide-angle X-ray scattering; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/ssrl/web/beam-lines/11-3",
+    "retrieved": "2026-11-24",
+    "notes": "fixed-energy (12.7 keV) wiggler side station, grazing-incidence specialty; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-12-1",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "12-1 High-flux undulator microfocus macromolecular crystallography station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6200,
+    18000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Microfocus macromolecular crystallography",
+    "acronym": "MX"
+   },
+   {
+    "name": "Multi-wavelength anomalous diffraction",
+    "acronym": "MAD"
+   },
+   {
+    "name": "Single-wavelength anomalous diffraction",
+    "acronym": "SAD"
+   }
+  ],
+  "measurables": [
+   "3D atomic structures from micron-scale crystals",
+   "experimental phases from anomalous scattering"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under MAD/SAD macromolecular crystallography; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/smb-mc/content/beamlines/bl12-1",
+    "retrieved": "2026-11-24",
+    "notes": "operational status, microfocus undulator beamline, 6200-18000 eV; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://smb.slac.stanford.edu/facilities/hardware/",
+    "retrieved": "2026-11-24",
+    "notes": "high-flux undulator microfocus beamline up to 4e12 ph/s; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-12-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "12-2 High-throughput microcrystal and serial macromolecular crystallography station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6700,
+    17000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Microfocus macromolecular crystallography",
+    "acronym": "MX"
+   },
+   {
+    "name": "Multi-wavelength anomalous diffraction",
+    "acronym": "MAD"
+   },
+   {
+    "name": "Single-wavelength anomalous diffraction",
+    "acronym": "SAD"
+   },
+   {
+    "name": "Serial and time-resolved crystallography"
+   }
+  ],
+  "measurables": [
+   "high-resolution 3D structures from microcrystals",
+   "time-resolved structural intermediates",
+   "experimental phases at the Se edge"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under MAD/SAD macromolecular crystallography; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://smb.slac.stanford.edu/facilities/hardware/",
+    "retrieved": "2026-11-24",
+    "notes": "undulator microfocus, Si(111) monochromator, usable energy range 6.7-17 keV, serial/time-resolved methods; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://biosync.rcsb.org/synchrotronprofile.do?region=Americas&synch_id=ssrl",
+    "retrieved": "2026-11-24",
+    "notes": "operational status, MAD/SAD/monochromatic, wavelengths 0.73-1.85 A; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-13-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "13-2 Elliptically polarizing undulator soft X-ray core-level spectroscopy station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    180,
+    1450
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   },
+   {
+    "name": "X-ray emission spectroscopy",
+    "acronym": "XES"
+   },
+   {
+    "name": "Resonant inelastic X-ray scattering",
+    "acronym": "RIXS"
+   }
+  ],
+  "measurables": [
+   "high-resolution unoccupied and occupied electronic structure at soft X-ray edges",
+   "orbital and chemical-state information with polarization dependence"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under XAS, XES, and RIXS; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/bl13-2",
+    "retrieved": "2026-11-24",
+    "notes": "EPU beamline for high-energy-resolution soft X-ray core-level spectroscopy, XAS 180-1450 eV; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-13-3",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "13-3 Soft X-ray resonant inelastic scattering station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    250,
+    1800
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Resonant inelastic X-ray scattering",
+    "acronym": "RIXS"
+   }
+  ],
+  "measurables": [
+   "elementary electronic excitations (charge, orbital, spin) at C, O, F, Al K-edges, 3d transition-metal L-edges, and rare-earth M-edges"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under RIXS; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/bl13-3",
+    "retrieved": "2026-11-24",
+    "notes": "photon energy range 250-1800 eV and accessible absorption edges; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-14-1",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "14-1 Macromolecular crystallography station",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000,
+    13000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography",
+    "acronym": "MX"
+   },
+   {
+    "name": "Multi-wavelength anomalous diffraction",
+    "acronym": "MAD"
+   },
+   {
+    "name": "Single-wavelength anomalous diffraction",
+    "acronym": "SAD"
+   }
+  ],
+  "measurables": [
+   "3D atomic structures of biological macromolecules",
+   "experimental phases from anomalous scattering"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under MAD/SAD macromolecular crystallography; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://smb.slac.stanford.edu/facilities/hardware/",
+    "retrieved": "2026-11-24",
+    "notes": "collimating Rh-coated mirror, Si(111) monochromator, 6-13 keV energy range; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://biosync.rcsb.org/synchrotronprofile.do?region=Americas&synch_id=ssrl",
+    "retrieved": "2026-11-24",
+    "notes": "operational status, MAD/SAD/monochromatic, wavelengths 0.95-2.06 A; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-14-3",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "14-3 Tender X-ray absorption spectroscopy stations (14-3a/14-3b) for biological and environmental systems",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    2100,
+    5000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   },
+   {
+    "name": "Extended X-ray absorption fine structure",
+    "acronym": "EXAFS"
+   }
+  ],
+  "measurables": [
+   "speciation of low-Z elements (e.g., P, S, Cl) in biological and environmental samples",
+   "oxidation state and local coordination in the tender X-ray regime"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://ssrl.slac.stanford.edu/content/beam-lines/by-the-number",
+    "retrieved": "2026-11-24",
+    "notes": "stations 14-3a (2100-5000 eV) and 14-3b (2-5 keV) listed in current directory under X-ray absorption spectroscopy; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/smb/core/xas/bl14-3a.html",
+    "retrieved": "2026-11-24",
+    "notes": "wiggler side-station dedicated to XAS/EXAFS on biological and environmental systems, bulk tender XAS 2.1-5.0 keV; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-15-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "15-2 Advanced hard X-ray spectroscopy station (HERFD-XAS, XES, RIXS, X-ray Raman)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000,
+    30000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "High-energy-resolution fluorescence-detected X-ray absorption spectroscopy",
+    "acronym": "HERFD-XAS"
+   },
+   {
+    "name": "X-ray emission spectroscopy",
+    "acronym": "XES"
+   },
+   {
+    "name": "Resonant inelastic X-ray scattering",
+    "acronym": "RIXS"
+   },
+   {
+    "name": "X-ray Raman spectroscopy",
+    "acronym": "XRS"
+   },
+   {
+    "name": "X-ray absorption spectroscopy",
+    "acronym": "XAS"
+   }
+  ],
+  "measurables": [
+   "spin state, ligand identity, and occupied electronic structure of dilute metalloproteins and metals in biology",
+   "high-resolution oxidation state and electronic excitations",
+   "low-Z element edge structure via X-ray Raman in bulk samples"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under HERFD XAS, RIXS, X-ray Raman, XAS, and XES; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/ssrl/web/research/x-ray-spectroscopy-imaging",
+    "retrieved": "2026-11-24",
+    "notes": "advanced spectroscopy station on wiggler Beam Line 15, 5-30 keV, crystal analyzer instrumentation for resonant and non-resonant XES on dilute biological metalloproteins; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ },
+ {
+  "id": "ssrl-17-2",
+  "facility": "SSRL",
+  "institution": "SLAC",
+  "name": "17-2 In-vacuum undulator materials scattering station (WAXS/XRD)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000,
+    18000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "Wide-angle X-ray scattering",
+    "acronym": "WAXS"
+   },
+   {
+    "name": "X-ray diffraction",
+    "acronym": "XRD"
+   }
+  ],
+  "measurables": [
+   "crystal structure, phase, and texture of materials with high brightness",
+   "single-crystal and thin-film diffraction via 6-circle diffractometer"
+  ],
+  "record_depth": "directory",
+  "provenance": [
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/content/beam-lines/by-technique",
+    "retrieved": "2026-11-24",
+    "notes": "listed under X-ray diffraction and wide-angle X-ray scattering; accessed via web-search snippets"
+   },
+   {
+    "source_url": "https://www-ssrl.slac.stanford.edu/ssrl/web/beam-lines/17-2",
+    "retrieved": "2026-11-24",
+    "notes": "high-brightness in-vacuum undulator hard X-ray beamline ~5-18 keV with 6-circle diffractometer; accessed via web-search snippets"
+   }
+  ],
+  "location": {
+   "address": "SLAC National Accelerator Laboratory, 2575 Sand Hill Road, Menlo Park, CA 94025",
+   "latitude": 37.41679,
+   "longitude": -122.20493,
+   "source": "coordinates OSM Nominatim, SLAC campus-level (retrieved 2026-11-24); SSRL building not in OSM"
+  }
+ }
+]

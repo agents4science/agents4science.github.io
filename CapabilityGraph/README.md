@@ -4,13 +4,13 @@
 
 <img src="figure_routing.png" alt="Cross-facility routing: a natural-language measurement request resolves against capability records for 106 ALS and APS beamlines and routes around a not-operational instrument" style="max-width: 100%; margin: 1.5rem 0;">
 
-Descriptions of what scientific facilities can do are written for people: beamline web pages, PDF specifications, proposal calls that assume a human has already chosen the instrument. An AI system planning an experiment needs an answer to a different question, in a form it can compute over: *what can this instrument measure, on what samples, under what constraints, and is it operational today?* A systematic survey ([below](#documents)) finds mature pieces — the PaNET technique ontology, NeXus/NXDL data-format contracts, the European wayforlight catalog — but no instrument- and configuration-level capability model, and no matching layer over one.
+What a scientific facility can do is written down for people: beamline web pages, PDF specifications, proposal systems that assume a human has already chosen the instrument. An AI system planning an experiment needs the same information in a form it can compute over — *what can this instrument measure, on what samples, under what constraints, and is it operational today?* Mature pieces exist (the PaNET technique ontology, NeXus/NXDL data-format contracts, the European wayforlight catalog; [survey below](#documents)), yet none answers that question for an individual instrument in its current configuration, and none puts a matching layer over the answer.
 
 As a feasibility test, we built one: a capability catalog covering the beamlines of the Advanced Light Source and the Advanced Photon Source — 120 records at present (106 at the time of the SCAC input below) — extracted by AI agents from public documentation at roughly one agent-run per instrument, with per-field provenance on every record. A matchmaker resolves natural-language measurement requests against the catalog.
 
 **[Browse the catalog →](browse.html)** — faceted browsing of every record, with the matchmaker running client-side; try [the routing query](browse.html?q=trace%20element%20distribution%20in%20plant%20roots).
 
-## The demo that carries the argument
+## Routing around a dead instrument
 
 The classic instrument for mapping trace elements in plant roots is the ALS hard X-ray fluorescence microprobe, beamline 10.3.2. It is currently not operational. Because the records carry live status and span two facilities, the request routes instead to operational APS microprobes — GSECARS 13-ID-E first, whose demonstrated applications include plant roots:
 
@@ -29,12 +29,12 @@ QUERY: "trace element distribution in plant roots"
 
 The complex behaves as one instrument. On the eight canned demo queries, seven rank the domain-correct instrument first; the eighth is the routing case above.
 
-## Design decisions that matter
+## Five design decisions
 
 1. **Measurables vs. techniques.** `measurables` records what a user learns ("oxidation state under reaction conditions"); `techniques` records how (APXPS). Users ask in measurable-space; catalogs are written in technique-space. Carrying both is what makes matchmaking work without requiring users to know technique names.
 2. **Demonstrated applications as a first-class field**, extracted from science highlights rather than spec sheets. "Real-time micro-CT of ablators at reentry temperatures" answers feasibility questions no specification can.
 3. **Provenance on every record**, per source, including conflicts recorded verbatim — one beamline's maximum pressure is stated as "above 2 mbar" in its instrument paper and "up to 10 Torr" in a facility science highlight. Capability descriptions scraped from human-oriented documentation contain such contradictions; publication by facilities as a first-class product, with provenance, is the fix.
-4. **Two record depths.** Directory records are cheap (one fetch covers a facility) and give coverage; deep records cost about one agent-run each and carry sourced constraints (30 µL per well, ≤2% glycerol). Both earn their keep: directory records give breadth, deep records win rankings and answer feasibility.
+4. **Two record depths.** Directory records are cheap (one fetch covers a facility) and give coverage; deep records cost about one agent-run each and carry sourced constraints (30 µL per well, ≤2% glycerol). Directory records give breadth; deep records win rankings and answer feasibility questions.
 5. **Status is load-bearing.** Only live status prevents routing users to dead instruments, and only a cross-facility graph can offer the alternative.
 
 The scorer is keyword-plus-synonym overlap, deliberately simple. What is meant to carry over to a real system is the schema and the extraction recipe: the upgrade path is embeddings over measurables, technique alignment to PaNET (the field is already stubbed), and an LLM feasibility check on the top candidates.

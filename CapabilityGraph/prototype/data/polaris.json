@@ -50,7 +50,14 @@
    "samples_per_year": "~400-4,000 samples/year",
    "availability": "~20 hrs/day, 4 days/week"
   },
-  "protocol_vocabulary": "polaris_protocols/polaris-ul-junior.json"
+  "protocol_vocabulary": "polaris_protocols/polaris-ul-junior.json",
+  "location": {
+   "building": "Hyde Park Labs",
+   "address": "5207 S Harper Ave, Chicago, IL 60615",
+   "latitude": 41.80074,
+   "longitude": -87.58867,
+   "source": "building confirmed by Ian Foster 2026-11-24; coordinates OSM Nominatim, building-level; floor/room pending"
+  }
  },
  {
   "id": "polaris-big-kahuna",
@@ -118,7 +125,14 @@
    "samples_per_year": "~400-10,000 samples/year",
    "availability": "~20 hrs/day, 4 days/week"
   },
-  "protocol_vocabulary": "polaris_protocols/polaris-big-kahuna.json"
+  "protocol_vocabulary": "polaris_protocols/polaris-big-kahuna.json",
+  "location": {
+   "building": "Hyde Park Labs",
+   "address": "5207 S Harper Ave, Chicago, IL 60615",
+   "latitude": 41.80074,
+   "longitude": -87.58867,
+   "source": "building confirmed by Ian Foster 2026-11-24; coordinates OSM Nominatim, building-level; floor/room pending"
+  }
  },
  {
   "id": "polaris-electrolab",
@@ -180,7 +194,14 @@
    "samples_per_year": "~120,000 samples/year",
    "availability": "~20 hrs/day, 4 days/week"
   },
-  "protocol_vocabulary": "polaris_protocols/polaris-electrolab.json"
+  "protocol_vocabulary": "polaris_protocols/polaris-electrolab.json",
+  "location": {
+   "building": "Hyde Park Labs",
+   "address": "5207 S Harper Ave, Chicago, IL 60615",
+   "latitude": 41.80074,
+   "longitude": -87.58867,
+   "source": "building confirmed by Ian Foster 2026-11-24; coordinates OSM Nominatim, building-level; floor/room pending"
+  }
  },
  {
   "id": "polaris-n9",
@@ -255,7 +276,14 @@
   "integration_dependencies": [
    "installation planned FY26"
   ],
-  "protocol_vocabulary": "polaris_protocols/polaris-n9.json"
+  "protocol_vocabulary": "polaris_protocols/polaris-n9.json",
+  "location": {
+   "building": "Hyde Park Labs",
+   "address": "5207 S Harper Ave, Chicago, IL 60615",
+   "latitude": 41.80074,
+   "longitude": -87.58867,
+   "source": "building confirmed by Ian Foster 2026-11-24; coordinates OSM Nominatim, building-level; floor/room pending"
+  }
  },
  {
   "id": "polaris-kla-nanoindenter",
@@ -316,7 +344,14 @@
   "integration_dependencies": [
    "UR10e installation (FY26)"
   ],
-  "protocol_vocabulary": "polaris_protocols/polaris-kla-nanoindenter.json"
+  "protocol_vocabulary": "polaris_protocols/polaris-kla-nanoindenter.json",
+  "location": {
+   "building": "Hyde Park Labs",
+   "address": "5207 S Harper Ave, Chicago, IL 60615",
+   "latitude": 41.80074,
+   "longitude": -87.58867,
+   "source": "building confirmed by Ian Foster 2026-11-24; coordinates OSM Nominatim, building-level; floor/room pending"
+  }
  },
  {
   "id": "polaris-nicolet-is50",
@@ -378,7 +413,14 @@
   "integration_dependencies": [
    "UR10e installation (FY26)"
   ],
-  "protocol_vocabulary": "polaris_protocols/polaris-nicolet-is50.json"
+  "protocol_vocabulary": "polaris_protocols/polaris-nicolet-is50.json",
+  "location": {
+   "building": "Hyde Park Labs",
+   "address": "5207 S Harper Ave, Chicago, IL 60615",
+   "latitude": 41.80074,
+   "longitude": -87.58867,
+   "source": "building confirmed by Ian Foster 2026-11-24; coordinates OSM Nominatim, building-level; floor/room pending"
+  }
  },
  {
   "id": "polaris-glossmeter",
@@ -434,7 +476,14 @@
   "integration_dependencies": [
    "installation planned FY26"
   ],
-  "protocol_vocabulary": "polaris_protocols/polaris-glossmeter.json"
+  "protocol_vocabulary": "polaris_protocols/polaris-glossmeter.json",
+  "location": {
+   "building": "Hyde Park Labs",
+   "address": "5207 S Harper Ave, Chicago, IL 60615",
+   "latitude": 41.80074,
+   "longitude": -87.58867,
+   "source": "building confirmed by Ian Foster 2026-11-24; coordinates OSM Nominatim, building-level; floor/room pending"
+  }
  },
  {
   "id": "polaris-ur10e",
@@ -487,7 +536,14 @@
   "integration_dependencies": [
    "installation planned FY26"
   ],
-  "protocol_vocabulary": "polaris_protocols/polaris-ur10e.json"
+  "protocol_vocabulary": "polaris_protocols/polaris-ur10e.json",
+  "location": {
+   "building": "Hyde Park Labs",
+   "address": "5207 S Harper Ave, Chicago, IL 60615",
+   "latitude": 41.80074,
+   "longitude": -87.58867,
+   "source": "building confirmed by Ian Foster 2026-11-24; coordinates OSM Nominatim, building-level; floor/room pending"
+  }
  },
  {
   "id": "polaris-ecosec-ht-8mals",

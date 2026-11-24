@@ -1,0 +1,118 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://gm-instruments.example/schema/measurement_request/v0.1",
+  "title": "Measurement Request (IR)",
+  "description": "The intermediate representation all selection runs on. Both front doors produce it: natural language via LLM structured extraction (schema-enforced), standardized syntax via deterministic parsing. Design rules: (1) units are mandatory, never inferred; (2) hard constraints are separated from soft preferences - hard filters, soft ranks; (3) every field is tagged stated/inferred/unresolved in elicitation so the system never silently fills gaps. This schema is the dual of instrument_capability.schema.json: each field mirrors a capability-record field so matching is field-by-field feasibility checking.",
+  "type": "object",
+  "required": ["observable", "target", "elicitation"],
+  "$defs": {
+    "quantity": {
+      "type": "object",
+      "required": ["value", "unit"],
+      "properties": {
+        "value": { "type": "number" },
+        "unit": { "type": "string", "description": "Mandatory. Normalized by the matcher (eV/keV, Torr/mbar/Pa, m/um/nm/angstrom, K/C)." }
+      }
+    },
+    "bound": {
+      "type": "object",
+      "description": "A required bound with hardness flag",
+      "required": ["unit"],
+      "properties": {
+        "max": { "type": "number", "description": "Upper bound (e.g. spatial resolution must be <= this)" },
+        "min": { "type": "number", "description": "Lower bound (e.g. field of view must be >= this)" },
+        "unit": { "type": "string" },
+        "hard": { "type": "boolean", "default": true, "description": "true = filter (exclusion), false = ranking preference" }
+      }
+    }
+  },
+  "properties": {
+    "observable": {
+      "type": "object",
+      "required": ["text"],
+      "description": "WHAT the user wants to learn. Mirrors capability-record 'measurables'.",
+      "properties": {
+        "text": { "type": "string", "description": "User's phrasing, verbatim" },
+        "vocab": { "type": "array", "items": { "type": "string" }, "description": "Grounded terms in the controlled measurables vocabulary" },
+        "technique_hints": { "type": "array", "items": { "type": "object", "properties": { "name": { "type": "string" }, "panet_id": { "type": "string" } } }, "description": "Only if the user named techniques. Expanded through PaNET subsumption at match time; a technique hint is a preference, not a constraint, unless marked hard." },
+        "element_specific": { "type": "boolean", "description": "Must the measurement resolve chemical elements?" },
+        "elements_of_interest": { "type": "array", "items": { "type": "string" }, "description": "Element symbols; lets the matcher check absorption-edge coverage against probe energy range" }
+      }
+    },
+    "target": {
+      "type": "object",
+      "description": "The sample. Mirrors capability-record 'sample_constraints'.",
+      "properties": {
+        "state": { "type": "string", "description": "e.g. 'solid', 'solution', 'powder', 'single crystal', 'thin film', 'gas'" },
+        "composition_hint": { "type": "string" },
+        "size": { "type": "string", "description": "Free text with units" },
+        "quantity_available": { "type": "string", "description": "e.g. '60 uL at 3 mg/ml', 'one 5mm crystal'" },
+        "tolerates": {
+          "type": "object",
+          "description": "What the sample can survive. false values become hard exclusions against instrument requirements.",
+          "properties": {
+            "vacuum": { "type": "boolean" },
+            "cryo": { "type": "boolean" },
+            "beam_damage": { "type": "string", "enum": ["unlimited", "limited", "minimal"] },
+            "sectioning_or_powdering": { "type": "boolean", "description": "May the sample be destructively prepared?" }
+          }
+        },
+        "hazards": { "type": "array", "items": { "type": "string" }, "description": "e.g. 'radioactive', 'biological', 'air-sensitive'" }
+      }
+    },
+    "conditions": {
+      "type": "object",
+      "description": "Conditions DURING measurement. Mirrors capability-record 'sample_environments'.",
+      "properties": {
+        "in_situ": { "type": "boolean", "description": "Must the observable be captured under operating/reaction conditions?" },
+        "time_resolved": { "type": "boolean" },
+        "environment": {
+          "type": "object",
+          "properties": {
+            "gas": { "type": "string" },
+            "pressure": { "$ref": "#/$defs/quantity" },
+            "temperature": { "$ref": "#/$defs/quantity" },
+            "magnetic_field": { "$ref": "#/$defs/quantity" },
+            "liquid": { "type": "string" },
+            "electrochemical": { "type": "boolean" }
+          }
+        }
+      }
+    },
+    "requirements": {
+      "type": "object",
+      "description": "Quantitative bounds. Each carries its own hard flag.",
+      "properties": {
+        "spatial_resolution": { "$ref": "#/$defs/bound" },
+        "energy_resolution": { "$ref": "#/$defs/bound" },
+        "temporal_resolution": { "$ref": "#/$defs/bound" },
+        "field_of_view": { "$ref": "#/$defs/bound" },
+        "q_range": { "$ref": "#/$defs/bound" },
+        "depth_sensitivity": { "type": "string", "description": "'surface', 'bulk', or free text like 'top 2 nm'" },
+        "dimensionality": { "type": "string", "enum": ["point", "1d", "2d-map", "3d"], "description": "Point measurement, line scan, map, or volume" }
+      }
+    },
+    "preferences": {
+      "type": "object",
+      "description": "Soft criteria - rank, never filter",
+      "properties": {
+        "nondestructive": { "type": "boolean" },
+        "access": { "type": "string", "description": "e.g. 'mail-in preferred', 'remote', 'any'" },
+        "throughput": { "type": "string", "description": "e.g. 'hundreds of samples', 'one precious sample'" },
+        "deadline": { "type": "string" },
+        "facility_preference": { "type": "array", "items": { "type": "string" } }
+      }
+    },
+    "elicitation": {
+      "type": "object",
+      "required": ["stated", "inferred", "unresolved"],
+      "description": "Field provenance from the parsing step. The clarification loop is driven by 'unresolved': ask the question whose answer best partitions the current feasible set.",
+      "properties": {
+        "stated": { "type": "array", "items": { "type": "string" }, "description": "JSON-path-ish field names the user explicitly stated" },
+        "inferred": { "type": "array", "items": { "type": "object", "properties": { "field": { "type": "string" }, "basis": { "type": "string" } } }, "description": "Fields the parser inferred, each with its stated basis" },
+        "unresolved": { "type": "array", "items": { "type": "string" }, "description": "Fields that matter but are unknown; drives clarifying questions" },
+        "original_text": { "type": "string", "description": "The natural-language request verbatim, if NL front door" }
+      }
+    }
+  }
+}

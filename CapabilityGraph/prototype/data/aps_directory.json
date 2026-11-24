@@ -1,0 +1,4837 @@
+[
+ {
+  "id": "aps-1-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 1-BM-B,C (Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Optics testing"
+   },
+   {
+    "name": "Detector testing"
+   },
+   {
+    "name": "Topography"
+   },
+   {
+    "name": "Wavefront Interferometry"
+   },
+   {
+    "name": "Coherence Measurements"
+   }
+  ],
+  "measurables": [
+   "crystal defect distribution",
+   "x-ray optics and detector characterization"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Observer, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/1"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0022024826000059",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Journal of Crystal Growth paper reports the topography beamline 1-BM was recommissioned in January 2025 after the APS Upgrade."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    120000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-30 keV; 50-120 keV"
+  }
+ },
+ {
+  "id": "aps-1-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 1-ID-B,C,E (Chemistry; Life Sciences; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "High-energy x-ray diffraction"
+   },
+   {
+    "name": "Tomography"
+   },
+   {
+    "name": "Small-angle x-ray scattering"
+   },
+   {
+    "name": "Fluorescence spectroscopy"
+   },
+   {
+    "name": "Pair distribution function"
+   },
+   {
+    "name": "Phase contrast imaging"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "3d microstructure",
+   "internal morphology (non-destructive)",
+   "2d/3d morphology",
+   "local atomic structure of disordered/nanocrystalline materials",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/2"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.osti.gov/servlets/purl/1840758",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS operations beamline for high-energy (50-100 keV class) diffraction/imaging of bulk materials. Do-no-harm beamline under APS-U; Aug 2025 APS update mentions new hypersonic-materials test rig being designed for 1-ID with the upgraded beam, but explicit user-operations status not sourced."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS operations beamline for high-energy (50-100 keV class) diffraction/imaging of bulk materials. Do-no-harm beamline under APS-U; Aug 2025 APS update mentions new hypersonic-materials test rig being designed for 1-ID with the upgraded beam, but explicit user-operations status not sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    42000.0,
+    136000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 42-116 keV; 42-136 keV"
+  }
+ },
+ {
+  "id": "aps-2-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 2-ID-D (Chemistry; Environmental Science; Life Sciences; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray fluorescence micro/nanoprobe"
+   },
+   {
+    "name": "X-ray fluorescence microscopy (XFM)"
+   },
+   {
+    "name": "X-ray fluorescence tomography"
+   },
+   {
+    "name": "Ptychography"
+   },
+   {
+    "name": "X-ray absorption near-edge structure"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "oxidation state",
+   "unoccupied electronic states",
+   "nanoscale morphology (highest-resolution x-ray imaging)",
+   "3d microstructure",
+   "internal morphology (non-destructive)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/5"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    30000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-30 keV"
+  }
+ },
+ {
+  "id": "aps-3-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 3-ID-B,C,D (Chemistry; GeoScience; Life Sciences; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Nuclear resonant scattering"
+   },
+   {
+    "name": "Inelastic x-ray scattering (1 meV resolution)"
+   },
+   {
+    "name": "High-pressure diamond anvil cell"
+   },
+   {
+    "name": "Powder diffraction"
+   }
+  ],
+  "measurables": [
+   "electronic and vibrational excitations (phonons)",
+   "phonon density of states of Moessbauer isotopes",
+   "hyperfine/magnetic state",
+   "crystal structure",
+   "phase identification",
+   "lattice parameters",
+   "structure and equation of state at extreme pressure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/6"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://seescience.org/beamline-science/our-synchrotron-facilities/aps/upgrade-status/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Works at nuclear resonance energies (e.g. 57Fe 14.4 keV; 83Kr, 151Eu, 161Dy planned); 1.5x12 um focus for 57Fe. SEES reports full general user operations restored for APS 2025-3 cycle."
+   },
+   {
+    "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Works at nuclear resonance energies (e.g. 57Fe 14.4 keV; 83Kr, 151Eu, 161Dy planned); 1.5x12 um focus for 57Fe. SEES reports full general user operations restored for APS 2025-3 cycle."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    7000.0,
+    27000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 7-27 keV; 9.39-9.42 keV; 14.4-14.42 keV; 21.53-21.55 keV; 25.64-25.66 keV"
+  }
+ },
+ {
+  "id": "aps-4-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 4-ID-B,G,H (Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Magnetic circular dichroism"
+   },
+   {
+    "name": "Magnetic x-ray scattering"
+   },
+   {
+    "name": "High pressure resonant/magnetic scattering"
+   },
+   {
+    "name": "Dichroic ptychography"
+   },
+   {
+    "name": "High pressure x-ray magnetic circular dichroism"
+   },
+   {
+    "name": "X-ray linear dichroism"
+   }
+  ],
+  "measurables": [
+   "element-specific magnetization",
+   "magnetic ordering",
+   "magnetic ordering and domain correlations",
+   "nanoscale morphology (highest-resolution x-ray imaging)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/225"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Feature-Beamlines/Polar",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. One of nine APS-U feature beamlines; quantum/magnetic materials with tunable polarization, high field, extreme pressure, uniaxial strain environments. First light late 2024/early 2025; per MEDSI'25 all feature beamlines met KPPs. Full general-user status as of 2026 not explicitly sourced."
+   },
+   {
+    "source_url": "https://meetings-archive.aps.org/smt/2025/mar-g10/3/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. One of nine APS-U feature beamlines; quantum/magnetic materials with tunable polarization, high field, extreme pressure, uniaxial strain environments. First light late 2024/early 2025; per MEDSI'25 all feature beamlines met KPPs. Full general-user status as of 2026 not explicitly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    2700.0,
+    27000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 2.7-27 keV"
+  }
+ },
+ {
+  "id": "aps-5-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 5-BM-B (Catalysis; Chemistry; Environmental Science; Materials Science; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray absorption fine structure"
+   },
+   {
+    "name": "High-energy x-ray diffraction"
+   },
+   {
+    "name": "General diffraction"
+   },
+   {
+    "name": "X-ray absorption near-edge structure"
+   }
+  ],
+  "measurables": [
+   "oxidation state",
+   "unoccupied electronic states",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/226"
+  ],
+  "aliases": [
+   "operator: DND-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'DND-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'DND-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/226",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 5-BM-B/D stations; DND-CAT. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4500.0,
+    80000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4.5-25 keV; 4.5-80 keV"
+  }
+ },
+ {
+  "id": "aps-5-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 5-ID-B,C,D (Chemistry; Life Sciences; Materials Science; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Powder diffraction"
+   },
+   {
+    "name": "X-ray standing waves"
+   },
+   {
+    "name": "X-ray optics development/techniques"
+   },
+   {
+    "name": "Small-angle x-ray scattering"
+   },
+   {
+    "name": "Surface diffraction"
+   },
+   {
+    "name": "X-ray reflectivity"
+   },
+   {
+    "name": "Wide-angle x-ray scattering"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification",
+   "lattice parameters",
+   "thin-film thickness, roughness and density profiles"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/9"
+  ],
+  "aliases": [
+   "operator: DND-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'DND-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'DND-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://small-angle.aps.anl.gov/aps-saxs-beamlines",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by Northwestern University with Dow and DuPont. Post-APS-U operations status not directly sourced."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/9",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by Northwestern University with Dow and DuPont. Post-APS-U operations status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    35000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-35 keV"
+  }
+ },
+ {
+  "id": "aps-6-bm-a",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 6-BM-A,B (GeoScience; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Energy dispersive x-ray diffraction"
+   },
+   {
+    "name": "High-pressure multi-anvil press"
+   },
+   {
+    "name": "Radiography"
+   },
+   {
+    "name": "Tomography"
+   }
+  ],
+  "measurables": [
+   "3d microstructure",
+   "internal morphology (non-destructive)",
+   "time-resolved internal dynamics (2d projection)",
+   "crystal structure",
+   "phase identification",
+   "structure and equation of state at extreme pressure",
+   "structure at high pressure-temperature (large volume)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/213"
+  ],
+  "aliases": [
+   "operator: NSF SEES/XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'NSF SEES/XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'NSF SEES/XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. SEES-affiliated; scientific commissioning completed and full general user operations restored for APS 2025-3 cycle."
+   },
+   {
+    "source_url": "https://seescience.org/beamline-science/our-synchrotron-facilities/aps/upgrade-status/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. SEES-affiliated; scientific commissioning completed and full general user operations restored for APS 2025-3 cycle."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    20000.0,
+    200000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 20-200 keV"
+  }
+ },
+ {
+  "id": "aps-6-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 6-ID-B,C (Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "not-operational",
+  "techniques": [
+   {
+    "name": "Magnetic x-ray scattering"
+   },
+   {
+    "name": "Anomalous and resonant scattering"
+   },
+   {
+    "name": "General diffraction"
+   },
+   {
+    "name": "Grazing incidence diffraction"
+   }
+  ],
+  "measurables": [
+   "magnetic ordering and domain correlations",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/10"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Sector-6/6-ID-B-C",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U user-operations status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4000.0,
+    38000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4-38 keV"
+  }
+ },
+ {
+  "id": "aps-6-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 6-ID-D (Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "not-operational",
+  "techniques": [
+   {
+    "name": "High-energy x-ray diffraction"
+   },
+   {
+    "name": "Pair distribution function"
+   },
+   {
+    "name": "3D Pair distribution function (3D-PDF)"
+   },
+   {
+    "name": "Powder diffraction"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification",
+   "lattice parameters",
+   "local atomic structure of disordered/nanocrystalline materials"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/104"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Sector-6/6-ID-B-C",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U user-operations status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    50000.0,
+    130000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 50-100 keV; 70-130 keV"
+  }
+ },
+ {
+  "id": "aps-7-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 7-BM-B (Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Radiography"
+   },
+   {
+    "name": "Tomography"
+   },
+   {
+    "name": "Microfluorescence"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "3d microstructure",
+   "internal morphology (non-destructive)",
+   "time-resolved internal dynamics (2d projection)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/108"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://pubmed.ncbi.nlm.nih.gov/22713903/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Runs the shared TomoScan tomography control system with 2-BM and 32-ID. Post-APS-U status not directly sourced."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Imaging/Beamlines/2-BM-A-B",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Runs the shared TomoScan tomography control system with 2-BM and 32-ID. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    150000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-150 keV; 6-15 keV; keV"
+  }
+ },
+ {
+  "id": "aps-7-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 7-ID-B,C,D (Catalysis; Chemistry; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Time-resolved x-ray scattering"
+   },
+   {
+    "name": "Nano-imaging"
+   },
+   {
+    "name": "Wide-angle x-ray scattering"
+   },
+   {
+    "name": "Surface diffraction"
+   }
+  ],
+  "measurables": [
+   "2d/3d morphology",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/11"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Sector-7/7-ID",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Dedicated to pump-probe experiments with ultrafast high-intensity lasers. Post-APS-U status not directly sourced."
+   },
+   {
+    "source_url": "https://www.osti.gov/biblio/1351262",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Dedicated to pump-probe experiments with ultrafast high-intensity lasers. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    30000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-18 keV; 12-30 keV"
+  }
+ },
+ {
+  "id": "aps-8-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 8-BM-B (Chemistry; Environmental Science; Life Sciences; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "not-operational",
+  "techniques": [
+   {
+    "name": "Fluorescence spectroscopy"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Mail-in, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/33"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    9000.0,
+    18000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 9-18 keV"
+  }
+ },
+ {
+  "id": "aps-8-id-e",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 8-ID-E,I (Materials Science; Physics; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray photon correlation spectroscopy"
+   },
+   {
+    "name": "Coherent x-ray scattering"
+   },
+   {
+    "name": "Diffuse x-ray scattering"
+   }
+  ],
+  "measurables": [
+   "equilibrium and non-equilibrium dynamics (ns-hours)",
+   "nanoscale structure, strain and dynamics"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/243"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Feature-Beamlines/X-ray-Photon-Correlation-Spectroscopy",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. First APS-U feature beamline declared ready for science (November 2024) and first to take users; exploits the upgraded ring's increased coherence."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-News/2024-11-06/first-aps-upgrade-feature-beamline-ready-for-science/2024-11-06/first-aps",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. First APS-U feature beamline declared ready for science (November 2024) and first to take users; exploits the upgraded ring's increased coherence."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    25000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-25 keV"
+  }
+ },
+ {
+  "id": "aps-9-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 9-BM-B,C (Catalysis; Chemistry; Environmental Science; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray absorption fine structure"
+   },
+   {
+    "name": "X-ray absorption near-edge structure"
+   }
+  ],
+  "measurables": [
+   "oxidation state",
+   "unoccupied electronic states"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in, Observer",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/82"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/18",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. General-purpose XAS beamline (9-BM-B,C). Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    2100.0,
+    40000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 2.1-40 keV"
+  }
+ },
+ {
+  "id": "aps-9-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 9-ID-D (Chemistry; Materials Science; Physics; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Coherent Surface Scattering Imaging"
+   },
+   {
+    "name": "Grazing incidence small-angle scattering"
+   },
+   {
+    "name": "Grazing incidence wide-angle scattering"
+   },
+   {
+    "name": "Grazing incidence x-ray photon correlation spectroscopy"
+   }
+  ],
+  "measurables": [
+   "equilibrium and non-equilibrium dynamics (ns-hours)",
+   "nanoscale structure, strain and dynamics",
+   "2d/3d morphology"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/221"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Feature-Beamlines/Coherent-Surface-Scattering-Imaging",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS-U feature beamline; includes the 'Grand Tube' long flight path. In commissioning per 2024-2025 APS-U updates. (Former 9-ID USAXS program relocated to 12-ID-E.)"
+   },
+   {
+    "source_url": "https://pubs.aip.org/aca/sdy/article/12/2_Supplement/A302/3343503/State-of-the-Art-Instruments-for-Dynamics-and",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS-U feature beamline; includes the 'Grand Tube' long flight path. In commissioning per 2024-2025 APS-U updates. (Former 9-ID USAXS program relocated to 12-ID-E.)"
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    25000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-25 keV"
+  }
+ },
+ {
+  "id": "aps-10-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 10-BM-B (Chemistry; Environmental Science; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "X-ray absorption fine structure"
+   },
+   {
+    "name": "Time-resolved x-ray absorption fine structure"
+   },
+   {
+    "name": "Microfluorescence"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "oxidation state",
+   "unoccupied electronic states"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in, Observer, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/227"
+  ],
+  "aliases": [
+   "operator: MR-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Construction'; operator: 'MR-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Construction'; operator: 'MR-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "http://mrcat.iit.edu/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4000.0,
+    33000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4-33 keV"
+  }
+ },
+ {
+  "id": "aps-10-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 10-ID-B (Chemistry; Environmental Science; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray absorption fine structure"
+   },
+   {
+    "name": "Time-resolved x-ray absorption fine structure"
+   },
+   {
+    "name": "Microfluorescence"
+   },
+   {
+    "name": "X-ray photoemission spectroscopy"
+   },
+   {
+    "name": "X-ray emission spectroscopy"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "oxidation state",
+   "unoccupied electronic states",
+   "occupied electronic states",
+   "chemical bonding states",
+   "electronic band structure",
+   "surface chemical composition"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in, Observer, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/14"
+  ],
+  "aliases": [
+   "operator: MR-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'MR-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'MR-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "http://mrcat.iit.edu/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by an IIT-led consortium; catalysis, environmental and materials spectroscopy. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4800.0,
+    65000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4.8-32 keV; 15-65 keV"
+  }
+ },
+ {
+  "id": "aps-11-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 11-BM-B (Chemistry; Environmental Science; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Powder diffraction"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification",
+   "lattice parameters"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/90"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://11bm.xray.aps.anl.gov/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS Structural Science group reports scientific commissioning complete after APS-U enhancements; 11-BM accepting user proposals (initially limited) in 2025."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Structural-Science",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. APS Structural Science group reports scientific commissioning complete after APS-U enhancements; 11-BM accepting user proposals (initially limited) in 2025."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    20000.0,
+    32000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 20-32 keV"
+  }
+ },
+ {
+  "id": "aps-11-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 11-ID-B (Catalysis; Chemistry; Environmental Science; GeoScience; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray total scattering, pair distribution function (PDF)"
+   },
+   {
+    "name": "High-energy x-ray diffraction"
+   },
+   {
+    "name": "Grazing incidence diffraction"
+   }
+  ],
+  "measurables": [
+   "local atomic structure of disordered/nanocrystalline materials",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/16"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/16",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Dedicated PDF station; fixed energies of 59 and 87 keV. Scientific commissioning complete after APS-U; accepting (initially limited) user proposals in 2025."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Structural-Science",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Dedicated PDF station; fixed energies of 59 and 87 keV. Scientific commissioning complete after APS-U; accepting (initially limited) user proposals in 2025."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    59000.0,
+    87000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 59 keV; 87 keV"
+  }
+ },
+ {
+  "id": "aps-11-id-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 11-ID-C (Catalysis; Chemistry; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "High-energy x-ray diffraction"
+   },
+   {
+    "name": "Diffuse x-ray scattering"
+   },
+   {
+    "name": "X-ray total scattering, pair distribution function (PDF)"
+   },
+   {
+    "name": "Grazing incidence diffraction"
+   }
+  ],
+  "measurables": [
+   "local atomic structure of disordered/nanocrystalline materials",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/15"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.osti.gov/servlets/purl/1840758",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Very high fixed-energy (~100 keV class) station. Scientific commissioning complete after APS-U; accepting (initially limited) user proposals in 2025."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Structural-Science",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Very high fixed-energy (~100 keV class) station. Scientific commissioning complete after APS-U; accepting (initially limited) user proposals in 2025."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    106000.0,
+    106000.0
+   ],
+   "tunable": false,
+   "flux_notes": "energy ranges verbatim: 106 keV"
+  }
+ },
+ {
+  "id": "aps-11-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 11-ID-D (Environmental Science; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "High-energy x-ray diffraction"
+   },
+   {
+    "name": "X-ray total scattering, pair distribution function (PDF)"
+   },
+   {
+    "name": "Grazing incidence diffraction"
+   }
+  ],
+  "measurables": [
+   "local atomic structure of disordered/nanocrystalline materials",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/17"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Construction'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Construction'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    30000.0,
+    130000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 30-130 keV"
+  }
+ },
+ {
+  "id": "aps-12-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 12-BM-B (Catalysis; Chemistry; Environmental Science; Materials Science; Physics; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray absorption fine structure"
+   },
+   {
+    "name": "Small-angle x-ray scattering"
+   },
+   {
+    "name": "Wide-angle x-ray scattering"
+   }
+  ],
+  "measurables": [
+   "oxidation state",
+   "unoccupied electronic states"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/18"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://eberlight.aps.anl.gov/techniques",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4500.0,
+    40000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4.5-20 keV; 10-40 keV"
+  }
+ },
+ {
+  "id": "aps-12-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 12-ID-B (Chemistry; Life Sciences; Materials Science; Physics; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Small-angle x-ray scattering"
+   },
+   {
+    "name": "Grazing incidence small-angle scattering"
+   },
+   {
+    "name": "Wide-angle x-ray scattering"
+   },
+   {
+    "name": "Grazing incidence diffraction"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/110"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://12idb.xray.aps.anl.gov/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Solids and solutions. Post-APS-U user-operations status not directly sourced."
+   },
+   {
+    "source_url": "https://small-angle.aps.anl.gov/aps-saxs-beamlines",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Solids and solutions. Post-APS-U user-operations status not directly sourced."
+   },
+   {
+    "source_url": "PoLARIS Instrument Inventory Table v3 (local: ~/AAA/Papers/PCL_PoLARIS_2025/Instrument Inventory Table v3.pdf)",
+    "retrieved": "2026-08-27",
+    "notes": "ENRICHMENT from second independent source: PoLARIS inventory lists 12-ID-B as Existing with UR3 robotic arm, GIWAXS for SD-2 Project 1, grazing-incidence + transmission geometries. Status upgraded unknown->operational on this basis."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    7900.0,
+    14000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 7.9-14 keV"
+  }
+ },
+ {
+  "id": "aps-12-id-e",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 12-ID-E (Chemistry; Materials Science; Physics; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Small-angle x-ray scattering"
+   },
+   {
+    "name": "Wide-angle x-ray scattering"
+   },
+   {
+    "name": "Ultra-small-angle x-ray scattering"
+   },
+   {
+    "name": "Coherent x-ray scattering"
+   },
+   {
+    "name": "Anomalous Small Angle X-ray Scattering"
+   },
+   {
+    "name": "Grazing incidence small-angle scattering"
+   }
+  ],
+  "measurables": [
+   "nanoscale structure, strain and dynamics"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/228"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://usaxs.xray.aps.anl.gov/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. USAXS at 12-ID-E since the 2024 APS-U upgrade; q-range ~1e-5 to ~10 1/A; ~2000 h/yr allocated."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Sector-12/12-ID-E",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. USAXS at 12-ID-E since the 2024 APS-U upgrade; q-range ~1e-5 to ~10 1/A; ~2000 h/yr allocated."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    7000.0,
+    38000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 7-38 keV"
+  }
+ },
+ {
+  "id": "aps-13-bm-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 13-BM-C (Environmental Science; GeoScience)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Surface diffraction"
+   },
+   {
+    "name": "High-pressure diamond anvil cell"
+   },
+   {
+    "name": "Single-crystal diffraction"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification",
+   "structure and equation of state at extreme pressure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/96"
+  ],
+  "aliases": [
+   "operator: GSECARS"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'GSECARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'GSECARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Full general user operations restored for APS 2025-3 cycle."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    15000.0,
+    28600.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 15-15 keV; 28.6-28.6 keV"
+  }
+ },
+ {
+  "id": "aps-13-bm-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 13-BM-D (Environmental Science; GeoScience)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Tomography"
+   },
+   {
+    "name": "High-pressure diamond anvil cell"
+   },
+   {
+    "name": "High-pressure multi-anvil press"
+   }
+  ],
+  "measurables": [
+   "3d microstructure",
+   "internal morphology (non-destructive)",
+   "structure and equation of state at extreme pressure",
+   "structure at high pressure-temperature (large volume)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/20"
+  ],
+  "aliases": [
+   "operator: GSECARS"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'GSECARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'GSECARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Large volume press at 100% operations; full general user operations for 2025-3 cycle."
+   },
+   {
+    "source_url": "https://seescience.org/beamline-science/our-synchrotron-facilities/aps/upgrade-status/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Large volume press at 100% operations; full general user operations for 2025-3 cycle."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4500.0,
+    100000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4.5-100 keV"
+  }
+ },
+ {
+  "id": "aps-13-id-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 13-ID-C,D (Environmental Science; GeoScience)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Surface diffraction"
+   },
+   {
+    "name": "X-ray standing waves"
+   },
+   {
+    "name": "Microdiffraction"
+   },
+   {
+    "name": "X-ray absorption fine structure"
+   },
+   {
+    "name": "High-pressure diamond anvil cell"
+   },
+   {
+    "name": "High-pressure multi-anvil press"
+   },
+   {
+    "name": "X-ray emission spectroscopy"
+   }
+  ],
+  "measurables": [
+   "oxidation state",
+   "unoccupied electronic states",
+   "occupied electronic states",
+   "chemical bonding states",
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "phase identification",
+   "structure and equation of state at extreme pressure",
+   "structure at high pressure-temperature (large volume)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/21"
+  ],
+  "aliases": [
+   "operator: GSECARS"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'GSECARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'GSECARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://seescience.org/2025/06/02/sees-beamlines-at-the-aps-for-2025-3-cycle/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Earth/planetary science under extreme P-T. In scientific commissioning through APS 2025-2/2025-3 cycles; some user experiments supported."
+   },
+   {
+    "source_url": "https://gsecars.uchicago.edu/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Earth/planetary science under extreme P-T. In scientific commissioning through APS 2025-2/2025-3 cycles; some user experiments supported."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4900.0,
+    75000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4.9-45 keV; 10-75 keV"
+  }
+ },
+ {
+  "id": "aps-14-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 14-ID-B (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Time-resolved crystallography"
+   },
+   {
+    "name": "Laue crystallography"
+   },
+   {
+    "name": "Serial Crystallography"
+   },
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Time-resolved x-ray scattering"
+   },
+   {
+    "name": "Small-angle x-ray scattering"
+   },
+   {
+    "name": "Wide-angle x-ray scattering"
+   }
+  ],
+  "measurables": [
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "macromolecular crystal structure",
+   "room-temperature/time-resolved macromolecular structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/30"
+  ],
+  "aliases": [
+   "operator: BioCARS"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'BioCARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'BioCARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://biocars.uchicago.edu/scientific-program/time-resolved-crystallography/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Pink beam at ~12 keV with 2.5-5.5% bandpass; single-pulse isolation. 2025 publications describe active post-APS-U capabilities."
+   },
+   {
+    "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585492/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Pink beam at ~12 keV with 2.5-5.5% bandpass; single-pulse isolation. 2025 publications describe active post-APS-U capabilities."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    9000.0,
+    15000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 9-15 keV"
+  }
+ },
+ {
+  "id": "aps-15-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 15-ID-B,E (Chemistry; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "Liquid interface scattering"
+   },
+   {
+    "name": "Photo-crystallography"
+   },
+   {
+    "name": "Resonant diffraction (DAFS) - single crystal"
+   },
+   {
+    "name": "Liquid interface spectroscopy"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/229"
+  ],
+  "aliases": [
+   "operator: ChemMatCARS"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'ChemMatCARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'ChemMatCARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585698/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 15-ID-B (new hutch, mail-in crystallography), 15-ID-D (high-energy/in-situ diffraction); 2025 paper describes upgrades in progress; cycle-by-cycle status not explicitly sourced."
+   },
+   {
+    "source_url": "https://chemmatcars.uchicago.edu/scientific-program/liquid-surface-x-ray-scattering/detectors/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 15-ID-B (new hutch, mail-in crystallography), 15-ID-D (high-energy/in-situ diffraction); 2025 paper describes upgrades in progress; cycle-by-cycle status not explicitly sourced."
+   }
+  ],
+  "record_depth": "directory"
+ },
+ {
+  "id": "aps-15-id-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 15-ID-C,D (Chemistry; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Anomalous Small Angle X-ray Scattering"
+   },
+   {
+    "name": "High-pressure diamond anvil cell - single crystal"
+   },
+   {
+    "name": "Liquid interface scattering"
+   },
+   {
+    "name": "Resonant diffraction (DAFS) - single crystal"
+   },
+   {
+    "name": "Photo-crystallography"
+   },
+   {
+    "name": "Liquid interface spectroscopy"
+   },
+   {
+    "name": "Single-crystal diffraction"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification",
+   "structure and equation of state at extreme pressure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/230"
+  ],
+  "aliases": [
+   "operator: ChemMatCARS"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'ChemMatCARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'ChemMatCARS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585698/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 15-ID-B (new hutch, mail-in crystallography), 15-ID-D (high-energy/in-situ diffraction); 2025 paper describes upgrades in progress; cycle-by-cycle status not explicitly sourced."
+   },
+   {
+    "source_url": "https://chemmatcars.uchicago.edu/scientific-program/liquid-surface-x-ray-scattering/detectors/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 15-ID-B (new hutch, mail-in crystallography), 15-ID-D (high-energy/in-situ diffraction); 2025 paper describes upgrades in progress; cycle-by-cycle status not explicitly sourced."
+   }
+  ],
+  "record_depth": "directory"
+ },
+ {
+  "id": "aps-16-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 16-BM-B,D (GeoScience; Materials Science; Physics; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "High-pressure multi-anvil press"
+   },
+   {
+    "name": "High-pressure diamond anvil cell - single crystal"
+   },
+   {
+    "name": "White Laue Single Crystal Diffraction"
+   },
+   {
+    "name": "Radiography"
+   },
+   {
+    "name": "Pair distribution function"
+   },
+   {
+    "name": "Microdiffraction"
+   },
+   {
+    "name": "Tomography"
+   }
+  ],
+  "measurables": [
+   "3d microstructure",
+   "internal morphology (non-destructive)",
+   "time-resolved internal dynamics (2d projection)",
+   "local strain and crystal orientation maps",
+   "local atomic structure of disordered/nanocrystalline materials",
+   "crystal structure",
+   "phase identification",
+   "structure and equation of state at extreme pressure",
+   "structure at high pressure-temperature (large volume)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/246"
+  ],
+  "aliases": [
+   "operator: HPCAT-XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'HPCAT-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'HPCAT-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://hpcat.aps.anl.gov/beamlines",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Per-station status of 16-BM-B not explicitly stated during phased restart."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    60000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-60 keV"
+  }
+ },
+ {
+  "id": "aps-16-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 16-ID-B (Chemistry; GeoScience; Materials Science; Physics; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Microdiffraction"
+   },
+   {
+    "name": "High-pressure diamond anvil cell"
+   },
+   {
+    "name": "High-pressure diamond anvil cell - single crystal"
+   }
+  ],
+  "measurables": [
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "phase identification",
+   "structure and equation of state at extreme pressure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/43"
+  ],
+  "aliases": [
+   "operator: HPCAT-XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'HPCAT-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'HPCAT-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://hpcat.aps.anl.gov/beamlines",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. HPCAT newsletter (June 2026): 16-ID-B in regular user mode with general-purpose and laser-heating tables fully operational."
+   },
+   {
+    "source_url": "https://hpcat.aps.anl.gov/sites/hpc-aps-d8.aps.anl.gov/files/HPC/2026%20June%20HPCAT%20NEWSLETTER.pdf",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. HPCAT newsletter (June 2026): 16-ID-B in regular user mode with general-purpose and laser-heating tables fully operational."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    18000.0,
+    50000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 18-50 keV"
+  }
+ },
+ {
+  "id": "aps-16-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 16-ID-D,E (Chemistry; GeoScience; Materials Science; Physics; Polymer Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "High pressure x-ray Raman spectroscopy"
+   },
+   {
+    "name": "High pressure x-ray non-resonant and resonant emission"
+   },
+   {
+    "name": "High-pressure diamond anvil cell"
+   },
+   {
+    "name": "Inelastic x-ray scattering (1 eV resolution)"
+   },
+   {
+    "name": "X-ray absorption fine structure"
+   }
+  ],
+  "measurables": [
+   "oxidation state",
+   "unoccupied electronic states",
+   "electronic and vibrational excitations (phonons)",
+   "structure and equation of state at extreme pressure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/231"
+  ],
+  "aliases": [
+   "operator: HPCAT-XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'HPCAT-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'HPCAT-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://hpcat.aps.anl.gov/news/2025-09/hpcat-accepts-beam-16-id-c-crrt-verification-16-id-c-d-e",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 16-ID-C-D-E undulator branch accepted beam September 2025; nearing completion of final commissioning per HPCAT."
+   },
+   {
+    "source_url": "https://hpcat.aps.anl.gov/beamlines",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 16-ID-C-D-E undulator branch accepted beam September 2025; nearing completion of final commissioning per HPCAT."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4500.0,
+    60000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4.5-60 keV; 10-30 keV"
+  }
+ },
+ {
+  "id": "aps-17-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 17-BM-B (Catalysis; Chemistry; GeoScience; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Powder diffraction"
+   },
+   {
+    "name": "X-ray total scattering, pair distribution function (PDF)"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification",
+   "lattice parameters",
+   "local atomic structure of disordered/nanocrystalline materials"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/88"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/88",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Tunable 27-51 keV; battery/catalysis/gas-loading sample environments. Commissioning complete; (initially limited) user proposals accepted in 2025."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Structural-Science",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Tunable 27-51 keV; battery/catalysis/gas-loading sample environments. Commissioning complete; (initially limited) user proposals accepted in 2025."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    27000.0,
+    51000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 27-51 keV"
+  }
+ },
+ {
+  "id": "aps-17-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 17-ID-B (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Multi-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Microbeam"
+   },
+   {
+    "name": "Single-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Large unit cell crystallography"
+   },
+   {
+    "name": "Subatomic (<0.85 \u00c5) resolution"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "macromolecular crystal structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/24"
+  ],
+  "aliases": [
+   "operator: IMCA-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'IMCA-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'IMCA-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585694/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Pharma structure-based drug discovery; beamline rebuilt for the upgraded APS (2025 paper describes post-APS-U operation)."
+   },
+   {
+    "source_url": "https://www.tandfonline.com/doi/full/10.1080/08940886.2026.2643150",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Pharma structure-based drug discovery; beamline rebuilt for the upgraded APS (2025 paper describes post-APS-U operation)."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    20000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-20 keV"
+  }
+ },
+ {
+  "id": "aps-18-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 18-ID-D (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Fiber diffraction"
+   },
+   {
+    "name": "Small-angle x-ray scattering"
+   },
+   {
+    "name": "Time-resolved x-ray scattering"
+   },
+   {
+    "name": "BioSAXS/BioSANS"
+   },
+   {
+    "name": "Microdiffraction"
+   }
+  ],
+  "measurables": [
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "phase identification",
+   "nanoscale size and shape distributions",
+   "fiber/muscle diffraction structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/25"
+  ],
+  "aliases": [
+   "operator: BIO-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'BIO-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'BIO-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.bio.aps.anl.gov/pages/beamline.html",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Resumed user operations with the APS 2025-1 run; new high-flux low-divergence microbeams, automated SEC-SAXS/coflow autosampler."
+   },
+   {
+    "source_url": "https://www.bio.aps.anl.gov/pages/aps-u.html",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Resumed user operations with the APS 2025-1 run; new high-flux low-divergence microbeams, automated SEC-SAXS/coflow autosampler."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    16000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-16 keV"
+  }
+ },
+ {
+  "id": "aps-19-bm-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 19-BM-D (Environmental Science; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "not-operational",
+  "techniques": [
+   {
+    "name": "Tomography"
+   }
+  ],
+  "measurables": [
+   "3d microstructure",
+   "internal morphology (non-destructive)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/26"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://sbc.aps.anl.gov/about",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Closed before the APS Upgrade along with 19-ID as SBC concluded operations."
+   },
+   {
+    "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-19-bm-sbc-2/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Closed before the APS Upgrade along with 19-ID as SBC concluded operations."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    30000.0,
+    120000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 30-120 keV"
+  }
+ },
+ {
+  "id": "aps-19-id-e",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 19-ID-E (Catalysis; Chemistry; Environmental Science; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "Nano-imaging"
+   },
+   {
+    "name": "X-ray fluorescence micro/nanoprobe"
+   },
+   {
+    "name": "Ptychography"
+   },
+   {
+    "name": "X-ray diffraction micro/nanoprobe"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "nanoscale morphology (highest-resolution x-ray imaging)",
+   "2d/3d morphology",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/232"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/232",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Hard X-ray nanoprobe 220 m from source; ~20 nm focus with 50 mm working distance for in situ/operando environments. First light expected during the 2024-2025 run; full user-program status not explicitly sourced."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Feature-Beamlines/In-Situ-Nanoprobe",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Hard X-ray nanoprobe 220 m from source; ~20 nm focus with 50 mm working distance for in situ/operando environments. First light expected during the 2024-2025 run; full user-program status not explicitly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4800.0,
+    30000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4.8-30 keV"
+  }
+ },
+ {
+  "id": "aps-20-bm-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 20-BM-B (Chemistry; Environmental Science; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray absorption fine structure"
+   }
+  ],
+  "measurables": [
+   "oxidation state",
+   "unoccupied electronic states"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/32"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/32",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Si(111) monochromator, 3.9-32 keV focused; APS directory lists full general user mode; 2025 paper describes multifunctional capillary XRF for tissue sections."
+   },
+   {
+    "source_url": "https://s20.xray.aps.anl.gov/bm.html",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Si(111) monochromator, 3.9-32 keV focused; APS directory lists full general user mode; 2025 paper describes multifunctional capillary XRF for tissue sections."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    3900.0,
+    35000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 3.9-32 keV; 3.9-35 keV"
+  }
+ },
+ {
+  "id": "aps-20-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 20-ID-D,E (Chemistry; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "Tomography"
+   },
+   {
+    "name": "High-energy x-ray diffraction"
+   },
+   {
+    "name": "Transmission x-ray microscopy"
+   },
+   {
+    "name": "High-energy diffraction microscopy (HEDM)"
+   },
+   {
+    "name": "High-energy small-angle x-ray scattering (HE-SAXS)"
+   }
+  ],
+  "measurables": [
+   "3d microstructure",
+   "internal morphology (non-destructive)",
+   "grain-resolved 3d microstructure and strain (bulk)",
+   "crystal structure",
+   "phase identification",
+   "nanoscale size and shape distributions"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/233"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Feature-Beamlines/High-Energy-X-ray-Microscope",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. ~600-ft beamline with superconducting undulator; monochromatic 35-120 keV, white-beam capable; cm-sized samples in in situ environments. First light expected 2024-2025 run."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Sector-20/20-ID",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. ~600-ft beamline with superconducting undulator; monochromatic 35-120 keV, white-beam capable; cm-sized samples in in situ environments. First light expected 2024-2025 run."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    35000.0,
+    120000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 35-120 keV"
+  }
+ },
+ {
+  "id": "aps-21-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 21-ID-D (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Serial Crystallography"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "macromolecular crystal structure",
+   "room-temperature/time-resolved macromolecular structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/101"
+  ],
+  "aliases": [
+   "operator: LS-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'LS-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'LS-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.tandfonline.com/doi/full/10.1080/08940886.2026.2643150",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+   },
+   {
+    "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-21-id-d-ls-cat/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6500.0,
+    20000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6.5-20 keV"
+  }
+ },
+ {
+  "id": "aps-21-id-f",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 21-ID-F (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "macromolecular crystal structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/94"
+  ],
+  "aliases": [
+   "operator: LS-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'LS-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'LS-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.tandfonline.com/doi/full/10.1080/08940886.2026.2643150",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+   },
+   {
+    "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-21-id-d-ls-cat/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    12700.0,
+    12700.0
+   ],
+   "tunable": false,
+   "flux_notes": "energy ranges verbatim: 12.7 keV"
+  }
+ },
+ {
+  "id": "aps-21-id-g",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 21-ID-G (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "macromolecular crystal structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/95"
+  ],
+  "aliases": [
+   "operator: LS-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'LS-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'LS-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.tandfonline.com/doi/full/10.1080/08940886.2026.2643150",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+   },
+   {
+    "source_url": "https://www.mitegen.com/learn/beamline-guides/aps-21-id-d-ls-cat/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four MX stations; 21-ID-D supports serial MX and cryo/ambient switching; described as active at the upgraded APS in the 2026 SRN MX review."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    12700.0,
+    12700.0
+   ],
+   "tunable": false,
+   "flux_notes": "energy ranges verbatim: 12.7 keV"
+  }
+ },
+ {
+  "id": "aps-22-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 22-ID-D (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Multi-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Single-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Microbeam"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "macromolecular crystal structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/44"
+  ],
+  "aliases": [
+   "operator: SER-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'SER-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'SER-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    16000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-16 keV"
+  }
+ },
+ {
+  "id": "aps-22-id-e",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 22-ID-E ()",
+  "instrument_class": "synchrotron-beamline",
+  "status": "planned",
+  "techniques": [],
+  "measurables": [
+   "(unmapped technique - needs deep extraction)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: ",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/234"
+  ],
+  "aliases": [
+   "operator: SER-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Under Development'; operator: 'SER-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Under Development'; operator: 'SER-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory"
+ },
+ {
+  "id": "aps-23-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 23-ID-B (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Serial Crystallography"
+   },
+   {
+    "name": "Microdiffraction"
+   },
+   {
+    "name": "Subatomic (<0.85 \u00c5) resolution"
+   },
+   {
+    "name": "Multi-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Single-wavelength anomalous dispersion"
+   }
+  ],
+  "measurables": [
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "phase identification",
+   "macromolecular crystal structure",
+   "room-temperature/time-resolved macromolecular structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: Remote, On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/91"
+  ],
+  "aliases": [
+   "operator: GM/CA-XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'GM/CA-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'GM/CA-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12585485/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Returned to scientific operations 11 March 2025 after technical commissioning from 22 November 2024; 23-ID-D max energy raised to 35 keV, >1e13 ph/s, Eiger2 XE 16M CdTe detector."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    20000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-20 keV"
+  }
+ },
+ {
+  "id": "aps-23-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 23-ID-D (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Serial Crystallography"
+   },
+   {
+    "name": "Microdiffraction"
+   },
+   {
+    "name": "Subatomic (<0.85 \u00c5) resolution"
+   },
+   {
+    "name": "Multi-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Single-wavelength anomalous dispersion"
+   }
+  ],
+  "measurables": [
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "phase identification",
+   "macromolecular crystal structure",
+   "room-temperature/time-resolved macromolecular structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/34"
+  ],
+  "aliases": [
+   "operator: GM/CA-XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'GM/CA-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'GM/CA-XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    45000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-45 keV"
+  }
+ },
+ {
+  "id": "aps-24-id-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 24-ID-C (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Microdiffraction"
+   },
+   {
+    "name": "Single-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Single-crystal diffraction"
+   },
+   {
+    "name": "Microbeam"
+   },
+   {
+    "name": "Multi-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Subatomic (<0.85 \u00c5) resolution"
+   }
+  ],
+  "measurables": [
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "phase identification",
+   "macromolecular crystal structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/86"
+  ],
+  "aliases": [
+   "operator: NE-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'NE-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'NE-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC12585651/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 2025 paper reports NE-CAT implemented key post-upgrade improvements and continues serving users."
+   },
+   {
+    "source_url": "https://necat.chem.cornell.edu/steps-returning-operations",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 2025 paper reports NE-CAT implemented key post-upgrade improvements and continues serving users."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    20000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-20 keV"
+  }
+ },
+ {
+  "id": "aps-24-id-e",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 24-ID-E (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Microbeam"
+   },
+   {
+    "name": "Microdiffraction"
+   },
+   {
+    "name": "Single-wavelength anomalous dispersion"
+   },
+   {
+    "name": "Single-crystal diffraction"
+   }
+  ],
+  "measurables": [
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "phase identification",
+   "macromolecular crystal structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/93"
+  ],
+  "aliases": [
+   "operator: NE-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'NE-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'NE-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    12660.0,
+    12660.0
+   ],
+   "tunable": false,
+   "flux_notes": "energy ranges verbatim: 12.66 keV"
+  }
+ },
+ {
+  "id": "aps-25-id-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 25-ID-C (Catalysis; Chemistry; Environmental Science; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray absorption fine structure"
+   },
+   {
+    "name": "Microfluorescence"
+   },
+   {
+    "name": "X-ray emission spectroscopy"
+   },
+   {
+    "name": "Micro x-ray absorption fine structure"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "oxidation state",
+   "unoccupied electronic states",
+   "occupied electronic states",
+   "chemical bonding states"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/217"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/217",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Si(111) mono, 1e14 ph/s at 10 keV, 2x2 um focus; APS directory states accepting general user proposals while commissioning continues."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4000.0,
+    32000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4-32 keV; 5-20 keV"
+  }
+ },
+ {
+  "id": "aps-25-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 25-ID-D,E (Catalysis; Chemistry; Environmental Science; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray Raman scattering"
+   },
+   {
+    "name": "Time-resolved x-ray absorption fine structure"
+   },
+   {
+    "name": "Time-resolved x-ray scattering"
+   },
+   {
+    "name": "Inelastic x-ray scattering (1 eV resolution)"
+   }
+  ],
+  "measurables": [
+   "oxidation state",
+   "unoccupied electronic states",
+   "electronic and vibrational excitations (phonons)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/218"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    4000.0,
+    40000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 4-40 keV; 5-20 keV"
+  }
+ },
+ {
+  "id": "aps-26-id-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 26-ID-C (Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Ptychography"
+   },
+   {
+    "name": "Nanodiffraction"
+   },
+   {
+    "name": "Coherent x-ray scattering"
+   },
+   {
+    "name": "X-ray fluorescence microscopy (XFM)"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "nanoscale structure, strain and dynamics",
+   "nanoscale morphology (highest-resolution x-ray imaging)",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Mail-in, Observer, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/92"
+  ],
+  "aliases": [
+   "operator: CNM/XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'CNM/XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational'; operator: 'CNM/XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://cnm.anl.gov/pages/hard-xray-nanoprobe",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by CNM's Electron and X-ray Microscopy group. Post-APS-U status not directly sourced."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Microscopy/Beamlines/26-ID",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Operated by CNM's Electron and X-ray Microscopy group. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    7000.0,
+    12000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 7-12 keV"
+  }
+ },
+ {
+  "id": "aps-27-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 27-ID-B (Chemistry; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Resonant inelastic x-ray scattering"
+   }
+  ],
+  "measurables": [
+   "electronic and vibrational excitations (phonons)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/212"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-November-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. November 2025 APS-U update describes users running experiments at the newly upgraded 27-ID RIXS beamline."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    14000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-14 keV"
+  }
+ },
+ {
+  "id": "aps-28-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 28-ID-B,C (Catalysis; GeoScience; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "not-operational",
+  "techniques": [
+   {
+    "name": "Surface diffraction"
+   },
+   {
+    "name": "Anomalous and resonant scattering"
+   },
+   {
+    "name": "General diffraction"
+   },
+   {
+    "name": "Coherent x-ray scattering"
+   }
+  ],
+  "measurables": [
+   "nanoscale structure, strain and dynamics",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/215"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://proceedings.jacow.org/medsi2025/pdf/TUOA01.pdf",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    30000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-30 keV"
+  }
+ },
+ {
+  "id": "aps-28-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 28-ID-D,E (Catalysis; GeoScience; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "Surface diffraction"
+   },
+   {
+    "name": "Coherent x-ray scattering"
+   },
+   {
+    "name": "General diffraction"
+   }
+  ],
+  "measurables": [
+   "nanoscale structure, strain and dynamics",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/237"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Under Development'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Under Development'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://proceedings.jacow.org/medsi2025/pdf/TUOA01.pdf",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    15000.0,
+    15000.0
+   ],
+   "tunable": false,
+   "flux_notes": "energy ranges verbatim: 15-15 keV"
+  }
+ },
+ {
+  "id": "aps-28-id-f",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 28-ID-F (Catalysis; GeoScience; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "Surface diffraction"
+   },
+   {
+    "name": "General diffraction"
+   },
+   {
+    "name": "High-energy x-ray diffraction"
+   },
+   {
+    "name": "Coherent x-ray scattering"
+   }
+  ],
+  "measurables": [
+   "nanoscale structure, strain and dynamics",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/238"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Under Development'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Under Development'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://proceedings.jacow.org/medsi2025/pdf/TUOA01.pdf",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    25000.0,
+    25000.0
+   ],
+   "tunable": false,
+   "flux_notes": "energy ranges verbatim: 25-25 keV; 35-35"
+  }
+ },
+ {
+  "id": "aps-28-id-g",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 28-ID-G (Catalysis; GeoScience; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "Surface diffraction"
+   },
+   {
+    "name": "General diffraction"
+   },
+   {
+    "name": "High-energy x-ray diffraction"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/239"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Under Development'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Under Development'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://proceedings.jacow.org/medsi2025/pdf/TUOA01.pdf",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Four independently operating branches, eight stations, 15-60 keV. First light July 2025 per APS-U August 2025 update."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    75000.0,
+    75000.0
+   ],
+   "tunable": false,
+   "flux_notes": "energy ranges verbatim: 75-75 keV; 105-105"
+  }
+ },
+ {
+  "id": "aps-29-id-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 29-ID-C,D (Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Angle-resolved photoemission spectroscopy (ARPES)"
+   },
+   {
+    "name": "Resonant soft x-ray scattering (RSXS)"
+   },
+   {
+    "name": "Magnetic circular dichroism"
+   },
+   {
+    "name": "X-ray magnetic linear dichroism"
+   }
+  ],
+  "measurables": [
+   "occupied electronic states",
+   "chemical bonding states",
+   "electronic band structure",
+   "surface chemical composition",
+   "fermi surface",
+   "element-specific magnetization",
+   "magnetic ordering",
+   "magnetic ordering and domain correlations"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/112"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/112",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Two end stations: ARPES (30x10 um beam, 6-300 K, Scienta R4000) and RSXS. APS directory lists IEX as currently accepting general users."
+   },
+   {
+    "source_url": "https://www.sciencedirect.com/science/article/abs/pii/S0168900214001648",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Two end stations: ARPES (30x10 um beam, 6-300 K, Scienta R4000) and RSXS. APS directory lists IEX as currently accepting general users."
+   }
+  ],
+  "record_depth": "directory"
+ },
+ {
+  "id": "aps-30-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 30-ID-B,C (GeoScience; Life Sciences; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Inelastic x-ray scattering (1 meV resolution)"
+   },
+   {
+    "name": "Nuclear resonant scattering"
+   }
+  ],
+  "measurables": [
+   "electronic and vibrational excitations (phonons)",
+   "phonon density of states of Moessbauer isotopes",
+   "hyperfine/magnetic state"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/89"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-November-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. 119Sn nuclear resonance experiments cited as performable at 30-ID; explicit post-APS-U status not sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    23700.0,
+    23900.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 23.7-23.9 keV"
+  }
+ },
+ {
+  "id": "aps-31-id-d",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 31-ID-D (Life Sciences)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Macromolecular crystallography"
+   },
+   {
+    "name": "Single-wavelength anomalous dispersion"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "macromolecular crystal structure"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: Mail-in, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/45"
+  ],
+  "aliases": [
+   "operator: LRL-CAT"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'LRL-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'LRL-CAT'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    22000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-22 keV"
+  }
+ },
+ {
+  "id": "aps-31-id-e",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 31-ID-E (Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Ptychography"
+   },
+   {
+    "name": "Laminography"
+   }
+  ],
+  "measurables": [
+   "nanoscale morphology (highest-resolution x-ray imaging)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/240"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    8500.0,
+    13700.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 8.5 keV; 13.7 keV"
+  }
+ },
+ {
+  "id": "aps-32-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 32-ID-B,C (GeoScience; Life Sciences; Materials Science)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "Phase contrast imaging"
+   },
+   {
+    "name": "Radiography"
+   },
+   {
+    "name": "Transmission x-ray microscopy"
+   },
+   {
+    "name": "Tomography"
+   }
+  ],
+  "measurables": [
+   "3d microstructure",
+   "internal morphology (non-destructive)",
+   "2d/3d morphology",
+   "time-resolved internal dynamics (2d projection)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/84"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Operational/Accepting General Users'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/84",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Stations at ~37 m (TXM) and ~70 m (high-speed imaging); shares TomoScan controls with 2-BM/7-BM. Post-APS-U status not directly sourced."
+   },
+   {
+    "source_url": "https://tomopedia.github.io/instruments/aps32id/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Stations at ~37 m (TXM) and ~70 m (high-speed imaging); shares TomoScan controls with 2-BM/7-BM. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    7000.0,
+    40000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 7-40 keV"
+  }
+ },
+ {
+  "id": "aps-33-bm-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 33-BM-C (Chemistry; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "not-operational",
+  "techniques": [
+   {
+    "name": "Diffuse x-ray scattering"
+   },
+   {
+    "name": "General diffraction"
+   },
+   {
+    "name": "Powder diffraction"
+   },
+   {
+    "name": "X-ray reflectivity"
+   },
+   {
+    "name": "Grazing incidence diffraction"
+   },
+   {
+    "name": "Anomalous and resonant scattering"
+   }
+  ],
+  "measurables": [
+   "crystal structure",
+   "phase identification",
+   "lattice parameters",
+   "thin-film thickness, roughness and density profiles"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/83"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Beamline-Directory/18",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Post-APS-U status not directly sourced."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    35000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-35 keV"
+  }
+ },
+ {
+  "id": "aps-33-id-c",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 33-ID-C (Catalysis; Chemistry; Environmental Science; GeoScience; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "commissioning",
+  "techniques": [
+   {
+    "name": "Ptychography"
+   },
+   {
+    "name": "X-ray fluorescence microscopy (XFM)"
+   },
+   {
+    "name": "Tomography"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "nanoscale morphology (highest-resolution x-ray imaging)",
+   "3d microstructure",
+   "internal morphology (non-destructive)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote, Beamline Staff",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/241"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Commissioning'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Feature-Beamlines/PtychoProbe",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Final APS-U feature beamline to be installed; intended to be the highest-spatial-resolution instrument at APS; first light expected October 2025."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. Final APS-U feature beamline to be installed; intended to be the highest-spatial-resolution instrument at APS; first light expected October 2025."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5000.0,
+    30000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5-30 keV"
+  }
+ },
+ {
+  "id": "aps-34-id-e",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 34-ID-E (Chemistry; Environmental Science; GeoScience; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "Microdiffraction"
+   },
+   {
+    "name": "Laue crystallography"
+   },
+   {
+    "name": "Microbeam"
+   },
+   {
+    "name": "Microfluorescence"
+   }
+  ],
+  "measurables": [
+   "elemental composition",
+   "trace element distribution",
+   "local strain and crystal orientation maps",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/204"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Construction'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Construction'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Sectors-33-34/34-ID-E",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. In technical commissioning as of August 2025; first experiments expected early 2026 and entry into the general user program during the first or second 2026 run."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/APS-Upgrade/APS-Uprade-News/APS-Upgrade-Update-August-2025",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. In technical commissioning as of August 2025; first experiments expected early 2026 and entry into the general user program during the first or second 2026 run."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5500.0,
+    30000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5.5-30 keV"
+  }
+ },
+ {
+  "id": "aps-34-id-f",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 34-ID-F ()",
+  "instrument_class": "synchrotron-beamline",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "Coherent diffraction imaging (CDI)"
+   }
+  ],
+  "measurables": [
+   "nanoscale structure, strain and dynamics",
+   "2d/3d morphology",
+   "crystal structure",
+   "phase identification"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site, Remote",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/242"
+  ],
+  "aliases": [
+   "operator: XSD"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Construction'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Construction'; operator: 'XSD'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; unknown."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    5300.0,
+    30000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 5.3-30 keV"
+  }
+ },
+ {
+  "id": "aps-35-id-b",
+  "facility": "APS",
+  "institution": "ANL",
+  "name": "APS Beamline 35-ID-B,C,D,E (GeoScience; Materials Science; Physics)",
+  "instrument_class": "synchrotron-beamline",
+  "status": "not-operational",
+  "techniques": [
+   {
+    "name": "Time-resolved x-ray scattering"
+   },
+   {
+    "name": "Phase contrast imaging"
+   },
+   {
+    "name": "Radiography"
+   },
+   {
+    "name": "Small-angle x-ray scattering"
+   },
+   {
+    "name": "Time-resolved x-ray absorption fine structure"
+   }
+  ],
+  "measurables": [
+   "oxidation state",
+   "unoccupied electronic states",
+   "2d/3d morphology",
+   "time-resolved internal dynamics (2d projection)"
+  ],
+  "access": {
+   "mechanism": "APS general user proposal; modes: On-site",
+   "proposal_system": "APS User Portal"
+  },
+  "urls": [
+   "https://www.aps.anl.gov/Beamlines/Beamline-Directory/211"
+  ],
+  "aliases": [
+   "operator: DCS"
+  ],
+  "provenance": [
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'DCS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status column verbatim: 'Not Currently Operational'; operator: 'DCS'."
+   },
+   {
+    "source_url": "https://www.aps.anl.gov/Beamlines/Directory",
+    "retrieved": "2026-08-28",
+    "notes": "Official APS Beamline Directory, user-saved copy (Cloudflare blocks automated fetch). Authoritative: beamline list, disciplines, techniques, energy ranges, access modes. Status not in table; retained from prior sources."
+   },
+   {
+    "source_url": "https://dcs-aps.wsu.edu/overview/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. NNSA-sponsored sector for condensed matter under dynamic loading to >350 GPa on ns-us timescales; active 2025 experiments."
+   },
+   {
+    "source_url": "https://dcs-aps.wsu.edu/impact-facilities/",
+    "retrieved": "2026-08-27",
+    "notes": "Directory-level record assembled from search snippets / partner sites / status pages (aps.anl.gov blocks automated fetch). measurables DERIVED from technique keywords. NNSA-sponsored sector for condensed matter under dynamic loading to >350 GPa on ns-us timescales; active 2025 experiments."
+   }
+  ],
+  "record_depth": "directory",
+  "probe": {
+   "type": "photon",
+   "energy_range_eV": [
+    6000.0,
+    100000.0
+   ],
+   "tunable": true,
+   "flux_notes": "energy ranges verbatim: 6-70 keV; 6-100 keV; 22-24 keV"
+  }
+ }
+]

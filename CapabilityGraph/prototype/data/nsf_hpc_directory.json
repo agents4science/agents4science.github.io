@@ -1,0 +1,510 @@
+[
+ {
+  "id": "tacc-stampede3",
+  "facility": "TACC",
+  "program": ["NSF", "University"],
+  "institution": "University of Texas at Austin",
+  "name": "Stampede3 — NSF ACCESS capacity HPC system (Intel Xeon Max HBM nodes plus H100 and Ponte Vecchio GPU nodes)",
+  "aliases": ["Stampede3", "TACC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {"name": "large-scale CPU simulation"},
+   {"name": "GPU-accelerated simulation"},
+   {"name": "high-throughput data analysis"}
+  ],
+  "measurables": [
+   "large-scale simulation campaign outputs",
+   "high-bandwidth-memory (HBM) accelerated application results",
+   "analysis datasets from high-throughput workloads"
+  ],
+  "demonstrated_applications": [
+   "NSF ACCESS open-science allocations (NSF OAC award 2320757); successor to Stampede2 in the NSF supercomputing ecosystem"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Texas Advanced Computing Center, Exploration Way, J.J. Pickle Research Campus, Austin, TX 78758",
+   "latitude": 30.3902434,
+   "longitude": -97.7256386,
+   "source": "coordinates OSM Nominatim, building-level (OSM node 'Texas Advanced Computing Center' on J.J. Pickle Research Campus; retrieved 2026-11-25)"
+  },
+  "access": {
+   "mechanism": "NSF ACCESS allocations; user guide: access requires 'an allocation on Stampede3' through the NSF ACCESS project portal"
+  },
+  "automation": {
+   "notes": "Official specs (docs.tacc.utexas.edu): 560 Sapphire Rapids nodes, each '112 cores on two sockets (2 x 56 cores)' at '1.9GHz' with '128 GB HBM 2e'; 224 Ice Lake nodes with '80 cores on two sockets (40 cores/socket)' and '256GB (3.2 GHz) DDR4' plus 3 large-memory variants incl. '4TB NVDIMM'; 1,060 Skylake nodes with '48 cores on two sockets (24 cores/socket)' and '192GB (2.67GHz) DDR4'; 24 GPU nodes with '4x NVIDIA H100 SXM5' and '1TB DDR5'; 20 nodes with '4x Intel Data Center GPU Max 1550s' (Ponte Vecchio); '100Gb/sec Omni-Path (OPA) network' in fat-tree topology. TOP500: no Stampede3 entry found in the top500.org TACC site listing (checked 2026-11-25)."
+  },
+  "provenance": [
+   {"source_url": "https://docs.tacc.utexas.edu/hpc/stampede3/", "retrieved": "2026-11-25", "notes": "Node counts, CPU/GPU models, memory, interconnect, file systems, SU charging, and access mechanism from the Stampede3 user guide (fetched directly)."},
+   {"source_url": "https://tacc.utexas.edu/news/latest-news/2024/05/13/stampede3-supercomputer-enters-full-production-modernizes-to-meet-computational-needs/", "retrieved": "2026-11-25", "notes": "Status 'operational': TACC news page titled 'Stampede3 Supercomputer Enters Full Production' (May 2024); transition timeline per TACC pages: early user period January 2024, full production April 2024; NSF OAC award 2320757. tacc.utexas.edu blocks direct fetch (HTTP 403), so these fields come from search snippets of TACC's own pages."},
+   {"source_url": "https://top500.org/site/48958/", "retrieved": "2026-11-25", "notes": "TOP500 TACC site listing checked; no Stampede3 entry present."}
+  ]
+ },
+ {
+  "id": "tacc-lonestar6",
+  "facility": "TACC",
+  "program": ["University"],
+  "institution": "University of Texas at Austin",
+  "name": "Lonestar6 — HPC system for Texas researchers (AMD EPYC Milan plus A100/H100 GPU nodes)",
+  "aliases": ["Lonestar6", "LS6", "TACC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {"name": "large-scale CPU simulation"},
+   {"name": "GPU-accelerated simulation"},
+   {"name": "high-throughput data analysis"}
+  ],
+  "measurables": [
+   "large-scale simulation campaign outputs",
+   "GPU-accelerated application results",
+   "analysis datasets from high-throughput workloads"
+  ],
+  "demonstrated_applications": [
+   "Texas research community: all University of Texas System institutions plus Texas A&M University, Texas Tech University, and University of North Texas, via TxRAS allocations"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Texas Advanced Computing Center, Exploration Way, J.J. Pickle Research Campus, Austin, TX 78758",
+   "latitude": 30.3902434,
+   "longitude": -97.7256386,
+   "source": "coordinates OSM Nominatim, building-level (OSM node 'Texas Advanced Computing Center' on J.J. Pickle Research Campus; retrieved 2026-11-25)"
+  },
+  "access": {
+   "mechanism": "Allocations through the Texas Resource Allocation System (TxRAS) for UT System institutions; also serves Texas A&M, Texas Tech, and University of North Texas researchers (per user guide)"
+  },
+  "automation": {
+   "notes": "Official specs (docs.tacc.utexas.edu): 560 compute nodes, each '2x AMD EPYC 7763 64-Core Processor (Milan)' (128 cores/node), 256 GB DDR4, 5 TFlops peak per node, 288 GB SSD /tmp; 84 GPU nodes with '3x NVIDIA A100 PCIE 40GB'; 4 GPU nodes with '2x NVIDIA H100 PCIE 80GB'; 'Mellanox HDR technology with full HDR (200 Gb/s) connectivity'; 8 PB BeeGFS scratch filesystem. TOP500: no Lonestar6 entry in the top500.org TACC site listing (Lonestar 5 is the most recent Lonestar listed; checked 2026-11-25)."
+  },
+  "provenance": [
+   {"source_url": "https://docs.tacc.utexas.edu/hpc/lonestar6/", "retrieved": "2026-11-25", "notes": "All hardware specs, interconnect, storage, access mechanism, and served institutions from the Lonestar6 user guide (fetched directly). Status 'operational' based on this current user guide describing active allocations and queues; guide describes Lonestar6 as 'deployed specifically to support Texas researchers'. tacc.utexas.edu/systems pages block direct fetch (HTTP 403)."},
+   {"source_url": "https://top500.org/site/48958/", "retrieved": "2026-11-25", "notes": "TOP500 TACC site listing checked; no Lonestar6 entry present."}
+  ]
+ },
+ {
+  "id": "tacc-vista",
+  "facility": "TACC",
+  "program": ["NSF", "University"],
+  "institution": "University of Texas at Austin",
+  "name": "Vista — AI-focused Arm-based system (NVIDIA Grace-Grace and Grace-Hopper nodes), bridge between Frontera and Horizon",
+  "aliases": ["Vista", "TACC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {"name": "AI model training at scale"},
+   {"name": "GPU-accelerated simulation"},
+   {"name": "high-throughput data analysis"}
+  ],
+  "measurables": [
+   "trained AI models",
+   "GPU-accelerated simulation outputs",
+   "mixed-precision (FP16/FP64) application results"
+  ],
+  "demonstrated_applications": [
+   "Open science community (TACC describes Vista as an AI-focused system for the open science community and a bridge between Frontera and Horizon)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Texas Advanced Computing Center, Exploration Way, J.J. Pickle Research Campus, Austin, TX 78758",
+   "latitude": 30.3902434,
+   "longitude": -97.7256386,
+   "source": "coordinates OSM Nominatim, building-level (OSM node 'Texas Advanced Computing Center' on J.J. Pickle Research Campus; retrieved 2026-11-25)"
+  },
+  "access": {
+   "mechanism": "TACC allocation required (user guide: users must have 'an allocation on Vista' to log in; allocation status via TACC Portal)"
+  },
+  "automation": {
+   "notes": "Official specs (docs.tacc.utexas.edu): 256 Grace-Grace (GG) nodes, each an 'NVIDIA Grace CPU Superchip' with 144 cores (2x72, 3.4 GHz), 237 GB LPDDR5, 'over 7 TFlops of double precision performance' and '850 GiB/s of memory bandwidth' per node; 600 Grace-Hopper (GH) nodes, each with a 72-core Grace CPU (3.1 GHz, 116 GB DDR5) and an H200 GPU with '96 GB HBM 3', delivering '34 TFlops of FP64 performance and 1979 TFlops of FP16' per node; 'Mellanox NDR technology' interconnect, 400 Gb/s to GH nodes and 200 Gb/s to GG nodes, fat-tree topology. TOP500: no Vista entry found in the top500.org TACC site listing (checked 2026-11-25)."
+  },
+  "provenance": [
+   {"source_url": "https://docs.tacc.utexas.edu/hpc/vista/", "retrieved": "2026-11-25", "notes": "Status 'operational': user guide (dated 2026-11-16) states Vista is 'in full production for the open science community' and describes it as a bridge between Frontera and Horizon (x86 to Arm transition). All node counts, CPU/GPU specs, performance figures, interconnect, and access mechanism from this guide (fetched directly)."},
+   {"source_url": "https://tacc.utexas.edu/news/latest-news/2023/11/13/vista-a-new-ai-focused-supercomputer-for-the-open-science-community/", "retrieved": "2026-11-25", "notes": "AI-focused, open-science-community role; TACC's own news page, located via search snippet (tacc.utexas.edu blocks direct fetch, HTTP 403)."},
+   {"source_url": "https://top500.org/site/48958/", "retrieved": "2026-11-25", "notes": "TOP500 TACC site listing checked; no Vista entry present."}
+  ]
+ },
+ {
+  "id": "tacc-horizon",
+  "facility": "TACC",
+  "program": ["NSF", "University"],
+  "institution": "University of Texas at Austin",
+  "name": "Horizon — NSF Leadership-Class Computing Facility flagship (NVIDIA GB200 Grace Blackwell plus Vera CPU subsystem)",
+  "aliases": ["Horizon", "LCCF", "TACC"],
+  "instrument_class": "compute",
+  "status": "commissioning",
+  "techniques": [
+   {"name": "extreme-scale simulation"},
+   {"name": "AI model training at scale"},
+   {"name": "GPU-accelerated simulation"}
+  ],
+  "measurables": [
+   "leadership-scale simulation campaign outputs",
+   "trained AI models at exaflops-class mixed precision",
+   "large-scale data analysis products"
+  ],
+  "demonstrated_applications": [
+   "NSF Leadership-Class Computing Facility (LCCF) user community; early users admitted 2026-11-17; allocations via LCCF, NAIRR, and ACCESS Explore programs"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "Texas Advanced Computing Center, Exploration Way, J.J. Pickle Research Campus, Austin, TX 78758",
+   "latitude": 30.3902434,
+   "longitude": -97.7256386,
+   "source": "coordinates OSM Nominatim, building-level (OSM node 'Texas Advanced Computing Center' on J.J. Pickle Research Campus; retrieved 2026-11-25). Note: TACC operates data centers on this campus; coordinates are for the TACC headquarters building, not verified per-machine-room."
+  },
+  "access": {
+   "mechanism": "Allocations through LCCF, NAIRR, or ACCESS Explore programs (per Horizon user guide)"
+  },
+  "automation": {
+   "notes": "Official specs (docs.tacc.utexas.edu): Grace Blackwell subsystem of 1,000 nodes, each with '4 x NVIDIA Blackwell (GB200)' GPUs ('185 GiB HBM3e per GPU (~740 GiB per node)') and '2 x NVIDIA Grace (72 Arm Neoverse V2 cores each)' CPUs ('478 GiB LPDDR5X per CPU (~956 GiB per node)'); Vera CPU subsystem of 4,752 nodes with '176 cores on two sockets (2 x 88)' and 768 GB LPDDR per node (Vera nodes 'a performance increase of over 3x compared to Frontera's CLX nodes'); 'NVIDIA Quantum-x800 InfiniBand networking platform' with XDR '800 Gb/s' connectivity between GPU nodes; peak '160 petaflops (FP64 units)' and '20 exaflops for AI at BF16/FP16'. TOP500 (November 2026 list): Dell PowerEdge XE8712, 144,000 cores, Rmax 132.00 PFlop/s, Rpeak 167.1 PFlop/s, rank #24."
+  },
+  "provenance": [
+   {"source_url": "https://docs.tacc.utexas.edu/hpc/horizon/", "retrieved": "2026-11-25", "notes": "Hardware specs, interconnect, peak performance, and access mechanism from the Horizon user guide (fetched directly). Status basis: guide states verbatim 'Horizon is now open to early users. (11/17/2026)' and describes itself as 'a draft in progress'; it does not describe the system as in full production — status 'commissioning' (early-user phase on installed, TOP500-listed hardware)."},
+   {"source_url": "https://tacc.utexas.edu/news/latest-news/2025/11/17/nsf-lccf-horizon-supercomputer-to-power-breakthroughs-for-the-nations-leading-scientists/", "retrieved": "2026-11-25", "notes": "Production timeline from TACC's own news page via search snippet (tacc.utexas.edu blocks direct fetch, HTTP 403): 'When Phase 1 enters production in Fall 2026, Horizon will provide U.S. researchers with unprecedented computing and artificial intelligence capabilities'; Phase 1 delivers GPU acceleration via 4,000 Blackwell chips in November 2026, Phase 2 adds 4,752 dual-socket NVIDIA Vera CPU-only nodes in early 2027; Horizon replaces Frontera and is projected at 300 petaflops for simulation, a tenfold increase over Frontera. Ambiguity recorded: news says Phase 1 production Fall 2026, but as of 2026-11-25 the user guide still says early users only."},
+   {"source_url": "https://docs.tacc.utexas.edu/hpc/frontera/", "retrieved": "2026-11-25", "notes": "Frontera transition context (Frontera itself excluded from this catalog as retired): Frontera's compute queues permanently closed as of October 15, 2026, after seven years of operation (deployed June 2019, full production September 2019); 'Frontera's login nodes and file systems remain up for data transfer.' Horizon is Frontera's successor as TACC's leadership-class system."},
+   {"source_url": "https://top500.org/site/48958/", "retrieved": "2026-11-25", "notes": "TOP500 figures for Horizon: 144,000 cores, Rmax 132 PFlop/s, Rpeak 167.1 PFlop/s, rank #24 on the November 2026 list, Dell/NVIDIA PowerEdge XE8712."}
+  ]
+ },
+ {
+  "id": "ncsa-delta",
+  "facility": "NCSA",
+  "program": ["NSF", "University"],
+  "institution": "University of Illinois Urbana-Champaign",
+  "name": "Delta — GPU-focused NSF production supercomputer (A40/A100/H200)",
+  "aliases": ["Delta", "NCSA"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {"name": "GPU-accelerated simulation"},
+   {"name": "AI model training and inference"},
+   {"name": "high-throughput data analysis"}
+  ],
+  "measurables": ["large-scale simulation campaign outputs", "trained AI models", "GPU-accelerated analysis of large research datasets"],
+  "demonstrated_applications": ["NSF ACCESS-allocated research across science and engineering domains; Illinois campus allocations via NCSA"],
+  "record_depth": "directory",
+  "location": {
+   "building": "National Petascale Computing Facility",
+   "address": "1725 South Oak Street, Champaign, IL 61820, United States",
+   "latitude": 40.0954348,
+   "longitude": -88.2420332,
+   "source": "coordinates OSM Nominatim ('NCSA Petascale Computing Facility', OSM way 138260136, building/data_center — building precision; retrieved 2026-11-25)"
+  },
+  "access": {
+   "mechanism": "NSF ACCESS allocations (Delta is described in NCSA docs as 'a dedicated, ACCESS-allocated resource'); Illinois allocation requests also handled via NCSA's allocations pages"
+  },
+  "automation": {
+   "notes": "Official specs (docs.ncsa.illinois.edu architecture page): 132 CPU-only nodes (dual-socket AMD EPYC 7763 'Milan', 128 cores, 256 GB RAM); 100 single-socket 4-way NVIDIA A40 GPU nodes; 100 single-socket 4-way NVIDIA A100 GPU nodes; 6 dual-socket 8-way NVIDIA A100 nodes (2 TB RAM); 8 dual-socket 8-way NVIDIA H200 nodes with Intel Xeon Platinum 8558 (96 cores); 1 AMD GPU node (eight MI100 plus one MI210). Interconnect: HPE/Cray 200 Gbps Slingshot 11. /work storage: 6.0 PB HDD (~60 GB/s) and 3.5 PB NVMe (~800 GB/s); /projects via Taiga at 150 GB/s. TOP500: Rmax 3.81 PFlop/s, Rpeak 8.05 PFlop/s, 49,600 cores (HPE Apollo 6500, AMD EPYC 7763 + NVIDIA A100); ranked 306 on the June 2025 list per top500.org search snippets; listed under the NCSA site page as Delta (2022)."
+  },
+  "provenance": [
+   {"source_url": "https://docs.ncsa.illinois.edu/systems/delta/en/latest/user_guide/architecture.html", "retrieved": "2026-11-25", "notes": "Node counts, CPU/GPU models, memory, interconnect, and storage figures (automation.notes)."},
+   {"source_url": "https://docs.ncsa.illinois.edu/systems/delta/en/latest/index.html", "retrieved": "2026-11-25", "notes": "Status (current docs describe Delta as an active, 'ACCESS-allocated resource' with live status/outage information) and access mechanism; purpose as 'a highly capable GPU-focused compute environment'."},
+   {"source_url": "https://www.ncsa.illinois.edu/2022/10/03/delta-now-fully-operational/", "retrieved": "2026-11-25", "notes": "NCSA announcement 'Delta Now Fully Operational' (2022-10-03) supporting operational status; located via web search restricted to ncsa.illinois.edu (title and URL from search snippet)."},
+   {"source_url": "https://top500.org/site/48420/", "retrieved": "2026-11-25", "notes": "TOP500 NCSA site page fetched directly: Delta (2022), HPE Apollo, 49,600 cores, Rmax 3.81 PFlop/s. Rank 306 / Rpeak 8.05 PFlop/s (June 2025 list) came from top500.org search snippets, not a direct page fetch."}
+  ]
+ },
+ {
+  "id": "ncsa-deltaai",
+  "facility": "NCSA",
+  "program": ["NSF", "University"],
+  "institution": "University of Illinois Urbana-Champaign",
+  "name": "DeltaAI — NVIDIA GH200 Grace Hopper AI-focused supercomputer",
+  "aliases": ["DeltaAI", "Delta AI", "NCSA"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {"name": "AI model training at scale"},
+   {"name": "GPU-accelerated simulation"},
+   {"name": "large-scale AI inference"}
+  ],
+  "measurables": ["trained AI models", "large-scale AI/ML experiment outputs", "GPU-accelerated simulation outputs"],
+  "demonstrated_applications": ["AI and HPC research via NSF ACCESS allocations (NSF manages 90% of resources, 10% allocated by University of Illinois Urbana-Champaign); NSF/NAIRR-funded node share per NCSA docs"],
+  "record_depth": "directory",
+  "location": {
+   "building": "National Petascale Computing Facility",
+   "address": "1725 South Oak Street, Champaign, IL 61820, United States",
+   "latitude": 40.0954348,
+   "longitude": -88.2420332,
+   "source": "coordinates OSM Nominatim ('NCSA Petascale Computing Facility', OSM way 138260136, building/data_center — building precision; retrieved 2026-11-25)"
+  },
+  "access": {
+   "mechanism": "NSF ACCESS allocations (90% of resources NSF-managed via ACCESS per NCSA launch announcement); 10% allocated by University of Illinois Urbana-Champaign; NCSA's DeltaAI allocations page lists both ACCESS and Illinois allocation requests"
+  },
+  "automation": {
+   "notes": "Official specs (docs.ncsa.illinois.edu architecture page): 152 nodes (132 nodes NSF/NAIRR, 20 nodes Illinois Computes), each a 4-way NVIDIA GH200 Grace Hopper superchip node — per superchip a 72-core Grace ARM CPU with 120 GB memory plus an NVIDIA H100 GPU with 96 GB HBM3; per node 288 CPU cores, 4 H100 GPUs, 480 GB LPDDR5 CPU RAM, 384 GB HBM3 GPU memory. NCSA's DeltaAI page states '608 GH200 NVIDIA Superchips' and a '200 Gb/s HPE SlingShot network fabric'; docs specify HPE/Cray 200 Gbps Slingshot 11 with 4x200GbE NICs per node. TOP500: HPE Cray EX254n, 124,032 cores, Rmax 18.08 PFlop/s, Rpeak 33.61 PFlop/s; ranked 100 (November 2025 list) and 119 (June 2026 list); Green500 rank 57 (June 2026) at 48.550 GFlops/W — rank details from top500.org search snippets."
+  },
+  "provenance": [
+   {"source_url": "https://docs.ncsa.illinois.edu/systems/deltaai/en/latest/user-guide/architecture.html", "retrieved": "2026-11-25", "notes": "Node count and funding split (132 NSF/NAIRR, 20 Illinois Computes), GH200/H100 specs, memory, interconnect, storage (automation.notes)."},
+   {"source_url": "https://www.ncsa.illinois.edu/about/deltaai/", "retrieved": "2026-11-25", "notes": "'608 GH200 NVIDIA Superchips', '200 Gb/s HPE SlingShot network fabric', NSF funding, stated capabilities (scalable accelerated computing, AI/ML workloads)."},
+   {"source_url": "https://www.ncsa.illinois.edu/2024/11/18/ncsa-launches-deltaai/", "retrieved": "2026-11-25", "notes": "Operational status: NCSA announcement that DeltaAI 'was accepted for production' and launched as NCSA's second NSF supercomputer; $10M NSF award; 90% NSF-managed via ACCESS, 10% Illinois. Located via web search restricted to ncsa.illinois.edu; details from search snippet of this NCSA page."},
+   {"source_url": "https://top500.org/site/48420/", "retrieved": "2026-11-25", "notes": "TOP500 NCSA site page fetched directly: DeltaAI (2025), HPE Cray EX254n, 124,032 cores, Rmax 18.08 PFlop/s. Rpeak 33.61 PFlop/s, ranks 100 (Nov 2025) / 119 (Jun 2026), and Green500 rank 57 from top500.org search snippets (system page https://new.top500.org/system/180364/)."}
+  ]
+ },
+ {
+  "id": "ncsa-garnet",
+  "facility": "NCSA",
+  "program": ["University"],
+  "institution": "University of Illinois Urbana-Champaign",
+  "name": "Garnet — Schmidt Sciences-funded NVIDIA Blackwell-generation AI research system (planned, mid-2027)",
+  "aliases": ["Garnet", "NCSA", "Schmidt Science Computing Network"],
+  "instrument_class": "compute",
+  "status": "planned",
+  "techniques": [
+   {"name": "AI model training at scale"},
+   {"name": "GPU-accelerated simulation"}
+  ],
+  "measurables": ["trained AI models", "large-scale simulation campaign outputs"],
+  "demonstrated_applications": ["Announced to support research in artificial intelligence, astrophysics, biological and climate sciences as a cornerstone resource of the Schmidt Science Computing Network; allocations reserved for Illinois campus researchers"],
+  "record_depth": "directory",
+  "location": {
+   "building": "National Petascale Computing Facility",
+   "address": "1725 South Oak Street, Champaign, IL 61820, United States",
+   "latitude": 40.0954348,
+   "longitude": -88.2420332,
+   "source": "coordinates OSM Nominatim ('NCSA Petascale Computing Facility', OSM way 138260136, building/data_center — building precision; retrieved 2026-11-25). Announced siting at NPCF per NCSA announcement; system not yet installed."
+  },
+  "access": {
+   "mechanism": "Schmidt Science Computing Network (SSCN) for global researcher access; Illinois researchers receive 'allocations reserved for campus' per NCSA announcement. Allocation process not yet published."
+  },
+  "automation": {
+   "notes": "Official specs (NCSA announcement, 2026-11-16): funded by a '$334 million research grant from the philanthropic organization Schmidt Sciences'; NVIDIA Blackwell-generation GPUs with design flexibility 'to evolve, incorporating the latest NVIDIA hardware and emerging GPU technology'; expected launch mid-2027; to be housed at the National Petascale Computing Facility. Node counts, GPU counts, memory, interconnect, and peak FLOPS not yet published by NCSA. Not on TOP500 (not yet built)."
+  },
+  "provenance": [
+   {"source_url": "https://www.ncsa.illinois.edu/2026/11/16/ncsa-joins-the-schmidt-science-computing-network-to-expand-advanced-computing-for-scientific-discovery/", "retrieved": "2026-11-25", "notes": "All substantive fields: system name, $334M Schmidt Sciences grant, NVIDIA Blackwell-generation GPUs, mid-2027 launch, NPCF siting, SSCN membership, Illinois campus allocations, research domains. Status 'planned': announced November 2026 with launch expected mid-2027; not described as in production anywhere on NCSA pages."},
+   {"source_url": "https://www.ncsa.illinois.edu/about/facilities/", "retrieved": "2026-11-25", "notes": "Corroborates award to host and operate a new research computing system at NCSA (page paraphrases the award as 'more than $330 million'; the announcement's '$334 million' figure is used here)."}
+  ]
+ },
+ {
+  "id": "psc-bridges-2",
+  "facility": "PSC",
+  "program": ["NSF", "University"],
+  "institution": "Carnegie Mellon University / University of Pittsburgh",
+  "name": "Bridges-2 — NSF flagship supercomputer converging HPC, AI, and Big Data",
+  "aliases": ["Bridges-2", "PSC"],
+  "instrument_class": "compute",
+  "status": "not-operational",
+  "techniques": [
+   {"name": "GPU-accelerated simulation"},
+   {"name": "AI model training at scale"},
+   {"name": "high-throughput data analysis"},
+   {"name": "extreme-memory computation"}
+  ],
+  "measurables": ["large-scale simulation campaign outputs", "trained AI models", "analyzed large-scale research data collections"],
+  "demonstrated_applications": ["NSF ACCESS research and education community (US academic and non-profit institutions)", "NAIRR Pilot projects", "coursework/education allocations via ACCESS"],
+  "record_depth": "directory",
+  "location": {
+   "address": "Pittsburgh Supercomputing Center, 300 S. Craig St., Pittsburgh, PA 15213",
+   "latitude": 40.4454997,
+   "longitude": -79.9491803,
+   "source": "coordinates OSM Nominatim for 300 S. Craig St., Pittsburgh (building-level match used as campus-level proxy; retrieved 2026-11-25). Machine room historically at 4350 Northern Pike, Monroeville, PA (NTC@PE building) per psc.edu pages seen via search snippets; as of 2026-11 PSC is relocating Bridges-2 'and other PSC systems' to a new data center in collaboration with Carnegie Mellon University whose address is not stated on psc.edu — hence campus-level office coordinates."
+  },
+  "access": {"mechanism": "NSF ACCESS allocations — 'Researchers or educators affiliated with academic or non-profit research institutions in the United States may apply to use Bridges-2 through the NSF's ACCESS program'; also NAIRR Pilot. No cost for research and education; cost-recovery rates for other purposes."},
+  "automation": {"notes": "Official specs (psc.edu): 504 RM nodes with dual AMD EPYC 7742 (64-core, 2.25-3.4 GHz), 256-512 GB per node; 4 extreme-memory EM nodes with quad Intel Xeon Platinum 8260M (24-core), 4 TB each; GPU complement 192x NVIDIA V100-32GB, 80x H100-80GB, 16x V100-32GB (DGX-2), 8x L40S-48GB; GPU-node hosts incl. dual Xeon 8470 (H100 nodes); Mellanox HDR-200 InfiniBand (200 Gb/s); 100 TB flash array (9M IOPS). Funded by a $10-million NSF grant. TOP500: not listed — PSC's site page at top500.org/site/48638 shows no PSC entries after 2008 (retrieved 2026-11-25). Temporary outage: offline since 2026-11-09 for relocation to the new data center, 'expected to remain unavailable for approximately 4-6 weeks while systems are relocated, reinstalled, tested, and returned to service.'"},
+  "provenance": [
+   {"source_url": "https://www.psc.edu/resources/", "retrieved": "2026-11-25", "notes": "Confirms Bridges-2 is a current PSC resource ('a petascale resource for empowering diverse communities by bringing together HPC, AI, and Big Data')."},
+   {"source_url": "https://www.psc.edu/resources/bridges-2/", "retrieved": "2026-11-25", "notes": "Technical specs (node counts, CPU/GPU models, memory, HDR-200 interconnect, flash array), NSF $10M funding, no-cost access statement, and note that PSC is 'relocating Bridges-2 to a new datacenter facility in collaboration with Carnegie Mellon University'."},
+   {"source_url": "https://www.psc.edu/b2-migration-2026/", "retrieved": "2026-11-25", "notes": "Migration details verbatim: began 2026-11-09 05:00 ET; 'Bridges-2 and other PSC systems will be relocated'; expected outage 4-6 weeks; system to be 'returned to service'. Status 'not-operational' (temporary): a scheduled relocation outage of a production resource, not retirement — expected return to service ~4-6 weeks from 2026-11-09."},
+   {"source_url": "https://www.psc.edu/resources/allocations/", "retrieved": "2026-11-25", "notes": "Access mechanism: NSF ACCESS program quote, NAIRR Pilot, ACCESS coursework grants."},
+   {"source_url": "https://top500.org/site/48638/", "retrieved": "2026-11-25", "notes": "TOP500 check: PSC site listing contains only legacy systems (latest 2008); Bridges-2 not listed, so no Rmax/Rpeak reported."},
+   {"source_url": "https://www.psc.edu/psc-to-host-wvu-cluster/", "retrieved": "2026-11-25", "notes": "Via search snippet (page not fetched directly): PSC machine room at 4350 Northern Pike, Monroeville, PA, in the Next Tier Connect @ Pittsburgh East building — historical location context only."}
+  ]
+ },
+ {
+  "id": "psc-neocortex",
+  "facility": "PSC",
+  "program": ["NSF", "University"],
+  "institution": "Carnegie Mellon University / University of Pittsburgh",
+  "name": "Neocortex — Cerebras wafer-scale AI system for scientific deep learning",
+  "aliases": ["Neocortex", "PSC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {"name": "wafer-scale AI model training"},
+   {"name": "deep learning acceleration for scientific AI"},
+   {"name": "large-memory data preprocessing for model training"}
+  ],
+  "measurables": ["trained neural-network models", "AI training-throughput results on wafer-scale hardware", "scientific AI research outputs"],
+  "demonstrated_applications": ["scientific AI research by US academic and non-profit researchers via NSF ACCESS and NAIRR Pilot allocations", "proprietary research via PSC Corporate Affiliates Program", "training webinars for the Neocortex user community (Fall 2025, Winter 2026)"],
+  "record_depth": "directory",
+  "location": {
+   "address": "Pittsburgh Supercomputing Center, 300 S. Craig St., Pittsburgh, PA 15213",
+   "latitude": 40.4454997,
+   "longitude": -79.9491803,
+   "source": "coordinates OSM Nominatim for 300 S. Craig St., Pittsburgh (building-level match used as campus-level proxy; retrieved 2026-11-25). PSC machine room historically at 4350 Northern Pike, Monroeville, PA per psc.edu pages seen via search snippets; PSC's 2026-11 migration notice says 'Bridges-2 and other PSC systems will be relocated' to a new CMU-collaboration data center without naming Neocortex or giving an address — hence campus-level office coordinates."
+  },
+  "access": {"mechanism": "NSF ACCESS allocations — 'Researchers or educators affiliated with academic or non-profit research institutions in the United States may apply to use Neocortex through the NSF's ACCESS program'; NAIRR Pilot also available; no cost for non-proprietary research; proprietary inquiries via Corporate Affiliates Program."},
+  "automation": {"notes": "Official specs (psc.edu): Cerebras CS-3 wafer-scale engine — 900,000 Sparse Linear Algebra Compute (SLAC) cores, 2.6 trillion transistors, 44 GB on-chip SRAM, 21 PB/s memory bandwidth, 214 Pb/s interconnect bandwidth, 1.2 Tb/s system I/O (12x 100 GbE) per CS system; HPE Superdome Flex front end with 32x Intel Xeon Platinum 8280L (28-core), 24 TiB aggregate RAM (4.5 TB/s bandwidth), 204.6 TB local NVMe (150 GB/s read), 1.2 Tb/s connectivity to each CS system and 1.6 Tb/s InfiniBand to Bridges-2. NSF award 2005597; $5M extension funds operations through 2027. TOP500: not listed (special-purpose AI system; PSC site page at top500.org shows no current entries, retrieved 2026-11-25)."},
+  "provenance": [
+   {"source_url": "https://www.psc.edu/resources/", "retrieved": "2026-11-25", "notes": "Confirms Neocortex is a current PSC resource ('a unique high performance artificial intelligence (AI) system')."},
+   {"source_url": "https://www.psc.edu/resources/neocortex/", "retrieved": "2026-11-25", "notes": "All technical specs (CS-3, SLAC cores, SRAM, bandwidths, Superdome Flex configuration), NSF award 2005597 and $5M extension through 2027, no-cost allocation statement, active Winter 2026 webinar — basis for operational status."},
+   {"source_url": "https://www.psc.edu/resources/allocations/", "retrieved": "2026-11-25", "notes": "Access mechanism: ACCESS program quote and NAIRR Pilot pathway."}
+  ]
+ },
+ {
+  "id": "psc-anton-3",
+  "facility": "PSC",
+  "program": ["NIH", "University"],
+  "institution": "Carnegie Mellon University / University of Pittsburgh",
+  "name": "Anton 3 — special-purpose supercomputer for long-timescale biomolecular simulation (D. E. Shaw Research, hosted at PSC)",
+  "aliases": ["Anton", "Anton 3", "PSC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {"name": "long-timescale molecular dynamics simulation"},
+   {"name": "biomolecular system simulation at multi-million-atom scale"}
+  ],
+  "measurables": ["microsecond-per-day molecular dynamics trajectories", "long-timescale biomolecular simulation datasets"],
+  "demonstrated_applications": ["biomolecular simulation by US academic and not-for-profit researchers via annual National Research Council-reviewed RFP (2026 round: July 17 - October 23, 2026)"],
+  "record_depth": "directory",
+  "location": {
+   "address": "Pittsburgh Supercomputing Center, 300 S. Craig St., Pittsburgh, PA 15213",
+   "latitude": 40.4454997,
+   "longitude": -79.9491803,
+   "source": "coordinates OSM Nominatim for 300 S. Craig St., Pittsburgh (building-level match used as campus-level proxy; retrieved 2026-11-25). PSC machine room historically at 4350 Northern Pike, Monroeville, PA per psc.edu pages seen via search snippets; PSC's 2026-11 migration notice says 'Bridges-2 and other PSC systems will be relocated' to a new CMU-collaboration data center without naming Anton or giving an address — hence campus-level office coordinates."
+  },
+  "access": {"mechanism": "Annual Request for Proposals, reviewed by a committee convened by the National Research Council; PIs must be faculty or staff at US academic or not-for-profit institutions; 'made available without cost by DESRES for non-commercial research use by US universities and other not-for-profit institutions'."},
+  "automation": {"notes": "Official specs (psc.edu): third-generation Anton (Anton 3), 64-node configuration, designed and constructed by D. E. Shaw Research (DESRES); 'simulating multiple millions of atoms at speeds of microseconds per day', roughly 100x faster than general-purpose supercomputers for molecular dynamics. Operational as of April 1, 2025. Hosting at PSC supported by NIH NIGMS Award Number 1R24GM154042. TOP500: not applicable/not listed (special-purpose machine, no LINPACK entry on PSC's top500.org site page, retrieved 2026-11-25)."},
+  "provenance": [
+   {"source_url": "https://www.psc.edu/resources/", "retrieved": "2026-11-25", "notes": "Confirms Anton is a current PSC resource ('a special purpose supercomputer for biomolecular simulation designed and constructed by D. E. Shaw Research (DESRES)')."},
+   {"source_url": "https://www.psc.edu/resources/anton/", "retrieved": "2026-11-25", "notes": "Generation (Anton 3, 64 nodes), operational-as-of date 2025-04-01, performance characterization, DESRES ownership, NIH NIGMS award 1R24GM154042, RFP access mechanism and 2026 RFP dates — basis for operational status. Note: system is DESRES-built and -owned, hosted at PSC; institution field reflects the hosting center."},
+   {"source_url": "https://www.psc.edu/resources/allocations/", "retrieved": "2026-11-25", "notes": "Allocation mechanism: 'Anton is allocated annually via a Request for Proposal with proposals reviewed by a committee convened by the National Research Council.'"}
+  ]
+ },
+ {
+  "id": "psc-bridges-3",
+  "facility": "PSC",
+  "program": ["NSF", "University"],
+  "institution": "Carnegie Mellon University / University of Pittsburgh",
+  "name": "Bridges-3 — next-generation NSF flagship supercomputer (announced; full operations expected summer 2027)",
+  "aliases": ["Bridges-3", "PSC"],
+  "instrument_class": "compute",
+  "status": "planned",
+  "techniques": [
+   {"name": "GPU-accelerated simulation"},
+   {"name": "AI model training at scale"},
+   {"name": "high-throughput data analysis"}
+  ],
+  "measurables": ["large-scale simulation campaign outputs", "trained AI models"],
+  "demonstrated_applications": ["to be 'allocated primarily through ACCESS and the NAIRR Pilot, ensuring open availability and broad access' (per PSC announcement); software environment retains Bridges-2 interfaces for existing user community"],
+  "record_depth": "directory",
+  "location": {
+   "address": "PSC new data center (address not yet published), Pittsburgh, PA; PSC offices: 300 S. Craig St., Pittsburgh, PA 15213",
+   "latitude": 40.4454997,
+   "longitude": -79.9491803,
+   "source": "coordinates OSM Nominatim for 300 S. Craig St., Pittsburgh (building-level match used as campus-level proxy; retrieved 2026-11-25). PSC's announcement says construction will take place 'at PSC's new data center' in collaboration with Carnegie Mellon University; the new facility's address is not stated on psc.edu as of 2026-11-25."
+  },
+  "access": {"mechanism": "Planned: allocated primarily through NSF ACCESS and the NAIRR Pilot (per PSC announcement); not yet accepting allocations."},
+  "automation": {"notes": "Announced specs (psc.edu, 2026): 'NVIDIA B200 GPU servers, high-core-count AMD CPU nodes, an all-flash Lustre file system, and an XDR/NDR InfiniBand network'; to be built by Hewlett Packard Enterprise; funded by 'a $10-million grant from the National Science Foundation'. Construction expected to begin at PSC's new data center in early 2027, 'with full operations expected in the summer' (2027). Node counts and peak FLOPS not yet published by PSC. TOP500: not yet listed (system not built; retrieved 2026-11-25)."},
+  "provenance": [
+   {"source_url": "https://www.psc.edu/10-million-to-fund-new-supercomputer-at-psc/", "retrieved": "2026-11-25", "notes": "All fields: announced hardware (B200 GPUs, AMD CPUs, all-flash Lustre, XDR/NDR InfiniBand), HPE as builder, $10M NSF grant, timeline (construction early 2027, full operations summer 2027), planned ACCESS/NAIRR Pilot allocation. Status 'planned' because PSC describes a future system not yet in construction or production."},
+   {"source_url": "https://top500.org/site/48638/", "retrieved": "2026-11-25", "notes": "TOP500 check: no Bridges-3 entry (system not yet built)."}
+  ]
+ },
+ {
+  "id": "sdsc-expanse",
+  "facility": "SDSC",
+  "program": ["NSF", "University"],
+  "institution": "UC San Diego",
+  "name": "Expanse — NSF production supercomputer for batch and science-gateway computing",
+  "aliases": ["Expanse", "NSF Expanse", "SDSC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [{"name": "GPU-accelerated simulation"}, {"name": "high-throughput data analysis"}, {"name": "science-gateway computing"}, {"name": "AI model training at scale"}],
+  "measurables": ["large-scale simulation campaign outputs", "trained AI models", "science-gateway-mediated analysis results", "high-throughput batch computation outputs"],
+  "demonstrated_applications": ["NSF ACCESS national allocation community — 'batch-oriented and science gateway computing' (SDSC Expanse page); NAIRR-funded AI capability expansion (34 H100 GPU nodes added under a $5.3M NSF supplement, per SDSC news PR20240723)"],
+  "record_depth": "directory",
+  "location": {"address": "San Diego Supercomputer Center, UC San Diego campus, La Jolla, CA 92093", "latitude": 32.8841712, "longitude": -117.2401906, "source": "coordinates OSM Nominatim, building-level (OSM relation 4736608, 'San Diego Supercomputer Center'; retrieved 2026-11-25)"},
+  "access": {"mechanism": "NSF ACCESS allocations (system listed as an ACCESS resource on sdsc.edu; support via ACCESS); trial accounts available"},
+  "automation": {"notes": "Official specs (sdsc.edu): '5 Pflop/s peak; 93,184 CPU cores; 208 NVIDIA GPUs; 220 TB total DRAM; 810 TB total NVMe'. 13 SDSC Scalable Compute Units: 728 standard nodes (dual 64-core AMD EPYC 7742, 2.25 GHz, 256 GB DDR4, 1 TB NVMe each); 52 GPU nodes (four NVIDIA V100 32 GB SXM2 via NVLink, dual 20-core Intel Xeon 6248, 384 GB DRAM, 1.6 TB NVMe each); 4 large-memory nodes (128 cores, 2 TB DRAM, 3.2 TB SSD each); 100 GB/s HDR InfiniBand; 12 PB Lustre; 7 PB Ceph. 2024 NAIRR expansion: 34 Dell XE9640 servers, each with four NVIDIA H100 GPUs, two 36-core Intel Sapphire Rapids CPUs, 1 TB RAM, 6.4 TB NVMe. TOP500 (system 179904): Rmax 2.48 PFlop/s, Rpeak 3.30 PFlop/s, 91,648 cores (CPU partition; last listed rank 492, June 2025 list)."},
+  "provenance": [
+   {"source_url": "https://www.sdsc.edu/systems/expanse/system_architecture.html", "retrieved": "2026-11-25", "notes": "node counts, CPU/GPU models, memory, NVMe, interconnect, Lustre/Ceph storage (verbatim)"},
+   {"source_url": "https://www.sdsc.edu/systems/expanse/index.html", "retrieved": "2026-11-25", "notes": "peak performance ('5 Pflop/s peak; 93,184 CPU cores; 208 NVIDIA GPUs; 220 TB total DRAM; 810 TB total NVMe'), ACCESS access mechanism, user community ('batch-oriented and science gateway computing')"},
+   {"source_url": "https://www.sdsc.edu/systems/index.html", "retrieved": "2026-11-25", "notes": "status: SDSC systems index lists Expanse among current production systems with NSF ACCESS allocations; production entry corroborated by SDSC news PR20201208_Expanse.html ('Formally Enters Production')"},
+   {"source_url": "https://sdsc.edu/News%20Items/PR20240723_Expanse_NAIRR.html", "retrieved": "2026-11-25", "notes": "H100/NAIRR expansion figures (34 Dell XE9640 servers, four H100 each, Sapphire Rapids CPUs, 1 TB RAM, 6.4 TB NVMe) — obtained via search snippet of this SDSC page"},
+   {"source_url": "https://top500.org/system/179904/", "retrieved": "2026-11-25", "notes": "TOP500 Rmax 2.48 PFlop/s, Rpeak 3.30 PFlop/s, 91,648 cores, June 2025 rank 492 — figures taken from search snippets referencing this top500.org system page (page not fetched directly)"}
+  ]
+ },
+ {
+  "id": "sdsc-voyager",
+  "facility": "SDSC",
+  "program": ["NSF", "University"],
+  "institution": "UC San Diego",
+  "name": "Voyager — Habana Gaudi AI training and inference system",
+  "aliases": ["Voyager", "SDSC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [{"name": "AI model training at scale"}, {"name": "deep-learning inference"}, {"name": "AI hardware-architecture experimentation"}],
+  "measurables": ["trained deep-learning models", "inference benchmark results", "AI architecture performance evaluations"],
+  "demonstrated_applications": ["NSF ACCESS 'innovative AI system' for 'research in science and engineering that is increasingly dependent upon artificial intelligence' (SDSC Voyager page); developed with Supermicro and Intel's Habana Lab"],
+  "record_depth": "directory",
+  "location": {"address": "San Diego Supercomputer Center, UC San Diego campus, La Jolla, CA 92093", "latitude": 32.8841712, "longitude": -117.2401906, "source": "coordinates OSM Nominatim, building-level (OSM relation 4736608, 'San Diego Supercomputer Center'; retrieved 2026-11-25)"},
+  "access": {"mechanism": "NSF ACCESS resource (SDSC describes Voyager as an 'Advanced Cyberinfrastructure Coordination Ecosystem: Services & Support (ACCESS) innovative AI system')"},
+  "automation": {"notes": "Official specs (sdsc.edu system architecture page): 42 training nodes, each with 8 Habana Gaudi training processors (336 total), Intel Xeon Gold 6336 CPUs, 512 GB DDR4 DRAM per node, 32 GB HBM2 per training processor, 6.4 TB local NVMe; 2 inference nodes, each with 8 first-generation Habana inference cards (16 total), Xeon Gold 6240, 384 GB DDR4 DRAM, 1.6 TB Samsung PM1745b NVMe (architecture page lists 34.4 TFlop/s peak for the inference nodes); 36 standard x86 compute nodes (2 processors, 384 GB, 3.2 TB NVMe each); 400 Gb/s Arista interconnect, full bi-section bandwidth, 6x400 Gb/s bidirectional per node; 1 PB Ceph storage. No TOP500 entry cited."},
+  "provenance": [
+   {"source_url": "https://www.sdsc.edu/systems/voyager/system_architecture.html", "retrieved": "2026-11-25", "notes": "all node counts, processor counts/models, memory, NVMe, interconnect bandwidth, Ceph storage (verbatim); the 34.4 TFlop/s figure appears under the inference-node section of this page"},
+   {"source_url": "https://www.sdsc.edu/systems/voyager/index.html", "retrieved": "2026-11-25", "notes": "ACCESS designation, NSF funding, Supermicro/Habana Lab collaboration, 400 Gbps Arista interconnect, AI research purpose"},
+   {"source_url": "https://www.sdsc.edu/systems/index.html", "retrieved": "2026-11-25", "notes": "status: SDSC systems index lists Voyager among current production systems as an NSF ACCESS resource"}
+  ]
+ },
+ {
+  "id": "sdsc-tscc",
+  "facility": "SDSC",
+  "program": ["University"],
+  "institution": "UC San Diego",
+  "name": "Triton Shared Computing Cluster (TSCC) — institutional condo/hotel HPC cluster",
+  "aliases": ["TSCC", "Triton Shared Computing Cluster", "SDSC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [{"name": "general-purpose HPC simulation"}, {"name": "GPU-accelerated computation"}, {"name": "high-throughput data analysis"}],
+  "measurables": ["simulation and modeling outputs", "GPU-accelerated analysis results", "big-data pipeline outputs"],
+  "demonstrated_applications": ["UC San Diego research community plus other academic institutions and industry partners; 'traditional HPC, HTC, and emerging big data pipelines' (SDSC TSCC pages)"],
+  "record_depth": "directory",
+  "location": {"address": "San Diego Supercomputer Center, UC San Diego campus, La Jolla, CA 92093", "latitude": 32.8841712, "longitude": -117.2401906, "source": "coordinates OSM Nominatim, building-level (OSM relation 4736608, 'San Diego Supercomputer Center'; retrieved 2026-11-25)"},
+  "access": {"mechanism": "Institutional/subscription access: 'Condo' (system-purchase) and 'Hotel' (pay-as-you-go) models; trial accounts of 250 core-hours valid for 90 days (SDSC TSCC pages)"},
+  "automation": {"notes": "Official specs (sdsc.edu user guide): Condo CPU nodes — Intel Xeon Gold 36-core with 256 GB memory and Intel Xeon Platinum 64-core with 1 TB memory; Hotel CPU nodes — Intel Xeon Gold 28-core with 196 GB memory; GPU node options include V100, A100, A40, RTX A6000 and RTX 3090 ('Sixteen V100 nodes are the latest addition to the Hotel program'); 2 PB Lustre parallel filesystem at up to 20 GB/s, 500 TB home filesystem, node-local NVMe scratch 200 GB-2 TB; RDMA over Converged Ethernet (RoCE) with 25G switches. Heterogeneous condo cluster — SDSC pages do not publish a total node count or aggregate FLOPS. No TOP500 entry cited."},
+  "provenance": [
+   {"source_url": "https://www.sdsc.edu/systems/tscc/user_guide.html", "retrieved": "2026-11-25", "notes": "CPU/GPU node specs, memory, storage, interconnect (verbatim); condo/hotel access models and trial-account terms"},
+   {"source_url": "https://www.sdsc.edu/systems/tscc/index.html", "retrieved": "2026-11-25", "notes": "user communities (UCSD, other academic institutions, industry), workload characterization, condo/hotel model"},
+   {"source_url": "https://www.sdsc.edu/systems/index.html", "retrieved": "2026-11-25", "notes": "status: SDSC systems index lists TSCC among current production systems ('affordable HPC resource for UC San Diego and broader academic/industry partners')"}
+  ]
+ },
+ {
+  "id": "sdsc-cosmos",
+  "facility": "SDSC",
+  "program": ["NSF", "University"],
+  "institution": "UC San Diego",
+  "name": "Cosmos — AMD MI300A APU testbed system (HPE Cray EX2500)",
+  "aliases": ["Cosmos", "SDSC"],
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [{"name": "APU-accelerated simulation (unified CPU-GPU memory)"}, {"name": "application porting and performance evaluation"}, {"name": "AI model training at scale"}],
+  "measurables": ["ported-application performance results on unified-memory APUs", "accelerated simulation outputs", "trained AI models"],
+  "demonstrated_applications": ["NSF ACCESS testbed serving researchers in 'AI, astrophysics, genomics and materials science'; designed to make 'accelerated computing more accessible to diverse research fields' via an incremental programming approach (SDSC Cosmos pages)"],
+  "record_depth": "directory",
+  "location": {"address": "San Diego Supercomputer Center, UC San Diego campus, La Jolla, CA 92093", "latitude": 32.8841712, "longitude": -117.2401906, "source": "coordinates OSM Nominatim, building-level (OSM relation 4736608, 'San Diego Supercomputer Center'; retrieved 2026-11-25)"},
+  "access": {"mechanism": "ACCESS testbed; access by request to SDSC HPC Consulting (consult@sdsc.edu) with agreement to the Cosmos Acceptable Use Policy; 3-year testbed timeline for select projects"},
+  "automation": {"notes": "Official specs (sdsc.edu user guide): HPE Cray Supercomputing EX2500 platform; 42 nodes with 4 AMD Instinct MI300A APUs per node (168 APUs total); each APU has 24 EPYC Zen4 CPU cores and 228 CDNA GPU compute units with in-chip memory shared between CPU and GPU; HPE Slingshot interconnect, Dragonfly topology, 200 GB/s bidirectional links; intra-node AMD Infinity Fabric xGMI, 768 GB/s aggregate, 256 GB/s peer-to-peer; storage: 200 TB VAST performance tier (676,000 IOPS), 5 PB Ceph capacity tier, 200 TB Qumulo home, 1.9 TB node-local NVMe. NSF OAC grant award no. 2404323. No aggregate FLOPS published on SDSC pages; no TOP500 entry cited."},
+  "provenance": [
+   {"source_url": "https://www.sdsc.edu/systems/cosmos/user_guide.html", "retrieved": "2026-11-25", "notes": "node/APU counts, APU composition, interconnect, storage tiers (verbatim); status statement verbatim: 'Current Status: Testbed Phase' with 3-year timeline for select projects — the system is currently operating and accepting users, but SDSC characterizes it as a testbed rather than a production resource; access via consult@sdsc.edu"},
+   {"source_url": "https://www.sdsc.edu/systems/cosmos/index.html", "retrieved": "2026-11-25", "notes": "ACCESS testbed designation, HPE Cray EX2500 platform, Slingshot interconnect, NSF OAC award 2404323, user communities (AI, astrophysics, genomics, materials science)"},
+   {"source_url": "https://www.sdsc.edu/systems/index.html", "retrieved": "2026-11-25", "notes": "listed on SDSC's current systems index as an operating testbed with AMD MI300A accelerators"}
+  ]
+ },
+ {
+  "id": "sdsc-expanse2",
+  "facility": "SDSC",
+  "program": ["NSF", "University"],
+  "institution": "UC San Diego",
+  "name": "Expanse2 — next-generation NSF supercomputer (production planned 2027)",
+  "aliases": ["Expanse2", "NSF Expanse2", "SDSC"],
+  "instrument_class": "compute",
+  "status": "planned",
+  "techniques": [{"name": "GPU-accelerated simulation"}, {"name": "AI model training at scale"}, {"name": "high-throughput data analysis"}],
+  "measurables": ["large-scale simulation campaign outputs", "trained AI models", "data-intensive workload outputs"],
+  "demonstrated_applications": ["Announced to support 'scientific discovery, engineering innovation, AI-driven research and HPC education nationwide' as successor to Expanse, which 'has served tens of thousands of researchers' (SDSC news release, PI Michael Norman)"],
+  "record_depth": "directory",
+  "location": {"address": "San Diego Supercomputer Center, UC San Diego campus, La Jolla, CA 92093", "latitude": 32.8841712, "longitude": -117.2401906, "source": "coordinates OSM Nominatim, building-level (OSM relation 4736608, 'San Diego Supercomputer Center'; retrieved 2026-11-25)"},
+  "access": {"mechanism": "Not yet specified in the announcement; predecessor Expanse is allocated via NSF ACCESS, but Expanse2's allocation mechanism is not stated on SDSC pages as of 2026-11-25"},
+  "automation": {"notes": "Official announcement (sdsc.edu news, 2026-09-16): $10M NSF award to deploy NSF Expanse2, replacing Expanse (in service since late 2020); will include 'latest generation AMD processors and accelerators', an advanced network for data-intensive workloads, AI/ML, modeling and simulation, and a storage architecture combining a high-performance all-NVMe file system optimized for AI/ML with large-capacity storage; will enter production in 2027. Node counts, specific processor/accelerator models, and peak FLOPS not yet published. Not yet on TOP500 (not deployed)."},
+  "provenance": [
+   {"source_url": "https://www.sdsc.edu/news/2026/PR20260916-Expanse2.html", "retrieved": "2026-11-25", "notes": "all fields: award amount, hardware description, 2027 production timeline, replacement of Expanse, quotes; status 'planned' because SDSC states it 'will enter production in 2027' — announced but not yet deployed or in production"}
+  ]
+ }
+]

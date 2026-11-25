@@ -1,0 +1,549 @@
+[
+ {
+  "id": "coast-chemspeed",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Chemspeed automated synthesis platform",
+  "instrument_class": "robotic-synthesis-platform",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated high-throughput synthesis"
+   }
+  ],
+  "measurables": [
+   "synthesized compound/polymer libraries"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Synthesis component in science driver workflows. (Same vendor platform as PoLARIS's Polybot Chemspeed — natural cross-node protocol pair.) DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "synthesis"
+  ]
+ },
+ {
+  "id": "coast-vapourtec",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Vapourtec Flow Chemistry Platform",
+  "instrument_class": "robotic-synthesis-platform",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "continuous flow synthesis"
+   }
+  ],
+  "measurables": [
+   "flow-synthesized products under controlled residence time/temperature"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Synthesis component in science driver workflows; pairs with in-situ NMR (BPM-010) and ReactIR (BPM-013). DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "synthesis"
+  ]
+ },
+ {
+  "id": "coast-genevac-ez2",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Genevac EZ-2 4.0 Elite parallel evaporator",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "parallel solvent evaporation"
+   }
+  ],
+  "measurables": [
+   "concentrated/dried samples (parallel format)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Purification component in science driver workflows. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "processing"
+  ]
+ },
+ {
+  "id": "coast-solid-dispenser",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Solid dispenser with balance",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "gravimetric solid dispensing"
+   }
+  ],
+  "measurables": [
+   "prepared reagents at target masses"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Reagent preparation; condition New (recent acquisition). DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "synthesis"
+  ]
+ },
+ {
+  "id": "coast-pavone",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Optics11 Pavone multi-indenter",
+  "instrument_class": "mechanical-tester",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "nanoindentation (multi-sample)"
+   }
+  ],
+  "measurables": [
+   "mechanical properties (modulus, stiffness) of soft materials"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Characterization of compounds. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "characterization"
+  ]
+ },
+ {
+  "id": "coast-prep-hplc",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Shimadzu Nexera preparative HPLC",
+  "instrument_class": "chromatography-system",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "preparative high-performance liquid chromatography",
+    "acronym": "HPLC"
+   }
+  ],
+  "measurables": [
+   "purified fractions; purity assessment"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Purification and characterization component of workflow. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "processing",
+   "characterization"
+  ]
+ },
+ {
+  "id": "coast-analytical-hplc",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Shimadzu Nexera analytical HPLC",
+  "instrument_class": "chromatography-system",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "analytical high-performance liquid chromatography",
+    "acronym": "HPLC"
+   }
+  ],
+  "measurables": [
+   "compound identity and purity"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Characterization component of workflow. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "characterization"
+  ]
+ },
+ {
+  "id": "coast-nmr-80",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Magritek 80 MHz benchtop NMR with carousel",
+  "instrument_class": "nmr",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "benchtop NMR spectroscopy (80 MHz, autosampler carousel)"
+   }
+  ],
+  "measurables": [
+   "molecular structure confirmation; reaction outcome"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Characterization component of workflow; condition New. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "characterization"
+  ]
+ },
+ {
+  "id": "coast-nmr-90-insitu",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Magritek 90 MHz in-situ NMR",
+  "instrument_class": "nmr",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "in-situ/online flow NMR spectroscopy (90 MHz)"
+   }
+  ],
+  "measurables": [
+   "real-time reaction progress and speciation in flow"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "In-situ characterization for the flow reactor work; condition New. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "characterization"
+  ]
+ },
+ {
+  "id": "coast-rapid-sec",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Waters rapid SEC",
+  "instrument_class": "chromatography-system",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "size exclusion chromatography",
+    "acronym": "SEC"
+   }
+  ],
+  "measurables": [
+   "polymer molecular weight distribution and dispersity"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Characterization component of workflow; condition New. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "characterization"
+  ]
+ },
+ {
+  "id": "coast-biotage-flash",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Biotage Selekt automatic flash chromatography system (x2)",
+  "instrument_class": "chromatography-system",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated flash chromatography"
+   }
+  ],
+  "measurables": [
+   "purified compounds from reaction mixtures"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Purification component of workflow; two units. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "processing"
+  ]
+ },
+ {
+  "id": "coast-reactir",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Mettler Toledo ReactIR FTIR probe",
+  "instrument_class": "spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "in-situ FTIR spectroscopy (reaction monitoring probe)"
+   }
+  ],
+  "measurables": [
+   "real-time functional-group evolution during reactions in flow"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "In-situ characterization for the flow reactor work. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "characterization"
+  ]
+ },
+ {
+  "id": "coast-centrifuge",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "Centrifuge",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "centrifugation"
+   }
+  ],
+  "measurables": [
+   "separated phases/solids"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Component in science driver workflows (inventory gives no model). DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ],
+  "campaign_roles": [
+   "processing"
+  ]
+ },
+ {
+  "id": "coast-gpu-pool",
+  "facility": "COAST",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "UCSB (COAST / BioPACIFIC MIP)",
+  "name": "COAST GPU pool (grouped: 24x NVIDIA A100-40GB + 4x A100-80GB + 8x A40)",
+  "instrument_class": "compute",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "GPU computing for LLM assistant and AI tool development"
+   }
+  ],
+  "measurables": [
+   "trained/fine-tuned models; structured data pipelines"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of California, Santa Barbara, CA 93106",
+   "latitude": 34.4146,
+   "longitude": -119.84581,
+   "source": "coordinates OSM Nominatim, UCSB campus-level (retrieved 2026-11-24); building/room not in inventory — ask COAST"
+  },
+  "automation": {
+   "notes": "Grouped record of three inventory lines (BPM-015/016/017): LLM assistant development, AI tool development, data structuring. DRAFT record: under review by the COAST node team; corrections will land here."
+  },
+  "provenance": [
+   {
+    "source_url": "COAST PCL Instrument Inventory (Annex E, Existing Equipment), shared with Ian Foster 2026-11-24",
+    "retrieved": "2026-11-24",
+    "notes": "Internal node document (NSF annex) — equipment names, counts, workflow roles, condition. Status 'operational' inferred from Existing + Good/New condition; confirm with COAST. Administrative columns (FAIN, federal share, disposition) deliberately excluded."
+   }
+  ]
+ }
+]

@@ -14,7 +14,7 @@ flagship instruments), the Molecular Foundry (7 facilities + 4 NCEM
 microscopes), and CNM (5 groups + 7 flagships incl. the jointly-operated
 HXN 26-ID and XTIP beamlines), and UChicago RCC (9 systems, Midway3 to
 the secure enclaves — first non-DOE, non-PCL institution in the graph).
-312 records total (106 when first written: ALS+APS only). Computing
+Plus COAST PCL at UCSB (14 draft records, under COAST review). 326 records total (106 when first written: ALS+APS only). Computing
 records cite official sources (ALCF user-guides repo — docs.alcf.anl.gov
 blocks fetches — docs.nersc.gov, olcf.ornl.gov, TOP500); the ALCF fleet
 covers Aurora, Polaris, Sophia, Crux, AI Testbed, Inference Endpoints.

@@ -2,6 +2,9 @@
  {
   "id": "rapid-rpl",
   "facility": "RAPID",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory (Autonomous Discovery)",
   "name": "Rapid Prototyping Laboratory (RPL)",
   "instrument_class": "other",
@@ -68,6 +71,9 @@
  {
   "id": "rapid-200",
   "facility": "RAPID",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory (Autonomous Discovery)",
   "name": "RAPID-200 — Autonomous Materials and Chemistry Laboratory",
   "instrument_class": "robotic-synthesis-platform",
@@ -124,6 +130,9 @@
  {
   "id": "rapid-350",
   "facility": "RAPID",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory (Autonomous Discovery)",
   "name": "RAPID-350 — Autonomous Laboratory for Bioactive Factors",
   "instrument_class": "robotic-processing-platform",
@@ -178,6 +187,9 @@
  {
   "id": "rapid-446",
   "facility": "RAPID",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory (Autonomous Discovery)",
   "name": "RAPID-446 — Protein and Pathway Design Laboratory",
   "instrument_class": "robotic-processing-platform",

@@ -66,6 +66,7 @@ const FIELD_WEIGHTS = [
   ["aliases", 1.0],
   ["facility", 3.0],   // identity: being AT a facility outranks being named like one
   ["institution", 1.0],
+  ["program", 1.0],
   ["location", 1.0],
 ];
 

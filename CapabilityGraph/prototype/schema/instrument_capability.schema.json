@@ -23,6 +23,13 @@
       "type": "string",
       "description": "User facility short name, e.g. 'ALS', 'APS', 'NSLS-II', 'LCLS', 'SNS'"
     },
+    "program": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "description": "Sponsoring programs/networks this instrument is accessible through — records may belong to more than one (e.g. a DOE user facility also accessible via an NSF PCL node). Values: 'DOE', 'NSF PCL', 'University'; extensible."
+    },
     "institution": {
       "type": "string",
       "description": "Host lab, e.g. 'LBNL'"

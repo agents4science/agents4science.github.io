@@ -2,6 +2,9 @@
  {
   "id": "alcf-aurora",
   "facility": "ALCF",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory",
   "name": "Aurora — Argonne Leadership Computing Facility exascale system",
   "aliases": [
@@ -55,6 +58,9 @@
  {
   "id": "nersc-perlmutter",
   "facility": "NERSC",
+  "program": [
+   "DOE"
+  ],
   "institution": "Lawrence Berkeley National Laboratory",
   "name": "Perlmutter — NERSC flagship system",
   "aliases": [
@@ -104,6 +110,9 @@
  {
   "id": "olcf-frontier",
   "facility": "OLCF",
+  "program": [
+   "DOE"
+  ],
   "institution": "Oak Ridge National Laboratory",
   "name": "Frontier — Oak Ridge Leadership Computing Facility exascale system",
   "aliases": [
@@ -152,6 +161,9 @@
  {
   "id": "alcf-polaris",
   "facility": "ALCF",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory",
   "name": "Polaris — ALCF GPU system (HPE Apollo 6500 Gen10+)",
   "aliases": [
@@ -199,6 +211,9 @@
  {
   "id": "alcf-sophia",
   "facility": "ALCF",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory",
   "name": "Sophia — ALCF AI training system (NVIDIA DGX A100)",
   "aliases": [
@@ -245,6 +260,9 @@
  {
   "id": "alcf-crux",
   "facility": "ALCF",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory",
   "name": "Crux — ALCF CPU system (HPE Cray EX)",
   "aliases": [
@@ -284,6 +302,9 @@
  {
   "id": "alcf-ai-testbed",
   "facility": "ALCF",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory",
   "name": "ALCF AI Testbed — novel AI accelerators (grouped record: Cerebras, Graphcore, Groq, SambaNova)",
   "aliases": [
@@ -324,6 +345,9 @@
  {
   "id": "alcf-inference-endpoints",
   "facility": "ALCF",
+  "program": [
+   "DOE"
+  ],
   "institution": "Argonne National Laboratory",
   "name": "ALCF Inference Endpoints — API access to open-source AI models on dedicated ALCF hardware",
   "aliases": [

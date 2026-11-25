@@ -2,6 +2,9 @@
  {
   "id": "foundry-imaging-manipulation",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Imaging and Manipulation of Nanostructures Facility (facility-level record)",
   "instrument_class": "other",
@@ -69,6 +72,9 @@
  {
   "id": "foundry-nanofabrication",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Nanofabrication Facility (facility-level record)",
   "instrument_class": "fabrication",
@@ -137,6 +143,9 @@
  {
   "id": "foundry-inorganic",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Inorganic Nanostructures Facility (facility-level record)",
   "instrument_class": "fabrication",
@@ -189,6 +198,9 @@
  {
   "id": "foundry-organic",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Organic and Macromolecular Synthesis Facility (facility-level record)",
   "instrument_class": "fabrication",
@@ -250,6 +262,9 @@
  {
   "id": "foundry-biological",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Biological Nanostructures Facility (facility-level record)",
   "instrument_class": "fabrication",
@@ -314,6 +329,9 @@
  {
   "id": "foundry-theory",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Theory of Nanostructured Materials Facility (facility-level record)",
   "instrument_class": "compute",
@@ -355,6 +373,9 @@
  {
   "id": "foundry-ncem",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "National Center for Electron Microscopy (NCEM) (facility-level record)",
   "instrument_class": "electron-microscope",
@@ -427,6 +448,9 @@
  {
   "id": "foundry-ncem-team05",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "TEAM 0.5",
   "instrument_class": "electron-microscope",
@@ -477,6 +501,9 @@
  {
   "id": "foundry-ncem-team1",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "TEAM I",
   "instrument_class": "electron-microscope",
@@ -522,6 +549,9 @@
  {
   "id": "foundry-ncem-themis",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "ThemIS (FEI ThemIS in situ 60-300)",
   "instrument_class": "electron-microscope",
@@ -576,6 +606,9 @@
  {
   "id": "foundry-ncem-titanx",
   "facility": "Molecular Foundry",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "TitanX (FEI TitanX 60-300)",
   "instrument_class": "electron-microscope",

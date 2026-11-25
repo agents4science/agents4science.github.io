@@ -2,6 +2,9 @@
  {
   "id": "aps-2-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "2-ID-E X-ray Fluorescence Microprobe",
   "aliases": [
@@ -212,6 +215,9 @@
  {
   "id": "aps-13-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL (GSECARS/UChicago)",
   "name": "13-ID-E GSECARS X-ray Microprobe",
   "aliases": [
@@ -426,6 +432,9 @@
  {
   "id": "aps-2-bm",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "Hard X-ray Micro-tomography Beamline 2-BM",
   "aliases": [

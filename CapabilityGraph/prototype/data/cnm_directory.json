@@ -2,6 +2,10 @@
  {
   "id": "cnm-exm-group",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Electron and X-ray Microscopy (EXM) Group (facility-level record)",
   "instrument_class": "electron-microscope",
@@ -62,6 +66,10 @@
  {
   "id": "cnm-nanofab-cleanroom",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Nanofabrication and Devices (NFD) Group / CNM Cleanroom (facility-level record)",
   "instrument_class": "fabrication",
@@ -120,6 +128,10 @@
  {
   "id": "cnm-npbs-group",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Nanophotonics and Biofunctional Structures (NPBS) Group (facility-level record)",
   "instrument_class": "spectrometer",
@@ -175,6 +187,10 @@
  {
   "id": "cnm-qem-group",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Quantum and Energy Materials (QEM) Group (facility-level record)",
   "instrument_class": "scanning-probe-microscope",
@@ -232,6 +248,10 @@
  {
   "id": "cnm-tmg-group",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Theory and Modeling (TMG) Group (facility-level record)",
   "instrument_class": "compute",
@@ -281,6 +301,10 @@
  {
   "id": "cnm-carbon-cluster",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Carbon HPC Cluster",
   "instrument_class": "compute",
@@ -326,6 +350,10 @@
  {
   "id": "cnm-hxn-26id",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Hard X-ray Nanoprobe (HXN), APS beamline 26-ID (operated jointly by CNM and APS)",
   "instrument_class": "synchrotron-beamline",
@@ -375,6 +403,10 @@
  {
   "id": "cnm-xtip-4id",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "XTIP beamline, APS Sector 4 (synchrotron X-ray scanning tunneling microscopy; CNM/APS collaboration)",
   "instrument_class": "synchrotron-beamline",
@@ -413,6 +445,10 @@
  {
   "id": "cnm-acat",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "ACAT - Argonne Chromatic Aberration-corrected TEM (FEI Titan 80-300 ST)",
   "instrument_class": "electron-microscope",
@@ -455,6 +491,10 @@
  {
   "id": "cnm-uem",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Ultrafast Electron Microscope (UEM)",
   "instrument_class": "electron-microscope",
@@ -493,6 +533,10 @@
  {
   "id": "cnm-createc-4k-spm",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "Createc 4K UHV STM / qPlus AFM (with optical and RF access)",
   "instrument_class": "scanning-probe-microscope",
@@ -535,6 +579,10 @@
  {
   "id": "cnm-jeol-jbx8100fs",
   "facility": "CNM",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "JEOL 8100FS 100 kV Electron Beam Lithography System",
   "instrument_class": "fabrication",

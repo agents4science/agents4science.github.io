@@ -2,6 +2,9 @@
  {
   "id": "als-8.3.2",
   "facility": "ALS",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Beamline 8.3.2 — Hard X-ray Micro-Tomography",
   "aliases": [
@@ -170,6 +173,9 @@
  {
   "id": "als-7.0.1.2",
   "facility": "ALS",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "COSMIC Imaging (Beamline 7.0.1.2)",
   "aliases": [
@@ -357,6 +363,9 @@
  {
   "id": "als-12.3.1",
   "facility": "ALS",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "SIBYLS Beamline (Beamline 12.3.1)",
   "aliases": [
@@ -543,6 +552,9 @@
  {
   "id": "als-4.0.3",
   "facility": "ALS",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "MERLIN High-Resolution ARPES Beamline (Beamline 4.0.3)",
   "aliases": [
@@ -716,6 +728,9 @@
  {
   "id": "als-12.2.2",
   "facility": "ALS",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Beamline 12.2.2: Diffraction Under Non-Ambient Conditions",
   "instrument_class": "synchrotron-beamline",
@@ -862,6 +877,9 @@
  {
   "id": "als-9.3.2",
   "facility": "ALS",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Beamline 9.3.2 — Ambient-Pressure Soft X-Ray Photoelectron Spectroscopy",
   "aliases": [
@@ -1019,6 +1037,9 @@
  {
   "id": "als-1.4",
   "facility": "ALS",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Infrared Microspectroscopy (Beamline 1.4)",
   "aliases": [
@@ -1181,6 +1202,9 @@
  {
   "id": "als-8.0.1",
   "facility": "ALS",
+  "program": [
+   "DOE"
+  ],
   "institution": "LBNL",
   "name": "Beamline 8.0.1 — Soft X-Ray RIXS/XAS/XES (iRIXS)",
   "aliases": [

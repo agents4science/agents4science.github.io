@@ -2,6 +2,9 @@
  {
   "id": "emsl-21t-fticr",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "EMSL 21 Tesla FTICR MS: Hybrid Q-FT Orbitrap–Ion Cyclotron Resonance mass spectrometer",
   "instrument_class": "mass-spectrometer",
@@ -64,6 +67,9 @@
  {
   "id": "emsl-12t-solarix",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Bruker 12 Tesla SolariX XR FTICR mass spectrometer",
   "instrument_class": "mass-spectrometer",
@@ -118,6 +124,9 @@
  {
   "id": "emsl-7t-scimax",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Bruker 7 Tesla scimaX MRMS",
   "instrument_class": "mass-spectrometer",
@@ -167,6 +176,9 @@
  {
   "id": "emsl-metabolomics-ms-fleet",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Metabolomics/lipidomics mass spectrometry fleet (grouped: 16 Orbitrap instruments incl. hybrid quadrupole-Orbitrap and Tribrid; 9 triple-quadrupole MS; 3 ion mobility Q-ToF MS; 3 GC-MS; 4 FTICR-MS)",
   "instrument_class": "mass-spectrometer",
@@ -217,6 +229,9 @@
  {
   "id": "emsl-topdown-proteomics-ms",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Top-down (intact) proteomics mass spectrometers (grouped: Thermo Orbitrap UHMR, Thermo Orbitrap Eclipse Tribrid, Thermo Orbitrap Fusion Lumos, Waters Synapt G2s-I Ion Mobility Time-of-flight)",
   "instrument_class": "mass-spectrometer",
@@ -256,6 +271,9 @@
  {
   "id": "emsl-nanopots",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Nanodroplet Processing in One Pot for Trace Samples (nanoPOTS) single-cell proteomics platform",
   "instrument_class": "mass-spectrometer",
@@ -297,6 +315,9 @@
  {
   "id": "emsl-msi-suite",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Mass spectrometry imaging suite (grouped: MALDI-12T FTICR (Bruker), MALDI-timsTOF (Bruker), MALDI-Q-ToF Synapt G2 Si (Waters), MALDI-UHMR HF Orbitrap (Thermo), Triversa Nanomate (Advion), SepQuant dropletProbe (HTX), custom-built LAESI-MS molecular microscope)",
   "instrument_class": "mass-spectrometer",
@@ -342,6 +363,9 @@
  {
   "id": "emsl-irms-suite",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Isotope ratio mass spectrometers (grouped: Thermo Delta V Plus (n=2), Thermo 253 Plus, Sercon 20-22, with elemental analyzer, GC-combustion, LC IsoLink II, GasBench II, and laser-ablation peripherals)",
   "instrument_class": "mass-spectrometer",
@@ -383,6 +407,9 @@
  {
   "id": "emsl-nanosims-50l",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "NanoSIMS 50L",
   "instrument_class": "mass-spectrometer",
@@ -420,6 +447,9 @@
  {
   "id": "emsl-tofsims",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Time-of-flight secondary ion mass spectrometer (ToF-SIMS) with Ar cluster, Bi liquid metal, and Cs+/O2+ ion guns and in situ liquid SIMS capability",
   "instrument_class": "mass-spectrometer",
@@ -460,6 +490,9 @@
  {
   "id": "emsl-800mhz-nmr-tava",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "800 MHz Bruker Avance Neo NMR spectrometer (Tava)",
   "instrument_class": "nmr",
@@ -505,6 +538,9 @@
  {
   "id": "emsl-750mhz-nmr-bokan",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "750 MHz Bruker Avance III NMR spectrometer (Bokan)",
   "instrument_class": "nmr",
@@ -546,6 +582,9 @@
  {
   "id": "emsl-700mhz-nmr-glacier",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "700 MHz Bruker Avance Neo NMR spectrometer (Glacier)",
   "instrument_class": "nmr",
@@ -581,6 +620,9 @@
  {
   "id": "emsl-600mhz-nmr-pair",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "600 MHz NMR spectrometers (grouped: 600 MHz Agilent VNMRS (Hood) and 600 MHz Agilent DD2 (Baker), each with 5 mm HCN Z-gradient cold probes)",
   "instrument_class": "nmr",
@@ -614,6 +656,9 @@
  {
   "id": "emsl-850mhz-ssnmr-ellis",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "850 MHz Agilent VNMRS solid-state NMR spectrometer (Ellis)",
   "instrument_class": "nmr",
@@ -652,6 +697,9 @@
  {
   "id": "emsl-ssnmr-suite",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Solid-state NMR spectrometers, 300-500 MHz (grouped: 500 MHz Varian VNMRS (Shasta), 400 MHz Agilent VNMRS (Karloff), 300 MHz Agilent VNMRS (Mazama))",
   "instrument_class": "nmr",
@@ -693,6 +741,9 @@
  {
   "id": "emsl-epr",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "EPR Pulsed/CW Spectrometer (Bruker Elexsys, multi-frequency S/X/Q-band)",
   "instrument_class": "spectrometer",
@@ -743,6 +794,9 @@
  {
   "id": "emsl-krios-g3i",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Krios G3i Cryo-Transmission Electron Microscope (Thermo Scientific)",
   "instrument_class": "electron-microscope",
@@ -785,6 +839,9 @@
  {
   "id": "emsl-aquilos2-cryofibsem",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Aquilos 2 Cryo Focused Ion Beam-Scanning Electron Microscope (Thermo Scientific)",
   "instrument_class": "electron-microscope",
@@ -824,6 +881,9 @@
  {
   "id": "emsl-tecnai-t12",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Tecnai T-12 TEM (FEI) with cryogenic sample preparation suite",
   "instrument_class": "electron-microscope",
@@ -864,6 +924,9 @@
  {
   "id": "emsl-etem",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Environmental Transmission Electron Microscope (ETEM), aberration-corrected, 80-300 kV",
   "instrument_class": "electron-microscope",
@@ -909,6 +972,9 @@
  {
   "id": "emsl-ac-stem",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Aberration-corrected Scanning Transmission Electron Microscope (STEM) with EDX and EELS, 80-300 kV",
   "instrument_class": "electron-microscope",
@@ -958,6 +1024,9 @@
  {
   "id": "emsl-him",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Helium Ion Microscope (HIM)",
   "instrument_class": "other",
@@ -992,6 +1061,9 @@
  {
   "id": "emsl-leap-4000xhr",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "LEAP 4000 XHR Local Electrode Atom Probe (Cameca Instruments Inc.)",
   "instrument_class": "other",
@@ -1029,6 +1101,9 @@
  {
   "id": "emsl-quanta-3d",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Quanta 3D Dual Beam Environmental Scanning Electron Microscope and Focused Ion Beam",
   "instrument_class": "electron-microscope",
@@ -1071,6 +1146,9 @@
  {
   "id": "emsl-xct-nikon",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "X-ray Computed Tomography, Nikon XTH 320/225",
   "instrument_class": "other",
@@ -1105,6 +1183,9 @@
  {
   "id": "emsl-xps",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Imaging X-ray Photoelectron Spectroscopy system (with monochromated Al/Ag X-ray gun, cluster/Ar+ ion gun, UPS, temperature programmed desorption, ion scattering spectroscopy, glove box)",
   "instrument_class": "spectrometer",
@@ -1151,6 +1232,9 @@
  {
   "id": "emsl-xrd-suite",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "X-ray diffraction suite (grouped: powder XRD, microbeam XRD, epitaxial thin film XRD)",
   "instrument_class": "other",
@@ -1191,6 +1275,9 @@
  {
   "id": "emsl-tahoma",
   "facility": "EMSL",
+  "program": [
+   "DOE"
+  ],
   "institution": "PNNL",
   "name": "Tahoma mid-range scientific computing cluster",
   "instrument_class": "compute",

@@ -2,6 +2,9 @@
  {
   "id": "sns-arcs",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-18 ARCS — Wide Angular-Range Chopper Spectrometer",
   "instrument_class": "neutron-instrument",
@@ -43,6 +46,9 @@
  {
   "id": "sns-basis",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-2 BASIS — Backscattering Spectrometer",
   "instrument_class": "neutron-instrument",
@@ -89,6 +95,9 @@
  {
   "id": "sns-snap",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-3 SNAP — Spallation Neutrons and Pressure Diffractometer",
   "instrument_class": "neutron-instrument",
@@ -134,6 +143,9 @@
  {
   "id": "sns-magref",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-4A MAGREF — Magnetism Reflectometer",
   "instrument_class": "neutron-instrument",
@@ -176,6 +188,9 @@
  {
   "id": "sns-liqref",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-4B LIQREF — Liquids Reflectometer",
   "instrument_class": "neutron-instrument",
@@ -213,6 +228,9 @@
  {
   "id": "sns-cncs",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-5 CNCS — Cold Neutron Chopper Spectrometer",
   "instrument_class": "neutron-instrument",
@@ -263,6 +281,9 @@
  {
   "id": "sns-eq-sans",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-6 EQ-SANS — Extended Q-Range Small-Angle Neutron Scattering Diffractometer",
   "instrument_class": "neutron-instrument",
@@ -309,6 +330,9 @@
  {
   "id": "sns-vulcan",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-7 VULCAN — Engineering Materials Diffractometer",
   "instrument_class": "neutron-instrument",
@@ -351,6 +375,9 @@
  {
   "id": "sns-corelli",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-9 CORELLI — Elastic Diffuse Scattering Spectrometer",
   "instrument_class": "neutron-instrument",
@@ -391,6 +418,9 @@
  {
   "id": "sns-venus",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-10 VENUS — Versatile Neutron Imaging Instrument",
   "instrument_class": "neutron-instrument",
@@ -443,6 +473,9 @@
  {
   "id": "sns-powgen",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-11A POWGEN — Powder Diffractometer",
   "instrument_class": "neutron-instrument",
@@ -490,6 +523,9 @@
  {
   "id": "sns-mandi",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-11B MANDI — Macromolecular Neutron Diffractometer",
   "instrument_class": "neutron-instrument",
@@ -535,6 +571,9 @@
  {
   "id": "sns-topaz",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-12 TOPAZ — Single-Crystal Diffractometer",
   "instrument_class": "neutron-instrument",
@@ -575,6 +614,9 @@
  {
   "id": "sns-fnpb",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-13 FNPB — Fundamental Neutron Physics Beam Line",
   "instrument_class": "neutron-instrument",
@@ -616,6 +658,9 @@
  {
   "id": "sns-hyspec",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-14B HYSPEC — Hybrid Spectrometer",
   "instrument_class": "neutron-instrument",
@@ -665,6 +710,9 @@
  {
   "id": "sns-nse",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-15 NSE — Neutron Spin Echo Spectrometer",
   "instrument_class": "neutron-instrument",
@@ -706,6 +754,9 @@
  {
   "id": "sns-vision",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-16B VISION — Vibrational Spectrometer",
   "instrument_class": "neutron-instrument",
@@ -747,6 +798,9 @@
  {
   "id": "sns-sequoia",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-17 SEQUOIA — Fine-Resolution Fermi Chopper Spectrometer",
   "instrument_class": "neutron-instrument",
@@ -788,6 +842,9 @@
  {
   "id": "sns-usans",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-1A USANS — Ultra-Small-Angle Neutron Scattering Instrument",
   "instrument_class": "neutron-instrument",
@@ -834,6 +891,9 @@
  {
   "id": "sns-nomad",
   "facility": "SNS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ORNL",
   "name": "BL-1B NOMAD — Nanoscale-Ordered Materials Diffractometer",
   "instrument_class": "neutron-instrument",

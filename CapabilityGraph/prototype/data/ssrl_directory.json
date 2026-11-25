@@ -2,6 +2,9 @@
  {
   "id": "ssrl-2-1",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "2-1 Powder and thin-film diffraction station with X-ray reflectivity",
   "instrument_class": "synchrotron-beamline",
@@ -56,6 +59,9 @@
  {
   "id": "ssrl-2-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "2-2 X-ray absorption spectroscopy and white-beam station",
   "instrument_class": "synchrotron-beamline",
@@ -100,6 +106,9 @@
  {
   "id": "ssrl-2-3",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "2-3 Microfocus X-ray imaging, micro-XAS, and micro-diffraction station",
   "instrument_class": "synchrotron-beamline",
@@ -146,6 +155,9 @@
  {
   "id": "ssrl-4-1",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "4-1 High-flux wiggler X-ray absorption spectroscopy station",
   "instrument_class": "synchrotron-beamline",
@@ -194,6 +206,9 @@
  {
   "id": "ssrl-4-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "4-2 Biological small- and wide-angle X-ray scattering station",
   "instrument_class": "synchrotron-beamline",
@@ -247,6 +262,9 @@
  {
   "id": "ssrl-4-3",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "4-3 Tender/hard X-ray absorption spectroscopy wiggler side-station",
   "instrument_class": "synchrotron-beamline",
@@ -295,6 +313,9 @@
  {
   "id": "ssrl-5-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "5-2 High-resolution angle-resolved photoemission spectroscopy station",
   "instrument_class": "synchrotron-beamline",
@@ -340,6 +361,9 @@
  {
   "id": "ssrl-5-4",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "5-4 Normal-incidence monochromator ARPES station",
   "instrument_class": "synchrotron-beamline",
@@ -384,6 +408,9 @@
  {
   "id": "ssrl-6-2a",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "6-2a Tender X-ray emission and resonant inelastic scattering spectroscopy station",
   "instrument_class": "synchrotron-beamline",
@@ -437,6 +464,9 @@
  {
   "id": "ssrl-6-2b",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "6-2b Micro-focus high-resolution hard X-ray spectroscopy and micro-tomography station",
   "instrument_class": "synchrotron-beamline",
@@ -489,6 +519,9 @@
  {
   "id": "ssrl-6-2c",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "6-2c Full-field transmission X-ray microscopy station",
   "instrument_class": "synchrotron-beamline",
@@ -541,6 +574,9 @@
  {
   "id": "ssrl-7-1",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "7-1 High-throughput macromolecular crystallography wiggler side-station",
   "instrument_class": "synchrotron-beamline",
@@ -582,6 +618,9 @@
  {
   "id": "ssrl-7-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "7-2 X-ray absorption spectroscopy rapid large-scale imaging station",
   "instrument_class": "synchrotron-beamline",
@@ -630,6 +669,9 @@
  {
   "id": "ssrl-7-3",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "7-3 Biological X-ray absorption spectroscopy wiggler side-station",
   "instrument_class": "synchrotron-beamline",
@@ -678,6 +720,9 @@
  {
   "id": "ssrl-8-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "8-2 Soft X-ray photoemission and absorption spectroscopy station",
   "instrument_class": "synchrotron-beamline",
@@ -726,6 +771,9 @@
  {
   "id": "ssrl-9-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "9-2 High-throughput macromolecular crystallography wiggler end-station",
   "instrument_class": "synchrotron-beamline",
@@ -787,6 +835,9 @@
  {
   "id": "ssrl-9-3",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "9-3 Biological X-ray absorption spectroscopy focused wiggler side-station",
   "instrument_class": "synchrotron-beamline",
@@ -835,6 +886,9 @@
  {
   "id": "ssrl-10-2a",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "10-2a Materials scattering front hutch with two-circle diffractometer",
   "instrument_class": "synchrotron-beamline",
@@ -883,6 +937,9 @@
  {
   "id": "ssrl-10-2b",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "10-2b Quick-scanning X-ray absorption spectroscopy back hutch for operando catalysis",
   "instrument_class": "synchrotron-beamline",
@@ -936,6 +993,9 @@
  {
   "id": "ssrl-11-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "11-2 High-flux X-ray absorption spectroscopy station for radiological, geochemical, and interfacial science",
   "instrument_class": "synchrotron-beamline",
@@ -984,6 +1044,9 @@
  {
   "id": "ssrl-11-3",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "11-3 Fixed-energy wide-angle X-ray scattering and thin-film diffraction station",
   "instrument_class": "synchrotron-beamline",
@@ -1037,6 +1100,9 @@
  {
   "id": "ssrl-12-1",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "12-1 High-flux undulator microfocus macromolecular crystallography station",
   "instrument_class": "synchrotron-beamline",
@@ -1094,6 +1160,9 @@
  {
   "id": "ssrl-12-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "12-2 High-throughput microcrystal and serial macromolecular crystallography station",
   "instrument_class": "synchrotron-beamline",
@@ -1155,6 +1224,9 @@
  {
   "id": "ssrl-13-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "13-2 Elliptically polarizing undulator soft X-ray core-level spectroscopy station",
   "instrument_class": "synchrotron-beamline",
@@ -1207,6 +1279,9 @@
  {
   "id": "ssrl-13-3",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "13-3 Soft X-ray resonant inelastic scattering station",
   "instrument_class": "synchrotron-beamline",
@@ -1250,6 +1325,9 @@
  {
   "id": "ssrl-14-1",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "14-1 Macromolecular crystallography station",
   "instrument_class": "synchrotron-beamline",
@@ -1307,6 +1385,9 @@
  {
   "id": "ssrl-14-3",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "14-3 Tender X-ray absorption spectroscopy stations (14-3a/14-3b) for biological and environmental systems",
   "instrument_class": "synchrotron-beamline",
@@ -1355,6 +1436,9 @@
  {
   "id": "ssrl-15-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "15-2 Advanced hard X-ray spectroscopy station (HERFD-XAS, XES, RIXS, X-ray Raman)",
   "instrument_class": "synchrotron-beamline",
@@ -1416,6 +1500,9 @@
  {
   "id": "ssrl-17-2",
   "facility": "SSRL",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "17-2 In-vacuum undulator materials scattering station (WAXS/XRD)",
   "instrument_class": "synchrotron-beamline",

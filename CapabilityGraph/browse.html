@@ -101,6 +101,7 @@
   </div>
   <div class="chips" id="chips"></div>
   <div class="controls">
+    <select id="f-program"><option value="">program: all</option></select>
     <select id="f-facility"><option value="">facility: all</option></select>
     <select id="f-status"><option value="">status: all</option></select>
     <select id="f-depth"><option value="">depth: all</option></select>
@@ -147,6 +148,7 @@ async function init() {
   if (params.get("q")) $("q").value = params.get("q");
   if (params.get("all") === "1") $("include-all").checked = true;
   if (params.get("facility")) $("f-facility").value = params.get("facility");
+  if (params.get("program")) $("f-program").value = params.get("program");
   render();
   if (params.get("map") === "1") toggleMap();
 }
@@ -231,6 +233,7 @@ function syncUrl() {
   if ($("q").value.trim()) params.set("q", $("q").value.trim());
   if ($("include-all").checked) params.set("all", "1");
   if ($("f-facility").value) params.set("facility", $("f-facility").value);
+  if ($("f-program").value) params.set("program", $("f-program").value);
   if ($("map-wrap").style.display === "block") params.set("map", "1");
   const qs = params.toString();
   history.replaceState(null, "", qs ? `?${qs}` : location.pathname);
@@ -240,8 +243,8 @@ function buildFacets() {
   const fill = (id, key) => {
     const counts = new Map();
     for (const r of RECORDS) {
-      const v = r[key] || "unknown";
-      counts.set(v, (counts.get(v) || 0) + 1);
+      const vals = Array.isArray(r[key]) ? r[key] : [r[key] || "unknown"];
+      for (const v of vals) counts.set(v, (counts.get(v) || 0) + 1);
     }
     const sel = $(id);
     for (const [v, n] of [...counts].sort((a, b) => b[1] - a[1])) {
@@ -251,6 +254,7 @@ function buildFacets() {
     }
     sel.addEventListener("change", () => { syncUrl(); render(); });
   };
+  fill("f-program", "program");
   fill("f-facility", "facility");
   fill("f-status", "status");
   fill("f-depth", "record_depth");
@@ -267,7 +271,8 @@ function buildChips() {
 }
 
 function facetPass(r) {
-  return (!$("f-facility").value || (r.facility || "unknown") === $("f-facility").value)
+  return (!$("f-program").value || (Array.isArray(r.program) ? r.program : [r.program || "unknown"]).includes($("f-program").value))
+      && (!$("f-facility").value || (r.facility || "unknown") === $("f-facility").value)
       && (!$("f-status").value || (r.status || "unknown") === $("f-status").value)
       && (!$("f-depth").value || (r.record_depth || "unknown") === $("f-depth").value)
       && (!$("f-class").value || (r.instrument_class || "unknown") === $("f-class").value);
@@ -285,7 +290,7 @@ function render() {
   } else {
     rows = pool
       .slice()
-      .sort((a, b) => (a.facility + a.id).localeCompare(b.facility + b.id))
+      .sort((a, b) => (String((a.program || [])[0] || "") + a.facility + a.id).localeCompare(String((b.program || [])[0] || "") + b.facility + b.id))
       .map(r => ({ score: null, record: r, matched: {} }));
   }
 
@@ -326,6 +331,7 @@ function card({ score, record: r, matched }, searching) {
       <span class="name">${esc(r.name || r.id)}</span>
       <span class="rid">${esc(r.id)}</span>
       <span class="badges">
+        ${r.program ? (Array.isArray(r.program) ? r.program : [r.program]).map(p => `<span class="badge">${esc(p)}</span>`).join("") : ""}
         <span class="badge">${esc(r.facility || "?")}</span>
         <span class="badge ${esc(r.status || "unknown")}">${esc(r.status || "unknown")}</span>
         <span class="badge ${r.record_depth === "deep" ? "deep" : ""}">${esc(r.record_depth || "?")}</span>

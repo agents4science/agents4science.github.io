@@ -2,6 +2,9 @@
  {
   "id": "nsls2-2-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "2-ID SIX (Soft Inelastic X-ray Scattering)",
   "instrument_class": "synchrotron-beamline",
@@ -34,6 +37,9 @@
  {
   "id": "nsls2-3-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "3-ID HXN (Hard X-ray Nanoprobe)",
   "instrument_class": "synchrotron-beamline",
@@ -74,6 +80,9 @@
  {
   "id": "nsls2-4-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "4-ID ISR (In-situ and Resonant Hard X-ray Studies)",
   "instrument_class": "synchrotron-beamline",
@@ -111,6 +120,9 @@
  {
   "id": "nsls2-4-bm",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "4-BM XFM (X-ray Fluorescence Microprobe)",
   "instrument_class": "synchrotron-beamline",
@@ -148,6 +160,9 @@
  {
   "id": "nsls2-5-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "5-ID SRX (Submicron Resolution X-ray Spectroscopy)",
   "instrument_class": "synchrotron-beamline",
@@ -185,6 +200,9 @@
  {
   "id": "nsls2-6-bm",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "6-BM BMM (Beamline for Materials Measurement)",
   "instrument_class": "synchrotron-beamline",
@@ -222,6 +240,9 @@
  {
   "id": "nsls2-7-bm",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "7-BM QAS (Quick X-ray Absorption and Scattering)",
   "instrument_class": "synchrotron-beamline",
@@ -257,6 +278,9 @@
  {
   "id": "nsls2-7-id-1",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "7-ID-1 SST-1 (Spectroscopy Soft and Tender 1)",
   "instrument_class": "synchrotron-beamline",
@@ -294,6 +318,9 @@
  {
   "id": "nsls2-7-id-2",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "7-ID-2 SST-2 (Spectroscopy Soft and Tender 2)",
   "instrument_class": "synchrotron-beamline",
@@ -330,6 +357,9 @@
  {
   "id": "nsls2-8-bm",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "8-BM TES (Tender Energy X-ray Absorption Spectroscopy)",
   "instrument_class": "synchrotron-beamline",
@@ -367,6 +397,9 @@
  {
   "id": "nsls2-8-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "8-ID ISS (Inner-Shell Spectroscopy)",
   "instrument_class": "synchrotron-beamline",
@@ -399,6 +432,9 @@
  {
   "id": "nsls2-9-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "9-ID CDI (Coherent Diffractive Imaging)",
   "instrument_class": "synchrotron-beamline",
@@ -439,6 +475,9 @@
  {
   "id": "nsls2-10-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "10-ID IXS (Inelastic X-ray Scattering)",
   "instrument_class": "synchrotron-beamline",
@@ -471,6 +510,9 @@
  {
   "id": "nsls2-11-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "11-ID CHX (Coherent Hard X-ray Scattering)",
   "instrument_class": "synchrotron-beamline",
@@ -517,6 +559,9 @@
  {
   "id": "nsls2-11-bm",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "11-BM CMS (Complex Materials Scattering)",
   "instrument_class": "synchrotron-beamline",
@@ -559,6 +604,9 @@
  {
   "id": "nsls2-12-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "12-ID SMI (Soft Matter Interfaces)",
   "instrument_class": "synchrotron-beamline",
@@ -595,6 +643,9 @@
  {
   "id": "nsls2-16-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "16-ID LiX (Life Science X-ray Scattering)",
   "instrument_class": "synchrotron-beamline",
@@ -636,6 +687,9 @@
  {
   "id": "nsls2-17-bm",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "17-BM XFP (X-ray Footprinting of Biological Materials)",
   "instrument_class": "synchrotron-beamline",
@@ -668,6 +722,9 @@
  {
   "id": "nsls2-17-id-1",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "17-ID-1 AMX (Highly Automated Macromolecular Crystallography)",
   "instrument_class": "synchrotron-beamline",
@@ -705,6 +762,9 @@
  {
   "id": "nsls2-17-id-2",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "17-ID-2 FMX (Frontier Microfocusing Macromolecular Crystallography)",
   "instrument_class": "synchrotron-beamline",
@@ -737,6 +797,9 @@
  {
   "id": "nsls2-18-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "18-ID FXI (Full Field X-ray Imaging)",
   "instrument_class": "synchrotron-beamline",
@@ -772,6 +835,9 @@
  {
   "id": "nsls2-19-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "19-ID NYX (NYSBC Biological Microdiffraction Facility)",
   "instrument_class": "synchrotron-beamline",
@@ -804,6 +870,9 @@
  {
   "id": "nsls2-21-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "21-ID ESM (Electron Spectro-Microscopy)",
   "instrument_class": "synchrotron-beamline",
@@ -846,6 +915,9 @@
  {
   "id": "nsls2-22-ir-1",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "22-IR-1 FIS (Frontier Synchrotron Infrared Spectroscopy)",
   "instrument_class": "synchrotron-beamline",
@@ -878,6 +950,9 @@
  {
   "id": "nsls2-22-ir-2",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "22-IR-2 MET (Magnetic, Ellipsometric, and Time-resolved Infrared Nanospectroscopies)",
   "instrument_class": "synchrotron-beamline",
@@ -916,6 +991,9 @@
  {
   "id": "nsls2-23-id-1",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "23-ID-1 CSX (Coherent Soft X-ray Scattering)",
   "instrument_class": "synchrotron-beamline",
@@ -952,6 +1030,9 @@
  {
   "id": "nsls2-23-id-2",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "23-ID-2 IOS (In situ and Operando Soft X-ray Spectroscopy)",
   "instrument_class": "synchrotron-beamline",
@@ -988,6 +1069,9 @@
  {
   "id": "nsls2-27-id",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "27-ID HEX (High Energy Engineering X-ray Scattering)",
   "instrument_class": "synchrotron-beamline",
@@ -1029,6 +1113,9 @@
  {
   "id": "nsls2-28-id-1",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "28-ID-1 PDF (Pair Distribution Function)",
   "instrument_class": "synchrotron-beamline",
@@ -1071,6 +1158,9 @@
  {
   "id": "nsls2-28-id-2",
   "facility": "NSLS-II",
+  "program": [
+   "DOE"
+  ],
   "institution": "BNL",
   "name": "28-ID-2 XPD (X-ray Powder Diffraction)",
   "instrument_class": "synchrotron-beamline",

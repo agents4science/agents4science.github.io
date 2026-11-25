@@ -2,6 +2,9 @@
  {
   "id": "polaris-ul-junior",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (HHTP, UChicago)",
   "name": "Unchained Labs Junior Synthesis Robot",
   "instrument_class": "robotic-synthesis-platform",
@@ -62,6 +65,9 @@
  {
   "id": "polaris-big-kahuna",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (HHTP, UChicago)",
   "name": "Unchained Labs Big Kahuna Formulation/Processing Robot",
   "instrument_class": "robotic-processing-platform",
@@ -137,6 +143,9 @@
  {
   "id": "polaris-electrolab",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (HHTP, UChicago)",
   "name": "Electrolab Automated Electrochemistry Platform",
   "instrument_class": "electrochemistry-platform",
@@ -206,6 +215,9 @@
  {
   "id": "polaris-n9",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (HHTP, UChicago)",
   "name": "N9 Robotic Platform (North Robotics) - Film Processing and Device Fabrication",
   "instrument_class": "robotic-processing-platform",
@@ -288,6 +300,9 @@
  {
   "id": "polaris-kla-nanoindenter",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (HHTP, UChicago)",
   "name": "KLA Nanoindenter - Automated Nanomechanical Testing",
   "instrument_class": "mechanical-tester",
@@ -356,6 +371,9 @@
  {
   "id": "polaris-nicolet-is50",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (HHTP, UChicago)",
   "name": "Thermo Fisher Nicolet iS50 FTIR + Continuum IR Microscope",
   "instrument_class": "spectrometer",
@@ -425,6 +443,9 @@
  {
   "id": "polaris-glossmeter",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (HHTP, UChicago)",
   "name": "Micro-Gloss 60 deg Robotic Gloss Meter",
   "instrument_class": "spectrometer",
@@ -488,6 +509,9 @@
  {
   "id": "polaris-ur10e",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (HHTP, UChicago)",
   "name": "UR10e Robotic Arm - Central Sample Handling Hub",
   "instrument_class": "robotic-manipulator",
@@ -548,6 +572,9 @@
  {
   "id": "polaris-ecosec-ht-8mals",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (SMCF, UChicago)",
   "name": "Tosoh EcoSEC-HT SEC + 8-Angle MALS (Wyatt)",
   "instrument_class": "chromatography-system",
@@ -614,6 +641,9 @@
  {
   "id": "polaris-ecosec-3mals",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (SMCF, UChicago)",
   "name": "Tosoh EcoSEC SEC + 3-Angle MiniDAWN (Wyatt)",
   "instrument_class": "chromatography-system",
@@ -678,6 +708,9 @@
  {
   "id": "polaris-dsc2500",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (SMCF, UChicago)",
   "name": "TA Instruments Discovery DSC 2500 (x2)",
   "instrument_class": "thermal-analyzer",
@@ -742,6 +775,9 @@
  {
   "id": "polaris-tga5500",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (SMCF, UChicago)",
   "name": "TA Instruments Discovery TGA 5500",
   "instrument_class": "thermal-analyzer",
@@ -805,6 +841,9 @@
  {
   "id": "polaris-irtracer100",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (SMCF, UChicago)",
   "name": "Shimadzu IRTracer-100 FTIR",
   "instrument_class": "spectrometer",
@@ -872,6 +911,9 @@
  {
   "id": "polaris-mobius-dls",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (SMCF, UChicago)",
   "name": "Wyatt Mobius DLS - Dynamic Light Scattering / Electrophoretic Mobility",
   "instrument_class": "light-scattering-instrument",
@@ -940,6 +982,9 @@
  {
   "id": "polaris-uv3600",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (SMCF, UChicago)",
   "name": "Shimadzu UV-3600 Plus UV-VIS-NIR Spectrophotometer",
   "instrument_class": "spectrometer",
@@ -1005,6 +1050,9 @@
  {
   "id": "polaris-jupiter-afm",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (MPML, UChicago)",
   "name": "Asylum Research Jupiter XR AFM",
   "instrument_class": "scanning-probe-microscope",
@@ -1074,6 +1122,9 @@
  {
   "id": "polaris-labram",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (MPML, UChicago)",
   "name": "Horiba LabRAM HR Evolution Confocal Raman Microscope",
   "instrument_class": "spectrometer",
@@ -1141,6 +1192,9 @@
  {
   "id": "polaris-dsx2000",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "UChicago (MPML, UChicago)",
   "name": "Olympus DSX2000 Optical Microscope (3D Profiling)",
   "instrument_class": "light-microscope",
@@ -1209,6 +1263,9 @@
  {
   "id": "polaris-chemspeed",
   "facility": "PoLARIS",
+  "program": [
+   "NSF PCL"
+  ],
   "institution": "ANL (Polybot, CNM, Argonne)",
   "name": "Chemspeed Robot - Automated Synthesis Platform (Polybot)",
   "instrument_class": "robotic-synthesis-platform",

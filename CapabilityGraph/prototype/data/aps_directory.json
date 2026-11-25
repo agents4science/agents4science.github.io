@@ -2,6 +2,9 @@
  {
   "id": "aps-1-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 1-BM-B,C (Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -80,6 +83,9 @@
  {
   "id": "aps-1-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 1-ID-B,C,E (Chemistry; Life Sciences; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -172,6 +178,9 @@
  {
   "id": "aps-2-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 2-ID-D (Chemistry; Environmental Science; Life Sciences; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -250,6 +259,9 @@
  {
   "id": "aps-3-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 3-ID-B,C,D (Chemistry; GeoScience; Life Sciences; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -335,6 +347,9 @@
  {
   "id": "aps-4-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 4-ID-B,G,H (Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -423,6 +438,9 @@
  {
   "id": "aps-5-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 5-BM-B (Catalysis; Chemistry; Environmental Science; Materials Science; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -500,6 +518,9 @@
  {
   "id": "aps-5-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 5-ID-B,C,D (Chemistry; Life Sciences; Materials Science; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -591,6 +612,9 @@
  {
   "id": "aps-6-bm-a",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 6-BM-A,B (GeoScience; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -676,6 +700,9 @@
  {
   "id": "aps-6-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 6-ID-B,C (Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -752,6 +779,9 @@
  {
   "id": "aps-6-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 6-ID-D (Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -829,6 +859,9 @@
  {
   "id": "aps-7-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 7-BM-B (Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -909,6 +942,9 @@
  {
   "id": "aps-7-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 7-ID-B,C,D (Catalysis; Chemistry; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -990,6 +1026,9 @@
  {
   "id": "aps-8-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 8-BM-B (Chemistry; Environmental Science; Life Sciences; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -1051,6 +1090,9 @@
  {
   "id": "aps-8-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 8-ID-E,I (Materials Science; Physics; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -1128,6 +1170,9 @@
  {
   "id": "aps-9-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 9-BM-B,C (Catalysis; Chemistry; Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -1197,6 +1242,9 @@
  {
   "id": "aps-9-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 9-ID-D (Chemistry; Materials Science; Physics; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -1278,6 +1326,9 @@
  {
   "id": "aps-10-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 10-BM-B (Chemistry; Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -1352,6 +1403,9 @@
  {
   "id": "aps-10-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 10-ID-B (Chemistry; Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -1436,6 +1490,9 @@
  {
   "id": "aps-11-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 11-BM-B (Chemistry; Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -1508,6 +1565,9 @@
  {
   "id": "aps-11-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 11-ID-B (Catalysis; Chemistry; Environmental Science; GeoScience; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -1586,6 +1646,9 @@
  {
   "id": "aps-11-id-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 11-ID-C (Catalysis; Chemistry; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -1667,6 +1730,9 @@
  {
   "id": "aps-11-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 11-ID-D (Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -1735,6 +1801,9 @@
  {
   "id": "aps-12-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 12-BM-B (Catalysis; Chemistry; Environmental Science; Materials Science; Physics; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -1807,6 +1876,10 @@
  {
   "id": "aps-12-id-b",
   "facility": "APS",
+  "program": [
+   "DOE",
+   "NSF PCL"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 12-ID-B (Chemistry; Life Sciences; Materials Science; Physics; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -1892,6 +1965,9 @@
  {
   "id": "aps-12-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 12-ID-E (Chemistry; Materials Science; Physics; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -1977,6 +2053,9 @@
  {
   "id": "aps-13-bm-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 13-BM-C (Environmental Science; GeoScience)",
   "instrument_class": "synchrotron-beamline",
@@ -2050,6 +2129,9 @@
  {
   "id": "aps-13-bm-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 13-BM-D (Environmental Science; GeoScience)",
   "instrument_class": "synchrotron-beamline",
@@ -2129,6 +2211,9 @@
  {
   "id": "aps-13-id-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 13-ID-C,D (Environmental Science; GeoScience)",
   "instrument_class": "synchrotron-beamline",
@@ -2225,6 +2310,9 @@
  {
   "id": "aps-14-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 14-ID-B (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -2316,6 +2404,9 @@
  {
   "id": "aps-15-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 15-ID-B,E (Chemistry; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -2387,6 +2478,9 @@
  {
   "id": "aps-15-id-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 15-ID-C,D (Chemistry; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -2468,6 +2562,9 @@
  {
   "id": "aps-16-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 16-BM-B,D (GeoScience; Materials Science; Physics; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -2559,6 +2656,9 @@
  {
   "id": "aps-16-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 16-ID-B (Chemistry; GeoScience; Materials Science; Physics; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -2638,6 +2738,9 @@
  {
   "id": "aps-16-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 16-ID-D,E (Chemistry; GeoScience; Materials Science; Physics; Polymer Science)",
   "instrument_class": "synchrotron-beamline",
@@ -2723,6 +2826,9 @@
  {
   "id": "aps-17-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 17-BM-B (Catalysis; Chemistry; GeoScience; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -2799,6 +2905,9 @@
  {
   "id": "aps-17-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 17-ID-B (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -2885,6 +2994,9 @@
  {
   "id": "aps-18-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 18-ID-D (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -2971,6 +3083,9 @@
  {
   "id": "aps-19-bm-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 19-BM-D (Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -3055,6 +3170,9 @@
  {
   "id": "aps-19-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 19-ID-E (Catalysis; Chemistry; Environmental Science; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -3139,6 +3257,9 @@
  {
   "id": "aps-20-bm-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 20-BM-B (Chemistry; Environmental Science; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -3210,6 +3331,9 @@
  {
   "id": "aps-20-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 20-ID-D,E (Chemistry; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -3297,6 +3421,9 @@
  {
   "id": "aps-21-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 21-ID-D (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -3375,6 +3502,9 @@
  {
   "id": "aps-21-id-f",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 21-ID-F (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -3449,6 +3579,9 @@
  {
   "id": "aps-21-id-g",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 21-ID-G (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -3523,6 +3656,9 @@
  {
   "id": "aps-22-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 22-ID-D (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -3593,6 +3729,9 @@
  {
   "id": "aps-22-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 22-ID-E ()",
   "instrument_class": "synchrotron-beamline",
@@ -3640,6 +3779,9 @@
  {
   "id": "aps-23-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 23-ID-B (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -3724,6 +3866,9 @@
  {
   "id": "aps-23-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 23-ID-D (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -3803,6 +3948,9 @@
  {
   "id": "aps-24-id-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 24-ID-C (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -3894,6 +4042,9 @@
  {
   "id": "aps-24-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 24-ID-E (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -3969,6 +4120,9 @@
  {
   "id": "aps-25-id-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 25-ID-C (Catalysis; Chemistry; Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4048,6 +4202,9 @@
  {
   "id": "aps-25-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 25-ID-D,E (Catalysis; Chemistry; Environmental Science; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4119,6 +4276,9 @@
  {
   "id": "aps-26-id-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 26-ID-C (Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4203,6 +4363,9 @@
  {
   "id": "aps-27-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 27-ID-B (Chemistry; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4268,6 +4431,9 @@
  {
   "id": "aps-28-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 28-ID-B,C (Catalysis; GeoScience; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4349,6 +4515,9 @@
  {
   "id": "aps-28-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 28-ID-D,E (Catalysis; GeoScience; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4427,6 +4596,9 @@
  {
   "id": "aps-28-id-f",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 28-ID-F (Catalysis; GeoScience; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4508,6 +4680,9 @@
  {
   "id": "aps-28-id-g",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 28-ID-G (Catalysis; GeoScience; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4585,6 +4760,9 @@
  {
   "id": "aps-29-id-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 29-ID-C,D (Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4662,6 +4840,9 @@
  {
   "id": "aps-30-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 30-ID-B,C (GeoScience; Life Sciences; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -4732,6 +4913,9 @@
  {
   "id": "aps-31-id-d",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 31-ID-D (Life Sciences)",
   "instrument_class": "synchrotron-beamline",
@@ -4796,6 +4980,9 @@
  {
   "id": "aps-31-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 31-ID-E (Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -4859,6 +5046,9 @@
  {
   "id": "aps-32-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 32-ID-B,C (GeoScience; Life Sciences; Materials Science)",
   "instrument_class": "synchrotron-beamline",
@@ -4941,6 +5131,9 @@
  {
   "id": "aps-33-bm-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 33-BM-C (Chemistry; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -5024,6 +5217,9 @@
  {
   "id": "aps-33-id-c",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 33-ID-C (Catalysis; Chemistry; Environmental Science; GeoScience; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -5104,6 +5300,9 @@
  {
   "id": "aps-34-id-e",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 34-ID-E (Chemistry; Environmental Science; GeoScience; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",
@@ -5187,6 +5386,9 @@
  {
   "id": "aps-34-id-f",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 34-ID-F ()",
   "instrument_class": "synchrotron-beamline",
@@ -5250,6 +5452,9 @@
  {
   "id": "aps-35-id-b",
   "facility": "APS",
+  "program": [
+   "DOE"
+  ],
   "institution": "ANL",
   "name": "APS Beamline 35-ID-B,C,D,E (GeoScience; Materials Science; Physics)",
   "instrument_class": "synchrotron-beamline",

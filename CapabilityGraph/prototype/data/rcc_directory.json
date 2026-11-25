@@ -2,6 +2,9 @@
  {
   "id": "rcc-midway3",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "Midway3 — flagship cluster for multi-purpose scientific computing, introduced 2021 alongside Midway3-AMD; shared and private compute nodes",
   "instrument_class": "compute",
@@ -49,6 +52,9 @@
  {
   "id": "rcc-midway2",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "Midway2 — general-purpose cluster succeeding the original Midway in 2016; shared and private compute nodes",
   "instrument_class": "compute",
@@ -92,6 +98,9 @@
  {
   "id": "rcc-beagle3",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "Beagle3 — NIH-funded cluster in the Midway3 ecosystem for biomedical research, specializing in modeling and large-scale simulations of molecular structures; launched February 2022 with 44 compute nodes (Intel CPUs, NVIDIA GPUs)",
   "instrument_class": "compute",
@@ -135,6 +144,9 @@
  {
   "id": "rcc-midwayssd",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "MidwaySSD — Midway3-ecosystem cluster serving computationally intensive Social Sciences Division research and educational purposes",
   "instrument_class": "compute",
@@ -178,6 +190,9 @@
  {
   "id": "rcc-skyway",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "Skyway — service to seamlessly burst computing workloads from the Midway2 and Midway3 ecosystems to commercial cloud platforms (AWS, GCP)",
   "instrument_class": "compute",
@@ -209,6 +224,9 @@
  {
   "id": "rcc-dali",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "DaLI — Data Lifecycle Instrument in the Midway2 ecosystem; unified workflow for acquiring, transferring, processing, and storing experimental and observational data",
   "instrument_class": "compute",
@@ -249,6 +267,9 @@
  {
   "id": "rcc-gm4",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "GM4 — GPU-enabled cluster in the Midway2 ecosystem for multiscale materials modeling and machine learning, supporting molecular dynamics and continuum simulations; NSF MRI-funded",
   "instrument_class": "compute",
@@ -282,6 +303,9 @@
  {
   "id": "rcc-sde3",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "SDE3 — trusted HPC environment in the Secure Data Enclave ecosystem for research on regulated data, with additional data security and privacy controls",
   "instrument_class": "compute",
@@ -313,6 +337,9 @@
  {
   "id": "rcc-sde2",
   "facility": "RCC",
+  "program": [
+   "University"
+  ],
   "institution": "UChicago",
   "name": "SDE2 — trusted HPC environment in the Secure Data Enclave ecosystem for research on regulated data, compliant with NIST SP800-53",
   "instrument_class": "compute",

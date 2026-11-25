@@ -2,6 +2,9 @@
  {
   "id": "lcls-tmo",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "TMO — Time-resolved Atomic, Molecular and Optical Science",
   "instrument_class": "fel-instrument",
@@ -71,6 +74,9 @@
  {
   "id": "lcls-txi",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "TXI — Tender X-ray Instrument (Tender X-ray Imaging)",
   "instrument_class": "fel-instrument",
@@ -123,6 +129,9 @@
  {
   "id": "lcls-xpp",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "XPP — X-ray Pump Probe",
   "instrument_class": "fel-instrument",
@@ -188,6 +197,9 @@
  {
   "id": "lcls-chemrixs",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "chemRIXS — chemRIXS (soft X-ray resonant inelastic scattering instrument for condensed-phase chemistry)",
   "instrument_class": "fel-instrument",
@@ -243,6 +255,9 @@
  {
   "id": "lcls-qrixs",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "qRIXS — qRIXS (soft X-ray resonant inelastic scattering instrument for correlated-electron condensed matter)",
   "instrument_class": "fel-instrument",
@@ -300,6 +315,9 @@
  {
   "id": "lcls-xcs",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "XCS — X-ray Correlation Spectroscopy",
   "instrument_class": "fel-instrument",
@@ -356,6 +374,9 @@
  {
   "id": "lcls-mfx",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "MFX — Macromolecular Femtosecond Crystallography",
   "instrument_class": "fel-instrument",
@@ -404,6 +425,9 @@
  {
   "id": "lcls-cxi",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "CXI — Coherent X-ray Imaging",
   "instrument_class": "fel-instrument",
@@ -464,6 +488,9 @@
  {
   "id": "lcls-mec",
   "facility": "LCLS",
+  "program": [
+   "DOE"
+  ],
   "institution": "SLAC",
   "name": "MEC — Matter in Extreme Conditions",
   "instrument_class": "fel-instrument",

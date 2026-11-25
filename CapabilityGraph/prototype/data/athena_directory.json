@@ -1,0 +1,2224 @@
+[
+ {
+  "id": "athena-ot2",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Opentrons OT-2 liquid handling robot",
+  "instrument_class": "robotic-synthesis-platform",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated liquid handling (single- and 8-channel pipettes)"
+   },
+   {
+    "name": "automated droplet dispensing on substrates"
+   },
+   {
+    "name": "combinatorial solution synthesis"
+   }
+  ],
+  "measurables": [
+   "solution-based sample libraries",
+   "droplet-dispensed films on substrates"
+  ],
+  "sample_environments": [
+   "custom N2 glovebox with active humidity control (air- and oxygen-sensitive synthesis)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (~84 hours/week) available for the PCL Test Bed"
+  },
+  "automation": {
+   "notes": "Science driver 1: high-throughput exploration of phase evolution in perovskites; composition-dependent property exploration of halide and oxide systems. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "synthesis"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-tecan-fluent780",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "TECAN Fluent 780 liquid handler robot",
+  "instrument_class": "robotic-synthesis-platform",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated liquid handling (96- and 8-channel pipetting, robotic gripper arms)"
+   },
+   {
+    "name": "aliquoting, normalization, serial dilution, plate stamping, reagent addition"
+   }
+  ],
+  "measurables": [
+   "precursor libraries (automated high-throughput formulation)",
+   "solvent/additive screening series"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (~84 hours/week) available for the PCL Test Bed"
+  },
+  "automation": {
+   "notes": "Science driver 1: kinetic and compositional mapping; screening of solvent and additive effects on perovskite crystallization; reaction parameters influencing film morphology and optoelectronic performance. Supports integration with other devices and storage systems. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "synthesis",
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-hamilton-starlet",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Hamilton Microlab STARlet liquid handling robot",
+  "instrument_class": "robotic-synthesis-platform",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated liquid handling (single- and 8-channel pipettes, flexible arms)"
+   },
+   {
+    "name": "droplet film synthesis"
+   }
+  ],
+  "measurables": [
+   "sequential/gradient reagent-addition products",
+   "droplet-based and multi-well synthesis libraries"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (~84 hours/week) available for the PCL Test Bed"
+  },
+  "automation": {
+   "control_interface": "Python-based workflows for custom automation protocols",
+   "notes": "Science driver 1: custom protocol development for sequential or gradient reagent addition; controlled synthesis of complex heterostructures; reproducibility assessment. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "synthesis"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-spinbot",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "SCIPROS SpinBOT automated spin-coating platform with in-situ optical characterization",
+  "instrument_class": "robotic-synthesis-platform",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated spin coating (programmable solvent injection, controlled annealing)"
+   },
+   {
+    "name": "in-situ photoluminescence monitoring during spin coating/annealing",
+    "acronym": "PL"
+   },
+   {
+    "name": "in-situ UV-visible spectroscopy",
+    "acronym": "UV-Vis"
+   }
+  ],
+  "measurables": [
+   "solution-processed thin films (multiple films per batch, varied recipes/spin speeds/annealing temperatures)",
+   "crystallization kinetics and film growth dynamics (real-time)",
+   "optical and structural stability during thermal processing"
+  ],
+  "sample_environments": [
+   "custom N2 glovebox",
+   "variable laser excitation intensity"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (~84 hours/week) available for the PCL Test Bed"
+  },
+  "automation": {
+   "notes": "Science driver 1: high-throughput thin-film fabrication under controlled spin-coating and annealing; composition-structure-property relationships via correlated PL and UV-Vis. Single pipetting channel, robotic gripping arms, syringe injection modules. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "synthesis",
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-aja-sputtering",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "AJA International multisource RF/DC magnetron combinatorial thin-film sputtering system",
+  "instrument_class": "fabrication",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "combinatorial magnetron sputtering (RF/DC, co-sputtering of binary/ternary/quaternary and higher-component libraries)"
+   },
+   {
+    "name": "reactive sputtering (oxides via O2, nitrides via N2, borides via B2H6, carbides via CH4)"
+   }
+  ],
+  "measurables": [
+   "combinatorial thin-film libraries (metallic, oxide, nitride, boride, carbide)",
+   "microstructure control via substrate heat/bias and post-deposition annealing"
+  ],
+  "sample_constraints": {
+   "states": [
+    "thin film"
+   ],
+   "size_notes": "compatible with 100 mm diameter substrates; substrate heating to 800 C and substrate bias; load lock for rapid pump-down"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (~84 hours/week) available for the PCL Test Bed; other current projects utilize ~2.5 days/week"
+  },
+  "automation": {
+   "notes": "Science drivers 1 and 2: high-throughput automated thin-film combinatorial libraries for extreme-environment materials. A computer model predicts the achievable compositional space from individual source deposition rates. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "synthesis"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-furnace-suite",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Ovens and furnaces suite (grouped: 2x Thermo Heratherm drying ovens, Thermo VACUtherm vacuum oven, 2x MTI KSL-1200x box furnaces 1200 C, 2x CM 1706 FL box furnaces 1700 C, 2x MTI GSL-1100X tube furnaces 1100 C, 2x CM horizontal tube furnaces 1600 C)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "drying (batch, typically >100 C; vacuum oven for powders)"
+   },
+   {
+    "name": "calcination, sintering, annealing (programmable box furnaces, ambient atmosphere, up to 1200/1700 C)"
+   },
+   {
+    "name": "tube-furnace heat treatment in air, vacuum, or inert atmosphere (MTI GSL-1100X to 1100 C, max 10 C/min, quartz/alumina tubes ~40 mm ID; CM tube furnaces to 1600 C, 2.5 and 3 inch ID, gas flow on the 2.5 inch unit)"
+   }
+  ],
+  "measurables": [
+   "dried gels from combinatorial library plates",
+   "calcined/sintered/annealed powders and pellets"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "24 hours/day, 7 days/week; current projects use ~50% of the time, leaving ~3.5 days/week for the PCL Test Bed"
+  },
+  "automation": {
+   "notes": "Science driver 1: programmed calcination/heat-treatment of combinatorial library plates (e.g. ramp to 800 C, hold, cool); powders recovered for further processing. Grouped record of one inventory row listing 9 units across 6 models. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-milling-presses",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Mills, mixers, sieves, and presses suite (grouped: SPEX energetic dual ball mill, 2x Flacktek high-speed speedmixers, auto sieve shaker, 12-ton Carver press, 2x 24-ton Across pellet presses, Oxy-Gon uniaxial hot press)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "energetic ball milling (YSZ/silicon nitride/polypropylene grinding vials)"
+   },
+   {
+    "name": "high-speed speedmixing (15 or 40 mL zirconia jars; 1.2 g at max 3500 RPM or 6 g at max 1700 RPM)"
+   },
+   {
+    "name": "automated sieving (#80/180 um, #120/125 um, #200/75 um, #325/45 um)"
+   },
+   {
+    "name": "pellet pressing (12-ton Carver; 24-ton Across presses, one in atmosphere, one in N2 glovebox)"
+   },
+   {
+    "name": "vacuum hot pressing (Oxy-Gon tungsten-mesh furnace + 25-ton Carver press, max 2000 C, 100 C/min, 3 inch D x 4 inch H hot zone, ultimate vacuum 5e-6 Torr or high-purity argon, programmable temperature and pressure profiles)"
+   }
+  ],
+  "measurables": [
+   "blended/milled ceramic powder batches",
+   "powder particle-size fractions",
+   "pressed pellets; hot-pressed pellets sintered to near-theoretical density"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "mills and presses ~10 hours/day, 5 days/week (when the synthesis lab is staffed); hot press for programmed reactions 24/7; instruments available ~50-90% of the time (readily available)"
+  },
+  "automation": {
+   "notes": "Science driver 1: forming dense/solid specimens of compositions identified for scale-up and advanced study/validation in the PCL Test Bed. Grouped record of one inventory row listing 8 units across 6 types. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-arc-melters",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Materials Research Furnaces arc melters (2 units)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "arc melting"
+   }
+  ],
+  "measurables": [
+   "high-entropy alloy and other alloy ingots"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "4 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Data acquisition on local computers; data compatible and minable like directly acquired data. Science driver 2: supports theoretical modeling. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "synthesis"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-cytation5",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "BioTek Cytation 5 multimode optical imaging and spectroscopic reader",
+  "instrument_class": "spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "digital microscopy with fluorescence imaging (excitation from top and bottom)"
+   },
+   {
+    "name": "photoluminescence spectroscopy",
+    "acronym": "PL"
+   },
+   {
+    "name": "UV-visible absorbance spectroscopy",
+    "acronym": "UV-Vis"
+   }
+  ],
+  "measurables": [
+   "photoluminescence and absorbance spectra of thin films, solutions, and droplet-printed substrates",
+   "optical bandgap, emission stability, phase evolution, degradation pathways",
+   "spatially resolved imaging correlated with sample performance"
+  ],
+  "sample_constraints": {
+   "states": [
+    "thin film",
+    "solution"
+   ],
+   "size_notes": "well plates and droplet-printed substrates"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (same availability as the OT-2)"
+  },
+  "automation": {
+   "notes": "Science driver 1: high-throughput optical/spectroscopic characterization; monitoring of PL and absorbance evolution during aging, annealing, or illumination. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-empyrean",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Malvern Panalytical Empyrean diffractometer",
+  "instrument_class": "x-ray-diffractometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "powder X-ray diffraction",
+    "acronym": "XRD"
+   },
+   {
+    "name": "high-temperature XRD (currently to 1200 C; in air, inert gas, vacuum, and dilute H2/CO2/CH4, availability dependent on temperature)"
+   },
+   {
+    "name": "grazing-incidence XRD",
+    "acronym": "GIXRD"
+   },
+   {
+    "name": "X-ray reflectivity",
+    "acronym": "XRR"
+   },
+   {
+    "name": "pair distribution function analysis",
+    "acronym": "PDF"
+   },
+   {
+    "name": "small-area pole figures and residual stress; sample mapping"
+   }
+  ],
+  "measurables": [
+   "phase identification and quantification",
+   "lattice parameters, crystallite size, microstrain, crystallinity",
+   "unit cell / microstructure model parameters (Pawley/Rietveld fitting)"
+  ],
+  "sample_constraints": {
+   "states": [
+    "powder",
+    "thin film",
+    "solid"
+   ],
+   "size_notes": "powders, pellets, solid pieces, and thin films; X/Y/Z stage +/- 27 mm in X and Y"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others; overnight and weekend use anticipated for automated high-throughput experiments (~12 hours/day x 5 weekdays + ~48 hours over the weekend = ~4.5 days/week)"
+  },
+  "automation": {
+   "autosampler": "automatic high-throughput sample changer, up to 45 samples",
+   "notes": "Under development: automated phase identification and material parameter extraction with theory in the loop (CALPHAD), targeting rapid phase-diagram mapping. Inner loop: Python-driven Pawley/Rietveld fitting in GSAS-II per (composition, T) point; extracted parameters promoted to the outer loop to inform physics-based models and selection of new target libraries. A 2300 C high-temperature stage is on order ('will arrive soon'). DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-xpert3-mrd",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Malvern Panalytical X'Pert3 MRD diffractometer",
+  "instrument_class": "x-ray-diffractometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray diffraction (thin films and solids)",
+    "acronym": "XRD"
+   },
+   {
+    "name": "grazing-incidence XRD",
+    "acronym": "GIXRD"
+   },
+   {
+    "name": "X-ray reflectivity",
+    "acronym": "XRR"
+   },
+   {
+    "name": "rocking curves and reciprocal space mapping"
+   },
+   {
+    "name": "pole figures and residual stress (larger area)"
+   }
+  ],
+  "measurables": [
+   "phase identification and quantification",
+   "lattice parameters, crystallite size, microstrain, crystallinity",
+   "texture, epitaxy, and strain in thin films across large wafers"
+  ],
+  "sample_constraints": {
+   "states": [
+    "thin film",
+    "solid"
+   ],
+   "size_notes": "5-axis cradle with +/- 40 mm movement in X and Y (mapping across large wafers); 4-bounce monochromator"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others; ~4.5 days/week anticipated for automated high-throughput runs; facility use over the last 2 years averaged under 2 days/week"
+  },
+  "automation": {
+   "notes": "Same automated Pawley/Rietveld (GSAS-II) + CALPHAD closed-loop development as the Empyrean, over programmed grids of thin-film combinatorial library locations. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-aeris",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Malvern Panalytical Aeris diffractometer",
+  "instrument_class": "x-ray-diffractometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "powder X-ray diffraction",
+    "acronym": "XRD"
+   }
+  ],
+  "measurables": [
+   "phase identification and quantification",
+   "lattice parameters, atom positions, crystallite size, microstrain, crystallinity"
+  ],
+  "sample_constraints": {
+   "states": [
+    "powder",
+    "solid"
+   ],
+   "size_notes": "powders, pellets, solid pieces, and (rarely) thin films"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others; facility use over the last 2 years averaged under 2 days/week"
+  },
+  "automation": {
+   "autosampler": "automatic sample loader, up to 6 samples",
+   "notes": "Much easier to use than the Empyrean for basic capabilities. To be used selectively for phase ID and crystallographic parameter refinement on scaled-up compositions identified through combinatorial workflows. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-xtalab-mini",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Rigaku XtaLAB Mini II single-crystal diffractometer",
+  "instrument_class": "x-ray-diffractometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "single-crystal X-ray diffraction",
+    "acronym": "SC-XRD"
+   },
+   {
+    "name": "low-temperature in-situ measurements (down to 100 K)"
+   }
+  ],
+  "measurables": [
+   "crystal structure solution: space group, lattice parameters, atomic positions, atomic displacement parameters"
+  ],
+  "sample_constraints": {
+   "states": [
+    "single crystal"
+   ],
+   "special_requirements": [
+    "single crystals only"
+   ]
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others; facility use over the last 2 years averaged under 2 days/week"
+  },
+  "automation": {
+   "notes": "To be used selectively by collaborators and users growing single-crystal compositions identified through powder-based or thin-film combinatorial workflows. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-epsilon1-xrf",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Malvern Panalytical Epsilon 1 XRF spectrometer",
+  "instrument_class": "spectrometer",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "X-ray fluorescence spectroscopy",
+    "acronym": "XRF"
+   }
+  ],
+  "measurables": [
+   "elemental identification (fluorine and heavier)",
+   "elemental quantification (reliable for aluminum and heavier)",
+   "stoichiometry verification; batch-to-batch reproducibility; dopant-level verification; composition changes during thermal/chemical/environmental cycling"
+  ],
+  "sample_constraints": {
+   "states": [
+    "powder",
+    "solid",
+    "thin film",
+    "liquid"
+   ],
+   "size_notes": "powders, pellets, solid pieces, thin films, and liquids; nondestructive"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others"
+  },
+  "automation": {
+   "notes": "The inventory calls this 'the essential compositional anchor that connects synthesis to performance across both science drivers': real-time compositional screening feedback for synthesis (driver 1) and elemental content underpinning structure-property correlations (driver 2). DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-kla-imicro",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "KLA iMicro automated nanoindenter (with automation retrofits)",
+  "instrument_class": "mechanical-tester",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated/adaptive nanoindentation (Berkovich, cube-corner, flat punch, spherical tips)"
+   },
+   {
+    "name": "automated spherical indentation of material libraries"
+   },
+   {
+    "name": "automated push-out testing (interfacial shear strength in polymeric composites)"
+   },
+   {
+    "name": "micro-pillar compression; fracture toughness measurement"
+   }
+  ],
+  "measurables": [
+   "nanoscale mechanical property maps of thin films and small-volume materials",
+   "phase-transformation and other anomaly identification",
+   "structure-property relationships in metals, alloys, ceramics, composites",
+   "interfacial shear strength; fracture toughness"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "16 hours/week (2 days x 8 hours)"
+  },
+  "automation": {
+   "notes": "Core of the Nanomechanical Test Node (NTN): identifies promising compositions for upscaling by adaptively measuring nanoscale mechanical properties. Integrated optical microscope for automated alignment and adaptive indentation; cost-aware high-throughput indentation workflows. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-keyence-vhx7000",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Keyence VHX-7000 optical microscope (integrated stage)",
+  "instrument_class": "light-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "high-resolution optical microscopy (site selection, indentation verification, crack mapping)"
+   },
+   {
+    "name": "polarized-illumination imaging (grain orientation and feature mapping)"
+   }
+  ],
+  "measurables": [
+   "microstructural context for adaptive navigation",
+   "quantitative crack-length measurement (fracture toughness evaluation in ceramics)",
+   "hardness anomaly detection in metals"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "8 hours/week"
+  },
+  "automation": {
+   "notes": "Supports Nanomechanical Test Node workflows: rapid microstructural characterization and feature mapping in metals, ceramics, and composites. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-vkx-confocal",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Keyence VK-X laser scanning confocal microscope",
+  "instrument_class": "light-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "laser scanning confocal microscopy (3D surface mapping)"
+   }
+  ],
+  "measurables": [
+   "three-dimensional surface topography",
+   "residual indentation impressions; pile-up and sink-in behavior",
+   "depth profiling; correlation of surface morphology with local mechanical response"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "16 hours/week"
+  },
+  "automation": {
+   "notes": "Supports Nanomechanical Test Node workflows requiring quantitative topography analysis after indentation. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-nec-3mv-tandem",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "3 MV NEC tandem accelerator",
+  "instrument_class": "accelerator-test-facility",
+  "status": "operational",
+  "probe": {
+   "type": "ion",
+   "flux_notes": "two ion sources covering H-Bi: SNICS (Source of Negative Ions by Cs Sputtering) for most species, Alphatross mainly for helium"
+  },
+  "techniques": [
+   {
+    "name": "ion irradiation (controlled subsurface damage)"
+   },
+   {
+    "name": "Rutherford backscattering spectrometry",
+    "acronym": "RBS",
+    "variants": [
+     "non-Rutherford (NRBS)"
+    ]
+   },
+   {
+    "name": "elastic recoil detection",
+    "acronym": "ERD",
+    "variants": [
+     "time-of-flight (TOF-ERDA)"
+    ]
+   },
+   {
+    "name": "nuclear reaction analysis",
+    "acronym": "NRA"
+   },
+   {
+    "name": "cathodoluminescence",
+    "acronym": "CL"
+   },
+   {
+    "name": "ion-beam induced luminescence",
+    "acronym": "IBIL"
+   }
+  ],
+  "measurables": [
+   "highly controlled subsurface radiation damage",
+   "sub-surface far-from-equilibrium structures",
+   "elemental depth profiles (ion beam analysis)"
+  ],
+  "sample_environments": [
+   "sample temperature variable ~30 K to 1473 K"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others"
+  },
+  "automation": {
+   "notes": "Science driver 2: the main tool for creating highly controlled subsurface damage; also serves driver 1 for sub-surface far-from-equilibrium structures. Part of the Tennessee Ion Beam Materials Laboratory (TIBML). DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing",
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-electron-gun",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "Electron gun (irradiation source)",
+  "instrument_class": "other",
+  "status": "operational",
+  "probe": {
+   "type": "electron",
+   "energy_range_eV": [
+    200,
+    20000
+   ],
+   "pulsed": true,
+   "flux_notes": "1 nA to 1 mA; pulsed beam via variable power supply; Einzel lens allows combined ion and electron irradiation"
+  },
+  "techniques": [
+   {
+    "name": "electron irradiation (combined with ion irradiation)"
+   },
+   {
+    "name": "cathodoluminescence during ion irradiation or electron-beam damage",
+    "acronym": "CL"
+   }
+  ],
+  "measurables": [
+   "electron-beam damage response",
+   "cathodoluminescence during irradiation"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Science driver 2. Vendor/model not given in inventory. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing",
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-femtotools-nanoindenter",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "FemtoTools nanoindenter (in-situ, during ion irradiation)",
+  "instrument_class": "mechanical-tester",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "in-situ nanoindentation during ion irradiation (continuous stiffness measurement)",
+    "acronym": "CSM"
+   },
+   {
+    "name": "micro-pillar compression; lock-key tensile testing; fatigue testing"
+   }
+  ],
+  "measurables": [
+   "mechanical property maps during irradiation or related environments",
+   "creep and hardness under irradiation"
+  ],
+  "resolution": {
+   "spatial_notes": "force range 0.5 nN - 200 mN; position sensing range 50 pm - 21 mm"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Science driver 2: in-situ indentation for efficient property mapping during irradiation. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-quanta-ray-laser",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "Quanta-Ray Nd:YAG laser",
+  "instrument_class": "laser-facility",
+  "status": "planned",
+  "probe": {
+   "type": "photon",
+   "pulsed": true,
+   "flux_notes": "1600 mJ at 30 Hz; powers in excess of ~48 W; focused, capable of heating areas of refractory metals such as tungsten"
+  },
+  "techniques": [
+   {
+    "name": "rapid laser heating of specific sample areas"
+   }
+  ],
+  "measurables": [
+   "high-temperature thermal response during ion irradiation or implantation"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (when added)"
+  },
+  "automation": {
+   "notes": "Science driver 2: input for high-temperature heating during ion irradiation or implantation. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Inventory marks this '(Being added)' — recorded as planned; confirm timeline with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-jeol-2100",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "JEOL 2100+ scanning transmission electron microscope",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "probe": {
+   "type": "electron",
+   "energy_range_eV": [
+    80000,
+    200000
+   ]
+  },
+  "techniques": [
+   {
+    "name": "(scanning) transmission electron microscopy",
+    "acronym": "S/TEM"
+   },
+   {
+    "name": "electron tomography (high tilt, +/- 81 degrees)"
+   },
+   {
+    "name": "high-speed in-situ imaging (Gatan Clearview camera, 50 frames/s at 4k resolution)"
+   }
+  ],
+  "measurables": [
+   "nanometer-resolution microstructure during coupled extreme testing (point resolution 0.25 nm, lattice resolution 0.14 nm)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others"
+  },
+  "automation": {
+   "notes": "Science driver 2: the primary in-situ S/TEM at UTK; host instrument for the ASTAR, PI-95, Poseidon, laser-heating, and (planned) ion-irradiation-port in-situ capabilities. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-astar",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "ASTAR automated TEM phase/orientation mapping system",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "automated TEM phase and crystal-orientation mapping (precession electron diffraction)"
+   }
+  ],
+  "measurables": [
+   "relative orientation of crystalline grains; grain boundaries; material texture",
+   "grain size before/during/after coupled extreme testing"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Science driver 2: accessory capability used with the JEOL 2100+ (see athena-jeol-2100). DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-hysitron-pi95",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Bruker/Hysitron PI-95 in-situ TEM nanomechanical holder",
+  "instrument_class": "mechanical-tester",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "in-situ TEM nanoindentation"
+   },
+   {
+    "name": "in-situ TEM pillar compression, lock-key tensile, fatigue, and creep testing"
+   }
+  ],
+  "measurables": [
+   "nanoscale mechanical response observed in TEM (indentation, compression, tensile, fatigue, creep)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Science driver 2: nanoscale in-situ TEM mechanical testing capability (used with the JEOL 2100+). DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-poseidon-liquid-cell",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Protochips Poseidon AX in-situ liquid cell (TEM)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "in-situ liquid-cell TEM electrochemistry"
+   }
+  ],
+  "measurables": [
+   "high-resolution observation of electrochemical reactions (oxygen evolution reaction, hydrogen evolution reaction)",
+   "corrosion processes in liquid"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Science drivers 1 and 2: nanoscale in-situ TEM chemical/electrochemical testing capability (used with the JEOL 2100+). DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-tem-laser-heating",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "In-situ laser heating system (TEM)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "in-situ TEM laser heating and rapid quenching (adjustable spot ~75-400 um, tunable 0.5-5 W)"
+   }
+  ],
+  "measurables": [
+   "rapid thermal heating/quenching response, combinable with any TEM stage or ion beam"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Science driver 2: nanoscale in-situ TEM heating and rapid-quench testing capability. Vendor/model not given in inventory. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-tem-ion-irradiation-ports",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Customized TEM ports for in-situ ion irradiation",
+  "instrument_class": "other",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "in-situ TEM ion irradiation"
+   }
+  ],
+  "measurables": [
+   "real-time evolution of radiation-induced material defects",
+   "combined-environment response (e.g. creep and stress/strain during laser heating plus ion irradiation, simulating reactor conditions)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (when complete)"
+  },
+  "automation": {
+   "notes": "Science driver 2: when fully complete, permits nanoscale in-situ TEM ion-irradiation testing, combinable with the other in-situ TEM capabilities. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Inventory marks this '(being added)' — recorded as planned; confirm timeline with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-acoustic-emission",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "Acoustic emission (AE) system",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "acoustic emission monitoring",
+    "acronym": "AE"
+   }
+  ],
+  "measurables": [
+   "frequency, magnitude, and waveform of acoustic emission during ion-irradiation-induced failure",
+   "rapid identification of failure in materials exposed to ion, electron, or laser irradiation"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Science driver 2; used by TIBML researchers. Vendor/model not given in inventory. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-tgs",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "Transient grating spectroscopy (TGS) system",
+  "instrument_class": "spectrometer",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "transient grating spectroscopy (surface acoustic waves)",
+    "acronym": "TGS"
+   }
+  ],
+  "measurables": [
+   "elastic constants (non-contact, non-destructive, rapid collection)",
+   "thermal diffusivity during ion irradiation or heating",
+   "operation at extremely high or cryogenic temperatures (characterization through a coated window)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (when complete)"
+  },
+  "automation": {
+   "notes": "Science driver 2: when fully complete, non-contact thermal/elastic characterization during irradiation or heating. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Inventory marks this 'being added' — recorded as planned; confirm timeline with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-nonsequitur-5kv",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "5 kV Nonsequitur ion gun",
+  "instrument_class": "other",
+  "status": "planned",
+  "probe": {
+   "type": "ion",
+   "flux_notes": "focusing column optimized for low-energy throughput; high-brightness electron-impact source for maximum bulk material removal; operates over a range of inert gases"
+  },
+  "techniques": [
+   {
+    "name": "low-energy high-flux ion/plasma exposure"
+   }
+  ],
+  "measurables": [
+   "low-energy high-flux plasma exposure surrogate during coupled extreme environments"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others"
+  },
+  "automation": {
+   "notes": "Science driver 2. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Inventory marks this 'being added' — recorded as planned; confirm timeline with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-nonsequitur-20kv",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "20 kV Nonsequitur ion gun",
+  "instrument_class": "other",
+  "status": "operational",
+  "probe": {
+   "type": "ion",
+   "flux_notes": "adjustable spot size >= 5 um; dual octupole for beam scanning and astigmatism correction"
+  },
+  "techniques": [
+   {
+    "name": "spatially defined sputtering or implantation of easily evaporated materials (e.g. Cs, Li, Na, K)"
+   }
+  ],
+  "measurables": [
+   "medium-energy high-flux plasma exposure surrogate during coupled extreme environments"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others"
+  },
+  "automation": {
+   "notes": "Science driver 2. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team. Program includes 'University' because the inventory marks this a shared core facility."
+   }
+  ]
+ },
+ {
+  "id": "athena-nec-300kv-implanter",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL",
+   "University"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed / TIBML)",
+  "name": "300 kV NEC ion implanter",
+  "instrument_class": "accelerator-test-facility",
+  "status": "unknown",
+  "probe": {
+   "type": "ion",
+   "flux_notes": "20-300 kV; large variety of ions H-Bi; mass-to-charge ratio >= 200; vacuum base pressure without beam 5e-8 Torr; all-metal and ceramic accelerator tube bakeable to 500 C; electrostatic quadrupole triplet lens controls spot size from 6 mm at 20 keV to 2 cm at 10 keV"
+  },
+  "techniques": [
+   {
+    "name": "ion implantation (medium energy)"
+   },
+   {
+    "name": "dual-beam irradiation (with the 3 MV tandem)"
+   }
+  ],
+  "measurables": [
+   "dual-beam medium-energy high-flux plasma exposure surrogate during coupled extreme environments"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team (TIBML)"
+  },
+  "throughput": {
+   "availability": "core facility — available time depends on usage by others"
+  },
+  "automation": {
+   "notes": "Science driver 2: 'will complete the TIBML's energy range'. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Status unknown: the description is written in future tense about 'the new system' ('will complete the TIBML's energy range', 'highlights of the new system include') but the row is not marked 'being added'. Ask ATHENA team whether installed, commissioning, or on order."
+   }
+  ]
+ },
+ {
+  "id": "athena-spectra-300",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Thermo Fisher Spectra 300 Ultra TEM/STEM",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "probe": {
+   "type": "electron",
+   "energy_range_eV": [
+    60000,
+    300000
+   ],
+   "flux_notes": "acceleration voltages 60, 200, and 300 kV"
+  },
+  "techniques": [
+   {
+    "name": "(scanning) transmission electron microscopy",
+    "acronym": "S/TEM"
+   },
+   {
+    "name": "monochromated electron energy-loss spectroscopy (energy resolution < 100 meV)",
+    "acronym": "EELS"
+   },
+   {
+    "name": "energy-dispersive X-ray spectroscopy with atomic resolution",
+    "acronym": "EDS"
+   },
+   {
+    "name": "in-situ laser processing (Waviks laser system)"
+   }
+  ],
+  "measurables": [
+   "atomic-resolution structure (spatial resolution 42 pm at 300 kV)",
+   "crystallinity and stoichiometry of drop-cast samples (science driver 1)",
+   "laser-processing conditions for particle agglomerates and thin films (science driver 2)",
+   "beam-controlled recrystallization, hole drilling, and amorphization (science driver 3)"
+  ],
+  "sample_environments": [
+   "heating and cooling holder"
+  ],
+  "detectors": [
+   "3 cameras and 17 independent scanning detectors (Panter system)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~5 hours/day, 7 days/week (evening hours targeted for automated experiments; daytime needed for training sessions)"
+  },
+  "automation": {
+   "control_interface": "smart remote control by humans or machine-learning tools via Jupyter notebooks running on the UTK ISAAC supercomputing center",
+   "notes": "Important for all three science drivers; the main materials-characterization tool. Automated particle/feature finding for diffraction, EDS, and EELS; beam current and position control; ML-driven mapping of the parameter space. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization",
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-helios5-hydra",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Thermo Fisher Helios 5 Hydra dual-beam plasma FIB/SEM",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "plasma focused ion beam milling (ion sources: O, N, Ar, Xe)",
+    "acronym": "PFIB"
+   },
+   {
+    "name": "scanning electron microscopy",
+    "acronym": "SEM"
+   },
+   {
+    "name": "electron backscatter diffraction",
+    "acronym": "EBSD"
+   },
+   {
+    "name": "energy-dispersive X-ray spectroscopy",
+    "acronym": "EDS"
+   },
+   {
+    "name": "TEM lamella and tensile-test sample preparation (semi-automatic, moving toward remote/automated)"
+   }
+  ],
+  "measurables": [
+   "crystallinity and uniformity of thin-film samples",
+   "site-specific specimens (pillars, lamellas) for in-situ mechanical testing in TEM and SEM",
+   "larger-scale in-situ laser processing of thin-film samples (science driver 3, once the Waviks laser is installed)"
+  ],
+  "integration_dependencies": [
+   "Waviks laser system planned to be installed on this instrument"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~5 hours/day, 7 days/week (evening hours targeted for automated experiments; daytime needed for training sessions)"
+  },
+  "automation": {
+   "notes": "Most important for science driver 3 (automated larger-scale laser processing). High-throughput laser processing and sample characterization; pillar/lamella production to be further developed toward remote control and full automation. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization",
+   "fabrication"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-zeiss-auriga",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Zeiss Auriga dual-beam SEM/FIB",
+  "instrument_class": "electron-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "scanning electron microscopy",
+    "acronym": "SEM"
+   },
+   {
+    "name": "focused ion beam milling",
+    "acronym": "FIB"
+   },
+   {
+    "name": "energy-dispersive X-ray spectroscopy",
+    "acronym": "EDS"
+   },
+   {
+    "name": "in-situ nanoindentation (integrated system)"
+   }
+  ],
+  "measurables": [
+   "signal and sample quality screening in support of FIB work"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "4 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Support instrument for the Helios 5 FIB. Data acquisition on local computer; data compatible and minable like directly acquired data. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-mts-mechanical",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "MTS mechanical testing machines (4 units)",
+  "instrument_class": "mechanical-tester",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "compression, tension, and fatigue testing"
+   }
+  ],
+  "measurables": [
+   "bulk mechanical properties (compression, tension, fatigue)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "4 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Data acquisition on local computers; data compatible and minable like directly acquired data. Science driver 2: supports theoretical modeling. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-instron-mini",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Instron miniature mechanical testing machine",
+  "instrument_class": "mechanical-tester",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "miniature-specimen tension and fatigue testing"
+   }
+  ],
+  "measurables": [
+   "mechanical properties of miniature specimens (tension, fatigue)"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "4 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Data acquisition on local computers; data compatible and minable like directly acquired data. Science driver 2: supports theoretical modeling. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-buehler-polishers",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Buehler polishers (2 units)",
+  "instrument_class": "other",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "metallographic polishing"
+   }
+  ],
+  "measurables": [
+   "polished specimens of high-entropy alloys and other samples"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "4 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Data acquisition on local computers; data compatible and minable like directly acquired data. (Inventory spells the vendor 'Beuhler'.) DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "processing"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-ats-creep",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Applied Test Systems creep machines (4 units)",
+  "instrument_class": "mechanical-tester",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "tension-creep testing"
+   }
+  ],
+  "measurables": [
+   "creep properties under tension"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "4 hours/day, 7 days/week"
+  },
+  "automation": {
+   "notes": "Data acquisition on local computers; data compatible and minable like directly acquired data. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-jupiter-afm",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Oxford Instruments Asylum Research Jupiter Discovery atomic force microscope",
+  "instrument_class": "scanning-probe-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "atomic force microscopy (fully automated, large-sample)",
+    "acronym": "AFM"
+   },
+   {
+    "name": "piezoresponse force microscopy",
+    "acronym": "PFM"
+   },
+   {
+    "name": "conductive AFM",
+    "acronym": "cAFM"
+   },
+   {
+    "name": "Kelvin probe force microscopy",
+    "acronym": "KPFM"
+   }
+  ],
+  "measurables": [
+   "composition-structure-property relations in combinatorial library samples (high-entropy alloys, semiconductor devices, ionic/ferroelectric materials)",
+   "Kelvin probe imaging of nano- and micro-crystals",
+   "imaging of twisted bilayer oxides"
+  ],
+  "sample_constraints": {
+   "size_notes": "large-scale samples up to 8-inch wafers"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (~84 hours/week) available for the PCL Test Bed"
+  },
+  "automation": {
+   "notes": "Science driver 1: high-throughput functional imaging of binary and ternary ionic/electronic materials libraries. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-cypher-afm",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Oxford Instruments Asylum Research Cypher S atomic force microscope",
+  "instrument_class": "scanning-probe-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "atomic force microscopy (table-top, high-resolution)",
+    "acronym": "AFM"
+   },
+   {
+    "name": "piezoresponse force microscopy",
+    "acronym": "PFM"
+   },
+   {
+    "name": "conductive AFM",
+    "acronym": "cAFM"
+   },
+   {
+    "name": "Kelvin probe force microscopy",
+    "acronym": "KPFM"
+   }
+  ],
+  "measurables": [
+   "high-resolution surface roughness (thin-film quality check via topography)",
+   "structure-property relations in ionic, electronic, and conductive samples",
+   "Kelvin probe imaging of nano- and micro-crystals"
+  ],
+  "sample_constraints": {
+   "size_notes": "samples up to 20 mm; supports automation except for large-scale sample movement (compare the Jupiter AFM)"
+  },
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~10 hours/day, 7 days/week (~70 hours/week) available for the PCL Test Bed"
+  },
+  "automation": {
+   "notes": "Science driver 1: high-throughput imaging of structure-property relations. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-nanoir2",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Anasys (Bruker) NanoIR2 AFM-IR system",
+  "instrument_class": "scanning-probe-microscope",
+  "status": "operational",
+  "techniques": [
+   {
+    "name": "AFM-based infrared spectroscopy (nanoscale chemical imaging)",
+    "acronym": "AFM-IR"
+   }
+  ],
+  "measurables": [
+   "nanoscale chemical identification of heterogeneous thin films",
+   "IR absorption mapping of polymer blends and composite interfaces",
+   "correlation of surface chemistry with mechanical and topographical features",
+   "compositional analysis of polymer domains and degradation pathways"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "~12 hours/day, 7 days/week (~84 hours/week) available for the PCL Test Bed"
+  },
+  "automation": {
+   "notes": "Particularly valuable for polymer blends, composite interfaces, thin films, and other heterogeneous materials where spatially resolved chemical information is critical. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Internal node document — instrument names/counts, capability descriptions, workflow roles (science drivers 1-3), available time. Status 'operational' inferred from stated current availability; confirm with ATHENA team."
+   }
+  ]
+ },
+ {
+  "id": "athena-fusionscope",
+  "facility": "ATHENA",
+  "program": [
+   "NSF PCL"
+  ],
+  "institution": "University of Tennessee, Knoxville (ATHENA testbed)",
+  "name": "Quantum Design FusionScope combined SEM/EDX-AFM system",
+  "instrument_class": "scanning-probe-microscope",
+  "status": "planned",
+  "techniques": [
+   {
+    "name": "combined SEM/EDX chemical imaging with full-capability AFM"
+   },
+   {
+    "name": "force-distance, conductivity, piezoresponse, and Kelvin probe measurements"
+   },
+   {
+    "name": "in-situ SEM visualization of the SPM probe during nanomechanical measurements"
+   }
+  ],
+  "measurables": [
+   "combined multimodal chemical imaging of combinatorial random libraries",
+   "ferroelectric, conductivity, and surface photovoltage measurements"
+  ],
+  "record_depth": "directory",
+  "location": {
+   "address": "University of Tennessee, Knoxville, TN 37996",
+   "latitude": 35.9516352,
+   "longitude": -83.9308819,
+   "source": "coordinates OSM Nominatim, UTK campus-level (retrieved 2026-11-25); building/room not in inventory — ask ATHENA team"
+  },
+  "throughput": {
+   "availability": "2 days/week for the PCL Test Bed (once delivered)"
+  },
+  "automation": {
+   "notes": "Inventory says 'Scheduled for delivery in Q2 2006' [sic — verbatim; presumably Q2 2026, confirm]. DRAFT record: under review by the ATHENA node team; corrections will land here."
+  },
+  "campaign_roles": [
+   "characterization"
+  ],
+  "provenance": [
+   {
+    "source_url": "Instrument Inventory Table - ATHENA testbed (Final_Rev PDF), shared with Ian Foster by Mahshid Ahmadi (Deputy Director, ATHENA-PCL, mahmadi3@utk.edu) 2026-11-25",
+    "retrieved": "2026-11-25",
+    "notes": "Recorded as planned (scheduled for delivery). The source table's last two rows appear to be a duplicated-row artifact: the second-to-last row header merges 'Anasys NanoIR2 (1 unit)' with 'Quantum Design Fusion Scope SEM/EDX - AFM system' and carries a description identical to the final row. One FusionScope record kept; ask ATHENA team to confirm."
+   }
+  ]
+ }
+]

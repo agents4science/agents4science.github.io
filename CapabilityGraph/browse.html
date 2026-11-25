@@ -150,7 +150,8 @@ async function init() {
   if (params.get("facility")) $("f-facility").value = params.get("facility");
   if (params.get("program")) $("f-program").value = params.get("program");
   render();
-  if (params.get("map") === "1") toggleMap();
+  // Map shown by default; pass ?map=0 to start with it collapsed.
+  if (params.get("map") !== "0") toggleMap();
 }
 
 // ---- map ----
